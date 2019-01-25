@@ -34,5 +34,14 @@
       <user-name>webauto</user-name>
       <introspection-schemas>*:@</introspection-schemas>
     </data-source>
+    <data-source name="postgres@localhost" uuid="d2028178-3b8c-44f6-ba7a-5f96f7301cfe">
+      <database-info product="PostgreSQL" version="10.3" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.2.2">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>postgres</user-name>
+      <introspection-schemas>postgres:arduino</introspection-schemas>
+    </data-source>
   </component>
 </project>

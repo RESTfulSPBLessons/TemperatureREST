@@ -64,12 +64,6 @@ public class AppConfig extends WebMvcConfigurerAdapter {
 
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry){
-      /*  registry.addResourceHandler("/*.json/**").addResourceLocations("classpath:/static/assets/data/");
-        registry.addResourceHandler("/*.js/**").addResourceLocations("classpath:/static/");
-        registry.addResourceHandler("/*.css/**").addResourceLocations("classpath:/static/");
-        registry.addResourceHandler("/*.html/**").addResourceLocations("classpath:/static/"); */
-
-        //registry.addResourceHandler("/static/**").addResourceLocations("/WEB-INF/static/");
         registry.addResourceHandler("/**").addResourceLocations("/WEB-INF/classes/static/");
 
 

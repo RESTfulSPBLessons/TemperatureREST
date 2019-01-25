@@ -22,9 +22,9 @@
           <element id="library" level="project" name="Maven: org.springframework.data:spring-data-jpa:1.11.12.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.data:spring-data-commons:1.13.12.RELEASE" />
           <element id="library" level="project" name="Maven: org.aspectj:aspectjrt:1.8.13" />
-          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.9.4" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.9.5" />
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.9.0" />
-          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.9.4" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.9.5" />
           <element id="library" level="project" name="Maven: cglib:cglib:3.2.4" />
           <element id="library" level="project" name="Maven: org.ow2.asm:asm:5.1" />
           <element id="library" level="project" name="Maven: org.apache.ant:ant:1.9.6" />

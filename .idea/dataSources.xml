@@ -43,5 +43,14 @@
       <jdbc-driver>oracle.jdbc.driver.OracleDriver</jdbc-driver>
       <jdbc-url>jdbc:oracle:thin:@oraserv2.reso.ru:1526:osago</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="postgres@localhost" uuid="d2028178-3b8c-44f6-ba7a-5f96f7301cfe">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:5432/postgres</jdbc-url>
+      <driver-properties>
+        <property name="ApplicationName" value="DataGrip" />
+      </driver-properties>
+    </data-source>
   </component>
 </project>

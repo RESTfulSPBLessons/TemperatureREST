@@ -391,11 +391,6 @@ var navItems = [
         icon: 'icon-drop'
     },
     {
-        name: 'Typography',
-        url: '/theme/typography',
-        icon: 'icon-pencil'
-    },
-    {
         title: true,
         name: 'Components'
     },
@@ -587,31 +582,6 @@ var navItems = [
                 icon: 'icon-star'
             }
         ]
-    },
-    {
-        name: 'Disabled',
-        url: '/dashboard',
-        icon: 'icon-ban',
-        badge: {
-            variant: 'secondary',
-            text: 'NEW'
-        },
-        attributes: { disabled: true },
-    },
-    {
-        name: 'Download CoreUI',
-        url: 'http://coreui.io/angular/',
-        icon: 'icon-cloud-download',
-        class: 'mt-auto',
-        variant: 'success',
-        attributes: { target: '_blank', rel: 'noopener' }
-    },
-    {
-        name: 'Try CoreUI PRO',
-        url: 'http://coreui.io/pro/angular/',
-        icon: 'icon-layers',
-        variant: 'danger',
-        attributes: { target: '_blank', rel: 'noopener' }
     }
 ];
 
@@ -1190,7 +1160,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\MY GIT\RCL — копия\firstng\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! C:\MY GIT\TemperatureREST\firstng\src\main.ts */"./src/main.ts");
 
 
 /***/ })

@@ -13,6 +13,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.jdbc.datasource.lookup.JndiDataSourceLookup;
+import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 /**
@@ -23,7 +24,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @Configuration
 @EnableTransactionManagement
 @ComponentScan({ "ru.reso.calclogcompare" })
-@EnableJpaRepositories(basePackages = "ru.reso.calclogcompare.DAO")
+@EnableJpaRepositories(basePackages = "ru.reso.calclogcompare.repository")
 public class OrmConfig {
 
     /**
@@ -43,6 +44,18 @@ public class OrmConfig {
      */
     @Value("${hibernate.dialect}")
     private String hibernateDialect;
+
+    @Value("${db.driverClassName}")
+    private String driverClassName;
+
+    @Value("${db.url}")
+    private String url;
+
+    @Value("${db.username}")
+    private String username;
+    @Value("${db.password}")
+    private String password;
+
 
     /**
      * Показывать sql в консоле или нет.
@@ -67,21 +80,33 @@ public class OrmConfig {
     private String hbm2dll;
 
 
-    /**
+   /* *//**
      * Привязываем Датасарс. В данном
      * случае уже вяжемся через JNDI,
      * то есть через GlassFish
      * Connection Pools.
      *
      * @return the data source
-     */
+     *//*
     @Bean
     public DataSource dataSource() {
         final JndiDataSourceLookup dsLookup = new JndiDataSourceLookup();
         dsLookup.setResourceRef(true);
         DataSource dataSource = dsLookup.getDataSource("OSAGO");
         return dataSource;
+    }*/
+
+
+    @Bean
+    public DataSource dataSource() {
+        final DriverManagerDataSource dataSource = new DriverManagerDataSource();
+        dataSource.setDriverClassName(driverClassName);
+        dataSource.setUrl(url);
+        dataSource.setUsername(username);
+        dataSource.setPassword(password);
+        return dataSource;
     }
+
 
 
     /**

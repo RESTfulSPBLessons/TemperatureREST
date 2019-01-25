@@ -1,9 +1,9 @@
 ru\reso\calclogcompare\config\AppConfig.class
 ru\reso\calclogcompare\controller\MainRestController.class
-ru\reso\calclogcompare\controller\TestController.class
+ru\reso\calclogcompare\service\MainServiceImpl.class
+ru\reso\calclogcompare\model\PR.class
 ru\reso\calclogcompare\config\OrmConfig.class
-ru\reso\calclogcompare\model\Premium.class
-ru\reso\calclogcompare\DAO\PremiumDAO.class
-ru\reso\calclogcompare\Service\PremiumService.class
+ru\reso\calclogcompare\model\Users.class
 ru\reso\calclogcompare\config\SpringWebAppInitializer.class
-ru\reso\calclogcompare\Service\PremiumServiceImpl.class
+ru\reso\calclogcompare\repository\UsersRepository.class
+ru\reso\calclogcompare\service\MainService.class

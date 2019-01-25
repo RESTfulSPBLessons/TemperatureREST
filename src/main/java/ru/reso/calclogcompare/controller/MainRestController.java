@@ -7,36 +7,66 @@ package ru.reso.calclogcompare.controller;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.servlet.ModelAndView;
-import ru.reso.calclogcompare.Service.PremiumService;
-import ru.reso.calclogcompare.model.Premium;
+import org.springframework.web.bind.annotation.*;
+import ru.reso.calclogcompare.model.*;
+import ru.reso.calclogcompare.service.MainService;
+
 import java.util.ArrayList;
 import java.util.List;
 
 @RestController
-@RequestMapping("/rest")
+@RequestMapping("/rest/users")
 public class MainRestController {
 
-    /**
-     * Сервис, работающий с ДАО.
-     */
+
     @Autowired
-    private PremiumService premiumService;
+    MainService mainService;
 
-    @RequestMapping(value = "check", method = RequestMethod.GET)
-    public ResponseEntity<?> CheckSerial(@RequestParam("id") String id) {
+    @GetMapping("/all")
+    public List<Users> getAll(){
+        System.out.println("Запрос прошел");
+        return  mainService.getAll();
+    }
 
-   //     Response response = new Response();
 
-        System.out.println("Пришел запрос");
-        return ResponseEntity.ok((premiumService.getPremById2(Integer.parseInt(id))));
+    @RequestMapping(method = RequestMethod.GET, path = "/v2")
+    public ArrayList<String> getAll2() {
+
+        System.out.println("I have got you!");
+
+        ArrayList<String> a = new ArrayList<>();
+
+        a.add("1");
+        a.add("2");
+
+
+        return  a;
 
     }
+
+
+    @PostMapping("/add")
+    public List<Users> newMeasure(@RequestBody PR newTemp) {
+        System.out.println("we are in POST HTTP");
+
+        return mainService.addMeasure(newTemp.getTemp());
+    }
+
+
+    @RequestMapping(method = RequestMethod.GET, path = "/test")
+    public PR testPost() {
+
+        System.out.println("get POST object");
+
+        PR testObj = new PR(Double.valueOf(123));
+
+
+
+        return  testObj;
+
+    }
+
+
 
 
 }
