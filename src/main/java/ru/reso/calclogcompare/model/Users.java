@@ -2,6 +2,7 @@ package ru.reso.calclogcompare.model;
 
 import javax.persistence.*;
 import java.util.Date;
+import org.hibernate.annotations.Type;
 
 @Entity
 @Table(name="temperature", schema = "arduino", catalog = "postgres")
@@ -25,8 +26,10 @@ public class Users {
     @Type(type="date")
     private Date dateCreated;*/
 
-    @Basic
+    // @Basic
     @Column(name = "datecreated", nullable = true)
+    @Temporal(TemporalType.DATE)
+    @Type(type="date")
     private Date dateCreated;
 
 
