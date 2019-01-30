@@ -25,6 +25,12 @@ public class MainRestController {
     @GetMapping("/all")
     public List<Users> getAll(){
         System.out.println("Запрос прошел");
+
+        for(Users temp : mainService.getAll()){
+            System.out.println(temp.getId() + " - " + temp.getTemperature() + " - " + temp.getDateCreated());
+        }
+
+
         return  mainService.getAll();
     }
 

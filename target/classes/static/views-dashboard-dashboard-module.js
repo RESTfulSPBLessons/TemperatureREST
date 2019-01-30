@@ -2492,8 +2492,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
-/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
-
 
 
 
@@ -2506,24 +2504,18 @@ var HttpService = /** @class */ (function () {
         console.log(req.calcID);
         return this.http.post('http://localhost:8083/RCCT-2.0-SNAPSHOT/rest/get', body);
     };
-    HttpService.prototype.getData = function (url) {
-        return this.http.get(url);
-    };
-    HttpService.prototype.getData2 = function (url) {
-        return this.http.get(url);
-    };
     HttpService.prototype.getData4 = function (url) {
         console.log('GET DATA......');
         console.log(url);
         return this.http.get(url);
     };
-    HttpService.prototype.getData5 = function (url) {
-        console.log('GET DATA......');
+    HttpService.prototype.getData5 = function (url, scope) {
+        console.log('GET DATA WITH PARAMETRS  ......');
         console.log(url);
-        return this.http.get(url).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(function (data) {
-            var usersList = data['userList'];
-            return usersList.map(function (user) { return user.age; });
-        }));
+        var header = new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"]();
+        header.append('Content-Type', 'application/json');
+        var myvar = new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpParams"]().set('scope', scope.toString());
+        return this.http.get(url, { params: myvar });
     };
     HttpService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])(),
@@ -2615,13 +2607,13 @@ __webpack_require__.r(__webpack_exports__);
 // import {HttpClient} from '@angular/common/http';
 var DashboardComponent = /** @class */ (function () {
     function DashboardComponent(httpService) {
-        // console.log(this.fileData);
         this.httpService = httpService;
         this.radioModel = 'Month';
         this.localJson = 'assets/data/test.json';
         this.localJson2 = 'assets/data/db.json';
         this.localJson3 = 'assets/data/user.json';
         this.localJson4 = 'assets/data/user2.json';
+        this.httpGETAll = 'http://localhost:8080/RCCT-2.0-SNAPSHOT/rest/users/all';
         this.users = [];
         this.mainChartData5 = [];
         this.year = [];
@@ -3013,22 +3005,23 @@ var DashboardComponent = /** @class */ (function () {
            return localObj;
     
          }); */
-        var output = this.users.map(function (user) { return user.age; });
-        console.log(output);
-        this.mainChartData1 = output;
+        /* const output = this.users.map(user => user.age);
+         console.log(output);
+     
+         this.mainChartData1 = output;*/
         console.log('After Parse:');
-        console.log(this.mainChartData1);
+        // console.log(this.mainChartData1);
         //  console.log(arr);
     };
     DashboardComponent.prototype.ngOnInit = function () {
         // this.http.get(this.localJson3).subscribe((data: User) => this.user = data);
         var _this = this;
-        this.httpService.getData4(this.localJson4).subscribe(function (data) {
-            _this.users = data['userList'];
+        this.httpService.getData4(this.httpGETAll).subscribe(function (data) {
+            _this.users = data;
             console.log(data);
             _this.users.forEach(function (y) {
                 _this.year.push(y.name);
-                _this.count.push(y.age);
+                _this.count.push(y.temperature);
             });
             console.log(_this.count);
             // this.mainChartData1 = data['userList'].map(user => user.age);
@@ -3055,9 +3048,6 @@ var DashboardComponent = /** @class */ (function () {
         }*/
     };
     DashboardComponent.prototype.ngAfterViewInit = function () {
-        /*  this.mainChartData1 = this.mainChartData5;
-          console.log(this.mainChartData5);
-          console.log(this.mainChartData1);*/
     };
     DashboardComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({

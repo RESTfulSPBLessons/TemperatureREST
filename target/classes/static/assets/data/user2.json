@@ -1,19 +1,38 @@
-{
-  "userList":
-  [{
-    "name": "Bob",
-    "age": 28
-  },{
-    "name": "Tom",
-    "age": 240
-  },{
-    "name": "Tom",
-    "age": 180
-  },{
-    "name": "Tom",
-    "age": 50
-  },{
-    "name": "Alice",
-    "age": 32
-  }]
-}
+[
+  {
+    "id": 1,
+    "name": "1",
+    "temperature": 15.145,
+    "dateCreated": null
+  },
+  {
+    "id": 3,
+    "name": "4",
+    "temperature": 25.145,
+    "dateCreated": null
+  },
+  {
+    "id": 5,
+    "name": null,
+    "temperature": 22.144,
+    "dateCreated": 1541002259000
+  },
+  {
+    "id": 300,
+    "name": "from REST",
+    "temperature": 2,
+    "dateCreated": 1541004619000
+  },
+  {
+    "id": 350,
+    "name": "from REST",
+    "temperature": null,
+    "dateCreated": 1548424735000
+  },
+  {
+    "id": 400,
+    "name": "from REST",
+    "temperature": 400,
+    "dateCreated": 1548425085000
+  }
+]
