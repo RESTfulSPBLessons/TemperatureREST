@@ -2578,7 +2578,7 @@ var DashboardRoutingModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"animated fadeIn\">\n\n<!--  <canvas id=\"myChart\" width=\"700\" height=\"400\"></canvas>-->\n\n  <!--<canvas\n    tc-chartjs-pie\n    chart-data=\"{{mydata}}\"\n    chart-options=\"myOptions\"\n    chart-plugins=\"myPlugins\"\n    chart-click=\"onChartClick(event)\"\n  ></canvas>-->\n\n\n  <!--<div class=\"row\">\n    <div class=\"col-sm-6 col-lg-3\">\n      <div class=\"card text-white bg-primary\">\n        <div class=\"card-body pb-0\">\n          <div class=\"btn-group float-right\" dropdown>\n            <button type=\"button\" class=\"btn btn-transparent dropdown-toggle p-0\" dropdownToggle>\n              <i class=\"icon-settings\"></i>\n            </button>\n            <div class=\"dropdown-menu dropdown-menu-right\" *dropdownMenu>\n              <a class=\"dropdown-item\" href=\"#\">Action</a>\n              <a class=\"dropdown-item\" href=\"#\">Another action</a>\n              <a class=\"dropdown-item\" href=\"#\">Something else here</a>\n              <a class=\"dropdown-item\" href=\"#\">Something else here</a>\n            </div>\n          </div>\n          <div class=\"text-value\">9.823</div>\n          <div>Members online</div>\n        </div>\n        <div class=\"chart-wrapper mt-3 mx-3\" style=\"height:70px;\">\n          <canvas baseChart class=\"chart\"\n          [datasets]=\"lineChart1Data\"\n          [labels]=\"lineChart1Labels\"\n          [options]=\"lineChart1Options\"\n          [colors]=\"lineChart1Colours\"\n          [legend]=\"lineChart1Legend\"\n          [chartType]=\"lineChart1Type\"></canvas>\n        </div>\n      </div>\n    </div>&lt;!&ndash;/.col&ndash;&gt;\n    <div class=\"col-sm-6 col-lg-3\">\n      <div class=\"card text-white bg-info\">\n        <div class=\"card-body pb-0\">\n          <button type=\"button\" class=\"btn btn-transparent p-0 float-right\">\n            <i class=\"icon-location-pin\"></i>\n          </button>\n          <div class=\"text-value\">9.823</div>\n          <div>Members online</div>\n        </div>\n        <div class=\"chart-wrapper mt-3 mx-3\" style=\"height:70px;\">\n          <canvas baseChart class=\"chart\"\n          [datasets]=\"lineChart2Data\"\n          [labels]=\"lineChart2Labels\"\n          [options]=\"lineChart2Options\"\n          [colors]=\"lineChart2Colours\"\n          [legend]=\"lineChart2Legend\"\n          [chartType]=\"lineChart2Type\"></canvas>\n        </div>\n      </div>\n    </div>&lt;!&ndash;/.col&ndash;&gt;\n    <div class=\"col-sm-6 col-lg-3\">\n      <div class=\"card text-white bg-warning\">\n        <div class=\"card-body pb-0\">\n          <div class=\"btn-group float-right\" dropdown>\n            <button type=\"button\" class=\"btn btn-transparent dropdown-toggle p-0\" dropdownToggle>\n              <i class=\"icon-settings\"></i>\n            </button>\n            <div class=\"dropdown-menu dropdown-menu-right\" *dropdownMenu>\n              <a class=\"dropdown-item\" href=\"#\">Action</a>\n              <a class=\"dropdown-item\" href=\"#\">Another action</a>\n              <a class=\"dropdown-item\" href=\"#\">Something else here</a>\n            </div>\n          </div>\n          <div class=\"text-value\">9.823</div>\n          <div>Members online</div>\n        </div>\n        <div class=\"chart-wrapper mt-3\" style=\"height:70px;\">\n          <canvas baseChart class=\"chart\"\n          [datasets]=\"lineChart3Data\"\n          [labels]=\"lineChart3Labels\"\n          [options]=\"lineChart3Options\"\n          [colors]=\"lineChart3Colours\"\n          [legend]=\"lineChart3Legend\"\n          [chartType]=\"lineChart3Type\"></canvas>\n        </div>\n      </div>\n    </div>&lt;!&ndash;/.col&ndash;&gt;\n    <div class=\"col-sm-6 col-lg-3\">\n      <div class=\"card text-white bg-danger\">\n        <div class=\"card-body pb-0\">\n          <div class=\"btn-group float-right\" dropdown>\n            <button type=\"button\" class=\"btn btn-transparent dropdown-toggle p-0\" dropdownToggle>\n              <i class=\"icon-settings\"></i>\n            </button>\n            <div class=\"dropdown-menu dropdown-menu-right\" *dropdownMenu>\n              <a class=\"dropdown-item\" href=\"#\">Action</a>\n              <a class=\"dropdown-item\" href=\"#\">Another action</a>\n              <a class=\"dropdown-item\" href=\"#\">Something else here</a>\n            </div>\n          </div>\n          <div class=\"text-value\">9.823</div>\n          <div>Members online</div>\n        </div>\n        <div class=\"chart-wrapper mt-3 mx-3\" style=\"height:70px;\">\n          <canvas baseChart class=\"chart\"\n          [datasets]=\"barChart1Data\"\n          [labels]=\"barChart1Labels\"\n          [options]=\"barChart1Options\"\n          [colors]=\"barChart1Colours\"\n          [legend]=\"barChart1Legend\"\n          [chartType]=\"barChart1Type\"></canvas>\n        </div>\n      </div>\n    </div>&lt;!&ndash;/.col&ndash;&gt;\n  </div>&lt;!&ndash;/.row&ndash;&gt;-->\n  <div class=\"card\">\n    <div class=\"card-body\">\n      <div class=\"row\">\n        <div class=\"col-sm-5\">\n          <h4 class=\"card-title mb-0\">Traffic {{mainChartData5}}</h4>\n\n            <button (click)=\"clickEvent()\" >OK</button>\n          <div class=\"small text-muted\">November 2017</div>\n        </div><!--/.col-->\n        <div class=\"col-sm-7 d-none d-md-block\">\n          <button type=\"button\" class=\"btn btn-primary float-right\"><i class=\"icon-cloud-download\"></i></button>\n          <div class=\"btn-group btn-group-toggle float-right mr-3\" data-toggle=\"buttons\">\n            <label class=\"btn btn-outline-secondary\" [(ngModel)]=\"radioModel\" btnRadio=\"Day\" id=\"option1\">Day</label>\n            <label class=\"btn btn-outline-secondary\" [(ngModel)]=\"radioModel\" btnRadio=\"Month\" id=\"option2\">Month</label>\n            <label class=\"btn btn-outline-secondary\" [(ngModel)]=\"radioModel\" btnRadio=\"Year\" id=\"option3\">Year</label>\n          </div>\n        </div><!--/.col-->\n      </div><!--/.row-->\n      <div class=\"chart-wrapper\" style=\"height:300px;margin-top:40px;\">\n        <canvas baseChart class=\"chart\"\n        [datasets]=\"mainChartData\"\n        [labels]=\"mainChartLabels\"\n        [options]=\"mainChartOptions\"\n        [colors]=\"mainChartColours\"\n        [legend]=\"mainChartLegend\"\n        [chartType]=\"mainChartType\"></canvas>\n      </div>\n    </div>\n    <div class=\"card-footer\">\n      <div class=\"row text-center\">\n        <div class=\"col-sm-12 col-md mb-sm-2 mb-0\">\n          <div class=\"text-muted\">Visits</div>\n          <strong>29.703 Users (40%)</strong>\n          <div class=\"progress progress-xs mt-2\">\n            <div class=\"progress-bar bg-success\" role=\"progressbar\" style=\"width: 40%\" aria-valuenow=\"40\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\n          </div>\n        </div>\n        <div class=\"col-sm-12 col-md mb-sm-2 mb-0\">\n          <div class=\"text-muted\">Unique</div>\n          <strong>24.093 Users (20%)</strong>\n          <div class=\"progress progress-xs mt-2\">\n            <div class=\"progress-bar bg-info\" role=\"progressbar\" style=\"width: 20%\" aria-valuenow=\"20\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\n          </div>\n        </div>\n        <div class=\"col-sm-12 col-md mb-sm-2 mb-0\">\n          <div class=\"text-muted\">Pageviews</div>\n          <strong>78.706 Views (60%)</strong>\n          <div class=\"progress progress-xs mt-2\">\n            <div class=\"progress-bar bg-warning\" role=\"progressbar\" style=\"width: 60%\" aria-valuenow=\"60\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\n          </div>\n        </div>\n        <div class=\"col-sm-12 col-md mb-sm-2 mb-0\">\n          <div class=\"text-muted\">New Users</div>\n          <strong>22.123 Users (80%)</strong>\n          <div class=\"progress progress-xs mt-2\">\n            <div class=\"progress-bar bg-danger\" role=\"progressbar\" style=\"width: 80%\" aria-valuenow=\"80\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\n          </div>\n        </div>\n        <div class=\"col-sm-12 col-md mb-sm-2 mb-0\">\n          <div class=\"text-muted\">Bounce Rate</div>\n          <strong>40.15%</strong>\n          <div class=\"progress progress-xs mt-2\">\n            <div class=\"progress-bar\" role=\"progressbar\" style=\"width: 40%\" aria-valuenow=\"40\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n  <!--/.card-->\n</div>\n"
+module.exports = "<div class=\"animated fadeIn\">\n\n<!--  <canvas id=\"myChart\" width=\"700\" height=\"400\"></canvas>-->\n\n  <!--<canvas\n    tc-chartjs-pie\n    chart-data=\"{{mydata}}\"\n    chart-options=\"myOptions\"\n    chart-plugins=\"myPlugins\"\n    chart-click=\"onChartClick(event)\"\n  ></canvas>-->\n\n\n  <!--<div class=\"row\">\n    <div class=\"col-sm-6 col-lg-3\">\n      <div class=\"card text-white bg-primary\">\n        <div class=\"card-body pb-0\">\n          <div class=\"btn-group float-right\" dropdown>\n            <button type=\"button\" class=\"btn btn-transparent dropdown-toggle p-0\" dropdownToggle>\n              <i class=\"icon-settings\"></i>\n            </button>\n            <div class=\"dropdown-menu dropdown-menu-right\" *dropdownMenu>\n              <a class=\"dropdown-item\" href=\"#\">Action</a>\n              <a class=\"dropdown-item\" href=\"#\">Another action</a>\n              <a class=\"dropdown-item\" href=\"#\">Something else here</a>\n              <a class=\"dropdown-item\" href=\"#\">Something else here</a>\n            </div>\n          </div>\n          <div class=\"text-value\">9.823</div>\n          <div>Members online</div>\n        </div>\n        <div class=\"chart-wrapper mt-3 mx-3\" style=\"height:70px;\">\n          <canvas baseChart class=\"chart\"\n          [datasets]=\"lineChart1Data\"\n          [labels]=\"lineChart1Labels\"\n          [options]=\"lineChart1Options\"\n          [colors]=\"lineChart1Colours\"\n          [legend]=\"lineChart1Legend\"\n          [chartType]=\"lineChart1Type\"></canvas>\n        </div>\n      </div>\n    </div>&lt;!&ndash;/.col&ndash;&gt;\n    <div class=\"col-sm-6 col-lg-3\">\n      <div class=\"card text-white bg-info\">\n        <div class=\"card-body pb-0\">\n          <button type=\"button\" class=\"btn btn-transparent p-0 float-right\">\n            <i class=\"icon-location-pin\"></i>\n          </button>\n          <div class=\"text-value\">9.823</div>\n          <div>Members online</div>\n        </div>\n        <div class=\"chart-wrapper mt-3 mx-3\" style=\"height:70px;\">\n          <canvas baseChart class=\"chart\"\n          [datasets]=\"lineChart2Data\"\n          [labels]=\"lineChart2Labels\"\n          [options]=\"lineChart2Options\"\n          [colors]=\"lineChart2Colours\"\n          [legend]=\"lineChart2Legend\"\n          [chartType]=\"lineChart2Type\"></canvas>\n        </div>\n      </div>\n    </div>&lt;!&ndash;/.col&ndash;&gt;\n    <div class=\"col-sm-6 col-lg-3\">\n      <div class=\"card text-white bg-warning\">\n        <div class=\"card-body pb-0\">\n          <div class=\"btn-group float-right\" dropdown>\n            <button type=\"button\" class=\"btn btn-transparent dropdown-toggle p-0\" dropdownToggle>\n              <i class=\"icon-settings\"></i>\n            </button>\n            <div class=\"dropdown-menu dropdown-menu-right\" *dropdownMenu>\n              <a class=\"dropdown-item\" href=\"#\">Action</a>\n              <a class=\"dropdown-item\" href=\"#\">Another action</a>\n              <a class=\"dropdown-item\" href=\"#\">Something else here</a>\n            </div>\n          </div>\n          <div class=\"text-value\">9.823</div>\n          <div>Members online</div>\n        </div>\n        <div class=\"chart-wrapper mt-3\" style=\"height:70px;\">\n          <canvas baseChart class=\"chart\"\n          [datasets]=\"lineChart3Data\"\n          [labels]=\"lineChart3Labels\"\n          [options]=\"lineChart3Options\"\n          [colors]=\"lineChart3Colours\"\n          [legend]=\"lineChart3Legend\"\n          [chartType]=\"lineChart3Type\"></canvas>\n        </div>\n      </div>\n    </div>&lt;!&ndash;/.col&ndash;&gt;\n    <div class=\"col-sm-6 col-lg-3\">\n      <div class=\"card text-white bg-danger\">\n        <div class=\"card-body pb-0\">\n          <div class=\"btn-group float-right\" dropdown>\n            <button type=\"button\" class=\"btn btn-transparent dropdown-toggle p-0\" dropdownToggle>\n              <i class=\"icon-settings\"></i>\n            </button>\n            <div class=\"dropdown-menu dropdown-menu-right\" *dropdownMenu>\n              <a class=\"dropdown-item\" href=\"#\">Action</a>\n              <a class=\"dropdown-item\" href=\"#\">Another action</a>\n              <a class=\"dropdown-item\" href=\"#\">Something else here</a>\n            </div>\n          </div>\n          <div class=\"text-value\">9.823</div>\n          <div>Members online</div>\n        </div>\n        <div class=\"chart-wrapper mt-3 mx-3\" style=\"height:70px;\">\n          <canvas baseChart class=\"chart\"\n          [datasets]=\"barChart1Data\"\n          [labels]=\"barChart1Labels\"\n          [options]=\"barChart1Options\"\n          [colors]=\"barChart1Colours\"\n          [legend]=\"barChart1Legend\"\n          [chartType]=\"barChart1Type\"></canvas>\n        </div>\n      </div>\n    </div>&lt;!&ndash;/.col&ndash;&gt;\n  </div>&lt;!&ndash;/.row&ndash;&gt;-->\n  <div class=\"card\">\n    <div class=\"card-body\">\n      <div class=\"row\">\n        <div class=\"col-sm-5\">\n          <h4 class=\"card-title mb-0\">Traffic {{label}}</h4>\n\n            <button (click)=\"clickEvent()\" >OK</button>\n          <div class=\"small text-muted\">November 2017</div>\n        </div><!--/.col-->\n        <div class=\"col-sm-7 d-none d-md-block\">\n\n          <div class=\"btn-group btn-group-toggle float-right mr-3\" data-toggle=\"buttons\">\n            <label class=\"btn btn-outline-secondary\" [(ngModel)]=\"radioModel\" btnRadio=\"Day\" id=\"option1\" (click)=\"dayMode()\">Day</label>\n            <label class=\"btn btn-outline-secondary\" [(ngModel)]=\"radioModel\" btnRadio=\"Week\" id=\"option2\" (click)=\"weekMode()\">Week Day</label>\n            <label class=\"btn btn-outline-secondary\" [(ngModel)]=\"radioModel\" btnRadio=\"Month\" id=\"option3\" (click)=\"monthMode()\">Month Day</label>\n          </div>\n        </div><!--/.col-->\n      </div><!--/.row-->\n      <div class=\"chart-wrapper\" style=\"height:300px;margin-top:40px;\">\n        <canvas baseChart class=\"chart\"\n        [datasets]=\"mainChartData\"\n        [labels]=\"label\"\n        [options]=\"mainChartOptions\"\n        [colors]=\"mainChartColours\"\n        [legend]=\"mainChartLegend\"\n        [chartType]=\"mainChartType\"></canvas>\n      </div>\n    </div>\n    <div class=\"card-footer\">\n      <div class=\"row text-center\">\n        <div class=\"col-sm-12 col-md mb-sm-2 mb-0\">\n          <div class=\"text-muted\">Visits</div>\n          <strong>29.703 Users (40%)</strong>\n          <div class=\"progress progress-xs mt-2\">\n            <div class=\"progress-bar bg-success\" role=\"progressbar\" style=\"width: 40%\" aria-valuenow=\"40\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\n          </div>\n        </div>\n        <div class=\"col-sm-12 col-md mb-sm-2 mb-0\">\n          <div class=\"text-muted\">Unique</div>\n          <strong>24.093 Users (20%)</strong>\n          <div class=\"progress progress-xs mt-2\">\n            <div class=\"progress-bar bg-info\" role=\"progressbar\" style=\"width: 20%\" aria-valuenow=\"20\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\n          </div>\n        </div>\n        <div class=\"col-sm-12 col-md mb-sm-2 mb-0\">\n          <div class=\"text-muted\">Pageviews</div>\n          <strong>78.706 Views (60%)</strong>\n          <div class=\"progress progress-xs mt-2\">\n            <div class=\"progress-bar bg-warning\" role=\"progressbar\" style=\"width: 60%\" aria-valuenow=\"60\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\n          </div>\n        </div>\n        <div class=\"col-sm-12 col-md mb-sm-2 mb-0\">\n          <div class=\"text-muted\">New Users</div>\n          <strong>22.123 Users (80%)</strong>\n          <div class=\"progress progress-xs mt-2\">\n            <div class=\"progress-bar bg-danger\" role=\"progressbar\" style=\"width: 80%\" aria-valuenow=\"80\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\n          </div>\n        </div>\n        <div class=\"col-sm-12 col-md mb-sm-2 mb-0\">\n          <div class=\"text-muted\">Bounce Rate</div>\n          <strong>40.15%</strong>\n          <div class=\"progress progress-xs mt-2\">\n            <div class=\"progress-bar\" role=\"progressbar\" style=\"width: 40%\" aria-valuenow=\"40\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n  <!--/.card-->\n</div>\n"
 
 /***/ }),
 
@@ -2604,26 +2604,36 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-// import {HttpClient} from '@angular/common/http';
 var DashboardComponent = /** @class */ (function () {
     function DashboardComponent(httpService) {
         this.httpService = httpService;
-        this.radioModel = 'Month';
-        this.localJson = 'assets/data/test.json';
-        this.localJson2 = 'assets/data/db.json';
-        this.localJson3 = 'assets/data/user.json';
+        this.radioModel = 'Day';
+        // ------------------------------ LOCAL -----------------------------------------
         this.localJson4 = 'assets/data/user2.json';
-        this.httpGETAll = 'http://localhost:8080/RCCT-2.0-SNAPSHOT/rest/users/all';
+        this.localWeekDay = 'assets/data/weekDay.json';
+        this.localWeekNight = 'assets/data/weekNight.json';
+        this.localMonthDay = 'assets/data/monthDay.json';
+        this.localMonthNight = 'assets/data/monthNigth.json';
+        // ------------------------------ REMOTE -----------------------------------------
+        this.httpGETAll = 'http://localhost:8080/RCCT-2.0-SNAPSHOT/rest/users/all'; // все записи
+        this.httpGetToday = 'http://localhost:8080/RCCT-2.0-SNAPSHOT/rest/users/today'; // сегодняшние измерения
+        this.httpGetWeekly4Day = 'http://localhost:8080/RCCT-2.0-SNAPSHOT/rest/users/weekday'; // дневные за неделю
+        this.httpGetWeekly4Night = 'http://localhost:8080/RCCT-2.0-SNAPSHOT/rest/users/monthnight'; // ночные за неделю
+        this.httpGetMonthly4Day = 'http://localhost:8080/RCCT-2.0-SNAPSHOT/rest/users/monthday'; // месячные, дневная температуры
+        this.httpGetMonthly4Night = 'http://localhost:8080/RCCT-2.0-SNAPSHOT/rest/users/monthnight'; // месячные, ночная температуры
         this.users = [];
-        this.mainChartData5 = [];
+        this.statistic = [];
         this.year = [];
+        this.label = [];
         this.count = [];
-        this.mydata = [
-            [65, 59, 80, 81, 56, 55, 40],
-            [28, 48, 40, 19, 86, 27, 90]
-        ];
+        this.count2 = []; // дневные недельные измерения
+        this.count3 = []; // ночные недельные измерения
+        this.person = {
+            data: [],
+            label: 'Temp = '
+        };
         /*
-        
+      
           // lineChart1
           public lineChart1Data: Array<any> = [
             {
@@ -2648,7 +2658,7 @@ var DashboardComponent = /** @class */ (function () {
                   fontSize: 2,
                   fontColor: 'transparent',
                 }
-        
+      
               }],
               yAxes: [{
                 display: false,
@@ -2681,9 +2691,9 @@ var DashboardComponent = /** @class */ (function () {
           ];
           public lineChart1Legend = false;
           public lineChart1Type = 'line';
-        
+      
         //  public premiumsO: Premium[] = [];
-        
+      
           // lineChart2
           public lineChart2Data: Array<any> = [
             {
@@ -2708,7 +2718,7 @@ var DashboardComponent = /** @class */ (function () {
                   fontSize: 2,
                   fontColor: 'transparent',
                 }
-        
+      
               }],
               yAxes: [{
                 display: false,
@@ -2742,8 +2752,8 @@ var DashboardComponent = /** @class */ (function () {
           ];
           public lineChart2Legend = false;
           public lineChart2Type = 'line';
-        
-        
+      
+      
           // lineChart3
           public lineChart3Data: Array<any> = [
             {
@@ -2788,8 +2798,8 @@ var DashboardComponent = /** @class */ (function () {
           ];
           public lineChart3Legend = false;
           public lineChart3Type = 'line';
-        
-        
+      
+      
           // barChart1
           public barChart1Data: Array<any> = [
             {
@@ -2831,25 +2841,25 @@ var DashboardComponent = /** @class */ (function () {
         this.mainChartData1 = [];
         this.mainChartData2 = [];
         this.mainChartData3 = [];
-        this.mainChartData = [
-            { data: this.count, label: 'Python Language' }
-        ];
-        /*public mainChartData: Array<any> = [
-          {
-            data: this.mainChartData1,
-            label: 'Current'
-          },
-          {
-            data: this.mainChartData2,
-            label: 'Previous'
-          },
-          {
-            data: this.mainChartData3,
-            label: 'BEP'
-          }
-        ];*/
+        /* public mainChartData: Array<any> = [
+           {data: this.count, label: 'Temp = '}
+         ];*/
+        this.mainChartData = [this.person, this.person];
+        /*public mainChartData: Array<any> = [];*/
+        /* public mainChartData: Array<any> = [
+           this.person,
+           {
+             data: this.mainChartData2,
+             label: 'Previous'
+           },
+           {
+             data: this.mainChartData3,
+             label: 'BEP'
+           }
+         ];*/
         /* tslint:disable:max-line-length */
         this.mainChartLabels = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday', 'Monday', 'Thursday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+        // public mainChartLabels: Array<any> = [{data: this.label}];
         /* tslint:enable:max-line-length */
         this.mainChartOptions = {
             tooltips: {
@@ -2873,7 +2883,7 @@ var DashboardComponent = /** @class */ (function () {
                         },
                         ticks: {
                             callback: function (value) {
-                                return value.charAt(0);
+                                return value;
                             }
                         }
                     }],
@@ -2881,8 +2891,9 @@ var DashboardComponent = /** @class */ (function () {
                         ticks: {
                             beginAtZero: true,
                             maxTicksLimit: 5,
-                            stepSize: Math.ceil(250 / 5),
-                            max: 250
+                            stepSize: Math.ceil(40 / 5),
+                            min: -40,
+                            max: 40
                         }
                     }]
             },
@@ -3007,47 +3018,121 @@ var DashboardComponent = /** @class */ (function () {
          }); */
         /* const output = this.users.map(user => user.age);
          console.log(output);
-     
+    
          this.mainChartData1 = output;*/
         console.log('After Parse:');
         // console.log(this.mainChartData1);
         //  console.log(arr);
     };
-    DashboardComponent.prototype.ngOnInit = function () {
-        // this.http.get(this.localJson3).subscribe((data: User) => this.user = data);
+    DashboardComponent.prototype.monthMode = function () {
         var _this = this;
-        this.httpService.getData4(this.httpGETAll).subscribe(function (data) {
+        console.log('MONTH MODE');
+        // Чистим все
+        this.label.splice(0, this.label.length);
+        this.count.splice(0, this.count.length);
+        this.count2.splice(0, this.count2.length); // Дневные измерения
+        // Дневные Измерения
+        this.httpService.getData4(this.httpGetMonthly4Day).subscribe(function (data) {
+            _this.statistic = data;
+            _this.statistic.forEach(function (y) {
+                _this.label.push(y.measureDate);
+                _this.count2.push(y.dayTemp);
+                _this.count3.push(y.nightTemp);
+            });
+            console.log(_this.count2);
+            console.log(_this.count3);
+            _this.mainChartData = [];
+            _this.mainChartData = [
+                {
+                    data: _this.count2,
+                    label: 'Day'
+                },
+                {
+                    data: [15, -15, 20],
+                    label: 'Night'
+                }
+            ];
+        });
+    };
+    DashboardComponent.prototype.dayMode = function () {
+        var _this = this;
+        console.log('DAY MODE');
+        this.label.splice(0, this.label.length);
+        this.count.splice(0, this.count.length);
+        this.count2.splice(0, this.count2.length); // Дневные измерения
+        this.httpService.getData4(this.httpGetToday).subscribe(function (data) {
             _this.users = data;
             console.log(data);
             _this.users.forEach(function (y) {
                 _this.year.push(y.name);
+                _this.label.push(y.timeCreated);
                 _this.count.push(y.temperature);
             });
             console.log(_this.count);
-            // this.mainChartData1 = data['userList'].map(user => user.age);
-            //  this.mainChartData5 = data;
-            //  const output = this.users.map(user => user.age);
-            //   console.log(data);
+            _this.mainChartData = [];
+            _this.mainChartData = [
+                {
+                    data: [15, 15, 47],
+                    label: 'Day'
+                },
+                {
+                    data: [15, 15, 47],
+                    label: 'Day'
+                }
+            ];
         });
-        /*const output = this.users.map(user => user.age);
-        console.log(output);
-    
-         this.mainChartData1 = output;*/
-        //  console.log('After Parse:');
-        //  console.log(this.mainChartData1);
-        /*this.mainChartData1.push(10);
-        this.mainChartData1.push(235);
-    
-        console.log(this.mainChartData1);
-    */
-        // generate random values for mainChart
-        /*for (let i = 0; i <= this.mainChartElements; i++) {
-          this.mainChartData1.push(this.random(50, 200));
-          this.mainChartData2.push(this.random(80, 100));
-          this.mainChartData3.push(65);
-        }*/
     };
-    DashboardComponent.prototype.ngAfterViewInit = function () {
+    DashboardComponent.prototype.weekMode = function () {
+        var _this = this;
+        console.log('WEEK MODE');
+        // Чистим все
+        this.label.splice(0, this.label.length);
+        this.count.splice(0, this.count.length);
+        this.count2.splice(0, this.count2.length); // Дневные измерения
+        this.count3.splice(0, this.count3.length); // Ночные измерения
+        this.httpService.getData4(this.httpGetWeekly4Day).subscribe(function (data) {
+            _this.statistic = data;
+            _this.statistic.forEach(function (y) {
+                _this.label.push(y.measureDate);
+                _this.count2.push(y.dayTemp);
+                _this.count3.push(y.nightTemp);
+            });
+            console.log(_this.count2);
+            console.log(_this.count3);
+            _this.mainChartData = [];
+            _this.mainChartData = [
+                {
+                    data: _this.count2,
+                    label: 'Day'
+                },
+                {
+                    data: _this.count3,
+                    label: 'Night'
+                }
+            ];
+        });
+    };
+    DashboardComponent.prototype.ngOnInit = function () {
+        // this.http.get(this.localJson3).subscribe((data: User) => this.user = data);
+        var _this = this;
+        /*this.httpService.getData4(this.localJson4).subscribe((data: User[]) => {
+          this.users = data;
+          console.log(data);
+          this.users.forEach(y => {
+            this.year.push(y.name);
+            this.label.push(y.timeCreated);
+            this.count.push(y.temperature);
+          });*/
+        this.httpService.getData4(this.localJson4).subscribe(function (data) {
+            _this.users = data;
+            console.log(data);
+            _this.users.forEach(function (y) {
+                _this.year.push(y.name);
+                _this.label.push(y.timeCreated);
+                _this.person.data.push(y.temperature);
+            });
+            console.log(_this.count);
+        });
     };
     DashboardComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({

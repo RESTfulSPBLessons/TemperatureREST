@@ -1,11 +1,12 @@
 package ru.reso.calclogcompare.model;
 
 import javax.persistence.*;
+import java.sql.Time;
 import java.util.Date;
 import org.hibernate.annotations.Type;
 
 @Entity
-@Table(name="temperature", schema = "arduino", catalog = "postgres")
+@Table(name="temperature_copy", schema = "arduino", catalog = "postgres")
 public class Users {
 
     @Id
@@ -21,18 +22,21 @@ public class Users {
     @Column(name="temperature")
     private Double temperature;
 
-   /* @Column(name="datecreated")
-    @Temporal(TemporalType.TIMESTAMP)
-    @Type(type="date")
-    private Date dateCreated;*/
 
-    // @Basic
     @Column(name = "datecreated", nullable = true)
-    @Temporal(TemporalType.DATE)
-    @Type(type="date")
+    @Temporal(TemporalType.TIMESTAMP)
+    // @Type(type="date")
     private Date dateCreated;
 
+    @Column(name="timecreated")
+    @Temporal(TemporalType.TIME)
+    @Type(type="time")
+    private Time timeCreated;
 
+
+    @Column(name = "test")
+    @Temporal(TemporalType.DATE)
+    private Date test;
 
 
     public Users() {
@@ -67,7 +71,6 @@ public class Users {
         this.temperature = temperature;
     }
 
-
     public Date getDateCreated() {
         return dateCreated;
     }
@@ -76,4 +79,31 @@ public class Users {
         this.dateCreated = dateCreated;
     }
 
+    public Time getTimeCreated() {
+        return timeCreated;
+    }
+
+    public void setTimeCreated(Time timeCreated) {
+        this.timeCreated = timeCreated;
+    }
+
+
+    public Date getTest() {
+        return test;
+    }
+
+    public void setTest(Date test) {
+        this.test = test;
+    }
+
+    @Override
+    public String toString() {
+        return "Users{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", temperature=" + temperature +
+                ", dateCreated=" + dateCreated +
+                ", timeCreated=" + timeCreated +
+                '}';
+    }
 }

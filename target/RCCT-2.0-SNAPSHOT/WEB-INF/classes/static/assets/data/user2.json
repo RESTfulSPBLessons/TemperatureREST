@@ -1,38 +1,34 @@
 [
   {
-    "id": 1,
-    "name": "1",
-    "temperature": 15.145,
-    "dateCreated": null
+    "id": 18,
+    "name": "Test",
+    "temperature": -10,
+    "dateCreated": 1548910374000,
+    "timeCreated": "02:00:00",
+    "test": "2019-01-31"
   },
   {
-    "id": 3,
-    "name": "4",
-    "temperature": 25.145,
-    "dateCreated": null
+    "id": 13,
+    "name": "Test",
+    "temperature": 15,
+    "dateCreated": 1548920805000,
+    "timeCreated": "08:00:00",
+    "test": "2019-01-31"
   },
   {
-    "id": 5,
-    "name": null,
-    "temperature": 22.144,
-    "dateCreated": 1541002259000
+    "id": 14,
+    "name": "Test",
+    "temperature": 18,
+    "dateCreated": 1548882000000,
+    "timeCreated": "14:00:06",
+    "test": "2019-01-31"
   },
   {
-    "id": 300,
-    "name": "from REST",
-    "temperature": 2,
-    "dateCreated": 1541004619000
-  },
-  {
-    "id": 350,
-    "name": "from REST",
-    "temperature": null,
-    "dateCreated": 1548424735000
-  },
-  {
-    "id": 400,
-    "name": "from REST",
-    "temperature": 400,
-    "dateCreated": 1548425085000
+    "id": 17,
+    "name": "Test",
+    "temperature": 0,
+    "dateCreated": 1548910330000,
+    "timeCreated": "20:00:00",
+    "test": "2019-01-31"
   }
 ]

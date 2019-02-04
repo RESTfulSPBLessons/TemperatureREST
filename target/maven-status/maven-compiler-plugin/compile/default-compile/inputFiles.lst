@@ -1,12 +1,13 @@
 C:\MY GIT\TemperatureREST\src\main\java\ru\reso\calclogcompare\controller\package-info.java
 C:\MY GIT\TemperatureREST\src\main\java\ru\reso\calclogcompare\config\package-info.java
+C:\MY GIT\TemperatureREST\src\main\java\ru\reso\calclogcompare\model\Users.java
+C:\MY GIT\TemperatureREST\src\main\java\ru\reso\calclogcompare\model\PR.java
+C:\MY GIT\TemperatureREST\src\main\java\ru\reso\calclogcompare\controller\MainRestController.java
 C:\MY GIT\TemperatureREST\src\main\java\ru\reso\calclogcompare\package-info.java
+C:\MY GIT\TemperatureREST\src\main\java\ru\reso\calclogcompare\model\DailyReport.java
 C:\MY GIT\TemperatureREST\src\main\java\ru\reso\calclogcompare\config\AppConfig.java
 C:\MY GIT\TemperatureREST\src\main\java\ru\reso\calclogcompare\repository\UsersRepository.java
-C:\MY GIT\TemperatureREST\src\main\java\ru\reso\calclogcompare\model\Users.java
 C:\MY GIT\TemperatureREST\src\main\java\ru\reso\calclogcompare\service\MainServiceImpl.java
 C:\MY GIT\TemperatureREST\src\main\java\ru\reso\calclogcompare\config\OrmConfig.java
 C:\MY GIT\TemperatureREST\src\main\java\ru\reso\calclogcompare\config\SpringWebAppInitializer.java
-C:\MY GIT\TemperatureREST\src\main\java\ru\reso\calclogcompare\model\PR.java
 C:\MY GIT\TemperatureREST\src\main\java\ru\reso\calclogcompare\service\MainService.java
-C:\MY GIT\TemperatureREST\src\main\java\ru\reso\calclogcompare\controller\MainRestController.java

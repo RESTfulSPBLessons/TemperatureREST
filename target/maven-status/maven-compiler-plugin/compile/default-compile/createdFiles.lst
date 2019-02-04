@@ -2,6 +2,7 @@ ru\reso\calclogcompare\config\AppConfig.class
 ru\reso\calclogcompare\controller\MainRestController.class
 ru\reso\calclogcompare\service\MainServiceImpl.class
 ru\reso\calclogcompare\model\PR.class
+ru\reso\calclogcompare\model\DailyReport.class
 ru\reso\calclogcompare\config\OrmConfig.class
 ru\reso\calclogcompare\model\Users.class
 ru\reso\calclogcompare\config\SpringWebAppInitializer.class

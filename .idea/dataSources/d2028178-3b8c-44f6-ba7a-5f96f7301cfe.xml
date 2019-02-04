@@ -31,8 +31,8 @@
     </schema>
     <schema id="10" parent="2" name="arduino">
       <ObjectId>41207</ObjectId>
-      <IntrospectionTimestamp>2019-01-24.19:48:25.280</IntrospectionTimestamp>
-      <IntrospectionStateNumber>1363</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2019-01-30.17:16:17.591</IntrospectionTimestamp>
+      <IntrospectionStateNumber>1458</IntrospectionStateNumber>
       <Visible>1</Visible>
     </schema>
     <sequence id="11" parent="10" name="temp_id_seq">
@@ -41,7 +41,7 @@
     </sequence>
     <table id="12" parent="10" name="temperature">
       <ObjectId>41208</ObjectId>
-      <StateNumber>1362</StateNumber>
+      <StateNumber>1458</StateNumber>
     </table>
     <routine id="13" parent="10" name="update_user_created_date">
       <ObjectId>41218</ObjectId>
@@ -71,9 +71,19 @@
     <column id="17" parent="12" name="datecreated">
       <Position>4</Position>
       <DataType>timestamp(0)|0</DataType>
-      <StateNumber>1363</StateNumber>
+      <StateNumber>1457</StateNumber>
     </column>
-    <trigger id="18" parent="12" name="update_user_date_oncreate">
+    <column id="18" parent="12" name="timecreated">
+      <Position>5</Position>
+      <DataType>time(0)|0</DataType>
+      <StateNumber>1451</StateNumber>
+    </column>
+    <column id="19" parent="12" name="test">
+      <Position>6</Position>
+      <DataType>date|0</DataType>
+      <StateNumber>1458</StateNumber>
+    </column>
+    <trigger id="20" parent="12" name="update_user_date_oncreate">
       <ObjectId>41219</ObjectId>
       <StateNumber>1362</StateNumber>
       <Turn>before-row</Turn>
@@ -81,7 +91,7 @@
       <FireMode>origin</FireMode>
       <CallRoutineId>33000</CallRoutineId>
     </trigger>
-    <argument id="19" parent="13">
+    <argument id="21" parent="13">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>trigger|0</DataType>
     </argument>

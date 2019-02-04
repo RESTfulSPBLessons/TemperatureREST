@@ -11,7 +11,11 @@ import org.springframework.web.bind.annotation.*;
 import ru.reso.calclogcompare.model.*;
 import ru.reso.calclogcompare.service.MainService;
 
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 @RestController
@@ -34,7 +38,6 @@ public class MainRestController {
         return  mainService.getAll();
     }
 
-
     @RequestMapping(method = RequestMethod.GET, path = "/v2")
     public ArrayList<String> getAll2() {
 
@@ -50,14 +53,12 @@ public class MainRestController {
 
     }
 
-
     @PostMapping("/add")
     public List<Users> newMeasure(@RequestBody PR newTemp) {
         System.out.println("we are in POST HTTP");
 
         return mainService.addMeasure(newTemp.getTemp());
     }
-
 
     @RequestMapping(method = RequestMethod.GET, path = "/test")
     public PR testPost() {
@@ -72,7 +73,57 @@ public class MainRestController {
 
     }
 
+    @GetMapping("/today")
+    public List<Users> getTodayMeasures() throws ParseException {
+        return  mainService.getTodayMeasures();
+    }
 
+    @GetMapping("/weekday")
+    public List<DailyReport> getWeeklyReport() throws ParseException {
+        return  mainService.getWeeklyDayReport();
+    }
+
+    @GetMapping("/week")
+    public List<DailyReport> getWeeklyDayNightReport() throws ParseException {
+
+        List<DailyReport> newWeeklyReport = new ArrayList<>();
+        for (DailyReport dayReport : mainService.getWeeklyDayReport()) {
+            for (DailyReport nightReport : mainService.getWeeklyNightReport()) {
+
+                if (dayReport.getMeasureDate() == dayReport.getMeasureDate()){
+                    dayReport.setNightTemp(nightReport.getNightTemp());
+                    newWeeklyReport.add(new DailyReport(dayReport.getMeasureDate(), dayReport.getDayTemp(), nightReport.getNightTemp()));
+                }
+            }
+        }
+
+        return  newWeeklyReport;
+    }
+
+
+
+    @GetMapping("/weeknight")
+    public List<DailyReport> getWeeklyNightReport() throws ParseException {
+        return  mainService.getWeeklyNightReport();
+    }
+
+    @GetMapping("/monthnight")
+    public List<DailyReport> getMonthNightReport() throws ParseException {
+        return  mainService.getMonthNightReport();
+    }
+
+
+    @GetMapping("/monthday")
+    public List<DailyReport> getMonthReport() throws ParseException {
+        return  mainService.getMonthDayReport();
+    }
+
+
+    @GetMapping("/" +
+            "")
+    public List<DailyReport> getMonthDayReport() throws ParseException {
+        return  mainService.getMonthDayReport();
+    }
 
 
 }
