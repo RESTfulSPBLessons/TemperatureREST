@@ -1,34 +1,13 @@
-[
-  {
-    "id": 18,
-    "name": "Test",
-    "temperature": -10,
-    "dateCreated": 1548910374000,
-    "timeCreated": "02:00:00",
-    "test": "2019-01-31"
-  },
-  {
-    "id": 13,
-    "name": "Test",
-    "temperature": 15,
-    "dateCreated": 1548920805000,
-    "timeCreated": "08:00:00",
-    "test": "2019-01-31"
-  },
-  {
-    "id": 14,
-    "name": "Test",
-    "temperature": 18,
-    "dateCreated": 1548882000000,
-    "timeCreated": "14:00:06",
-    "test": "2019-01-31"
-  },
-  {
-    "id": 17,
-    "name": "Test",
-    "temperature": 0,
-    "dateCreated": 1548910330000,
-    "timeCreated": "20:00:00",
-    "test": "2019-01-31"
-  }
-]
+{
+  "lastTemperature": 45,
+  "lastHumidity": 32,
+  "serverTime": "17:47:32",
+  "lastContactTime": "17:47:32",
+  "current": 220,
+  "amperage": 16,
+  "power": 30,
+  "consuming": 145,
+  "lastContactDate": "05-02-2019",
+  "acOn": true,
+  "lanOn": true
+}

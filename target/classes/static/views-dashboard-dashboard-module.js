@@ -2578,7 +2578,7 @@ var DashboardRoutingModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"animated fadeIn\">\n\n<!--  <canvas id=\"myChart\" width=\"700\" height=\"400\"></canvas>-->\n\n  <!--<canvas\n    tc-chartjs-pie\n    chart-data=\"{{mydata}}\"\n    chart-options=\"myOptions\"\n    chart-plugins=\"myPlugins\"\n    chart-click=\"onChartClick(event)\"\n  ></canvas>-->\n\n\n  <!--<div class=\"row\">\n    <div class=\"col-sm-6 col-lg-3\">\n      <div class=\"card text-white bg-primary\">\n        <div class=\"card-body pb-0\">\n          <div class=\"btn-group float-right\" dropdown>\n            <button type=\"button\" class=\"btn btn-transparent dropdown-toggle p-0\" dropdownToggle>\n              <i class=\"icon-settings\"></i>\n            </button>\n            <div class=\"dropdown-menu dropdown-menu-right\" *dropdownMenu>\n              <a class=\"dropdown-item\" href=\"#\">Action</a>\n              <a class=\"dropdown-item\" href=\"#\">Another action</a>\n              <a class=\"dropdown-item\" href=\"#\">Something else here</a>\n              <a class=\"dropdown-item\" href=\"#\">Something else here</a>\n            </div>\n          </div>\n          <div class=\"text-value\">9.823</div>\n          <div>Members online</div>\n        </div>\n        <div class=\"chart-wrapper mt-3 mx-3\" style=\"height:70px;\">\n          <canvas baseChart class=\"chart\"\n          [datasets]=\"lineChart1Data\"\n          [labels]=\"lineChart1Labels\"\n          [options]=\"lineChart1Options\"\n          [colors]=\"lineChart1Colours\"\n          [legend]=\"lineChart1Legend\"\n          [chartType]=\"lineChart1Type\"></canvas>\n        </div>\n      </div>\n    </div>&lt;!&ndash;/.col&ndash;&gt;\n    <div class=\"col-sm-6 col-lg-3\">\n      <div class=\"card text-white bg-info\">\n        <div class=\"card-body pb-0\">\n          <button type=\"button\" class=\"btn btn-transparent p-0 float-right\">\n            <i class=\"icon-location-pin\"></i>\n          </button>\n          <div class=\"text-value\">9.823</div>\n          <div>Members online</div>\n        </div>\n        <div class=\"chart-wrapper mt-3 mx-3\" style=\"height:70px;\">\n          <canvas baseChart class=\"chart\"\n          [datasets]=\"lineChart2Data\"\n          [labels]=\"lineChart2Labels\"\n          [options]=\"lineChart2Options\"\n          [colors]=\"lineChart2Colours\"\n          [legend]=\"lineChart2Legend\"\n          [chartType]=\"lineChart2Type\"></canvas>\n        </div>\n      </div>\n    </div>&lt;!&ndash;/.col&ndash;&gt;\n    <div class=\"col-sm-6 col-lg-3\">\n      <div class=\"card text-white bg-warning\">\n        <div class=\"card-body pb-0\">\n          <div class=\"btn-group float-right\" dropdown>\n            <button type=\"button\" class=\"btn btn-transparent dropdown-toggle p-0\" dropdownToggle>\n              <i class=\"icon-settings\"></i>\n            </button>\n            <div class=\"dropdown-menu dropdown-menu-right\" *dropdownMenu>\n              <a class=\"dropdown-item\" href=\"#\">Action</a>\n              <a class=\"dropdown-item\" href=\"#\">Another action</a>\n              <a class=\"dropdown-item\" href=\"#\">Something else here</a>\n            </div>\n          </div>\n          <div class=\"text-value\">9.823</div>\n          <div>Members online</div>\n        </div>\n        <div class=\"chart-wrapper mt-3\" style=\"height:70px;\">\n          <canvas baseChart class=\"chart\"\n          [datasets]=\"lineChart3Data\"\n          [labels]=\"lineChart3Labels\"\n          [options]=\"lineChart3Options\"\n          [colors]=\"lineChart3Colours\"\n          [legend]=\"lineChart3Legend\"\n          [chartType]=\"lineChart3Type\"></canvas>\n        </div>\n      </div>\n    </div>&lt;!&ndash;/.col&ndash;&gt;\n    <div class=\"col-sm-6 col-lg-3\">\n      <div class=\"card text-white bg-danger\">\n        <div class=\"card-body pb-0\">\n          <div class=\"btn-group float-right\" dropdown>\n            <button type=\"button\" class=\"btn btn-transparent dropdown-toggle p-0\" dropdownToggle>\n              <i class=\"icon-settings\"></i>\n            </button>\n            <div class=\"dropdown-menu dropdown-menu-right\" *dropdownMenu>\n              <a class=\"dropdown-item\" href=\"#\">Action</a>\n              <a class=\"dropdown-item\" href=\"#\">Another action</a>\n              <a class=\"dropdown-item\" href=\"#\">Something else here</a>\n            </div>\n          </div>\n          <div class=\"text-value\">9.823</div>\n          <div>Members online</div>\n        </div>\n        <div class=\"chart-wrapper mt-3 mx-3\" style=\"height:70px;\">\n          <canvas baseChart class=\"chart\"\n          [datasets]=\"barChart1Data\"\n          [labels]=\"barChart1Labels\"\n          [options]=\"barChart1Options\"\n          [colors]=\"barChart1Colours\"\n          [legend]=\"barChart1Legend\"\n          [chartType]=\"barChart1Type\"></canvas>\n        </div>\n      </div>\n    </div>&lt;!&ndash;/.col&ndash;&gt;\n  </div>&lt;!&ndash;/.row&ndash;&gt;-->\n  <div class=\"card\">\n    <div class=\"card-body\">\n      <div class=\"row\">\n        <div class=\"col-sm-5\">\n          <h4 class=\"card-title mb-0\">Traffic {{label}}</h4>\n\n            <button (click)=\"clickEvent()\" >OK</button>\n          <div class=\"small text-muted\">November 2017</div>\n        </div><!--/.col-->\n        <div class=\"col-sm-7 d-none d-md-block\">\n\n          <div class=\"btn-group btn-group-toggle float-right mr-3\" data-toggle=\"buttons\">\n            <label class=\"btn btn-outline-secondary\" [(ngModel)]=\"radioModel\" btnRadio=\"Day\" id=\"option1\" (click)=\"dayMode()\">Day</label>\n            <label class=\"btn btn-outline-secondary\" [(ngModel)]=\"radioModel\" btnRadio=\"Week\" id=\"option2\" (click)=\"weekMode()\">Week Day</label>\n            <label class=\"btn btn-outline-secondary\" [(ngModel)]=\"radioModel\" btnRadio=\"Month\" id=\"option3\" (click)=\"monthMode()\">Month Day</label>\n          </div>\n        </div><!--/.col-->\n      </div><!--/.row-->\n      <div class=\"chart-wrapper\" style=\"height:300px;margin-top:40px;\">\n        <canvas baseChart class=\"chart\"\n        [datasets]=\"mainChartData\"\n        [labels]=\"label\"\n        [options]=\"mainChartOptions\"\n        [colors]=\"mainChartColours\"\n        [legend]=\"mainChartLegend\"\n        [chartType]=\"mainChartType\"></canvas>\n      </div>\n    </div>\n    <div class=\"card-footer\">\n      <div class=\"row text-center\">\n        <div class=\"col-sm-12 col-md mb-sm-2 mb-0\">\n          <div class=\"text-muted\">Visits</div>\n          <strong>29.703 Users (40%)</strong>\n          <div class=\"progress progress-xs mt-2\">\n            <div class=\"progress-bar bg-success\" role=\"progressbar\" style=\"width: 40%\" aria-valuenow=\"40\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\n          </div>\n        </div>\n        <div class=\"col-sm-12 col-md mb-sm-2 mb-0\">\n          <div class=\"text-muted\">Unique</div>\n          <strong>24.093 Users (20%)</strong>\n          <div class=\"progress progress-xs mt-2\">\n            <div class=\"progress-bar bg-info\" role=\"progressbar\" style=\"width: 20%\" aria-valuenow=\"20\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\n          </div>\n        </div>\n        <div class=\"col-sm-12 col-md mb-sm-2 mb-0\">\n          <div class=\"text-muted\">Pageviews</div>\n          <strong>78.706 Views (60%)</strong>\n          <div class=\"progress progress-xs mt-2\">\n            <div class=\"progress-bar bg-warning\" role=\"progressbar\" style=\"width: 60%\" aria-valuenow=\"60\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\n          </div>\n        </div>\n        <div class=\"col-sm-12 col-md mb-sm-2 mb-0\">\n          <div class=\"text-muted\">New Users</div>\n          <strong>22.123 Users (80%)</strong>\n          <div class=\"progress progress-xs mt-2\">\n            <div class=\"progress-bar bg-danger\" role=\"progressbar\" style=\"width: 80%\" aria-valuenow=\"80\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\n          </div>\n        </div>\n        <div class=\"col-sm-12 col-md mb-sm-2 mb-0\">\n          <div class=\"text-muted\">Bounce Rate</div>\n          <strong>40.15%</strong>\n          <div class=\"progress progress-xs mt-2\">\n            <div class=\"progress-bar\" role=\"progressbar\" style=\"width: 40%\" aria-valuenow=\"40\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n  <!--/.card-->\n</div>\n"
+module.exports = "<div class=\"animated fadeIn\">\n\n\n  <!-- Статусы -->\n\n  <div class=\"row\">\n\n    <!--ЭЛЕКТРИЧЕСТВО-->\n\n    <div class=\"col-sm-6 col-md-2\">\n      <div [ngClass] = \"{'card text-white bg-success': status.acOn, 'card text-white bg-danger': !status.acOn}\">\n        <div class=\"card-body\">\n          <div class=\"h1 text-muted text-right mb-4\">\n            <i class=\"icon-energy\"></i>\n          </div>\n          <div class=\"h4 mb-0\" *ngIf=\"status.acOn\">OK</div>\n          <div class=\"h4 mb-0\" *ngIf=\"!status.acOn\">NO AC!</div>\n          <small class=\"text-muted text-uppercase font-weight-bold\" *ngIf=\"status.acOn\">{{status.current}}V | {{status.amperage}}А | {{status.power}}W </small>\n          <small class=\"text-muted text-uppercase font-weight-bold\" *ngIf=\"!status.acOn\">{{status.lastContactDate}} - {{status.lastContactTime}} </small>\n        </div>\n      </div>\n    </div><!--/.col-->\n\n    <!--СЕТЬ-->\n\n    <div class=\"col-sm-6 col-md-2\">\n      <div [ngClass] = \"{'card text-white bg-success': status.lanOn, 'card text-white bg-danger': !status.lanOn}\">\n        <div class=\"card-body\">\n          <div class=\"h1 text-muted text-right mb-4\">\n            <i class=\"icon-feed\"></i>\n          </div>\n          <div class=\"h4 mb-0\" *ngIf=\"status.lanOn\">OK</div>\n          <div class=\"h4 mb-0\" *ngIf=\"!status.lanOn\">NO LAN!</div>\n          <small class=\"text-muted text-uppercase font-weight-bold\">Network</small>\n        </div>\n      </div>\n    </div><!--/.col-->\n\n    <!--ДАТА/ВРЕМЯ СЕРВЕРА-->\n\n    <div class=\"col-sm-6 col-md-2\">\n      <div class=\"card text-white bg-info\">\n        <div class=\"card-body\">\n          <div class=\"h1 text-muted text-right mb-4\">\n            <i class=\"icon-clock \"></i>\n          </div>\n          <div class=\"h4 mb-0\">{{status.serverTime}}</div>\n          <small class=\"text-muted text-uppercase font-weight-bold\">Server Time</small>\n        </div>\n      </div>\n    </div><!--/.col-->\n\n    <!--ТЕКУЩАЯ ВЛАЖНОСТЬ-->\n\n    <div class=\"col-sm-6 col-md-2\">\n      <div [ngClass] = \"{'card text-white bg-warning': status.lastHumidity < 33, 'card text-white bg-danger': status.lastHumidity < 25, 'card text-white bg-success': status.lastHumidity > 34}\">\n        <div class=\"card-body\">\n          <div class=\"h1 text-muted text-right mb-4\">\n            <i class=\"icon-drop \"></i>\n          </div>\n          <div class=\"h4 mb-0\">{{status.lastHumidity}}%</div>\n          <small class=\"text-muted text-uppercase font-weight-bold\">Last Humididty</small>\n        </div>\n      </div>\n    </div><!--/.col-->\n\n    <!--ТЕКУЩАЯ ТЕМПЕРАТУРА-->\n\n    <div class=\"col-sm-6 col-md-2\">\n      <div [ngClass] = \"{'card text-white bg-warning': status.lastTemperature < -13, 'card text-white bg-danger': status.lastTemperature < -25, 'card text-white bg-success': status.lastTemperature > -12}\">\n        <div class=\"card-body\">\n          <div class=\"h1 text-muted text-right mb-4\">\n            <i class=\"icon-speedometer\"></i>\n          </div>\n          <div class=\"h4 mb-0\">{{status.lastTemperature}}C</div>\n          <small class=\"text-muted text-uppercase font-weight-bold\">Last Temperature</small>\n        </div>\n      </div>\n    </div><!--/.col-->\n\n\n    <div class=\"col-sm-6 col-md-2\">\n      <div class=\"card text-white bg-info\">\n        <div class=\"card-body\">\n          <div class=\"h1 text-muted text-right mb-4\">\n            <i class=\"icon-speech\"></i>\n          </div>\n          <div class=\"h4 mb-0\">972</div>\n          <small class=\"text-muted text-uppercase font-weight-bold\">Logs</small>\n\n        </div>\n      </div>\n    </div><!--/.col-->\n  </div><!--/.row-->\n\n\n <!--ОСНОВНОЙ ТЕМПЕРАТУРНЫЙ ГРАФИК -->\n\n\n  <div class=\"card\">\n    <div class=\"card-body\">\n      <div class=\"row\">\n        <div class=\"col-sm-5\">\n          <h4 class=\"card-title mb-0\">{{diagramType}}</h4>\n          <div class=\"small text-muted\">{{myDate | date: 'dd/MM/yyyy'}}</div>\n\n        </div><!--/.col-->\n        <div class=\"col-sm-7 d-none d-md-block\">\n\n          <div class=\"btn-group btn-group-toggle float-right mr-3\" data-toggle=\"buttons\">\n            <label class=\"btn btn-outline-secondary\" [(ngModel)]=\"radioModel\" btnRadio=\"Day\" id=\"option1\" (click)=\"dayMode()\">Day</label>\n            <label class=\"btn btn-outline-secondary\" [(ngModel)]=\"radioModel\" btnRadio=\"Week\" id=\"option2\" (click)=\"weekMode()\">Week Day</label>\n            <label class=\"btn btn-outline-secondary\" [(ngModel)]=\"radioModel\" btnRadio=\"Month\" id=\"option3\" (click)=\"monthMode()\">Month Day</label>\n          </div>\n        </div><!--/.col-->\n      </div><!--/.row-->\n      <div class=\"chart-wrapper\" style=\"height:300px;margin-top:40px;\">\n        <canvas baseChart class=\"chart\"\n        [datasets]=\"mainChartData\"\n        [labels]=\"label\"\n        [options]=\"mainChartOptions\"\n        [colors]=\"mainChartColours\"\n        [legend]=\"mainChartLegend\"\n        [chartType]=\"mainChartType\"></canvas>\n      </div>\n    </div>\n    <!--<div class=\"card-footer\">\n      <div class=\"row text-center\">\n        <div class=\"col-sm-12 col-md mb-sm-2 mb-0\">\n          <div class=\"text-muted\">Visits</div>\n          <strong>29.703 Users (40%)</strong>\n          <div class=\"progress progress-xs mt-2\">\n            <div class=\"progress-bar bg-success\" role=\"progressbar\" style=\"width: 40%\" aria-valuenow=\"40\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\n          </div>\n        </div>\n        <div class=\"col-sm-12 col-md mb-sm-2 mb-0\">\n          <div class=\"text-muted\">Unique</div>\n          <strong>24.093 Users (20%)</strong>\n          <div class=\"progress progress-xs mt-2\">\n            <div class=\"progress-bar bg-info\" role=\"progressbar\" style=\"width: 20%\" aria-valuenow=\"20\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\n          </div>\n        </div>\n        <div class=\"col-sm-12 col-md mb-sm-2 mb-0\">\n          <div class=\"text-muted\">Pageviews</div>\n          <strong>78.706 Views (60%)</strong>\n          <div class=\"progress progress-xs mt-2\">\n            <div class=\"progress-bar bg-warning\" role=\"progressbar\" style=\"width: 60%\" aria-valuenow=\"60\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\n          </div>\n        </div>\n        <div class=\"col-sm-12 col-md mb-sm-2 mb-0\">\n          <div class=\"text-muted\">New Users</div>\n          <strong>22.123 Users (80%)</strong>\n          <div class=\"progress progress-xs mt-2\">\n            <div class=\"progress-bar bg-danger\" role=\"progressbar\" style=\"width: 80%\" aria-valuenow=\"80\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\n          </div>\n        </div>\n        <div class=\"col-sm-12 col-md mb-sm-2 mb-0\">\n          <div class=\"text-muted\">Bounce Rate</div>\n          <strong>40.15%</strong>\n          <div class=\"progress progress-xs mt-2\">\n            <div class=\"progress-bar\" role=\"progressbar\" style=\"width: 40%\" aria-valuenow=\"40\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>-->\n  <!--/.card-->\n</div>\n"
 
 /***/ }),
 
@@ -2599,6 +2599,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _coreui_coreui_plugin_chartjs_custom_tooltips__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @coreui/coreui-plugin-chartjs-custom-tooltips */ "./node_modules/@coreui/coreui-plugin-chartjs-custom-tooltips/dist/umd/custom-tooltips.js");
 /* harmony import */ var _coreui_coreui_plugin_chartjs_custom_tooltips__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_coreui_coreui_plugin_chartjs_custom_tooltips__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _services_http_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../services/http.service */ "./src/app/services/http.service.ts");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
+
 
 
 
@@ -2621,10 +2623,15 @@ var DashboardComponent = /** @class */ (function () {
         this.httpGetWeekly4Night = 'http://localhost:8080/RCCT-2.0-SNAPSHOT/rest/users/monthnight'; // ночные за неделю
         this.httpGetMonthly4Day = 'http://localhost:8080/RCCT-2.0-SNAPSHOT/rest/users/monthday'; // месячные, дневная температуры
         this.httpGetMonthly4Night = 'http://localhost:8080/RCCT-2.0-SNAPSHOT/rest/users/monthnight'; // месячные, ночная температуры
+        this.httpGetStatus = 'http://localhost:8080/RCCT-2.0-SNAPSHOT/rest/users/status'; // Статус
         this.users = [];
         this.statistic = [];
         this.year = [];
         this.label = [];
+        this.diagramType = '';
+        this.myDate = Date.now();
+        this.today = new Date();
+        this.jstoday = '';
         this.count = [];
         this.count2 = []; // дневные недельные измерения
         this.count3 = []; // ночные недельные измерения
@@ -2632,235 +2639,206 @@ var DashboardComponent = /** @class */ (function () {
             data: [],
             label: 'Temp = '
         };
-        /*
-      
-          // lineChart1
-          public lineChart1Data: Array<any> = [
+        // lineChart1
+        this.lineChart1Data = [
             {
-              data: [65, 59, 84, 84, 51, 55, 40],
-              label: 'Series A'
+                data: [65, 59, 84, 84, 51, 55, 40],
+                label: 'Series A'
             }
-          ];
-          public lineChart1Labels: Array<any> = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
-          public lineChart1Options: any = {
+        ];
+        this.lineChart1Labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
+        this.lineChart1Options = {
             tooltips: {
-              enabled: false,
-              custom: CustomTooltips
+                enabled: false,
+                custom: _coreui_coreui_plugin_chartjs_custom_tooltips__WEBPACK_IMPORTED_MODULE_3__["CustomTooltips"]
             },
             maintainAspectRatio: false,
             scales: {
-              xAxes: [{
-                gridLines: {
-                  color: 'transparent',
-                  zeroLineColor: 'transparent'
-                },
-                ticks: {
-                  fontSize: 2,
-                  fontColor: 'transparent',
-                }
-      
-              }],
-              yAxes: [{
-                display: false,
-                ticks: {
-                  display: false,
-                  min: 40 - 5,
-                  max: 84 + 5,
-                }
-              }],
+                xAxes: [{
+                        gridLines: {
+                            color: 'transparent',
+                            zeroLineColor: 'transparent'
+                        },
+                        ticks: {
+                            fontSize: 2,
+                            fontColor: 'transparent',
+                        }
+                    }],
+                yAxes: [{
+                        display: false,
+                        ticks: {
+                            display: false,
+                            min: 40 - 5,
+                            max: 84 + 5,
+                        }
+                    }],
             },
             elements: {
-              line: {
-                borderWidth: 1
-              },
-              point: {
-                radius: 4,
-                hitRadius: 10,
-                hoverRadius: 4,
-              },
+                line: {
+                    borderWidth: 1
+                },
+                point: {
+                    radius: 4,
+                    hitRadius: 10,
+                    hoverRadius: 4,
+                },
             },
             legend: {
-              display: false
+                display: false
             }
-          };
-          public lineChart1Colours: Array<any> = [
+        };
+        this.lineChart1Colours = [
             {
-              backgroundColor: getStyle('--primary'),
-              borderColor: 'rgba(255,255,255,.55)'
+                backgroundColor: Object(_coreui_coreui_dist_js_coreui_utilities__WEBPACK_IMPORTED_MODULE_2__["getStyle"])('--primary'),
+                borderColor: 'rgba(255,255,255,.55)'
             }
-          ];
-          public lineChart1Legend = false;
-          public lineChart1Type = 'line';
-      
+        ];
+        this.lineChart1Legend = false;
+        this.lineChart1Type = 'line';
         //  public premiumsO: Premium[] = [];
-      
-          // lineChart2
-          public lineChart2Data: Array<any> = [
+        // lineChart2
+        this.lineChart2Data = [
             {
-              data: [1, 18, 9, 17, 34, 22, 11],
-              label: 'Series A'
+                data: [1, 18, 9, 17, 34, 22, 11],
+                label: 'Series A'
             }
-          ];
-          public lineChart2Labels: Array<any> = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
-          public lineChart2Options: any = {
+        ];
+        this.lineChart2Labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
+        this.lineChart2Options = {
             tooltips: {
-              enabled: false,
-              custom: CustomTooltips
+                enabled: false,
+                custom: _coreui_coreui_plugin_chartjs_custom_tooltips__WEBPACK_IMPORTED_MODULE_3__["CustomTooltips"]
             },
             maintainAspectRatio: false,
             scales: {
-              xAxes: [{
-                gridLines: {
-                  color: 'transparent',
-                  zeroLineColor: 'transparent'
+                xAxes: [{
+                        gridLines: {
+                            color: 'transparent',
+                            zeroLineColor: 'transparent'
+                        },
+                        ticks: {
+                            fontSize: 2,
+                            fontColor: 'transparent',
+                        }
+                    }],
+                yAxes: [{
+                        display: false,
+                        ticks: {
+                            display: false,
+                            min: 1 - 5,
+                            max: 34 + 5,
+                        }
+                    }],
+            },
+            elements: {
+                line: {
+                    tension: 0.00001,
+                    borderWidth: 1
                 },
-                ticks: {
-                  fontSize: 2,
-                  fontColor: 'transparent',
-                }
-      
-              }],
-              yAxes: [{
-                display: false,
-                ticks: {
-                  display: false,
-                  min: 1 - 5,
-                  max: 34 + 5,
-                }
-              }],
-            },
-            elements: {
-              line: {
-                tension: 0.00001,
-                borderWidth: 1
-              },
-              point: {
-                radius: 4,
-                hitRadius: 10,
-                hoverRadius: 4,
-              },
+                point: {
+                    radius: 4,
+                    hitRadius: 10,
+                    hoverRadius: 4,
+                },
             },
             legend: {
-              display: false
+                display: false
             }
-          };
-          public lineChart2Colours: Array<any> = [
-            { // grey
-              backgroundColor: getStyle('--info'),
-              borderColor: 'rgba(255,255,255,.55)'
-            }
-          ];
-          public lineChart2Legend = false;
-          public lineChart2Type = 'line';
-      
-      
-          // lineChart3
-          public lineChart3Data: Array<any> = [
+        };
+        this.lineChart2Colours = [
             {
-              data: [78, 81, 80, 45, 34, 12, 40],
-              label: 'Series A'
+                backgroundColor: Object(_coreui_coreui_dist_js_coreui_utilities__WEBPACK_IMPORTED_MODULE_2__["getStyle"])('--info'),
+                borderColor: 'rgba(255,255,255,.55)'
             }
-          ];
-          public lineChart3Labels: Array<any> = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
-          public lineChart3Options: any = {
+        ];
+        this.lineChart2Legend = false;
+        this.lineChart2Type = 'line';
+        // lineChart3
+        this.lineChart3Data = [
+            {
+                data: [78, 81, 80, 45, 34, 12, 40],
+                label: 'Series A'
+            }
+        ];
+        this.lineChart3Labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
+        this.lineChart3Options = {
             tooltips: {
-              enabled: false,
-              custom: CustomTooltips
+                enabled: false,
+                custom: _coreui_coreui_plugin_chartjs_custom_tooltips__WEBPACK_IMPORTED_MODULE_3__["CustomTooltips"]
             },
             maintainAspectRatio: false,
             scales: {
-              xAxes: [{
-                display: false
-              }],
-              yAxes: [{
-                display: false
-              }]
+                xAxes: [{
+                        display: false
+                    }],
+                yAxes: [{
+                        display: false
+                    }]
             },
             elements: {
-              line: {
-                borderWidth: 2
-              },
-              point: {
-                radius: 0,
-                hitRadius: 10,
-                hoverRadius: 4,
-              },
+                line: {
+                    borderWidth: 2
+                },
+                point: {
+                    radius: 0,
+                    hitRadius: 10,
+                    hoverRadius: 4,
+                },
             },
             legend: {
-              display: false
+                display: false
             }
-          };
-          public lineChart3Colours: Array<any> = [
+        };
+        this.lineChart3Colours = [
             {
-              backgroundColor: 'rgba(255,255,255,.2)',
-              borderColor: 'rgba(255,255,255,.55)',
+                backgroundColor: 'rgba(255,255,255,.2)',
+                borderColor: 'rgba(255,255,255,.55)',
             }
-          ];
-          public lineChart3Legend = false;
-          public lineChart3Type = 'line';
-      
-      
-          // barChart1
-          public barChart1Data: Array<any> = [
+        ];
+        this.lineChart3Legend = false;
+        this.lineChart3Type = 'line';
+        // barChart1
+        this.barChart1Data = [
             {
-              data: [78, 81, 80, 45, 34, 12, 40, 78, 81, 80, 45, 34, 12, 40, 12, 40],
-              label: 'Series A'
+                data: [78, 81, 80, 45, 34, 12, 40, 78, 81, 80, 45, 34, 12, 40, 12, 40],
+                label: 'Series A'
             }
-          ];
-          public barChart1Labels: Array<any> = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16'];
-          public barChart1Options: any = {
+        ];
+        this.barChart1Labels = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16'];
+        this.barChart1Options = {
             tooltips: {
-              enabled: false,
-              custom: CustomTooltips
+                enabled: false,
+                custom: _coreui_coreui_plugin_chartjs_custom_tooltips__WEBPACK_IMPORTED_MODULE_3__["CustomTooltips"]
             },
             maintainAspectRatio: false,
             scales: {
-              xAxes: [{
-                display: false,
-                barPercentage: 0.6,
-              }],
-              yAxes: [{
-                display: false
-              }]
+                xAxes: [{
+                        display: false,
+                        barPercentage: 0.6,
+                    }],
+                yAxes: [{
+                        display: false
+                    }]
             },
             legend: {
-              display: false
+                display: false
             }
-          };
-          public barChart1Colours: Array<any> = [
+        };
+        this.barChart1Colours = [
             {
-              backgroundColor: 'rgba(255,255,255,.3)',
-              borderWidth: 0
+                backgroundColor: 'rgba(255,255,255,.3)',
+                borderWidth: 0
             }
-          ];
-          public barChart1Legend = false;
-          public barChart1Type = 'bar';
-        */
+        ];
+        this.barChart1Legend = false;
+        this.barChart1Type = 'bar';
         // mainChart
         this.mainChartElements = 27;
         this.mainChartData1 = [];
         this.mainChartData2 = [];
         this.mainChartData3 = [];
-        /* public mainChartData: Array<any> = [
-           {data: this.count, label: 'Temp = '}
-         ];*/
         this.mainChartData = [this.person, this.person];
-        /*public mainChartData: Array<any> = [];*/
-        /* public mainChartData: Array<any> = [
-           this.person,
-           {
-             data: this.mainChartData2,
-             label: 'Previous'
-           },
-           {
-             data: this.mainChartData3,
-             label: 'BEP'
-           }
-         ];*/
-        /* tslint:disable:max-line-length */
         this.mainChartLabels = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday', 'Monday', 'Thursday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
-        // public mainChartLabels: Array<any> = [{data: this.label}];
-        /* tslint:enable:max-line-length */
         this.mainChartOptions = {
             tooltips: {
                 enabled: false,
@@ -2998,35 +2976,20 @@ var DashboardComponent = /** @class */ (function () {
         ];
         this.brandBoxChartLegend = false;
         this.brandBoxChartType = 'line';
+        this.jstoday = Object(_angular_common__WEBPACK_IMPORTED_MODULE_5__["formatDate"])(this.today, 'dd-MM-yyyy hh:mm:ss a', 'en-US', '+03');
     }
     DashboardComponent.prototype.random = function (min, max) {
         return Math.floor(Math.random() * (max - min + 1) + min);
     };
-    // constructor(private http: HttpClient){}
     DashboardComponent.prototype.clickEvent = function () {
         console.log(this.user);
         console.log(this.users);
-        /* const arr = this.users.map(function (user: any) {
-    
-           var localObj = [];
-          //  var i = 0;
-          //  localObj[i] = 1;
-          //  i = i+1;
-            localObj.push(user.age);
-           return localObj;
-    
-         }); */
-        /* const output = this.users.map(user => user.age);
-         console.log(output);
-    
-         this.mainChartData1 = output;*/
         console.log('After Parse:');
-        // console.log(this.mainChartData1);
-        //  console.log(arr);
     };
     DashboardComponent.prototype.monthMode = function () {
         var _this = this;
         console.log('MONTH MODE');
+        this.diagramType = 'MONTH TEMPERATURE';
         // Чистим все
         this.label.splice(0, this.label.length);
         this.count.splice(0, this.count.length);
@@ -3057,6 +3020,7 @@ var DashboardComponent = /** @class */ (function () {
     DashboardComponent.prototype.dayMode = function () {
         var _this = this;
         console.log('DAY MODE');
+        this.diagramType = 'DAY TEMPERATURE';
         this.label.splice(0, this.label.length);
         this.count.splice(0, this.count.length);
         this.count2.splice(0, this.count2.length); // Дневные измерения
@@ -3072,11 +3036,11 @@ var DashboardComponent = /** @class */ (function () {
             _this.mainChartData = [];
             _this.mainChartData = [
                 {
-                    data: [15, 15, 47],
+                    data: _this.count,
                     label: 'Day'
                 },
                 {
-                    data: [15, 15, 47],
+                    data: _this.count,
                     label: 'Day'
                 }
             ];
@@ -3085,6 +3049,7 @@ var DashboardComponent = /** @class */ (function () {
     DashboardComponent.prototype.weekMode = function () {
         var _this = this;
         console.log('WEEK MODE');
+        this.diagramType = 'WEEK TEMPERATURE';
         // Чистим все
         this.label.splice(0, this.label.length);
         this.count.splice(0, this.count.length);
@@ -3112,27 +3077,39 @@ var DashboardComponent = /** @class */ (function () {
             ];
         });
     };
-    DashboardComponent.prototype.ngOnInit = function () {
-        // this.http.get(this.localJson3).subscribe((data: User) => this.user = data);
+    DashboardComponent.prototype.getStatus = function () {
         var _this = this;
-        /*this.httpService.getData4(this.localJson4).subscribe((data: User[]) => {
-          this.users = data;
-          console.log(data);
-          this.users.forEach(y => {
-            this.year.push(y.name);
-            this.label.push(y.timeCreated);
-            this.count.push(y.temperature);
-          });*/
-        this.httpService.getData4(this.localJson4).subscribe(function (data) {
-            _this.users = data;
-            console.log(data);
-            _this.users.forEach(function (y) {
-                _this.year.push(y.name);
-                _this.label.push(y.timeCreated);
-                _this.person.data.push(y.temperature);
-            });
-            console.log(_this.count);
+        console.log('GETTING STATUS');
+        // Чистим все
+        this.label.splice(0, this.label.length);
+        this.count.splice(0, this.count.length);
+        this.count2.splice(0, this.count2.length); // Дневные измерения
+        this.count3.splice(0, this.count3.length); // Ночные измерения
+        this.httpService.getData4(this.httpGetStatus).subscribe(function (data) {
+            _this.status = data;
+            /*this.statistic.forEach(y => {
+              this.label.push(y.measureDate);
+              this.count2.push(y.dayTemp);
+              this.count3.push(y.nightTemp);
+      
+            });*/
+            console.log(_this.status);
+            /* this.mainChartData = [];
+             this.mainChartData = [
+               {
+                 data: this.count2,
+                 label: 'Day'
+               },
+               {
+                 data: this.count3,
+                 label: 'Night'
+               }
+             ];*/
         });
+    };
+    DashboardComponent.prototype.ngOnInit = function () {
+        this.dayMode();
+        this.getStatus();
     };
     DashboardComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -3168,6 +3145,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
 /* harmony import */ var _dashboard_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./dashboard.component */ "./src/app/views/dashboard/dashboard.component.ts");
 /* harmony import */ var _dashboard_routing_module__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./dashboard-routing.module */ "./src/app/views/dashboard/dashboard-routing.module.ts");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
+
 
 
 
@@ -3185,6 +3164,7 @@ var DashboardModule = /** @class */ (function () {
             imports: [
                 _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormsModule"],
                 _dashboard_routing_module__WEBPACK_IMPORTED_MODULE_8__["DashboardRoutingModule"],
+                _angular_common__WEBPACK_IMPORTED_MODULE_9__["CommonModule"],
                 ng2_charts_ng2_charts__WEBPACK_IMPORTED_MODULE_3__["ChartsModule"],
                 _angular_common_http__WEBPACK_IMPORTED_MODULE_6__["HttpClientModule"],
                 ngx_bootstrap_dropdown__WEBPACK_IMPORTED_MODULE_4__["BsDropdownModule"],
