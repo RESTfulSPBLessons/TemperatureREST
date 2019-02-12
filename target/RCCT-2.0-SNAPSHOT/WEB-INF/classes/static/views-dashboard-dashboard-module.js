@@ -2620,9 +2620,7 @@ var DashboardComponent = /** @class */ (function () {
         this.httpGETAll = 'http://localhost:8080/RCCT-2.0-SNAPSHOT/rest/users/all'; // все записи
         this.httpGetToday = 'http://localhost:8080/RCCT-2.0-SNAPSHOT/rest/users/today'; // сегодняшние измерения
         this.httpGetWeekly4Day = 'http://localhost:8080/RCCT-2.0-SNAPSHOT/rest/users/weekday'; // дневные за неделю
-        this.httpGetWeekly4Night = 'http://localhost:8080/RCCT-2.0-SNAPSHOT/rest/users/monthnight'; // ночные за неделю
         this.httpGetMonthly4Day = 'http://localhost:8080/RCCT-2.0-SNAPSHOT/rest/users/monthday'; // месячные, дневная температуры
-        this.httpGetMonthly4Night = 'http://localhost:8080/RCCT-2.0-SNAPSHOT/rest/users/monthnight'; // месячные, ночная температуры
         this.httpGetStatus = 'http://localhost:8080/RCCT-2.0-SNAPSHOT/rest/users/status'; // Статус
         this.users = [];
         this.statistic = [];
@@ -2639,63 +2637,66 @@ var DashboardComponent = /** @class */ (function () {
             data: [],
             label: 'Temp = '
         };
-        // lineChart1
-        this.lineChart1Data = [
-            {
+        /*
+            // lineChart1
+            public lineChart1Data: Array<any> = [
+              {
                 data: [65, 59, 84, 84, 51, 55, 40],
                 label: 'Series A'
-            }
-        ];
-        this.lineChart1Labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
-        this.lineChart1Options = {
-            tooltips: {
+              }
+            ];
+            public lineChart1Labels: Array<any> = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
+            public lineChart1Options: any = {
+              tooltips: {
                 enabled: false,
-                custom: _coreui_coreui_plugin_chartjs_custom_tooltips__WEBPACK_IMPORTED_MODULE_3__["CustomTooltips"]
-            },
-            maintainAspectRatio: false,
-            scales: {
+                custom: CustomTooltips
+              },
+              maintainAspectRatio: false,
+              scales: {
                 xAxes: [{
-                        gridLines: {
-                            color: 'transparent',
-                            zeroLineColor: 'transparent'
-                        },
-                        ticks: {
-                            fontSize: 2,
-                            fontColor: 'transparent',
-                        }
-                    }],
+                  gridLines: {
+                    color: 'transparent',
+                    zeroLineColor: 'transparent'
+                  },
+                  ticks: {
+                    fontSize: 2,
+                    fontColor: 'transparent',
+                  }
+        
+                }],
                 yAxes: [{
-                        display: false,
-                        ticks: {
-                            display: false,
-                            min: 40 - 5,
-                            max: 84 + 5,
-                        }
-                    }],
-            },
-            elements: {
+                  display: false,
+                  ticks: {
+                    display: false,
+                    min: 40 - 5,
+                    max: 84 + 5,
+                  }
+                }],
+              },
+              elements: {
                 line: {
-                    borderWidth: 1
+                  borderWidth: 1
                 },
                 point: {
-                    radius: 4,
-                    hitRadius: 10,
-                    hoverRadius: 4,
+                  radius: 4,
+                  hitRadius: 10,
+                  hoverRadius: 4,
                 },
-            },
-            legend: {
+              },
+              legend: {
                 display: false
-            }
-        };
-        this.lineChart1Colours = [
-            {
-                backgroundColor: Object(_coreui_coreui_dist_js_coreui_utilities__WEBPACK_IMPORTED_MODULE_2__["getStyle"])('--primary'),
+              }
+            };
+            public lineChart1Colours: Array<any> = [
+              {
+                backgroundColor: getStyle('--primary'),
                 borderColor: 'rgba(255,255,255,.55)'
-            }
-        ];
-        this.lineChart1Legend = false;
-        this.lineChart1Type = 'line';
-        //  public premiumsO: Premium[] = [];
+              }
+            ];
+            public lineChart1Legend = false;
+            public lineChart1Type = 'line';
+        
+          //  public premiumsO: Premium[] = [];*/
         // lineChart2
         this.lineChart2Data = [
             {
