@@ -51,7 +51,6 @@ public class MainRestController {
     public ResponseEntity<Void> addMeasureTomcat(@RequestBody LocalEntity measure) {
         System.out.println("Запрос на добавление прошел");
         System.out.println(measure.getTestString());
-        //return mainDao.addNewMeasure(measure).getTestString();
         HttpHeaders headers = new HttpHeaders();
         return new ResponseEntity<Void>(headers, HttpStatus.CREATED);
     }
