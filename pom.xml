@@ -98,10 +98,6 @@
         </dependency>
 
 
-
-
-
-
         <!-- Spring AOP dependency -->
         <dependency>
             <groupId>cglib</groupId>
@@ -158,11 +154,11 @@
         <!-- Hibernate library dependecy end -->
 
 
-        <dependency>
+       <!-- <dependency>
             <groupId>com.oracle</groupId>
             <artifactId>ojdbc7</artifactId>
             <version>12.1.0.2</version>
-        </dependency>
+        </dependency>-->
 
         <!-- DB Connection Pool -->
         <dependency>
