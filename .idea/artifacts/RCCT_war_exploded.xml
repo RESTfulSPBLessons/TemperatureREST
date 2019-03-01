@@ -1,6 +1,13 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="RCCT:war exploded">
     <output-path>$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>RCCT</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
@@ -45,13 +52,13 @@
           <element id="library" level="project" name="Maven: commons-logging:commons-logging:1.1.1" />
           <element id="library" level="project" name="Maven: commons-collections:commons-collections:3.2.1" />
           <element id="library" level="project" name="Maven: antlr:antlr:2.7.7" />
-          <element id="library" level="project" name="Maven: com.oracle:ojdbc7:12.1.0.2" />
           <element id="library" level="project" name="Maven: commons-dbcp:commons-dbcp:1.4" />
           <element id="library" level="project" name="Maven: commons-pool:commons-pool:1.5.4" />
           <element id="library" level="project" name="Maven: ch.qos.logback:logback-classic:0.9.24" />
           <element id="library" level="project" name="Maven: ch.qos.logback:logback-core:0.9.24" />
           <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.6.1" />
           <element id="library" level="project" name="Maven: org.slf4j:jcl-over-slf4j:1.7.2" />
+          <element id="library" level="project" name="Maven: org.postgresql:postgresql:42.2.1" />
           <element id="library" level="project" name="Maven: org.projectlombok:lombok:1.18.4" />
           <element id="library" level="project" name="Maven: javax:javaee-api:7.0" />
           <element id="library" level="project" name="Maven: com.sun.mail:javax.mail:1.5.0" />
