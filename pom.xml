@@ -340,7 +340,6 @@
             <!-- ANGULAR -->
 
             <!-- Чистим папку ресурсов сервиса-->
-
             <plugin>
                 <artifactId>maven-clean-plugin</artifactId>
                 <version>3.0.0</version>
@@ -387,7 +386,7 @@
 
             <!-- Билдим Angular-проект из Мавена -->
 
-            <plugin>
+          <!--  <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>exec-maven-plugin</artifactId>
                 <version>1.6.0</version>
@@ -398,7 +397,7 @@
                         <configuration>
                             <workingDirectory>${project.basedir}/firstng</workingDirectory>
                             <executable>npm</executable>
-                            <!--	Change npm in C:\Program Files\nodejs to _npm -->
+                            &lt;!&ndash;	Change npm in C:\Program Files\nodejs to _npm &ndash;&gt;
                             <arguments>
                                 <argument>install</argument>
                             </arguments>
@@ -413,10 +412,10 @@
                         <configuration>
                             <workingDirectory>${project.basedir}/firstng</workingDirectory>
                             <executable>ng</executable>
-                            <!-- Change ng in C:\Users\Анатолий\AppData\Roaming\npm to _ng-->
+                            &lt;!&ndash; Change ng in C:\Users\Анатолий\AppData\Roaming\npm to _ng&ndash;&gt;
                             <arguments>
                                 <argument>build</argument>
-                                <argument>--base-href</argument>
+                                <argument>&#45;&#45;base-href</argument>
                                 <argument>"/RCCT-2.0-SNAPSHOT/"</argument>
                             </arguments>
                         </configuration>
@@ -427,7 +426,7 @@
                 </executions>
             </plugin>
 
-       <!--Этот плагин копирует сбилженные дисты Ангуляра в папку ресурсов сервиса-->
+       &lt;!&ndash;Этот плагин копирует сбилженные дисты Ангуляра в папку ресурсов сервиса&ndash;&gt;
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-resources-plugin</artifactId>
@@ -450,7 +449,7 @@
                         </configuration>
                     </execution>
                 </executions>
-            </plugin>
+            </plugin>-->
         </plugins>
     </build>
 </project>

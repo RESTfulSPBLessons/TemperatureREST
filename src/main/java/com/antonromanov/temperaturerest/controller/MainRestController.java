@@ -24,6 +24,8 @@ import static com.antonromanov.temperaturerest.utils.Utils.isBetween;
 @RequestMapping("/rest/users")
 public class MainRestController {
 
+    //todo: надо прикрутить нормальные серверные логи
+
     /** Значит надо договориться, что постить мы будем в :
      *      - 02:00
      *      - 08:00
