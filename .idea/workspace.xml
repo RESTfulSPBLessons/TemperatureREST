@@ -2,180 +2,220 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="RCCT:war" />
+      <artifact name="RCCT:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="679ede9c-cfcc-4471-9502-db1259058c19" name="Default" comment="Поправил глюк: не было вообще Postgres в Maven. Но пока еще не запускается ничего...">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/RCCT_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/RCCT_war.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/RCCT_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/RCCT_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/875f53e9-90cd-4d57-aabb-8343a166ff45.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/875f53e9-90cd-4d57-aabb-8343a166ff45.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d2028178-3b8c-44f6-ba7a-5f96f7301cfe.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d2028178-3b8c-44f6-ba7a-5f96f7301cfe.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f8f23467-a00e-4c25-bb87-0c95f1c44e70.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f8f23467-a00e-4c25-bb87-0c95f1c44e70.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RCCT.iml" beforeDir="false" afterPath="$PROJECT_DIR$/RCCT.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/CONTRIBUTING.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/ISSUE_TEMPLATE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/angular.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/e2e/app.e2e-spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/e2e/app.po.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/e2e/tsconfig.e2e.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/karma.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/protractor.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/_nav.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/app.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/app.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/app.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/app.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/app.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/app.routing.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/containers/default-layout/default-layout.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/containers/default-layout/default-layout.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/containers/default-layout/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/containers/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/entities/Entity1.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/premium.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/request.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/services/Entity1Service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/services/data/test.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/services/http.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/services/test.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/temp.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/views/base/Book.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/views/base/base-routing.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/views/base/base.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/views/base/cards.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/views/base/cards.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/views/base/carousels.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/views/base/carousels.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/views/base/collapses.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/views/base/collapses.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/views/base/forms.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/views/base/forms.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/views/base/paginations.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/views/base/paginations.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/views/base/popovers.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/views/base/popovers.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/views/base/progress.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/views/base/progress.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/views/base/switches.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/views/base/switches.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/views/base/tables.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/views/base/tables.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/views/base/tabs.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/views/base/tabs.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/views/base/tooltips.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/views/base/tooltips.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/views/buttons/brand-buttons.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/views/buttons/brand-buttons.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/views/buttons/buttons-routing.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/views/buttons/buttons.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/views/buttons/buttons.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/views/buttons/buttons.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/views/buttons/dropdowns.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/views/buttons/dropdowns.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/views/buttons/dropdowns.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/views/chartjs/chartjs-routing.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/views/chartjs/chartjs.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/views/chartjs/chartjs.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/views/chartjs/chartjs.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/views/dashboard/dashboard-routing.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/views/dashboard/dashboard.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/views/dashboard/dashboard.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/views/dashboard/dashboard.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/views/dashboard/user.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/views/error/404.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/views/error/404.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/views/error/500.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/views/error/500.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/views/icons/coreui-icons.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/views/icons/coreui-icons.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/views/icons/flags.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/views/icons/flags.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/views/icons/font-awesome.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/views/icons/font-awesome.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/views/icons/icons-routing.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/views/icons/icons.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/views/icons/simple-line-icons.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/views/icons/simple-line-icons.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/views/login/login.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/views/login/login.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/views/notifications/alerts.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/views/notifications/alerts.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/views/notifications/badges.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/views/notifications/badges.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/views/notifications/modals.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/views/notifications/modals.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/views/notifications/notifications-routing.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/views/notifications/notifications.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/views/register/register.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/views/register/register.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/views/theme/colors.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/views/theme/colors.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/views/theme/theme-routing.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/views/theme/theme.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/views/theme/typography.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/views/theme/typography.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/views/widgets/widgets-routing.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/views/widgets/widgets.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/views/widgets/widgets.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/app/views/widgets/widgets.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/assets/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/assets/data/db.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/assets/data/test.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/assets/data/user.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/assets/data/user2.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/assets/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/assets/img/avatars/1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/assets/img/avatars/2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/assets/img/avatars/3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/assets/img/avatars/4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/assets/img/avatars/5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/assets/img/avatars/6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/assets/img/avatars/7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/assets/img/avatars/8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/assets/img/brand/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/assets/img/brand/sygnet.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/environments/environment.prod.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/environments/environment.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/main.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/polyfills.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/scss/_custom.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/scss/_variables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/scss/style.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/scss/vendors/_variables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/scss/vendors/chart.js/chart.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/test.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/tsconfig.app.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/tsconfig.spec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/src/typings.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/test.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstng — копия/tslint.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/database.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/database.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/classes/com/antonromanov/temperaturerest/controller/MainRestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/classes/com/antonromanov/temperaturerest/controller/MainRestController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/classes/database.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/classes/database.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/antonromanov/temperaturerest/controller/MainRestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/antonromanov/temperaturerest/controller/MainRestController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/database.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/database.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/RCCT_war.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/RCCT_war_exploded.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/checkstyleidea-libs/readme.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/875f53e9-90cd-4d57-aabb-8343a166ff45.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/875f53e9-90cd-4d57-aabb-8343a166ff45/_metadata_/metadata" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/875f53e9-90cd-4d57-aabb-8343a166ff45/_metadata_/metadata.keystream" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/875f53e9-90cd-4d57-aabb-8343a166ff45/_metadata_/metadata.keystream.len" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/875f53e9-90cd-4d57-aabb-8343a166ff45/_metadata_/metadata.len" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/875f53e9-90cd-4d57-aabb-8343a166ff45/_metadata_/metadata.values.at" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/875f53e9-90cd-4d57-aabb-8343a166ff45/_metadata_/metadata_i" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/875f53e9-90cd-4d57-aabb-8343a166ff45/_metadata_/metadata_i.len" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/875f53e9-90cd-4d57-aabb-8343a166ff45/_src_/schema/WEBAUTO.zip" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/875f53e9-90cd-4d57-aabb-8343a166ff45/storage.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d2028178-3b8c-44f6-ba7a-5f96f7301cfe.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d2028178-3b8c-44f6-ba7a-5f96f7301cfe/_metadata_/metadata" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d2028178-3b8c-44f6-ba7a-5f96f7301cfe/_metadata_/metadata.keystream" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d2028178-3b8c-44f6-ba7a-5f96f7301cfe/_metadata_/metadata.keystream.len" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d2028178-3b8c-44f6-ba7a-5f96f7301cfe/_metadata_/metadata.len" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d2028178-3b8c-44f6-ba7a-5f96f7301cfe/_metadata_/metadata.values.at" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d2028178-3b8c-44f6-ba7a-5f96f7301cfe/_metadata_/metadata_i" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d2028178-3b8c-44f6-ba7a-5f96f7301cfe/_metadata_/metadata_i.len" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d2028178-3b8c-44f6-ba7a-5f96f7301cfe/_src_/database/postgres/schema/arduino.zip" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d2028178-3b8c-44f6-ba7a-5f96f7301cfe/storage.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f8f23467-a00e-4c25-bb87-0c95f1c44e70.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f8f23467-a00e-4c25-bb87-0c95f1c44e70/_metadata_/metadata" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f8f23467-a00e-4c25-bb87-0c95f1c44e70/_metadata_/metadata.keystream" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f8f23467-a00e-4c25-bb87-0c95f1c44e70/_metadata_/metadata.keystream.len" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f8f23467-a00e-4c25-bb87-0c95f1c44e70/_metadata_/metadata.len" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f8f23467-a00e-4c25-bb87-0c95f1c44e70/_metadata_/metadata.values.at" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f8f23467-a00e-4c25-bb87-0c95f1c44e70/_metadata_/metadata_i" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f8f23467-a00e-4c25-bb87-0c95f1c44e70/_metadata_/metadata_i.len" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f8f23467-a00e-4c25-bb87-0c95f1c44e70/_src_/database/postgres/schema/public.zip" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f8f23467-a00e-4c25-bb87-0c95f1c44e70/storage.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__c3p0_c3p0_0_9_1.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__cglib_cglib_3_2_4.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_0_9_24.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_0_9_24.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_5.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_5.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_mail_javax_mail_1_5_0.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_1.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_dbcp_commons_dbcp_1_4.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_1.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_pool_commons_pool_1_5_4.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_javaee_api_7_0.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jsp_javax_servlet_jsp_api_2_3_1.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jstl_jstl_1_2.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_ant_ant_1_9_6.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_ant_ant_launcher_1_9_6.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjrt_1_8_13.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_easymock_easymock_3_3_1.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_4_0_5_Final.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_c3p0_4_0_1_Final.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_4_3_6_Final.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_entitymanager_4_3_6_Final.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_0_Final.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_18_2_GA.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_1_1_0_Final.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_1_3_GA.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_annotations_1_2_0_Beta1.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_spec_javax_transaction_jboss_transaction_api_1_2_spec_1_0_0_Final.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_1.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_1.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_postgresql_postgresql_42_2_1.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_4.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_2.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_6_1.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_1_13_12_RELEASE.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_1_11_12_RELEASE.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_0_0_RELEASE.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_0_0_RELEASE.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_0_0_RELEASE.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_5_0_0_RELEASE.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_0_0_RELEASE.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_0_0_RELEASE.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_0_0_RELEASE.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_0_0_RELEASE.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_5_0_0_RELEASE.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_0_0_RELEASE.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_0_0_RELEASE.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_0_0_RELEASE.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_0_0_RELEASE.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_0_b2.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/typescript-compiler.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/RCCT.iml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/spring-jpa-hibernate-ar.iml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT.war" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/META-INF/MANIFEST.MF" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/classes/checkstyle.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/classes/com/antonromanov/temperaturerest/config/AppConfig.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/classes/com/antonromanov/temperaturerest/config/OrmConfig.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/classes/com/antonromanov/temperaturerest/config/SpringWebAppInitializer.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/classes/com/antonromanov/temperaturerest/controller/MainRestController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/classes/com/antonromanov/temperaturerest/livecontrolthread/IsAliveController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/classes/com/antonromanov/temperaturerest/livecontrolthread/MainParameters.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/classes/com/antonromanov/temperaturerest/livecontrolthread/ThreadManager.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/classes/com/antonromanov/temperaturerest/model/DailyReport.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/classes/com/antonromanov/temperaturerest/model/Logs.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/classes/com/antonromanov/temperaturerest/model/PR.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/classes/com/antonromanov/temperaturerest/model/Status.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/classes/com/antonromanov/temperaturerest/model/Temperature.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/classes/com/antonromanov/temperaturerest/repository/LogsRepository.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/classes/com/antonromanov/temperaturerest/repository/TemperatureRepository.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/classes/com/antonromanov/temperaturerest/service/MainService.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/classes/com/antonromanov/temperaturerest/service/MainServiceImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/classes/com/antonromanov/temperaturerest/utils/Utils.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/classes/database.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/activation-1.1.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/ant-1.9.6.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/ant-launcher-1.9.6.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/antlr-2.7.7.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/asm-5.1.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/aspectjrt-1.8.13.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/c3p0-0.9.1.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/cglib-3.2.4.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/commons-collections-3.2.1.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/commons-dbcp-1.4.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/commons-logging-1.1.1.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/commons-pool-1.5.4.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/dom4j-1.6.1.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/easymock-3.3.1.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/hibernate-c3p0-4.0.1.Final.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/hibernate-commons-annotations-4.0.5.Final.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/hibernate-core-4.3.6.Final.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/hibernate-entitymanager-4.3.6.Final.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/hibernate-jpa-2.1-api-1.0.0.Final.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/jackson-annotations-2.9.0.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/jackson-core-2.9.5.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/jackson-databind-2.9.5.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/jandex-1.1.0.Final.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/javaee-api-7.0.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/javassist-3.18.2-GA.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/javax.mail-1.5.0.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/jboss-logging-3.1.3.GA.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/jboss-logging-annotations-1.2.0.Beta1.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/jboss-transaction-api_1.2_spec-1.0.0.Final.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/jcl-over-slf4j-1.7.2.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/jstl-1.2.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/logback-classic-0.9.24.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/logback-core-0.9.24.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/lombok-1.18.4.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/objenesis-2.1.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/postgresql-42.2.1.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/slf4j-api-1.6.1.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/spring-aop-5.0.0.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/spring-beans-5.0.0.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/spring-context-5.0.0.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/spring-context-support-5.0.0.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/spring-core-5.0.0.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/spring-data-commons-1.13.12.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/spring-data-jpa-1.11.12.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/spring-expression-5.0.0.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/spring-jcl-5.0.0.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/spring-jdbc-5.0.0.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/spring-orm-5.0.0.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/spring-tx-5.0.0.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/spring-web-5.0.0.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/spring-webmvc-5.0.0.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/xml-apis-1.0.b2.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/views/UserList.jsp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/views/_old_index.jsp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/views/index.jsp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/checkstyle.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/antonromanov/temperaturerest/config/AppConfig.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/antonromanov/temperaturerest/config/OrmConfig.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/antonromanov/temperaturerest/config/SpringWebAppInitializer.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/antonromanov/temperaturerest/controller/MainRestController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/antonromanov/temperaturerest/livecontrolthread/MainParameters.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/antonromanov/temperaturerest/livecontrolthread/ThreadManager.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/antonromanov/temperaturerest/model/DailyReport.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/antonromanov/temperaturerest/model/Logs.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/antonromanov/temperaturerest/model/PR.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/antonromanov/temperaturerest/model/Status.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/antonromanov/temperaturerest/model/Temperature.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/antonromanov/temperaturerest/repository/LogsRepository.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/antonromanov/temperaturerest/repository/TemperatureRepository.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/antonromanov/temperaturerest/service/MainService.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/antonromanov/temperaturerest/service/MainServiceImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/antonromanov/temperaturerest/utils/Utils.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/database.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path=".idea/dataSources.local.xml" />
+    <ignored path="C:\GIT\TemperatureREST\.idea\shelf/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -233,13 +273,17 @@
     </expand>
     <select />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="spring-jpa-hibernate-ar" />
+  </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+    <leaf>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-5844">
-              <caret line="92" column="41" selection-start-line="92" selection-start-column="41" selection-end-line="92" selection-end-column="41" />
+            <state relative-caret-position="147">
+              <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -277,10 +321,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/ru/antonromanov/springhibernate/model/Premium.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/reso/springhibernate/model/Premium.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/reso/calclogcompare/DAO/PremiumDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/reso/calclogcompare/DAO/PremiumDAO.java" />
@@ -292,6 +340,7 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/ru/reso/calclogcompare/controller/TestController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/antonromanov/pf/springjpahibernatear/SpringJpaHibernateArApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/database.properties" />
         <option value="$PROJECT_DIR$/src/main/java/ru/reso/calclogcompare/config/SpringWebAppInitializer.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/reso/calclogcompare/config/OrmConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/reso/calclogcompare/model/PR.java" />
@@ -328,18 +377,24 @@
         <option value="$PROJECT_DIR$/src/main/java/com/antonromanov/temperaturerest/utils/Utils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/antonromanov/temperaturerest/service/MainServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/antonromanov/temperaturerest/model/Temperature.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/antonromanov/temperaturerest/controller/MainRestController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/database.properties" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/antonromanov/temperaturerest/controller/MainRestController.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsFlowSettings">
     <service-enabled>false</service-enabled>
     <exe-path />
     <annotation-enable>false</annotation-enable>
     <other-services-enabled>false</other-services-enabled>
     <auto-save>true</auto-save>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -362,117 +417,64 @@
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="RCCT" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="RCCT" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
-        </path>
       </expand>
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="width" value="1382" />
+    <option name="height" value="784" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="TemperatureREST" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-jpa-hibernate-ar" type="b2602c69:ProjectViewProjectNode" />
               <item name="TemperatureREST" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TemperatureREST" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TemperatureREST" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TemperatureREST" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TemperatureREST" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TemperatureREST" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TemperatureREST" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TemperatureREST" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TemperatureREST" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="temperaturerest" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TemperatureREST" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TemperatureREST" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="temperaturerest" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TemperatureREST" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TemperatureREST" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TemperatureREST" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TemperatureREST" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TemperatureREST" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TemperatureREST" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551712273881" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551447077999" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="PostgreSQL&#10;Oracle" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$2/SQL Dialects" value="PostgreSQL" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="editor.config.ad.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="recentsLimit" value="5" />
-    <property name="settings.editor.selected.configurable" value="database.main" />
-    <property name="ts.external.directory.path" value="C:\CODING\GIT\TemperatureREST\firstng\node_modules\typescript\lib" />
+    <property name="restartRequiresConfirmation" value="true" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -504,33 +506,44 @@
     </option>
   </component>
   <component name="RunManager" selected="GlassFish Server.Unnamed">
-    <configuration default="true" type="Applet">
-      <option name="HEIGHT" value="0" />
+    <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <option name="WIDTH" value="0" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+      <option name="HEIGHT" value="0" />
+      <module />
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.antonromanov.springhibernate.Main" />
-      <module name="FirstSPRINGJDBC" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
+      <extension name="coverage" enabled="false" merge="false" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.antonromanov.springhibernate.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+      <option name="MAIN_CLASS_NAME" value="com.antonromanov.springhibernate.Main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="FirstSPRINGJDBC" />
+      <envs />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
     </configuration>
     <configuration name="GlassFish 4.0.0" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 4.0.0" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
@@ -547,7 +560,8 @@
         <option name="USERNAME" value="admin" />
         <option name="PASSWORD" value="1741" />
       </server-settings>
-      <predefined_log_file enabled="true" id="GlassFish" />
+      <predefined_log_file id="GlassFish" enabled="true" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <RunnerSettings RunnerId="Debug">
         <option name="DEBUG_PORT" value="9009" />
       </RunnerSettings>
@@ -596,18 +610,17 @@
           <option name="PROGRAM_PARAMETERS" value="" />
         </SHUTDOWN>
       </ConfigurationWrapper>
-      <method v="2">
-        <option name="Make" enabled="true" />
+      <method>
         <option name="BuildArtifacts" enabled="true">
           <artifact name="RCCT:war exploded" />
         </option>
       </method>
     </configuration>
-    <configuration name="Unnamed" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 4.0.0" ALTERNATIVE_JRE_ENABLED="false">
+    <configuration name="Unnamed" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 4" ALTERNATIVE_JRE_ENABLED="false" ALTERNATIVE_JRE_PATH="">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/RCCT-2/" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="RCCT:war">
+        <artifact name="RCCT:war exploded">
           <settings />
         </artifact>
       </deployment>
@@ -619,7 +632,8 @@
         <option name="USERNAME" value="admin" />
         <option name="PASSWORD" value="1741" />
       </server-settings>
-      <predefined_log_file enabled="true" id="GlassFish" />
+      <predefined_log_file id="GlassFish" enabled="true" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <RunnerSettings RunnerId="Debug">
         <option name="DEBUG_PORT" value="9009" />
       </RunnerSettings>
@@ -668,95 +682,158 @@
           <option name="PROGRAM_PARAMETERS" value="" />
         </SHUTDOWN>
       </ConfigurationWrapper>
-      <method v="2">
-        <option name="Make" enabled="true" />
+      <method>
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="RCCT:war" />
+          <artifact name="RCCT:war exploded" />
         </option>
       </method>
     </configuration>
     <configuration name="DaoTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="FirstSPRINGJDBC" />
-      <extension name="coverage">
+      <extension name="coverage" enabled="false" merge="false" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.antonromanov.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <module name="FirstSPRINGJDBC" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.antonromanov" />
       <option name="MAIN_CLASS_NAME" value="com.antonromanov.DaoTests" />
+      <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
     </configuration>
     <configuration name="PremiumServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="FirstSPRINGJDBC" />
-      <extension name="coverage">
+      <extension name="coverage" enabled="false" merge="false" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.antonromanov.serice.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <module name="FirstSPRINGJDBC" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.antonromanov.serice" />
       <option name="MAIN_CLASS_NAME" value="com.antonromanov.serice.PremiumServiceImplTest" />
+      <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
     </configuration>
     <configuration name="SpringJpaHibernateArApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="RCCT" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.antonromanov.pf.springjpahibernatear.SpringJpaHibernateArApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+      <module name="RCCT" />
+      <envs />
     </configuration>
-    <configuration default="true" type="TestNG">
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
       <properties />
       <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
     </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
       <option name="PROGRAM_PARAMETERS" />
-      <predefined_log_file enabled="true" id="idea.log" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+      <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
-    <list>
-      <item itemvalue="Application.Main" />
-      <item itemvalue="GlassFish Server.GlassFish 4.0.0" />
-      <item itemvalue="GlassFish Server.Unnamed" />
-      <item itemvalue="JUnit.DaoTests" />
-      <item itemvalue="JUnit.PremiumServiceImplTest" />
-      <item itemvalue="Spring Boot.SpringJpaHibernateArApplication" />
+    <configuration default="true" type="GlassfishConfiguration" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
+      <deployment />
+      <server-settings>
+        <option name="DOMAIN" value="" />
+        <option name="PRESERVE" value="false" />
+        <option name="VIRTUAL_SERVER" />
+        <option name="USERNAME" value="admin" />
+        <option name="PASSWORD" value="" />
+      </server-settings>
+      <predefined_log_file id="GlassFish" enabled="true" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <method />
+    </configuration>
+    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <list size="6">
+      <item index="0" class="java.lang.String" itemvalue="GlassFish Server.GlassFish 4.0.0" />
+      <item index="1" class="java.lang.String" itemvalue="GlassFish Server.Unnamed" />
+      <item index="2" class="java.lang.String" itemvalue="Spring Boot.SpringJpaHibernateArApplication" />
+      <item index="3" class="java.lang.String" itemvalue="Application.Main" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.DaoTests" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.PremiumServiceImplTest" />
     </list>
     <recent_temporary>
-      <list>
-        <item itemvalue="JUnit.PremiumServiceImplTest" />
-        <item itemvalue="JUnit.DaoTests" />
-        <item itemvalue="Application.Main" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.PremiumServiceImplTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.DaoTests" />
+        <item index="2" class="java.lang.String" itemvalue="Application.Main" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -802,8 +879,8 @@
       <workItem from="1551446034185" duration="1102000" />
       <workItem from="1551613173070" duration="604000" />
       <workItem from="1551614656500" duration="1570000" />
-      <workItem from="1551703220316" duration="998000" />
-      <workItem from="1551710847759" duration="1425000" />
+      <workItem from="1551730791959" duration="419000" />
+      <workItem from="1551731845940" duration="512000" />
     </task>
     <servers />
   </component>
@@ -840,7 +917,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="266324000" />
+    <option name="totallyTimeSpent" value="264180000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -852,52 +929,75 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21908316" />
-      <window_info id="Structure" order="1" weight="0.25" />
-      <window_info id="Persistence" order="2" side_tool="true" />
-      <window_info id="Designer" order="3" />
-      <window_info id="Image Layers" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Web" order="6" side_tool="true" />
-      <window_info id="Favorites" order="7" side_tool="true" />
-      <window_info id="Capture Tool" order="8" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49520257" visible="true" weight="0.44777778" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.3297546" />
-      <window_info anchor="bottom" id="Spring" order="8" />
-      <window_info anchor="bottom" id="TypeScript" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4989339" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50479746" side_tool="true" weight="0.44777778" />
-      <window_info anchor="bottom" id="Java Enterprise" order="12" />
-      <window_info anchor="bottom" id="Version Control" order="13" weight="0.6388889" />
-      <window_info anchor="bottom" id="Messages" order="14" />
-      <window_info anchor="bottom" id="TypeScript Compiler" order="15" />
-      <window_info anchor="bottom" id="Docker" order="16" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="17" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="JSF" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="CDI" order="6" />
-      <window_info anchor="right" id="Maven Projects" order="7" visible="true" weight="0.22163388" />
-      <window_info anchor="right" id="Database" order="8" />
-      <window_info anchor="right" id="Palette&#9;" order="9" />
-      <window_info anchor="right" id="Theme Preview" order="10" />
-      <window_info anchor="right" id="Bean Validation" order="11" />
-      <window_info anchor="right" id="Maven" order="12" visible="true" weight="0.1433902" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297546" sideWeight="0.5045386" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297546" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22163388" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.7622699" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.78220856" sideWeight="0.4969743" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297546" sideWeight="0.49546143" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25718608" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="TypeScript Compiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -907,6 +1007,9 @@
       <collection />
     </option>
   </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
       <path value="$PROJECT_DIR$/firstng" />
@@ -915,6 +1018,7 @@
     <option name="LAST_COMMIT_MESSAGE" value="Поправил глюк: не было вообще Postgres в Maven. Но пока еще не запускается ничего..." />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager />
     <watches-manager>
       <configuration name="GlassfishConfiguration">
         <watch expression="mainService" />
@@ -933,186 +1037,168 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="176" column="27" lean-forward="false" selection-start-line="176" selection-start-column="27" selection-end-line="176" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/database.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/database.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="11" column="20" lean-forward="false" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/antonromanov/temperaturerest/config/OrmConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="22" column="3" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="3" />
+        <state relative-caret-position="0">
+          <caret line="22" column="3" lean-forward="false" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/antonromanov/temperaturerest/config/AppConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+        <state relative-caret-position="0">
+          <caret line="3" column="7" lean-forward="false" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/antonromanov/temperaturerest/config/SpringWebAppInitializer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="37" column="11" selection-start-line="37" selection-start-column="11" selection-end-line="37" selection-end-column="11" />
+        <state relative-caret-position="0">
+          <caret line="37" column="11" lean-forward="false" selection-start-line="37" selection-start-column="11" selection-end-line="37" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/antonromanov/temperaturerest/livecontrolthread/ThreadManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="55" column="5" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
+        <state relative-caret-position="0">
+          <caret line="55" column="5" lean-forward="false" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/antonromanov/temperaturerest/livecontrolthread/IsAliveController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="115" column="38" selection-start-line="115" selection-start-column="38" selection-end-line="115" selection-end-column="38" />
+        <state relative-caret-position="0">
+          <caret line="115" column="38" lean-forward="false" selection-start-line="115" selection-start-column="38" selection-end-line="115" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/antonromanov/temperaturerest/model/DailyReport.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+        <state relative-caret-position="0">
+          <caret line="8" column="3" lean-forward="false" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/antonromanov/temperaturerest/model/Logs.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="9" column="56" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
+        <state relative-caret-position="0">
+          <caret line="9" column="56" lean-forward="false" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/antonromanov/temperaturerest/model/PR.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="0">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/antonromanov/temperaturerest/model/Status.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="89" column="47" selection-start-line="89" selection-start-column="47" selection-end-line="89" selection-end-column="47" />
+        <state relative-caret-position="0">
+          <caret line="89" column="47" lean-forward="false" selection-start-line="89" selection-start-column="47" selection-end-line="89" selection-end-column="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/antonromanov/temperaturerest/repository/LogsRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        <state relative-caret-position="0">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/antonromanov/temperaturerest/utils/Utils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="72" column="44" selection-start-line="72" selection-start-column="44" selection-end-line="72" selection-end-column="44" />
+        <state relative-caret-position="0">
+          <caret line="72" column="44" lean-forward="false" selection-start-line="72" selection-start-column="44" selection-end-line="72" selection-end-column="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/antonromanov/temperaturerest/livecontrolthread/MainParameters.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="9" column="28" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/checkstyle.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/database.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/antonromanov/temperaturerest/controller/MainRestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="26" column="25" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
-          <folding>
-            <element signature="method#getAll#0;class#MainRestController#0" />
-            <element signature="method#newMeasure#0;class#MainRestController#0" />
-            <element signature="method#addMeasure#0;class#MainRestController#0" />
-            <element signature="method#getTodayMeasures#0;class#MainRestController#0" />
-            <element signature="method#getWeeklyReport#0;class#MainRestController#0" />
-            <element signature="method#getMonthReport#0;class#MainRestController#0" />
-            <element signature="method#getStatus#0;class#MainRestController#0" />
-            <element signature="method#addLog#0;class#MainRestController#0" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="9" column="28" lean-forward="false" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/antonromanov/temperaturerest/service/MainServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1581">
-          <caret line="225" column="14" selection-start-line="225" selection-start-column="14" selection-end-line="225" selection-end-column="14" />
-          <folding>
-            <element signature="docComment;method#getAll#0;class#MainServiceImpl#0" />
-            <element signature="docComment;method#getAllLogs#0;class#MainServiceImpl#0" />
-            <element signature="docComment;method#addMeasure#0;class#MainServiceImpl#0" />
-            <element signature="method#addMeasure#0;class#MainServiceImpl#0" />
-            <element signature="docComment;method#addNewMeasure#0;class#MainServiceImpl#0" />
-            <element signature="method#addNewMeasure#0;class#MainServiceImpl#0" />
-            <element signature="method#getTodayMeasures#0;class#MainServiceImpl#0" />
-            <element signature="method#getWeeklyDayReport#0;class#MainServiceImpl#0" />
-            <element signature="method#getMonthDayReport#0;class#MainServiceImpl#0" />
-            <element signature="method#getGlobalStatus#0;class#MainServiceImpl#0" />
-            <element signature="method#getLastContactTime#0;class#MainServiceImpl#0" />
-            <element signature="method#addLog#0;class#MainServiceImpl#0" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="225" column="14" lean-forward="false" selection-start-line="225" selection-start-column="14" selection-end-line="225" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/antonromanov/temperaturerest/service/MainService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="13" column="30" lean-forward="false" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/antonromanov/temperaturerest/model/Temperature.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#Temperature#1;class#Temperature#0" />
-            <element signature="method#toString#0;class#Temperature#0" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="9" column="2" lean-forward="false" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/antonromanov/temperaturerest/repository/TemperatureRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="15" column="38" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="38" />
+        <state relative-caret-position="0">
+          <caret line="15" column="38" lean-forward="false" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/firstng/dist/index.html">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/database.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="15" lean-forward="true" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
+        <state relative-caret-position="0">
+          <caret line="11" column="20" lean-forward="false" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5844">
-          <caret line="92" column="41" selection-start-line="92" selection-start-column="41" selection-end-line="92" selection-end-column="41" />
+        <state relative-caret-position="0">
+          <caret line="176" column="27" lean-forward="false" selection-start-line="176" selection-start-column="27" selection-end-line="176" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/antonromanov/temperaturerest/controller/MainRestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
