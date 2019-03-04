@@ -6,210 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="679ede9c-cfcc-4471-9502-db1259058c19" name="Default" comment="Поправил глюк: не было вообще Postgres в Maven. Но пока еще не запускается ничего...">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/RCCT_war.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/RCCT_war_exploded.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/checkstyleidea-libs/readme.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/875f53e9-90cd-4d57-aabb-8343a166ff45.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/875f53e9-90cd-4d57-aabb-8343a166ff45/_metadata_/metadata" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/875f53e9-90cd-4d57-aabb-8343a166ff45/_metadata_/metadata.keystream" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/875f53e9-90cd-4d57-aabb-8343a166ff45/_metadata_/metadata.keystream.len" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/875f53e9-90cd-4d57-aabb-8343a166ff45/_metadata_/metadata.len" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/875f53e9-90cd-4d57-aabb-8343a166ff45/_metadata_/metadata.values.at" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/875f53e9-90cd-4d57-aabb-8343a166ff45/_metadata_/metadata_i" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/875f53e9-90cd-4d57-aabb-8343a166ff45/_metadata_/metadata_i.len" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/875f53e9-90cd-4d57-aabb-8343a166ff45/_src_/schema/WEBAUTO.zip" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/875f53e9-90cd-4d57-aabb-8343a166ff45/storage.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d2028178-3b8c-44f6-ba7a-5f96f7301cfe.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d2028178-3b8c-44f6-ba7a-5f96f7301cfe/_metadata_/metadata" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d2028178-3b8c-44f6-ba7a-5f96f7301cfe/_metadata_/metadata.keystream" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d2028178-3b8c-44f6-ba7a-5f96f7301cfe/_metadata_/metadata.keystream.len" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d2028178-3b8c-44f6-ba7a-5f96f7301cfe/_metadata_/metadata.len" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d2028178-3b8c-44f6-ba7a-5f96f7301cfe/_metadata_/metadata.values.at" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d2028178-3b8c-44f6-ba7a-5f96f7301cfe/_metadata_/metadata_i" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d2028178-3b8c-44f6-ba7a-5f96f7301cfe/_metadata_/metadata_i.len" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d2028178-3b8c-44f6-ba7a-5f96f7301cfe/_src_/database/postgres/schema/arduino.zip" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d2028178-3b8c-44f6-ba7a-5f96f7301cfe/storage.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f8f23467-a00e-4c25-bb87-0c95f1c44e70.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f8f23467-a00e-4c25-bb87-0c95f1c44e70/_metadata_/metadata" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f8f23467-a00e-4c25-bb87-0c95f1c44e70/_metadata_/metadata.keystream" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f8f23467-a00e-4c25-bb87-0c95f1c44e70/_metadata_/metadata.keystream.len" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f8f23467-a00e-4c25-bb87-0c95f1c44e70/_metadata_/metadata.len" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f8f23467-a00e-4c25-bb87-0c95f1c44e70/_metadata_/metadata.values.at" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f8f23467-a00e-4c25-bb87-0c95f1c44e70/_metadata_/metadata_i" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f8f23467-a00e-4c25-bb87-0c95f1c44e70/_metadata_/metadata_i.len" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f8f23467-a00e-4c25-bb87-0c95f1c44e70/_src_/database/postgres/schema/public.zip" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f8f23467-a00e-4c25-bb87-0c95f1c44e70/storage.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__c3p0_c3p0_0_9_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__cglib_cglib_3_2_4.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_0_9_24.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_0_9_24.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_5.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_5.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_mail_javax_mail_1_5_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_dbcp_commons_dbcp_1_4.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_pool_commons_pool_1_5_4.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_javaee_api_7_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jsp_javax_servlet_jsp_api_2_3_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jstl_jstl_1_2.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_ant_ant_1_9_6.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_ant_ant_launcher_1_9_6.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjrt_1_8_13.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_easymock_easymock_3_3_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_4_0_5_Final.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_c3p0_4_0_1_Final.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_4_3_6_Final.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_entitymanager_4_3_6_Final.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_0_Final.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_18_2_GA.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_1_1_0_Final.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_1_3_GA.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_annotations_1_2_0_Beta1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_spec_javax_transaction_jboss_transaction_api_1_2_spec_1_0_0_Final.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_postgresql_postgresql_42_2_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_4.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_2.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_6_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_1_13_12_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_1_11_12_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_0_0_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_0_0_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_0_0_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_5_0_0_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_0_0_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_0_0_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_0_0_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_0_0_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_5_0_0_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_0_0_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_0_0_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_0_0_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_0_0_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_0_b2.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/typescript-compiler.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/RCCT.iml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-jpa-hibernate-ar.iml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT.war" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/META-INF/MANIFEST.MF" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/classes/checkstyle.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/classes/com/antonromanov/temperaturerest/config/AppConfig.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/classes/com/antonromanov/temperaturerest/config/OrmConfig.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/classes/com/antonromanov/temperaturerest/config/SpringWebAppInitializer.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/classes/com/antonromanov/temperaturerest/controller/MainRestController.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/classes/com/antonromanov/temperaturerest/livecontrolthread/IsAliveController.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/classes/com/antonromanov/temperaturerest/livecontrolthread/MainParameters.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/classes/com/antonromanov/temperaturerest/livecontrolthread/ThreadManager.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/classes/com/antonromanov/temperaturerest/model/DailyReport.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/classes/com/antonromanov/temperaturerest/model/Logs.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/classes/com/antonromanov/temperaturerest/model/PR.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/classes/com/antonromanov/temperaturerest/model/Status.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/classes/com/antonromanov/temperaturerest/model/Temperature.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/classes/com/antonromanov/temperaturerest/repository/LogsRepository.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/classes/com/antonromanov/temperaturerest/repository/TemperatureRepository.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/classes/com/antonromanov/temperaturerest/service/MainService.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/classes/com/antonromanov/temperaturerest/service/MainServiceImpl.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/classes/com/antonromanov/temperaturerest/utils/Utils.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/classes/database.properties" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/activation-1.1.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/ant-1.9.6.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/ant-launcher-1.9.6.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/antlr-2.7.7.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/asm-5.1.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/aspectjrt-1.8.13.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/c3p0-0.9.1.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/cglib-3.2.4.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/commons-collections-3.2.1.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/commons-dbcp-1.4.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/commons-logging-1.1.1.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/commons-pool-1.5.4.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/dom4j-1.6.1.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/easymock-3.3.1.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/hibernate-c3p0-4.0.1.Final.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/hibernate-commons-annotations-4.0.5.Final.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/hibernate-core-4.3.6.Final.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/hibernate-entitymanager-4.3.6.Final.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/hibernate-jpa-2.1-api-1.0.0.Final.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/jackson-annotations-2.9.0.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/jackson-core-2.9.5.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/jackson-databind-2.9.5.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/jandex-1.1.0.Final.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/javaee-api-7.0.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/javassist-3.18.2-GA.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/javax.mail-1.5.0.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/jboss-logging-3.1.3.GA.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/jboss-logging-annotations-1.2.0.Beta1.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/jboss-transaction-api_1.2_spec-1.0.0.Final.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/jcl-over-slf4j-1.7.2.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/jstl-1.2.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/logback-classic-0.9.24.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/logback-core-0.9.24.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/lombok-1.18.4.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/objenesis-2.1.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/postgresql-42.2.1.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/slf4j-api-1.6.1.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/spring-aop-5.0.0.RELEASE.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/spring-beans-5.0.0.RELEASE.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/spring-context-5.0.0.RELEASE.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/spring-context-support-5.0.0.RELEASE.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/spring-core-5.0.0.RELEASE.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/spring-data-commons-1.13.12.RELEASE.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/spring-data-jpa-1.11.12.RELEASE.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/spring-expression-5.0.0.RELEASE.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/spring-jcl-5.0.0.RELEASE.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/spring-jdbc-5.0.0.RELEASE.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/spring-orm-5.0.0.RELEASE.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/spring-tx-5.0.0.RELEASE.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/spring-web-5.0.0.RELEASE.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/spring-webmvc-5.0.0.RELEASE.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/lib/xml-apis-1.0.b2.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/views/UserList.jsp" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/views/_old_index.jsp" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/RCCT-2.0-SNAPSHOT/WEB-INF/views/index.jsp" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/checkstyle.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/antonromanov/temperaturerest/config/AppConfig.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/antonromanov/temperaturerest/config/OrmConfig.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/antonromanov/temperaturerest/config/SpringWebAppInitializer.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/antonromanov/temperaturerest/controller/MainRestController.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/antonromanov/temperaturerest/livecontrolthread/MainParameters.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/antonromanov/temperaturerest/livecontrolthread/ThreadManager.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/antonromanov/temperaturerest/model/DailyReport.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/antonromanov/temperaturerest/model/Logs.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/antonromanov/temperaturerest/model/PR.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/antonromanov/temperaturerest/model/Status.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/antonromanov/temperaturerest/model/Temperature.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/antonromanov/temperaturerest/repository/LogsRepository.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/antonromanov/temperaturerest/repository/TemperatureRepository.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/antonromanov/temperaturerest/service/MainService.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/antonromanov/temperaturerest/service/MainServiceImpl.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/antonromanov/temperaturerest/utils/Utils.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/database.properties" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
-    </list>
+    <list default="true" id="679ede9c-cfcc-4471-9502-db1259058c19" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -880,8 +677,16 @@
       <workItem from="1551613173070" duration="604000" />
       <workItem from="1551614656500" duration="1570000" />
       <workItem from="1551730791959" duration="419000" />
-      <workItem from="1551731845940" duration="512000" />
+      <workItem from="1551731845940" duration="1782000" />
     </task>
+    <task id="LOCAL-00001" summary="Поправил глюк: не было вообще Postgres в Maven. Но пока еще не запускается ничего...">
+      <created>1551732535757</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1551732535757</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -917,7 +722,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="264180000" />
+    <option name="totallyTimeSpent" value="265450000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
