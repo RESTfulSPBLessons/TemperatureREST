@@ -1,2 +1,3 @@
-# FULL-REAL-WORKING-SPRING-BOOT-JPA-POSTGRE
-FULL REAL WORKING SPRING BOOT JPA POSTGRE EXAMPLE
+# TempREST | dev
+
+dev branch for my releases. Only for test. Init commit.
