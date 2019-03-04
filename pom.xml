@@ -363,7 +363,7 @@
 
             <!-- Чистим dist -->
 
-            <plugin>
+         <!--   <plugin>
                 <artifactId>maven-clean-plugin</artifactId>
                 <version>3.0.0</version>
                 <executions>
@@ -382,11 +382,11 @@
                         </configuration>
                     </execution>
                 </executions>
-            </plugin>
+            </plugin>-->
 
             <!-- Билдим Angular-проект из Мавена -->
 
-          <!--  <plugin>
+           <!-- <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>exec-maven-plugin</artifactId>
                 <version>1.6.0</version>
@@ -412,7 +412,9 @@
                         <configuration>
                             <workingDirectory>${project.basedir}/firstng</workingDirectory>
                             <executable>ng</executable>
+
                             &lt;!&ndash; Change ng in C:\Users\Анатолий\AppData\Roaming\npm to _ng&ndash;&gt;
+
                             <arguments>
                                 <argument>build</argument>
                                 <argument>&#45;&#45;base-href</argument>
@@ -424,9 +426,9 @@
                         </goals>
                     </execution>
                 </executions>
-            </plugin>
+            </plugin>-->
 
-       &lt;!&ndash;Этот плагин копирует сбилженные дисты Ангуляра в папку ресурсов сервиса&ndash;&gt;
+       <!--Этот плагин копирует сбилженные дисты Ангуляра в папку ресурсов сервиса-->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-resources-plugin</artifactId>
@@ -449,7 +451,7 @@
                         </configuration>
                     </execution>
                 </executions>
-            </plugin>-->
+            </plugin>
         </plugins>
     </build>
 </project>
