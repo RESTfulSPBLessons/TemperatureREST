@@ -156,11 +156,6 @@
         <!-- Hibernate library dependecy end -->
 
 
-       <!-- <dependency>
-            <groupId>com.oracle</groupId>
-            <artifactId>ojdbc7</artifactId>
-            <version>12.1.0.2</version>
-        </dependency>-->
 
         <!-- DB Connection Pool -->
         <dependency>
@@ -354,7 +349,7 @@
 
             <!-- Чистим папку ресурсов сервиса-->
 
-           <!-- <plugin>
+            <plugin>
                 <artifactId>maven-clean-plugin</artifactId>
                 <version>3.0.0</version>
                 <executions>
@@ -373,11 +368,11 @@
                         </configuration>
                     </execution>
                 </executions>
-            </plugin>-->
+            </plugin>
 
-            <!-- Чистим dist -->
+           <!-- &lt;!&ndash; Чистим dist &ndash;&gt;
 
-           <!-- <plugin>
+            <plugin>
                 <artifactId>maven-clean-plugin</artifactId>
                 <version>3.0.0</version>
                 <executions>
@@ -400,7 +395,7 @@
 
             <!-- Билдим Angular-проект из Мавена -->
 
-          <!--  <plugin>
+            <!--<plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>exec-maven-plugin</artifactId>
                 <version>1.6.0</version>
@@ -438,8 +433,8 @@
                         </goals>
                     </execution>
                 </executions>
-            </plugin>
--->
+
+            </plugin>-->
 
             <!--${build.directory}/classes/static/-->
             <!--${basedir}/src/main/resources/static-->

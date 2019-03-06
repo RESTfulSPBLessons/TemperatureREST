@@ -7,776 +7,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="679ede9c-cfcc-4471-9502-db1259058c19" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-jpa-hibernate-ar.iml" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\.idea\libraries\Maven__com_oracle_ojdbc7_12_1_0_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT.war" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\checkstyle.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\database.properties" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\ru\reso\calclogcompare\config\AppConfig.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\ru\reso\calclogcompare\config\OrmConfig.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\ru\reso\calclogcompare\config\SpringWebAppInitializer.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\ru\reso\calclogcompare\controller\MainRestController.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\ru\reso\calclogcompare\livecontrolthread\IsAliveController.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\ru\reso\calclogcompare\livecontrolthread\MainParametrs.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\ru\reso\calclogcompare\livecontrolthread\ThreadManager.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\ru\reso\calclogcompare\model\DailyReport.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\ru\reso\calclogcompare\model\Logs.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\ru\reso\calclogcompare\model\PR.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\ru\reso\calclogcompare\model\Status.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\ru\reso\calclogcompare\model\Users.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\ru\reso\calclogcompare\repository\LogsRepository.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\ru\reso\calclogcompare\repository\UsersRepository.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\ru\reso\calclogcompare\service\MainService.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\ru\reso\calclogcompare\service\MainServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\ru\reso\calclogcompare\utils\Utils.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\CoreUI-Icons-Linear-Free.eot" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\CoreUI-Icons-Linear-Free.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\CoreUI-Icons-Linear-Free.ttf" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\CoreUI-Icons-Linear-Free.woff" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\Simple-Line-Icons.eot" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\Simple-Line-Icons.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\Simple-Line-Icons.ttf" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\Simple-Line-Icons.woff" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\Simple-Line-Icons.woff2" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\ad.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\ae.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\af.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\ag.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\ai.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\al.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\am.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\ao.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\aq.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\ar.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\as.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\assets\data\db.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\assets\data\monthDay.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\assets\data\monthNigth.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\assets\data\test.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\assets\data\user.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\assets\data\user2.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\assets\data\weekDay.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\assets\data\weekNight.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\assets\favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\assets\img\avatars\1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\assets\img\avatars\2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\assets\img\avatars\3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\assets\img\avatars\4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\assets\img\avatars\5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\assets\img\avatars\6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\assets\img\avatars\7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\assets\img\avatars\8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\assets\img\brand\logo.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\assets\img\brand\sygnet.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\at.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\au.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\aw.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\ax.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\az.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\ba.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\bb.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\bd.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\be.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\bf.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\bg.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\bh.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\bi.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\bj.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\bl.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\bm.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\bn.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\bo.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\bq.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\br.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\bs.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\bt.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\bv.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\bw.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\by.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\bz.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\ca.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\cc.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\cd.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\cf.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\cg.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\ch.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\ci.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\ck.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\cl.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\cm.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\cn.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\co.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\common.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\common.js.map" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\cr.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\cu.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\cv.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\cw.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\cx.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\cy.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\cz.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\de.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\default~views-base-base-module~views-buttons-buttons-module~views-dashboard-dashboard-module.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\default~views-base-base-module~views-buttons-buttons-module~views-dashboard-dashboard-module.js.map" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\default~views-dashboard-dashboard-module~views-theme-theme-module~views-widgets-widgets-module.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\default~views-dashboard-dashboard-module~views-theme-theme-module~views-widgets-widgets-module.js.map" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\dj.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\dk.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\dm.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\do.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\dz.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\ec.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\ee.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\eg.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\eh.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\er.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\es-ct.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\es.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\et.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\eu.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\fi.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\fj.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\fk.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\fm.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\fo.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\fontawesome-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\fontawesome-webfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\fontawesome-webfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\fontawesome-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\fontawesome-webfont.woff2" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\fr.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\ga.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\gb-eng.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\gb-nir.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\gb-sct.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\gb-wls.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\gb.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\gd.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\ge.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\gf.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\gg.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\gh.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\gi.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\gl.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\gm.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\gn.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\gp.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\gq.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\gr.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\gs.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\gt.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\gu.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\gw.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\gy.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\hk.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\hm.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\hn.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\hr.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\ht.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\hu.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\id.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\ie.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\il.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\im.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\in.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\index.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\io.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\iq.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\ir.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\is.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\it.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\je.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\jm.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\jo.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\jp.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\ke.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\kg.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\kh.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\ki.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\km.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\kn.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\kp.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\kr.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\kw.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\ky.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\kz.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\la.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\lb.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\lc.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\li.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\lk.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\lr.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\ls.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\lt.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\lu.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\lv.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\ly.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\ma.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\main.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\main.js.map" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\mc.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\md.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\me.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\mf.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\mg.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\mh.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\mk.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\ml.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\mm.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\mn.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\mo.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\mp.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\mq.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\mr.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\ms.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\mt.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\mu.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\mv.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\mw.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\mx.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\my.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\mz.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\na.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\nc.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\ne.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\nf.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\ng.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\ni.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\nl.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\no.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\np.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\nr.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\nu.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\nz.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\om.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\pa.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\pe.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\pf.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\pg.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\ph.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\pk.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\pl.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\pm.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\pn.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\polyfills.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\polyfills.js.map" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\pr.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\ps.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\pt.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\pw.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\py.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\qa.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\re.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\ro.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\rs.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\ru.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\runtime.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\runtime.js.map" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\rw.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\sa.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\sb.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\sc.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\scripts.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\scripts.js.map" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\sd.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\se.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\sg.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\sh.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\si.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\sj.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\sk.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\sl.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\sm.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\sn.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\so.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\sr.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\ss.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\st.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\styles.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\styles.js.map" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\sv.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\sx.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\sy.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\sz.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\tc.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\td.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\tf.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\tg.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\th.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\tj.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\tk.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\tl.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\tm.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\tn.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\to.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\tr.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\tt.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\tv.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\tw.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\tz.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\ua.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\ug.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\um.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\un.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\us.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\uy.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\uz.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\va.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\vc.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\ve.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\vendor.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\vendor.js.map" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\vg.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\vi.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\views-base-base-module.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\views-base-base-module.js.map" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\views-buttons-buttons-module.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\views-buttons-buttons-module.js.map" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\views-chartjs-chartjs-module.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\views-chartjs-chartjs-module.js.map" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\views-dashboard-dashboard-module.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\views-dashboard-dashboard-module.js.map" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\views-icons-icons-module.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\views-icons-icons-module.js.map" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\views-notifications-notifications-module.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\views-notifications-notifications-module.js.map" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\views-theme-theme-module.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\views-theme-theme-module.js.map" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\views-widgets-widgets-module.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\views-widgets-widgets-module.js.map" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\vn.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\vu.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\wf.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\ws.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\ye.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\yt.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\za.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\zm.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\classes\static\zw.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\lib\activation-1.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\lib\ant-1.9.6.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\lib\ant-launcher-1.9.6.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\lib\antlr-2.7.7.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\lib\asm-5.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\lib\aspectjrt-1.8.13.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\lib\c3p0-0.9.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\lib\cglib-3.2.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\lib\commons-collections-3.2.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\lib\commons-dbcp-1.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\lib\commons-logging-1.1.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\lib\commons-pool-1.5.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\lib\dom4j-1.6.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\lib\easymock-3.3.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\lib\hibernate-c3p0-4.0.1.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\lib\hibernate-commons-annotations-4.0.5.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\lib\hibernate-core-4.3.6.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\lib\hibernate-entitymanager-4.3.6.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\lib\hibernate-jpa-2.1-api-1.0.0.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\lib\jackson-annotations-2.9.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\lib\jackson-core-2.9.5.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\lib\jackson-databind-2.9.5.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\lib\jandex-1.1.0.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\lib\javaee-api-7.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\lib\javassist-3.18.2-GA.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\lib\javax.mail-1.5.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\lib\jboss-logging-3.1.3.GA.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\lib\jboss-logging-annotations-1.2.0.Beta1.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\lib\jboss-transaction-api_1.2_spec-1.0.0.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\lib\jcl-over-slf4j-1.7.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\lib\jstl-1.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\lib\logback-classic-0.9.24.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\lib\logback-core-0.9.24.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\lib\lombok-1.18.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\lib\objenesis-2.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\lib\ojdbc7-12.1.0.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\lib\slf4j-api-1.6.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\lib\spring-aop-5.0.0.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\lib\spring-beans-5.0.0.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\lib\spring-context-5.0.0.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\lib\spring-context-support-5.0.0.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\lib\spring-core-5.0.0.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\lib\spring-data-commons-1.13.12.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\lib\spring-data-jpa-1.11.12.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\lib\spring-expression-5.0.0.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\lib\spring-jcl-5.0.0.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\lib\spring-jdbc-5.0.0.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\lib\spring-orm-5.0.0.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\lib\spring-tx-5.0.0.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\lib\spring-web-5.0.0.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\lib\spring-webmvc-5.0.0.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\lib\xml-apis-1.0.b2.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\views\UserList.jsp" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\views\_old_index.jsp" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\RCCT-2.0-SNAPSHOT\WEB-INF\views\index.jsp" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\checkstyle.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\database.properties" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\ru\reso\calclogcompare\config\AppConfig.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\ru\reso\calclogcompare\config\OrmConfig.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\ru\reso\calclogcompare\config\SpringWebAppInitializer.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\ru\reso\calclogcompare\controller\MainRestController.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\ru\reso\calclogcompare\livecontrolthread\IsAliveController.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\ru\reso\calclogcompare\livecontrolthread\MainParametrs.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\ru\reso\calclogcompare\livecontrolthread\ThreadManager.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\ru\reso\calclogcompare\model\DailyReport.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\ru\reso\calclogcompare\model\Logs.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\ru\reso\calclogcompare\model\PR.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\ru\reso\calclogcompare\model\Status.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\ru\reso\calclogcompare\model\Users.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\ru\reso\calclogcompare\repository\LogsRepository.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\ru\reso\calclogcompare\repository\UsersRepository.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\ru\reso\calclogcompare\service\MainService.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\ru\reso\calclogcompare\service\MainServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\ru\reso\calclogcompare\utils\Utils.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\CoreUI-Icons-Linear-Free.eot" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\CoreUI-Icons-Linear-Free.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\CoreUI-Icons-Linear-Free.ttf" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\CoreUI-Icons-Linear-Free.woff" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\Simple-Line-Icons.eot" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\Simple-Line-Icons.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\Simple-Line-Icons.ttf" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\Simple-Line-Icons.woff" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\Simple-Line-Icons.woff2" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\ad.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\ae.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\af.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\ag.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\ai.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\al.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\am.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\ao.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\aq.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\ar.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\as.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\assets\data\db.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\assets\data\monthDay.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\assets\data\monthNigth.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\assets\data\test.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\assets\data\user.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\assets\data\user2.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\assets\data\weekDay.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\assets\data\weekNight.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\assets\favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\assets\img\avatars\1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\assets\img\avatars\2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\assets\img\avatars\3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\assets\img\avatars\4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\assets\img\avatars\5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\assets\img\avatars\6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\assets\img\avatars\7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\assets\img\avatars\8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\assets\img\brand\logo.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\assets\img\brand\sygnet.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\at.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\au.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\aw.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\ax.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\az.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\ba.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\bb.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\bd.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\be.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\bf.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\bg.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\bh.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\bi.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\bj.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\bl.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\bm.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\bn.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\bo.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\bq.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\br.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\bs.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\bt.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\bv.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\bw.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\by.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\bz.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\ca.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\cc.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\cd.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\cf.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\cg.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\ch.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\ci.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\ck.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\cl.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\cm.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\cn.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\co.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\common.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\common.js.map" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\cr.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\cu.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\cv.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\cw.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\cx.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\cy.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\cz.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\de.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\default~views-base-base-module~views-buttons-buttons-module~views-dashboard-dashboard-module.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\default~views-base-base-module~views-buttons-buttons-module~views-dashboard-dashboard-module.js.map" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\default~views-dashboard-dashboard-module~views-theme-theme-module~views-widgets-widgets-module.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\default~views-dashboard-dashboard-module~views-theme-theme-module~views-widgets-widgets-module.js.map" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\dj.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\dk.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\dm.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\do.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\dz.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\ec.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\ee.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\eg.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\eh.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\er.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\es-ct.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\es.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\et.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\eu.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\fi.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\fj.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\fk.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\fm.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\fo.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\fontawesome-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\fontawesome-webfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\fontawesome-webfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\fontawesome-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\fontawesome-webfont.woff2" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\fr.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\ga.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\gb-eng.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\gb-nir.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\gb-sct.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\gb-wls.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\gb.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\gd.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\ge.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\gf.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\gg.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\gh.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\gi.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\gl.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\gm.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\gn.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\gp.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\gq.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\gr.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\gs.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\gt.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\gu.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\gw.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\gy.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\hk.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\hm.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\hn.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\hr.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\ht.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\hu.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\id.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\ie.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\il.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\im.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\in.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\index.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\io.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\iq.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\ir.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\is.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\it.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\je.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\jm.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\jo.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\jp.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\ke.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\kg.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\kh.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\ki.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\km.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\kn.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\kp.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\kr.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\kw.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\ky.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\kz.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\la.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\lb.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\lc.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\li.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\lk.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\lr.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\ls.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\lt.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\lu.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\lv.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\ly.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\ma.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\main.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\main.js.map" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\mc.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\md.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\me.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\mf.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\mg.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\mh.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\mk.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\ml.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\mm.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\mn.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\mo.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\mp.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\mq.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\mr.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\ms.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\mt.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\mu.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\mv.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\mw.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\mx.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\my.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\mz.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\na.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\nc.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\ne.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\nf.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\ng.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\ni.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\nl.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\no.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\np.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\nr.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\nu.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\nz.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\om.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\pa.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\pe.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\pf.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\pg.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\ph.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\pk.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\pl.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\pm.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\pn.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\polyfills.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\polyfills.js.map" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\pr.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\ps.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\pt.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\pw.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\py.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\qa.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\re.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\ro.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\rs.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\ru.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\runtime.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\runtime.js.map" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\rw.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\sa.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\sb.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\sc.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\scripts.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\scripts.js.map" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\sd.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\se.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\sg.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\sh.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\si.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\sj.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\sk.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\sl.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\sm.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\sn.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\so.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\sr.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\ss.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\st.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\styles.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\styles.js.map" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\sv.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\sx.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\sy.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\sz.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\tc.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\td.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\tf.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\tg.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\th.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\tj.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\tk.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\tl.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\tm.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\tn.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\to.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\tr.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\tt.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\tv.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\tw.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\tz.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\ua.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\ug.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\um.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\un.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\us.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\uy.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\uz.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\va.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\vc.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\ve.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\vendor.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\vendor.js.map" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\vg.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\vi.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\views-base-base-module.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\views-base-base-module.js.map" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\views-buttons-buttons-module.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\views-buttons-buttons-module.js.map" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\views-chartjs-chartjs-module.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\views-chartjs-chartjs-module.js.map" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\views-dashboard-dashboard-module.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\views-dashboard-dashboard-module.js.map" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\views-icons-icons-module.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\views-icons-icons-module.js.map" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\views-notifications-notifications-module.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\views-notifications-notifications-module.js.map" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\views-theme-theme-module.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\views-theme-theme-module.js.map" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\views-widgets-widgets-module.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\views-widgets-widgets-module.js.map" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\vn.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\vu.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\wf.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\ws.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\ye.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\yt.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\za.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\zm.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\classes\static\zw.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\maven-archiver\pom.properties" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\maven-status\maven-compiler-plugin\compile\default-compile\createdFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\maven-status\maven-compiler-plugin\compile\default-compile\inputFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\TemperatureREST\target\maven-status\maven-compiler-plugin\testCompile\default-testCompile\inputFiles.lst" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/temp/1.txt" afterPath="$PROJECT_DIR$/temp/1.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RCCT.iml" afterPath="$PROJECT_DIR$/RCCT.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/RCCT_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/RCCT_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/typescript-compiler.xml" afterPath="$PROJECT_DIR$/.idea/typescript-compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/RCCT_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/RCCT_war.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/RCCT_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/RCCT_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/875f53e9-90cd-4d57-aabb-8343a166ff45.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/875f53e9-90cd-4d57-aabb-8343a166ff45.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d2028178-3b8c-44f6-ba7a-5f96f7301cfe.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d2028178-3b8c-44f6-ba7a-5f96f7301cfe.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f8f23467-a00e-4c25-bb87-0c95f1c44e70.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f8f23467-a00e-4c25-bb87-0c95f1c44e70.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm.vsdx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Git commands.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Git commands.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/merge-test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/~$$Algorithm.~vsdx" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CheckStyle-IDEA-workspace">
     <option name="configuration">
       <map>
@@ -829,51 +85,55 @@
     </expand>
     <select />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="TemperatureREST" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="1.txt" pinned="false" current-in-tab="false">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/temp/1.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="726" column="0" selection-start-line="726" selection-start-column="0" selection-end-line="726" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="12342">
+              <caret line="726" selection-start-line="726" selection-end-line="726" />
             </state>
-          </provider>
-          <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-            <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Users.java" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ru/reso/calclogcompare/model/Users.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state relative-caret-position="85">
               <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
-              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/reso/calclogcompare/service/MainService.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/database.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
-              <folding />
+            <state relative-caret-position="289">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/reso/calclogcompare/utils/Utils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.7089947">
-              <caret line="373" column="40" selection-start-line="373" selection-start-column="40" selection-end-line="373" selection-end-column="40" />
-              <folding />
+            <state relative-caret-position="187">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="272">
+                <caret line="19" column="19" lean-forward="true" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -911,16 +171,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GradleLocalSettings">
-    <option name="externalProjectsViewState">
-      <projects_view />
-    </option>
-  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/ru/reso/springhibernate/model/Premium.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/reso/calclogcompare/DAO/PremiumDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/reso/calclogcompare/DAO/PremiumDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/reso/calclogcompare/Service/package-info.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/reso/calclogcompare/Service/PremiumService.java" />
@@ -930,7 +183,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/ru/reso/calclogcompare/controller/TestController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/antonromanov/pf/springjpahibernatear/SpringJpaHibernateArApplication.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/database.properties" />
         <option value="$PROJECT_DIR$/src/main/java/ru/reso/calclogcompare/config/SpringWebAppInitializer.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/reso/calclogcompare/config/OrmConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/reso/calclogcompare/model/PR.java" />
@@ -969,21 +221,19 @@
         <option value="$PROJECT_DIR$/src/main/java/com/antonromanov/temperaturerest/model/Temperature.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/antonromanov/temperaturerest/controller/MainRestController.java" />
         <option value="$PROJECT_DIR$/temp/1.txt" />
+        <option value="$PROJECT_DIR$/src/main/resources/database.properties" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/Git commands.txt" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsFlowSettings">
     <service-enabled>false</service-enabled>
     <exe-path />
     <annotation-enable>false</annotation-enable>
     <other-services-enabled>false</other-services-enabled>
     <auto-save>true</auto-save>
-  </component>
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -993,11 +243,6 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHome" value="Bundled (Maven 3)" />
-      </MavenGeneralSettings>
-    </option>
     <option name="importingSettings">
       <MavenImportingSettings>
         <option name="importAutomatically" value="true" />
@@ -1006,217 +251,78 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="RCCT" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="RCCT" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Lifecycle" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$LifecycleNode" />
-        </PATH_ELEMENT>
-      </PATH>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="RCCT" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="RCCT" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
     </treeState>
   </component>
-  <component name="NamedScopeManager">
-    <order />
-  </component>
-  <component name="NodeModulesDirectoryManager">
-    <handled-path value="$PROJECT_DIR$/firstng/node_modules" />
-  </component>
-  <component name="NodePackageJsonFileManager">
-    <packageJsonPaths>
-      <path value="$PROJECT_DIR$/firstng/package.json" />
-    </packageJsonPaths>
-  </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="784" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <OptionsSetting value="true" id="Add" />
-    <OptionsSetting value="true" id="Remove" />
-    <OptionsSetting value="true" id="Checkout" />
-    <OptionsSetting value="true" id="Update" />
-    <OptionsSetting value="true" id="Status" />
-    <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
-    <ConfirmationsSetting value="0" id="Remove" />
-  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TemperatureREST" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TemperatureREST" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TemperatureREST" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TemperatureREST" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TemperatureREST" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="temp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TemperatureREST" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TemperatureREST" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TemperatureREST" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TemperatureREST" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="calclogcompare" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TemperatureREST" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TemperatureREST" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="calclogcompare" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
+          <expand>
+            <path>
+              <item name="TemperatureREST" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TemperatureREST" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="FullScreen" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="PostgreSQL&#10;Oracle" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$2/SQL Dialects" value="PostgreSQL" />
+    <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../_temp/RCL" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="database.main" />
     <property name="recentsLimit" value="5" />
-    <property name="restartRequiresConfirmation" value="true" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="FullScreen" value="false" />
+    <property name="settings.editor.selected.configurable" value="database.main" />
+    <property name="ts.external.directory.path" value="C:\CODING\GIT\TemperatureREST\firstng\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Anton\Coding\_SPRING\FirstSPRINGJDBC — копия\src\main\webapp\WEB-INF\views" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="ru.reso.calclogcompare.utils" />
       <recent name="com.antonromanov.springhibernate.model" />
       <recent name="com.antonromanov.springhibernate.hibernate.model" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="ru.reso.calclogcompare.Service" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Anton\Coding\_SPRING\FirstSPRINGJDBC — копия\src\main\webapp\WEB-INF\views" />
       <recent name="D:\Anton\Coding\_SPRING\FirstSPRINGJDBC — копия\src\main\webapp\WEB-INF" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="ru.reso.calclogcompare.Service" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Anton\Coding\_SPRING\FirstSPRINGJDBC — копия\src\main\webapp\WEB-INF\views" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1232,85 +338,6 @@
     </option>
   </component>
   <component name="RunManager" selected="GlassFish Server.GlassFish">
-    <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.antonromanov.springhibernate.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="com.antonromanov.springhibernate.Main" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="FirstSPRINGJDBC" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="DaoTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.antonromanov.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="FirstSPRINGJDBC" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.antonromanov" />
-      <option name="MAIN_CLASS_NAME" value="com.antonromanov.DaoTests" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="PremiumServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.antonromanov.serice.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="FirstSPRINGJDBC" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.antonromanov.serice" />
-      <option name="MAIN_CLASS_NAME" value="com.antonromanov.serice.PremiumServiceImplTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
-      <option name="PROGRAM_PARAMETERS" />
-      <predefined_log_file id="idea.log" enabled="true" />
-      <method />
-    </configuration>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="ACTIVITY_CLASS" value="" />
@@ -1352,245 +379,33 @@
       <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
+    <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <module />
-      <method />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.antonromanov.springhibernate.Main" />
+      <module name="FirstSPRINGJDBC" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.antonromanov.springhibernate.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
-      <method />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="myFilePath" />
-      <option name="GLUE" />
-      <option name="myNameFilter" />
-      <option name="myGeneratedName" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
-      <option name="BCName" value="" />
-      <option name="IOSSimulatorSdkPath" value="" />
-      <option name="adlOptions" value="" />
-      <option name="airProgramParameters" value="" />
-      <option name="appDescriptorForEmulator" value="Android" />
-      <option name="debugTransport" value="USB" />
-      <option name="debuggerSdkRaw" value="BC SDK" />
-      <option name="emulator" value="NexusOne" />
-      <option name="emulatorAdlOptions" value="" />
-      <option name="fastPackaging" value="true" />
-      <option name="fullScreenHeight" value="0" />
-      <option name="fullScreenWidth" value="0" />
-      <option name="launchUrl" value="false" />
-      <option name="launcherParameters">
-        <LauncherParameters>
-          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
-          <option name="launcherType" value="OSDefault" />
-          <option name="newPlayerInstance" value="false" />
-          <option name="playerPath" value="FlashPlayerDebugger.exe" />
-        </LauncherParameters>
-      </option>
-      <option name="mobileRunTarget" value="Emulator" />
-      <option name="moduleName" value="" />
-      <option name="overriddenMainClass" value="" />
-      <option name="overriddenOutputFileName" value="" />
-      <option name="overrideMainClass" value="false" />
-      <option name="runTrusted" value="true" />
-      <option name="screenDpi" value="0" />
-      <option name="screenHeight" value="0" />
-      <option name="screenWidth" value="0" />
-      <option name="url" value="http://" />
-      <option name="usbDebugPort" value="7936" />
-      <method />
-    </configuration>
-    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
-      <option name="BCName" value="" />
-      <option name="launcherParameters">
-        <LauncherParameters>
-          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
-          <option name="launcherType" value="OSDefault" />
-          <option name="newPlayerInstance" value="false" />
-          <option name="playerPath" value="FlashPlayerDebugger.exe" />
-        </LauncherParameters>
-      </option>
-      <option name="moduleName" value="" />
-      <option name="trusted" value="true" />
-      <method />
-    </configuration>
-    <configuration default="true" type="GlassfishConfiguration" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
-      <deployment />
-      <server-settings>
-        <option name="DOMAIN" value="" />
-        <option name="PRESERVE" value="false" />
-        <option name="VIRTUAL_SERVER" />
-        <option name="USERNAME" value="admin" />
-        <option name="PASSWORD" value="" />
-      </server-settings>
-      <predefined_log_file id="GlassFish" enabled="true" />
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <method />
-    </configuration>
-    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list />
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <method />
-    </configuration>
-    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
-      <module name="" />
-      <setting name="vmparams" value="" />
-      <setting name="cmdLine" value="run-app" />
-      <setting name="depsClasspath" value="false" />
-      <setting name="passParentEnv" value="true" />
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <setting name="launchBrowser" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="true" type="JarApplication" factoryName="JAR Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
-      <method />
-    </configuration>
-    <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
-      <MavenSettings>
-        <option name="myGeneralSettings" />
-        <option name="myRunnerSettings" />
-        <option name="myRunnerParameters">
-          <MavenRunnerParameters>
-            <option name="profiles">
-              <set />
-            </option>
-            <option name="goals">
-              <list />
-            </option>
-            <option name="profilesMap">
-              <map />
-            </option>
-            <option name="resolveToWorkspace" value="false" />
-            <option name="workingDirPath" value="" />
-          </MavenRunnerParameters>
-        </option>
-      </MavenSettings>
-      <method />
-    </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
-      <method />
-    </configuration>
-    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="TestNG" factoryName="TestNG">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <pass-parent-envs>true</pass-parent-envs>
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="osgi.bnd.run" factoryName="Run Launcher">
-      <method />
-    </configuration>
-    <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
-      <method />
-    </configuration>
-    <configuration default="false" name="GlassFish" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 4" ALTERNATIVE_JRE_ENABLED="false" ALTERNATIVE_JRE_PATH="">
+    <configuration name="GlassFish" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 4.0.0" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="RCCT:war exploded">
@@ -1600,12 +415,12 @@
       <server-settings>
         <option name="DOMAIN" value="domain1" />
         <option name="PRESERVE" value="false" />
+        <option name="COMPATIBILITY" value="false" />
         <option name="VIRTUAL_SERVER" />
         <option name="USERNAME" value="admin" />
-        <option name="PASSWORD" value="admin" />
+        <option name="PASSWORD" value="1741" />
       </server-settings>
-      <predefined_log_file id="GlassFish" enabled="true" />
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <predefined_log_file enabled="true" id="GlassFish" />
       <RunnerSettings RunnerId="Debug">
         <option name="DEBUG_PORT" value="9009" />
       </RunnerSettings>
@@ -1654,26 +469,98 @@
           <option name="PROGRAM_PARAMETERS" value="" />
         </SHUTDOWN>
       </ConfigurationWrapper>
-      <method>
-        <option name="Make" enabled="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="passParentEnv" value="true" />
+      <setting name="launchBrowser" value="false" />
+      <setting name="launchBrowserUrl" value="" />
+      <setting name="depsClasspath" value="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <method v="2" />
+    </configuration>
+    <configuration name="DaoTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FirstSPRINGJDBC" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.antonromanov.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.antonromanov" />
+      <option name="MAIN_CLASS_NAME" value="com.antonromanov.DaoTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="false" name="SpringJpaHibernateArApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.antonromanov.pf.springjpahibernatear.SpringJpaHibernateArApplication" />
-      <module name="RCCT" />
-      <envs />
-      <method />
+    <configuration name="PremiumServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FirstSPRINGJDBC" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.antonromanov.serice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.antonromanov.serice" />
+      <option name="MAIN_CLASS_NAME" value="com.antonromanov.serice.PremiumServiceImplTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="GlassFish Server.GlassFish" />
-      <item index="1" class="java.lang.String" itemvalue="Spring Boot.SpringJpaHibernateArApplication" />
-      <item index="2" class="java.lang.String" itemvalue="Application.Main" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.DaoTests" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.PremiumServiceImplTest" />
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringJpaHibernateArApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="RCCT" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.antonromanov.pf.springjpahibernatear.SpringJpaHibernateArApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file enabled="true" id="idea.log" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <pass-parent-envs>true</pass-parent-envs>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="GlassFish Server.GlassFish" />
+      <item itemvalue="JUnit.DaoTests" />
+      <item itemvalue="JUnit.PremiumServiceImplTest" />
+      <item itemvalue="Spring Boot.SpringJpaHibernateArApplication" />
     </list>
   </component>
-  <component name="ShelveChangesManager" show_recycled="false" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -1682,6 +569,7 @@
       <changelist id="679ede9c-cfcc-4471-9502-db1259058c19" name="Default" comment="" />
       <created>1526996867793</created>
       <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
       <updated>1526996867793</updated>
       <workItem from="1526996869049" duration="6052000" />
       <workItem from="1527083930691" duration="300000" />
@@ -1719,7 +607,18 @@
       <workItem from="1551423426036" duration="1126000" />
       <workItem from="1551457540551" duration="44000" />
       <workItem from="1551457661770" duration="87000" />
+      <workItem from="1551712382994" duration="1821000" />
+      <workItem from="1551772580018" duration="9000" />
+      <workItem from="1551802489955" duration="5776000" />
     </task>
+    <task id="LOCAL-00001" summary="ApiBank repaired version. Вроде все работает и запускается, но не работает распаковка ангуляра Мавеном. Это позже.">
+      <created>1551714189886</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1551714189886</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1755,7 +654,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="262770000" />
+    <option name="totallyTimeSpent" value="270376000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -1767,52 +666,95 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="TypeScript Compiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.11270802" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.6676876" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26928896" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20042644" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="11" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23888889" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297546" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20061256" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17697228" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="Persistence" order="2" side_tool="true" />
+      <window_info id="Designer" order="3" />
+      <window_info id="Image Layers" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Capture Tool" order="7" />
+      <window_info id="Web" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4978678" visible="true" weight="0.36333334" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.23888889" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Application Servers" order="7" />
+      <window_info anchor="bottom" id="Spring" order="8" />
+      <window_info anchor="bottom" id="TypeScript" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="CheckStyle" order="11" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5021322" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.3297546" />
+      <window_info anchor="bottom" id="Java Enterprise" order="14" />
+      <window_info anchor="bottom" id="Version Control" order="15" weight="0.1411111" />
+      <window_info anchor="bottom" id="TypeScript Compiler" order="16" />
+      <window_info anchor="bottom" id="Database Console" order="17" />
+      <window_info anchor="bottom" id="Docker" order="18" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="19" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="2" />
+      <window_info anchor="right" id="Maven Projects" order="3" visible="true" weight="0.11270802" />
+      <window_info anchor="right" id="CDI" order="4" />
+      <window_info anchor="right" id="Database" order="5" weight="0.20042644" />
+      <window_info anchor="right" id="JSF" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Capture Analysis" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
+      <window_info anchor="right" id="Theme Preview" order="10" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="11" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="12" visible="true" weight="0.09328358" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -1822,18 +764,14 @@
       <collection />
     </option>
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
       <path value="$PROJECT_DIR$/firstng" />
     </ignored-roots>
+    <MESSAGE value="ApiBank repaired version. Вроде все работает и запускается, но не работает распаковка ангуляра Мавеном. Это позже." />
+    <option name="LAST_COMMIT_MESSAGE" value="ApiBank repaired version. Вроде все работает и запускается, но не работает распаковка ангуляра Мавеном. Это позже." />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <option name="time" value="20" />
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="GlassfishConfiguration">
         <watch expression="mainService" />
@@ -1852,143 +790,73 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/temp/1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="726" column="0" selection-start-line="726" selection-start-column="0" selection-end-line="726" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/reso/calclogcompare/model/Users.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/reso/calclogcompare/service/MainService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/temp/1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="726" column="0" selection-start-line="726" selection-start-column="0" selection-end-line="726" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/reso/calclogcompare/model/Users.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/reso/calclogcompare/service/MainService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/temp/1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="726" column="0" selection-start-line="726" selection-start-column="0" selection-end-line="726" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/reso/calclogcompare/model/Users.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/reso/calclogcompare/service/MainService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" />
+    <entry file="file://$PROJECT_DIR$/temp/1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12342">
+          <caret line="726" selection-start-line="726" selection-end-line="726" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/reso/calclogcompare/model/Users.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/database.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        <state relative-caret-position="289">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/temp/1.txt">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/reso/calclogcompare/controller/MainRestController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="726" column="0" selection-start-line="726" selection-start-column="0" selection-end-line="726" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="253">
+          <caret line="188" column="26" selection-start-line="188" selection-start-column="26" selection-end-line="188" selection-end-column="26" />
         </state>
       </provider>
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/reso/calclogcompare/model/Users.java">
+    <entry file="file://$PROJECT_DIR$/merge-test.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Git commands.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
-          <folding />
+        <state relative-caret-position="119">
+          <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/reso/calclogcompare/service/MainService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="289">
           <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.7089947">
-          <caret line="373" column="40" selection-start-line="373" selection-start-column="40" selection-end-line="373" selection-end-column="40" />
-          <folding />
+        <state relative-caret-position="-880">
+          <caret line="386" column="39" selection-start-line="372" selection-start-column="11" selection-end-line="393" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/reso/calclogcompare/utils/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="272">
+            <caret line="19" column="19" lean-forward="true" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

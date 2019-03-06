@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="postgres@localhost">
-  <database-model serializer="dbm" rdbms="POSTGRES" format-version="4.4">
+  <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.14">
     <root id="1"/>
     <database id="2" parent="1" name="postgres">
       <ObjectId>12938</ObjectId>
@@ -53,34 +53,34 @@
     </routine>
     <column id="14" parent="12" name="id">
       <Position>1</Position>
-      <DataType>integer|0</DataType>
+      <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>1353</StateNumber>
       <DefaultExpression>nextval(&apos;arduino.temp_id_seq&apos;::regclass)</DefaultExpression>
     </column>
     <column id="15" parent="12" name="name">
       <Position>2</Position>
-      <DataType>varchar(255)|0</DataType>
+      <DataType>varchar(255)|0s</DataType>
       <StateNumber>1345</StateNumber>
     </column>
     <column id="16" parent="12" name="temperature">
       <Position>3</Position>
-      <DataType>double precision|0</DataType>
+      <DataType>double precision|0s</DataType>
       <StateNumber>1356</StateNumber>
     </column>
     <column id="17" parent="12" name="datecreated">
       <Position>4</Position>
-      <DataType>timestamp(0)|0</DataType>
+      <DataType>timestamp(0)|0s</DataType>
       <StateNumber>1457</StateNumber>
     </column>
     <column id="18" parent="12" name="timecreated">
       <Position>5</Position>
-      <DataType>time(0)|0</DataType>
+      <DataType>time(0)|0s</DataType>
       <StateNumber>1451</StateNumber>
     </column>
     <column id="19" parent="12" name="test">
       <Position>6</Position>
-      <DataType>date|0</DataType>
+      <DataType>date|0s</DataType>
       <StateNumber>1458</StateNumber>
     </column>
     <trigger id="20" parent="12" name="update_user_date_oncreate">
@@ -93,7 +93,7 @@
     </trigger>
     <argument id="21" parent="13">
       <ArgumentDirection>R</ArgumentDirection>
-      <DataType>trigger|0</DataType>
+      <DataType>trigger|0s</DataType>
     </argument>
   </database-model>
 </dataSource>
