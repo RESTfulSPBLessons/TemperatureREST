@@ -25,6 +25,11 @@ import static com.antonromanov.temperaturerest.utils.Utils.isBetween;
 public class MainRestController {
 
     //todo: надо прикрутить нормальные серверные логи
+    //todo: надо поменять название проекта
+    //todo: надо поменять названия классов и переменных
+    //todo: надо поменять адрес REST API
+    //todo: надо поменять еще вот эту ссылку - http://localhost:8080/FirstSPRINGJDBC-2.0-SNAPSHOT/rest/api/add. Чо за ФёрстСпрингДжейДиБиСи ????!!!!!!!
+
 
     /** Значит надо договориться, что постить мы будем в :
      *      - 02:00
@@ -56,7 +61,7 @@ public class MainRestController {
      */
     @GetMapping("/all")
     public List<Temperature> getAll() {
-        System.out.println("Запрос прошел");
+        System.out.println("Запрос прошел"); // вот это бы все логгировать или в консоль нормально и потом аппендером или в базу
 
         for (Temperature temp : mainService.getAll()) {
             System.out.println(temp.getId() + " - " + temp.getTemperature() + " - " + temp.getDateCreated());
@@ -95,7 +100,7 @@ public class MainRestController {
             at14 = true;
             result = mainService.addMeasure(newTemp.getTemp());
         }
-        if ((isBetween(time.toLocalTime(), LocalTime.of(13, 0), LocalTime.of(15, 0)))&& !at19) { // если 19 часов вечера
+        if ((isBetween(time.toLocalTime(), LocalTime.of(18, 0), LocalTime.of(20, 0)))&& !at19) { // если 19 часов вечера
             at19 = true;
             result = mainService.addMeasure(newTemp.getTemp());
         }

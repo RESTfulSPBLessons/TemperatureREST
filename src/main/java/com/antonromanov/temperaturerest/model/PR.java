@@ -5,6 +5,8 @@ package com.antonromanov.temperaturerest.model;
  */
 public class PR {
 
+    // todo - надо исправить - чо за название PR ????????????
+
     private Double temp;
 
     public Double getTemp() {
