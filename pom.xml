@@ -260,9 +260,9 @@
             <plugin>
                 <artifactId>maven-war-plugin</artifactId>
                 <version>3.0.0</version>
-               <!-- <configuration>
+                <configuration>
                     <warName>RCCT</warName>
-                </configuration>-->
+                </configuration>
             </plugin>
 
             <plugin>
@@ -274,192 +274,7 @@
                 </configuration>
             </plugin>
 
-            <!--&lt;!&ndash; Find bugs &ndash;&gt;
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>findbugs-maven-plugin</artifactId>
-                <version>3.0.1</version>
-                <configuration>
-                    <xmlOutput>true</xmlOutput>
-                    <effort>Max</effort>
-                    <threshold>Low</threshold>
-                </configuration>
-                <executions>
-                    <execution>
-                        <phase>compile</phase>
-                        <goals>
-                            <goal>check</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
 
-            &lt;!&ndash; Check for bad code &ndash;&gt;
-         <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-pmd-plugin</artifactId>
-                <version>3.4</version>
-                <configuration>
-                    <targetJdk>1.8</targetJdk>
-                </configuration>
-                <executions>
-                    <execution>
-                        <id>1</id>
-                        <phase>process-classes</phase>
-                        <goals>
-                            <goal>check</goal>
-                        </goals>
-                        <configuration>
-                            <excludeFromFailureFile>exclude-pmd.properties</excludeFromFailureFile>
-                        </configuration>
-                    </execution>
-                    <execution>
-                        <id>2</id>
-                        <phase>process-classes</phase>
-                        <goals>
-                            <goal>cpd-check</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-
-            &lt;!&ndash; Check for bad code style&ndash;&gt;
-           <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-checkstyle-plugin</artifactId>
-                <version>2.15</version>
-                <executions>
-                    <execution>
-                        <id>validate</id>
-                        <phase>validate</phase>
-                        <configuration>
-                            <encoding>UTF-8</encoding>
-                            <consoleOutput>true</consoleOutput>
-                            <failsOnError>true</failsOnError>
-                            <configLocation>src/main/resources/checkstyle.xml</configLocation>
-                        </configuration>
-                        <goals>
-                            <goal>check</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>-->
-
-            <!-- ANGULAR -->
-
-            <!-- Чистим папку ресурсов сервиса-->
-            <plugin>
-                <artifactId>maven-clean-plugin</artifactId>
-                <version>3.0.0</version>
-                <executions>
-                    <execution>
-                        <id>auto-clean</id>
-                        <phase>initialize</phase>
-                        <goals>
-                            <goal>clean</goal>
-                        </goals>
-                        <configuration>
-                            <filesets>
-                                <fileset>
-                                    <directory>${build.directory}/classes/static/</directory>
-                                </fileset>
-                            </filesets>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-
-            <!-- Чистим dist -->
-
-         <!--   <plugin>
-                <artifactId>maven-clean-plugin</artifactId>
-                <version>3.0.0</version>
-                <executions>
-                    <execution>
-                        <id>auto-clean</id>
-                        <phase>initialize</phase>
-                        <goals>
-                            <goal>clean</goal>
-                        </goals>
-                        <configuration>
-                            <filesets>
-                                <fileset>
-                                    <directory>${project.basedir}/firstng/dist</directory>
-                                </fileset>
-                            </filesets>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>-->
-
-            <!-- Билдим Angular-проект из Мавена -->
-
-           <!-- <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>exec-maven-plugin</artifactId>
-                <version>1.6.0</version>
-                <executions>
-                    <execution>
-                        <id>exec-npm-install</id>
-                        <phase>generate-sources</phase>
-                        <configuration>
-                            <workingDirectory>${project.basedir}/firstng</workingDirectory>
-                            <executable>npm</executable>
-                            &lt;!&ndash;	Change npm in C:\Program Files\nodejs to _npm &ndash;&gt;
-                            <arguments>
-                                <argument>install</argument>
-                            </arguments>
-                        </configuration>
-                        <goals>
-                            <goal>exec</goal>
-                        </goals>
-                    </execution>
-                    <execution>
-                        <id>exec-npm-ng-build</id>
-                        <phase>generate-sources</phase>
-                        <configuration>
-                            <workingDirectory>${project.basedir}/firstng</workingDirectory>
-                            <executable>ng</executable>
-
-                            &lt;!&ndash; Change ng in C:\Users\Анатолий\AppData\Roaming\npm to _ng&ndash;&gt;
-
-                            <arguments>
-                                <argument>build</argument>
-                                <argument>&#45;&#45;base-href</argument>
-                                <argument>"/RCCT-2.0-SNAPSHOT/"</argument>
-                            </arguments>
-                        </configuration>
-                        <goals>
-                            <goal>exec</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>-->
-
-       <!--Этот плагин копирует сбилженные дисты Ангуляра в папку ресурсов сервиса-->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-resources-plugin</artifactId>
-                <version>3.0.2</version>
-                <executions>
-                    <execution>
-                        <id>copy-resources</id>
-                        <phase>generate-resources</phase>
-                        <goals>
-                            <goal>copy-resources</goal>
-                        </goals>
-                        <configuration>
-                            <overwrite>true</overwrite>
-                            <outputDirectory>${basedir}/target/classes/static/</outputDirectory>
-                            <resources>
-                                <resource>
-                                    <directory>${basedir}/firstng/dist/</directory>
-                                </resource>
-                            </resources>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
 
 
 
@@ -490,18 +305,36 @@
                     <components>
                         <component>
                             <name>${project.artifactId}</name>
-                            <artifact>${project.build.directory}/${project.build.finalName}.war</artifact>
+                            <artifact>target\RCCT.war</artifact>
                         </component>
                     </components>
                 </configuration>
                 <executions>
                     <execution>
+                        <phase>install</phase>
                         <goals>
+                            <goal>redeploy</goal>
+<!--
+                        </goals>
+                        <goals>
+-->
                             <goal>deploy</goal>
                         </goals>
+
+
+                       <!-- <id>gf-deploy</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>redeploy</goal>
+                        </goals>-->
+
                     </execution>
                 </executions>
             </plugin>
+
+
+
+
         </plugins>
     </build>
 </project>
