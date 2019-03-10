@@ -311,13 +311,8 @@
                 </configuration>
                 <executions>
                     <execution>
-                        <phase>install</phase>
+
                         <goals>
-                            <goal>redeploy</goal>
-<!--
-                        </goals>
-                        <goals>
--->
                             <goal>deploy</goal>
                         </goals>
 
