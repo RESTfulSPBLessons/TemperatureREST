@@ -5,8 +5,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.antonromanov.springJDBCHibernate</groupId>
-    <artifactId>FirstSPRINGJDBC</artifactId>
-    <name>FirstSPRINGJDBC</name>
+    <artifactId>RCCT</artifactId>
+    <name>RCCT</name>
     <packaging>war</packaging>
     <version>2.0-SNAPSHOT</version>
 
@@ -243,9 +243,12 @@
     </dependencies>
     <!-- Plugins -->
     <build>
+        <finalName>RCCT</finalName>
         <plugins>
 
             <!-- Define JDK Version to Compile -->
+
+
 
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -273,9 +276,6 @@
                     <mainClass>org.test.int1.Main</mainClass>
                 </configuration>
             </plugin>
-
-
-
 
 
             <!--DEPLOY ON GF PART-->
