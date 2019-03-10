@@ -1,6 +1,20 @@
-# TEMPERATYRE REST service by Anton Romanov
+# TEMPERATURE REST. Simple Glassfish Test Server
 
-v. 1.0
 
-* web part not working
-* REST-part - may be
+### Что сделано:
+
+* Простое приложение для тестирования Гласфиша.
+
+
+
+### Http-запросы:
+
+* http://localhost:8083/FirstSPRINGJDBC-2.0-SNAPSHOT/rest/api/add
+* http://localhost:8083/FirstSPRINGJDBC-2.0-SNAPSHOT/rest/api/get
+
+Объект для add:
+
+{
+    "id": 2,
+    "testString": "111"
+}
