@@ -15,6 +15,11 @@
         <org.springframework.version>4.3.4.RELEASE</org.springframework.version>
         <easymock.version>3.3.1</easymock.version>
         <hamcrest.version>1.3</hamcrest.version>
+        <glassfish.home>M:/GF/glassfish/</glassfish.home>
+        <glassfish.apibank>C:/GF/glassfish-4-0/</glassfish.apibank>
+        <glassfish.apibank.passwords>C:/GF/glassfish-4-0/domains/domain1/config/domain-passwords-2</glassfish.apibank.passwords>
+        <glassfish.home.passwords>M:/GF/glassfish/domains/domain1/config/domain-passwords-2</glassfish.home.passwords>
+
     </properties>
 
 
@@ -75,6 +80,22 @@
             <version>${org.springframework.version}</version>
         </dependency>
 
+        <!-- for JPA repository and Query -->
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-jpa</artifactId>
+            <version>1.11.12.RELEASE</version>
+            <!--<version>1.10.11.RELEASE</version>-->
+        </dependency>
+
+
+
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.9.5</version>
+        </dependency>
+
 
         <!-- Spring AOP dependency -->
         <dependency>
@@ -84,10 +105,17 @@
         </dependency>
 
         <!-- Hibernate framework -->
+
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-entitymanager</artifactId>
+            <version>4.3.6.Final</version>
+        </dependency>
+
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-core</artifactId>
-            <version>4.0.1.Final</version>
+            <version>4.3.6.Final</version>
         </dependency>
 
         <!-- Hibernate c3p0 connection pool -->
@@ -122,15 +150,6 @@
             <version>2.7.7</version>
         </dependency>
 
-        <!-- Hibernate library dependecy end -->
-
-
-        <dependency>
-            <groupId>com.oracle</groupId>
-            <artifactId>ojdbc7</artifactId>
-            <version>12.1.0.2</version>
-        </dependency>
-
         <!-- DB Connection Pool -->
         <dependency>
             <groupId>commons-dbcp</groupId>
@@ -152,6 +171,12 @@
             <groupId>org.slf4j</groupId>
             <artifactId>jcl-over-slf4j</artifactId>
             <version>1.7.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>42.2.1</version>
         </dependency>
 
 
@@ -215,33 +240,12 @@
             <version>2.9.4</version>
         </dependency>
 
-        <!-- Tomcat -->
-
-       <!-- <dependency>
-            <groupId>org.codehaus.jackson</groupId>
-            <artifactId>jackson-mapper-asl</artifactId>
-            <version>1.9.13</version>
-        </dependency>
-
-
-        <dependency>
-            <groupId>com.fasterxml.jackson.core</groupId>
-            <artifactId>jackson-core</artifactId>
-            <version>2.9.6</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-io</artifactId>
-            <version>1.3.2</version>
-        </dependency>-->
     </dependencies>
-
-
-
     <!-- Plugins -->
     <build>
         <plugins>
+
+            <!-- Define JDK Version to Compile -->
 
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -256,6 +260,9 @@
             <plugin>
                 <artifactId>maven-war-plugin</artifactId>
                 <version>3.0.0</version>
+               <!-- <configuration>
+                    <warName>RCCT</warName>
+                </configuration>-->
             </plugin>
 
             <plugin>
@@ -267,8 +274,234 @@
                 </configuration>
             </plugin>
 
+            <!--&lt;!&ndash; Find bugs &ndash;&gt;
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>findbugs-maven-plugin</artifactId>
+                <version>3.0.1</version>
+                <configuration>
+                    <xmlOutput>true</xmlOutput>
+                    <effort>Max</effort>
+                    <threshold>Low</threshold>
+                </configuration>
+                <executions>
+                    <execution>
+                        <phase>compile</phase>
+                        <goals>
+                            <goal>check</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+            &lt;!&ndash; Check for bad code &ndash;&gt;
+         <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-pmd-plugin</artifactId>
+                <version>3.4</version>
+                <configuration>
+                    <targetJdk>1.8</targetJdk>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>1</id>
+                        <phase>process-classes</phase>
+                        <goals>
+                            <goal>check</goal>
+                        </goals>
+                        <configuration>
+                            <excludeFromFailureFile>exclude-pmd.properties</excludeFromFailureFile>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>2</id>
+                        <phase>process-classes</phase>
+                        <goals>
+                            <goal>cpd-check</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+            &lt;!&ndash; Check for bad code style&ndash;&gt;
+           <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-checkstyle-plugin</artifactId>
+                <version>2.15</version>
+                <executions>
+                    <execution>
+                        <id>validate</id>
+                        <phase>validate</phase>
+                        <configuration>
+                            <encoding>UTF-8</encoding>
+                            <consoleOutput>true</consoleOutput>
+                            <failsOnError>true</failsOnError>
+                            <configLocation>src/main/resources/checkstyle.xml</configLocation>
+                        </configuration>
+                        <goals>
+                            <goal>check</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>-->
+
+            <!-- ANGULAR -->
+
+            <!-- Чистим папку ресурсов сервиса-->
+            <plugin>
+                <artifactId>maven-clean-plugin</artifactId>
+                <version>3.0.0</version>
+                <executions>
+                    <execution>
+                        <id>auto-clean</id>
+                        <phase>initialize</phase>
+                        <goals>
+                            <goal>clean</goal>
+                        </goals>
+                        <configuration>
+                            <filesets>
+                                <fileset>
+                                    <directory>${build.directory}/classes/static/</directory>
+                                </fileset>
+                            </filesets>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <!-- Чистим dist -->
+
+         <!--   <plugin>
+                <artifactId>maven-clean-plugin</artifactId>
+                <version>3.0.0</version>
+                <executions>
+                    <execution>
+                        <id>auto-clean</id>
+                        <phase>initialize</phase>
+                        <goals>
+                            <goal>clean</goal>
+                        </goals>
+                        <configuration>
+                            <filesets>
+                                <fileset>
+                                    <directory>${project.basedir}/firstng/dist</directory>
+                                </fileset>
+                            </filesets>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>-->
+
+            <!-- Билдим Angular-проект из Мавена -->
+
+           <!-- <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>1.6.0</version>
+                <executions>
+                    <execution>
+                        <id>exec-npm-install</id>
+                        <phase>generate-sources</phase>
+                        <configuration>
+                            <workingDirectory>${project.basedir}/firstng</workingDirectory>
+                            <executable>npm</executable>
+                            &lt;!&ndash;	Change npm in C:\Program Files\nodejs to _npm &ndash;&gt;
+                            <arguments>
+                                <argument>install</argument>
+                            </arguments>
+                        </configuration>
+                        <goals>
+                            <goal>exec</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>exec-npm-ng-build</id>
+                        <phase>generate-sources</phase>
+                        <configuration>
+                            <workingDirectory>${project.basedir}/firstng</workingDirectory>
+                            <executable>ng</executable>
+
+                            &lt;!&ndash; Change ng in C:\Users\Анатолий\AppData\Roaming\npm to _ng&ndash;&gt;
+
+                            <arguments>
+                                <argument>build</argument>
+                                <argument>&#45;&#45;base-href</argument>
+                                <argument>"/RCCT-2.0-SNAPSHOT/"</argument>
+                            </arguments>
+                        </configuration>
+                        <goals>
+                            <goal>exec</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>-->
+
+       <!--Этот плагин копирует сбилженные дисты Ангуляра в папку ресурсов сервиса-->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>3.0.2</version>
+                <executions>
+                    <execution>
+                        <id>copy-resources</id>
+                        <phase>generate-resources</phase>
+                        <goals>
+                            <goal>copy-resources</goal>
+                        </goals>
+                        <configuration>
+                            <overwrite>true</overwrite>
+                            <outputDirectory>${basedir}/target/classes/static/</outputDirectory>
+                            <resources>
+                                <resource>
+                                    <directory>${basedir}/firstng/dist/</directory>
+                                </resource>
+                            </resources>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+
+
+            <!--DEPLOY ON GF PART-->
+
+          <!--  ${glassfish.home} - GF home
+            ${glassfish.apibank} - GF ApiBank
+            ${glassfish.apibank.passwords} - GF ApiBank pw-file
+            ${glassfish.home.passwords} - GF home pw-file-->
+
+
+            <plugin>
+                <groupId>org.glassfish.maven.plugin</groupId>
+                <artifactId>maven-glassfish-plugin</artifactId>
+                <version>2.1</version>
+                <configuration>
+                    <terse>false</terse>
+                    <echo>true</echo>
+                    <debug>true</debug>
+                    <glassfishDirectory>${glassfish.home}</glassfishDirectory>
+                    <user>admin</user>
+                    <passwordFile>${glassfish.home.passwords}</passwordFile>
+                    <domain>
+                        <name>domain1</name>
+                        <host>localhost</host>
+                        <adminPort>4848</adminPort>
+                    </domain>
+                    <components>
+                        <component>
+                            <name>${project.artifactId}</name>
+                            <artifact>${project.build.directory}/${project.build.finalName}.war</artifact>
+                        </component>
+                    </components>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>deploy</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
         </plugins>
     </build>
-
-
 </project>
