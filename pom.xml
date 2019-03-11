@@ -15,10 +15,7 @@
         <org.springframework.version>5.0.0.RELEASE</org.springframework.version>
         <easymock.version>3.3.1</easymock.version>
         <hamcrest.version>1.3</hamcrest.version>
-        <glassfish.home>M:/GF/glassfish/</glassfish.home>
-        <glassfish.apibank>C:/GF/glassfish-4-0/</glassfish.apibank>
-        <glassfish.apibank.passwords>C:/GF/glassfish-4-0/domains/domain1/config/domain-passwords-2</glassfish.apibank.passwords>
-        <glassfish.home.passwords>M:/GF/glassfish/domains/domain1/config/domain-passwords-2</glassfish.home.passwords>
+
 
     </properties>
 
@@ -266,76 +263,7 @@
                 </configuration>
             </plugin>
 
-            <!--&lt;!&ndash; Find bugs &ndash;&gt;
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>findbugs-maven-plugin</artifactId>
-                <version>3.0.1</version>
-                <configuration>
-                    <xmlOutput>true</xmlOutput>
-                    <effort>Max</effort>
-                    <threshold>Low</threshold>
-                </configuration>
-                <executions>
-                    <execution>
-                        <phase>compile</phase>
-                        <goals>
-                            <goal>check</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
 
-            &lt;!&ndash; Check for bad code &ndash;&gt;
-         <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-pmd-plugin</artifactId>
-                <version>3.4</version>
-                <configuration>
-                    <targetJdk>1.8</targetJdk>
-                </configuration>
-                <executions>
-                    <execution>
-                        <id>1</id>
-                        <phase>process-classes</phase>
-                        <goals>
-                            <goal>check</goal>
-                        </goals>
-                        <configuration>
-                            <excludeFromFailureFile>exclude-pmd.properties</excludeFromFailureFile>
-                        </configuration>
-                    </execution>
-                    <execution>
-                        <id>2</id>
-                        <phase>process-classes</phase>
-                        <goals>
-                            <goal>cpd-check</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-
-            &lt;!&ndash; Check for bad code style&ndash;&gt;
-           <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-checkstyle-plugin</artifactId>
-                <version>2.15</version>
-                <executions>
-                    <execution>
-                        <id>validate</id>
-                        <phase>validate</phase>
-                        <configuration>
-                            <encoding>UTF-8</encoding>
-                            <consoleOutput>true</consoleOutput>
-                            <failsOnError>true</failsOnError>
-                            <configLocation>src/main/resources/checkstyle.xml</configLocation>
-                        </configuration>
-                        <goals>
-                            <goal>check</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>-->
 
             <!-- ANGULAR -->
 
@@ -445,58 +373,13 @@
                             <outputDirectory>${basedir}/target/classes/static/</outputDirectory>
                             <resources>
                                 <resource>
-                                    <directory>${basedir}/firstng/dist/</directory>
+                                    <directory>${basedir}/dist/</directory>
                                 </resource>
                             </resources>
                         </configuration>
                     </execution>
                 </executions>
             </plugin>
-
-
-
-            <!--DEPLOY ON GF PART-->
-
-          <!--  ${glassfish.home} - GF home
-            ${glassfish.apibank} - GF ApiBank
-            ${glassfish.apibank.passwords} - GF ApiBank pw-file
-            ${glassfish.home.passwords} - GF home pw-file-->
-
-
-           <!-- <plugin>
-                <groupId>org.glassfish.maven.plugin</groupId>
-                <artifactId>maven-glassfish-plugin</artifactId>
-                <version>2.1</version>
-                <configuration>
-                    <terse>false</terse>
-                    <echo>true</echo>
-                    <debug>true</debug>
-                    <glassfishDirectory>${glassfish.apibank}</glassfishDirectory>
-                    &lt;!&ndash;<glassfishDirectory>${glassfish.home}</glassfishDirectory>&ndash;&gt;
-                    <user>admin</user>
-                    <passwordFile>${glassfish.apibank.passwords}</passwordFile>
-                    &lt;!&ndash;<passwordFile>${glassfish.home.passwords}</passwordFile>&ndash;&gt;
-                    <domain>
-                        <name>domain1</name>
-                        <host>localhost</host>
-                        <adminPort>4848</adminPort>
-                    </domain>
-                    <components>
-                        <component>
-                            <name>${project.artifactId}</name>
-                            <artifact>${project.build.directory}/${project.build.finalName}.war</artifact>
-                        </component>
-                    </components>
-                </configuration>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>deploy</goal>
-                            <goal>redeploy</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>-->
         </plugins>
     </build>
 </project>
