@@ -353,7 +353,7 @@
                         <configuration>
                             <filesets>
                                 <fileset>
-                                    <directory>${build.directory}/classes/static/</directory>
+                                    <directory>${project.build.directory}/classes/static/</directory>
                                 </fileset>
                             </filesets>
                         </configuration>
@@ -463,7 +463,7 @@
             ${glassfish.home.passwords} - GF home pw-file-->
 
 
-            <plugin>
+           <!-- <plugin>
                 <groupId>org.glassfish.maven.plugin</groupId>
                 <artifactId>maven-glassfish-plugin</artifactId>
                 <version>2.1</version>
@@ -471,9 +471,11 @@
                     <terse>false</terse>
                     <echo>true</echo>
                     <debug>true</debug>
-                    <glassfishDirectory>${glassfish.home}</glassfishDirectory>
+                    <glassfishDirectory>${glassfish.apibank}</glassfishDirectory>
+                    &lt;!&ndash;<glassfishDirectory>${glassfish.home}</glassfishDirectory>&ndash;&gt;
                     <user>admin</user>
-                    <passwordFile>${glassfish.home.passwords}</passwordFile>
+                    <passwordFile>${glassfish.apibank.passwords}</passwordFile>
+                    &lt;!&ndash;<passwordFile>${glassfish.home.passwords}</passwordFile>&ndash;&gt;
                     <domain>
                         <name>domain1</name>
                         <host>localhost</host>
@@ -490,10 +492,11 @@
                     <execution>
                         <goals>
                             <goal>deploy</goal>
+                            <goal>redeploy</goal>
                         </goals>
                     </execution>
                 </executions>
-            </plugin>
+            </plugin>-->
         </plugins>
     </build>
 </project>
