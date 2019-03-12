@@ -15,10 +15,7 @@
         <org.springframework.version>5.0.0.RELEASE</org.springframework.version>
         <easymock.version>3.3.1</easymock.version>
         <hamcrest.version>1.3</hamcrest.version>
-       <!-- <glassfish.home>M:/GF/glassfish/</glassfish.home>
-        <glassfish.apibank>C:/GF/glassfish-4-0/</glassfish.apibank>
-        <glassfish.apibank.passwords>C:/GF/glassfish-4-0/domains/domain1/config/domain-passwords-2</glassfish.apibank.passwords>
-        <glassfish.home.passwords>M:/GF/glassfish/domains/domain1/config/domain-passwords-2</glassfish.home.passwords>-->
+
 
     </properties>
 
@@ -84,6 +81,7 @@
             <groupId>org.springframework.data</groupId>
             <artifactId>spring-data-jpa</artifactId>
             <version>1.11.12.RELEASE</version>
+            <!--<version>1.10.11.RELEASE</version>-->
         </dependency>
 
 
@@ -265,6 +263,123 @@
                 </configuration>
             </plugin>
 
+
+
+            <!-- ANGULAR -->
+
+            <!-- Чистим папку ресурсов сервиса-->
+            <plugin>
+                <artifactId>maven-clean-plugin</artifactId>
+                <version>3.0.0</version>
+                <executions>
+                    <execution>
+                        <id>auto-clean</id>
+                        <phase>initialize</phase>
+                        <goals>
+                            <goal>clean</goal>
+                        </goals>
+                        <configuration>
+                            <filesets>
+                                <fileset>
+                                    <directory>${project.build.directory}/classes/static/</directory>
+                                </fileset>
+                            </filesets>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <!-- Чистим dist -->
+
+         <!--   <plugin>
+                <artifactId>maven-clean-plugin</artifactId>
+                <version>3.0.0</version>
+                <executions>
+                    <execution>
+                        <id>auto-clean</id>
+                        <phase>initialize</phase>
+                        <goals>
+                            <goal>clean</goal>
+                        </goals>
+                        <configuration>
+                            <filesets>
+                                <fileset>
+                                    <directory>${project.basedir}/firstng/dist</directory>
+                                </fileset>
+                            </filesets>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>-->
+
+            <!-- Билдим Angular-проект из Мавена -->
+
+           <!-- <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>1.6.0</version>
+                <executions>
+                    <execution>
+                        <id>exec-npm-install</id>
+                        <phase>generate-sources</phase>
+                        <configuration>
+                            <workingDirectory>${project.basedir}/firstng</workingDirectory>
+                            <executable>npm</executable>
+                            &lt;!&ndash;	Change npm in C:\Program Files\nodejs to _npm &ndash;&gt;
+                            <arguments>
+                                <argument>install</argument>
+                            </arguments>
+                        </configuration>
+                        <goals>
+                            <goal>exec</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>exec-npm-ng-build</id>
+                        <phase>generate-sources</phase>
+                        <configuration>
+                            <workingDirectory>${project.basedir}/firstng</workingDirectory>
+                            <executable>ng</executable>
+
+                            &lt;!&ndash; Change ng in C:\Users\Анатолий\AppData\Roaming\npm to _ng&ndash;&gt;
+
+                            <arguments>
+                                <argument>build</argument>
+                                <argument>&#45;&#45;base-href</argument>
+                                <argument>"/RCCT-2.0-SNAPSHOT/"</argument>
+                            </arguments>
+                        </configuration>
+                        <goals>
+                            <goal>exec</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>-->
+
+       <!--Этот плагин копирует сбилженные дисты Ангуляра в папку ресурсов сервиса-->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>3.0.2</version>
+                <executions>
+                    <execution>
+                        <id>copy-resources</id>
+                        <phase>generate-resources</phase>
+                        <goals>
+                            <goal>copy-resources</goal>
+                        </goals>
+                        <configuration>
+                            <overwrite>true</overwrite>
+                            <outputDirectory>${basedir}/target/classes/static/</outputDirectory>
+                            <resources>
+                                <resource>
+                                    <directory>${basedir}/dist/</directory>
+                                </resource>
+                            </resources>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
         </plugins>
     </build>
 </project>

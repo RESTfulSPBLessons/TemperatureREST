@@ -1,9 +1,5 @@
 package com.antonromanov.temperaturerest.controller;
 
-// This class created by Anton Romanov 03.12.2018 at 11:44
-// Git Hub repo - ...
-
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import com.antonromanov.temperaturerest.model.*;
@@ -111,7 +107,6 @@ public class MainRestController {
             at8am = false;
             at14 = false;
             at19 = false;
-
         }
 
 
