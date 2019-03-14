@@ -1,6 +1,9 @@
 package com.antonromanov.temperaturerest.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.RequestEntity;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import com.antonromanov.temperaturerest.model.*;
 import com.antonromanov.temperaturerest.service.MainService;
@@ -84,11 +87,11 @@ public class MainRestController {
         List<Temperature> result = new ArrayList<>();
 
 
-        if ((isBetween(time.toLocalTime(), LocalTime.of(1, 0), LocalTime.of(3, 0))) && !at2am) { // если 2 часа ночи
-            at2am = true;
+      ///  if ((isBetween(time.toLocalTime(), LocalTime.of(1, 0), LocalTime.of(3, 0))) && !at2am) { // если 2 часа ночи
+      //      at2am = true;
             result = mainService.addMeasure(newTemp.getTemp());
-        }
-        if ((isBetween(time.toLocalTime(), LocalTime.of(7, 0), LocalTime.of(9, 0))) && !at8am) { // если 8 утра
+      //  }
+       /* if ((isBetween(time.toLocalTime(), LocalTime.of(7, 0), LocalTime.of(9, 0))) && !at8am) { // если 8 утра
             at8am = true;
             result = mainService.addMeasure(newTemp.getTemp());
         }
@@ -107,7 +110,7 @@ public class MainRestController {
             at8am = false;
             at14 = false;
             at19 = false;
-        }
+        }*/
 
 
 
@@ -204,6 +207,24 @@ public class MainRestController {
 
 
         return mainService.addLog(log);
+    }
+
+    /**
+     * Добавить состояние мониторинга (для Ардуины).
+     *
+     * @param pushFromAbs
+     * @return
+     * @throws ParseException
+     */
+    @PostMapping("/addlog2")
+    public ResponseEntity<String> addLog3(@RequestBody String pushFromAbs) throws ParseException {
+
+        System.out.println(pushFromAbs);
+
+
+        ResponseEntity<String> responseEntity = new ResponseEntity<>("my response body",
+                HttpStatus.OK);
+        return responseEntity;
     }
 
 

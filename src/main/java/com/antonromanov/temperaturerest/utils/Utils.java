@@ -83,7 +83,7 @@ public class Utils {
             result = isBetween(toLocalTime(time), toLocalTime(lastPingTime), offsetTime);
         }
 
-        System.out.println("РЕЗУЛЬТАТ ПРОВЕРКИ ТАЙМАУТА = " + result);
+   //     System.out.println("РЕЗУЛЬТАТ ПРОВЕРКИ ТАЙМАУТА = " + result);
         return result;
 
     }

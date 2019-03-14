@@ -231,7 +231,7 @@ public class MainServiceImpl implements MainService {
         // Распечатаем всю выдачу
 
 
-        System.out.println("Last Contact Time: " + ((logsRepository.getLastPingedEntry3(new PageRequest(0, 1, Sort.Direction.DESC, "servertime"))).get(0).getLastсontacttime()));
+   //     System.out.println("Last Contact Time: " + ((logsRepository.getLastPingedEntry3(new PageRequest(0, 1, Sort.Direction.DESC, "servertime"))).get(0).getLastсontacttime()));
 
         return (logsRepository.getLastPingedEntry3(new PageRequest(0, 1, Sort.Direction.DESC, "servertime"))).get(0).getLastсontacttime();
     }

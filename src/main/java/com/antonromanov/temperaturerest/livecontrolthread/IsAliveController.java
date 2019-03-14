@@ -47,16 +47,16 @@ public class IsAliveController implements Runnable {
             while (ret) { // бесконечный цикл.
                 try {
 
-                    System.out.println("Тестим Чек-таймаут - " + checkTimeout(mainService.getMainParametrs().getLastPingTime()));
+               //     System.out.println("Тестим Чек-таймаут - " + checkTimeout(mainService.getMainParametrs().getLastPingTime()));
                     Date date = new Date();
                     Time time = new Time(date.getTime()); // берем текущее время.
 
                     /**
                      * Печатаем всякую муру. TODO ее потом логгировать бы в логи гласфиша.
                      */
-                    System.out.println("Параметры MainParametrs. AC - " + mainService.getMainParametrs().isAcStatus());
-                    System.out.println("Параметры MainParametrs. LAN - " + mainService.getMainParametrs().isLanStatus());
-                    System.out.println("is logged?  " + mainService.getMainParametrs().isLogged());
+                //    System.out.println("Параметры MainParametrs. AC - " + mainService.getMainParametrs().isAcStatus());
+              //      System.out.println("Параметры MainParametrs. LAN - " + mainService.getMainParametrs().isLanStatus());
+               //     System.out.println("is logged?  " + mainService.getMainParametrs().isLogged());
 
                     /**
                      *  Первое условие:
@@ -68,7 +68,7 @@ public class IsAliveController implements Runnable {
                     if (!checkTimeout(mainService.getMainParametrs().getLastPingTime()) && (!mainService.getMainParametrs().isLogged()) &&
                             (mainService.getMainParametrs().isAcStatus() || mainService.getMainParametrs().isLanStatus())) { // Хьюстон, у нас проблемы.....
 
-                        System.out.println("Хьюстон, у нас проблемы.....");
+                 //       System.out.println("Хьюстон, у нас проблемы.....");
 
                         /**
                          * Пишет в БД запись, что связи нет, чтобы ее фронтенд прочитать мог.
@@ -96,7 +96,7 @@ public class IsAliveController implements Runnable {
                          */
                     } else if ((mainService.getMainParametrs().isAcStatus() || mainService.getMainParametrs().isLanStatus())) {
 
-                        System.out.println("Проблема решена или ее и не было");
+                  //      System.out.println("Проблема решена или ее и не было");
                         mainService.getMainParametrs().setLogged(false); // убираем, что мы залогировались
 
                         /**
@@ -109,7 +109,7 @@ public class IsAliveController implements Runnable {
                     } else if (!checkTimeout(mainService.getMainParametrs().getLastPingTime()) && !mainService.getMainParametrs().isLogged() &&
                             (!mainService.getMainParametrs().isAcStatus() || !mainService.getMainParametrs().isLanStatus())
                             ) { // стартовая ситуация
-                        System.out.println("Стартовая ситуация");
+                 //       System.out.println("Стартовая ситуация");
                     }
 
                     /**
@@ -122,7 +122,7 @@ public class IsAliveController implements Runnable {
                     }
 
                 } catch (BeanCreationException exception) {
-                    System.out.println("Косяк");
+            //        System.out.println("Косяк");
                 }
             }
         }
