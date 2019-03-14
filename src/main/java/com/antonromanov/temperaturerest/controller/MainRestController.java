@@ -1,5 +1,8 @@
 package com.antonromanov.temperaturerest.controller;
 
+import com.antonromanov.temperaturerest.utils.JSONTemplate;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParseException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.RequestEntity;
@@ -7,6 +10,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import com.antonromanov.temperaturerest.model.*;
 import com.antonromanov.temperaturerest.service.MainService;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 import java.sql.Time;
 import java.text.ParseException;
 import java.time.LocalTime;
@@ -77,7 +82,7 @@ public class MainRestController {
      * @param newTemp
      * @return
      */
-    @PostMapping("/add")
+    @PostMapping("/add_old")
     public List<Temperature> newMeasure(@RequestBody PR newTemp) {
 
         System.out.println("we are in POST HTTP");
@@ -211,21 +216,83 @@ public class MainRestController {
 
     /**
      * Добавить состояние мониторинга (для Ардуины).
+     * Отсылаем с Ардуины - {"temp":120}
      *
-     * @param pushFromAbs
+     * @param requestParam - json от Ардуины
      * @return
      * @throws ParseException
      */
-    @PostMapping("/addlog2")
-    public ResponseEntity<String> addLog3(@RequestBody String pushFromAbs) throws ParseException {
+    @PostMapping("/add")
+    public ResponseEntity<String> addLog3(@RequestBody String requestParam, HttpServletResponse resp) throws ParseException {
 
-        System.out.println(pushFromAbs);
+        Date currentDate = new Date();
+        Time time = new Time(currentDate.getTime());
+        List<Temperature> allTemperatures = new ArrayList<>();
+        String addingResultString = "";
+
+        System.out.println("Пришел POST с температурой. Параметры с сервера - " + requestParam);
+
+        // Парсим пришедший JSON  с температурой
+        try {
+
+            Double temp = JSONTemplate.fromString(requestParam).get("temp").getAsDouble();
+
+            //   logger.debug("########### PUSH FROM ABS ###########");
+            //   logger.debug("orderId:   " + orderId);
 
 
-        ResponseEntity<String> responseEntity = new ResponseEntity<>("my response body",
-                HttpStatus.OK);
+        //    if ((isBetween(time.toLocalTime(), LocalTime.of(1, 0), LocalTime.of(3, 0))) && !at2am) { // если 2 часа ночи
+                at2am = true;
+                allTemperatures = mainService.addMeasure(temp);
+        //    }
+       /* if ((isBetween(time.toLocalTime(), LocalTime.of(7, 0), LocalTime.of(9, 0))) && !at8am) { // если 8 утра
+            at8am = true;
+            result = mainService.addMeasure(temp);
+        }
+        if ((isBetween(time.toLocalTime(), LocalTime.of(13, 0), LocalTime.of(15, 0))) && !at14) { // если 14 часов дня
+            at14 = true;
+            result = mainService.addMeasure(temp);
+        }
+        if ((isBetween(time.toLocalTime(), LocalTime.of(18, 0), LocalTime.of(20, 0)))&& !at19) { // если 19 часов вечера
+            at19 = true;
+            result = mainService.addMeasure(temp);
+        }
+
+        if (at2am && at8am && at14 && at19){
+
+            at2am = false;
+            at8am = false;
+            at14 = false;
+            at19 = false;
+        }*/
+
+            /** Может быть ситуация, что какие-то проставились, какие-то нет (сбойнуло что-то например),
+             * тогда нам по любому по достижении утра надо сбросить все флаги.
+             */
+
+            if (at2am) {
+                at8am = false;
+                at14 = false;
+                at19 = false;
+            }
+        } catch (JsonParseException ex) {
+
+            try {
+                resp.sendError(HttpServletResponse.SC_BAD_REQUEST, "Ошибка парсинга JSON");
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+
+        // Формируем JSON
+        JsonObject responseStatusInJson = JSONTemplate.create()
+                .add("AllTemperatures", allTemperatures.size())
+                .add("NightPost", at2am)
+                .add("MorningPost", at8am)
+                .add("DayPost", at14)
+                .add("EveningPost", at19).getJson();
+
+        ResponseEntity<String> responseEntity = new ResponseEntity<>(responseStatusInJson.toString(), HttpStatus.OK);
         return responseEntity;
     }
-
-
 }
