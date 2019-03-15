@@ -2,6 +2,7 @@ package com.antonromanov.temperaturerest.model;
 
 import javax.persistence.*;
 import java.sql.Time;
+import java.time.LocalTime;
 import java.util.Date;
 import org.hibernate.annotations.Type;
 
@@ -48,7 +49,9 @@ public class Temperature {
 
     public Temperature(Double newTemp) {
         this.temperature = newTemp;
-        this.name = "from REST";
+        this.name = "from Arduino Home";
+        this.dateCreated = new Date();
+        this.timeCreated = java.sql.Time.valueOf(LocalTime.now());
     }
 
     public Integer getId() {

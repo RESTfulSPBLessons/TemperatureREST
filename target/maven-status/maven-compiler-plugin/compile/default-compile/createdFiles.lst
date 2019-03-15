@@ -7,6 +7,7 @@ com\antonromanov\temperaturerest\config\SpringWebAppInitializer.class
 com\antonromanov\temperaturerest\model\DailyReport.class
 com\antonromanov\temperaturerest\model\Temperature.class
 com\antonromanov\temperaturerest\controller\MainRestController.class
+com\antonromanov\temperaturerest\utils\JSONTemplate.class
 com\antonromanov\temperaturerest\livecontrolthread\MainParameters.class
 com\antonromanov\temperaturerest\repository\LogsRepository.class
 com\antonromanov\temperaturerest\config\AppConfig.class

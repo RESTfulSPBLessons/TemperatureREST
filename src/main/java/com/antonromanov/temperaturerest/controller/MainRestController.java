@@ -10,6 +10,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import com.antonromanov.temperaturerest.model.*;
 import com.antonromanov.temperaturerest.service.MainService;
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.Time;
@@ -18,6 +19,7 @@ import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.logging.Logger;
 
 import static com.antonromanov.temperaturerest.utils.Utils.isBetween;
 
@@ -27,6 +29,10 @@ import static com.antonromanov.temperaturerest.utils.Utils.isBetween;
 @RestController
 @RequestMapping("/rest/users")
 public class MainRestController {
+
+
+    private static final Logger LOGGER = Logger.getLogger(MainRestController.class.getName());
+    List<Temperature> allTemperatures = new ArrayList<>();
 
     //todo: надо прикрутить нормальные серверные логи
     //todo: надо поменять название проекта
@@ -53,10 +59,10 @@ public class MainRestController {
      * Глобальные флаги, чтобы отсекать пинги не в нужное время и чтобы в нужное время был только один пинг,
      * ибо кидаться мы с ардуины будем каждые 15 минут.
      */
-    private boolean at2am;
-    private boolean at8am;
-    private boolean at14;
-    private boolean at19;
+    private boolean at2am = false;
+    private boolean at8am = false;
+    private boolean at14 = false;
+    private boolean at19 = false;
 
     /**
      * Вдать все измерения температуры.
@@ -86,6 +92,7 @@ public class MainRestController {
     public List<Temperature> newMeasure(@RequestBody PR newTemp) {
 
         System.out.println("we are in POST HTTP");
+
 
         Date currentDate = new Date();
         Time time = new Time(currentDate.getTime());
@@ -223,39 +230,54 @@ public class MainRestController {
      * @throws ParseException
      */
     @PostMapping("/add")
-    public ResponseEntity<String> addLog3(@RequestBody String requestParam, HttpServletResponse resp) throws ParseException {
+    public ResponseEntity<String> addLog3(@RequestBody String requestParam, HttpServletRequest request, HttpServletResponse resp) throws ParseException {
 
         Date currentDate = new Date();
         Time time = new Time(currentDate.getTime());
-        List<Temperature> allTemperatures = new ArrayList<>();
-        String addingResultString = "";
+        String remoteAddr = "";
 
-        System.out.println("Пришел POST с температурой. Параметры с сервера - " + requestParam);
+        LOGGER.warning("We are in POST HTTP: " + requestParam);
+
+
+        // Пытаемся взять ip
+        if (request != null) {
+            remoteAddr = request.getHeader("X-FORWARDED-FOR");
+            if (remoteAddr == null || "".equals(remoteAddr)) {
+                remoteAddr = request.getRemoteAddr();
+                LOGGER.warning("GETTING REQUEST FROM:  " + remoteAddr);
+            }
+        }
+
+
+
 
         // Парсим пришедший JSON  с температурой
         try {
 
             Double temp = JSONTemplate.fromString(requestParam).get("temp").getAsDouble();
 
-            //   logger.debug("########### PUSH FROM ABS ###########");
-            //   logger.debug("orderId:   " + orderId);
+            //RESULT: {"AllTemperatures":149,"NightPost":true,"MorningPost":false,"DayPost":false,"EveningPost":f..
 
 
-        //    if ((isBetween(time.toLocalTime(), LocalTime.of(1, 0), LocalTime.of(3, 0))) && !at2am) { // если 2 часа ночи
+            if ((isBetween(time.toLocalTime(), LocalTime.of(1, 0), LocalTime.of(3, 0))) && !at2am) { // если 2 часа ночи
                 at2am = true;
                 allTemperatures = mainService.addMeasure(temp);
-        //    }
-       /* if ((isBetween(time.toLocalTime(), LocalTime.of(7, 0), LocalTime.of(9, 0))) && !at8am) { // если 8 утра
+                LOGGER.warning("POST NIGHT TEMPERATURE --------- SUCCESS" + time.toLocalTime());
+            }
+        if ((isBetween(time.toLocalTime(), LocalTime.of(7, 0), LocalTime.of(9, 0))) && !at8am) { // если 8 утра
             at8am = true;
-            result = mainService.addMeasure(temp);
+            allTemperatures = mainService.addMeasure(temp);
+            LOGGER.warning("POST MORNING TEMPERATURE --------- SUCCESS" + time.toLocalTime());
         }
         if ((isBetween(time.toLocalTime(), LocalTime.of(13, 0), LocalTime.of(15, 0))) && !at14) { // если 14 часов дня
             at14 = true;
-            result = mainService.addMeasure(temp);
+            allTemperatures = mainService.addMeasure(temp);
+            LOGGER.warning("POST DAY TEMPERATURE --------- SUCCESS" + time.toLocalTime());
         }
         if ((isBetween(time.toLocalTime(), LocalTime.of(18, 0), LocalTime.of(20, 0)))&& !at19) { // если 19 часов вечера
             at19 = true;
-            result = mainService.addMeasure(temp);
+            allTemperatures = mainService.addMeasure(temp);
+            LOGGER.warning("POST EVENING TEMPERATURE --------- SUCCESS" + time.toLocalTime());
         }
 
         if (at2am && at8am && at14 && at19){
@@ -264,17 +286,17 @@ public class MainRestController {
             at8am = false;
             at14 = false;
             at19 = false;
-        }*/
+        }
 
             /** Может быть ситуация, что какие-то проставились, какие-то нет (сбойнуло что-то например),
              * тогда нам по любому по достижении утра надо сбросить все флаги.
              */
 
-            if (at2am) {
+           /* if (at2am) {
                 at8am = false;
                 at14 = false;
                 at19 = false;
-            }
+            }*/
         } catch (JsonParseException ex) {
 
             try {
@@ -291,6 +313,8 @@ public class MainRestController {
                 .add("MorningPost", at8am)
                 .add("DayPost", at14)
                 .add("EveningPost", at19).getJson();
+
+        LOGGER.warning("RESULT:  " + responseStatusInJson.toString());
 
         ResponseEntity<String> responseEntity = new ResponseEntity<>(responseStatusInJson.toString(), HttpStatus.OK);
         return responseEntity;
