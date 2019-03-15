@@ -27,7 +27,6 @@ public class Temperature {
     @Column(name="temperature")
     private Double temperature;
 
-
     @Column(name = "datecreated", nullable = true)
     @Temporal(TemporalType.TIMESTAMP)
     // @Type(type="date")

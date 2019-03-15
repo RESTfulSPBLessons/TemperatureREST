@@ -31,6 +31,7 @@ import static com.antonromanov.temperaturerest.utils.Utils.isBetween;
 public class MainRestController {
 
 
+
     private static final Logger LOGGER = Logger.getLogger(MainRestController.class.getName());
     List<Temperature> allTemperatures = new ArrayList<>();
 
@@ -39,6 +40,10 @@ public class MainRestController {
     //todo: надо поменять названия классов и переменных
     //todo: надо поменять адрес REST API
     //todo: надо поменять еще вот эту ссылку - http://localhost:8080/FirstSPRINGJDBC-2.0-SNAPSHOT/rest/api/add. Чо за ФёрстСпрингДжейДиБиСи ????!!!!!!!
+    //todo:  логгирование в бд с настройкой удаления старых записей.
+    //todo:  прикрутить экран к ардуине
+    // todo:  прикрутить лампочки и вывод инфы (например, флаги) на OLED.
+
 
 
     /** Значит надо договориться, что постить мы будем в :
@@ -65,7 +70,7 @@ public class MainRestController {
     private boolean at19 = false;
 
     /**
-     * Вдать все измерения температуры.
+     * Выдать все измерения температуры.
      *
      * @return
      */
