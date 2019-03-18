@@ -9,6 +9,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import com.antonromanov.temperaturerest.model.*;
 import com.antonromanov.temperaturerest.service.MainService;
+
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
@@ -18,7 +19,10 @@ import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.Map;
 import java.util.logging.Logger;
+import java.util.stream.Collectors;
+
 import static com.antonromanov.temperaturerest.utils.Utils.*;
 
 /**
@@ -27,7 +31,6 @@ import static com.antonromanov.temperaturerest.utils.Utils.*;
 @RestController
 @RequestMapping("/rest/users")
 public class MainRestController {
-
 
 
     private static final Logger LOGGER = Logger.getLogger(MainRestController.class.getName());
@@ -47,7 +50,6 @@ public class MainRestController {
     // todo: переименовать и перенести все модели в Ангуляре, например что за User.ts - ????
     // todo: переименовать и перенести (Ангуляр) (this.year и this.count)
     // todo: переименовать методы типа addlog3. Ну что это за пипец.....
-
 
 
     /** Значит надо договориться, что постить мы будем в :
@@ -123,20 +125,25 @@ public class MainRestController {
      * @throws ParseException
      */
     @GetMapping("/today")
-    public ResponseEntity<List<Temperature>> getTodayMeasures() throws ParseException {
+    public ResponseEntity<String> getTodayMeasures() throws ParseException {
+
+        List<Temperature> todayList = mainService.getTodayMeasures();
+       // Map<String, String> result = todayList.stream().collect(Collectors.toMap(todayList::getValue, Item::getType)); //Converts List items to Map
+      //  System.out.println("Result  : " + result);
+      //  JSONObject json = new JSONObject(result); //Converts MAP to JsonObject
+      //  System.out.println("JSON : " + json); //prints {"firstname":"abc","lastname":"pqr","id":"1"}
+      //  return result;
+        // JSONArray ja = new JSONArray(list);
+        //gson.toJson(collection);
 
 
         // Формируем JSON
         JsonObject responseStatusInJson = JSONTemplate.create()
-                .add("AllTemperatures", allTemperatures.size())
-                .add("NightPost", at2am)
-                .add("MorningPost", at8am)
-                .add("DayPost", at14)
-                .add("EveningPost", at19).getJson();
+                .add(todayList).getJson();
 
-        ResponseEntity<List<Temperature>> responseEntity = new ResponseEntity<List<Temperature>>(responseStatusInJson.toString(), HttpStatus.OK);
+        ResponseEntity<String> responseEntity = new ResponseEntity<String>(responseStatusInJson.toString(), HttpStatus.OK);
 
-        return mainService.getTodayMeasures();
+        return responseEntity;
     }
 
 
@@ -251,48 +258,48 @@ public class MainRestController {
                     LOGGER.warning("POST NIGHT TEMPERATURE --------- FAIL - DUPLICATE MEASURE:  " + time.toLocalTime());
                 }
             }
-        if ((isBetween(time.toLocalTime(), LocalTime.of(7, 0), LocalTime.of(9, 0))) && !at8am) { // если 8 утра
-            at8am = true;
+            if ((isBetween(time.toLocalTime(), LocalTime.of(7, 0), LocalTime.of(9, 0))) && !at8am) { // если 8 утра
+                at8am = true;
 
-            // Проверяем, что такой температуры нет еще за сегодня
-            if (!isAlreadyWriten(mainService.getTodayMeasures(), 7, 9)) {
-                allTemperatures = mainService.addMeasure(temp);
-                LOGGER.warning("POST MORNING TEMPERATURE --------- SUCCESS:  " + time.toLocalTime());
-            } else {
-                LOGGER.warning("POST MORNING TEMPERATURE --------- FAIL - DUPLICATE MEASURE:  " + time.toLocalTime());
+                // Проверяем, что такой температуры нет еще за сегодня
+                if (!isAlreadyWriten(mainService.getTodayMeasures(), 7, 9)) {
+                    allTemperatures = mainService.addMeasure(temp);
+                    LOGGER.warning("POST MORNING TEMPERATURE --------- SUCCESS:  " + time.toLocalTime());
+                } else {
+                    LOGGER.warning("POST MORNING TEMPERATURE --------- FAIL - DUPLICATE MEASURE:  " + time.toLocalTime());
+                }
             }
-        }
-        if ((isBetween(time.toLocalTime(), LocalTime.of(13, 0), LocalTime.of(15, 0))) && !at14) { // если 14 часов дня
-            at14 = true;
+            if ((isBetween(time.toLocalTime(), LocalTime.of(13, 0), LocalTime.of(15, 0))) && !at14) { // если 14 часов дня
+                at14 = true;
 
-            // Проверяем, что такой температуры нет еще за сегодня
-            if (!isAlreadyWriten(mainService.getTodayMeasures(), 13, 15)) {
-                allTemperatures = mainService.addMeasure(temp);
-                LOGGER.warning("POST DAY TEMPERATURE --------- SUCCESS:  " + time.toLocalTime());
-            } else {
-                LOGGER.warning("POST DAY TEMPERATURE --------- FAIL - DUPLICATE MEASURE:  " + time.toLocalTime());
+                // Проверяем, что такой температуры нет еще за сегодня
+                if (!isAlreadyWriten(mainService.getTodayMeasures(), 13, 15)) {
+                    allTemperatures = mainService.addMeasure(temp);
+                    LOGGER.warning("POST DAY TEMPERATURE --------- SUCCESS:  " + time.toLocalTime());
+                } else {
+                    LOGGER.warning("POST DAY TEMPERATURE --------- FAIL - DUPLICATE MEASURE:  " + time.toLocalTime());
+                }
+
+            }
+            if ((isBetween(time.toLocalTime(), LocalTime.of(18, 0), LocalTime.of(20, 0))) && !at19) { // если 19 часов вечера
+                at19 = true;
+
+                // Проверяем, что такой температуры нет еще за сегодня
+                if (!isAlreadyWriten(mainService.getTodayMeasures(), 18, 20)) {
+                    allTemperatures = mainService.addMeasure(temp);
+                    LOGGER.warning("POST EVENING TEMPERATURE --------- SUCCESS:  " + time.toLocalTime());
+                } else {
+                    LOGGER.warning("POST EVENING TEMPERATURE --------- FAIL - DUPLICATE MEASURE:  " + time.toLocalTime());
+                }
             }
 
-        }
-        if ((isBetween(time.toLocalTime(), LocalTime.of(18, 0), LocalTime.of(20, 0)))&& !at19) { // если 19 часов вечера
-            at19 = true;
+            if (at2am && at8am && at14 && at19) {
 
-            // Проверяем, что такой температуры нет еще за сегодня
-            if (!isAlreadyWriten(mainService.getTodayMeasures(), 18, 20)) {
-                allTemperatures = mainService.addMeasure(temp);
-                LOGGER.warning("POST EVENING TEMPERATURE --------- SUCCESS:  " + time.toLocalTime());
-            } else {
-                LOGGER.warning("POST EVENING TEMPERATURE --------- FAIL - DUPLICATE MEASURE:  " + time.toLocalTime());
+                at2am = false;
+                at8am = false;
+                at14 = false;
+                at19 = false;
             }
-        }
-
-        if (at2am && at8am && at14 && at19){
-
-            at2am = false;
-            at8am = false;
-            at14 = false;
-            at19 = false;
-        }
         } catch (JsonParseException ex) {
 
             try {

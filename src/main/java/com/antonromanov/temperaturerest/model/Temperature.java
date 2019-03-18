@@ -28,7 +28,7 @@ public class Temperature {
     private Double temperature;
 
     @Column(name = "datecreated", nullable = true)
-    @Temporal(TemporalType.DATE)
+    @Temporal(TemporalType.TIMESTAMP)
     private Date dateCreated;
 
     @Column(name="timecreated")
@@ -38,7 +38,7 @@ public class Temperature {
 
 
     @Column(name = "test")
-    @Temporal(TemporalType.DATE)
+    @Temporal(TemporalType.TIMESTAMP)
     private Date test;
 
 
