@@ -41,7 +41,6 @@ public class Utils {
 
 		if (!temperatureList.isEmpty()) {
 			for (Temperature temp : temperatureList) {
-
 				if (temp.getTimeCreated() != null) {
 					if (isBetween(temp.getTimeCreated().toLocalTime(), LocalTime.of(13, 0), LocalTime.of(15, 0))) { // если дневное
 						dayTemp = temp.getTemperature();
@@ -50,7 +49,7 @@ public class Utils {
 						nightTemp = temp.getTemperature();
 					}
 					if ((dayTemp != 999.0) && (nightTemp != 999.0)) {
-						weeklyReport.add(new DailyReport(temp.getTest(), dayTemp, nightTemp));
+						weeklyReport.add(new DailyReport(temp.getDateCreated(), dayTemp, nightTemp));
 						dayTemp = 999.0;
 						nightTemp = 999.0;
 					}

@@ -110,10 +110,35 @@ public class MainRestController {
      * @return
      * @throws ParseException
      */
-    @GetMapping("/today")
-    public List<Temperature> getTodayMeasures() throws ParseException {
+    @GetMapping("/today_old")
+    public List<Temperature> getTodayMeasuresOld() throws ParseException {
         return mainService.getTodayMeasures();
     }
+
+
+    /**
+     * Выдать статистику за сегодня.
+     *
+     * @return
+     * @throws ParseException
+     */
+    @GetMapping("/today")
+    public ResponseEntity<List<Temperature>> getTodayMeasures() throws ParseException {
+
+
+        // Формируем JSON
+        JsonObject responseStatusInJson = JSONTemplate.create()
+                .add("AllTemperatures", allTemperatures.size())
+                .add("NightPost", at2am)
+                .add("MorningPost", at8am)
+                .add("DayPost", at14)
+                .add("EveningPost", at19).getJson();
+
+        ResponseEntity<List<Temperature>> responseEntity = new ResponseEntity<List<Temperature>>(responseStatusInJson.toString(), HttpStatus.OK);
+
+        return mainService.getTodayMeasures();
+    }
+
 
     /**
      * Выдать статистику за неделю.
