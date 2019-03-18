@@ -5,7 +5,6 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.RequestEntity;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import com.antonromanov.temperaturerest.model.*;
@@ -20,8 +19,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.logging.Logger;
-
-import static com.antonromanov.temperaturerest.utils.Utils.isBetween;
+import static com.antonromanov.temperaturerest.utils.Utils.*;
 
 /**
  * Основной REST-контроллер приложения.
@@ -35,14 +33,20 @@ public class MainRestController {
     private static final Logger LOGGER = Logger.getLogger(MainRestController.class.getName());
     List<Temperature> allTemperatures = new ArrayList<>();
 
-    //todo: надо прикрутить нормальные серверные логи
+
     //todo: надо поменять название проекта
+    //todo: влить core-ui project уже
     //todo: надо поменять названия классов и переменных
     //todo: надо поменять адрес REST API
     //todo: надо поменять еще вот эту ссылку - http://localhost:8080/FirstSPRINGJDBC-2.0-SNAPSHOT/rest/api/add. Чо за ФёрстСпрингДжейДиБиСи ????!!!!!!!
     //todo:  логгирование в бд с настройкой удаления старых записей.
     //todo:  прикрутить экран к ардуине
     // todo:  прикрутить лампочки и вывод инфы (например, флаги) на OLED.
+    // todo: удалить поле test из temperature_copy
+    // todo: temperature_copy переименовать в нормальную
+    // todo: переименовать и перенести все модели в Ангуляре, например что за User.ts - ????
+    // todo: переименовать и перенести (Ангуляр) (this.year и this.count)
+    // todo: переименовать методы типа addlog3. Ну что это за пипец.....
 
 
 
@@ -86,53 +90,6 @@ public class MainRestController {
         return mainService.getAll();
     }
 
-
-    /**
-     * Добавить измерение. Уберем в следующем коммите.
-     *
-     * @param newTemp
-     * @return
-     */
-    @PostMapping("/add_old")
-    public List<Temperature> newMeasure(@RequestBody PR newTemp) {
-
-        System.out.println("we are in POST HTTP");
-
-
-        Date currentDate = new Date();
-        Time time = new Time(currentDate.getTime());
-        List<Temperature> result = new ArrayList<>();
-
-
-      ///  if ((isBetween(time.toLocalTime(), LocalTime.of(1, 0), LocalTime.of(3, 0))) && !at2am) { // если 2 часа ночи
-      //      at2am = true;
-            result = mainService.addMeasure(newTemp.getTemp());
-      //  }
-       /* if ((isBetween(time.toLocalTime(), LocalTime.of(7, 0), LocalTime.of(9, 0))) && !at8am) { // если 8 утра
-            at8am = true;
-            result = mainService.addMeasure(newTemp.getTemp());
-        }
-        if ((isBetween(time.toLocalTime(), LocalTime.of(13, 0), LocalTime.of(15, 0))) && !at14) { // если 14 часов дня
-            at14 = true;
-            result = mainService.addMeasure(newTemp.getTemp());
-        }
-        if ((isBetween(time.toLocalTime(), LocalTime.of(18, 0), LocalTime.of(20, 0)))&& !at19) { // если 19 часов вечера
-            at19 = true;
-            result = mainService.addMeasure(newTemp.getTemp());
-        }
-
-        if (at2am && at8am && at14 && at19){
-
-            at2am = false;
-            at8am = false;
-            at14 = false;
-            at19 = false;
-        }*/
-
-
-
-        return result;
-    }
 
     /**
      * добавить измерение температуры.
@@ -253,36 +210,55 @@ public class MainRestController {
             }
         }
 
-
-
-
         // Парсим пришедший JSON  с температурой
         try {
 
             Double temp = JSONTemplate.fromString(requestParam).get("temp").getAsDouble();
 
-            //RESULT: {"AllTemperatures":149,"NightPost":true,"MorningPost":false,"DayPost":false,"EveningPost":f..
-
-
             if ((isBetween(time.toLocalTime(), LocalTime.of(1, 0), LocalTime.of(3, 0))) && !at2am) { // если 2 часа ночи
                 at2am = true;
-                allTemperatures = mainService.addMeasure(temp);
-                LOGGER.warning("POST NIGHT TEMPERATURE --------- SUCCESS" + time.toLocalTime());
+
+                // Проверяем, что такой температуры нет еще за сегодня
+                if (!isAlreadyWriten(mainService.getTodayMeasures(), 1, 3)) {
+                    allTemperatures = mainService.addMeasure(temp);
+                    LOGGER.warning("POST NIGHT TEMPERATURE --------- SUCCESS:  " + time.toLocalTime());
+                } else {
+                    LOGGER.warning("POST NIGHT TEMPERATURE --------- FAIL - DUPLICATE MEASURE:  " + time.toLocalTime());
+                }
             }
         if ((isBetween(time.toLocalTime(), LocalTime.of(7, 0), LocalTime.of(9, 0))) && !at8am) { // если 8 утра
             at8am = true;
-            allTemperatures = mainService.addMeasure(temp);
-            LOGGER.warning("POST MORNING TEMPERATURE --------- SUCCESS" + time.toLocalTime());
+
+            // Проверяем, что такой температуры нет еще за сегодня
+            if (!isAlreadyWriten(mainService.getTodayMeasures(), 7, 9)) {
+                allTemperatures = mainService.addMeasure(temp);
+                LOGGER.warning("POST MORNING TEMPERATURE --------- SUCCESS:  " + time.toLocalTime());
+            } else {
+                LOGGER.warning("POST MORNING TEMPERATURE --------- FAIL - DUPLICATE MEASURE:  " + time.toLocalTime());
+            }
         }
         if ((isBetween(time.toLocalTime(), LocalTime.of(13, 0), LocalTime.of(15, 0))) && !at14) { // если 14 часов дня
             at14 = true;
-            allTemperatures = mainService.addMeasure(temp);
-            LOGGER.warning("POST DAY TEMPERATURE --------- SUCCESS" + time.toLocalTime());
+
+            // Проверяем, что такой температуры нет еще за сегодня
+            if (!isAlreadyWriten(mainService.getTodayMeasures(), 13, 15)) {
+                allTemperatures = mainService.addMeasure(temp);
+                LOGGER.warning("POST DAY TEMPERATURE --------- SUCCESS:  " + time.toLocalTime());
+            } else {
+                LOGGER.warning("POST DAY TEMPERATURE --------- FAIL - DUPLICATE MEASURE:  " + time.toLocalTime());
+            }
+
         }
         if ((isBetween(time.toLocalTime(), LocalTime.of(18, 0), LocalTime.of(20, 0)))&& !at19) { // если 19 часов вечера
             at19 = true;
-            allTemperatures = mainService.addMeasure(temp);
-            LOGGER.warning("POST EVENING TEMPERATURE --------- SUCCESS" + time.toLocalTime());
+
+            // Проверяем, что такой температуры нет еще за сегодня
+            if (!isAlreadyWriten(mainService.getTodayMeasures(), 18, 20)) {
+                allTemperatures = mainService.addMeasure(temp);
+                LOGGER.warning("POST EVENING TEMPERATURE --------- SUCCESS:  " + time.toLocalTime());
+            } else {
+                LOGGER.warning("POST EVENING TEMPERATURE --------- FAIL - DUPLICATE MEASURE:  " + time.toLocalTime());
+            }
         }
 
         if (at2am && at8am && at14 && at19){
@@ -292,16 +268,6 @@ public class MainRestController {
             at14 = false;
             at19 = false;
         }
-
-            /** Может быть ситуация, что какие-то проставились, какие-то нет (сбойнуло что-то например),
-             * тогда нам по любому по достижении утра надо сбросить все флаги.
-             */
-
-           /* if (at2am) {
-                at8am = false;
-                at14 = false;
-                at19 = false;
-            }*/
         } catch (JsonParseException ex) {
 
             try {

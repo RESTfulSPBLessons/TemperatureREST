@@ -15,7 +15,7 @@ import java.util.List;
 @Repository
 public interface TemperatureRepository extends JpaRepository<Temperature, Integer>{
 
-    @Query(value = "SELECT s  FROM Temperature s where s.test = :creationDateTime order by s.timeCreated ASC")
+    @Query(value = "SELECT s  FROM Temperature s where s.dateCreated = :creationDateTime order by s.timeCreated ASC")
     List<Temperature> getTodayMeasures(@Param("creationDateTime") Date creationDateTime);
 
 
