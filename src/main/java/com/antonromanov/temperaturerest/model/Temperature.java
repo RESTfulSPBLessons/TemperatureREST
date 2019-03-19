@@ -2,6 +2,8 @@ package com.antonromanov.temperaturerest.model;
 
 import javax.persistence.*;
 import java.sql.Time;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.time.LocalTime;
 import java.util.Date;
 import org.hibernate.annotations.Type;
@@ -28,17 +30,17 @@ public class Temperature {
     private Double temperature;
 
     @Column(name = "datecreated", nullable = true)
-    @Temporal(TemporalType.TIMESTAMP)
+    @Temporal(TemporalType.DATE)
     private Date dateCreated;
 
     @Column(name="timecreated")
-    @Temporal(TemporalType.TIME)
-    @Type(type="time")
+   // @Temporal(TemporalType.TIME)
+  /// @Type(type="time")
     private Time timeCreated;
 
 
     @Column(name = "test")
-    @Temporal(TemporalType.TIMESTAMP)
+    @Temporal(TemporalType.DATE)
     private Date test;
 
 
@@ -85,6 +87,7 @@ public class Temperature {
     }
 
     public Time getTimeCreated() {
+
         return timeCreated;
     }
 

@@ -1,6 +1,8 @@
 package com.antonromanov.temperaturerest.utils;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collection;
 import java.util.List;
 import com.antonromanov.temperaturerest.model.Temperature;
 import com.google.gson.*;
@@ -46,6 +48,10 @@ public final class JSONTemplate {
 		return json;
 	}
 
+	public Gson getGson() {
+		return gson;
+	}
+
 	public static JsonObject fromString(String json) {
 		return gson.fromJson(json, JsonObject.class);
 	}
@@ -55,12 +61,15 @@ public final class JSONTemplate {
 		return getJson().toString();
 	}
 
-	public JSONTemplate add(List<Temperature> list) {
-		//JsonArray arr = new JsonArray();
-		//Arrays.asList(list).stream().forEach(l -> arr.add(new JsonPrimitive(l)));
-		//json.add(propertyName, arr);
-		//gson.toJson(list);
-		return this;
+	public String parseListOfObjects(List<Temperature> list) {
+
+		/*Collection collection = new ArrayList();
+		collection.add("hello");
+		collection.add(5);
+		collection.add(new Temperature(Double.valueOf(15)));*/
+
+		//gson.toJson(collection);
+		return gson.toJson(list);
 
 	}
 }

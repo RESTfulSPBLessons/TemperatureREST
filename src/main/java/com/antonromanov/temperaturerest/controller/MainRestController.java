@@ -1,15 +1,19 @@
 package com.antonromanov.temperaturerest.controller;
 
 import com.antonromanov.temperaturerest.utils.JSONTemplate;
+import com.antonromanov.temperaturerest.utils.TimeSerializer;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import com.antonromanov.temperaturerest.model.*;
 import com.antonromanov.temperaturerest.service.MainService;
-
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
@@ -125,23 +129,52 @@ public class MainRestController {
      * @throws ParseException
      */
     @GetMapping("/today")
-    public ResponseEntity<String> getTodayMeasures() throws ParseException {
+    public ResponseEntity<String> getTodayMeasures(HttpServletRequest request) throws ParseException {
 
         List<Temperature> todayList = mainService.getTodayMeasures();
-       // Map<String, String> result = todayList.stream().collect(Collectors.toMap(todayList::getValue, Item::getType)); //Converts List items to Map
-      //  System.out.println("Result  : " + result);
-      //  JSONObject json = new JSONObject(result); //Converts MAP to JsonObject
-      //  System.out.println("JSON : " + json); //prints {"firstname":"abc","lastname":"pqr","id":"1"}
-      //  return result;
-        // JSONArray ja = new JSONArray(list);
-        //gson.toJson(collection);
+
+        String remoteAddr = "";
+
+        LOGGER.warning("========= TODAY MEASURES LIST ============== ");
+
+        // todo: вынести в отдельный метод
+        // Пытаемся взять ip
+        if (request != null) {
+            remoteAddr = request.getHeader("X-FORWARDED-FOR");
+            if (remoteAddr == null || "".equals(remoteAddr)) {
+                remoteAddr = request.getRemoteAddr();
+                LOGGER.warning("GETTING REQUEST FROM:  " + remoteAddr);
+            }
+        }
 
 
+        // todo: вынести в отдельный метод
         // Формируем JSON
         JsonObject responseStatusInJson = JSONTemplate.create()
-                .add(todayList).getJson();
+                .add("AllTemperatures", todayList.size())
+                .add("NightPost", at2am)
+                .add("MorningPost", at8am)
+                .add("DayPost", at14)
+                .add("EveningPost", at19).getJson();
 
-        ResponseEntity<String> responseEntity = new ResponseEntity<String>(responseStatusInJson.toString(), HttpStatus.OK);
+        LOGGER.warning("RESULT:  " + responseStatusInJson.toString());
+
+        // todo: вынести в отдельный метод класса Utils
+        Gson gson = new GsonBuilder()
+                .setDateFormat("dd/MM/yyyy")
+                .registerTypeAdapter(java.sql.Time.class, new TimeSerializer())
+                .create();
+
+
+
+        String result = gson.toJson(todayList);
+
+        HttpHeaders headers = new HttpHeaders();
+        headers.setContentType(MediaType.APPLICATION_JSON);
+        headers.setCacheControl("no-cache");
+
+        //ResponseEntity<String> responseEntity = new ResponseEntity<String>(JSONTemplate.create().parseListOfObjects(todayList), HttpStatus.OK);
+        ResponseEntity<String> responseEntity = new ResponseEntity<String>(result, headers, HttpStatus.OK);
 
         return responseEntity;
     }
