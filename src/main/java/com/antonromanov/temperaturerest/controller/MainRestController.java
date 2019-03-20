@@ -116,18 +116,6 @@ public class MainRestController {
      * @return
      * @throws ParseException
      */
-    @GetMapping("/today_old")
-    public List<Temperature> getTodayMeasuresOld() throws ParseException {
-        return mainService.getTodayMeasures();
-    }
-
-
-    /**
-     * Выдать статистику за сегодня.
-     *
-     * @return
-     * @throws ParseException
-     */
     @GetMapping("/today")
     public ResponseEntity<String> getTodayMeasures(HttpServletRequest request) throws ParseException {
 
@@ -147,7 +135,6 @@ public class MainRestController {
             }
         }
 
-
         // todo: вынести в отдельный метод
         // Формируем JSON
         JsonObject responseStatusInJson = JSONTemplate.create()
@@ -165,15 +152,12 @@ public class MainRestController {
                 .registerTypeAdapter(java.sql.Time.class, new TimeSerializer())
                 .create();
 
-
-
         String result = gson.toJson(todayList);
 
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_JSON);
         headers.setCacheControl("no-cache");
 
-        //ResponseEntity<String> responseEntity = new ResponseEntity<String>(JSONTemplate.create().parseListOfObjects(todayList), HttpStatus.OK);
         ResponseEntity<String> responseEntity = new ResponseEntity<String>(result, headers, HttpStatus.OK);
 
         return responseEntity;
@@ -192,15 +176,72 @@ public class MainRestController {
     }
 
     /**
+     * Выдать статистику за месяц (старый месяц).
+     *
+     * @return
+     * @throws ParseException
+     */
+    @GetMapping("/monthday_old")
+    public List<DailyReport> getMonthReport_Old() throws ParseException {
+        return mainService.getMonthDayReport();
+    }
+
+    /**
      * Выдать статистику за месяц.
      *
      * @return
      * @throws ParseException
      */
-    @GetMapping("/monthday")
-    public List<DailyReport> getMonthReport() throws ParseException {
-        return mainService.getMonthDayReport();
+    @GetMapping("/month")
+    public ResponseEntity<String> getMonthReport(HttpServletRequest request) throws ParseException {
+
+        List<DailyReport> monthList = mainService.getMonthDayReport();
+
+        String remoteAddr = "";
+
+        LOGGER.warning("========= MONTH MEASURES LIST ============== ");
+
+        // todo: вынести в отдельный метод
+        // Пытаемся взять ip
+        if (request != null) {
+            remoteAddr = request.getHeader("X-FORWARDED-FOR");
+            if (remoteAddr == null || "".equals(remoteAddr)) {
+                remoteAddr = request.getRemoteAddr();
+                LOGGER.warning("GETTING REQUEST FROM:  " + remoteAddr);
+            }
+        }
+
+        // todo: вынести в отдельный метод
+        // Формируем JSON
+        JsonObject responseStatusInJson = JSONTemplate.create()
+                .add("AllTemperatures", monthList.size())
+                .add("NightPost", at2am)
+                .add("MorningPost", at8am)
+                .add("DayPost", at14)
+                .add("EveningPost", at19).getJson();
+
+        LOGGER.warning("RESULT:  " + responseStatusInJson.toString());
+
+        // todo: вынести в отдельный метод класса Utils
+        Gson gson = new GsonBuilder()
+                .setDateFormat("dd/MM/yyyy")
+                .registerTypeAdapter(java.sql.Time.class, new TimeSerializer())
+                .create();
+
+        String result = gson.toJson(monthList);
+
+        HttpHeaders headers = new HttpHeaders();
+        headers.setContentType(MediaType.APPLICATION_JSON);
+        headers.setCacheControl("no-cache");
+
+        ResponseEntity<String> responseEntity = new ResponseEntity<String>(result, headers, HttpStatus.OK);
+
+
+
+        return responseEntity;
     }
+
+
 
     /**
      * Выдать текущий статус (состояние мониторинга).
