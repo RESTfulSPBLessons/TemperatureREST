@@ -11,7 +11,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import com.antonromanov.temperaturerest.model.*;
 import com.antonromanov.temperaturerest.service.MainService;
-
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
@@ -21,9 +20,11 @@ import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-import java.util.logging.Logger;
-
 import static com.antonromanov.temperaturerest.utils.Utils.*;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+
 
 /**
  * Основной REST-контроллер приложения.
@@ -33,24 +34,28 @@ import static com.antonromanov.temperaturerest.utils.Utils.*;
 public class MainRestController {
 
 
-	private static final Logger LOGGER = Logger.getLogger(MainRestController.class.getName());
+	private static final Logger LOGGER = LoggerFactory.getLogger(MainRestController.class);
 	List<Temperature> allTemperatures = new ArrayList<>();
 
 
-	//todo: надо поменять название проекта
-	//todo: надо поменять названия классов и переменных
-	//todo: надо поменять адрес REST API
-	//todo: прикрутить телеграмм-бота
+	// todo: надо поменять название проекта
+	// todo: надо поменять названия классов и переменных
+	// todo: надо поменять адрес REST API
+	// todo: прикрутить телеграмм-бота
 	// todo: перейти со Спринга на СпрингБут
-	//todo: надо поменять еще вот эту ссылку - http://localhost:8080/FirstSPRINGJDBC-2.0-SNAPSHOT/rest/api/add. Чо за ФёрстСпрингДжейДиБиСи ????!!!!!!!
-	//todo:  логгирование в бд с настройкой удаления старых записей.
-	//todo:  прикрутить экран к ардуине
+	// todo: надо поменять еще вот эту ссылку - http://localhost:8080/FirstSPRINGJDBC-2.0-SNAPSHOT/rest/api/add. Чо за ФёрстСпрингДжейДиБиСи ????!!!!!!!
+	// todo:  логгирование в бд с настройкой удаления старых записей.
+	// todo:  прикрутить экран к ардуине
 	// todo:  прикрутить лампочки и вывод инфы (например, флаги) на OLED.
-	// todo: удалить поле test из temperature_copy
 	// todo: temperature_copy переименовать в нормальную
 	// todo: переименовать и перенести все модели в Ангуляре, например что за User.ts - ????
 	// todo: переименовать и перенести (Ангуляр) (this.year и this.count)
 	// todo: переименовать методы типа addlog3. Ну что это за пипец.....
+	// todo: сделать отправку логов/состояний на почту
+	// todo:Почистить гит, слить все ветки в мастер и удалить
+
+
+
 
 
 	/** Значит надо договориться, что постить мы будем в :
@@ -89,7 +94,7 @@ public class MainRestController {
 
 		String remoteAddr = "";
 
-		LOGGER.warning("========= ALL MEASURES LIST ============== ");
+		LOGGER.info("========= ALL MEASURES LIST ============== ");
 
 		// todo: вынести в отдельный метод
 		// Пытаемся взять ip
@@ -97,7 +102,7 @@ public class MainRestController {
 			remoteAddr = request.getHeader("X-FORWARDED-FOR");
 			if (remoteAddr == null || "".equals(remoteAddr)) {
 				remoteAddr = request.getRemoteAddr();
-				LOGGER.warning("GETTING REQUEST FROM:  " + remoteAddr);
+				LOGGER.info("GETTING REQUEST FROM:  " + remoteAddr);
 			}
 		}
 
@@ -110,7 +115,7 @@ public class MainRestController {
 				.add("DayPost", at14)
 				.add("EveningPost", at19).getJson();
 
-		LOGGER.warning("RESULT:  " + responseStatusInJson.toString());
+		LOGGER.info("RESULT:  " + responseStatusInJson.toString());
 
 		// todo: вынести в отдельный метод класса Utils
 		Gson gson = new GsonBuilder()
@@ -141,7 +146,7 @@ public class MainRestController {
 
 		String remoteAddr = "";
 
-		LOGGER.warning("========= TODAY MEASURES LIST ============== ");
+		LOGGER.info("========= TODAY MEASURES LIST ============== ");
 
 		// todo: вынести в отдельный метод
 		// Пытаемся взять ip
@@ -149,7 +154,7 @@ public class MainRestController {
 			remoteAddr = request.getHeader("X-FORWARDED-FOR");
 			if (remoteAddr == null || "".equals(remoteAddr)) {
 				remoteAddr = request.getRemoteAddr();
-				LOGGER.warning("GETTING REQUEST FROM:  " + remoteAddr);
+				LOGGER.info("GETTING REQUEST FROM:  " + remoteAddr);
 			}
 		}
 
@@ -162,7 +167,7 @@ public class MainRestController {
 				.add("DayPost", at14)
 				.add("EveningPost", at19).getJson();
 
-		LOGGER.warning("RESULT:  " + responseStatusInJson.toString());
+		LOGGER.info("RESULT:  " + responseStatusInJson.toString());
 
 		// todo: вынести в отдельный метод класса Utils
 		Gson gson = new GsonBuilder()
@@ -195,7 +200,7 @@ public class MainRestController {
 
 		String remoteAddr = "";
 
-		LOGGER.warning("========= WEEK MEASURES LIST ============== ");
+		LOGGER.info("========= WEEK MEASURES LIST ============== ");
 
 		// todo: вынести в отдельный метод
 		// Пытаемся взять ip
@@ -203,7 +208,7 @@ public class MainRestController {
 			remoteAddr = request.getHeader("X-FORWARDED-FOR");
 			if (remoteAddr == null || "".equals(remoteAddr)) {
 				remoteAddr = request.getRemoteAddr();
-				LOGGER.warning("GETTING REQUEST FROM:  " + remoteAddr);
+				LOGGER.info("GETTING REQUEST FROM:  " + remoteAddr);
 			}
 		}
 
@@ -216,7 +221,7 @@ public class MainRestController {
 				.add("DayPost", at14)
 				.add("EveningPost", at19).getJson();
 
-		LOGGER.warning("RESULT:  " + responseStatusInJson.toString());
+		LOGGER.info("RESULT:  " + responseStatusInJson.toString());
 
 		// todo: вынести в отдельный метод класса Utils
 		Gson gson = new GsonBuilder()
@@ -225,7 +230,6 @@ public class MainRestController {
 				.create();
 
 		String result = gson.toJson(weekList);
-
 		HttpHeaders headers = new HttpHeaders();
 		headers.setContentType(MediaType.APPLICATION_JSON);
 		headers.setCacheControl("no-cache");
@@ -250,7 +254,7 @@ public class MainRestController {
 
 		String remoteAddr = "";
 
-		LOGGER.warning("========= MONTH MEASURES LIST ============== ");
+		LOGGER.info("========= MONTH MEASURES LIST ============== ");
 
 		// todo: вынести в отдельный метод
 		// Пытаемся взять ip
@@ -258,7 +262,7 @@ public class MainRestController {
 			remoteAddr = request.getHeader("X-FORWARDED-FOR");
 			if (remoteAddr == null || "".equals(remoteAddr)) {
 				remoteAddr = request.getRemoteAddr();
-				LOGGER.warning("GETTING REQUEST FROM:  " + remoteAddr);
+				LOGGER.info("GETTING REQUEST FROM:  " + remoteAddr);
 			}
 		}
 
@@ -271,7 +275,7 @@ public class MainRestController {
 				.add("DayPost", at14)
 				.add("EveningPost", at19).getJson();
 
-		LOGGER.warning("RESULT:  " + responseStatusInJson.toString());
+		LOGGER.info("RESULT:  " + responseStatusInJson.toString());
 
 		// todo: вынести в отдельный метод класса Utils
 		Gson gson = new GsonBuilder()
@@ -284,9 +288,7 @@ public class MainRestController {
 		HttpHeaders headers = new HttpHeaders();
 		headers.setContentType(MediaType.APPLICATION_JSON);
 		headers.setCacheControl("no-cache");
-
 		ResponseEntity<String> responseEntity = new ResponseEntity<String>(result, headers, HttpStatus.OK);
-
 
 		return responseEntity;
 	}
@@ -315,7 +317,7 @@ public class MainRestController {
 		List<Logs> allLogsList = mainService.getAllLogs();
 		String remoteAddr = "";
 
-		LOGGER.warning("============ ALL LOGS LIST ============== ");
+		LOGGER.info("============ ALL LOGS LIST ============== ");
 
 		// todo: вынести в отдельный метод
 		// Пытаемся взять ip
@@ -323,7 +325,7 @@ public class MainRestController {
 			remoteAddr = request.getHeader("X-FORWARDED-FOR");
 			if (remoteAddr == null || "".equals(remoteAddr)) {
 				remoteAddr = request.getRemoteAddr();
-				LOGGER.warning("GETTING REQUEST FROM:  " + remoteAddr);
+				LOGGER.info("GETTING REQUEST FROM:  " + remoteAddr);
 			}
 		}
 
@@ -332,7 +334,7 @@ public class MainRestController {
 		JsonObject responseStatusInJson = JSONTemplate.create()
 				.add("SIZE OF ALL LOGS", allLogsList.size()).getJson();
 
-		LOGGER.warning("RESULT:  " + responseStatusInJson.toString());
+		LOGGER.info("RESULT:  " + responseStatusInJson.toString());
 
 		// todo: вынести в отдельный метод класса Utils
 		Gson gson = new GsonBuilder()
@@ -387,8 +389,8 @@ public class MainRestController {
 		String remoteAddr = "";
 		Status newStatus = null;
 
-		LOGGER.warning("################# ADD LOG METHOD #####################");
-		LOGGER.warning("LOG: " + requestParam);
+		LOGGER.info("################# ADD LOG METHOD #####################");
+		LOGGER.info("LOG: " + requestParam);
 
 		// Парсим пришедший JSON  с температурой
 		try {
@@ -418,7 +420,7 @@ public class MainRestController {
 					consuming,
 					currentDate); // lastContactDate
 
-			LOGGER.warning("PARSING RESULT: " + newStatus.toString());
+			LOGGER.info("PARSING RESULT: " + newStatus.toString());
 
 		} catch (JsonParseException ex) {
 
@@ -435,7 +437,7 @@ public class MainRestController {
 			remoteAddr = request.getHeader("X-FORWARDED-FOR");
 			if (remoteAddr == null || "".equals(remoteAddr)) {
 				remoteAddr = request.getRemoteAddr();
-				LOGGER.warning("GETTING REQUEST FROM:  " + remoteAddr);
+				LOGGER.info("GETTING REQUEST FROM:  " + remoteAddr);
 			}
 		}
 
@@ -480,7 +482,7 @@ public class MainRestController {
 		Time time = new Time(currentDate.getTime());
 		String remoteAddr = "";
 
-		LOGGER.warning("We are in POST HTTP: " + requestParam);
+		LOGGER.info("We are in POST HTTP: " + requestParam);
 
 
 		// Пытаемся взять ip
@@ -488,7 +490,7 @@ public class MainRestController {
 			remoteAddr = request.getHeader("X-FORWARDED-FOR");
 			if (remoteAddr == null || "".equals(remoteAddr)) {
 				remoteAddr = request.getRemoteAddr();
-				LOGGER.warning("GETTING REQUEST FROM:  " + remoteAddr);
+				LOGGER.info("GETTING REQUEST FROM:  " + remoteAddr);
 			}
 		}
 
@@ -514,9 +516,9 @@ public class MainRestController {
 				// Проверяем, что такой температуры нет еще за сегодня
 				if (!isAlreadyWriten(mainService.getTodayMeasures(), 1, 3)) {
 					allTemperatures = mainService.addMeasure(temp, responseStatusInJson.toString());
-					LOGGER.warning("POST NIGHT TEMPERATURE --------- SUCCESS:  " + time.toLocalTime());
+					LOGGER.info("POST NIGHT TEMPERATURE --------- SUCCESS:  " + time.toLocalTime());
 				} else {
-					LOGGER.warning("POST NIGHT TEMPERATURE --------- FAIL - DUPLICATE MEASURE:  " + time.toLocalTime());
+					LOGGER.error("POST NIGHT TEMPERATURE --------- FAIL - DUPLICATE MEASURE:  " + time.toLocalTime());
 				}
 			}
 			if ((isBetween(time.toLocalTime(), LocalTime.of(7, 0), LocalTime.of(9, 0))) && !at8am) { // если 8 утра
@@ -525,9 +527,9 @@ public class MainRestController {
 				// Проверяем, что такой температуры нет еще за сегодня
 				if (!isAlreadyWriten(mainService.getTodayMeasures(), 7, 9)) {
 					allTemperatures = mainService.addMeasure(temp, responseStatusInJson.toString());
-					LOGGER.warning("POST MORNING TEMPERATURE --------- SUCCESS:  " + time.toLocalTime());
+					LOGGER.info("POST MORNING TEMPERATURE --------- SUCCESS:  " + time.toLocalTime());
 				} else {
-					LOGGER.warning("POST MORNING TEMPERATURE --------- FAIL - DUPLICATE MEASURE:  " + time.toLocalTime());
+					LOGGER.error("POST MORNING TEMPERATURE --------- FAIL - DUPLICATE MEASURE:  " + time.toLocalTime());
 				}
 			}
 			if ((isBetween(time.toLocalTime(), LocalTime.of(13, 0), LocalTime.of(15, 0))) && !at14) { // если 14 часов дня
@@ -536,9 +538,9 @@ public class MainRestController {
 				// Проверяем, что такой температуры нет еще за сегодня
 				if (!isAlreadyWriten(mainService.getTodayMeasures(), 13, 15)) {
 					allTemperatures = mainService.addMeasure(temp, responseStatusInJson.toString());
-					LOGGER.warning("POST DAY TEMPERATURE --------- SUCCESS:  " + time.toLocalTime());
+					LOGGER.info("POST DAY TEMPERATURE --------- SUCCESS:  " + time.toLocalTime());
 				} else {
-					LOGGER.warning("POST DAY TEMPERATURE --------- FAIL - DUPLICATE MEASURE:  " + time.toLocalTime());
+					LOGGER.error("POST DAY TEMPERATURE --------- FAIL - DUPLICATE MEASURE:  " + time.toLocalTime());
 				}
 
 			}
@@ -548,9 +550,9 @@ public class MainRestController {
 				// Проверяем, что такой температуры нет еще за сегодня
 				if (!isAlreadyWriten(mainService.getTodayMeasures(), 18, 20)) {
 					allTemperatures = mainService.addMeasure(temp, responseStatusInJson.toString());
-					LOGGER.warning("POST EVENING TEMPERATURE --------- SUCCESS:  " + time.toLocalTime());
+					LOGGER.info("POST EVENING TEMPERATURE --------- SUCCESS:  " + time.toLocalTime());
 				} else {
-					LOGGER.warning("POST EVENING TEMPERATURE --------- FAIL - DUPLICATE MEASURE:  " + time.toLocalTime());
+					LOGGER.error("POST EVENING TEMPERATURE --------- FAIL - DUPLICATE MEASURE:  " + time.toLocalTime());
 				}
 			}
 
@@ -570,8 +572,7 @@ public class MainRestController {
 			}
 		}
 
-		LOGGER.warning("RESULT:  " + responseStatusInJson.toString());
-
+		LOGGER.info("RESULT:  " + responseStatusInJson.toString());
 		ResponseEntity<String> responseEntity = new ResponseEntity<>(responseStatusInJson.toString(), HttpStatus.OK);
 		return responseEntity;
 	}

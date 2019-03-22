@@ -59,31 +59,19 @@ public class MainServiceImpl implements MainService {
         return logsRepository.findAll();
     }
 
-    /**
-     * Добавить температуру.
-     *
-     * @param temp
-     * @param s
-     * @return
-     */
-    @Override
+	/**
+	 * Добавить температуру.
+	 *
+	 * @param temp
+	 * @param status
+	 * @return
+	 */
+	@Override
     public List<Temperature> addMeasure(Double temp, String status) {
         usersRepository.save(new Temperature(temp, status));
         return usersRepository.findAll();
     }
 
-    /**
-     * Второй метод добавления температуры.
-     * Он не нужен. В следующем коммите скорее всего его удалим.
-     *
-     * @param measure
-     * @return
-     */
-    @Override
-    public List<Temperature> addNewMeasure(Temperature measure) {
-        usersRepository.save(measure);
-        return usersRepository.findAll();
-    }
 
     /**
      * Выдать стаистику по сегодня.
@@ -203,11 +191,7 @@ public class MainServiceImpl implements MainService {
                     mainParametrs.getStatus().getPower(),
                     mainParametrs.getStatus().getConsuming(),
                     mainParametrs.getStatus().getLastContactDate());
-
         }
-
-
-
         return status;
     }
 
@@ -231,10 +215,6 @@ public class MainServiceImpl implements MainService {
     public Time getLastContactTime() {
 
         // Распечатаем всю выдачу
-
-
-   //     System.out.println("Last Contact Time: " + ((logsRepository.getLastPingedEntry3(new PageRequest(0, 1, Sort.Direction.DESC, "servertime"))).get(0).getLastсontacttime()));
-
         return (logsRepository.getLastPingedEntry3(new PageRequest(0, 1, Sort.Direction.DESC, "servertime"))).get(0).getLastсontacttime();
     }
 

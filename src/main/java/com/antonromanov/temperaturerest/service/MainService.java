@@ -20,8 +20,6 @@ public interface MainService {
 
 	List<Temperature> addMeasure(Double temp, String status); // добавить измерение
 
-	List<Temperature> addNewMeasure(Temperature measure); // добавить комплекс измерений
-
 	List<Logs> addLog(Status log) throws ParseException; // добавить измерение \ todo: убрать этот метод потом
 
 	void addLog2(Status log); // добавить измерение. Версия №2

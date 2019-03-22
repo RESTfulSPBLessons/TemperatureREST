@@ -1,12 +1,15 @@
 package com.antonromanov.temperaturerest.livecontrolthread;
 
+import com.antonromanov.temperaturerest.controller.MainRestController;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import com.antonromanov.temperaturerest.service.MainService;
-
 import javax.annotation.PostConstruct;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ThreadPoolExecutor;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 
 /**
  * Обертка-компонент, в котором Пост-конструкт
@@ -21,6 +24,8 @@ public class ThreadManager {
     @Autowired
     MainService mainService;
 
+    private static final Logger LOGGER = LoggerFactory.getLogger(ThreadManager.class);
+
     /**
      * Запускаем в момент инициализации приложения поток.
      */
@@ -34,14 +39,13 @@ public class ThreadManager {
 
         if (mainService!=null){ // проверяем, чтобы сервис не нол был.
             IsAliveController task = new IsAliveController(mainService); //наш класс-поток
-            System.out.println("Thread will start");
             mainService.getMainParametrs().setLogged(false); // снимаем флаг ЗАЛОГИРОВАНО
             mainService.getMainParametrs().setJustStartedSituation(true); // ставим флаг, что мы только стартонули
             mainService.getMainParametrs().setTimeIsOver(true); //включаем флаг, что время кончилось  - по умолчанию стартуем в положении "все выключено"
             mainService.getMainParametrs().setLanStatus(false); // соответственно, "выключаем сеть"
             mainService.getMainParametrs().setAcStatus(false); // соответственно, "выключаем 220"
 
-            System.out.println("T I M E ======" + mainService.getLastContactTime());
+            LOGGER.warn("THREAD MANAGER HAS STARTED. T I M E ======" + mainService.getLastContactTime());
 
             // Надо проверить, успели ли мы что-то уже отлогировать, поэтому если успели, то...
             if (mainService.getLastContactTime()!=null) {
@@ -51,7 +55,7 @@ public class ThreadManager {
             executor.execute(task); // запускаем поток
 
         } else {
-            System.out.println("mainService==null (Manager)");
+            LOGGER.warn("mainService==null (Manager)");
         }
     }
 }
