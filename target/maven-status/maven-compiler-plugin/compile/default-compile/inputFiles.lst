@@ -1,6 +1,7 @@
 C:\CODING\GIT\TemperatureREST\src\main\java\com\antonromanov\temperaturerest\config\OrmConfig.java
 C:\CODING\GIT\TemperatureREST\src\main\java\com\antonromanov\temperaturerest\utils\Utils.java
 C:\CODING\GIT\TemperatureREST\src\main\java\com\antonromanov\temperaturerest\service\MainServiceImpl.java
+C:\CODING\GIT\TemperatureREST\src\main\java\com\antonromanov\temperaturerest\bot\TelegramBot.java
 C:\CODING\GIT\TemperatureREST\src\main\java\com\antonromanov\temperaturerest\config\SpringWebAppInitializer.java
 C:\CODING\GIT\TemperatureREST\src\main\java\com\antonromanov\temperaturerest\package-info.java
 C:\CODING\GIT\TemperatureREST\src\main\java\com\antonromanov\temperaturerest\model\DailyReport.java

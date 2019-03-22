@@ -15,7 +15,7 @@ public interface MainService {
 
      List<Temperature> getAll(); // список всех измерений (пока с одного датчика)
      List<Logs> getAllLogs(); // все логи
-     List<Temperature> addMeasure(Double temp); // добавить измерение
+     List<Temperature> addMeasure(Double temp, String status); // добавить измерение
      List<Temperature> addNewMeasure(Temperature measure); // добавить комплекс измерений
      List<Logs> addLog(Status log) throws ParseException; // добавить измерение
      List<Temperature> getTodayMeasures() throws ParseException; //статистика по сегодня

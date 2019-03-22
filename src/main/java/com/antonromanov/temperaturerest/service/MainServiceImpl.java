@@ -12,6 +12,7 @@ import java.sql.Time;
 import java.text.ParseException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import static org.apache.commons.lang3.StringUtils.isBlank;
 import java.util.*;
 import static com.antonromanov.temperaturerest.utils.Utils.*;
 
@@ -62,11 +63,12 @@ public class MainServiceImpl implements MainService {
      * Добавить температуру.
      *
      * @param temp
+     * @param s
      * @return
      */
     @Override
-    public List<Temperature> addMeasure(Double temp) {
-        usersRepository.save(new Temperature(temp));
+    public List<Temperature> addMeasure(Double temp, String status) {
+        usersRepository.save(new Temperature(temp, status));
         return usersRepository.findAll();
     }
 
@@ -254,7 +256,8 @@ public class MainServiceImpl implements MainService {
         mainParametrs.setStatus(log);
         mainParametrs.setAcStatus(true);
         mainParametrs.setLanStatus(true);
-        if (log.getWho().isEmpty()) log.setWho("REST");
+        if (log.getWho()==null) log.setWho("REST");
+        if (isBlank(log.getWho())) log.setWho("REST");
 
         // TODO:  нам вот здесь хорошо бы проверить на ноль что-нибудь (надо подумать что: скорее всего даты)
 
