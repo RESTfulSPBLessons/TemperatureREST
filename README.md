@@ -1,12 +1,12 @@
 # TEMPERATURE REST + ANGULAR
 
-Переделал метод /today
+Переделал метод /addLog
  
  
 ### Что сделано:
 
+* Поменял addLog по аналогии с add temperature (через gson)
 * Оттестил метод addLog
-* Посчу в табличку Temperuture флаги в столбец Status
 
 
 

@@ -29,7 +29,7 @@ public class Status {
 
     public Status() {
 
-     /*   this.isAcOn = true;
+        /*this.isAcOn = true;
         this.isLanOn = true;
         this.lastTemperature = -15;
         this.lastHumidity = -10;

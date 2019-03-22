@@ -264,4 +264,22 @@ public class MainServiceImpl implements MainService {
         logsRepository.save(new Logs(log));
         return logsRepository.findAll();
     }
+
+	@Override
+	public void addLog2(Status log) {
+		//Логгируем (добавляем) время сервера
+		Date date = new Date();
+		Time time = new Time(date.getTime());
+		log.setServerTime(time);
+		mainParametrs.setJustStartedSituation(false);
+		mainParametrs.setLastPingTime(time);
+		mainParametrs.setStatus(log);
+		mainParametrs.setAcStatus(true);
+		mainParametrs.setLanStatus(true);
+		if (log.getWho()==null) log.setWho("REST");
+		if (isBlank(log.getWho())) log.setWho("REST");
+
+		// TODO:  нам вот здесь хорошо бы проверить на ноль что-нибудь (надо подумать что: скорее всего даты)
+		logsRepository.save(new Logs(log));
+	}
 }
