@@ -1,6 +1,8 @@
 package com.antonromanov.temperaturerest.livecontrolthread;
 
-import com.antonromanov.temperaturerest.controller.MainRestController;
+
+
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.BeanCreationException;
 import org.springframework.stereotype.Service;
 import com.antonromanov.temperaturerest.model.Logs;
@@ -8,8 +10,6 @@ import com.antonromanov.temperaturerest.model.Status;
 import com.antonromanov.temperaturerest.service.MainService;
 import java.sql.Time;
 import java.text.ParseException;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import java.util.Date;
 import java.util.List;
 import static com.antonromanov.temperaturerest.utils.Utils.*;
@@ -28,7 +28,7 @@ public class IsAliveController implements Runnable {
 	/**
 	 * Логгер файловый
 	 */
-	private static final Logger LOGGER = LoggerFactory.getLogger(IsAliveController.class);
+	private static final Logger LOGGER = Logger.getLogger(IsAliveController.class);
 
 	/**
 	 * Конструктор.

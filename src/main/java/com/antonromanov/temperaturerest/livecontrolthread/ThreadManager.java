@@ -1,14 +1,14 @@
 package com.antonromanov.temperaturerest.livecontrolthread;
 
-import com.antonromanov.temperaturerest.controller.MainRestController;
+
+
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import com.antonromanov.temperaturerest.service.MainService;
 import javax.annotation.PostConstruct;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ThreadPoolExecutor;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 
 /**
@@ -24,7 +24,7 @@ public class ThreadManager {
     @Autowired
     MainService mainService;
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(ThreadManager.class);
+    private static final Logger LOGGER = Logger.getLogger(ThreadManager.class);
 
     /**
      * Запускаем в момент инициализации приложения поток.

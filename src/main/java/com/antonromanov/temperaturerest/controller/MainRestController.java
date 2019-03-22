@@ -21,8 +21,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import static com.antonromanov.temperaturerest.utils.Utils.*;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.apache.log4j.Logger;
 
 
 
@@ -34,7 +33,9 @@ import org.slf4j.LoggerFactory;
 public class MainRestController {
 
 
-	private static final Logger LOGGER = LoggerFactory.getLogger(MainRestController.class);
+
+	private static final Logger LOGGER = Logger.getLogger(MainRestController.class);
+
 	List<Temperature> allTemperatures = new ArrayList<>();
 
 
@@ -44,8 +45,8 @@ public class MainRestController {
 	// todo: прикрутить телеграмм-бота
 	// todo: перейти со Спринга на СпрингБут
 	// todo: надо поменять еще вот эту ссылку - http://localhost:8080/FirstSPRINGJDBC-2.0-SNAPSHOT/rest/api/add. Чо за ФёрстСпрингДжейДиБиСи ????!!!!!!!
-	// todo:  логгирование в бд с настройкой удаления старых записей.
 	// todo:  прикрутить экран к ардуине
+	// todo:  нужно логгировать и за-трай-кетчить все ошибки, чтобы я их видел потом в боте
 	// todo:  прикрутить лампочки и вывод инфы (например, флаги) на OLED.
 	// todo: temperature_copy переименовать в нормальную
 	// todo: переименовать и перенести все модели в Ангуляре, например что за User.ts - ????
@@ -53,6 +54,7 @@ public class MainRestController {
 	// todo: переименовать методы типа addlog3. Ну что это за пипец.....
 	// todo: сделать отправку логов/состояний на почту
 	// todo:Почистить гит, слить все ветки в мастер и удалить
+	// todo: Убрать ненужные депенденси
 
 
 
