@@ -2,10 +2,7 @@ package com.antonromanov.temperaturerest.controller;
 
 import com.antonromanov.temperaturerest.utils.JSONTemplate;
 import com.antonromanov.temperaturerest.utils.TimeSerializer;
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-import com.google.gson.JsonObject;
-import com.google.gson.JsonParseException;
+import com.google.gson.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -43,6 +40,7 @@ public class MainRestController {
     //todo: надо поменять названия классов и переменных
     //todo: надо поменять адрес REST API
     //todo: прикрутить телеграмм-бота
+    // todo: перейти со Спринга на СпрингБут
     //todo: надо поменять еще вот эту ссылку - http://localhost:8080/FirstSPRINGJDBC-2.0-SNAPSHOT/rest/api/add. Чо за ФёрстСпрингДжейДиБиСи ????!!!!!!!
     //todo:  логгирование в бд с настройкой удаления старых записей.
     //todo:  прикрутить экран к ардуине
@@ -77,23 +75,75 @@ public class MainRestController {
     private boolean at14 = false;
     private boolean at19 = false;
 
-    // todo: этот метод вообще надо убрать
+
     /**
      * Выдать все измерения температуры.
      *
      * @return
      */
     @GetMapping("/all")
-    public List<Temperature> getAll() {
-        System.out.println("Запрос прошел"); // вот это бы все логгировать или в консоль нормально и потом аппендером или в базу
+    public ResponseEntity<String> getAll(HttpServletRequest request) {
 
-        for (Temperature temp : mainService.getAll()) {
-            System.out.println(temp.getId() + " - " + temp.getTemperature() + " - " + temp.getDateCreated());
+        List<Temperature> allTemperaturesList = mainService.getAll();
+
+        String remoteAddr = "";
+
+        LOGGER.warning("========= ALL MEASURES LIST ============== ");
+
+        // todo: вынести в отдельный метод
+        // Пытаемся взять ip
+        if (request != null) {
+            remoteAddr = request.getHeader("X-FORWARDED-FOR");
+            if (remoteAddr == null || "".equals(remoteAddr)) {
+                remoteAddr = request.getRemoteAddr();
+                LOGGER.warning("GETTING REQUEST FROM:  " + remoteAddr);
+            }
         }
 
+        // todo: вынести в отдельный метод
+        // Формируем JSON
+        JsonObject responseStatusInJson = JSONTemplate.create()
+                .add("AllTemperatures", allTemperaturesList.size())
+                .add("NightPost", at2am)
+                .add("MorningPost", at8am)
+                .add("DayPost", at14)
+                .add("EveningPost", at19).getJson();
 
-        return mainService.getAll();
+        LOGGER.warning("RESULT:  " + responseStatusInJson.toString());
+
+        // todo: вынести в отдельный метод класса Utils
+        Gson gson = new GsonBuilder()
+                .serializeNulls()
+                .setDateFormat("dd/MM/yyyy")
+                .registerTypeAdapter(java.sql.Time.class, new TimeSerializer())
+                .create();
+
+        String result = gson.toJson(allTemperaturesList);
+        HttpHeaders headers = new HttpHeaders();
+        headers.setContentType(MediaType.APPLICATION_JSON);
+        headers.setCacheControl("no-cache");
+        ResponseEntity<String> responseEntity = new ResponseEntity<String>(result, headers, HttpStatus.OK);
+        return responseEntity;
     }
+
+    /*private static Gson getGson() {
+        // Trick to get the DefaultDateTypeAdatpter instance
+        // Create a first instance a Gson
+        Gson gson = new GsonBuilder()
+                .setDateFormat("dd/MM/yyyy")
+                .create();
+
+        // Get the date adapter
+        TypeAdapter<Date> dateTypeAdapter = gson.getAdapter(Date.class);
+
+        // Ensure the DateTypeAdapter is null safe
+        TypeAdapter<Date> safeDateTypeAdapter = dateTypeAdapter.nullSafe();
+
+        // Build the definitive safe Gson instance
+        return new GsonBuilder()
+                .registerTypeAdapter(Date.class, safeDateTypeAdapter)
+                .create();
+    }*/
 
     // todo: разобраться - чо за метод ваще
     /**

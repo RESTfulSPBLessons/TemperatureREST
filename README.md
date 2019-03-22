@@ -1,13 +1,11 @@
 # TEMPERATURE REST + ANGULAR
 
-Переделал метод /addLog
+Переделал метод /all
  
  
 ### Что сделано:
 
-* Поменял addLog по аналогии с add temperature (через gson)
-* Оттестил метод addLog
-
+* Поменял и оттестил метод /all по аналогии с add temperature (через gson)
 
 
 ### Что надо сделать (ПЛАН ВОССТАНОВЛЕНИЯ):
