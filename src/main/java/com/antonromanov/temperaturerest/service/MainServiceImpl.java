@@ -218,6 +218,74 @@ public class MainServiceImpl implements MainService {
         return (logsRepository.getLastPingedEntry3(new PageRequest(0, 1, Sort.Direction.DESC, "servertime"))).get(0).getLastсontacttime();
     }
 
+
+    /**
+     * Выдать статус сети 220 последнего пинга.
+     *
+     * @return - Boolean
+     */
+    @Override
+    public Boolean getLastContact220() {
+
+        
+        return (logsRepository.getLastPingedEntry3(new PageRequest(0, 1, Sort.Direction.DESC, "servertime"))).get(0).getAc();
+    }
+
+
+    /**
+     * Выдать статус LAN последнего пинга.
+     *
+     * @return - Boolean
+     */
+    @Override
+    public Boolean getLastContactLan() {
+
+        
+        return (logsRepository.getLastPingedEntry3(new PageRequest(0, 1, Sort.Direction.DESC, "servertime"))).get(0).getLan();
+    }
+
+
+     /**
+     * Пинг залогирован?
+     *
+     * @return - Boolean
+     */
+    @Override
+    public Boolean getLastContactLogged() {
+        if (logsRepository.getLastPingedEntry3(new PageRequest(0, 1, Sort.Direction.DESC, "servertime")).get(0).isLogged()==null){
+            return false;
+        } else {
+            return (logsRepository.getLastPingedEntry3(new PageRequest(0, 1, Sort.Direction.DESC, "servertime"))).get(0).isLogged();
+        }
+
+
+    }
+
+
+    /**
+     * Пинг залогирован?
+     *
+     * @return - Logs
+     */
+    @Override
+    public Logs getLastLog() {
+        return (logsRepository.getLastPingedEntry3(new PageRequest(0, 1, Sort.Direction.DESC, "servertime"))).get(0);
+    }
+    
+
+    /**
+     * Обновить последний пинг (лог) новыми данными    
+     *
+     */
+    @Override
+    public void updateLastLog(Logs log) {
+      logsRepository.save(log);  
+    }
+
+
+ 
+
+
     /**
      * Добавить статус (это будет делать Ардуина).
      *
@@ -231,6 +299,15 @@ public class MainServiceImpl implements MainService {
         Date date = new Date();
         Time time = new Time(date.getTime());
         log.setServerTime(time);
+        
+        // todo: этот пиздец переделать надо
+        if (log.isLogged()){
+            log.setLogged(true);    
+        } else {
+            log.setLogged(false);
+        }
+        
+
         mainParametrs.setJustStartedSituation(false);
         mainParametrs.setLastPingTime(time);
         mainParametrs.setStatus(log);
@@ -240,6 +317,7 @@ public class MainServiceImpl implements MainService {
         if (isBlank(log.getWho())) log.setWho("REST");
 
         // TODO:  нам вот здесь хорошо бы проверить на ноль что-нибудь (надо подумать что: скорее всего даты)
+        // TODO:  у нас два одинаковых энтити - лог и статус - на хера????? Возникает путаница
 
         logsRepository.save(new Logs(log));
         return logsRepository.findAll();

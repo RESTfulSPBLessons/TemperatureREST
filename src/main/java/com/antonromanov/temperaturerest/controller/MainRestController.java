@@ -420,7 +420,7 @@ public class MainRestController {
 					amperage,
 					power,
 					consuming,
-					currentDate); // lastContactDate
+					currentDate, false); // lastContactDate
 
 			LOGGER.info("PARSING RESULT: " + newStatus.toString());
 
@@ -442,7 +442,6 @@ public class MainRestController {
 				LOGGER.info("GETTING REQUEST FROM:  " + remoteAddr);
 			}
 		}
-
 
 		List<Logs> allStatuses = mainService.getAllLogs();
 		ResponseEntity<String> responseEntity = null;

@@ -32,8 +32,20 @@ public interface MainService {
 
 	Time getLastContactTime(); // время последнего контакта
 
+	Boolean getLastContact220();  // AC статус последнего контакта
+
+	Boolean getLastContactLan();  // LAN статус последнего контакта
+
+	Boolean getLastContactLogged();  // Пинг залогирован или нет?
+
 	Status getGlobalStatus(); // глобальное состояние
 
+	Logs getLastLog(); // получить последний пинг (лог)	
+
 	MainParameters getMainParametrs(); // еще одно глобальное состояние инкапсулирующее предыдущее + еще параметры
+
+	void updateLastLog(Logs log); // обновить последний пинг (лог) новыми данными		
+
+
 
 }
