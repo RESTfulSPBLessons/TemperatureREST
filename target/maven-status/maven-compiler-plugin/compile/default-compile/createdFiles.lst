@@ -6,6 +6,7 @@ com\antonromanov\temperaturerest\livecontrolthread\IsAliveController.class
 com\antonromanov\temperaturerest\repository\TemperatureRepository.class
 com\antonromanov\temperaturerest\model\DailyReport.class
 com\antonromanov\temperaturerest\model\Temperature.class
+com\antonromanov\temperaturerest\bot\TelegramBot.class
 com\antonromanov\temperaturerest\repository\LogsRepository.class
 com\antonromanov\temperaturerest\service\MainService.class
 com\antonromanov\temperaturerest\service\MainServiceImpl.class

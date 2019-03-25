@@ -2492,8 +2492,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
-/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
-
 
 
 
@@ -2512,18 +2510,17 @@ var HttpService = /** @class */ (function () {
     HttpService.prototype.getData2 = function (url) {
         return this.http.get(url);
     };
+    // todo: переименовать
     HttpService.prototype.getData4 = function (url) {
         console.log('GET DATA......');
         console.log(url);
         return this.http.get(url);
     };
+    // todo: переименовать
     HttpService.prototype.getData5 = function (url) {
-        console.log('GET DATA......');
+        console.log('GET MONTH DATA......');
         console.log(url);
-        return this.http.get(url).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(function (data) {
-            var usersList = data['userList'];
-            return usersList.map(function (user) { return user.age; });
-        }));
+        return this.http.get(url);
     };
     HttpService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])(),
@@ -2586,7 +2583,7 @@ var DashboardRoutingModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"animated fadeIn\">\n\n<!--  <canvas id=\"myChart\" width=\"700\" height=\"400\"></canvas>-->\n\n  <!--<canvas\n    tc-chartjs-pie\n    chart-data=\"{{mydata}}\"\n    chart-options=\"myOptions\"\n    chart-plugins=\"myPlugins\"\n    chart-click=\"onChartClick(event)\"\n  ></canvas>-->\n\n\n  <!--<div class=\"row\">\n    <div class=\"col-sm-6 col-lg-3\">\n      <div class=\"card text-white bg-primary\">\n        <div class=\"card-body pb-0\">\n          <div class=\"btn-group float-right\" dropdown>\n            <button type=\"button\" class=\"btn btn-transparent dropdown-toggle p-0\" dropdownToggle>\n              <i class=\"icon-settings\"></i>\n            </button>\n            <div class=\"dropdown-menu dropdown-menu-right\" *dropdownMenu>\n              <a class=\"dropdown-item\" href=\"#\">Action</a>\n              <a class=\"dropdown-item\" href=\"#\">Another action</a>\n              <a class=\"dropdown-item\" href=\"#\">Something else here</a>\n              <a class=\"dropdown-item\" href=\"#\">Something else here</a>\n            </div>\n          </div>\n          <div class=\"text-value\">9.823</div>\n          <div>Members online</div>\n        </div>\n        <div class=\"chart-wrapper mt-3 mx-3\" style=\"height:70px;\">\n          <canvas baseChart class=\"chart\"\n          [datasets]=\"lineChart1Data\"\n          [labels]=\"lineChart1Labels\"\n          [options]=\"lineChart1Options\"\n          [colors]=\"lineChart1Colours\"\n          [legend]=\"lineChart1Legend\"\n          [chartType]=\"lineChart1Type\"></canvas>\n        </div>\n      </div>\n    </div>&lt;!&ndash;/.col&ndash;&gt;\n    <div class=\"col-sm-6 col-lg-3\">\n      <div class=\"card text-white bg-info\">\n        <div class=\"card-body pb-0\">\n          <button type=\"button\" class=\"btn btn-transparent p-0 float-right\">\n            <i class=\"icon-location-pin\"></i>\n          </button>\n          <div class=\"text-value\">9.823</div>\n          <div>Members online</div>\n        </div>\n        <div class=\"chart-wrapper mt-3 mx-3\" style=\"height:70px;\">\n          <canvas baseChart class=\"chart\"\n          [datasets]=\"lineChart2Data\"\n          [labels]=\"lineChart2Labels\"\n          [options]=\"lineChart2Options\"\n          [colors]=\"lineChart2Colours\"\n          [legend]=\"lineChart2Legend\"\n          [chartType]=\"lineChart2Type\"></canvas>\n        </div>\n      </div>\n    </div>&lt;!&ndash;/.col&ndash;&gt;\n    <div class=\"col-sm-6 col-lg-3\">\n      <div class=\"card text-white bg-warning\">\n        <div class=\"card-body pb-0\">\n          <div class=\"btn-group float-right\" dropdown>\n            <button type=\"button\" class=\"btn btn-transparent dropdown-toggle p-0\" dropdownToggle>\n              <i class=\"icon-settings\"></i>\n            </button>\n            <div class=\"dropdown-menu dropdown-menu-right\" *dropdownMenu>\n              <a class=\"dropdown-item\" href=\"#\">Action</a>\n              <a class=\"dropdown-item\" href=\"#\">Another action</a>\n              <a class=\"dropdown-item\" href=\"#\">Something else here</a>\n            </div>\n          </div>\n          <div class=\"text-value\">9.823</div>\n          <div>Members online</div>\n        </div>\n        <div class=\"chart-wrapper mt-3\" style=\"height:70px;\">\n          <canvas baseChart class=\"chart\"\n          [datasets]=\"lineChart3Data\"\n          [labels]=\"lineChart3Labels\"\n          [options]=\"lineChart3Options\"\n          [colors]=\"lineChart3Colours\"\n          [legend]=\"lineChart3Legend\"\n          [chartType]=\"lineChart3Type\"></canvas>\n        </div>\n      </div>\n    </div>&lt;!&ndash;/.col&ndash;&gt;\n    <div class=\"col-sm-6 col-lg-3\">\n      <div class=\"card text-white bg-danger\">\n        <div class=\"card-body pb-0\">\n          <div class=\"btn-group float-right\" dropdown>\n            <button type=\"button\" class=\"btn btn-transparent dropdown-toggle p-0\" dropdownToggle>\n              <i class=\"icon-settings\"></i>\n            </button>\n            <div class=\"dropdown-menu dropdown-menu-right\" *dropdownMenu>\n              <a class=\"dropdown-item\" href=\"#\">Action</a>\n              <a class=\"dropdown-item\" href=\"#\">Another action</a>\n              <a class=\"dropdown-item\" href=\"#\">Something else here</a>\n            </div>\n          </div>\n          <div class=\"text-value\">9.823</div>\n          <div>Members online</div>\n        </div>\n        <div class=\"chart-wrapper mt-3 mx-3\" style=\"height:70px;\">\n          <canvas baseChart class=\"chart\"\n          [datasets]=\"barChart1Data\"\n          [labels]=\"barChart1Labels\"\n          [options]=\"barChart1Options\"\n          [colors]=\"barChart1Colours\"\n          [legend]=\"barChart1Legend\"\n          [chartType]=\"barChart1Type\"></canvas>\n        </div>\n      </div>\n    </div>&lt;!&ndash;/.col&ndash;&gt;\n  </div>&lt;!&ndash;/.row&ndash;&gt;-->\n  <div class=\"card\">\n    <div class=\"card-body\">\n      <div class=\"row\">\n        <div class=\"col-sm-5\">\n          <h4 class=\"card-title mb-0\">Traffic {{mainChartData5}}</h4>\n\n            <button (click)=\"clickEvent()\" >OK</button>\n          <div class=\"small text-muted\">November 2017</div>\n        </div><!--/.col-->\n        <div class=\"col-sm-7 d-none d-md-block\">\n          <button type=\"button\" class=\"btn btn-primary float-right\"><i class=\"icon-cloud-download\"></i></button>\n          <div class=\"btn-group btn-group-toggle float-right mr-3\" data-toggle=\"buttons\">\n            <label class=\"btn btn-outline-secondary\" [(ngModel)]=\"radioModel\" btnRadio=\"Day\" id=\"option1\">Day</label>\n            <label class=\"btn btn-outline-secondary\" [(ngModel)]=\"radioModel\" btnRadio=\"Month\" id=\"option2\">Month</label>\n            <label class=\"btn btn-outline-secondary\" [(ngModel)]=\"radioModel\" btnRadio=\"Year\" id=\"option3\">Year</label>\n          </div>\n        </div><!--/.col-->\n      </div><!--/.row-->\n      <div class=\"chart-wrapper\" style=\"height:300px;margin-top:40px;\">\n        <canvas baseChart class=\"chart\"\n        [datasets]=\"mainChartData\"\n        [labels]=\"mainChartLabels\"\n        [options]=\"mainChartOptions\"\n        [colors]=\"mainChartColours\"\n        [legend]=\"mainChartLegend\"\n        [chartType]=\"mainChartType\"></canvas>\n      </div>\n    </div>\n    <div class=\"card-footer\">\n      <div class=\"row text-center\">\n        <div class=\"col-sm-12 col-md mb-sm-2 mb-0\">\n          <div class=\"text-muted\">Visits</div>\n          <strong>29.703 Users (40%)</strong>\n          <div class=\"progress progress-xs mt-2\">\n            <div class=\"progress-bar bg-success\" role=\"progressbar\" style=\"width: 40%\" aria-valuenow=\"40\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\n          </div>\n        </div>\n        <div class=\"col-sm-12 col-md mb-sm-2 mb-0\">\n          <div class=\"text-muted\">Unique</div>\n          <strong>24.093 Users (20%)</strong>\n          <div class=\"progress progress-xs mt-2\">\n            <div class=\"progress-bar bg-info\" role=\"progressbar\" style=\"width: 20%\" aria-valuenow=\"20\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\n          </div>\n        </div>\n        <div class=\"col-sm-12 col-md mb-sm-2 mb-0\">\n          <div class=\"text-muted\">Pageviews</div>\n          <strong>78.706 Views (60%)</strong>\n          <div class=\"progress progress-xs mt-2\">\n            <div class=\"progress-bar bg-warning\" role=\"progressbar\" style=\"width: 60%\" aria-valuenow=\"60\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\n          </div>\n        </div>\n        <div class=\"col-sm-12 col-md mb-sm-2 mb-0\">\n          <div class=\"text-muted\">New Users</div>\n          <strong>22.123 Users (80%)</strong>\n          <div class=\"progress progress-xs mt-2\">\n            <div class=\"progress-bar bg-danger\" role=\"progressbar\" style=\"width: 80%\" aria-valuenow=\"80\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\n          </div>\n        </div>\n        <div class=\"col-sm-12 col-md mb-sm-2 mb-0\">\n          <div class=\"text-muted\">Bounce Rate</div>\n          <strong>40.15%</strong>\n          <div class=\"progress progress-xs mt-2\">\n            <div class=\"progress-bar\" role=\"progressbar\" style=\"width: 40%\" aria-valuenow=\"40\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n  <!--/.card-->\n</div>\n"
+module.exports = "<div class=\"animated fadeIn\">\n\n<!--  <canvas id=\"myChart\" width=\"700\" height=\"400\"></canvas>-->\n\n  <!--<canvas\n    tc-chartjs-pie\n    chart-data=\"{{mydata}}\"\n    chart-options=\"myOptions\"\n    chart-plugins=\"myPlugins\"\n    chart-click=\"onChartClick(event)\"\n  ></canvas>-->\n\n\n  <div class=\"row\">\n\n    <div class=\"col-sm-6 col-md-2\">\n      <div class=\"card text-white bg-info\">\n        <div class=\"card-body\">\n          <div class=\"h1 text-muted text-right mb-4\">\n            <i class=\"icon-people\"></i>\n          </div>\n          <div class=\"h4 mb-0\">87.500</div>\n          <small class=\"text-muted text-uppercase font-weight-bold\">Visitors</small>\n        </div>\n      </div>\n    </div><!--/.col-->\n\n\n    <div class=\"col-sm-6 col-md-2\">\n      <div class=\"card text-white bg-info\">\n        <div class=\"card-body\">\n          <div class=\"h1 text-muted text-right mb-4\">\n            <i class=\"icon-people\"></i>\n          </div>\n          <div class=\"h4 mb-0\">87.500</div>\n          <small class=\"text-muted text-uppercase font-weight-bold\">Visitors</small>\n        </div>\n      </div>\n    </div><!--/.col-->\n\n\n    <div class=\"col-sm-6 col-md-2\">\n      <div class=\"card text-white bg-info\">\n        <div class=\"card-body\">\n          <div class=\"h1 text-muted text-right mb-4\">\n            <i class=\"icon-people\"></i>\n          </div>\n          <div class=\"h4 mb-0\">87.500</div>\n          <small class=\"text-muted text-uppercase font-weight-bold\">Visitors</small>\n        </div>\n      </div>\n    </div><!--/.col-->\n\n\n    <div class=\"col-sm-6 col-md-2\">\n      <div class=\"card text-white bg-info\">\n        <div class=\"card-body\">\n          <div class=\"h1 text-muted text-right mb-4\">\n            <i class=\"icon-people\"></i>\n          </div>\n          <div class=\"h4 mb-0\">87.500</div>\n          <small class=\"text-muted text-uppercase font-weight-bold\">Visitors</small>\n        </div>\n      </div>\n    </div><!--/.col-->\n\n\n  </div><!--/.row-->\n\n\n  <div class=\"card\">\n    <div class=\"card-body\">\n      <div class=\"row\">\n        <div class=\"col-sm-5\">\n          <h4 class=\"card-title mb-0\">{{diagramTitle}}</h4>\n\n          <div class=\"small text-muted\">November 2017</div>\n        </div><!--/.col-->\n        <div class=\"col-sm-7 d-none d-md-block\">\n\n          <div class=\"btn-group btn-group-toggle float-right mr-3\" data-toggle=\"buttons\">\n            <label class=\"btn btn-outline-secondary\" [(ngModel)]=\"radioModel\" btnRadio=\"Day\" id=\"option1\" (click)=\"dayMode()\">Day</label>\n            <label class=\"btn btn-outline-secondary\" [(ngModel)]=\"radioModel\" btnRadio=\"Week\" id=\"option2\" (click)=\"weekMode()\">Week</label>\n            <label class=\"btn btn-outline-secondary\" [(ngModel)]=\"radioModel\" btnRadio=\"Month\" id=\"option3\" (click)=\"monthMode()\">Month</label>\n          </div>\n        </div><!--/.col-->\n      </div><!--/.row-->\n      <div class=\"chart-wrapper\" style=\"height:300px;margin-top:40px;\">\n        <canvas baseChart class=\"chart\"\n        [datasets]=\"mainChartData\"\n        [labels]=\"label\"\n        [options]=\"mainChartOptions\"\n        [colors]=\"mainChartColours\"\n        [legend]=\"mainChartLegend\"\n        [chartType]=\"mainChartType\"></canvas>\n      </div>\n    </div>\n    <!--<div class=\"card-footer\">\n      <div class=\"row text-center\">\n        <div class=\"col-sm-12 col-md mb-sm-2 mb-0\">\n          <div class=\"text-muted\">Visits</div>\n          <strong>29.703 Users (40%)</strong>\n          <div class=\"progress progress-xs mt-2\">\n            <div class=\"progress-bar bg-success\" role=\"progressbar\" style=\"width: 40%\" aria-valuenow=\"40\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\n          </div>\n        </div>\n        <div class=\"col-sm-12 col-md mb-sm-2 mb-0\">\n          <div class=\"text-muted\">Unique</div>\n          <strong>24.093 Users (20%)</strong>\n          <div class=\"progress progress-xs mt-2\">\n            <div class=\"progress-bar bg-info\" role=\"progressbar\" style=\"width: 20%\" aria-valuenow=\"20\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\n          </div>\n        </div>\n        <div class=\"col-sm-12 col-md mb-sm-2 mb-0\">\n          <div class=\"text-muted\">Pageviews</div>\n          <strong>78.706 Views (60%)</strong>\n          <div class=\"progress progress-xs mt-2\">\n            <div class=\"progress-bar bg-warning\" role=\"progressbar\" style=\"width: 60%\" aria-valuenow=\"60\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\n          </div>\n        </div>\n        <div class=\"col-sm-12 col-md mb-sm-2 mb-0\">\n          <div class=\"text-muted\">New Users</div>\n          <strong>22.123 Users (80%)</strong>\n          <div class=\"progress progress-xs mt-2\">\n            <div class=\"progress-bar bg-danger\" role=\"progressbar\" style=\"width: 80%\" aria-valuenow=\"80\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\n          </div>\n        </div>\n        <div class=\"col-sm-12 col-md mb-sm-2 mb-0\">\n          <div class=\"text-muted\">Bounce Rate</div>\n          <strong>40.15%</strong>\n          <div class=\"progress progress-xs mt-2\">\n            <div class=\"progress-bar\" role=\"progressbar\" style=\"width: 40%\" aria-valuenow=\"40\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\n          </div>\n        </div>\n      </div>\n    </div>-->\n  </div>\n  <!--/.card-->\n</div>\n"
 
 /***/ }),
 
@@ -2615,14 +2612,14 @@ __webpack_require__.r(__webpack_exports__);
 // import {HttpClient} from '@angular/common/http';
 var DashboardComponent = /** @class */ (function () {
     function DashboardComponent(httpService) {
-        // console.log(this.fileData);
         this.httpService = httpService;
-        this.radioModel = 'Month';
+        this.radioModel = 'Day';
+        this.diagramTitle = 'Day statistic';
         // ---------------------------------------------------------------- LOCAL --------------------------------------------------
         this.localJson = 'assets/data/test.json';
-        this.localJson2 = 'assets/data/db.json';
-        this.localJson3 = 'assets/data/user.json';
-        this.localJson4 = 'assets/data/today.json';
+        this.localWeek = 'assets/data/week.json';
+        this.localMonth = 'assets/data/month.json';
+        this.localToday = 'assets/data/today.json';
         // --------------------------------------------------------------- REMOTE ---------------------------------------------------
         this.httpGETAll = 'http://localhost:8080/RCCT-2.0-SNAPSHOT/rest/users/all'; // все записи
         this.httpGetToday = 'http://localhost:8080/RCCT-2.0-SNAPSHOT/rest/users/today'; // сегодняшние измерения
@@ -2631,16 +2628,23 @@ var DashboardComponent = /** @class */ (function () {
         this.httpGetMonthly4Day = 'http://localhost:8080/RCCT-2.0-SNAPSHOT/rest/users/monthday'; // месячные, дневная температуры
         this.httpGetMonthly4Night = 'http://localhost:8080/RCCT-2.0-SNAPSHOT/rest/users/monthnight'; // месячные, ночная температуры
         this.httpGetStatus = 'http://localhost:8080/RCCT-2.0-SNAPSHOT/rest/users/status'; // Статус
-        //  user: User;
-        this.mainChartData5 = [];
-        this.year = [];
-        this.count = [];
+        this.mainChartData5 = []; // todo: переименовать
+        this.year = []; // время измерения todo: переименовать
+        this.year2 = []; // время измерения todo: переименовать
+        // label = []; // подпись метки
+        this.count = []; // температура todo: переименовать
+        this.count2 = []; // температура todo: переименовать
+        this.label = []; // метки todo: переименовать
+        this.person = {
+            data: [],
+            label: 'Temp = '
+        };
         this.mydata = [
             [65, 59, 80, 81, 56, 55, 40],
             [28, 48, 40, 19, 86, 27, 90]
         ];
         /*
-        
+      
           // lineChart1
           public lineChart1Data: Array<any> = [
             {
@@ -2665,7 +2669,7 @@ var DashboardComponent = /** @class */ (function () {
                   fontSize: 2,
                   fontColor: 'transparent',
                 }
-        
+      
               }],
               yAxes: [{
                 display: false,
@@ -2698,9 +2702,9 @@ var DashboardComponent = /** @class */ (function () {
           ];
           public lineChart1Legend = false;
           public lineChart1Type = 'line';
-        
+      
         //  public premiumsO: Premium[] = [];
-        
+      
           // lineChart2
           public lineChart2Data: Array<any> = [
             {
@@ -2725,7 +2729,7 @@ var DashboardComponent = /** @class */ (function () {
                   fontSize: 2,
                   fontColor: 'transparent',
                 }
-        
+      
               }],
               yAxes: [{
                 display: false,
@@ -2759,8 +2763,8 @@ var DashboardComponent = /** @class */ (function () {
           ];
           public lineChart2Legend = false;
           public lineChart2Type = 'line';
-        
-        
+      
+      
           // lineChart3
           public lineChart3Data: Array<any> = [
             {
@@ -2805,8 +2809,8 @@ var DashboardComponent = /** @class */ (function () {
           ];
           public lineChart3Legend = false;
           public lineChart3Type = 'line';
-        
-        
+      
+      
           // barChart1
           public barChart1Data: Array<any> = [
             {
@@ -2844,13 +2848,12 @@ var DashboardComponent = /** @class */ (function () {
           public barChart1Type = 'bar';
         */
         // mainChart
-        this.mainChartElements = 27;
+        this.mainChartElements = 5;
         this.mainChartData1 = [];
         this.mainChartData2 = [];
         this.mainChartData3 = [];
-        this.mainChartData = [
-            { data: this.count, label: 'Python Language' }
-        ];
+        // {data: this.count, label: 'Температура'}
+        this.mainChartData = [this.person, this.person];
         /*public mainChartData: Array<any> = [
           {
             data: this.mainChartData1,
@@ -2866,7 +2869,7 @@ var DashboardComponent = /** @class */ (function () {
           }
         ];*/
         /* tslint:disable:max-line-length */
-        this.mainChartLabels = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday', 'Monday', 'Thursday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+        this.mainChartLabels = ['Night', 'Morning', 'Day', 'Evening'];
         /* tslint:enable:max-line-length */
         this.mainChartOptions = {
             tooltips: {
@@ -2890,7 +2893,7 @@ var DashboardComponent = /** @class */ (function () {
                         },
                         ticks: {
                             callback: function (value) {
-                                return value.charAt(0);
+                                return value;
                             }
                         }
                     }],
@@ -3010,78 +3013,110 @@ var DashboardComponent = /** @class */ (function () {
     };
     // constructor(private http: HttpClient){}
     DashboardComponent.prototype.clickEvent = function () {
-        // console.log(this.user);
-        //  console.log(this.users);
-        /* const arr = this.users.map(function (user: any) {
-    
-           var localObj = [];
-          //  var i = 0;
-          //  localObj[i] = 1;
-          //  i = i+1;
-            localObj.push(user.age);
-           return localObj;
-    
-         }); */
-        /*const output = this.users.map(user => user.name);
-        console.log(output);
-    
-        this.mainChartData1 = output;
-        console.log('After Parse:');
-        console.log(this.mainChartData1);*/
-        //  console.log(arr);
     };
     DashboardComponent.prototype.dayMode = function () {
         var _this = this;
-        this.httpService.getData4(this.localJson4).subscribe(function (data) {
+        // Чистим все
+        // this.label.splice(0, this.label.length);
+        this.count.splice(0, this.count.length);
+        this.count2.splice(0, this.count2.length);
+        this.year.splice(0, this.year.length);
+        console.log(' =============== DAY MODE=================== ');
+        this.diagramTitle = 'Today statistic';
+        this.httpService.getData4(this.localToday).subscribe(function (data) {
             _this.users = data;
-            console.log(data);
+            //  console.log(data);
             _this.users.forEach(function (y) {
                 _this.year.push(y.timeCreated);
+                //  this.label.push(y.timeCreated);
                 _this.count.push(y.temperature);
             });
             console.log(_this.count);
             console.log(_this.year);
-            // this.mainChartData1 = data['userList'].map(user => user.age);
-            // this.mainChartData5 = data;
-            // const output = this.users.map(user => user.age);
-            // console.log(data);
+            _this.mainChartData = [];
+            _this.mainChartData = [
+                {
+                    data: _this.count,
+                    label: 'Day'
+                },
+                {
+                    data: _this.count,
+                    label: 'Day'
+                }
+            ];
         });
     };
     DashboardComponent.prototype.ngOnInit = function () {
-        // this.http.get(this.localJson3).subscribe((data: User) => this.user = data);
         this.dayMode();
-        /*
-            this.httpService.getData4(this.localJson4).subscribe(data => {
-              this.users = data['userList'];
-                 console.log(data);
-              this.users.forEach(y => {
-                this.year.push(y.name);
-                this.count.push(y.age);
-              });
-        
-              console.log(this.count);
-              // this.mainChartData1 = data['userList'].map(user => user.age);
-            //  this.mainChartData5 = data;
-              //  const output = this.users.map(user => user.age);
-              //   console.log(data);
-            });*/
-        /*const output = this.users.map(user => user.age);
-        console.log(output);
-    
-         this.mainChartData1 = output;*/
-        //  console.log('After Parse:');
-        //  console.log(this.mainChartData1);
-        /*this.mainChartData1.push(10);
-        this.mainChartData1.push(235);
-    
-        console.log(this.mainChartData1);
-    */
-        // generate random values for mainChart
-        /*for (let i = 0; i <= this.mainChartElements; i++) {
-          this.mainChartData1.push(this.random(50, 200));
-          this.mainChartData2.push(this.random(80, 100));
-          this.mainChartData3.push(65);
-        }*/
+        this.label = ['Night', 'Morning', 'Day', 'Evening'];
+    };
+    DashboardComponent.prototype.monthMode = function () {
+        var _this = this;
+        console.log(' =============== MONTH MODE=================== ');
+        // Чистим все
+        // this.label.splice(0, this.label.length);
+        this.count.splice(0, this.count.length);
+        this.count2.splice(0, this.count2.length);
+        this.label.splice(0, this.label.length);
+        this.year.splice(0, this.year.length);
+        this.diagramTitle = 'Month statistic';
+        this.httpService.getData5(this.localMonth).subscribe(function (data) {
+            _this.temps = data;
+            console.log(data);
+            _this.temps.forEach(function (y) {
+                _this.year.push(y.measureDate);
+                _this.label.push((y.measureDate.split('/'))[0] + '/' + (y.measureDate.split('/'))[1]);
+                // console.log((y.measureDate.split('/'))[0] + '/' + (y.measureDate.split('/'))[1]);
+                _this.count.push(y.dayTemp);
+                _this.count2.push(y.nightTemp);
+            });
+            console.log(_this.count);
+            console.log(_this.year);
+            _this.mainChartData = [];
+            _this.mainChartData = [
+                {
+                    data: _this.count,
+                    label: 'Day'
+                },
+                {
+                    data: _this.count2,
+                    label: 'Night'
+                }
+            ];
+        });
+    };
+    DashboardComponent.prototype.weekMode = function () {
+        var _this = this;
+        console.log(' =============== WEEK MODE=================== ');
+        // Чистим все
+        this.count.splice(0, this.count.length);
+        this.count2.splice(0, this.count2.length);
+        this.label.splice(0, this.label.length);
+        this.year.splice(0, this.year.length);
+        this.diagramTitle = 'Week statistic';
+        this.httpService.getData5(this.localWeek).subscribe(function (data) {
+            _this.temps = data;
+            console.log(data);
+            _this.temps.forEach(function (y) {
+                _this.year.push(y.measureDate);
+                _this.label.push((y.measureDate.split('/'))[0] + '/' + (y.measureDate.split('/'))[1]);
+                _this.count.push(y.dayTemp);
+                _this.count2.push(y.nightTemp);
+            });
+            console.log(_this.count);
+            console.log(_this.year);
+            _this.mainChartData = [];
+            _this.mainChartData = [
+                {
+                    data: _this.count,
+                    label: 'Day'
+                },
+                {
+                    data: _this.count2,
+                    label: 'Night'
+                }
+            ];
+        });
     };
     DashboardComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({

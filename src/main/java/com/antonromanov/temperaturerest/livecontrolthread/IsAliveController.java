@@ -1,16 +1,15 @@
 package com.antonromanov.temperaturerest.livecontrolthread;
 
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.BeanCreationException;
 import org.springframework.stereotype.Service;
 import com.antonromanov.temperaturerest.model.Logs;
 import com.antonromanov.temperaturerest.model.Status;
 import com.antonromanov.temperaturerest.service.MainService;
-
 import java.sql.Time;
 import java.text.ParseException;
 import java.util.Date;
 import java.util.List;
-
 import static com.antonromanov.temperaturerest.utils.Utils.*;
 
 /**
@@ -19,113 +18,121 @@ import static com.antonromanov.temperaturerest.utils.Utils.*;
 @Service
 public class IsAliveController implements Runnable {
 
-    /**
-     * Инжектим наш сервис.
-     */
-    MainService mainService;
+	/**
+	 * Инжектим наш сервис.
+	 */
+	MainService mainService;
 
-    /**
-     * Конструктор.
-     *
-     * @param mainService
-     */
-    public IsAliveController(MainService mainService) {
-        this.mainService = mainService;
-    }
+	/**
+	 * Логгер файловый
+	 */
+	private static final Logger LOGGER = Logger.getLogger(IsAliveController.class);
 
-    /**
-     * Собсна, основной метод, где вся логика.
-     */
-    @Override
-    public void run() {
+	/**
+	 * Конструктор.
+	 *
+	 * @param mainService
+	 */
+	public IsAliveController(MainService mainService) {
+		this.mainService = mainService;
+	}
 
-        System.out.println("Thread will started....");
-        boolean ret = true;
+	/**
+	 * Собсна, основной метод, где вся логика.
+	 */
+	@Override
+	public void run() {
 
-        if (mainService != null) { // проверяем, чтобы сервис вообще доступен был
+		boolean ret = true;
 
-            while (ret) { // бесконечный цикл.
-                try {
+		if (mainService != null) { // проверяем, чтобы сервис вообще доступен был
 
-               //     System.out.println("Тестим Чек-таймаут - " + checkTimeout(mainService.getMainParametrs().getLastPingTime()));
-                    Date date = new Date();
-                    Time time = new Time(date.getTime()); // берем текущее время.
+			while (ret) { // бесконечный цикл.
+				try {
 
-                    /**
-                     * Печатаем всякую муру. TODO ее потом логгировать бы в логи гласфиша.
-                     */
-                //    System.out.println("Параметры MainParametrs. AC - " + mainService.getMainParametrs().isAcStatus());
-              //      System.out.println("Параметры MainParametrs. LAN - " + mainService.getMainParametrs().isLanStatus());
-               //     System.out.println("is logged?  " + mainService.getMainParametrs().isLogged());
+					//     System.out.println("Тестим Чек-таймаут - " + checkTimeout(mainService.getMainParametrs().getLastPingTime()));
+					LOGGER.warn("TIMEOUT TEST:  " + checkTimeout(mainService.getMainParametrs().getLastPingTime()));
+					Date date = new Date();
+					Time time = new Time(date.getTime()); // берем текущее время.
 
-                    /**
-                     *  Первое условие:
-                     *
-                     *  + Таймаут просрочен (false)
-                     *  + Не логгировали это раньше
-                     *  + АС или LAN по последним логам включен.
-                     */
-                    if (!checkTimeout(mainService.getMainParametrs().getLastPingTime()) && (!mainService.getMainParametrs().isLogged()) &&
-                            (mainService.getMainParametrs().isAcStatus() || mainService.getMainParametrs().isLanStatus())) { // Хьюстон, у нас проблемы.....
-
-                 //       System.out.println("Хьюстон, у нас проблемы.....");
-
-                        /**
-                         * Пишет в БД запись, что связи нет, чтобы ее фронтенд прочитать мог.
-                         */
-                        Status log = new Status("REST: NO PING", false, false, 0, 0, time, time,
-                                0, 0, 0, 0, new Date());
-
-                        try {
-                            List<Logs> tempLogs = mainService.addLog(log); // пишем через сервис.
-                        } catch (ParseException e) {
-                            e.printStackTrace();
-                        }
-
-                        mainService.getMainParametrs().setLogged(true); // теперь мы залоггировали трабл
-                        mainService.getMainParametrs().setAcStatus(false); // ставим флаг АС - нет
-                        mainService.getMainParametrs().setLanStatus(false);// ставим флаг LAN - нет
-                        mainService.getMainParametrs().setJustStartedSituation(false); // ну и это теперь не "только стартанули2 ситуация
+					LOGGER.info("MainParametrs: AC {" + mainService.getMainParametrs().isAcStatus() + "},LAN {" +
+							mainService.getMainParametrs().isLanStatus() + "}, IS LOGGED {" +
+							mainService.getMainParametrs().isLogged() + "}");
 
 
-                        /**
-                         * Следующая ситуация - проблем или решлась или ее не было. Условия:
-                         *
-                         * + АС - включено
-                         * + LAN - включен
-                         */
-                    } else if ((mainService.getMainParametrs().isAcStatus() || mainService.getMainParametrs().isLanStatus())) {
+					/**
+					 *  Первое условие:
+					 *
+					 *  + Таймаут просрочен (false)
+					 *  + Не логгировали это раньше
+					 *  + АС или LAN по последним логам включен.
+					 */
+					if (!checkTimeout(mainService.getMainParametrs().getLastPingTime()) && (!mainService.getMainParametrs().isLogged()) &&
+							(mainService.getMainParametrs().isAcStatus() || mainService.getMainParametrs().isLanStatus())) { // Хьюстон, у нас проблемы.....
 
-                  //      System.out.println("Проблема решена или ее и не было");
-                        mainService.getMainParametrs().setLogged(false); // убираем, что мы залогировались
+						// Хьюстон, у нас проблемы....
+						LOGGER.warn("WE HAVE PROBLEMS");
 
-                        /**
-                         * Стартовая ситуация:
-                         *
-                         * + Таймаут по пингу просрочен
-                         * + незалогированы
-                         * + статусы сети и 220 отрицательные
-                         */
-                    } else if (!checkTimeout(mainService.getMainParametrs().getLastPingTime()) && !mainService.getMainParametrs().isLogged() &&
-                            (!mainService.getMainParametrs().isAcStatus() || !mainService.getMainParametrs().isLanStatus())
-                            ) { // стартовая ситуация
-                 //       System.out.println("Стартовая ситуация");
-                    }
+						/**
+						 * Пишет в БД запись, что связи нет, чтобы ее фронтенд прочитать мог.
+						 */
+						Status log = new Status("REST: NO PING", false, false, 0, 0, time, time,
+								0, 0, 0, 0, new Date());
 
-                    /**
-                     * ждем 10 секунд.
-                     */
-                    try {
-                        Thread.sleep(10000);
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
+						// Хьюстон, у нас проблемы....
+						LOGGER.info("ENTRY IN DB CREATED:" + log.toString());
 
-                } catch (BeanCreationException exception) {
-            //        System.out.println("Косяк");
-                }
-            }
-        }
-    }
+						try {
+							List<Logs> tempLogs = mainService.addLog(log); // пишем через сервис.
+						} catch (ParseException e) {
+							e.printStackTrace();
+						}
+
+						mainService.getMainParametrs().setLogged(true); // теперь мы залоггировали трабл
+						mainService.getMainParametrs().setAcStatus(false); // ставим флаг АС - нет
+						mainService.getMainParametrs().setLanStatus(false);// ставим флаг LAN - нет
+						mainService.getMainParametrs().setJustStartedSituation(false); // ну и это теперь не "только стартанули2 ситуация
+
+
+						/**
+						 * Следующая ситуация - проблема или решилась или ее не было. Условия:
+						 *
+						 * + АС - включено
+						 * + LAN - включен
+						 */
+					} else if ((mainService.getMainParametrs().isAcStatus() || mainService.getMainParametrs().isLanStatus())) {
+
+					//	System.out.println("Проблема решена или ее и не было");
+						LOGGER.info("PROBLEM WAS SOLVED OR HAS NOT BEEN OCCURED");
+						mainService.getMainParametrs().setLogged(false); // убираем, что мы залогировались
+
+						/**
+						 * Стартовая ситуация:
+						 *
+						 * + Таймаут по пингу просрочен
+						 * + незалогированы
+						 * + статусы сети и 220 отрицательные
+						 */
+					} else if (!checkTimeout(mainService.getMainParametrs().getLastPingTime()) && !mainService.getMainParametrs().isLogged() &&
+							(!mainService.getMainParametrs().isAcStatus() || !mainService.getMainParametrs().isLanStatus())
+					) { // стартовая ситуация
+						//       System.out.println("Стартовая ситуация");
+					}
+
+					/**
+					 * ждем 60 секунд.
+					 */
+					try {
+						Thread.sleep(60000);
+					} catch (InterruptedException e) {
+						e.printStackTrace();
+					}
+
+				} catch (BeanCreationException exception) {
+					//        System.out.println("Косяк");
+				}
+			}
+		}
+	}
 
 }

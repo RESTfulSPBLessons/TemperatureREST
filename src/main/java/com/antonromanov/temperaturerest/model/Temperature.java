@@ -2,11 +2,8 @@ package com.antonromanov.temperaturerest.model;
 
 import javax.persistence.*;
 import java.sql.Time;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.time.LocalTime;
 import java.util.Date;
-import org.hibernate.annotations.Type;
 
 /**
  * Основной температурный энтити. Тут все понятно.
@@ -39,16 +36,27 @@ public class Temperature {
     private Time timeCreated;
 
 
-    @Column(name = "test")
-    @Temporal(TemporalType.DATE)
-    private Date test;
+    @Column(name = "status")
+    private String status;
 
+
+   /* @Column(name = "test")
+    @Temporal(TemporalType.DATE)
+    private Date test;*/
 
     public Temperature() {
     }
 
     public Temperature(Double newTemp) {
         this.temperature = newTemp;
+        this.name = "from Arduino Home";
+        this.dateCreated = new Date();
+        this.timeCreated = java.sql.Time.valueOf(LocalTime.now());
+    }
+
+    public Temperature(Double newTemp, String status) {
+        this.temperature = newTemp;
+        this.status = status;
         this.name = "from Arduino Home";
         this.dateCreated = new Date();
         this.timeCreated = java.sql.Time.valueOf(LocalTime.now());
@@ -96,13 +104,13 @@ public class Temperature {
     }
 
 
-    public Date getTest() {
+   /* public Date getTest() {
         return test;
     }
 
     public void setTest(Date test) {
         this.test = test;
-    }
+    }*/
 
     @Override
     public String toString() {

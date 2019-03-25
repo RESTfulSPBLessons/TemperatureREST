@@ -12,6 +12,7 @@ import java.sql.Time;
 import java.text.ParseException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import static org.apache.commons.lang3.StringUtils.isBlank;
 import java.util.*;
 import static com.antonromanov.temperaturerest.utils.Utils.*;
 
@@ -58,30 +59,19 @@ public class MainServiceImpl implements MainService {
         return logsRepository.findAll();
     }
 
-    /**
-     * Добавить температуру.
-     *
-     * @param temp
-     * @return
-     */
-    @Override
-    public List<Temperature> addMeasure(Double temp) {
-        usersRepository.save(new Temperature(temp));
+	/**
+	 * Добавить температуру.
+	 *
+	 * @param temp
+	 * @param status
+	 * @return
+	 */
+	@Override
+    public List<Temperature> addMeasure(Double temp, String status) {
+        usersRepository.save(new Temperature(temp, status));
         return usersRepository.findAll();
     }
 
-    /**
-     * Второй метод добавления температуры.
-     * Он не нужен. В следующем коммите скорее всего его удалим.
-     *
-     * @param measure
-     * @return
-     */
-    @Override
-    public List<Temperature> addNewMeasure(Temperature measure) {
-        usersRepository.save(measure);
-        return usersRepository.findAll();
-    }
 
     /**
      * Выдать стаистику по сегодня.
@@ -201,11 +191,7 @@ public class MainServiceImpl implements MainService {
                     mainParametrs.getStatus().getPower(),
                     mainParametrs.getStatus().getConsuming(),
                     mainParametrs.getStatus().getLastContactDate());
-
         }
-
-
-
         return status;
     }
 
@@ -229,10 +215,6 @@ public class MainServiceImpl implements MainService {
     public Time getLastContactTime() {
 
         // Распечатаем всю выдачу
-
-
-   //     System.out.println("Last Contact Time: " + ((logsRepository.getLastPingedEntry3(new PageRequest(0, 1, Sort.Direction.DESC, "servertime"))).get(0).getLastсontacttime()));
-
         return (logsRepository.getLastPingedEntry3(new PageRequest(0, 1, Sort.Direction.DESC, "servertime"))).get(0).getLastсontacttime();
     }
 
@@ -254,11 +236,30 @@ public class MainServiceImpl implements MainService {
         mainParametrs.setStatus(log);
         mainParametrs.setAcStatus(true);
         mainParametrs.setLanStatus(true);
-        if (log.getWho().isEmpty()) log.setWho("REST");
+        if (log.getWho()==null) log.setWho("REST");
+        if (isBlank(log.getWho())) log.setWho("REST");
 
         // TODO:  нам вот здесь хорошо бы проверить на ноль что-нибудь (надо подумать что: скорее всего даты)
 
         logsRepository.save(new Logs(log));
         return logsRepository.findAll();
     }
+
+	@Override
+	public void addLog2(Status log) {
+		//Логгируем (добавляем) время сервера
+		Date date = new Date();
+		Time time = new Time(date.getTime());
+		log.setServerTime(time);
+		mainParametrs.setJustStartedSituation(false);
+		mainParametrs.setLastPingTime(time);
+		mainParametrs.setStatus(log);
+		mainParametrs.setAcStatus(true);
+		mainParametrs.setLanStatus(true);
+		if (log.getWho()==null) log.setWho("REST");
+		if (isBlank(log.getWho())) log.setWho("REST");
+
+		// TODO:  нам вот здесь хорошо бы проверить на ноль что-нибудь (надо подумать что: скорее всего даты)
+		logsRepository.save(new Logs(log));
+	}
 }

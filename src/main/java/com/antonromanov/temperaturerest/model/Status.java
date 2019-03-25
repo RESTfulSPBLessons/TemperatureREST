@@ -1,7 +1,6 @@
 package com.antonromanov.temperaturerest.model;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-
 import java.sql.Time;
 import java.util.Date;
 
@@ -29,6 +28,19 @@ public class Status {
     private Date lastContactDate; // Дата последнего контакта
 
     public Status() {
+
+        /*this.isAcOn = true;
+        this.isLanOn = true;
+        this.lastTemperature = -15;
+        this.lastHumidity = -10;
+        this.serverTime = null;
+        this.lastContactTime = null;
+        this.current = 15;
+        this.amperage = 150;
+        this.power = 18;
+        this.consuming = 1024;
+        this.lastContactDate = null;*/
+
     }
 
     public Status(boolean isAcOn, boolean isLanOn, int lastTemperature, int lastHumidity, Time serverTime, Time lastContactTime, int current, int amperage, int power, long consuming, Date lastContactDate) {

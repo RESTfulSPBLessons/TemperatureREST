@@ -63,12 +63,6 @@ public final class JSONTemplate {
 
 	public String parseListOfObjects(List<Temperature> list) {
 
-		/*Collection collection = new ArrayList();
-		collection.add("hello");
-		collection.add(5);
-		collection.add(new Temperature(Double.valueOf(15)));*/
-
-		//gson.toJson(collection);
 		return gson.toJson(list);
 
 	}

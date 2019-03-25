@@ -1,19 +1,34 @@
 package com.antonromanov.temperaturerest.utils;
 
-import com.antonromanov.temperaturerest.model.DailyReport;
-import com.antonromanov.temperaturerest.model.Temperature;
 
+import com.antonromanov.temperaturerest.model.DailyReport;
+import com.antonromanov.temperaturerest.model.Status;
+import com.antonromanov.temperaturerest.model.Temperature;
+import javax.servlet.http.HttpServletRequest;
 import java.sql.Time;
 import java.time.LocalTime;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Date;
 import java.util.List;
+
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import com.google.gson.JsonObject;
+import org.apache.log4j.Logger;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
 
 
 /**
  * Тут собраны основные утлилиты.
  */
 public class Utils {
+
+
+	private static final Logger LOGGER = Logger.getLogger(Utils.class);
 
 	/**
 	 * Определяет лижит ли указанное время между двумя заданными.
@@ -111,5 +126,88 @@ public class Utils {
 		}
 		return false;
 	}
+
+	/**
+	 * Проверяем ip
+	 */
+	public static String getIp(HttpServletRequest request) {
+
+		String remoteAddr = "";
+
+		// Пытаемся взять ip
+		if (request != null) {
+			remoteAddr = request.getHeader("X-FORWARDED-FOR");
+			if (remoteAddr == null || "".equals(remoteAddr)) {
+				remoteAddr = request.getRemoteAddr();
+				LOGGER.info("GETTING REQUEST FROM:  " + remoteAddr);
+			}
+		}
+
+		return remoteAddr;
+	}
+
+	/**
+	 * Формируем ответный JSON
+	 */
+	public static void createResponseJson(int size, Boolean at2am, Boolean at8am, Boolean at14, Boolean at19, HttpServletRequest request) {
+
+		// Формируем JSON
+		JsonObject responseStatusInJson = JSONTemplate.create()
+				.add("AllTemperatures", size)
+				.add("NightPost", at2am)
+				.add("MorningPost", at8am)
+				.add("DayPost", at14)
+				.add("EveningPost", at19)
+				.add("ip", getIp(request)).getJson();
+
+		LOGGER.info("RESULT:  " + responseStatusInJson.toString());
+		//return remoteAddr;
+	}
+
+	/**
+	 * Создаем gson builder
+	 */
+	public static Gson createGsonBuilder() {
+
+
+		Gson gson = new GsonBuilder()
+				.serializeNulls()
+				.setDateFormat("dd/MM/yyyy")
+				.registerTypeAdapter(java.sql.Time.class, new TimeSerializer())
+				.create();
+
+		return gson;
+	}
+
+	/**
+	 * Создаем хороший (200 OK) response
+	 */
+	public static ResponseEntity<String> createGoodResponse(Collection collection) {
+
+		String result = createGsonBuilder().toJson(collection);
+
+		HttpHeaders headers = new HttpHeaders();
+		headers.setContentType(MediaType.APPLICATION_JSON);
+		headers.setCacheControl("no-cache");
+		ResponseEntity<String> responseEntity = new ResponseEntity<String>(result, headers, HttpStatus.OK);
+
+		return responseEntity;
+	}
+
+	/**
+	 * Создаем хороший (200 OK) response для статуса
+	 */
+	public static ResponseEntity<String> createGoodResponse4Status(Status status) {
+
+		String result = createGsonBuilder().toJson(status);
+
+		HttpHeaders headers = new HttpHeaders();
+		headers.setContentType(MediaType.APPLICATION_JSON);
+		headers.setCacheControl("no-cache");
+		ResponseEntity<String> responseEntity = new ResponseEntity<String>(result, headers, HttpStatus.OK);
+
+		return responseEntity;
+	}
+
 
 }

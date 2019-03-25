@@ -16,7 +16,6 @@ public class TimeSerializer implements JsonSerializer {
 	public JsonElement serialize(Object src, Type type, JsonSerializationContext jsonSerializationContext) {
 
 		DateFormat format = new SimpleDateFormat("hh:mm:ss a");
-		//System.out.println(format.format(myTime.getTime())); // 11:17
 		String result = LocalTime.parse(format.format((java.sql.Time)src) , DateTimeFormatter.ofPattern("hh:mm:ss a" , Locale.US))
 				.format(DateTimeFormatter.ofPattern("HH:mm:ss"));
 
