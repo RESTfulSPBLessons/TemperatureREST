@@ -1,7 +1,5 @@
 package com.antonromanov.temperaturerest.livecontrolthread;
 
-
-
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.BeanCreationException;
 import org.springframework.stereotype.Service;
@@ -104,7 +102,7 @@ public class IsAliveController implements Runnable {
 						 */
 					} else if ((mainService.getMainParametrs().isAcStatus() || mainService.getMainParametrs().isLanStatus())) {
 
-						System.out.println("Проблема решена или ее и не было");
+					//	System.out.println("Проблема решена или ее и не было");
 						LOGGER.info("PROBLEM WAS SOLVED OR HAS NOT BEEN OCCURED");
 						mainService.getMainParametrs().setLogged(false); // убираем, что мы залогировались
 

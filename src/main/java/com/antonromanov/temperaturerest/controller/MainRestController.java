@@ -55,7 +55,8 @@ public class MainRestController {
 	// todo: сделать отправку логов/состояний на почту
 	// todo:Почистить гит, слить все ветки в мастер и удалить
 	// todo: Убрать ненужные депенденси
-
+	// todo: Надо бы еще в логи прям ситуацию словами постить и может быть даже метод такой сделать, чтобы жто получать.
+	// todo: разобраться почему после добавления нового лога, MainParametrs сначала-  AC {true},LAN {true}, IS LOGGED {false}]], а потом - MainParametrs: AC {false},LAN {false}, IS LOGGED {false}]]
 
 
 
@@ -93,45 +94,10 @@ public class MainRestController {
 	public ResponseEntity<String> getAll(HttpServletRequest request) {
 
 		List<Temperature> allTemperaturesList = mainService.getAll();
-
-		String remoteAddr = "";
-
 		LOGGER.info("========= ALL MEASURES LIST ============== ");
+		createResponseJson(allTemperaturesList.size(), at2am, at8am, at14, at19, request);
 
-		// todo: вынести в отдельный метод
-		// Пытаемся взять ip
-		if (request != null) {
-			remoteAddr = request.getHeader("X-FORWARDED-FOR");
-			if (remoteAddr == null || "".equals(remoteAddr)) {
-				remoteAddr = request.getRemoteAddr();
-				LOGGER.info("GETTING REQUEST FROM:  " + remoteAddr);
-			}
-		}
-
-		// todo: вынести в отдельный метод
-		// Формируем JSON
-		JsonObject responseStatusInJson = JSONTemplate.create()
-				.add("AllTemperatures", allTemperaturesList.size())
-				.add("NightPost", at2am)
-				.add("MorningPost", at8am)
-				.add("DayPost", at14)
-				.add("EveningPost", at19).getJson();
-
-		LOGGER.info("RESULT:  " + responseStatusInJson.toString());
-
-		// todo: вынести в отдельный метод класса Utils
-		Gson gson = new GsonBuilder()
-				.serializeNulls()
-				.setDateFormat("dd/MM/yyyy")
-				.registerTypeAdapter(java.sql.Time.class, new TimeSerializer())
-				.create();
-
-		String result = gson.toJson(allTemperaturesList);
-		HttpHeaders headers = new HttpHeaders();
-		headers.setContentType(MediaType.APPLICATION_JSON);
-		headers.setCacheControl("no-cache");
-		ResponseEntity<String> responseEntity = new ResponseEntity<String>(result, headers, HttpStatus.OK);
-		return responseEntity;
+		return createGoodResponse(allTemperaturesList);
 	}
 
 
@@ -145,47 +111,10 @@ public class MainRestController {
 	public ResponseEntity<String> getTodayMeasures(HttpServletRequest request) throws ParseException {
 
 		List<Temperature> todayList = mainService.getTodayMeasures();
-
-		String remoteAddr = "";
-
 		LOGGER.info("========= TODAY MEASURES LIST ============== ");
+		createResponseJson(todayList.size(), at2am, at8am, at14, at19, request);
 
-		// todo: вынести в отдельный метод
-		// Пытаемся взять ip
-		if (request != null) {
-			remoteAddr = request.getHeader("X-FORWARDED-FOR");
-			if (remoteAddr == null || "".equals(remoteAddr)) {
-				remoteAddr = request.getRemoteAddr();
-				LOGGER.info("GETTING REQUEST FROM:  " + remoteAddr);
-			}
-		}
-
-		// todo: вынести в отдельный метод
-		// Формируем JSON
-		JsonObject responseStatusInJson = JSONTemplate.create()
-				.add("AllTemperatures", todayList.size())
-				.add("NightPost", at2am)
-				.add("MorningPost", at8am)
-				.add("DayPost", at14)
-				.add("EveningPost", at19).getJson();
-
-		LOGGER.info("RESULT:  " + responseStatusInJson.toString());
-
-		// todo: вынести в отдельный метод класса Utils
-		Gson gson = new GsonBuilder()
-				.setDateFormat("dd/MM/yyyy")
-				.registerTypeAdapter(java.sql.Time.class, new TimeSerializer())
-				.create();
-
-		String result = gson.toJson(todayList);
-
-		HttpHeaders headers = new HttpHeaders();
-		headers.setContentType(MediaType.APPLICATION_JSON);
-		headers.setCacheControl("no-cache");
-
-		ResponseEntity<String> responseEntity = new ResponseEntity<String>(result, headers, HttpStatus.OK);
-
-		return responseEntity;
+		return createGoodResponse(todayList);
 	}
 
 
@@ -199,47 +128,9 @@ public class MainRestController {
 	public ResponseEntity<String> getWeeklyReport(HttpServletRequest request) throws ParseException {
 
 		List<DailyReport> weekList = mainService.getWeeklyDayReport();
+		createResponseJson(weekList.size(), at2am, at8am, at14, at19, request);
 
-		String remoteAddr = "";
-
-		LOGGER.info("========= WEEK MEASURES LIST ============== ");
-
-		// todo: вынести в отдельный метод
-		// Пытаемся взять ip
-		if (request != null) {
-			remoteAddr = request.getHeader("X-FORWARDED-FOR");
-			if (remoteAddr == null || "".equals(remoteAddr)) {
-				remoteAddr = request.getRemoteAddr();
-				LOGGER.info("GETTING REQUEST FROM:  " + remoteAddr);
-			}
-		}
-
-		// todo: вынести в отдельный метод
-		// Формируем JSON
-		JsonObject responseStatusInJson = JSONTemplate.create()
-				.add("AllTemperatures", weekList.size())
-				.add("NightPost", at2am)
-				.add("MorningPost", at8am)
-				.add("DayPost", at14)
-				.add("EveningPost", at19).getJson();
-
-		LOGGER.info("RESULT:  " + responseStatusInJson.toString());
-
-		// todo: вынести в отдельный метод класса Utils
-		Gson gson = new GsonBuilder()
-				.setDateFormat("dd/MM/yyyy")
-				.registerTypeAdapter(java.sql.Time.class, new TimeSerializer())
-				.create();
-
-		String result = gson.toJson(weekList);
-		HttpHeaders headers = new HttpHeaders();
-		headers.setContentType(MediaType.APPLICATION_JSON);
-		headers.setCacheControl("no-cache");
-
-		ResponseEntity<String> responseEntity = new ResponseEntity<String>(result, headers, HttpStatus.OK);
-
-
-		return responseEntity;
+		return createGoodResponse(weekList);
 	}
 
 
@@ -253,46 +144,10 @@ public class MainRestController {
 	public ResponseEntity<String> getMonthReport(HttpServletRequest request) throws ParseException {
 
 		List<DailyReport> monthList = mainService.getMonthDayReport();
-
-		String remoteAddr = "";
-
 		LOGGER.info("========= MONTH MEASURES LIST ============== ");
+		createResponseJson(monthList.size(), at2am, at8am, at14, at19, request);
 
-		// todo: вынести в отдельный метод
-		// Пытаемся взять ip
-		if (request != null) {
-			remoteAddr = request.getHeader("X-FORWARDED-FOR");
-			if (remoteAddr == null || "".equals(remoteAddr)) {
-				remoteAddr = request.getRemoteAddr();
-				LOGGER.info("GETTING REQUEST FROM:  " + remoteAddr);
-			}
-		}
-
-		// todo: вынести в отдельный метод
-		// Формируем JSON
-		JsonObject responseStatusInJson = JSONTemplate.create()
-				.add("AllTemperatures", monthList.size())
-				.add("NightPost", at2am)
-				.add("MorningPost", at8am)
-				.add("DayPost", at14)
-				.add("EveningPost", at19).getJson();
-
-		LOGGER.info("RESULT:  " + responseStatusInJson.toString());
-
-		// todo: вынести в отдельный метод класса Utils
-		Gson gson = new GsonBuilder()
-				.setDateFormat("dd/MM/yyyy")
-				.registerTypeAdapter(java.sql.Time.class, new TimeSerializer())
-				.create();
-
-		String result = gson.toJson(monthList);
-
-		HttpHeaders headers = new HttpHeaders();
-		headers.setContentType(MediaType.APPLICATION_JSON);
-		headers.setCacheControl("no-cache");
-		ResponseEntity<String> responseEntity = new ResponseEntity<String>(result, headers, HttpStatus.OK);
-
-		return responseEntity;
+		return createGoodResponse(monthList);
 	}
 
 
@@ -303,8 +158,11 @@ public class MainRestController {
 	 * @throws ParseException
 	 */
 	@GetMapping("/status")
-	public Status getStatus() throws ParseException {
-		return mainService.getGlobalStatus();
+	public ResponseEntity<String> getStatus() throws ParseException {
+
+		LOGGER.info("========= GET STATUS ============== ");
+
+		return createGoodResponse4Status(mainService.getGlobalStatus());
 	}
 
 	/**
