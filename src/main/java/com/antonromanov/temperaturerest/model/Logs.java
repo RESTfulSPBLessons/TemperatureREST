@@ -30,6 +30,9 @@ public class Logs {
     @Column(name = "lan", nullable = true)
     private Boolean lan;
 
+    @Column(name = "logged", nullable = true)
+    private Boolean logged;
+
     @Column(name = "lasttemperature", nullable = true)
     private Integer lasttemperature;
 
@@ -70,6 +73,7 @@ public class Logs {
         this.who = log.getWho();
         this.ac = log.isAcOn();
         this.lan = log.isLanOn();
+        this.logged = log.isLogged();
         this.lasthumidity = log.getLastHumidity();
         this.lasttemperature = log.getLastTemperature();
         this.servertime = log.getServerTime();
@@ -79,6 +83,7 @@ public class Logs {
         this.amperage = log.getAmperage();
         this.power = log.getPower();
         this.consuming = log.getConsuming();
+        this.logged = log.isLogged();
     }
 
     // Геттеры - Сеттеры
@@ -101,6 +106,14 @@ public class Logs {
 
     public Boolean getAc() {
         return ac;
+    }
+
+    public Boolean isLogged() {
+        return logged;
+    }
+
+    public void setLogged(Boolean logged) {
+        this.logged = logged;
     }
 
     public void setAc(Boolean ac) {
@@ -239,6 +252,7 @@ public class Logs {
                 ", who='" + who + '\'' +
                 ", ac=" + ac +
                 ", lan=" + lan +
+                ", logged=" + logged +
                 ", lasttemperature=" + lasttemperature +
                 ", lasthumidity=" + lasthumidity +
                 ", servertime=" + servertime +

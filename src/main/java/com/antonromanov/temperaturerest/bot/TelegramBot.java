@@ -1,6 +1,6 @@
 package com.antonromanov.temperaturerest.bot;
 
-/*import org.apache.commons.io.input.ReversedLinesFileReader;
+import org.apache.commons.io.input.ReversedLinesFileReader;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.telegram.telegrambots.bots.DefaultBotOptions;
@@ -9,25 +9,24 @@ import org.telegram.telegrambots.meta.api.methods.send.SendDocument;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.objects.Message;
 import org.telegram.telegrambots.meta.api.objects.Update;
-import org.telegram.telegrambots.meta.exceptions.TelegramApiException;*/
-//
-//import org.slf4j.Logger;
-//import org.slf4j.LoggerFactory;
+import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.File;
 
-public class TelegramBot {
-	//public class Bot extends TelegramLongPollingBot {
+//public class TelegramBot {
+	public class TelegramBot extends TelegramLongPollingBot {
 
 
-/*
-	private static Logger logger = LoggerFactory.getLogger(Bot.class);
-	private final String token = "833516765:AAEqVBbecQ1gYgJb8TcfGxPrOSjrjdj_DB8";
+
+//	private static Logger logger = LoggerFactory.getLogger(Bot.class);
+	private final String token = "649537355:AAEhS25RBBSxDPLBeBhZfN7zG4YBp7xU7y0";
 
 	private int maxLines = 50;
 	private String logFileName = "logs/rif.log";
 
-	public Bot(DefaultBotOptions options) {
+	public TelegramBot(DefaultBotOptions options) {
 		super(options);
 	}
 
@@ -38,7 +37,7 @@ public class TelegramBot {
 			String outText = "Я такой команды не знаю";
 			String command = inMessage.getText().toLowerCase();
 			if(command.startsWith("/log")) {
-				if(command.equals("/log+")) {
+				/*if(command.equals("/log+")) {
 					fireDocument(inMessage.getChatId(), new File(logFileName));
 				}else {
 					try {
@@ -49,12 +48,15 @@ public class TelegramBot {
 					} catch (NumberFormatException ex) {
 						fireMessage(inMessage.getChatId(), "Неверный формат команды");
 					}
-				}
+				}*/
+
+				fireMessage(inMessage.getChatId(), "Hola, Amigo!");
+
 			}
 		}
 	}
 
-	private String getLog(int lines) {
+	/*private String getLog(int lines) {
 		try (ReversedLinesFileReader reader = new ReversedLinesFileReader(new File(logFileName))) {
 			StringBuffer sb = new StringBuffer();
 			while(lines > 0) {
@@ -66,10 +68,10 @@ public class TelegramBot {
 			}
 			return sb.toString();
 		}catch (Exception ex) {
-			logger.error("Ошибка при чтении лога", ex);
+		//	logger.error("Ошибка при чтении лога", ex);
 			return "Ошибка при чтении лога";
 		}
-	}
+	}*/
 
 	private Message getMessage(Update update) {
 		if(update.hasChannelPost() && update.getChannelPost().hasText())
@@ -79,7 +81,7 @@ public class TelegramBot {
 		return null;
 	}
 
-	public void fireDocument(Long chanelId, File file) {
+	/*public void fireDocument(Long chanelId, File file) {
 		try {
 			SendDocument outMessage = new SendDocument();
 			outMessage.setChatId(chanelId);
@@ -88,7 +90,7 @@ public class TelegramBot {
 		} catch (TelegramApiException e) {
 			logger.error("Не получилось отправить сообщение в канал Риф ошибочки ", e);
 		}
-	}
+	}*/
 
 	public void fireMessage(Long chanelId, String msg) {
 		try {
@@ -98,7 +100,7 @@ public class TelegramBot {
 			outMessage.setText("<b>"+getBotUsername()+"</b>: \n\n"+msg);
 			execute(outMessage);
 		} catch (TelegramApiException e) {
-			logger.error("Не получилось отправить сообщение в канал Риф ошибочки ", e);
+		//	logger.error("Не получилось отправить сообщение в канал Риф ошибочки ", e);
 		}
 	}
 
@@ -109,8 +111,4 @@ public class TelegramBot {
 	public String getBotToken() {
 		return token;
 	}
-
-*/
-
-
 }

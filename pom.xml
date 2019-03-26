@@ -233,6 +233,14 @@
             <version>${log4j.version}</version>
         </dependency>
 
+        <!-- TELEGRAMM -->
+
+        <dependency>
+            <groupId>org.telegram</groupId>
+            <artifactId>telegrambots-spring-boot-starter</artifactId>
+            <version>LATEST</version>
+        </dependency>
+
 
 
     </dependencies>

@@ -15,10 +15,7 @@ import java.util.List;
 @Repository
 public interface LogsRepository extends JpaRepository<Logs, Integer>{
 
-    /*@Query(value = "SELECT s  FROM Users s where s.test = :creationDateTime order by s.timeCreated ASC")
-    List<Users> getTodayMeasuresOld(@Param("creationDateTime") Date creationDateTime);
-
-*/
+  
     @Query(value="select l from Logs l order by l.lastсontactdate DESC")
     List<Logs> getLastPingedEntry(Pageable pageable);
 

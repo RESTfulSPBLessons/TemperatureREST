@@ -21,6 +21,7 @@ public class Status {
     private int amperage; // Сила тока (последние измерения)
     private int power; // Мощность потребляемая
     private long consuming; // Энергопотребеление (Ватт / час)
+    private Boolean logged; // Энергопотребеление (Ватт / час)
 
 
     @JsonFormat
@@ -28,18 +29,6 @@ public class Status {
     private Date lastContactDate; // Дата последнего контакта
 
     public Status() {
-
-        /*this.isAcOn = true;
-        this.isLanOn = true;
-        this.lastTemperature = -15;
-        this.lastHumidity = -10;
-        this.serverTime = null;
-        this.lastContactTime = null;
-        this.current = 15;
-        this.amperage = 150;
-        this.power = 18;
-        this.consuming = 1024;
-        this.lastContactDate = null;*/
 
     }
 
@@ -56,6 +45,24 @@ public class Status {
         this.consuming = consuming;
         this.lastContactDate = lastContactDate;
     }
+
+
+    public Status(String who, boolean isAcOn, boolean isLanOn, int lastTemperature, int lastHumidity, Time serverTime, Time lastContactTime, int current, int amperage, int power, long consuming, Date lastContactDate, Boolean logged) {
+        this.who = who;
+        this.isAcOn = isAcOn;
+        this.isLanOn = isLanOn;
+        this.lastTemperature = lastTemperature;
+        this.lastHumidity = lastHumidity;
+        this.serverTime = serverTime;
+        this.lastContactTime = lastContactTime;
+        this.current = current;
+        this.amperage = amperage;
+        this.power = power;
+        this.consuming = consuming;
+        this.lastContactDate = lastContactDate;
+        this.logged = logged;
+    }
+
     public Status(String who, boolean isAcOn, boolean isLanOn, int lastTemperature, int lastHumidity, Time serverTime, Time lastContactTime, int current, int amperage, int power, int consuming, Date lastContactDate) {
         this.who = who;
         this.isAcOn = isAcOn;
@@ -77,6 +84,15 @@ public class Status {
 
     public void setAcOn(boolean acOn) {
         isAcOn = acOn;
+    }
+
+
+public boolean isLogged() {
+        return logged;
+    }
+
+    public void setLogged(boolean logged) {
+        this.logged = logged;
     }
 
     public boolean isLanOn() {
