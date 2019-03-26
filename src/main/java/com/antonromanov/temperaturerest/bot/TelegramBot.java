@@ -1,6 +1,6 @@
 package com.antonromanov.temperaturerest.bot;
 
-import org.apache.commons.io.input.ReversedLinesFileReader;
+/*import org.apache.commons.io.input.ReversedLinesFileReader;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.telegram.telegrambots.bots.DefaultBotOptions;
@@ -12,13 +12,12 @@ import org.telegram.telegrambots.meta.api.objects.Update;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import java.io.File;*/
 
-import java.io.File;
+public class TelegramBot {
+//	public class TelegramBot extends TelegramLongPollingBot {
 
-//public class TelegramBot {
-	public class TelegramBot extends TelegramLongPollingBot {
-
-
+/*
 
 //	private static Logger logger = LoggerFactory.getLogger(Bot.class);
 	private final String token = "649537355:AAEhS25RBBSxDPLBeBhZfN7zG4YBp7xU7y0";
@@ -37,7 +36,7 @@ import java.io.File;
 			String outText = "Я такой команды не знаю";
 			String command = inMessage.getText().toLowerCase();
 			if(command.startsWith("/log")) {
-				/*if(command.equals("/log+")) {
+				*//*if(command.equals("/log+")) {
 					fireDocument(inMessage.getChatId(), new File(logFileName));
 				}else {
 					try {
@@ -48,7 +47,7 @@ import java.io.File;
 					} catch (NumberFormatException ex) {
 						fireMessage(inMessage.getChatId(), "Неверный формат команды");
 					}
-				}*/
+				}*//*
 
 				fireMessage(inMessage.getChatId(), "Hola, Amigo!");
 
@@ -56,7 +55,7 @@ import java.io.File;
 		}
 	}
 
-	/*private String getLog(int lines) {
+	*//*private String getLog(int lines) {
 		try (ReversedLinesFileReader reader = new ReversedLinesFileReader(new File(logFileName))) {
 			StringBuffer sb = new StringBuffer();
 			while(lines > 0) {
@@ -71,7 +70,7 @@ import java.io.File;
 		//	logger.error("Ошибка при чтении лога", ex);
 			return "Ошибка при чтении лога";
 		}
-	}*/
+	}*//*
 
 	private Message getMessage(Update update) {
 		if(update.hasChannelPost() && update.getChannelPost().hasText())
@@ -81,7 +80,7 @@ import java.io.File;
 		return null;
 	}
 
-	/*public void fireDocument(Long chanelId, File file) {
+	*//*public void fireDocument(Long chanelId, File file) {
 		try {
 			SendDocument outMessage = new SendDocument();
 			outMessage.setChatId(chanelId);
@@ -90,7 +89,7 @@ import java.io.File;
 		} catch (TelegramApiException e) {
 			logger.error("Не получилось отправить сообщение в канал Риф ошибочки ", e);
 		}
-	}*/
+	}*//*
 
 	public void fireMessage(Long chanelId, String msg) {
 		try {
@@ -110,5 +109,5 @@ import java.io.File;
 
 	public String getBotToken() {
 		return token;
-	}
+	}*/
 }
