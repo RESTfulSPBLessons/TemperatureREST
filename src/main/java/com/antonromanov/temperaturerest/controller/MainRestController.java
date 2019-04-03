@@ -342,29 +342,8 @@ public class MainRestController {
 		String remoteAddr = "";
 
 		LOGGER.info("We are in POST HTTP: " + requestParam);
-
-
-		// Пытаемся взять ip
-		if (request != null) {
-			remoteAddr = request.getHeader("X-FORWARDED-FOR");
-			if (remoteAddr == null || "".equals(remoteAddr)) {
-				remoteAddr = request.getRemoteAddr();
-				LOGGER.info("GETTING REQUEST FROM:  " + remoteAddr);
-			}
-		}
-
 		allTemperatures = mainService.getAll();
 
-		// Формируем JSON
-		JsonObject responseStatusInJson = JSONTemplate.create()
-				.add("AllTemperatures", allTemperatures.size())
-				.add("ip", remoteAddr)
-				.add("NightPost", at2am)
-				.add("MorningPost", at8am)
-				.add("DayPost", at14)
-				.add("EveningPost", at19).getJson();
-
-		// Парсим пришедший JSON  с температурой
 		try {
 
 			Double temp = JSONTemplate.fromString(requestParam).get("temp").getAsDouble();
@@ -374,7 +353,7 @@ public class MainRestController {
 
 				// Проверяем, что такой температуры нет еще за сегодня
 				if (!isAlreadyWriten(mainService.getTodayMeasures(), 1, 3)) {
-					allTemperatures = mainService.addMeasure(temp, responseStatusInJson.toString());
+					allTemperatures = mainService.addMeasure(temp, createResponseJsonWithReturn(allTemperatures.size(), at2am, at8am, at14, at19, request).toString());
 					LOGGER.info("POST NIGHT TEMPERATURE --------- SUCCESS:  " + time.toLocalTime());
 				} else {
 					LOGGER.error("POST NIGHT TEMPERATURE --------- FAIL - DUPLICATE MEASURE:  " + time.toLocalTime());
@@ -385,7 +364,7 @@ public class MainRestController {
 
 				// Проверяем, что такой температуры нет еще за сегодня
 				if (!isAlreadyWriten(mainService.getTodayMeasures(), 7, 9)) {
-					allTemperatures = mainService.addMeasure(temp, responseStatusInJson.toString());
+					allTemperatures = mainService.addMeasure(temp, createResponseJsonWithReturn(allTemperatures.size(), at2am, at8am, at14, at19, request).toString());
 					LOGGER.info("POST MORNING TEMPERATURE --------- SUCCESS:  " + time.toLocalTime());
 				} else {
 					LOGGER.error("POST MORNING TEMPERATURE --------- FAIL - DUPLICATE MEASURE:  " + time.toLocalTime());
@@ -396,7 +375,7 @@ public class MainRestController {
 
 				// Проверяем, что такой температуры нет еще за сегодня
 				if (!isAlreadyWriten(mainService.getTodayMeasures(), 13, 15)) {
-					allTemperatures = mainService.addMeasure(temp, responseStatusInJson.toString());
+					allTemperatures = mainService.addMeasure(temp, createResponseJsonWithReturn(allTemperatures.size(), at2am, at8am, at14, at19, request).toString());
 					LOGGER.info("POST DAY TEMPERATURE --------- SUCCESS:  " + time.toLocalTime());
 				} else {
 					LOGGER.error("POST DAY TEMPERATURE --------- FAIL - DUPLICATE MEASURE:  " + time.toLocalTime());
@@ -408,7 +387,7 @@ public class MainRestController {
 
 				// Проверяем, что такой температуры нет еще за сегодня
 				if (!isAlreadyWriten(mainService.getTodayMeasures(), 18, 20)) {
-					allTemperatures = mainService.addMeasure(temp, responseStatusInJson.toString());
+					allTemperatures = mainService.addMeasure(temp, createResponseJsonWithReturn(allTemperatures.size(), at2am, at8am, at14, at19, request).toString());
 					LOGGER.info("POST EVENING TEMPERATURE --------- SUCCESS:  " + time.toLocalTime());
 				} else {
 					LOGGER.error("POST EVENING TEMPERATURE --------- FAIL - DUPLICATE MEASURE:  " + time.toLocalTime());
@@ -431,8 +410,9 @@ public class MainRestController {
 			}
 		}
 
-		LOGGER.info("RESULT:  " + responseStatusInJson.toString());
-		ResponseEntity<String> responseEntity = new ResponseEntity<>(responseStatusInJson.toString(), HttpStatus.OK);
+
+		ResponseEntity<String> responseEntity = new ResponseEntity<>(createResponseJsonWithReturn(allTemperatures.size(),
+				at2am, at8am, at14, at19, request).toString(), HttpStatus.OK);
 		return responseEntity;
 	}
 

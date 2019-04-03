@@ -165,6 +165,24 @@ public class Utils {
 	}
 
 	/**
+	 * Формируем ответный JSON
+	 */
+	public static JsonObject createResponseJsonWithReturn(int size, Boolean at2am, Boolean at8am, Boolean at14, Boolean at19, HttpServletRequest request) {
+
+		// Формируем JSON
+		JsonObject responseStatusInJson = JSONTemplate.create()
+				.add("AllTemperatures", size)
+				.add("NightPost", at2am)
+				.add("MorningPost", at8am)
+				.add("DayPost", at14)
+				.add("EveningPost", at19)
+				.add("ip", getIp(request)).getJson();
+
+		LOGGER.info("RESULT:  " + responseStatusInJson.toString());
+		return responseStatusInJson;
+	}
+
+	/**
 	 * Создаем gson builder
 	 */
 	public static Gson createGsonBuilder() {
@@ -185,12 +203,7 @@ public class Utils {
 	public static ResponseEntity<String> createGoodResponse(Collection collection) {
 
 		String result = createGsonBuilder().toJson(collection);
-
-		HttpHeaders headers = new HttpHeaders();
-		headers.setContentType(MediaType.APPLICATION_JSON);
-		headers.setCacheControl("no-cache");
-		ResponseEntity<String> responseEntity = new ResponseEntity<String>(result, headers, HttpStatus.OK);
-
+		ResponseEntity<String> responseEntity = new ResponseEntity<String>(result, prepareHeaders(), HttpStatus.OK);
 		return responseEntity;
 	}
 
@@ -200,13 +213,15 @@ public class Utils {
 	public static ResponseEntity<String> createGoodResponse4Status(Status status) {
 
 		String result = createGsonBuilder().toJson(status);
+		ResponseEntity<String> responseEntity = new ResponseEntity<String>(result, prepareHeaders(), HttpStatus.OK);
+		return responseEntity;
+	}
 
+	private static HttpHeaders prepareHeaders(){
 		HttpHeaders headers = new HttpHeaders();
 		headers.setContentType(MediaType.APPLICATION_JSON);
 		headers.setCacheControl("no-cache");
-		ResponseEntity<String> responseEntity = new ResponseEntity<String>(result, headers, HttpStatus.OK);
-
-		return responseEntity;
+		return headers;
 	}
 
 
