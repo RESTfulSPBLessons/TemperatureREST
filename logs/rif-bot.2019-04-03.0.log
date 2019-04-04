@@ -1,0 +1,1008 @@
+11:32:55.334 [http-nio-8080-exec-1] INFO  console_logger  - TEST SCENARIO 3
+11:32:57.245 [http-nio-8080-exec-5] INFO  console_logger  - $$$$$$$$$$$$$$$$$$$$$$$$ ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ДЛЯ VIP-КЛИЕНТОВ $$$$$$$$$$$$$$$$$$$$$$$$
+11:32:57.246 [http-nio-8080-exec-5] INFO  console_logger  - runet-id:   7006666
+11:32:57.246 [http-nio-8080-exec-5] INFO  console_logger  - phone:   89161206481
+11:32:57.246 [http-nio-8080-exec-5] INFO  console_logger  - url:   http://yandex.ru
+11:32:57.247 [http-nio-8080-exec-5] INFO  console_logger  - referer:   http://localhost:8080/test_scenario_3
+11:32:57.285 [http-nio-8080-exec-5] INFO  console_logger  - ПДЛ или нет?   true
+11:33:48.034 [http-nio-8080-exec-6] INFO  console_logger  - $$$$$$$$$$$$$$$$$$$$$$$$ ВЫПУСК АНОНИМНОЙ КАРТЫ ДЛЯ ПДЛ $$$$$$$$$$$$$$$$$$$$$$$$
+11:33:48.034 [http-nio-8080-exec-6] INFO  console_logger  - runet-id:   7006666
+11:33:48.035 [http-nio-8080-exec-6] INFO  console_logger  - phone:   +9 (954) 345-0109
+11:33:48.035 [http-nio-8080-exec-6] INFO  console_logger  - codeword:   CODE
+11:33:48.035 [http-nio-8080-exec-6] INFO  console_logger  - url:   http://yandex.ru
+11:33:48.035 [http-nio-8080-exec-6] INFO  console_logger  - referer:   http://localhost:8080/vipcard?runet-id=7006666&phone=89161206481&url=http%3A%2F%2Fyandex.ru
+11:33:48.036 [http-nio-8080-exec-6] INFO  console_logger  - ean:   1001004978523
+11:33:48.036 [http-nio-8080-exec-6] INFO  console_logger  - last4numbers:   5485
+11:33:48.041 [http-nio-8080-exec-6] INFO  console_logger  - METHOD:   POST
+11:33:48.041 [http-nio-8080-exec-6] INFO  console_logger  - URL:      http://stage-0.apibank.club/auth/realms/Physics/protocol/openid-connect/token
+11:33:48.043 [http-nio-8080-exec-6] INFO  console_logger  - HEADERS:  
+11:33:48.043 [http-nio-8080-exec-6] INFO  console_logger  - REQUEST:  {username=[operator-runet], password=[123123], grant_type=[password]}
+11:33:48.336 [http-nio-8080-exec-6] INFO  console_logger  - RESPONSE: {"access_token":"eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJwckVJZGg4bkdQc0g3N0tTemhiVW9ubG8zbFpiS284XzdqUWNES0pSQXl3In0.eyJqdGkiOiJiOTNhNmQ0MS05ZTBhLTQzMWUtYWViNi1lMTI4MzJhMTk5ZjciLCJleHAiOjE1NTQyODQwMzAsIm5iZiI6MCwiaWF0IjoxNTU0MjgwNDMwLCJpc3MiOiJodHRwOi8vc3RhZ2UtMC5hcGliYW5rLmNsdWIvYXV0aC9yZWFsbXMvUGh5c2ljcyIsImF1ZCI6ImNhcmQtYmluZGVyIiwic3ViIjoiNzM5N2ZjYTItODM0ZS00NTc3LTg5NjYtYjY5MDVhNjIwZjMzIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiY2FyZC1iaW5kZXIiLCJhdXRoX3RpbWUiOjAsInNlc3Npb25fc3RhdGUiOiIyNjAzZjg4Mi01OGE2LTQ5OTktYTRjOS03ZGMzN2I4ZjExZTIiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwidW1hX2F1dGhvcml6YXRpb24iLCJwYXJ0bmVyLVJVTkVUIiwib3BlcmF0b3IiXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6ImVtYWlsIHByb2ZpbGUiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsIm5hbWUiOiJydW5ldCBydW5ldCIsInByZWZlcnJlZF91c2VybmFtZSI6Im9wZXJhdG9yLXJ1bmV0IiwiZ2l2ZW5fbmFtZSI6InJ1bmV0IiwiZmFtaWx5X25hbWUiOiJydW5ldCJ9.IqPD1ig-AXKYOY8IO85sPTleqhBu9BmjfJze1U7awW6A7dNTqnq9tMI3sbF4ZpHKdrwdvBfH0brmxPotWhtSk_uew1gFFlPm5np0jLVPoha8FzXaYYl66G3MPqubGSmE0PPU-zfvcqcZum9Gk5WNbxgj9RUI1d80fSFBa9W4qH_1z3NRC97EOB-TUxfeILaMV5BfajAh28N7z1Plpcn0SqdabFQLGzxFWnt2sh034Exuo7ati1r5O_5QPFCuFxtzGvJNxpm4oI3BqZBfOFefLAkPlfyINPH-1PN5hbaPAFcpy_psRsmqpZyE7AJlEDpLMZrbBjVjcH7Im3LUXcGq4Q","expires_in":3600,"refresh_expires_in":1800,"refresh_token":"eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJwckVJZGg4bkdQc0g3N0tTemhiVW9ubG8zbFpiS284XzdqUWNES0pSQXl3In0.eyJqdGkiOiJiNWJkNjBjZS03NWMxLTQ1MjktOWE3My1hZTk2YmI4YjkwNTQiLCJleHAiOjE1NTQyODIyMzAsIm5iZiI6MCwiaWF0IjoxNTU0MjgwNDMwLCJpc3MiOiJodHRwOi8vc3RhZ2UtMC5hcGliYW5rLmNsdWIvYXV0aC9yZWFsbXMvUGh5c2ljcyIsImF1ZCI6ImNhcmQtYmluZGVyIiwic3ViIjoiNzM5N2ZjYTItODM0ZS00NTc3LTg5NjYtYjY5MDVhNjIwZjMzIiwidHlwIjoiUmVmcmVzaCIsImF6cCI6ImNhcmQtYmluZGVyIiwiYXV0aF90aW1lIjowLCJzZXNzaW9uX3N0YXRlIjoiMjYwM2Y4ODItNThhNi00OTk5LWE0YzktN2RjMzdiOGYxMWUyIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwidW1hX2F1dGhvcml6YXRpb24iLCJwYXJ0bmVyLVJVTkVUIiwib3BlcmF0b3IiXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6ImVtYWlsIHByb2ZpbGUifQ.Ca35cCvvXjyk0nj4TZoBusboF9ggTRP_oaBMxt1keqc7jmg4FL7Ftr5inMF2VEIIjat-wTkzRiq3tRlUim5X0gNAd8sg1Bnaa_svvmMTzB6gadomUAPxw5_62LLFEp2j6Q5MvZ3f2HCoSAYP1--kGvkH8OYiSWc0fi4BLY_NwRQsM5qF8t3hneHlJgiS_PMtO19nFjmWaUN0XHxGiCedpGMPqOZzhJZXQFe4QOtpfZ5raBRxwV6lH-BDrkgpQzqk5ZeBc3PUZFMhjrdDL_bOJQgfCh2isgBO_wkJBdE9HTlppAe5br9xVqpj23gPOZZ3srm9DXw9Cb6iFMZz6S0Utw","token_type":"bearer","not-before-policy":1536856426,"session_state":"2603f882-58a6-4999-a4c9-7dc37b8f11e2","scope":"email profile"}
+11:33:48.336 [http-nio-8080-exec-6] INFO  console_logger  - TIME:     0c 294ms
+11:33:48.336 [http-nio-8080-exec-6] INFO  console_logger  - #################################
+11:33:48.337 [http-nio-8080-exec-6] INFO  console_logger  - METHOD:   POST
+11:33:48.337 [http-nio-8080-exec-6] INFO  console_logger  - URL:      http://stage-0.apibank.club/physics-v2/api/v2/clients/anonymous
+11:33:48.337 [http-nio-8080-exec-6] INFO  console_logger  - HEADERS:  
+11:33:48.337 [http-nio-8080-exec-6] INFO  console_logger  - REQUEST:  {"phone":"9543450109","control_info":"+9 (954) 345-0109"}
+11:33:59.137 [http-nio-8080-exec-6] INFO  console_logger  - RESPONSE: {"id":332,"phone":"9543450109","account_number":"40903810259027463601","account_level":"ANONYMOUS","created":"2019-04-03T11:33:58.52+03:00","updated":"2019-04-03T11:33:58.52+03:00"}
+11:33:59.137 [http-nio-8080-exec-6] INFO  console_logger  - TIME:     10c 800ms
+11:33:59.138 [http-nio-8080-exec-6] INFO  console_logger  - #################################
+11:33:59.204 [http-nio-8080-exec-6] INFO  console_logger  - ############## ПЫТАЕМСЯ ВЫПУСТИТЬ ПЛАСТИК ###################
+11:33:59.204 [http-nio-8080-exec-6] INFO  console_logger  - CLIENTID: 332
+11:33:59.204 [http-nio-8080-exec-6] INFO  console_logger  - EAN: 1001004978523
+11:33:59.204 [http-nio-8080-exec-6] INFO  console_logger  - LAST 4 NUMBERS:  5485
+11:33:59.205 [http-nio-8080-exec-6] INFO  console_logger  - METHOD:   POST
+11:33:59.205 [http-nio-8080-exec-6] INFO  console_logger  - URL:      http://stage-0.apibank.club/auth/realms/Physics/protocol/openid-connect/token
+11:33:59.205 [http-nio-8080-exec-6] INFO  console_logger  - HEADERS:  
+11:33:59.205 [http-nio-8080-exec-6] INFO  console_logger  - REQUEST:  {username=[operator-runet], password=[123123], grant_type=[password]}
+11:33:59.355 [http-nio-8080-exec-6] INFO  console_logger  - RESPONSE: {"access_token":"eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJwckVJZGg4bkdQc0g3N0tTemhiVW9ubG8zbFpiS284XzdqUWNES0pSQXl3In0.eyJqdGkiOiIwMWZlODBlZC1iZWEyLTQzMDktYWU1Ny0wOTIxNjVkZTFiNmMiLCJleHAiOjE1NTQyODQwNDEsIm5iZiI6MCwiaWF0IjoxNTU0MjgwNDQxLCJpc3MiOiJodHRwOi8vc3RhZ2UtMC5hcGliYW5rLmNsdWIvYXV0aC9yZWFsbXMvUGh5c2ljcyIsImF1ZCI6ImNhcmQtYmluZGVyIiwic3ViIjoiNzM5N2ZjYTItODM0ZS00NTc3LTg5NjYtYjY5MDVhNjIwZjMzIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiY2FyZC1iaW5kZXIiLCJhdXRoX3RpbWUiOjAsInNlc3Npb25fc3RhdGUiOiI2NjI2NDNhMC05NTU0LTQ5YmQtOTQ0Ny0zM2Y4NGIwMjU4ZDMiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwidW1hX2F1dGhvcml6YXRpb24iLCJwYXJ0bmVyLVJVTkVUIiwib3BlcmF0b3IiXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6ImVtYWlsIHByb2ZpbGUiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsIm5hbWUiOiJydW5ldCBydW5ldCIsInByZWZlcnJlZF91c2VybmFtZSI6Im9wZXJhdG9yLXJ1bmV0IiwiZ2l2ZW5fbmFtZSI6InJ1bmV0IiwiZmFtaWx5X25hbWUiOiJydW5ldCJ9.L7i9t16H-AujlBUDeumoHnvdR8tJbXeiSOh9nrWCnUbNKRVfk-HhKNZmkR74_ztEO9QoNI_MNZXLLDG5QNcGvHu92N50d1YZ7NEvFucE5kzaiKaI5k195SxyIGGnQP7xm1SeGvM7o0w8B3jtf09tl36vi9gfI9wdG69THw1Z_l9_MuBq_iaSqhN02nH-4K50l6TlEm8hcsNzQbfcufUyRAHX9SbwAsnUivMwgOg-xiO86KrtGDTFsDK987NVwENSt8J8r55iMBJ8mEzG8_WzA5UNU0ErhIKMJ0WuFqvIaZ1KuCmVw7ntTPf6AXTUTc5Z_icWM1Zk3VOxdc0HC2fGgg","expires_in":3600,"refresh_expires_in":1800,"refresh_token":"eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJwckVJZGg4bkdQc0g3N0tTemhiVW9ubG8zbFpiS284XzdqUWNES0pSQXl3In0.eyJqdGkiOiI2NGY5ODAyNC05NDVjLTQ5NDgtYjcwOS0yNzY1MjViYTFkNmMiLCJleHAiOjE1NTQyODIyNDEsIm5iZiI6MCwiaWF0IjoxNTU0MjgwNDQxLCJpc3MiOiJodHRwOi8vc3RhZ2UtMC5hcGliYW5rLmNsdWIvYXV0aC9yZWFsbXMvUGh5c2ljcyIsImF1ZCI6ImNhcmQtYmluZGVyIiwic3ViIjoiNzM5N2ZjYTItODM0ZS00NTc3LTg5NjYtYjY5MDVhNjIwZjMzIiwidHlwIjoiUmVmcmVzaCIsImF6cCI6ImNhcmQtYmluZGVyIiwiYXV0aF90aW1lIjowLCJzZXNzaW9uX3N0YXRlIjoiNjYyNjQzYTAtOTU1NC00OWJkLTk0NDctMzNmODRiMDI1OGQzIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwidW1hX2F1dGhvcml6YXRpb24iLCJwYXJ0bmVyLVJVTkVUIiwib3BlcmF0b3IiXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6ImVtYWlsIHByb2ZpbGUifQ.W3eeVluPMzdgfUBXgY4qGSWhiS3eqyf0h5i37qwKxImjXsax7X4C5fOCV6sNbJ3zJgASoNh--GEByf9JK4gJU-R-VinsZPUUQT0K0wWgugKnK-_jWsBRKwPlsYh9NCW5bbGZM-ooyJ3bQsU6JJP6S-ppTcTO4_pT9xbLYQ0YI5-dhXYWv1BRnVjEyf7XkUbxpKSVxLP9ddl64f5u9j3Z_nVORj6B92j6cldCtnrU2ZfMZ64_y1WuCC4dHPACaCapuEEz7zQXjlDRcmNYO5Jx5K1IAxKAnPphea8qFP9hfr9DYnBbLF0PR-0ygEYwNF6vbpmjdd1RE2D2YFz4tHIgJA","token_type":"bearer","not-before-policy":1536856426,"session_state":"662643a0-9554-49bd-9447-33f84b0258d3","scope":"email profile"}
+11:33:59.355 [http-nio-8080-exec-6] INFO  console_logger  - TIME:     0c 150ms
+11:33:59.355 [http-nio-8080-exec-6] INFO  console_logger  - #################################
+11:33:59.355 [http-nio-8080-exec-6] INFO  console_logger  - METHOD:   POST
+11:33:59.355 [http-nio-8080-exec-6] INFO  console_logger  - URL:      http://stage-0.apibank.club/physics-v2/api/v2/clients/332/cards
+11:33:59.355 [http-nio-8080-exec-6] INFO  console_logger  - HEADERS:  
+11:33:59.355 [http-nio-8080-exec-6] INFO  console_logger  - REQUEST:  {"card_id":"1001004978523","card_number_ending":"5485"}
+11:33:59.984 [http-nio-8080-exec-6] INFO  console_logger  - RESPONSE: {"errors":[{"code":"CE007","message":"Не удалось привязать карту к счету.","details":"Карточный продукт не соответствует проекту, указанному при резервации счета"}]}
+11:33:59.984 [http-nio-8080-exec-6] INFO  console_logger  - TIME:     0c 629ms
+11:33:59.984 [http-nio-8080-exec-6] INFO  console_logger  - #################################
+11:55:37.749 [http-nio-8080-exec-1] INFO  console_logger  - TEST SCENARIO 3
+11:55:40.277 [http-nio-8080-exec-2] INFO  console_logger  - $$$$$$$$$$$$$$$$$$$$$$$$ ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ДЛЯ VIP-КЛИЕНТОВ $$$$$$$$$$$$$$$$$$$$$$$$
+11:55:40.277 [http-nio-8080-exec-2] INFO  console_logger  - runet-id:   42933
+11:55:40.277 [http-nio-8080-exec-2] INFO  console_logger  - phone:   9269850007
+11:55:40.278 [http-nio-8080-exec-2] INFO  console_logger  - url:   http://yandex.ru
+11:55:40.278 [http-nio-8080-exec-2] INFO  console_logger  - referer:   http://localhost:8080/test_scenario_3
+11:56:30.325 [http-nio-8080-exec-5] INFO  console_logger  - TEST SCENARIO 3
+11:56:32.186 [http-nio-8080-exec-1] INFO  console_logger  - $$$$$$$$$$$$$$$$$$$$$$$$ ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ДЛЯ VIP-КЛИЕНТОВ $$$$$$$$$$$$$$$$$$$$$$$$
+11:56:32.187 [http-nio-8080-exec-1] INFO  console_logger  - runet-id:   42933
+11:56:32.188 [http-nio-8080-exec-1] INFO  console_logger  - phone:   9269850007
+11:56:32.189 [http-nio-8080-exec-1] INFO  console_logger  - url:   http://yandex.ru
+11:56:32.189 [http-nio-8080-exec-1] INFO  console_logger  - referer:   http://localhost:8080/test_scenario_3
+11:56:46.737 [http-nio-8080-exec-3] INFO  console_logger  - TEST SCENARIO 3
+11:56:53.798 [http-nio-8080-exec-4] INFO  console_logger  - TEST SCENARIO 3
+11:56:56.593 [http-nio-8080-exec-10] INFO  console_logger  - $$$$$$$$$$$$$$$$$$$$$$$$ ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ДЛЯ VIP-КЛИЕНТОВ $$$$$$$$$$$$$$$$$$$$$$$$
+11:56:56.593 [http-nio-8080-exec-10] INFO  console_logger  - runet-id:   42933
+11:56:56.594 [http-nio-8080-exec-10] INFO  console_logger  - phone:   9269850007
+11:56:56.594 [http-nio-8080-exec-10] INFO  console_logger  - url:   http://yandex.ru
+11:56:56.595 [http-nio-8080-exec-10] INFO  console_logger  - referer:   http://localhost:8080/test_scenario_3
+11:59:08.840 [http-nio-8080-exec-1] INFO  console_logger  - TEST SCENARIO 3
+11:59:12.512 [http-nio-8080-exec-4] INFO  console_logger  - $$$$$$$$$$$$$$$$$$$$$$$$ ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ДЛЯ VIP-КЛИЕНТОВ $$$$$$$$$$$$$$$$$$$$$$$$
+11:59:12.514 [http-nio-8080-exec-4] INFO  console_logger  - runet-id:   42933
+11:59:12.514 [http-nio-8080-exec-4] INFO  console_logger  - phone:   9269850007
+11:59:12.515 [http-nio-8080-exec-4] INFO  console_logger  - url:   http://yandex.ru
+11:59:12.515 [http-nio-8080-exec-4] INFO  console_logger  - referer:   http://localhost:8080/test_scenario_3
+12:00:27.640 [http-nio-8080-exec-2] INFO  console_logger  - TEST SCENARIO 3
+12:00:29.599 [http-nio-8080-exec-4] INFO  console_logger  - $$$$$$$$$$$$$$$$$$$$$$$$ ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ДЛЯ VIP-КЛИЕНТОВ $$$$$$$$$$$$$$$$$$$$$$$$
+12:00:29.600 [http-nio-8080-exec-4] INFO  console_logger  - runet-id:   42933
+12:00:29.601 [http-nio-8080-exec-4] INFO  console_logger  - phone:   9269850007
+12:00:29.601 [http-nio-8080-exec-4] INFO  console_logger  - url:   http://yandex.ru
+12:00:29.601 [http-nio-8080-exec-4] INFO  console_logger  - referer:   http://localhost:8080/test_scenario_3
+12:04:09.454 [http-nio-8080-exec-3] INFO  console_logger  - TEST SCENARIO 3
+12:04:11.412 [http-nio-8080-exec-6] INFO  console_logger  - $$$$$$$$$$$$$$$$$$$$$$$$ ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ДЛЯ VIP-КЛИЕНТОВ $$$$$$$$$$$$$$$$$$$$$$$$
+12:04:11.413 [http-nio-8080-exec-6] INFO  console_logger  - runet-id:   7006666
+12:04:11.414 [http-nio-8080-exec-6] INFO  console_logger  - phone:   9269850007
+12:04:11.414 [http-nio-8080-exec-6] INFO  console_logger  - url:   http://yandex.ru
+12:04:11.415 [http-nio-8080-exec-6] INFO  console_logger  - referer:   http://localhost:8080/test_scenario_3
+12:04:26.277 [http-nio-8080-exec-6] INFO  console_logger  - ПДЛ или нет?   true
+12:05:53.839 [http-nio-8080-exec-1] INFO  console_logger  - TEST SCENARIO 3
+12:05:55.812 [http-nio-8080-exec-4] INFO  console_logger  - $$$$$$$$$$$$$$$$$$$$$$$$ ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ДЛЯ VIP-КЛИЕНТОВ $$$$$$$$$$$$$$$$$$$$$$$$
+12:05:55.814 [http-nio-8080-exec-4] INFO  console_logger  - runet-id:   7006666
+12:05:55.815 [http-nio-8080-exec-4] INFO  console_logger  - phone:   9269850007
+12:05:55.816 [http-nio-8080-exec-4] INFO  console_logger  - url:   http://yandex.ru
+12:05:55.816 [http-nio-8080-exec-4] INFO  console_logger  - referer:   http://localhost:8080/test_scenario_3
+12:07:53.865 [http-nio-8080-exec-1] INFO  console_logger  - TEST SCENARIO 3
+12:07:57.980 [http-nio-8080-exec-3] INFO  console_logger  - $$$$$$$$$$$$$$$$$$$$$$$$ ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ДЛЯ VIP-КЛИЕНТОВ $$$$$$$$$$$$$$$$$$$$$$$$
+12:07:57.981 [http-nio-8080-exec-3] INFO  console_logger  - runet-id:   42933
+12:07:57.982 [http-nio-8080-exec-3] INFO  console_logger  - phone:   9269850007
+12:07:57.982 [http-nio-8080-exec-3] INFO  console_logger  - url:   http://yandex.ru
+12:07:57.982 [http-nio-8080-exec-3] INFO  console_logger  - referer:   http://localhost:8080/test_scenario_3
+12:08:57.534 [http-nio-8080-exec-2] INFO  console_logger  - TEST SCENARIO 3
+12:08:59.300 [http-nio-8080-exec-4] INFO  console_logger  - $$$$$$$$$$$$$$$$$$$$$$$$ ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ДЛЯ VIP-КЛИЕНТОВ $$$$$$$$$$$$$$$$$$$$$$$$
+12:08:59.301 [http-nio-8080-exec-4] INFO  console_logger  - runet-id:   42933
+12:08:59.301 [http-nio-8080-exec-4] INFO  console_logger  - phone:   9269850007
+12:08:59.302 [http-nio-8080-exec-4] INFO  console_logger  - url:   http://yandex.ru
+12:08:59.302 [http-nio-8080-exec-4] INFO  console_logger  - referer:   http://localhost:8080/test_scenario_3
+12:09:28.885 [http-nio-8080-exec-1] INFO  console_logger  - TEST SCENARIO 3
+12:09:30.382 [http-nio-8080-exec-4] INFO  console_logger  - $$$$$$$$$$$$$$$$$$$$$$$$ ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ДЛЯ VIP-КЛИЕНТОВ $$$$$$$$$$$$$$$$$$$$$$$$
+12:09:30.383 [http-nio-8080-exec-4] INFO  console_logger  - runet-id:   42933
+12:09:30.384 [http-nio-8080-exec-4] INFO  console_logger  - phone:   9269850007
+12:09:30.384 [http-nio-8080-exec-4] INFO  console_logger  - url:   http://yandex.ru
+12:09:30.385 [http-nio-8080-exec-4] INFO  console_logger  - referer:   http://localhost:8080/test_scenario_3
+12:11:49.630 [http-nio-8080-exec-1] INFO  console_logger  - TEST SCENARIO 3
+12:11:53.927 [http-nio-8080-exec-4] INFO  console_logger  - $$$$$$$$$$$$$$$$$$$$$$$$ ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ДЛЯ VIP-КЛИЕНТОВ $$$$$$$$$$$$$$$$$$$$$$$$
+12:11:53.928 [http-nio-8080-exec-4] INFO  console_logger  - runet-id:   42933
+12:11:53.929 [http-nio-8080-exec-4] INFO  console_logger  - phone:   9269850007
+12:11:53.929 [http-nio-8080-exec-4] INFO  console_logger  - url:   http://yandex.ru
+12:11:53.929 [http-nio-8080-exec-4] INFO  console_logger  - referer:   http://localhost:8080/test_scenario_3
+12:35:07.967 [http-nio-8080-exec-1] INFO  console_logger  - TEST SCENARIO 3
+12:35:41.502 [http-nio-8080-exec-1] INFO  console_logger  - TEST SCENARIO 3
+12:35:43.890 [http-nio-8080-exec-4] INFO  console_logger  - $$$$$$$$$$$$$$$$$$$$$$$$ ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ДЛЯ VIP-КЛИЕНТОВ $$$$$$$$$$$$$$$$$$$$$$$$
+12:35:43.890 [http-nio-8080-exec-4] INFO  console_logger  - runet-id:   42933
+12:35:43.891 [http-nio-8080-exec-4] INFO  console_logger  - phone:   9269850007
+12:35:43.892 [http-nio-8080-exec-4] INFO  console_logger  - url:   http://yandex.ru
+12:35:43.892 [http-nio-8080-exec-4] INFO  console_logger  - referer:   http://localhost:8080/test_scenario_3
+12:38:26.328 [http-nio-8080-exec-1] INFO  console_logger  - TEST SCENARIO 3
+12:38:30.866 [http-nio-8080-exec-4] INFO  console_logger  - $$$$$$$$$$$$$$$$$$$$$$$$ ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ДЛЯ VIP-КЛИЕНТОВ $$$$$$$$$$$$$$$$$$$$$$$$
+12:38:30.867 [http-nio-8080-exec-4] INFO  console_logger  - runet-id:   42933
+12:38:30.867 [http-nio-8080-exec-4] INFO  console_logger  - phone:   9269850007
+12:38:30.868 [http-nio-8080-exec-4] INFO  console_logger  - url:   http://yandex.ru
+12:38:30.868 [http-nio-8080-exec-4] INFO  console_logger  - referer:   http://localhost:8080/test_scenario_3
+12:43:05.483 [http-nio-8080-exec-1] INFO  console_logger  - TEST SCENARIO 3
+12:43:08.647 [http-nio-8080-exec-6] INFO  console_logger  - $$$$$$$$$$$$$$$$$$$$$$$$ ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ДЛЯ VIP-КЛИЕНТОВ $$$$$$$$$$$$$$$$$$$$$$$$
+12:43:08.648 [http-nio-8080-exec-6] INFO  console_logger  - runet-id:   42933
+12:43:08.648 [http-nio-8080-exec-6] INFO  console_logger  - phone:   9269850007
+12:43:08.649 [http-nio-8080-exec-6] INFO  console_logger  - url:   http://yandex.ru
+12:43:08.649 [http-nio-8080-exec-6] INFO  console_logger  - referer:   http://localhost:8080/test_scenario_3
+13:15:14.176 [http-nio-8080-exec-1] INFO  console_logger  - TEST SCENARIO 3
+13:15:28.975 [http-nio-8080-exec-9] INFO  console_logger  - $$$$$$$$$$$$$$$$$$$$$$$$ ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ДЛЯ VIP-КЛИЕНТОВ $$$$$$$$$$$$$$$$$$$$$$$$
+13:15:28.976 [http-nio-8080-exec-9] INFO  console_logger  - runet-id:   42933
+13:15:28.977 [http-nio-8080-exec-9] INFO  console_logger  - phone:   9269850007
+13:15:28.977 [http-nio-8080-exec-9] INFO  console_logger  - url:   http://yandex.ru
+13:15:28.977 [http-nio-8080-exec-9] INFO  console_logger  - referer:   http://localhost:8080/test_scenario_3
+13:15:29.021 [http-nio-8080-exec-9] INFO  console_logger  - ПДЛ или нет?   true
+13:17:08.615 [http-nio-8080-exec-9] INFO  console_logger  - $$$$$$$$$$$$$$$$$$$$$$$$ ВЫПУСК АНОНИМНОЙ КАРТЫ ДЛЯ ПДЛ $$$$$$$$$$$$$$$$$$$$$$$$
+13:17:08.616 [http-nio-8080-exec-9] INFO  console_logger  - runet-id:   42933
+13:17:08.616 [http-nio-8080-exec-9] INFO  console_logger  - phone:   +7 (986) 457-1514
+13:17:08.616 [http-nio-8080-exec-9] INFO  console_logger  - codeword:   xcfgcfdhfgv
+13:17:08.616 [http-nio-8080-exec-9] INFO  console_logger  - url:   http://yandex.ru
+13:17:08.616 [http-nio-8080-exec-9] INFO  console_logger  - referer:   http://localhost:8080/vipcard?runet-id=42933&phone=9269850007&url=http%3A%2F%2Fyandex.ru
+13:17:08.616 [http-nio-8080-exec-9] INFO  console_logger  - ean:   1001004978523
+13:17:08.616 [http-nio-8080-exec-9] INFO  console_logger  - last4numbers:   5485
+13:17:08.621 [http-nio-8080-exec-9] INFO  console_logger  - METHOD:   POST
+13:17:08.622 [http-nio-8080-exec-9] INFO  console_logger  - URL:      http://stage-0.apibank.club/auth/realms/Physics/protocol/openid-connect/token
+13:17:08.622 [http-nio-8080-exec-9] INFO  console_logger  - HEADERS:  
+13:17:08.622 [http-nio-8080-exec-9] INFO  console_logger  - REQUEST:  {username=[operator-runet], password=[123123], grant_type=[password]}
+13:17:13.030 [http-nio-8080-exec-9] INFO  console_logger  - RESPONSE: {"access_token":"eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJwckVJZGg4bkdQc0g3N0tTemhiVW9ubG8zbFpiS284XzdqUWNES0pSQXl3In0.eyJqdGkiOiJiZDFhNWM5ZC00YjQ5LTQwNjYtOTA4Mi0yMzJlOTM2NDE0YmYiLCJleHAiOjE1NTQyOTAyMzUsIm5iZiI6MCwiaWF0IjoxNTU0Mjg2NjM1LCJpc3MiOiJodHRwOi8vc3RhZ2UtMC5hcGliYW5rLmNsdWIvYXV0aC9yZWFsbXMvUGh5c2ljcyIsImF1ZCI6ImNhcmQtYmluZGVyIiwic3ViIjoiNzM5N2ZjYTItODM0ZS00NTc3LTg5NjYtYjY5MDVhNjIwZjMzIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiY2FyZC1iaW5kZXIiLCJhdXRoX3RpbWUiOjAsInNlc3Npb25fc3RhdGUiOiI4MjZkMjM0ZC0wNzNkLTQ2NzQtYWI5Mi04ZDkzZTM1NGExMWEiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwidW1hX2F1dGhvcml6YXRpb24iLCJwYXJ0bmVyLVJVTkVUIiwib3BlcmF0b3IiXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6ImVtYWlsIHByb2ZpbGUiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsIm5hbWUiOiJydW5ldCBydW5ldCIsInByZWZlcnJlZF91c2VybmFtZSI6Im9wZXJhdG9yLXJ1bmV0IiwiZ2l2ZW5fbmFtZSI6InJ1bmV0IiwiZmFtaWx5X25hbWUiOiJydW5ldCJ9.KFFzZ2Z90krr2LkjEevj2NF_22UpUzk7IgehUePTZPbbqu8VTUv-YeLowFhiZ_Ul8AM-fCbsuuuGIzH2nFkYRyU25iTXPpQ9DHbsIAZNMgqGkY_lm8W_rqAGSEQ8SR9f0XjiyV-FrvIWbrFvq3nf3035AC--XmulyiKNMSJ-CUy6ej11xWc4MKsZKwE4FYlRBdy9iS7OYm4z_85cN1L2oMN26RZSf7ROU9b2B-uuoe_6d8kq6sqKx-84t3fyYUohlKRLviIz1clXxCSvez7go1SE1ktUPTAmwI_KnEI3yNhyUtvOY1GA4lK2Jd7TBHqZ3qRrGKoAtB4-k2w4le_GiA","expires_in":3600,"refresh_expires_in":1800,"refresh_token":"eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJwckVJZGg4bkdQc0g3N0tTemhiVW9ubG8zbFpiS284XzdqUWNES0pSQXl3In0.eyJqdGkiOiJmOWExNjk4ZC1kNTA4LTQ5NmQtYjEyMS0yMGQ0ZWVmMDZjOTYiLCJleHAiOjE1NTQyODg0MzUsIm5iZiI6MCwiaWF0IjoxNTU0Mjg2NjM1LCJpc3MiOiJodHRwOi8vc3RhZ2UtMC5hcGliYW5rLmNsdWIvYXV0aC9yZWFsbXMvUGh5c2ljcyIsImF1ZCI6ImNhcmQtYmluZGVyIiwic3ViIjoiNzM5N2ZjYTItODM0ZS00NTc3LTg5NjYtYjY5MDVhNjIwZjMzIiwidHlwIjoiUmVmcmVzaCIsImF6cCI6ImNhcmQtYmluZGVyIiwiYXV0aF90aW1lIjowLCJzZXNzaW9uX3N0YXRlIjoiODI2ZDIzNGQtMDczZC00Njc0LWFiOTItOGQ5M2UzNTRhMTFhIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwidW1hX2F1dGhvcml6YXRpb24iLCJwYXJ0bmVyLVJVTkVUIiwib3BlcmF0b3IiXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6ImVtYWlsIHByb2ZpbGUifQ.YjOqZGn-uSlFOvZrNJUO0uSIu5FUQbnUzB93lhNF8kfcNWOtEocaae-ONcnaec8yWh8hw4D8lu-kT1bLdoqiclBAJLd32_cCOIxFb_ylf8y4pfKKFQNUw1gKAV_EuQuXp6PyfIAxoKfyflY_3e8Rrw2PHiBjnBAugmD1z6VMLJw6JFy-dDM-yK1J72IZeNnxibmqdOtV6OagNue4nd_H1vLfsDn72NH11_R1RzdLqW3IIfNgOL0MkwJanJ1wVsaAI7PIfy1xq0dYh452jRqZusrlrS0n9XrXs2C5IfaJFoTg9Iy7xbYwOf0U0Nh_jmkW_MyGNPLX9OFCi6MqcIL7sg","token_type":"bearer","not-before-policy":1536856426,"session_state":"826d234d-073d-4674-ab92-8d93e354a11a","scope":"email profile"}
+13:17:13.030 [http-nio-8080-exec-9] INFO  console_logger  - TIME:     4c 409ms
+13:17:13.030 [http-nio-8080-exec-9] INFO  console_logger  - #################################
+13:17:13.032 [http-nio-8080-exec-9] INFO  console_logger  - METHOD:   POST
+13:17:13.033 [http-nio-8080-exec-9] INFO  console_logger  - URL:      http://stage-0.apibank.club/physics-v2/api/v2/clients/anonymous
+13:17:13.034 [http-nio-8080-exec-9] INFO  console_logger  - HEADERS:  
+13:17:13.034 [http-nio-8080-exec-9] INFO  console_logger  - REQUEST:  {"phone":"9864571514","control_info":"+7 (986) 457-1514"}
+14:51:28.542 [http-nio-8080-exec-1] INFO  console_logger  - encrypted: 3zn39XCje3O9UeQRB84t+jg985EPSKY=
+14:51:28.543 [http-nio-8080-exec-1] INFO  console_logger  - decryptedData: This is a test message.
+15:02:24.290 [http-nio-8080-exec-1] INFO  console_logger  - encrypted: 3zn39XCje3O9UeQRB84t+jg985EPSKY=
+15:02:24.290 [http-nio-8080-exec-1] INFO  console_logger  - encrypted 17: [B@185a3110
+15:02:24.291 [http-nio-8080-exec-1] INFO  console_logger  - decryptedData: This is a test message.
+15:23:48.253 [http-nio-8080-exec-1] INFO  console_logger  - encrypted: 3zn39XCje3O9UeQRB84t+jg985EPSKY=
+15:23:48.254 [http-nio-8080-exec-1] INFO  console_logger  - encrypted 17: [B@3050ba98
+15:23:48.254 [http-nio-8080-exec-1] INFO  console_logger  - decrypted: 3zn39XCje3O9UeQRB84t+jg985EPSKY=
+15:23:48.255 [http-nio-8080-exec-1] INFO  console_logger  - decryptedData: This is a test message.
+15:29:30.865 [http-nio-8080-exec-1] ERROR console_logger  - Переданный runet-id 1396097
+15:29:30.866 [http-nio-8080-exec-1] ERROR console_logger  - Клиент превысил max runet-id 
+15:29:36.461 [http-nio-8080-exec-2] ERROR console_logger  - Переданный runet-id 1396097
+15:29:36.463 [http-nio-8080-exec-2] ERROR console_logger  - Клиент превысил max runet-id 
+15:29:40.323 [http-nio-8080-exec-9] INFO  console_logger  - encrypted: 3zn39XCje3O9UeQRB84t+jg985EPSKY=
+15:29:40.324 [http-nio-8080-exec-9] INFO  console_logger  - encrypted 17: [B@19f3f9f
+15:29:40.325 [http-nio-8080-exec-9] INFO  console_logger  - decrypted: 3zn39XCje3O9UeQRB84t+jg985EPSKY=
+15:29:40.326 [http-nio-8080-exec-9] INFO  console_logger  - decryptedData: This is a test message.
+15:33:26.282 [http-nio-8080-exec-1] INFO  console_logger  - encrypted: BaBe0NaEsrw93p4vZxOn99uFaFr85tc=
+15:33:26.283 [http-nio-8080-exec-1] INFO  console_logger  - encrypted 17: [B@65479fd4
+15:33:26.283 [http-nio-8080-exec-1] INFO  console_logger  - decrypted: BaBe0NaEsrw93p4vZxOn99uFaFr85tc=
+15:33:26.284 [http-nio-8080-exec-1] INFO  console_logger  - decryptedData: This is a test message.
+15:40:28.967 [http-nio-8080-exec-1] INFO  console_logger  - encrypted: BaBe0NaEsrw93p4vZxOn99uFaFr85tc=
+15:40:28.968 [http-nio-8080-exec-1] INFO  console_logger  - encrypted 17: [B@45aa02b3
+15:40:28.968 [http-nio-8080-exec-1] INFO  console_logger  - decrypted: BaBe0NaEsrw93p4vZxOn99uFaFr85tc=
+15:40:28.969 [http-nio-8080-exec-1] INFO  console_logger  - decryptedData: This is a test message.
+15:40:28.970 [http-nio-8080-exec-1] INFO  console_logger  - ============= REAL DECRIPTING =============
+15:40:28.970 [http-nio-8080-exec-1] INFO  console_logger  - decrypted: Yd}Zn0
+15:40:28.970 [http-nio-8080-exec-1] INFO  console_logger  - decryptedData: ��XH鷦:B
+15:41:01.819 [http-nio-8080-exec-4] INFO  console_logger  - encrypted: BaBe0NaEsrw93p4vZxOn99uFaFr85tc=
+15:41:01.819 [http-nio-8080-exec-4] INFO  console_logger  - encrypted 17: [B@3367fd5a
+15:41:01.819 [http-nio-8080-exec-4] INFO  console_logger  - decrypted: BaBe0NaEsrw93p4vZxOn99uFaFr85tc=
+15:41:01.819 [http-nio-8080-exec-4] INFO  console_logger  - decryptedData: This is a test message.
+15:41:01.819 [http-nio-8080-exec-4] INFO  console_logger  - ============= REAL DECRIPTING =============
+15:41:01.819 [http-nio-8080-exec-4] INFO  console_logger  - decrypted: Yd}Zn0
+15:41:01.819 [http-nio-8080-exec-4] INFO  console_logger  - decryptedData: ��XH鷦:B
+15:45:55.901 [http-nio-8080-exec-1] INFO  console_logger  - encrypted: BaBe0NaEsrw93p4vZxOn99uFaFr85tc=
+15:45:55.902 [http-nio-8080-exec-1] INFO  console_logger  - encrypted 17: [B@4e5774c1
+15:45:55.902 [http-nio-8080-exec-1] INFO  console_logger  - encrypted 17: &
+a&NmU"PN&8\<)'_D!Qe
+15:45:55.902 [http-nio-8080-exec-1] INFO  console_logger  - decrypted: BaBe0NaEsrw93p4vZxOn99uFaFr85tc=
+15:45:55.904 [http-nio-8080-exec-1] INFO  console_logger  - decryptedData: This is a test message.
+15:45:55.904 [http-nio-8080-exec-1] INFO  console_logger  - ============= REAL DECRIPTING =============
+15:45:55.904 [http-nio-8080-exec-1] INFO  console_logger  - decrypted: Yd}Zn0
+15:45:55.904 [http-nio-8080-exec-1] INFO  console_logger  - decryptedData: ��XH鷦:B
+15:47:47.066 [http-nio-8080-exec-1] INFO  console_logger  - encrypted: BaBe0NaEsrw93p4vZxOn99uFaFr85tc=
+15:47:47.066 [http-nio-8080-exec-1] INFO  console_logger  - encrypted 17: [B@6a6140db
+15:47:47.066 [http-nio-8080-exec-1] INFO  console_logger  - encrypted 17: &
+a&NmU"PN&8\<)'_D!Qe
+15:47:47.066 [http-nio-8080-exec-1] INFO  console_logger  - decrypted: BaBe0NaEsrw93p4vZxOn99uFaFr85tc=
+15:47:47.068 [http-nio-8080-exec-1] INFO  console_logger  - decryptedData: This is a test message.
+15:47:47.068 [http-nio-8080-exec-1] INFO  console_logger  - ============= REAL DECRIPTING =============
+15:47:47.068 [http-nio-8080-exec-1] INFO  console_logger  - decrypted: BaBe0NaEsrw93p4vZxOn99uFaFr85tc=
+15:47:47.068 [http-nio-8080-exec-1] INFO  console_logger  - decryptedData: This is a test message.
+15:48:50.203 [http-nio-8080-exec-1] INFO  console_logger  - encrypted: YN2YDfCoRQ==
+15:48:50.204 [http-nio-8080-exec-1] INFO  console_logger  - encrypted 17: [B@ab2e334
+15:48:50.204 [http-nio-8080-exec-1] INFO  console_logger  - encrypted 17: 	b6/.83i
+15:48:50.204 [http-nio-8080-exec-1] INFO  console_logger  - decrypted: YN2YDfCoRQ==
+15:48:50.205 [http-nio-8080-exec-1] INFO  console_logger  - decryptedData: 1451139
+15:48:50.205 [http-nio-8080-exec-1] INFO  console_logger  - ============= REAL DECRIPTING =============
+15:48:50.205 [http-nio-8080-exec-1] INFO  console_logger  - decrypted: YN2YDfCoRQ==
+15:48:50.205 [http-nio-8080-exec-1] INFO  console_logger  - decryptedData: 1451139
+15:49:36.244 [http-nio-8080-exec-1] INFO  console_logger  - encrypted: YN2YDfCoRQ==
+15:49:36.245 [http-nio-8080-exec-1] INFO  console_logger  - encrypted 17: [B@4dd0792
+15:49:36.245 [http-nio-8080-exec-1] INFO  console_logger  - encrypted 17: 	b6/.83i
+15:49:36.245 [http-nio-8080-exec-1] INFO  console_logger  - decrypted: YN2YDfCoRQ==
+15:49:36.247 [http-nio-8080-exec-1] INFO  console_logger  - decryptedData: 1451139
+15:49:36.247 [http-nio-8080-exec-1] INFO  console_logger  - ============= REAL DECRIPTING =============
+15:49:36.247 [http-nio-8080-exec-1] INFO  console_logger  - decrypted: YN2YDfCoRQ==
+15:49:36.247 [http-nio-8080-exec-1] INFO  console_logger  - decryptedData: 1451139
+15:51:14.036 [http-nio-8080-exec-1] INFO  console_logger  - encrypted: YN2YDfCoRQ==
+15:51:14.036 [http-nio-8080-exec-1] INFO  console_logger  - encrypted 17: [B@52623701
+15:51:14.036 [http-nio-8080-exec-1] INFO  console_logger  - encrypted 17: 	b6/.83i
+15:51:14.036 [http-nio-8080-exec-1] INFO  console_logger  - decrypted: YN2YDfCoRQ==
+15:51:14.038 [http-nio-8080-exec-1] INFO  console_logger  - decryptedData: 1451139
+15:51:14.038 [http-nio-8080-exec-1] INFO  console_logger  - ============= REAL DECRIPTING =============
+15:51:14.038 [http-nio-8080-exec-1] INFO  console_logger  - decrypted: Yg2YDfCoRQ==
+15:51:14.038 [http-nio-8080-exec-1] INFO  console_logger  - decryptedData: 3���s5b
+15:51:46.967 [http-nio-8080-exec-7] INFO  console_logger  - encrypted: YN2YDfCoRQ==
+15:51:46.968 [http-nio-8080-exec-7] INFO  console_logger  - encrypted 17: [B@33122c5b
+15:51:46.968 [http-nio-8080-exec-7] INFO  console_logger  - encrypted 17: 	b6/.83i
+15:51:46.968 [http-nio-8080-exec-7] INFO  console_logger  - decrypted: YN2YDfCoRQ==
+15:51:46.969 [http-nio-8080-exec-7] INFO  console_logger  - decryptedData: 1451139
+15:51:46.969 [http-nio-8080-exec-7] INFO  console_logger  - ============= REAL DECRIPTING =============
+15:51:46.969 [http-nio-8080-exec-7] INFO  console_logger  - decrypted: Yg2YDfCoRQ==
+15:51:46.969 [http-nio-8080-exec-7] INFO  console_logger  - decryptedData: 3���s5b
+15:52:49.447 [http-nio-8080-exec-8] INFO  console_logger  - encrypted: YN2YDfCoRQ==
+15:52:49.447 [http-nio-8080-exec-8] INFO  console_logger  - encrypted 17: [B@3acdf7b5
+15:52:49.447 [http-nio-8080-exec-8] INFO  console_logger  - encrypted 17: 	b6/.83i
+15:52:49.447 [http-nio-8080-exec-8] INFO  console_logger  - decrypted: YN2YDfCoRQ==
+15:52:49.448 [http-nio-8080-exec-8] INFO  console_logger  - decryptedData: 1451139
+15:52:49.448 [http-nio-8080-exec-8] INFO  console_logger  - ============= REAL DECRIPTING =============
+15:52:49.448 [http-nio-8080-exec-8] INFO  console_logger  - decrypted: Yg2YDfCoRQ==
+15:52:49.449 [http-nio-8080-exec-8] INFO  console_logger  - decryptedData: 3���s5b
+15:53:24.840 [http-nio-8080-exec-1] INFO  console_logger  - encrypted: YN2YDfCoRQ==
+15:53:24.841 [http-nio-8080-exec-1] INFO  console_logger  - encrypted 17: [B@2b6f196f
+15:53:24.841 [http-nio-8080-exec-1] INFO  console_logger  - encrypted 17: 	b6/.83i
+15:53:24.841 [http-nio-8080-exec-1] INFO  console_logger  - decrypted: YN2YDfCoRQ==
+15:53:24.842 [http-nio-8080-exec-1] INFO  console_logger  - decryptedData: 1451139
+15:53:24.842 [http-nio-8080-exec-1] INFO  console_logger  - ============= REAL DECRIPTING =============
+15:53:24.842 [http-nio-8080-exec-1] INFO  console_logger  - decrypted: Yg2YDfCoRQ==
+15:53:24.842 [http-nio-8080-exec-1] INFO  console_logger  - decryptedData: 3���s5b
+15:56:38.857 [http-nio-8080-exec-2] INFO  console_logger  - runetId:  b6/.83i
+15:56:38.859 [http-nio-8080-exec-2] INFO  console_logger  - encrypted: YN2YDfCoRQ==
+15:56:38.859 [http-nio-8080-exec-2] INFO  console_logger  - encrypted 17: [B@12673f2b
+15:56:38.859 [http-nio-8080-exec-2] INFO  console_logger  - encrypted 17: 	b6/.83i
+15:56:38.860 [http-nio-8080-exec-2] INFO  console_logger  - decrypted: YN2YDfCoRQ==
+15:56:38.862 [http-nio-8080-exec-2] INFO  console_logger  - decryptedData: 1451139
+15:56:38.862 [http-nio-8080-exec-2] INFO  console_logger  - ============= REAL DECRIPTING =============
+15:56:38.862 [http-nio-8080-exec-2] INFO  console_logger  - decrypted: Yg2YDfCoRQ==
+15:56:38.863 [http-nio-8080-exec-2] INFO  console_logger  - decryptedData: 3���s5b
+16:00:53.315 [http-nio-8080-exec-1] INFO  console_logger  - runetId:  b6/.83i
+16:00:53.318 [http-nio-8080-exec-1] INFO  console_logger  - encrypted: YN2YDfCoRQ==
+16:00:53.318 [http-nio-8080-exec-1] INFO  console_logger  - encrypted 17: [B@5c903606
+16:00:53.318 [http-nio-8080-exec-1] INFO  console_logger  - encrypted 17: 	b6/.83i
+16:00:53.319 [http-nio-8080-exec-1] INFO  console_logger  - encrypted 2: Ty4JX5S3N60Sh7lh
+16:00:53.319 [http-nio-8080-exec-1] INFO  console_logger  - decrypted: YN2YDfCoRQ==
+16:00:53.320 [http-nio-8080-exec-1] INFO  console_logger  - decryptedData: 1451139
+16:00:53.320 [http-nio-8080-exec-1] INFO  console_logger  - ============= REAL DECRIPTING =============
+16:00:53.320 [http-nio-8080-exec-1] INFO  console_logger  - decrypted: Yg2YDfCoRQ==
+16:00:53.321 [http-nio-8080-exec-1] INFO  console_logger  - decryptedData: 3���s5b
+16:04:13.678 [http-nio-8080-exec-1] INFO  console_logger  - runetId:  b6/.83i
+16:04:13.681 [http-nio-8080-exec-1] INFO  console_logger  - encrypted: YN2YDfCoRQ==
+16:04:13.681 [http-nio-8080-exec-1] INFO  console_logger  - encrypted 17: [B@5233935f
+16:04:13.682 [http-nio-8080-exec-1] INFO  console_logger  - encrypted 17: 	b6/.83i
+16:04:13.683 [http-nio-8080-exec-1] INFO  console_logger  - encrypted 2: Ty4JX5S3N60Sh7lh
+16:04:13.684 [http-nio-8080-exec-1] INFO  console_logger  - decrypted: YN2YDfCoRQ==
+16:04:13.684 [http-nio-8080-exec-1] INFO  console_logger  - decryptedData: 1451139
+16:04:13.684 [http-nio-8080-exec-1] INFO  console_logger  - ============= REAL DECRIPTING =============
+16:04:13.685 [http-nio-8080-exec-1] INFO  console_logger  - decrypted: Yg2YDfCoRQ==
+16:04:13.686 [http-nio-8080-exec-1] INFO  console_logger  - decryptedData: 3���s5b
+16:05:48.139 [http-nio-8080-exec-1] INFO  console_logger  - runetId:  b6/.83i
+16:05:48.144 [http-nio-8080-exec-1] INFO  console_logger  - encrypted: YN2YDfCoRQ==
+16:05:48.144 [http-nio-8080-exec-1] INFO  console_logger  - encrypted 17: [B@5e925ac0
+16:05:48.144 [http-nio-8080-exec-1] INFO  console_logger  - encrypted 17: 	b6/.83i
+16:05:48.146 [http-nio-8080-exec-1] INFO  console_logger  - encrypted 2: Ty4JX5S3N60Sh7lh
+16:05:48.147 [http-nio-8080-exec-1] INFO  console_logger  - decrypted: YN2YDfCoRQ==
+16:05:48.147 [http-nio-8080-exec-1] INFO  console_logger  - decryptedData: 1451139
+16:05:48.147 [http-nio-8080-exec-1] INFO  console_logger  - ============= REAL DECRIPTING =============
+16:05:48.148 [http-nio-8080-exec-1] INFO  console_logger  - decrypted: ��/��*���
+16:05:48.148 [http-nio-8080-exec-1] INFO  console_logger  - decryptedData: ���
+16:06:18.986 [http-nio-8080-exec-8] INFO  console_logger  - runetId: Ty4JX5S3N60Sh7lh
+16:06:18.986 [http-nio-8080-exec-8] INFO  console_logger  - encrypted: YN2YDfCoRQ==
+16:06:18.987 [http-nio-8080-exec-8] INFO  console_logger  - encrypted 17: [B@4b9af0e6
+16:06:18.987 [http-nio-8080-exec-8] INFO  console_logger  - encrypted 17: 	b6/.83i
+16:06:18.987 [http-nio-8080-exec-8] INFO  console_logger  - encrypted 2: Ty4JX5S3N60Sh7lh
+16:06:18.987 [http-nio-8080-exec-8] INFO  console_logger  - decrypted: YN2YDfCoRQ==
+16:06:18.988 [http-nio-8080-exec-8] INFO  console_logger  - decryptedData: 1451139
+16:06:18.988 [http-nio-8080-exec-8] INFO  console_logger  - ============= REAL DECRIPTING =============
+16:06:18.989 [http-nio-8080-exec-8] INFO  console_logger  - decrypted: YN2YDfCoRQ==
+16:06:18.990 [http-nio-8080-exec-8] INFO  console_logger  - decryptedData: 1451139
+16:19:58.838 [http-nio-8080-exec-2] INFO  console_logger  - runetId: null
+16:19:58.845 [http-nio-8080-exec-2] INFO  console_logger  - encrypted: YN2YDfCoRQ==
+16:19:58.845 [http-nio-8080-exec-2] INFO  console_logger  - encrypted 17: [B@4bb69a7
+16:19:58.845 [http-nio-8080-exec-2] INFO  console_logger  - encrypted 17: 	b6/.83i
+16:19:58.847 [http-nio-8080-exec-2] INFO  console_logger  - encrypted 2: Ty4JX5S3N60Sh7lh
+16:19:58.847 [http-nio-8080-exec-2] INFO  console_logger  - decrypted: YN2YDfCoRQ==
+16:19:58.848 [http-nio-8080-exec-2] INFO  console_logger  - decryptedData: 1451139
+16:19:58.848 [http-nio-8080-exec-2] INFO  console_logger  - ============= REAL DECRIPTING =============
+16:20:20.814 [http-nio-8080-exec-4] INFO  console_logger  - runetId: 145
+16:20:20.814 [http-nio-8080-exec-4] INFO  console_logger  - encrypted: YN2YDfCoRQ==
+16:20:20.814 [http-nio-8080-exec-4] INFO  console_logger  - encrypted 17: [B@5eb4174b
+16:20:20.814 [http-nio-8080-exec-4] INFO  console_logger  - encrypted 17: 	b6/.83i
+16:20:20.816 [http-nio-8080-exec-4] INFO  console_logger  - encrypted 2: Ty4JX5S3N60Sh7lh
+16:20:20.816 [http-nio-8080-exec-4] INFO  console_logger  - decrypted: YN2YDfCoRQ==
+16:20:20.817 [http-nio-8080-exec-4] INFO  console_logger  - decryptedData: 1451139
+16:20:20.817 [http-nio-8080-exec-4] INFO  console_logger  - ============= REAL DECRIPTING =============
+16:20:20.819 [http-nio-8080-exec-4] INFO  console_logger  - decrypted: �t
+16:20:20.819 [http-nio-8080-exec-4] INFO  console_logger  - decryptedData: ��
+16:21:59.369 [http-nio-8080-exec-1] INFO  console_logger  - runetId: 145
+16:21:59.375 [http-nio-8080-exec-1] INFO  console_logger  - encrypted: YN2YDfCoRQ==
+16:21:59.375 [http-nio-8080-exec-1] INFO  console_logger  - encrypted 17: [B@8bfa7be
+16:21:59.376 [http-nio-8080-exec-1] INFO  console_logger  - encrypted 2: Ty4JX5S3N60Sh7lh
+16:21:59.378 [http-nio-8080-exec-1] INFO  console_logger  - decrypted: YN2YDfCoRQ==
+16:21:59.379 [http-nio-8080-exec-1] INFO  console_logger  - decryptedData: 1451139
+16:21:59.379 [http-nio-8080-exec-1] INFO  console_logger  - ============= REAL DECRIPTING =============
+16:21:59.380 [http-nio-8080-exec-1] INFO  console_logger  - decrypted: �t
+16:21:59.382 [http-nio-8080-exec-1] INFO  console_logger  - decryptedData: ��
+16:22:38.146 [http-nio-8080-exec-2] INFO  console_logger  - runetId: 145
+16:22:38.151 [http-nio-8080-exec-2] INFO  console_logger  - encrypted: YN2YDfCoRQ==
+16:22:38.151 [http-nio-8080-exec-2] INFO  console_logger  - encrypted 17: [B@19279e8c
+16:22:38.151 [http-nio-8080-exec-2] INFO  console_logger  - encrypted 2: Ty4JX5S3N60Sh7lh
+16:22:38.153 [http-nio-8080-exec-2] INFO  console_logger  - decrypted: YN2YDfCoRQ==
+16:22:38.153 [http-nio-8080-exec-2] INFO  console_logger  - decryptedData: 1451139
+16:22:38.154 [http-nio-8080-exec-2] INFO  console_logger  - ============= REAL DECRIPTING =============
+16:22:38.154 [http-nio-8080-exec-2] INFO  console_logger  - decrypted: �t
+16:22:38.155 [http-nio-8080-exec-2] INFO  console_logger  - decryptedData: ��
+16:35:31.877 [http-nio-8080-exec-1] INFO  console_logger  - runetId: 145
+16:35:31.881 [http-nio-8080-exec-1] INFO  console_logger  - encrypted: YN2Y
+16:35:31.881 [http-nio-8080-exec-1] INFO  console_logger  - encrypted 17: [B@603dd05b
+16:35:31.881 [http-nio-8080-exec-1] INFO  console_logger  - encrypted 2: Ty4JXw==
+16:35:31.882 [http-nio-8080-exec-1] INFO  console_logger  - to string 2: 	b6
+16:35:31.884 [http-nio-8080-exec-1] INFO  console_logger  - decrypted: YN2Y
+16:35:31.884 [http-nio-8080-exec-1] INFO  console_logger  - decryptedData: 145
+16:35:31.884 [http-nio-8080-exec-1] INFO  console_logger  - ============= REAL DECRIPTING =============
+16:35:31.886 [http-nio-8080-exec-1] INFO  console_logger  - decrypted: �t
+16:35:31.886 [http-nio-8080-exec-1] INFO  console_logger  - decryptedData: ��
+16:35:54.926 [http-nio-8080-exec-3] INFO  console_logger  - runetId: 	b6
+16:35:54.927 [http-nio-8080-exec-3] INFO  console_logger  - encrypted: Ty4JXw==
+16:35:54.928 [http-nio-8080-exec-3] INFO  console_logger  - encrypted 17: [B@7570bb3e
+16:35:54.928 [http-nio-8080-exec-3] INFO  console_logger  - encrypted 2: QjiW+a9Ieys=
+16:35:54.928 [http-nio-8080-exec-3] INFO  console_logger  - to string 2: >d%	>Pj
+16:35:54.928 [http-nio-8080-exec-3] INFO  console_logger  - decrypted: Ty4JXw==
+16:35:54.930 [http-nio-8080-exec-3] INFO  console_logger  - decryptedData: 	b6
+16:35:54.930 [http-nio-8080-exec-3] INFO  console_logger  - ============= REAL DECRIPTING =============
+16:35:54.930 [http-nio-8080-exec-3] INFO  console_logger  - decrypted: ��/
+16:35:54.931 [http-nio-8080-exec-3] INFO  console_logger  - decryptedData: ��
+16:36:16.761 [http-nio-8080-exec-4] INFO  console_logger  - runetId:  b6
+16:36:16.762 [http-nio-8080-exec-4] INFO  console_logger  - encrypted: TwcqNQ==
+16:36:16.762 [http-nio-8080-exec-4] INFO  console_logger  - encrypted 17: [B@6612c8b6
+16:36:16.762 [http-nio-8080-exec-4] INFO  console_logger  - encrypted 2: QjaMHTd4/ZE=
+16:36:16.763 [http-nio-8080-exec-4] INFO  console_logger  - to string 2: 03Pj
+16:36:16.764 [http-nio-8080-exec-4] INFO  console_logger  - decrypted: TwcqNQ==
+16:36:16.764 [http-nio-8080-exec-4] INFO  console_logger  - decryptedData:  b6
+16:36:16.765 [http-nio-8080-exec-4] INFO  console_logger  - ============= REAL DECRIPTING =============
+16:36:16.765 [http-nio-8080-exec-4] INFO  console_logger  - decrypted: ��/
+16:36:16.765 [http-nio-8080-exec-4] INFO  console_logger  - decryptedData: ��
+16:45:23.722 [http-nio-8080-exec-2] INFO  console_logger  - runetId: 123
+16:45:23.725 [http-nio-8080-exec-2] INFO  console_logger  - encrypted: YNsO
+16:45:23.725 [http-nio-8080-exec-2] INFO  console_logger  - encrypted 17: [B@3711af60
+16:45:23.726 [http-nio-8080-exec-2] INFO  console_logger  - encrypted 2: Ty5IJA==
+16:45:23.727 [http-nio-8080-exec-2] INFO  console_logger  - to string 2: 	# 
+16:45:23.728 [http-nio-8080-exec-2] INFO  console_logger  - decrypted: YNsO
+16:45:23.728 [http-nio-8080-exec-2] INFO  console_logger  - decryptedData: 123
+16:45:23.728 [http-nio-8080-exec-2] INFO  console_logger  - ============= REAL DECRIPTING =============
+16:45:23.729 [http-nio-8080-exec-2] INFO  console_logger  - decrypted: ��T
+16:45:23.731 [http-nio-8080-exec-2] INFO  console_logger  - decryptedData: null
+16:47:11.324 [http-nio-8080-exec-1] INFO  console_logger  - runetId: 123
+16:47:11.328 [http-nio-8080-exec-1] INFO  console_logger  - encrypted: YNsO
+16:47:11.328 [http-nio-8080-exec-1] INFO  console_logger  - encrypted 17: [B@262e8059
+16:47:11.328 [http-nio-8080-exec-1] INFO  console_logger  - encrypted 2: Ty5IJA==
+16:47:11.329 [http-nio-8080-exec-1] INFO  console_logger  - to string 2: 	# 
+16:47:11.331 [http-nio-8080-exec-1] INFO  console_logger  - decrypted: YNsO
+16:47:11.331 [http-nio-8080-exec-1] INFO  console_logger  - decryptedData: 123
+16:47:11.331 [http-nio-8080-exec-1] INFO  console_logger  - ============= REAL DECRIPTING =============
+16:47:11.333 [http-nio-8080-exec-1] INFO  console_logger  - decrypted: ��T
+16:47:11.333 [http-nio-8080-exec-1] INFO  console_logger  - decryptedData: ���
+16:47:32.625 [http-nio-8080-exec-3] INFO  console_logger  - runetId: Ty5IJA==
+16:47:32.625 [http-nio-8080-exec-3] INFO  console_logger  - encrypted: BbEQvcBnqhQ=
+16:47:32.626 [http-nio-8080-exec-3] INFO  console_logger  - encrypted 17: [B@3a459ae6
+16:47:32.627 [http-nio-8080-exec-3] INFO  console_logger  - encrypted 2: VHUBV31l5R6zYaAF
+16:47:32.627 [http-nio-8080-exec-3] INFO  console_logger  - to string 2: %>'*/9<hi
+16:47:32.627 [http-nio-8080-exec-3] INFO  console_logger  - decrypted: BbEQvcBnqhQ=
+16:47:32.629 [http-nio-8080-exec-3] INFO  console_logger  - decryptedData: Ty5IJA==
+16:47:32.629 [http-nio-8080-exec-3] INFO  console_logger  - ============= REAL DECRIPTING =============
+16:47:32.629 [http-nio-8080-exec-3] INFO  console_logger  - decrypted: YNsO
+16:47:32.630 [http-nio-8080-exec-3] INFO  console_logger  - decryptedData: 123
+17:04:51.764 [http-nio-8080-exec-1] INFO  console_logger  - TEST SCENARIO 3
+17:04:55.594 [http-nio-8080-exec-4] INFO  console_logger  - $$$$$$$$$$$$$$$$$$$$$$$$ ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ДЛЯ VIP-КЛИЕНТОВ $$$$$$$$$$$$$$$$$$$$$$$$
+17:04:55.596 [http-nio-8080-exec-4] INFO  console_logger  - runet-id:   42933
+17:04:55.598 [http-nio-8080-exec-4] INFO  console_logger  - phone:   9269850007
+17:04:55.599 [http-nio-8080-exec-4] INFO  console_logger  - url:   http://yandex.ru
+17:04:55.599 [http-nio-8080-exec-4] INFO  console_logger  - referer:   http://localhost:8080/test_scenario_3
+17:06:31.645 [http-nio-8080-exec-2] INFO  console_logger  - TEST SCENARIO 3
+17:06:34.432 [http-nio-8080-exec-5] INFO  console_logger  - $$$$$$$$$$$$$$$$$$$$$$$$ ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ДЛЯ VIP-КЛИЕНТОВ $$$$$$$$$$$$$$$$$$$$$$$$
+17:06:34.433 [http-nio-8080-exec-5] INFO  console_logger  - runet-id:   42933
+17:06:34.434 [http-nio-8080-exec-5] INFO  console_logger  - phone:   9269850007
+17:06:34.436 [http-nio-8080-exec-5] INFO  console_logger  - url:   http://yandex.ru
+17:06:34.436 [http-nio-8080-exec-5] INFO  console_logger  - referer:   http://localhost:8080/test_scenario_3
+17:06:34.514 [http-nio-8080-exec-5] ERROR console_logger  - Ошибка при выпуске пластиковой карты
+java.lang.Exception: Ошибка при получении записи из БД по runet-ID [ runetId: 42933 ]
+	at club.service.PdlServiceImpl.getEntityByRunetId(PdlServiceImpl.java:59)
+	at club.service.PdlServiceImpl.isPdl(PdlServiceImpl.java:29)
+	at club.RifController.plasticVip(RifController.java:344)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.Exception: Ошибка при получении записи из БД по runet-ID [ runetId: 42933 ]
+	at club.service.PdlServiceImpl.getEntityByRunetId(PdlServiceImpl.java:50)
+	... 88 common frames omitted
+17:08:02.272 [http-nio-8080-exec-2] INFO  console_logger  - TEST SCENARIO 3
+17:08:03.930 [http-nio-8080-exec-4] INFO  console_logger  - $$$$$$$$$$$$$$$$$$$$$$$$ ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ДЛЯ VIP-КЛИЕНТОВ $$$$$$$$$$$$$$$$$$$$$$$$
+17:08:03.932 [http-nio-8080-exec-4] INFO  console_logger  - runet-id:   42933
+17:08:03.932 [http-nio-8080-exec-4] INFO  console_logger  - phone:   9269850007
+17:08:03.932 [http-nio-8080-exec-4] INFO  console_logger  - url:   http://yandex.ru
+17:08:03.932 [http-nio-8080-exec-4] INFO  console_logger  - referer:   http://localhost:8080/test_scenario_3
+17:08:04.007 [http-nio-8080-exec-4] ERROR console_logger  - Ошибка при получении записи из БД по runet-ID [ runetId: 42933 ]
+java.lang.Exception: Ошибка при получении записи из БД по runet-ID [ runetId: 42933 ]
+	at club.service.PdlServiceImpl.getEntityByRunetId(PdlServiceImpl.java:59)
+	at club.service.PdlServiceImpl.isPdl(PdlServiceImpl.java:29)
+	at club.RifController.plasticVip(RifController.java:344)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.Exception: Ошибка при получении записи из БД по runet-ID [ runetId: 42933 ]
+	at club.service.PdlServiceImpl.getEntityByRunetId(PdlServiceImpl.java:50)
+	... 88 common frames omitted
+17:08:09.404 [http-nio-8080-exec-5] INFO  console_logger  - $$$$$$$$$$$$$$$$$$$$$$$$ ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ДЛЯ VIP-КЛИЕНТОВ $$$$$$$$$$$$$$$$$$$$$$$$
+17:08:09.404 [http-nio-8080-exec-5] INFO  console_logger  - runet-id:   42933
+17:08:09.404 [http-nio-8080-exec-5] INFO  console_logger  - phone:   9269850007
+17:08:09.404 [http-nio-8080-exec-5] INFO  console_logger  - url:   http://yandex.ru
+17:08:09.405 [http-nio-8080-exec-5] INFO  console_logger  - referer:   http://localhost:8080/vipcard?runet-id=42933&phone=9269850007&url=http%3A%2F%2Fyandex.ru
+17:08:09.413 [http-nio-8080-exec-5] ERROR console_logger  - Ошибка при получении записи из БД по runet-ID [ runetId: 42933 ]
+java.lang.Exception: Ошибка при получении записи из БД по runet-ID [ runetId: 42933 ]
+	at club.service.PdlServiceImpl.getEntityByRunetId(PdlServiceImpl.java:59)
+	at club.service.PdlServiceImpl.isPdl(PdlServiceImpl.java:29)
+	at club.RifController.plasticVip(RifController.java:344)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.Exception: Ошибка при получении записи из БД по runet-ID [ runetId: 42933 ]
+	at club.service.PdlServiceImpl.getEntityByRunetId(PdlServiceImpl.java:50)
+	... 88 common frames omitted
+17:08:09.920 [http-nio-8080-exec-1] INFO  console_logger  - $$$$$$$$$$$$$$$$$$$$$$$$ ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ДЛЯ VIP-КЛИЕНТОВ $$$$$$$$$$$$$$$$$$$$$$$$
+17:08:09.920 [http-nio-8080-exec-1] INFO  console_logger  - runet-id:   42933
+17:08:09.920 [http-nio-8080-exec-1] INFO  console_logger  - phone:   9269850007
+17:08:09.922 [http-nio-8080-exec-1] INFO  console_logger  - url:   http://yandex.ru
+17:08:09.922 [http-nio-8080-exec-1] INFO  console_logger  - referer:   http://localhost:8080/vipcard?runet-id=42933&phone=9269850007&url=http%3A%2F%2Fyandex.ru
+17:08:09.930 [http-nio-8080-exec-1] ERROR console_logger  - Ошибка при получении записи из БД по runet-ID [ runetId: 42933 ]
+java.lang.Exception: Ошибка при получении записи из БД по runet-ID [ runetId: 42933 ]
+	at club.service.PdlServiceImpl.getEntityByRunetId(PdlServiceImpl.java:59)
+	at club.service.PdlServiceImpl.isPdl(PdlServiceImpl.java:29)
+	at club.RifController.plasticVip(RifController.java:344)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.Exception: Ошибка при получении записи из БД по runet-ID [ runetId: 42933 ]
+	at club.service.PdlServiceImpl.getEntityByRunetId(PdlServiceImpl.java:50)
+	... 88 common frames omitted
+17:08:11.546 [http-nio-8080-exec-5] INFO  console_logger  - $$$$$$$$$$$$$$$$$$$$$$$$ ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ДЛЯ VIP-КЛИЕНТОВ $$$$$$$$$$$$$$$$$$$$$$$$
+17:08:11.547 [http-nio-8080-exec-5] INFO  console_logger  - runet-id:   42933
+17:08:11.547 [http-nio-8080-exec-5] INFO  console_logger  - phone:   9269850007
+17:08:11.548 [http-nio-8080-exec-5] INFO  console_logger  - url:   http://yandex.ru
+17:08:11.548 [http-nio-8080-exec-5] INFO  console_logger  - referer:   http://localhost:8080/vipcard?runet-id=42933&phone=9269850007&url=http%3A%2F%2Fyandex.ru
+17:08:11.554 [http-nio-8080-exec-5] ERROR console_logger  - Ошибка при получении записи из БД по runet-ID [ runetId: 42933 ]
+java.lang.Exception: Ошибка при получении записи из БД по runet-ID [ runetId: 42933 ]
+	at club.service.PdlServiceImpl.getEntityByRunetId(PdlServiceImpl.java:59)
+	at club.service.PdlServiceImpl.isPdl(PdlServiceImpl.java:29)
+	at club.RifController.plasticVip(RifController.java:344)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.Exception: Ошибка при получении записи из БД по runet-ID [ runetId: 42933 ]
+	at club.service.PdlServiceImpl.getEntityByRunetId(PdlServiceImpl.java:50)
+	... 88 common frames omitted
+17:08:13.458 [http-nio-8080-exec-8] INFO  console_logger  - $$$$$$$$$$$$$$$$$$$$$$$$ ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ДЛЯ VIP-КЛИЕНТОВ $$$$$$$$$$$$$$$$$$$$$$$$
+17:08:13.458 [http-nio-8080-exec-8] INFO  console_logger  - runet-id:   42933
+17:08:13.458 [http-nio-8080-exec-8] INFO  console_logger  - phone:   9269850007
+17:08:13.460 [http-nio-8080-exec-8] INFO  console_logger  - url:   http://yandex.ru
+17:08:13.460 [http-nio-8080-exec-8] INFO  console_logger  - referer:   http://localhost:8080/vipcard?runet-id=42933&phone=9269850007&url=http%3A%2F%2Fyandex.ru
+17:08:13.466 [http-nio-8080-exec-8] ERROR console_logger  - Ошибка при получении записи из БД по runet-ID [ runetId: 42933 ]
+java.lang.Exception: Ошибка при получении записи из БД по runet-ID [ runetId: 42933 ]
+	at club.service.PdlServiceImpl.getEntityByRunetId(PdlServiceImpl.java:59)
+	at club.service.PdlServiceImpl.isPdl(PdlServiceImpl.java:29)
+	at club.RifController.plasticVip(RifController.java:344)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.Exception: Ошибка при получении записи из БД по runet-ID [ runetId: 42933 ]
+	at club.service.PdlServiceImpl.getEntityByRunetId(PdlServiceImpl.java:50)
+	... 88 common frames omitted

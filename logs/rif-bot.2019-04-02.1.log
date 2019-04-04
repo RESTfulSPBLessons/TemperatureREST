@@ -1,0 +1,876 @@
+11:33:51.763 [http-nio-8080-exec-5] INFO  console_logger  - runet-id:   7005555
+11:33:51.768 [http-nio-8080-exec-5] INFO  console_logger  - url:   http://yandex.ru
+11:33:51.768 [http-nio-8080-exec-5] INFO  console_logger  - referer:   http://localhost:8080/card?runet-id=7005555&url=http%3A%2F%2Fyandex.ru
+11:33:51.782 [http-nio-8080-exec-5] ERROR console_logger  - У клиента уже есть пластиковая карта !!
+11:34:10.779 [http-nio-8080-exec-8] INFO  console_logger  - ########### ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ###########
+11:34:10.780 [http-nio-8080-exec-8] INFO  console_logger  - runet-id:   7005555
+11:34:10.780 [http-nio-8080-exec-8] INFO  console_logger  - url:   http://yandex.ru
+11:34:10.782 [http-nio-8080-exec-8] INFO  console_logger  - referer:   http://localhost:8080/card?runet-id=7005555&url=http%3A%2F%2Fyandex.ru
+11:34:10.797 [http-nio-8080-exec-8] ERROR console_logger  - У клиента уже есть пластиковая карта !!
+11:34:28.773 [http-nio-8080-exec-9] INFO  console_logger  - ########### ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ###########
+11:34:28.773 [http-nio-8080-exec-9] INFO  console_logger  - runet-id:   7005555
+11:34:28.775 [http-nio-8080-exec-9] INFO  console_logger  - url:   http://yandex.ru
+11:34:28.776 [http-nio-8080-exec-9] INFO  console_logger  - referer:   http://localhost:8080/card?runet-id=7005555&url=http%3A%2F%2Fyandex.ru
+11:34:28.802 [http-nio-8080-exec-9] ERROR console_logger  - У клиента уже есть пластиковая карта !!
+11:34:45.774 [http-nio-8080-exec-1] INFO  console_logger  - ########### ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ###########
+11:34:45.775 [http-nio-8080-exec-1] INFO  console_logger  - runet-id:   7005555
+11:34:45.775 [http-nio-8080-exec-1] INFO  console_logger  - url:   http://yandex.ru
+11:34:45.775 [http-nio-8080-exec-1] INFO  console_logger  - referer:   http://localhost:8080/card?runet-id=7005555&url=http%3A%2F%2Fyandex.ru
+11:34:45.792 [http-nio-8080-exec-1] ERROR console_logger  - У клиента уже есть пластиковая карта !!
+11:34:52.776 [http-nio-8080-exec-10] INFO  console_logger  - ########### ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ###########
+11:34:52.777 [http-nio-8080-exec-10] INFO  console_logger  - runet-id:   7005555
+11:34:52.778 [http-nio-8080-exec-10] INFO  console_logger  - url:   http://yandex.ru
+11:34:52.778 [http-nio-8080-exec-10] INFO  console_logger  - referer:   http://localhost:8080/card?runet-id=7005555&url=http%3A%2F%2Fyandex.ru
+11:34:52.794 [http-nio-8080-exec-10] ERROR console_logger  - У клиента уже есть пластиковая карта !!
+11:34:59.768 [http-nio-8080-exec-5] INFO  console_logger  - ########### ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ###########
+11:34:59.768 [http-nio-8080-exec-5] INFO  console_logger  - runet-id:   7005555
+11:34:59.768 [http-nio-8080-exec-5] INFO  console_logger  - url:   http://yandex.ru
+11:34:59.770 [http-nio-8080-exec-5] INFO  console_logger  - referer:   http://localhost:8080/card?runet-id=7005555&url=http%3A%2F%2Fyandex.ru
+11:34:59.788 [http-nio-8080-exec-5] ERROR console_logger  - У клиента уже есть пластиковая карта !!
+11:35:08.762 [http-nio-8080-exec-8] INFO  console_logger  - ########### ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ###########
+11:35:08.762 [http-nio-8080-exec-8] INFO  console_logger  - runet-id:   7005555
+11:35:08.763 [http-nio-8080-exec-8] INFO  console_logger  - url:   http://yandex.ru
+11:35:08.763 [http-nio-8080-exec-8] INFO  console_logger  - referer:   http://localhost:8080/card?runet-id=7005555&url=http%3A%2F%2Fyandex.ru
+11:35:08.774 [http-nio-8080-exec-8] ERROR console_logger  - У клиента уже есть пластиковая карта !!
+11:35:29.779 [http-nio-8080-exec-2] INFO  console_logger  - ########### ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ###########
+11:35:29.780 [http-nio-8080-exec-2] INFO  console_logger  - runet-id:   7005555
+11:35:29.780 [http-nio-8080-exec-2] INFO  console_logger  - url:   http://yandex.ru
+11:35:29.780 [http-nio-8080-exec-2] INFO  console_logger  - referer:   http://localhost:8080/card?runet-id=7005555&url=http%3A%2F%2Fyandex.ru
+11:35:29.794 [http-nio-8080-exec-2] ERROR console_logger  - У клиента уже есть пластиковая карта !!
+11:35:37.768 [http-nio-8080-exec-5] INFO  console_logger  - ########### ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ###########
+11:35:37.769 [http-nio-8080-exec-5] INFO  console_logger  - runet-id:   7005555
+11:35:37.771 [http-nio-8080-exec-5] INFO  console_logger  - url:   http://yandex.ru
+11:35:37.771 [http-nio-8080-exec-5] INFO  console_logger  - referer:   http://localhost:8080/card?runet-id=7005555&url=http%3A%2F%2Fyandex.ru
+11:35:37.799 [http-nio-8080-exec-5] ERROR console_logger  - У клиента уже есть пластиковая карта !!
+11:35:44.762 [http-nio-8080-exec-8] INFO  console_logger  - ########### ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ###########
+11:35:44.762 [http-nio-8080-exec-8] INFO  console_logger  - runet-id:   7005555
+11:35:44.762 [http-nio-8080-exec-8] INFO  console_logger  - url:   http://yandex.ru
+11:35:44.763 [http-nio-8080-exec-8] INFO  console_logger  - referer:   http://localhost:8080/card?runet-id=7005555&url=http%3A%2F%2Fyandex.ru
+11:35:44.777 [http-nio-8080-exec-8] ERROR console_logger  - У клиента уже есть пластиковая карта !!
+11:35:52.779 [http-nio-8080-exec-1] INFO  console_logger  - ########### ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ###########
+11:35:52.779 [http-nio-8080-exec-1] INFO  console_logger  - runet-id:   7005555
+11:35:52.780 [http-nio-8080-exec-1] INFO  console_logger  - url:   http://yandex.ru
+11:35:52.780 [http-nio-8080-exec-1] INFO  console_logger  - referer:   http://localhost:8080/card?runet-id=7005555&url=http%3A%2F%2Fyandex.ru
+11:35:52.796 [http-nio-8080-exec-1] ERROR console_logger  - У клиента уже есть пластиковая карта !!
+11:36:00.758 [http-nio-8080-exec-5] INFO  console_logger  - ########### ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ###########
+11:36:00.758 [http-nio-8080-exec-5] INFO  console_logger  - runet-id:   7005555
+11:36:00.758 [http-nio-8080-exec-5] INFO  console_logger  - url:   http://yandex.ru
+11:36:00.758 [http-nio-8080-exec-5] INFO  console_logger  - referer:   http://localhost:8080/card?runet-id=7005555&url=http%3A%2F%2Fyandex.ru
+11:36:00.770 [http-nio-8080-exec-5] ERROR console_logger  - У клиента уже есть пластиковая карта !!
+11:36:07.761 [http-nio-8080-exec-8] INFO  console_logger  - ########### ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ###########
+11:36:07.761 [http-nio-8080-exec-8] INFO  console_logger  - runet-id:   7005555
+11:36:07.762 [http-nio-8080-exec-8] INFO  console_logger  - url:   http://yandex.ru
+11:36:07.762 [http-nio-8080-exec-8] INFO  console_logger  - referer:   http://localhost:8080/card?runet-id=7005555&url=http%3A%2F%2Fyandex.ru
+11:36:07.775 [http-nio-8080-exec-8] ERROR console_logger  - У клиента уже есть пластиковая карта !!
+11:36:14.762 [http-nio-8080-exec-1] INFO  console_logger  - ########### ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ###########
+11:36:14.762 [http-nio-8080-exec-1] INFO  console_logger  - runet-id:   7005555
+11:36:14.762 [http-nio-8080-exec-1] INFO  console_logger  - url:   http://yandex.ru
+11:36:14.763 [http-nio-8080-exec-1] INFO  console_logger  - referer:   http://localhost:8080/card?runet-id=7005555&url=http%3A%2F%2Fyandex.ru
+11:36:14.776 [http-nio-8080-exec-1] ERROR console_logger  - У клиента уже есть пластиковая карта !!
+11:36:21.766 [http-nio-8080-exec-3] INFO  console_logger  - ########### ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ###########
+11:36:21.767 [http-nio-8080-exec-3] INFO  console_logger  - runet-id:   7005555
+11:36:21.770 [http-nio-8080-exec-3] INFO  console_logger  - url:   http://yandex.ru
+11:36:21.770 [http-nio-8080-exec-3] INFO  console_logger  - referer:   http://localhost:8080/card?runet-id=7005555&url=http%3A%2F%2Fyandex.ru
+11:36:21.792 [http-nio-8080-exec-3] ERROR console_logger  - У клиента уже есть пластиковая карта !!
+11:36:28.763 [http-nio-8080-exec-8] INFO  console_logger  - ########### ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ###########
+11:36:28.763 [http-nio-8080-exec-8] INFO  console_logger  - runet-id:   7005555
+11:36:28.763 [http-nio-8080-exec-8] INFO  console_logger  - url:   http://yandex.ru
+11:36:28.763 [http-nio-8080-exec-8] INFO  console_logger  - referer:   http://localhost:8080/card?runet-id=7005555&url=http%3A%2F%2Fyandex.ru
+11:36:28.782 [http-nio-8080-exec-8] ERROR console_logger  - У клиента уже есть пластиковая карта !!
+11:36:35.757 [http-nio-8080-exec-1] INFO  console_logger  - ########### ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ###########
+11:36:35.758 [http-nio-8080-exec-1] INFO  console_logger  - runet-id:   7005555
+11:36:35.758 [http-nio-8080-exec-1] INFO  console_logger  - url:   http://yandex.ru
+11:36:35.758 [http-nio-8080-exec-1] INFO  console_logger  - referer:   http://localhost:8080/card?runet-id=7005555&url=http%3A%2F%2Fyandex.ru
+11:36:35.771 [http-nio-8080-exec-1] ERROR console_logger  - У клиента уже есть пластиковая карта !!
+11:36:49.757 [http-nio-8080-exec-3] INFO  console_logger  - ########### ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ###########
+11:36:49.758 [http-nio-8080-exec-3] INFO  console_logger  - runet-id:   7005555
+11:36:49.758 [http-nio-8080-exec-3] INFO  console_logger  - url:   http://yandex.ru
+11:36:49.758 [http-nio-8080-exec-3] INFO  console_logger  - referer:   http://localhost:8080/card?runet-id=7005555&url=http%3A%2F%2Fyandex.ru
+11:36:49.771 [http-nio-8080-exec-3] ERROR console_logger  - У клиента уже есть пластиковая карта !!
+11:37:07.777 [http-nio-8080-exec-10] INFO  console_logger  - ########### ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ###########
+11:37:07.778 [http-nio-8080-exec-10] INFO  console_logger  - runet-id:   7005555
+11:37:07.779 [http-nio-8080-exec-10] INFO  console_logger  - url:   http://yandex.ru
+11:37:07.779 [http-nio-8080-exec-10] INFO  console_logger  - referer:   http://localhost:8080/card?runet-id=7005555&url=http%3A%2F%2Fyandex.ru
+11:37:07.794 [http-nio-8080-exec-10] ERROR console_logger  - У клиента уже есть пластиковая карта !!
+11:37:26.772 [http-nio-8080-exec-1] INFO  console_logger  - ########### ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ###########
+11:37:26.772 [http-nio-8080-exec-1] INFO  console_logger  - runet-id:   7005555
+11:37:26.772 [http-nio-8080-exec-1] INFO  console_logger  - url:   http://yandex.ru
+11:37:26.772 [http-nio-8080-exec-1] INFO  console_logger  - referer:   http://localhost:8080/card?runet-id=7005555&url=http%3A%2F%2Fyandex.ru
+11:37:26.792 [http-nio-8080-exec-1] ERROR console_logger  - У клиента уже есть пластиковая карта !!
+11:37:47.783 [http-nio-8080-exec-3] INFO  console_logger  - ########### ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ###########
+11:37:47.784 [http-nio-8080-exec-3] INFO  console_logger  - runet-id:   7005555
+11:37:47.785 [http-nio-8080-exec-3] INFO  console_logger  - url:   http://yandex.ru
+11:37:47.785 [http-nio-8080-exec-3] INFO  console_logger  - referer:   http://localhost:8080/card?runet-id=7005555&url=http%3A%2F%2Fyandex.ru
+11:37:47.799 [http-nio-8080-exec-3] ERROR console_logger  - У клиента уже есть пластиковая карта !!
+11:38:05.766 [http-nio-8080-exec-10] INFO  console_logger  - ########### ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ###########
+11:38:05.767 [http-nio-8080-exec-10] INFO  console_logger  - runet-id:   7005555
+11:38:05.767 [http-nio-8080-exec-10] INFO  console_logger  - url:   http://yandex.ru
+11:38:05.768 [http-nio-8080-exec-10] INFO  console_logger  - referer:   http://localhost:8080/card?runet-id=7005555&url=http%3A%2F%2Fyandex.ru
+11:38:05.782 [http-nio-8080-exec-10] ERROR console_logger  - У клиента уже есть пластиковая карта !!
+11:38:25.762 [http-nio-8080-exec-8] INFO  console_logger  - ########### ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ###########
+11:38:25.763 [http-nio-8080-exec-8] INFO  console_logger  - runet-id:   7005555
+11:38:25.763 [http-nio-8080-exec-8] INFO  console_logger  - url:   http://yandex.ru
+11:38:25.763 [http-nio-8080-exec-8] INFO  console_logger  - referer:   http://localhost:8080/card?runet-id=7005555&url=http%3A%2F%2Fyandex.ru
+11:38:25.776 [http-nio-8080-exec-8] ERROR console_logger  - У клиента уже есть пластиковая карта !!
+11:38:44.765 [http-nio-8080-exec-1] INFO  console_logger  - ########### ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ###########
+11:38:44.765 [http-nio-8080-exec-1] INFO  console_logger  - runet-id:   7005555
+11:38:44.765 [http-nio-8080-exec-1] INFO  console_logger  - url:   http://yandex.ru
+11:38:44.765 [http-nio-8080-exec-1] INFO  console_logger  - referer:   http://localhost:8080/card?runet-id=7005555&url=http%3A%2F%2Fyandex.ru
+11:38:44.781 [http-nio-8080-exec-1] ERROR console_logger  - У клиента уже есть пластиковая карта !!
+11:38:53.767 [http-nio-8080-exec-9] INFO  console_logger  - ########### ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ###########
+11:38:53.768 [http-nio-8080-exec-9] INFO  console_logger  - runet-id:   7005555
+11:38:53.770 [http-nio-8080-exec-9] INFO  console_logger  - url:   http://yandex.ru
+11:38:53.770 [http-nio-8080-exec-9] INFO  console_logger  - referer:   http://localhost:8080/card?runet-id=7005555&url=http%3A%2F%2Fyandex.ru
+11:38:53.793 [http-nio-8080-exec-9] ERROR console_logger  - У клиента уже есть пластиковая карта !!
+11:39:13.770 [http-nio-8080-exec-6] INFO  console_logger  - ########### ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ###########
+11:39:13.772 [http-nio-8080-exec-6] INFO  console_logger  - runet-id:   7005555
+11:39:13.772 [http-nio-8080-exec-6] INFO  console_logger  - url:   http://yandex.ru
+11:39:13.773 [http-nio-8080-exec-6] INFO  console_logger  - referer:   http://localhost:8080/card?runet-id=7005555&url=http%3A%2F%2Fyandex.ru
+11:39:13.793 [http-nio-8080-exec-6] ERROR console_logger  - У клиента уже есть пластиковая карта !!
+11:39:23.763 [http-nio-8080-exec-7] INFO  console_logger  - ########### ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ###########
+11:39:23.764 [http-nio-8080-exec-7] INFO  console_logger  - runet-id:   7005555
+11:39:23.764 [http-nio-8080-exec-7] INFO  console_logger  - url:   http://yandex.ru
+11:39:23.764 [http-nio-8080-exec-7] INFO  console_logger  - referer:   http://localhost:8080/card?runet-id=7005555&url=http%3A%2F%2Fyandex.ru
+11:39:23.780 [http-nio-8080-exec-7] ERROR console_logger  - У клиента уже есть пластиковая карта !!
+11:39:40.768 [http-nio-8080-exec-2] INFO  console_logger  - ########### ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ###########
+11:39:40.768 [http-nio-8080-exec-2] INFO  console_logger  - runet-id:   7005555
+11:39:40.768 [http-nio-8080-exec-2] INFO  console_logger  - url:   http://yandex.ru
+11:39:40.768 [http-nio-8080-exec-2] INFO  console_logger  - referer:   http://localhost:8080/card?runet-id=7005555&url=http%3A%2F%2Fyandex.ru
+11:39:40.783 [http-nio-8080-exec-2] ERROR console_logger  - У клиента уже есть пластиковая карта !!
+11:40:01.764 [http-nio-8080-exec-5] INFO  console_logger  - ########### ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ###########
+11:40:01.765 [http-nio-8080-exec-5] INFO  console_logger  - runet-id:   7005555
+11:40:01.765 [http-nio-8080-exec-5] INFO  console_logger  - url:   http://yandex.ru
+11:40:01.765 [http-nio-8080-exec-5] INFO  console_logger  - referer:   http://localhost:8080/card?runet-id=7005555&url=http%3A%2F%2Fyandex.ru
+11:40:01.784 [http-nio-8080-exec-5] ERROR console_logger  - У клиента уже есть пластиковая карта !!
+11:40:20.770 [http-nio-8080-exec-3] INFO  console_logger  - ########### ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ###########
+11:40:20.770 [http-nio-8080-exec-3] INFO  console_logger  - runet-id:   7005555
+11:40:20.770 [http-nio-8080-exec-3] INFO  console_logger  - url:   http://yandex.ru
+11:40:20.772 [http-nio-8080-exec-3] INFO  console_logger  - referer:   http://localhost:8080/card?runet-id=7005555&url=http%3A%2F%2Fyandex.ru
+11:40:20.788 [http-nio-8080-exec-3] ERROR console_logger  - У клиента уже есть пластиковая карта !!
+11:40:38.759 [http-nio-8080-exec-4] INFO  console_logger  - ########### ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ###########
+11:40:38.760 [http-nio-8080-exec-4] INFO  console_logger  - runet-id:   7005555
+11:40:38.761 [http-nio-8080-exec-4] INFO  console_logger  - url:   http://yandex.ru
+11:40:38.761 [http-nio-8080-exec-4] INFO  console_logger  - referer:   http://localhost:8080/card?runet-id=7005555&url=http%3A%2F%2Fyandex.ru
+11:40:38.773 [http-nio-8080-exec-4] ERROR console_logger  - У клиента уже есть пластиковая карта !!
+11:40:54.766 [http-nio-8080-exec-9] INFO  console_logger  - ########### ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ###########
+11:40:54.767 [http-nio-8080-exec-9] INFO  console_logger  - runet-id:   7005555
+11:40:54.767 [http-nio-8080-exec-9] INFO  console_logger  - url:   http://yandex.ru
+11:40:54.767 [http-nio-8080-exec-9] INFO  console_logger  - referer:   http://localhost:8080/card?runet-id=7005555&url=http%3A%2F%2Fyandex.ru
+11:40:54.783 [http-nio-8080-exec-9] ERROR console_logger  - У клиента уже есть пластиковая карта !!
+11:41:14.759 [http-nio-8080-exec-3] INFO  console_logger  - ########### ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ###########
+11:41:14.759 [http-nio-8080-exec-3] INFO  console_logger  - runet-id:   7005555
+11:41:14.760 [http-nio-8080-exec-3] INFO  console_logger  - url:   http://yandex.ru
+11:41:14.760 [http-nio-8080-exec-3] INFO  console_logger  - referer:   http://localhost:8080/card?runet-id=7005555&url=http%3A%2F%2Fyandex.ru
+11:41:14.772 [http-nio-8080-exec-3] ERROR console_logger  - У клиента уже есть пластиковая карта !!
+11:41:39.765 [http-nio-8080-exec-1] INFO  console_logger  - ########### ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ###########
+11:41:39.766 [http-nio-8080-exec-1] INFO  console_logger  - runet-id:   7005555
+11:41:39.766 [http-nio-8080-exec-1] INFO  console_logger  - url:   http://yandex.ru
+11:41:39.766 [http-nio-8080-exec-1] INFO  console_logger  - referer:   http://localhost:8080/card?runet-id=7005555&url=http%3A%2F%2Fyandex.ru
+11:41:39.779 [http-nio-8080-exec-1] ERROR console_logger  - У клиента уже есть пластиковая карта !!
+11:41:59.766 [http-nio-8080-exec-2] INFO  console_logger  - ########### ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ###########
+11:41:59.766 [http-nio-8080-exec-2] INFO  console_logger  - runet-id:   7005555
+11:41:59.767 [http-nio-8080-exec-2] INFO  console_logger  - url:   http://yandex.ru
+11:41:59.767 [http-nio-8080-exec-2] INFO  console_logger  - referer:   http://localhost:8080/card?runet-id=7005555&url=http%3A%2F%2Fyandex.ru
+11:41:59.779 [http-nio-8080-exec-2] ERROR console_logger  - У клиента уже есть пластиковая карта !!
+11:42:18.760 [http-nio-8080-exec-6] INFO  console_logger  - ########### ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ###########
+11:42:18.760 [http-nio-8080-exec-6] INFO  console_logger  - runet-id:   7005555
+11:42:18.760 [http-nio-8080-exec-6] INFO  console_logger  - url:   http://yandex.ru
+11:42:18.760 [http-nio-8080-exec-6] INFO  console_logger  - referer:   http://localhost:8080/card?runet-id=7005555&url=http%3A%2F%2Fyandex.ru
+11:42:18.772 [http-nio-8080-exec-6] ERROR console_logger  - У клиента уже есть пластиковая карта !!
+11:42:37.763 [http-nio-8080-exec-8] INFO  console_logger  - ########### ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ###########
+11:42:37.763 [http-nio-8080-exec-8] INFO  console_logger  - runet-id:   7005555
+11:42:37.764 [http-nio-8080-exec-8] INFO  console_logger  - url:   http://yandex.ru
+11:42:37.764 [http-nio-8080-exec-8] INFO  console_logger  - referer:   http://localhost:8080/card?runet-id=7005555&url=http%3A%2F%2Fyandex.ru
+11:42:37.781 [http-nio-8080-exec-8] ERROR console_logger  - У клиента уже есть пластиковая карта !!
+11:42:57.767 [http-nio-8080-exec-4] INFO  console_logger  - ########### ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ###########
+11:42:57.767 [http-nio-8080-exec-4] INFO  console_logger  - runet-id:   7005555
+11:42:57.767 [http-nio-8080-exec-4] INFO  console_logger  - url:   http://yandex.ru
+11:42:57.768 [http-nio-8080-exec-4] INFO  console_logger  - referer:   http://localhost:8080/card?runet-id=7005555&url=http%3A%2F%2Fyandex.ru
+11:42:57.781 [http-nio-8080-exec-4] ERROR console_logger  - У клиента уже есть пластиковая карта !!
+11:43:18.764 [http-nio-8080-exec-9] INFO  console_logger  - ########### ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ###########
+11:43:18.764 [http-nio-8080-exec-9] INFO  console_logger  - runet-id:   7005555
+11:43:18.765 [http-nio-8080-exec-9] INFO  console_logger  - url:   http://yandex.ru
+11:43:18.765 [http-nio-8080-exec-9] INFO  console_logger  - referer:   http://localhost:8080/card?runet-id=7005555&url=http%3A%2F%2Fyandex.ru
+11:43:18.778 [http-nio-8080-exec-9] ERROR console_logger  - У клиента уже есть пластиковая карта !!
+11:43:40.761 [http-nio-8080-exec-7] INFO  console_logger  - ########### ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ###########
+11:43:40.761 [http-nio-8080-exec-7] INFO  console_logger  - runet-id:   7005555
+11:43:40.761 [http-nio-8080-exec-7] INFO  console_logger  - url:   http://yandex.ru
+11:43:40.761 [http-nio-8080-exec-7] INFO  console_logger  - referer:   http://localhost:8080/card?runet-id=7005555&url=http%3A%2F%2Fyandex.ru
+11:43:40.772 [http-nio-8080-exec-7] ERROR console_logger  - У клиента уже есть пластиковая карта !!
+12:46:31.852 [http-nio-8080-exec-1] INFO  console_logger  - $$$$$$$$$$$$$$$$$$$$$$$$ ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ДЛЯ VIP-КЛИЕНТОВ $$$$$$$$$$$$$$$$$$$$$$$$
+12:46:31.853 [http-nio-8080-exec-1] INFO  console_logger  - runet-id:   null
+12:46:31.853 [http-nio-8080-exec-1] INFO  console_logger  - phone:   null
+12:46:31.853 [http-nio-8080-exec-1] INFO  console_logger  - url:   null
+12:46:31.854 [http-nio-8080-exec-1] INFO  console_logger  - referer:   null
+12:51:52.627 [http-nio-8080-exec-1] INFO  console_logger  - TEST SCENARIO 3
+12:52:22.635 [http-nio-8080-exec-6] INFO  console_logger  - $$$$$$$$$$$$$$$$$$$$$$$$ ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ДЛЯ VIP-КЛИЕНТОВ $$$$$$$$$$$$$$$$$$$$$$$$
+12:52:22.637 [http-nio-8080-exec-6] INFO  console_logger  - runet-id:   7006666
+12:52:22.638 [http-nio-8080-exec-6] INFO  console_logger  - phone:   89161206481
+12:52:22.639 [http-nio-8080-exec-6] INFO  console_logger  - url:   http://yandex.ru
+12:52:22.639 [http-nio-8080-exec-6] INFO  console_logger  - referer:   http://localhost:8080/test_scenario_3
+13:27:52.373 [http-nio-8080-exec-1] INFO  console_logger  - TEST SCENARIO 3
+13:28:25.350 [http-nio-8080-exec-9] INFO  console_logger  - $$$$$$$$$$$$$$$$$$$$$$$$ ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ДЛЯ VIP-КЛИЕНТОВ $$$$$$$$$$$$$$$$$$$$$$$$
+13:28:25.352 [http-nio-8080-exec-9] INFO  console_logger  - runet-id:   7006666
+13:28:25.354 [http-nio-8080-exec-9] INFO  console_logger  - phone:   89161206481
+13:28:25.355 [http-nio-8080-exec-9] INFO  console_logger  - url:   http://yandex.ru
+13:28:25.355 [http-nio-8080-exec-9] INFO  console_logger  - referer:   http://localhost:8080/test_scenario_3
+13:28:25.407 [http-nio-8080-exec-9] INFO  console_logger  - ПДЛ или нет?   true
+14:39:58.499 [http-nio-8080-exec-1] INFO  console_logger  - $$$$$$$$$$$$$$$$$$$$$$$$ ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ДЛЯ VIP-КЛИЕНТОВ $$$$$$$$$$$$$$$$$$$$$$$$
+14:39:58.500 [http-nio-8080-exec-1] INFO  console_logger  - runet-id:   7006666
+14:39:58.500 [http-nio-8080-exec-1] INFO  console_logger  - phone:   89161206481
+14:39:58.500 [http-nio-8080-exec-1] INFO  console_logger  - url:   http://yandex.ru
+14:39:58.500 [http-nio-8080-exec-1] INFO  console_logger  - referer:   http://localhost:8080/test_scenario_3
+14:39:58.561 [http-nio-8080-exec-1] INFO  console_logger  - ПДЛ или нет?   true
+14:40:06.745 [http-nio-8080-exec-9] INFO  console_logger  - TEST SCENARIO 3
+14:40:10.556 [http-nio-8080-exec-2] INFO  console_logger  - $$$$$$$$$$$$$$$$$$$$$$$$ ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ДЛЯ VIP-КЛИЕНТОВ $$$$$$$$$$$$$$$$$$$$$$$$
+14:40:10.556 [http-nio-8080-exec-2] INFO  console_logger  - runet-id:   7006666
+14:40:10.556 [http-nio-8080-exec-2] INFO  console_logger  - phone:   89161206481
+14:40:10.557 [http-nio-8080-exec-2] INFO  console_logger  - url:   http://yandex.ru
+14:40:10.557 [http-nio-8080-exec-2] INFO  console_logger  - referer:   http://localhost:8080/test_scenario_3
+14:40:10.560 [http-nio-8080-exec-2] INFO  console_logger  - ПДЛ или нет?   true
+14:43:33.365 [http-nio-8080-exec-1] INFO  console_logger  - TEST SCENARIO 2
+14:43:35.491 [http-nio-8080-exec-2] INFO  console_logger  - ########### ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ###########
+14:43:35.492 [http-nio-8080-exec-2] INFO  console_logger  - runet-id:   7006666
+14:43:35.493 [http-nio-8080-exec-2] INFO  console_logger  - url:   http://yandex.ru
+14:43:35.493 [http-nio-8080-exec-2] INFO  console_logger  - referer:   http://localhost:8080/test_scenario_2
+14:43:35.571 [http-nio-8080-exec-2] ERROR console_logger  - НЕТ УПРИДА И ВПК
+14:43:35.571 [http-nio-8080-exec-2] INFO  console_logger  - Принял парамметры для заполнения анкеты по сценарию 3.1: {startUrl=http://localhost:8080/test_scenario_2, redirectUrl=http://yandex.ru, runetId=7006666}
+14:43:35.572 [http-nio-8080-exec-2] INFO  console_logger  - Threadlocal = PLASTIC_FOR_ALL
+14:43:44.095 [http-nio-8080-exec-6] INFO  console_logger  - TEST SCENARIO 3
+14:43:45.707 [http-nio-8080-exec-9] INFO  console_logger  - $$$$$$$$$$$$$$$$$$$$$$$$ ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ДЛЯ VIP-КЛИЕНТОВ $$$$$$$$$$$$$$$$$$$$$$$$
+14:43:45.707 [http-nio-8080-exec-9] INFO  console_logger  - runet-id:   7006666
+14:43:45.707 [http-nio-8080-exec-9] INFO  console_logger  - phone:   89161206481
+14:43:45.708 [http-nio-8080-exec-9] INFO  console_logger  - url:   http://yandex.ru
+14:43:45.708 [http-nio-8080-exec-9] INFO  console_logger  - referer:   http://localhost:8080/test_scenario_3
+14:43:45.711 [http-nio-8080-exec-9] INFO  console_logger  - ПДЛ или нет?   true
+14:56:32.555 [http-nio-8080-exec-1] INFO  console_logger  - TEST SCENARIO 3
+14:56:34.642 [http-nio-8080-exec-2] INFO  console_logger  - $$$$$$$$$$$$$$$$$$$$$$$$ ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ДЛЯ VIP-КЛИЕНТОВ $$$$$$$$$$$$$$$$$$$$$$$$
+14:56:34.642 [http-nio-8080-exec-2] INFO  console_logger  - runet-id:   7006666
+14:56:34.642 [http-nio-8080-exec-2] INFO  console_logger  - phone:   89161206481
+14:56:34.642 [http-nio-8080-exec-2] INFO  console_logger  - url:   http://yandex.ru
+14:56:34.642 [http-nio-8080-exec-2] INFO  console_logger  - referer:   http://localhost:8080/test_scenario_3
+14:56:34.683 [http-nio-8080-exec-2] INFO  console_logger  - ПДЛ или нет?   true
+14:56:34.684 [http-nio-8080-exec-2] INFO  console_logger  - Threadlocal = null
+14:58:38.270 [http-nio-8080-exec-1] INFO  console_logger  - TEST SCENARIO 3
+14:58:39.862 [http-nio-8080-exec-8] INFO  console_logger  - $$$$$$$$$$$$$$$$$$$$$$$$ ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ДЛЯ VIP-КЛИЕНТОВ $$$$$$$$$$$$$$$$$$$$$$$$
+14:58:39.863 [http-nio-8080-exec-8] INFO  console_logger  - runet-id:   7006666
+14:58:39.863 [http-nio-8080-exec-8] INFO  console_logger  - phone:   89161206481
+14:58:39.864 [http-nio-8080-exec-8] INFO  console_logger  - url:   http://yandex.ru
+14:58:39.864 [http-nio-8080-exec-8] INFO  console_logger  - referer:   http://localhost:8080/test_scenario_3
+14:58:39.907 [http-nio-8080-exec-8] INFO  console_logger  - ПДЛ или нет?   true
+14:58:39.908 [http-nio-8080-exec-8] INFO  console_logger  - Threadlocal = null
+15:07:22.953 [http-nio-8080-exec-1] INFO  console_logger  - TEST SCENARIO 3
+15:07:25.606 [http-nio-8080-exec-6] INFO  console_logger  - $$$$$$$$$$$$$$$$$$$$$$$$ ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ДЛЯ VIP-КЛИЕНТОВ $$$$$$$$$$$$$$$$$$$$$$$$
+15:07:25.606 [http-nio-8080-exec-6] INFO  console_logger  - runet-id:   7006666
+15:07:25.606 [http-nio-8080-exec-6] INFO  console_logger  - phone:   89161206481
+15:07:25.607 [http-nio-8080-exec-6] INFO  console_logger  - url:   http://yandex.ru
+15:07:25.607 [http-nio-8080-exec-6] INFO  console_logger  - referer:   http://localhost:8080/test_scenario_3
+15:07:25.649 [http-nio-8080-exec-6] INFO  console_logger  - ПДЛ или нет?   true
+15:07:25.650 [http-nio-8080-exec-6] INFO  console_logger  - Threadlocal = null
+15:10:31.861 [http-nio-8080-exec-10] INFO  console_logger  - TEST SCENARIO 3
+15:10:33.436 [http-nio-8080-exec-1] INFO  console_logger  - $$$$$$$$$$$$$$$$$$$$$$$$ ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ДЛЯ VIP-КЛИЕНТОВ $$$$$$$$$$$$$$$$$$$$$$$$
+15:10:33.437 [http-nio-8080-exec-1] INFO  console_logger  - runet-id:   7006666
+15:10:33.437 [http-nio-8080-exec-1] INFO  console_logger  - phone:   89161206481
+15:10:33.438 [http-nio-8080-exec-1] INFO  console_logger  - url:   http://yandex.ru
+15:10:33.438 [http-nio-8080-exec-1] INFO  console_logger  - referer:   http://localhost:8080/test_scenario_3
+15:10:33.441 [http-nio-8080-exec-1] INFO  console_logger  - ПДЛ или нет?   true
+15:10:33.442 [http-nio-8080-exec-1] INFO  console_logger  - Threadlocal = null
+15:14:16.482 [http-nio-8080-exec-1] INFO  console_logger  - TEST SCENARIO 3
+15:14:18.424 [http-nio-8080-exec-6] INFO  console_logger  - $$$$$$$$$$$$$$$$$$$$$$$$ ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ДЛЯ VIP-КЛИЕНТОВ $$$$$$$$$$$$$$$$$$$$$$$$
+15:14:18.425 [http-nio-8080-exec-6] INFO  console_logger  - runet-id:   7006666
+15:14:18.426 [http-nio-8080-exec-6] INFO  console_logger  - phone:   89161206481
+15:14:18.426 [http-nio-8080-exec-6] INFO  console_logger  - url:   http://yandex.ru
+15:14:18.426 [http-nio-8080-exec-6] INFO  console_logger  - referer:   http://localhost:8080/test_scenario_3
+15:14:18.472 [http-nio-8080-exec-6] INFO  console_logger  - ПДЛ или нет?   true
+15:14:18.473 [http-nio-8080-exec-6] INFO  console_logger  - Threadlocal = null
+15:17:44.422 [http-nio-8080-exec-1] INFO  console_logger  - TEST SCENARIO 3
+15:17:46.077 [http-nio-8080-exec-4] INFO  console_logger  - $$$$$$$$$$$$$$$$$$$$$$$$ ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ДЛЯ VIP-КЛИЕНТОВ $$$$$$$$$$$$$$$$$$$$$$$$
+15:17:46.078 [http-nio-8080-exec-4] INFO  console_logger  - runet-id:   7006666
+15:17:46.078 [http-nio-8080-exec-4] INFO  console_logger  - phone:   89161206481
+15:17:46.078 [http-nio-8080-exec-4] INFO  console_logger  - url:   http://yandex.ru
+15:17:46.078 [http-nio-8080-exec-4] INFO  console_logger  - referer:   http://localhost:8080/test_scenario_3
+15:17:46.124 [http-nio-8080-exec-4] INFO  console_logger  - ПДЛ или нет?   true
+15:17:46.124 [http-nio-8080-exec-4] INFO  console_logger  - Threadlocal = null
+15:20:25.189 [http-nio-8080-exec-1] INFO  console_logger  - TEST SCENARIO 3
+15:20:26.927 [http-nio-8080-exec-5] INFO  console_logger  - $$$$$$$$$$$$$$$$$$$$$$$$ ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ДЛЯ VIP-КЛИЕНТОВ $$$$$$$$$$$$$$$$$$$$$$$$
+15:20:26.928 [http-nio-8080-exec-5] INFO  console_logger  - runet-id:   7006666
+15:20:26.929 [http-nio-8080-exec-5] INFO  console_logger  - phone:   89161206481
+15:20:26.929 [http-nio-8080-exec-5] INFO  console_logger  - url:   http://yandex.ru
+15:20:26.930 [http-nio-8080-exec-5] INFO  console_logger  - referer:   http://localhost:8080/test_scenario_3
+15:20:26.976 [http-nio-8080-exec-5] INFO  console_logger  - ПДЛ или нет?   true
+15:20:26.976 [http-nio-8080-exec-5] INFO  console_logger  - Threadlocal = null
+15:21:08.411 [http-nio-8080-exec-9] INFO  console_logger  - TEST SCENARIO 2
+15:21:16.812 [http-nio-8080-exec-4] INFO  console_logger  - TEST SCENARIO 2
+15:21:23.489 [http-nio-8080-exec-6] INFO  console_logger  - ########### ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ###########
+15:21:23.489 [http-nio-8080-exec-6] INFO  console_logger  - runet-id:   7005555
+15:21:23.489 [http-nio-8080-exec-6] INFO  console_logger  - url:   http://yandex.ru
+15:21:23.490 [http-nio-8080-exec-6] INFO  console_logger  - referer:   http://localhost:8080/test_scenario_2
+15:21:23.511 [http-nio-8080-exec-6] ERROR console_logger  - У клиента уже есть пластиковая карта !!
+15:21:35.448 [http-nio-8080-exec-10] INFO  console_logger  - ########### ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ###########
+15:21:35.449 [http-nio-8080-exec-10] INFO  console_logger  - runet-id:   7005555
+15:21:35.449 [http-nio-8080-exec-10] INFO  console_logger  - url:   http://yandex.ru
+15:21:35.449 [http-nio-8080-exec-10] INFO  console_logger  - referer:   http://localhost:8080/card?runet-id=7005555&url=http%3A%2F%2Fyandex.ru
+15:21:35.465 [http-nio-8080-exec-10] ERROR console_logger  - У клиента уже есть пластиковая карта !!
+15:21:40.766 [http-nio-8080-exec-1] INFO  console_logger  - ########### ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ###########
+15:21:40.768 [http-nio-8080-exec-1] INFO  console_logger  - runet-id:   7005555
+15:21:40.768 [http-nio-8080-exec-1] INFO  console_logger  - url:   http://yandex.ru
+15:21:40.769 [http-nio-8080-exec-1] INFO  console_logger  - referer:   http://localhost:8080/card?runet-id=7005555&url=http%3A%2F%2Fyandex.ru
+15:21:40.782 [http-nio-8080-exec-1] ERROR console_logger  - У клиента уже есть пластиковая карта !!
+15:21:43.836 [http-nio-8080-exec-3] INFO  console_logger  - TEST SCENARIO 3
+15:21:58.252 [http-nio-8080-exec-6] INFO  console_logger  - $$$$$$$$$$$$$$$$$$$$$$$$ ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ДЛЯ VIP-КЛИЕНТОВ $$$$$$$$$$$$$$$$$$$$$$$$
+15:21:58.253 [http-nio-8080-exec-6] INFO  console_logger  - runet-id:   7006666
+15:21:58.253 [http-nio-8080-exec-6] INFO  console_logger  - phone:   89161206481
+15:21:58.253 [http-nio-8080-exec-6] INFO  console_logger  - url:   http://yandex.ru
+15:21:58.254 [http-nio-8080-exec-6] INFO  console_logger  - referer:   http://localhost:8080/test_scenario_3
+15:21:58.256 [http-nio-8080-exec-6] INFO  console_logger  - ПДЛ или нет?   true
+15:21:58.256 [http-nio-8080-exec-6] INFO  console_logger  - Threadlocal = null
+15:25:54.073 [http-nio-8080-exec-1] INFO  console_logger  - TEST SCENARIO 3
+15:25:55.764 [http-nio-8080-exec-9] INFO  console_logger  - $$$$$$$$$$$$$$$$$$$$$$$$ ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ДЛЯ VIP-КЛИЕНТОВ $$$$$$$$$$$$$$$$$$$$$$$$
+15:25:55.765 [http-nio-8080-exec-9] INFO  console_logger  - runet-id:   7006666
+15:25:55.765 [http-nio-8080-exec-9] INFO  console_logger  - phone:   89161206481
+15:25:55.766 [http-nio-8080-exec-9] INFO  console_logger  - url:   http://yandex.ru
+15:25:55.766 [http-nio-8080-exec-9] INFO  console_logger  - referer:   http://localhost:8080/test_scenario_3
+15:25:55.810 [http-nio-8080-exec-9] INFO  console_logger  - ПДЛ или нет?   true
+15:25:55.811 [http-nio-8080-exec-9] INFO  console_logger  - Threadlocal = null
+15:26:39.908 [http-nio-8080-exec-10] INFO  console_logger  - Threadlocal = null
+15:26:39.909 [http-nio-8080-exec-10] ERROR console_logger  - ********* ТЕСТОВЫЙ РЕЖИМ ВКЛЮЧЕН ************
+15:26:39.909 [http-nio-8080-exec-10] ERROR console_logger  - ---------- ПРОВЕРКА ПАСПОРТА ----------
+15:26:39.909 [http-nio-8080-exec-10] ERROR console_logger  - Сгенерировали левые данные: {redirectUrl=http://yandex.ru, birthdate=11.11.1111, codeword=32600634, card_ean=225841039, card_last_4=1397, startUrl=http://localhost:8080/test_scenario_3, number=682720536, patronymic=384326133, phoneNumber=1788041157, surname=1500708222, series=628792586, name=1220391872, PDL=true, runetId=7006666, passportId=596010625}
+15:30:19.389 [http-nio-8080-exec-1] INFO  console_logger  - TEST SCENARIO 3
+15:30:20.808 [http-nio-8080-exec-8] INFO  console_logger  - $$$$$$$$$$$$$$$$$$$$$$$$ ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ДЛЯ VIP-КЛИЕНТОВ $$$$$$$$$$$$$$$$$$$$$$$$
+15:30:20.809 [http-nio-8080-exec-8] INFO  console_logger  - runet-id:   7006666
+15:30:20.809 [http-nio-8080-exec-8] INFO  console_logger  - phone:   89161206481
+15:30:20.809 [http-nio-8080-exec-8] INFO  console_logger  - url:   http://yandex.ru
+15:30:20.809 [http-nio-8080-exec-8] INFO  console_logger  - referer:   http://localhost:8080/test_scenario_3
+15:30:20.852 [http-nio-8080-exec-8] INFO  console_logger  - ПДЛ или нет?   true
+15:30:20.853 [http-nio-8080-exec-8] INFO  console_logger  - Threadlocal = null
+15:30:31.127 [http-nio-8080-exec-10] INFO  console_logger  - Threadlocal = null
+15:30:31.127 [http-nio-8080-exec-10] ERROR console_logger  - ********* ТЕСТОВЫЙ РЕЖИМ ВКЛЮЧЕН ************
+15:30:31.128 [http-nio-8080-exec-10] ERROR console_logger  - ---------- ПРОВЕРКА ПАСПОРТА ----------
+15:30:31.128 [http-nio-8080-exec-10] ERROR console_logger  - Сгенерировали левые данные: {redirectUrl=http://yandex.ru, birthdate=11.11.1111, codeword=1098590857, card_ean=340874147, card_last_4=2741, startUrl=http://localhost:8080/test_scenario_3, number=1395537213, patronymic=1773512865, phoneNumber=1366199712, surname=858567399, series=511923558, name=1578206936, PDL=true, runetId=7006666, passportId=1273164818}
+15:30:57.693 [http-nio-8080-exec-8] INFO  console_logger  - TEST SCENARIO 3
+15:30:59.686 [http-nio-8080-exec-2] INFO  console_logger  - $$$$$$$$$$$$$$$$$$$$$$$$ ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ДЛЯ VIP-КЛИЕНТОВ $$$$$$$$$$$$$$$$$$$$$$$$
+15:30:59.687 [http-nio-8080-exec-2] INFO  console_logger  - runet-id:   7006666
+15:30:59.687 [http-nio-8080-exec-2] INFO  console_logger  - phone:   89161206481
+15:30:59.687 [http-nio-8080-exec-2] INFO  console_logger  - url:   http://yandex.ru
+15:30:59.687 [http-nio-8080-exec-2] INFO  console_logger  - referer:   http://localhost:8080/test_scenario_3
+15:30:59.689 [http-nio-8080-exec-2] INFO  console_logger  - ПДЛ или нет?   true
+15:30:59.689 [http-nio-8080-exec-2] INFO  console_logger  - Threadlocal = null
+15:31:39.608 [http-nio-8080-exec-1] INFO  console_logger  - Threadlocal = null
+15:31:39.609 [http-nio-8080-exec-1] ERROR console_logger  - ********* ТЕСТОВЫЙ РЕЖИМ ВКЛЮЧЕН ************
+15:31:39.609 [http-nio-8080-exec-1] ERROR console_logger  - ---------- ПРОВЕРКА ПАСПОРТА ----------
+15:31:39.609 [http-nio-8080-exec-1] ERROR console_logger  - Сгенерировали левые данные: {redirectUrl=http://yandex.ru, birthdate=11.11.1111, codeword=215286857, card_ean=1564732161, card_last_4=1815, startUrl=http://localhost:8080/test_scenario_3, number=1446904901, patronymic=1892982188, phoneNumber=1707941263, surname=1914606256, series=149796958, name=1829196657, PDL=true, runetId=7006666, passportId=1940394580}
+15:34:39.786 [http-nio-8080-exec-1] INFO  console_logger  - TEST SCENARIO 3
+15:34:41.525 [http-nio-8080-exec-2] INFO  console_logger  - $$$$$$$$$$$$$$$$$$$$$$$$ ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ДЛЯ VIP-КЛИЕНТОВ $$$$$$$$$$$$$$$$$$$$$$$$
+15:34:41.525 [http-nio-8080-exec-2] INFO  console_logger  - runet-id:   7006666
+15:34:41.526 [http-nio-8080-exec-2] INFO  console_logger  - phone:   89161206481
+15:34:41.526 [http-nio-8080-exec-2] INFO  console_logger  - url:   http://yandex.ru
+15:34:41.526 [http-nio-8080-exec-2] INFO  console_logger  - referer:   http://localhost:8080/test_scenario_3
+15:34:41.569 [http-nio-8080-exec-2] INFO  console_logger  - ПДЛ или нет?   true
+15:34:41.569 [http-nio-8080-exec-2] INFO  console_logger  - Threadlocal = null
+15:35:18.245 [http-nio-8080-exec-3] INFO  console_logger  - Threadlocal = null
+15:35:18.245 [http-nio-8080-exec-3] ERROR console_logger  - ********* ТЕСТОВЫЙ РЕЖИМ ВКЛЮЧЕН ************
+15:35:18.245 [http-nio-8080-exec-3] ERROR console_logger  - ---------- ПРОВЕРКА ПАСПОРТА ----------
+15:35:18.245 [http-nio-8080-exec-3] ERROR console_logger  - Сгенерировали левые данные: {redirectUrl=http://yandex.ru, birthdate=11.11.1111, codeword=1043381559, card_ean=1848565281, card_last_4=2399, startUrl=http://localhost:8080/test_scenario_3, number=838472353, patronymic=192923414, phoneNumber=1865036573, surname=684159076, series=1536280664, name=467287809, PDL=true, runetId=7006666, passportId=288880139}
+15:35:46.590 [http-nio-8080-exec-9] INFO  console_logger  - TEST SCENARIO 3
+15:35:50.982 [http-nio-8080-exec-3] INFO  console_logger  - $$$$$$$$$$$$$$$$$$$$$$$$ ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ДЛЯ VIP-КЛИЕНТОВ $$$$$$$$$$$$$$$$$$$$$$$$
+15:35:50.983 [http-nio-8080-exec-3] INFO  console_logger  - runet-id:   7006666
+15:35:50.983 [http-nio-8080-exec-3] INFO  console_logger  - phone:   89161206481
+15:35:50.983 [http-nio-8080-exec-3] INFO  console_logger  - url:   http://yandex.ru
+15:35:50.983 [http-nio-8080-exec-3] INFO  console_logger  - referer:   http://localhost:8080/test_scenario_3
+15:35:50.985 [http-nio-8080-exec-3] INFO  console_logger  - ПДЛ или нет?   true
+15:35:50.986 [http-nio-8080-exec-3] INFO  console_logger  - Threadlocal = null
+15:37:11.669 [http-nio-8080-exec-1] INFO  console_logger  - TEST SCENARIO 3
+15:37:14.166 [http-nio-8080-exec-5] INFO  console_logger  - $$$$$$$$$$$$$$$$$$$$$$$$ ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ДЛЯ VIP-КЛИЕНТОВ $$$$$$$$$$$$$$$$$$$$$$$$
+15:37:14.167 [http-nio-8080-exec-5] INFO  console_logger  - runet-id:   7006666
+15:37:14.168 [http-nio-8080-exec-5] INFO  console_logger  - phone:   89161206481
+15:37:14.169 [http-nio-8080-exec-5] INFO  console_logger  - url:   http://yandex.ru
+15:37:14.169 [http-nio-8080-exec-5] INFO  console_logger  - referer:   http://localhost:8080/test_scenario_3
+15:37:14.214 [http-nio-8080-exec-5] INFO  console_logger  - ПДЛ или нет?   true
+15:37:14.214 [http-nio-8080-exec-5] INFO  console_logger  - Threadlocal = null
+15:49:44.037 [http-nio-8080-exec-1] INFO  console_logger  - TEST SCENARIO 3
+15:49:47.212 [http-nio-8080-exec-4] INFO  console_logger  - $$$$$$$$$$$$$$$$$$$$$$$$ ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ДЛЯ VIP-КЛИЕНТОВ $$$$$$$$$$$$$$$$$$$$$$$$
+15:49:47.213 [http-nio-8080-exec-4] INFO  console_logger  - runet-id:   7006666
+15:49:47.213 [http-nio-8080-exec-4] INFO  console_logger  - phone:   89161206481
+15:49:47.213 [http-nio-8080-exec-4] INFO  console_logger  - url:   http://yandex.ru
+15:49:47.213 [http-nio-8080-exec-4] INFO  console_logger  - referer:   http://localhost:8080/test_scenario_3
+15:49:47.258 [http-nio-8080-exec-4] INFO  console_logger  - ПДЛ или нет?   true
+15:49:47.259 [http-nio-8080-exec-4] INFO  console_logger  - Threadlocal = null
+15:50:39.424 [http-nio-8080-exec-7] INFO  console_logger  - Threadlocal = null
+15:50:39.425 [http-nio-8080-exec-7] ERROR console_logger  - ********* ТЕСТОВЫЙ РЕЖИМ ВКЛЮЧЕН ************
+15:50:39.425 [http-nio-8080-exec-7] ERROR console_logger  - ---------- ПРОВЕРКА ПАСПОРТА ----------
+15:50:39.425 [http-nio-8080-exec-7] ERROR console_logger  - Сгенерировали левые данные: {redirectUrl=http://yandex.ru, birthdate=11.11.1111, codeword=1196863654, card_ean=969792376, card_last_4=8070, startUrl=http://localhost:8080/test_scenario_3, number=1214200699, patronymic=857490906, phoneNumber=232136118, surname=1297524949, series=1987859524, name=1724089371, PDL=true, runetId=7006666, passportId=339175568}
+15:51:32.108 [http-nio-8080-exec-1] INFO  console_logger  - TEST SCENARIO 3
+15:51:34.033 [http-nio-8080-exec-4] INFO  console_logger  - $$$$$$$$$$$$$$$$$$$$$$$$ ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ДЛЯ VIP-КЛИЕНТОВ $$$$$$$$$$$$$$$$$$$$$$$$
+15:51:34.034 [http-nio-8080-exec-4] INFO  console_logger  - runet-id:   7006666
+15:51:34.034 [http-nio-8080-exec-4] INFO  console_logger  - phone:   89161206481
+15:51:34.034 [http-nio-8080-exec-4] INFO  console_logger  - url:   http://yandex.ru
+15:51:34.034 [http-nio-8080-exec-4] INFO  console_logger  - referer:   http://localhost:8080/test_scenario_3
+15:51:34.077 [http-nio-8080-exec-4] INFO  console_logger  - ПДЛ или нет?   true
+15:51:34.077 [http-nio-8080-exec-4] INFO  console_logger  - Threadlocal = null
+15:52:21.694 [http-nio-8080-exec-10] INFO  console_logger  - Threadlocal = null
+15:52:21.695 [http-nio-8080-exec-10] ERROR console_logger  - ********* ТЕСТОВЫЙ РЕЖИМ ВКЛЮЧЕН ************
+15:52:21.695 [http-nio-8080-exec-10] ERROR console_logger  - ---------- ПРОВЕРКА ПАСПОРТА ----------
+15:52:21.695 [http-nio-8080-exec-10] ERROR console_logger  - Сгенерировали левые данные: {redirectUrl=http://yandex.ru, birthdate=11.11.1111, codeword=340656588, card_ean=1686965725, card_last_4=1904, startUrl=http://localhost:8080/test_scenario_3, number=1816688881, patronymic=1272603743, phoneNumber=657056190, surname=269478412, series=1895629458, name=157504171, PDL=true, runetId=7006666, passportId=1902831011}
+15:56:43.874 [http-nio-8080-exec-1] INFO  console_logger  - TEST SCENARIO 3
+15:56:45.597 [http-nio-8080-exec-2] INFO  console_logger  - $$$$$$$$$$$$$$$$$$$$$$$$ ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ДЛЯ VIP-КЛИЕНТОВ $$$$$$$$$$$$$$$$$$$$$$$$
+15:56:45.598 [http-nio-8080-exec-2] INFO  console_logger  - runet-id:   7006666
+15:56:45.598 [http-nio-8080-exec-2] INFO  console_logger  - phone:   89161206481
+15:56:45.599 [http-nio-8080-exec-2] INFO  console_logger  - url:   http://yandex.ru
+15:56:45.599 [http-nio-8080-exec-2] INFO  console_logger  - referer:   http://localhost:8080/test_scenario_3
+15:56:45.645 [http-nio-8080-exec-2] INFO  console_logger  - ПДЛ или нет?   true
+15:56:45.646 [http-nio-8080-exec-2] INFO  console_logger  - Threadlocal = null
+15:57:00.273 [http-nio-8080-exec-9] INFO  console_logger  - Threadlocal = null
+15:57:00.274 [http-nio-8080-exec-9] ERROR console_logger  - ********* ТЕСТОВЫЙ РЕЖИМ ВКЛЮЧЕН ************
+15:57:00.274 [http-nio-8080-exec-9] ERROR console_logger  - ---------- ПРОВЕРКА ПАСПОРТА ----------
+15:57:00.274 [http-nio-8080-exec-9] ERROR console_logger  - Сгенерировали левые данные: {redirectUrl=http://yandex.ru, birthdate=11.11.1111, codeword=455866103, card_ean=148488540, card_last_4=8686, startUrl=http://localhost:8080/test_scenario_3, number=861311917, patronymic=961726427, phoneNumber=999017523, surname=1162411693, series=604513794, name=1292697203, PDL=true, runetId=7006666, passportId=974328588}
+15:58:40.476 [http-nio-8080-exec-1] INFO  console_logger  - TEST SCENARIO 3
+15:58:41.865 [http-nio-8080-exec-4] INFO  console_logger  - $$$$$$$$$$$$$$$$$$$$$$$$ ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ДЛЯ VIP-КЛИЕНТОВ $$$$$$$$$$$$$$$$$$$$$$$$
+15:58:41.866 [http-nio-8080-exec-4] INFO  console_logger  - runet-id:   7006666
+15:58:41.867 [http-nio-8080-exec-4] INFO  console_logger  - phone:   89161206481
+15:58:41.868 [http-nio-8080-exec-4] INFO  console_logger  - url:   http://yandex.ru
+15:58:41.868 [http-nio-8080-exec-4] INFO  console_logger  - referer:   http://localhost:8080/test_scenario_3
+15:58:41.915 [http-nio-8080-exec-4] INFO  console_logger  - ПДЛ или нет?   true
+15:58:41.915 [http-nio-8080-exec-4] INFO  console_logger  - Threadlocal = null
+15:58:50.096 [http-nio-8080-exec-9] INFO  console_logger  - Threadlocal = null
+15:58:50.096 [http-nio-8080-exec-9] ERROR console_logger  - ********* ТЕСТОВЫЙ РЕЖИМ ВКЛЮЧЕН ************
+15:58:50.097 [http-nio-8080-exec-9] ERROR console_logger  - ---------- ПРОВЕРКА ПАСПОРТА ----------
+15:58:50.097 [http-nio-8080-exec-9] ERROR console_logger  - Сгенерировали левые данные: {redirectUrl=http://yandex.ru, birthdate=11.11.1111, codeword=428109870, card_ean=1028127614, card_last_4=1507, startUrl=http://localhost:8080/test_scenario_3, number=84564681, patronymic=1430151760, phoneNumber=1550773785, surname=1660081053, series=526538323, name=989539818, PDL=true, runetId=7006666, passportId=763574620}
+16:00:29.773 [http-nio-8080-exec-1] INFO  console_logger  - TEST SCENARIO 3
+16:00:31.377 [http-nio-8080-exec-4] INFO  console_logger  - $$$$$$$$$$$$$$$$$$$$$$$$ ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ДЛЯ VIP-КЛИЕНТОВ $$$$$$$$$$$$$$$$$$$$$$$$
+16:00:31.378 [http-nio-8080-exec-4] INFO  console_logger  - runet-id:   7006666
+16:00:31.378 [http-nio-8080-exec-4] INFO  console_logger  - phone:   89161206481
+16:00:31.379 [http-nio-8080-exec-4] INFO  console_logger  - url:   http://yandex.ru
+16:00:31.379 [http-nio-8080-exec-4] INFO  console_logger  - referer:   http://localhost:8080/test_scenario_3
+16:00:31.421 [http-nio-8080-exec-4] INFO  console_logger  - ПДЛ или нет?   true
+16:00:31.421 [http-nio-8080-exec-4] INFO  console_logger  - Threadlocal = null
+16:02:13.882 [http-nio-8080-exec-1] INFO  console_logger  - TEST SCENARIO 3
+16:02:15.703 [http-nio-8080-exec-4] INFO  console_logger  - $$$$$$$$$$$$$$$$$$$$$$$$ ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ДЛЯ VIP-КЛИЕНТОВ $$$$$$$$$$$$$$$$$$$$$$$$
+16:02:15.703 [http-nio-8080-exec-4] INFO  console_logger  - runet-id:   7006666
+16:02:15.704 [http-nio-8080-exec-4] INFO  console_logger  - phone:   89161206481
+16:02:15.704 [http-nio-8080-exec-4] INFO  console_logger  - url:   http://yandex.ru
+16:02:15.704 [http-nio-8080-exec-4] INFO  console_logger  - referer:   http://localhost:8080/test_scenario_3
+16:02:15.750 [http-nio-8080-exec-4] INFO  console_logger  - ПДЛ или нет?   true
+16:02:15.750 [http-nio-8080-exec-4] INFO  console_logger  - Threadlocal = null
+16:05:19.685 [http-nio-8080-exec-1] INFO  console_logger  - TEST SCENARIO 3
+16:05:28.732 [http-nio-8080-exec-4] INFO  console_logger  - $$$$$$$$$$$$$$$$$$$$$$$$ ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ДЛЯ VIP-КЛИЕНТОВ $$$$$$$$$$$$$$$$$$$$$$$$
+16:05:28.732 [http-nio-8080-exec-4] INFO  console_logger  - runet-id:   7006666
+16:05:28.732 [http-nio-8080-exec-4] INFO  console_logger  - phone:   89161206481
+16:05:28.733 [http-nio-8080-exec-4] INFO  console_logger  - url:   http://yandex.ru
+16:05:28.733 [http-nio-8080-exec-4] INFO  console_logger  - referer:   http://localhost:8080/test_scenario_3
+16:05:28.774 [http-nio-8080-exec-4] INFO  console_logger  - ПДЛ или нет?   true
+16:05:28.775 [http-nio-8080-exec-4] INFO  console_logger  - Threadlocal = null
+16:07:07.044 [http-nio-8080-exec-1] INFO  console_logger  - TEST SCENARIO 3
+16:07:08.710 [http-nio-8080-exec-3] INFO  console_logger  - $$$$$$$$$$$$$$$$$$$$$$$$ ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ДЛЯ VIP-КЛИЕНТОВ $$$$$$$$$$$$$$$$$$$$$$$$
+16:07:08.710 [http-nio-8080-exec-3] INFO  console_logger  - runet-id:   7006666
+16:07:08.711 [http-nio-8080-exec-3] INFO  console_logger  - phone:   89161206481
+16:07:08.711 [http-nio-8080-exec-3] INFO  console_logger  - url:   http://yandex.ru
+16:07:08.711 [http-nio-8080-exec-3] INFO  console_logger  - referer:   http://localhost:8080/test_scenario_3
+16:07:08.755 [http-nio-8080-exec-3] INFO  console_logger  - ПДЛ или нет?   true
+16:07:08.755 [http-nio-8080-exec-3] INFO  console_logger  - Threadlocal = null
+16:09:28.986 [http-nio-8080-exec-1] INFO  console_logger  - TEST SCENARIO 3
+16:09:32.786 [http-nio-8080-exec-2] INFO  console_logger  - $$$$$$$$$$$$$$$$$$$$$$$$ ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ДЛЯ VIP-КЛИЕНТОВ $$$$$$$$$$$$$$$$$$$$$$$$
+16:09:32.787 [http-nio-8080-exec-2] INFO  console_logger  - runet-id:   7006666
+16:09:32.787 [http-nio-8080-exec-2] INFO  console_logger  - phone:   89161206481
+16:09:32.788 [http-nio-8080-exec-2] INFO  console_logger  - url:   http://yandex.ru
+16:09:32.788 [http-nio-8080-exec-2] INFO  console_logger  - referer:   http://localhost:8080/test_scenario_3
+16:09:32.830 [http-nio-8080-exec-2] INFO  console_logger  - ПДЛ или нет?   true
+16:09:32.831 [http-nio-8080-exec-2] INFO  console_logger  - Threadlocal = null
+16:09:38.129 [http-nio-8080-exec-8] INFO  console_logger  - TEST SCENARIO 3
+16:10:16.759 [http-nio-8080-exec-9] INFO  console_logger  - TEST SCENARIO 2
+16:10:20.710 [http-nio-8080-exec-7] INFO  console_logger  - ########### ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ###########
+16:10:20.710 [http-nio-8080-exec-7] INFO  console_logger  - runet-id:   7006666
+16:10:20.711 [http-nio-8080-exec-7] INFO  console_logger  - url:   http://yandex.ru
+16:10:20.711 [http-nio-8080-exec-7] INFO  console_logger  - referer:   http://localhost:8080/test_scenario_2
+16:10:20.736 [http-nio-8080-exec-10] INFO  console_logger  - ########### ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ###########
+16:10:20.736 [http-nio-8080-exec-10] INFO  console_logger  - runet-id:   7006666
+16:10:20.737 [http-nio-8080-exec-10] INFO  console_logger  - url:   http://yandex.ru
+16:10:20.737 [http-nio-8080-exec-10] INFO  console_logger  - referer:   null
+16:10:20.761 [http-nio-8080-exec-7] ERROR console_logger  - НЕТ УПРИДА И ВПК
+16:10:20.762 [http-nio-8080-exec-7] INFO  console_logger  - Принял парамметры для заполнения анкеты по сценарию 3.1: {startUrl=http://localhost:8080/test_scenario_2, redirectUrl=http://yandex.ru, runetId=7006666}
+16:10:20.762 [http-nio-8080-exec-7] INFO  console_logger  - Threadlocal = PLASTIC_FOR_ALL
+16:10:20.784 [http-nio-8080-exec-10] ERROR console_logger  - НЕТ УПРИДА И ВПК
+16:10:20.785 [http-nio-8080-exec-10] INFO  console_logger  - Принял парамметры для заполнения анкеты по сценарию 3.1: {startUrl=null, redirectUrl=http://yandex.ru, runetId=7006666}
+16:10:20.785 [http-nio-8080-exec-10] INFO  console_logger  - Threadlocal = PLASTIC_FOR_ALL
+16:10:32.461 [http-nio-8080-exec-4] INFO  console_logger  - TEST SCENARIO 3
+16:10:36.747 [http-nio-8080-exec-5] INFO  console_logger  - $$$$$$$$$$$$$$$$$$$$$$$$ ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ДЛЯ VIP-КЛИЕНТОВ $$$$$$$$$$$$$$$$$$$$$$$$
+16:10:36.748 [http-nio-8080-exec-5] INFO  console_logger  - runet-id:   7006666
+16:10:36.748 [http-nio-8080-exec-5] INFO  console_logger  - phone:   89161206481
+16:10:36.749 [http-nio-8080-exec-5] INFO  console_logger  - url:   http://yandex.ru
+16:10:36.749 [http-nio-8080-exec-5] INFO  console_logger  - referer:   http://localhost:8080/test_scenario_3
+16:10:36.750 [http-nio-8080-exec-5] INFO  console_logger  - ПДЛ или нет?   true
+16:10:36.750 [http-nio-8080-exec-5] INFO  console_logger  - Threadlocal = PLASTIC_FOR_ALL
+16:11:40.392 [http-nio-8080-exec-2] INFO  console_logger  - TEST SCENARIO 3
+16:11:40.392 [http-nio-8080-exec-1] INFO  console_logger  - TEST SCENARIO 3
+16:11:43.129 [http-nio-8080-exec-3] INFO  console_logger  - $$$$$$$$$$$$$$$$$$$$$$$$ ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ДЛЯ VIP-КЛИЕНТОВ $$$$$$$$$$$$$$$$$$$$$$$$
+16:11:43.130 [http-nio-8080-exec-3] INFO  console_logger  - runet-id:   7006666
+16:11:43.130 [http-nio-8080-exec-3] INFO  console_logger  - phone:   89161206481
+16:11:43.130 [http-nio-8080-exec-3] INFO  console_logger  - url:   http://yandex.ru
+16:11:43.131 [http-nio-8080-exec-3] INFO  console_logger  - referer:   http://localhost:8080/test_scenario_3
+16:11:43.165 [http-nio-8080-exec-4] INFO  console_logger  - $$$$$$$$$$$$$$$$$$$$$$$$ ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ДЛЯ VIP-КЛИЕНТОВ $$$$$$$$$$$$$$$$$$$$$$$$
+16:11:43.165 [http-nio-8080-exec-4] INFO  console_logger  - runet-id:   7006666
+16:11:43.165 [http-nio-8080-exec-4] INFO  console_logger  - phone:   89161206481
+16:11:43.165 [http-nio-8080-exec-4] INFO  console_logger  - url:   http://yandex.ru
+16:11:43.165 [http-nio-8080-exec-4] INFO  console_logger  - referer:   null
+16:11:43.179 [http-nio-8080-exec-3] INFO  console_logger  - ПДЛ или нет?   true
+16:11:43.179 [http-nio-8080-exec-4] INFO  console_logger  - ПДЛ или нет?   true
+16:11:43.180 [http-nio-8080-exec-3] INFO  console_logger  - Threadlocal = null
+16:11:43.180 [http-nio-8080-exec-4] INFO  console_logger  - Threadlocal = null
+16:12:50.495 [http-nio-8080-exec-1] INFO  console_logger  - Threadlocal = null
+16:12:50.496 [http-nio-8080-exec-1] ERROR console_logger  - ********* ТЕСТОВЫЙ РЕЖИМ ВКЛЮЧЕН ************
+16:12:50.496 [http-nio-8080-exec-1] ERROR console_logger  - ---------- ПРОВЕРКА ПАСПОРТА ----------
+16:12:50.497 [http-nio-8080-exec-1] ERROR console_logger  - Сгенерировали левые данные: {number=341870251, patronymic=1719641870, phoneNumber=306876516, birthdate=11.11.1111, codeword=1605642722, card_ean=1717378096, surname=513768345, series=655136532, card_last_4=8600, name=1038400230, passportId=1403705891}
+16:12:50.500 [http-nio-8080-exec-5] INFO  console_logger  - Threadlocal = null
+16:12:50.500 [http-nio-8080-exec-5] ERROR console_logger  - ********* ТЕСТОВЫЙ РЕЖИМ ВКЛЮЧЕН ************
+16:12:50.500 [http-nio-8080-exec-5] ERROR console_logger  - ---------- ПРОВЕРКА ПАСПОРТА ----------
+16:12:50.501 [http-nio-8080-exec-5] ERROR console_logger  - Сгенерировали левые данные: {redirectUrl=http://yandex.ru, birthdate=11.11.1111, codeword=852389298, card_ean=1941919084, card_last_4=3771, startUrl=http://localhost:8080/test_scenario_3, number=1382320216, patronymic=1730728033, phoneNumber=1422726285, surname=1453763089, series=1356801590, name=235105194, PDL=true, runetId=7006666, passportId=846279671}
+16:13:40.521 [http-nio-8080-exec-1] INFO  console_logger  - TEST SCENARIO 3
+16:13:40.521 [http-nio-8080-exec-2] INFO  console_logger  - TEST SCENARIO 3
+16:13:41.876 [http-nio-8080-exec-3] INFO  console_logger  - $$$$$$$$$$$$$$$$$$$$$$$$ ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ДЛЯ VIP-КЛИЕНТОВ $$$$$$$$$$$$$$$$$$$$$$$$
+16:13:41.877 [http-nio-8080-exec-3] INFO  console_logger  - runet-id:   7006666
+16:13:41.877 [http-nio-8080-exec-3] INFO  console_logger  - phone:   89161206481
+16:13:41.877 [http-nio-8080-exec-3] INFO  console_logger  - url:   http://yandex.ru
+16:13:41.877 [http-nio-8080-exec-3] INFO  console_logger  - referer:   http://localhost:8080/test_scenario_3
+16:13:41.902 [http-nio-8080-exec-10] INFO  console_logger  - $$$$$$$$$$$$$$$$$$$$$$$$ ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ДЛЯ VIP-КЛИЕНТОВ $$$$$$$$$$$$$$$$$$$$$$$$
+16:13:41.903 [http-nio-8080-exec-10] INFO  console_logger  - runet-id:   7006666
+16:13:41.903 [http-nio-8080-exec-10] INFO  console_logger  - phone:   89161206481
+16:13:41.903 [http-nio-8080-exec-10] INFO  console_logger  - url:   http://yandex.ru
+16:13:41.903 [http-nio-8080-exec-10] INFO  console_logger  - referer:   null
+16:13:41.929 [http-nio-8080-exec-10] INFO  console_logger  - ПДЛ или нет?   true
+16:13:41.929 [http-nio-8080-exec-3] INFO  console_logger  - ПДЛ или нет?   true
+16:13:41.930 [http-nio-8080-exec-3] INFO  console_logger  - Threadlocal = null
+16:13:41.930 [http-nio-8080-exec-10] INFO  console_logger  - Threadlocal = null
+16:14:34.338 [http-nio-8080-exec-6] INFO  console_logger  - TEST SCENARIO 3
+16:14:37.567 [http-nio-8080-exec-10] INFO  console_logger  - $$$$$$$$$$$$$$$$$$$$$$$$ ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ДЛЯ VIP-КЛИЕНТОВ $$$$$$$$$$$$$$$$$$$$$$$$
+16:14:37.567 [http-nio-8080-exec-10] INFO  console_logger  - runet-id:   7006666
+16:14:37.568 [http-nio-8080-exec-10] INFO  console_logger  - phone:   89161206481
+16:14:37.568 [http-nio-8080-exec-10] INFO  console_logger  - url:   http://yandex.ru
+16:14:37.568 [http-nio-8080-exec-10] INFO  console_logger  - referer:   http://localhost:8080/test_scenario_3
+16:14:37.570 [http-nio-8080-exec-10] INFO  console_logger  - ПДЛ или нет?   true
+16:14:37.570 [http-nio-8080-exec-10] INFO  console_logger  - Threadlocal = null
+16:14:37.609 [http-nio-8080-exec-6] INFO  console_logger  - $$$$$$$$$$$$$$$$$$$$$$$$ ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ДЛЯ VIP-КЛИЕНТОВ $$$$$$$$$$$$$$$$$$$$$$$$
+16:14:37.609 [http-nio-8080-exec-6] INFO  console_logger  - runet-id:   7006666
+16:14:37.609 [http-nio-8080-exec-6] INFO  console_logger  - phone:   89161206481
+16:14:37.609 [http-nio-8080-exec-6] INFO  console_logger  - url:   http://yandex.ru
+16:14:37.609 [http-nio-8080-exec-6] INFO  console_logger  - referer:   null
+16:14:37.611 [http-nio-8080-exec-6] INFO  console_logger  - ПДЛ или нет?   true
+16:14:37.611 [http-nio-8080-exec-6] INFO  console_logger  - Threadlocal = null
+16:17:08.999 [http-nio-8080-exec-1] INFO  console_logger  - TEST SCENARIO 3
+16:17:08.999 [http-nio-8080-exec-2] INFO  console_logger  - TEST SCENARIO 3
+16:17:27.996 [http-nio-8080-exec-7] INFO  console_logger  - $$$$$$$$$$$$$$$$$$$$$$$$ ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ДЛЯ VIP-КЛИЕНТОВ $$$$$$$$$$$$$$$$$$$$$$$$
+16:17:27.997 [http-nio-8080-exec-7] INFO  console_logger  - runet-id:   7006666
+16:17:27.998 [http-nio-8080-exec-7] INFO  console_logger  - phone:   89161206481
+16:17:27.998 [http-nio-8080-exec-7] INFO  console_logger  - url:   http://yandex.ru
+16:17:27.998 [http-nio-8080-exec-7] INFO  console_logger  - referer:   http://localhost:8080/test_scenario_3
+16:17:28.013 [http-nio-8080-exec-4] INFO  console_logger  - $$$$$$$$$$$$$$$$$$$$$$$$ ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ДЛЯ VIP-КЛИЕНТОВ $$$$$$$$$$$$$$$$$$$$$$$$
+16:17:28.013 [http-nio-8080-exec-4] INFO  console_logger  - runet-id:   7006666
+16:17:28.013 [http-nio-8080-exec-4] INFO  console_logger  - phone:   89161206481
+16:17:28.013 [http-nio-8080-exec-4] INFO  console_logger  - url:   http://yandex.ru
+16:17:28.013 [http-nio-8080-exec-4] INFO  console_logger  - referer:   null
+16:17:28.040 [http-nio-8080-exec-7] INFO  console_logger  - ПДЛ или нет?   true
+16:17:28.040 [http-nio-8080-exec-4] INFO  console_logger  - ПДЛ или нет?   true
+16:18:41.643 [http-nio-8080-exec-2] INFO  console_logger  - TEST SCENARIO 3
+16:18:46.259 [http-nio-8080-exec-9] INFO  console_logger  - $$$$$$$$$$$$$$$$$$$$$$$$ ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ДЛЯ VIP-КЛИЕНТОВ $$$$$$$$$$$$$$$$$$$$$$$$
+16:18:46.260 [http-nio-8080-exec-9] INFO  console_logger  - runet-id:   7006666
+16:18:46.260 [http-nio-8080-exec-9] INFO  console_logger  - phone:   89161206481
+16:18:46.260 [http-nio-8080-exec-9] INFO  console_logger  - url:   http://yandex.ru
+16:18:46.260 [http-nio-8080-exec-9] INFO  console_logger  - referer:   http://localhost:8080/test_scenario_3
+16:18:46.262 [http-nio-8080-exec-9] INFO  console_logger  - ПДЛ или нет?   true
+16:21:32.954 [http-nio-8080-exec-1] INFO  console_logger  - TEST SCENARIO 3
+16:21:36.751 [http-nio-8080-exec-3] INFO  console_logger  - $$$$$$$$$$$$$$$$$$$$$$$$ ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ДЛЯ VIP-КЛИЕНТОВ $$$$$$$$$$$$$$$$$$$$$$$$
+16:21:36.751 [http-nio-8080-exec-3] INFO  console_logger  - runet-id:   7006666
+16:21:36.752 [http-nio-8080-exec-3] INFO  console_logger  - phone:   89161206481
+16:21:36.752 [http-nio-8080-exec-3] INFO  console_logger  - url:   http://yandex.ru
+16:21:36.752 [http-nio-8080-exec-3] INFO  console_logger  - referer:   http://localhost:8080/test_scenario_3
+16:21:36.792 [http-nio-8080-exec-3] INFO  console_logger  - ПДЛ или нет?   true
+16:21:50.053 [http-nio-8080-exec-10] INFO  console_logger  - $$$$$$$$$$$$$$$$$$$$$$$$ ХУЙ $$$$$$$$$$$$$$$$$$$$$$$$
+17:08:18.785 [http-nio-8080-exec-1] INFO  console_logger  - TEST SCENARIO 3
+17:08:20.598 [http-nio-8080-exec-2] INFO  console_logger  - $$$$$$$$$$$$$$$$$$$$$$$$ ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ДЛЯ VIP-КЛИЕНТОВ $$$$$$$$$$$$$$$$$$$$$$$$
+17:08:20.599 [http-nio-8080-exec-2] INFO  console_logger  - runet-id:   7006666
+17:08:20.599 [http-nio-8080-exec-2] INFO  console_logger  - phone:   89161206481
+17:08:20.600 [http-nio-8080-exec-2] INFO  console_logger  - url:   http://yandex.ru
+17:08:20.600 [http-nio-8080-exec-2] INFO  console_logger  - referer:   http://localhost:8080/test_scenario_3
+17:08:20.639 [http-nio-8080-exec-2] INFO  console_logger  - ПДЛ или нет?   true
+17:08:45.533 [http-nio-8080-exec-9] INFO  console_logger  - $$$$$$$$$$$$$$$$$$$$$$$$ ХУЙ $$$$$$$$$$$$$$$$$$$$$$$$
+17:14:48.512 [http-nio-8080-exec-10] INFO  console_logger  - TEST SCENARIO 3
+17:14:49.871 [http-nio-8080-exec-4] INFO  console_logger  - $$$$$$$$$$$$$$$$$$$$$$$$ ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ДЛЯ VIP-КЛИЕНТОВ $$$$$$$$$$$$$$$$$$$$$$$$
+17:14:49.872 [http-nio-8080-exec-4] INFO  console_logger  - runet-id:   7006666
+17:14:49.873 [http-nio-8080-exec-4] INFO  console_logger  - phone:   89161206481
+17:14:49.875 [http-nio-8080-exec-4] INFO  console_logger  - url:   http://yandex.ru
+17:14:49.875 [http-nio-8080-exec-4] INFO  console_logger  - referer:   http://localhost:8080/test_scenario_3
+17:14:49.876 [http-nio-8080-exec-4] INFO  console_logger  - ПДЛ или нет?   true
+17:20:49.355 [http-nio-8080-exec-1] INFO  console_logger  - TEST SCENARIO 3
+17:20:50.937 [http-nio-8080-exec-4] INFO  console_logger  - $$$$$$$$$$$$$$$$$$$$$$$$ ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ДЛЯ VIP-КЛИЕНТОВ $$$$$$$$$$$$$$$$$$$$$$$$
+17:20:50.937 [http-nio-8080-exec-4] INFO  console_logger  - runet-id:   7006666
+17:20:50.937 [http-nio-8080-exec-4] INFO  console_logger  - phone:   89161206481
+17:20:50.938 [http-nio-8080-exec-4] INFO  console_logger  - url:   http://yandex.ru
+17:20:50.938 [http-nio-8080-exec-4] INFO  console_logger  - referer:   http://localhost:8080/test_scenario_3
+17:20:50.977 [http-nio-8080-exec-4] INFO  console_logger  - ПДЛ или нет?   true
+17:21:07.790 [http-nio-8080-exec-9] INFO  console_logger  - $$$$$$$$$$$$$$$$$$$$$$$$ ВЫПУСК АНОНИМНОЙ КАРТЫ ДЛЯ ПДЛ $$$$$$$$$$$$$$$$$$$$$$$$
+17:21:07.790 [http-nio-8080-exec-9] INFO  console_logger  - runet-id:   7006666
+17:21:07.790 [http-nio-8080-exec-9] INFO  console_logger  - phone:   null
+17:21:07.790 [http-nio-8080-exec-9] INFO  console_logger  - url:   http://yandex.ru
+17:21:07.791 [http-nio-8080-exec-9] INFO  console_logger  - referer:   http://localhost:8080/vipcard?runet-id=7006666&phone=89161206481&url=http%3A%2F%2Fyandex.ru
+17:21:07.791 [http-nio-8080-exec-9] INFO  console_logger  - ean:   123
+17:21:07.791 [http-nio-8080-exec-9] INFO  console_logger  - last4numbers:   2224
+17:24:52.913 [http-nio-8080-exec-1] INFO  console_logger  - TEST SCENARIO 3
+17:24:54.627 [http-nio-8080-exec-10] INFO  console_logger  - $$$$$$$$$$$$$$$$$$$$$$$$ ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ДЛЯ VIP-КЛИЕНТОВ $$$$$$$$$$$$$$$$$$$$$$$$
+17:24:54.628 [http-nio-8080-exec-10] INFO  console_logger  - runet-id:   7006666
+17:24:54.629 [http-nio-8080-exec-10] INFO  console_logger  - phone:   89161206481
+17:24:54.629 [http-nio-8080-exec-10] INFO  console_logger  - url:   http://yandex.ru
+17:24:54.629 [http-nio-8080-exec-10] INFO  console_logger  - referer:   http://localhost:8080/test_scenario_3
+17:24:54.667 [http-nio-8080-exec-10] INFO  console_logger  - ПДЛ или нет?   true
+17:25:07.988 [http-nio-8080-exec-1] INFO  console_logger  - $$$$$$$$$$$$$$$$$$$$$$$$ ВЫПУСК АНОНИМНОЙ КАРТЫ ДЛЯ ПДЛ $$$$$$$$$$$$$$$$$$$$$$$$
+17:25:07.988 [http-nio-8080-exec-1] INFO  console_logger  - runet-id:   7006666
+17:25:07.988 [http-nio-8080-exec-1] INFO  console_logger  - phone:   +9 (161) 206-4811
+17:25:07.989 [http-nio-8080-exec-1] INFO  console_logger  - codeword:   CODE
+17:25:07.989 [http-nio-8080-exec-1] INFO  console_logger  - url:   http://yandex.ru
+17:25:07.990 [http-nio-8080-exec-1] INFO  console_logger  - referer:   http://localhost:8080/vipcard?runet-id=7006666&phone=89161206481&url=http%3A%2F%2Fyandex.ru
+17:25:07.990 [http-nio-8080-exec-1] INFO  console_logger  - ean:   22
+17:25:07.990 [http-nio-8080-exec-1] INFO  console_logger  - last4numbers:   1111
+17:56:06.219 [http-nio-8080-exec-1] INFO  console_logger  - TEST
+17:56:11.893 [http-nio-8080-exec-2] ERROR console_logger  - РЕЖИМ ВИРТУАЛЬНОЙ КАРТЫ
+17:56:11.895 [http-nio-8080-exec-2] INFO  console_logger  - Принял парамметры для заполнения анкеты {startUrl=http://localhost:8080/test, redirectUrl=http://yandex.ru, phoneNumber=+79997152413, runetId=123456789}
+17:57:12.546 [http-nio-8080-exec-6] INFO  console_logger  - Threadlocal = VPK
+17:57:12.546 [http-nio-8080-exec-6] ERROR console_logger  - ********* ТЕСТОВЫЙ РЕЖИМ ВКЛЮЧЕН ************
+17:57:12.547 [http-nio-8080-exec-6] ERROR console_logger  - ---------- ПРОВЕРКА ПАСПОРТА ----------
+17:57:12.547 [http-nio-8080-exec-6] ERROR console_logger  - Сгенерировали левые данные: {redirectUrl=http://yandex.ru, birthdate=11.11.1111, codeword=1177599960, card_ean=759073995, card_last_4=4961, startUrl=http://localhost:8080/test, number=1457935816, patronymic=503878307, phoneNumber=1353087122, surname=1702881243, series=1725441356, name=1020819524, runetId=123456789, passportId=641699593}
+17:59:30.256 [http-nio-8080-exec-9] INFO  console_logger  - TEST
+17:59:31.664 [http-nio-8080-exec-8] ERROR console_logger  - РЕЖИМ ВИРТУАЛЬНОЙ КАРТЫ
+17:59:31.666 [http-nio-8080-exec-8] INFO  console_logger  - Принял парамметры для заполнения анкеты {redirectUrl=http://yandex.ru, startUrl=http://localhost:8080/test, phoneNumber=+79997152413, runetId=123456789}
+18:10:36.172 [http-nio-8080-exec-1] INFO  console_logger  - TEST SCENARIO 3
+18:10:39.236 [http-nio-8080-exec-4] INFO  console_logger  - $$$$$$$$$$$$$$$$$$$$$$$$ ВХОДЯЩИЙ ЗАПРОС НА ОТКРЫТИЕ ПЛАСТИКОВОЙ КАРТЫ ДЛЯ VIP-КЛИЕНТОВ $$$$$$$$$$$$$$$$$$$$$$$$
+18:10:39.237 [http-nio-8080-exec-4] INFO  console_logger  - runet-id:   7006666
+18:10:39.237 [http-nio-8080-exec-4] INFO  console_logger  - phone:   89161206481
+18:10:39.238 [http-nio-8080-exec-4] INFO  console_logger  - url:   http://yandex.ru
+18:10:39.238 [http-nio-8080-exec-4] INFO  console_logger  - referer:   http://localhost:8080/test_scenario_3
+18:10:39.279 [http-nio-8080-exec-4] INFO  console_logger  - ПДЛ или нет?   true
+18:12:17.869 [http-nio-8080-exec-2] INFO  console_logger  - $$$$$$$$$$$$$$$$$$$$$$$$ ВЫПУСК АНОНИМНОЙ КАРТЫ ДЛЯ ПДЛ $$$$$$$$$$$$$$$$$$$$$$$$
+18:12:17.869 [http-nio-8080-exec-2] INFO  console_logger  - runet-id:   7006666
+18:12:17.869 [http-nio-8080-exec-2] INFO  console_logger  - phone:   +7 (968) 997-4926
+18:12:17.869 [http-nio-8080-exec-2] INFO  console_logger  - codeword:   el
+18:12:17.869 [http-nio-8080-exec-2] INFO  console_logger  - url:   http://yandex.ru
+18:12:17.869 [http-nio-8080-exec-2] INFO  console_logger  - referer:   http://localhost:8080/vipcard?runet-id=7006666&phone=89161206481&url=http%3A%2F%2Fyandex.ru
+18:12:17.869 [http-nio-8080-exec-2] INFO  console_logger  - ean:   1001004978523
+18:12:17.869 [http-nio-8080-exec-2] INFO  console_logger  - last4numbers:   5485
+18:12:17.875 [http-nio-8080-exec-2] INFO  console_logger  - METHOD:   POST
+18:12:17.876 [http-nio-8080-exec-2] INFO  console_logger  - URL:      http://stage-0.apibank.club/auth/realms/Physics/protocol/openid-connect/token
+18:12:17.876 [http-nio-8080-exec-2] INFO  console_logger  - HEADERS:  
+18:12:17.876 [http-nio-8080-exec-2] INFO  console_logger  - REQUEST:  {username=[operator-runet], password=[123123], grant_type=[password]}
+18:12:18.170 [http-nio-8080-exec-2] INFO  console_logger  - RESPONSE: {"access_token":"eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJwckVJZGg4bkdQc0g3N0tTemhiVW9ubG8zbFpiS284XzdqUWNES0pSQXl3In0.eyJqdGkiOiI5MmQxYmY5Zi1kZWI3LTQ3MDYtODMwMS00NzM1ZDU3NjE0NmEiLCJleHAiOjE1NTQyMjE1MzksIm5iZiI6MCwiaWF0IjoxNTU0MjE3OTM5LCJpc3MiOiJodHRwOi8vc3RhZ2UtMC5hcGliYW5rLmNsdWIvYXV0aC9yZWFsbXMvUGh5c2ljcyIsImF1ZCI6ImNhcmQtYmluZGVyIiwic3ViIjoiNzM5N2ZjYTItODM0ZS00NTc3LTg5NjYtYjY5MDVhNjIwZjMzIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiY2FyZC1iaW5kZXIiLCJhdXRoX3RpbWUiOjAsInNlc3Npb25fc3RhdGUiOiJkZDUyYzIyMC0wZDlhLTQ1M2QtYTczZC1iYmZhZjA5ZGFiYWYiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwidW1hX2F1dGhvcml6YXRpb24iLCJwYXJ0bmVyLVJVTkVUIiwib3BlcmF0b3IiXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6ImVtYWlsIHByb2ZpbGUiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsIm5hbWUiOiJydW5ldCBydW5ldCIsInByZWZlcnJlZF91c2VybmFtZSI6Im9wZXJhdG9yLXJ1bmV0IiwiZ2l2ZW5fbmFtZSI6InJ1bmV0IiwiZmFtaWx5X25hbWUiOiJydW5ldCJ9.JLlYhp9D4z-3yY56OqTVdYbdkqC_BTYqznNt-Y-sou5VrvXMHUxFC6f25P85CNLEZB-jz_2il6eIvFTxT5-NajFbYSjVjx67K-TEbvU6Wdgkg6gY2ZeAgNlnpJTQHAPVJ4urZDvuiOHbl69ein0I4Rykja008EIt7GRSoqkl3LYUrqkYXSdk1QHknORMVH-GA6iro8L3Q56XQqS1UOBOsdnNgQtTmgFemuwRTEv-ScPt4ePvwT85hgtCzE2OuhwSJIF3CO67ZNZxntNaQaKAY-xEXd3xjs-CrFVzF7X7EVkrfI5DbHIHPrwIei1ioMFtesEBsaKGVOM7YKG0-bugLA","expires_in":3600,"refresh_expires_in":1800,"refresh_token":"eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJwckVJZGg4bkdQc0g3N0tTemhiVW9ubG8zbFpiS284XzdqUWNES0pSQXl3In0.eyJqdGkiOiIxOTc1ZWZmMC01MjgyLTRiOTctOGZiYy01YzlhODQxMWQwZWEiLCJleHAiOjE1NTQyMTk3MzksIm5iZiI6MCwiaWF0IjoxNTU0MjE3OTM5LCJpc3MiOiJodHRwOi8vc3RhZ2UtMC5hcGliYW5rLmNsdWIvYXV0aC9yZWFsbXMvUGh5c2ljcyIsImF1ZCI6ImNhcmQtYmluZGVyIiwic3ViIjoiNzM5N2ZjYTItODM0ZS00NTc3LTg5NjYtYjY5MDVhNjIwZjMzIiwidHlwIjoiUmVmcmVzaCIsImF6cCI6ImNhcmQtYmluZGVyIiwiYXV0aF90aW1lIjowLCJzZXNzaW9uX3N0YXRlIjoiZGQ1MmMyMjAtMGQ5YS00NTNkLWE3M2QtYmJmYWYwOWRhYmFmIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwidW1hX2F1dGhvcml6YXRpb24iLCJwYXJ0bmVyLVJVTkVUIiwib3BlcmF0b3IiXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6ImVtYWlsIHByb2ZpbGUifQ.iNDt0KLk0mGRV0EUSumdU4jjUEjuV54pq7wxEMxVT5SmlME8NYt-Mj21YL9cV3LN-nwxHdPZuJL6fIMy-QEw2ypOzXaRf6eQY25Z3o4GFBhcQJVBnYkWns8_2F4-qsargi_MRqYXYA2IFQgp3-coiCAF5ytO_HU96n2iTPzO9k3HW0QRj3Otw3GMOOctwhkMHBnDwnrQj_qDGX9xVdwdT5FfkP-_9rd-IH0D4WrdJs_GGzs2sZp_rOaEaP1nON4A8mVvE3NlhqCcXN_5gCcBGh4hDJWhczJR6uQHDT2xqyT3-ubZaxhWQp2aDH-IhQ7ScyI5OaeYlJ7sUqa3zSVU0Q","token_type":"bearer","not-before-policy":1536856426,"session_state":"dd52c220-0d9a-453d-a73d-bbfaf09dabaf","scope":"email profile"}
+18:12:18.170 [http-nio-8080-exec-2] INFO  console_logger  - TIME:     0c 295ms
+18:12:18.170 [http-nio-8080-exec-2] INFO  console_logger  - #################################
+18:12:18.171 [http-nio-8080-exec-2] INFO  console_logger  - METHOD:   POST
+18:12:18.171 [http-nio-8080-exec-2] INFO  console_logger  - URL:      http://stage-0.apibank.club/physics-v2/api/v2/clients/anonymous
+18:12:18.171 [http-nio-8080-exec-2] INFO  console_logger  - HEADERS:  
+18:12:18.171 [http-nio-8080-exec-2] INFO  console_logger  - REQUEST:  {"phone":"9689974926","control_info":"+7 (968) 997-4926"}
+18:12:30.798 [http-nio-8080-exec-2] INFO  console_logger  - RESPONSE: {"id":331,"phone":"9689974926","account_number":"40903810359027463501","account_level":"ANONYMOUS","created":"2019-04-02T18:12:27.329+03:00","updated":"2019-04-02T18:12:27.329+03:00"}
+18:12:30.798 [http-nio-8080-exec-2] INFO  console_logger  - TIME:     12c 627ms
+18:12:30.799 [http-nio-8080-exec-2] INFO  console_logger  - #################################
+18:12:30.847 [http-nio-8080-exec-2] INFO  console_logger  - ############## ПЫТАЕМСЯ ВЫПУСТИТЬ ПЛАСТИК ###################
+18:12:30.847 [http-nio-8080-exec-2] INFO  console_logger  - CLIENTID: 331
+18:12:30.847 [http-nio-8080-exec-2] INFO  console_logger  - EAN: 1001004978523
+18:12:30.848 [http-nio-8080-exec-2] INFO  console_logger  - LAST 4 NUMBERS:  5485
+18:12:30.848 [http-nio-8080-exec-2] INFO  console_logger  - METHOD:   POST
+18:12:30.848 [http-nio-8080-exec-2] INFO  console_logger  - URL:      http://stage-0.apibank.club/auth/realms/Physics/protocol/openid-connect/token
+18:12:30.848 [http-nio-8080-exec-2] INFO  console_logger  - HEADERS:  
+18:12:30.848 [http-nio-8080-exec-2] INFO  console_logger  - REQUEST:  {username=[operator-runet], password=[123123], grant_type=[password]}
+18:12:31.015 [http-nio-8080-exec-2] INFO  console_logger  - RESPONSE: {"access_token":"eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJwckVJZGg4bkdQc0g3N0tTemhiVW9ubG8zbFpiS284XzdqUWNES0pSQXl3In0.eyJqdGkiOiI0M2I0ZWYzYi02MmFhLTQwM2UtYjQ2NC1jOWNmNmYwMjc5OGIiLCJleHAiOjE1NTQyMjE1NTIsIm5iZiI6MCwiaWF0IjoxNTU0MjE3OTUyLCJpc3MiOiJodHRwOi8vc3RhZ2UtMC5hcGliYW5rLmNsdWIvYXV0aC9yZWFsbXMvUGh5c2ljcyIsImF1ZCI6ImNhcmQtYmluZGVyIiwic3ViIjoiNzM5N2ZjYTItODM0ZS00NTc3LTg5NjYtYjY5MDVhNjIwZjMzIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiY2FyZC1iaW5kZXIiLCJhdXRoX3RpbWUiOjAsInNlc3Npb25fc3RhdGUiOiI1YTM3OGE4YS01ZGNmLTQ3YzgtYjQwOC00ZmMyNTljNjIyM2YiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwidW1hX2F1dGhvcml6YXRpb24iLCJwYXJ0bmVyLVJVTkVUIiwib3BlcmF0b3IiXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6ImVtYWlsIHByb2ZpbGUiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsIm5hbWUiOiJydW5ldCBydW5ldCIsInByZWZlcnJlZF91c2VybmFtZSI6Im9wZXJhdG9yLXJ1bmV0IiwiZ2l2ZW5fbmFtZSI6InJ1bmV0IiwiZmFtaWx5X25hbWUiOiJydW5ldCJ9.IkB5_stKqbOe6vq_r0iEeciZMP3WzLK-S2iMzSYxMIzWTSPxzuVFTBY1useXUWSje8bfu1hk4kGi-cdogsbIi_KBD1HToaIt6H05rPhAPi5VaZUj1AgDEBe9umnKtqLhi8Sn4PNK9af8lFI2-qGJZPWP9o7s7DTouz9OahdCSZcjcjZOpuggzFpOSXnr9g6VVwzQzlYG3L0yQVmQc6gOC2wY2xUtXqHTluOw40nKAUDNRnziScmzVahzPqJVf77yHLrKZ0khdw4oW6oLSFjV5Du6VkARhxy7u_eRK-lRLpFWe4Ivdci68mggN037HR0qGPBJq2BMD3XBg8ykIVvCeA","expires_in":3600,"refresh_expires_in":1800,"refresh_token":"eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJwckVJZGg4bkdQc0g3N0tTemhiVW9ubG8zbFpiS284XzdqUWNES0pSQXl3In0.eyJqdGkiOiI2NjkwMjg5ZC1lMjQ1LTRkNTEtODRkNi1mZmZmMDgyMzI4NmQiLCJleHAiOjE1NTQyMTk3NTIsIm5iZiI6MCwiaWF0IjoxNTU0MjE3OTUyLCJpc3MiOiJodHRwOi8vc3RhZ2UtMC5hcGliYW5rLmNsdWIvYXV0aC9yZWFsbXMvUGh5c2ljcyIsImF1ZCI6ImNhcmQtYmluZGVyIiwic3ViIjoiNzM5N2ZjYTItODM0ZS00NTc3LTg5NjYtYjY5MDVhNjIwZjMzIiwidHlwIjoiUmVmcmVzaCIsImF6cCI6ImNhcmQtYmluZGVyIiwiYXV0aF90aW1lIjowLCJzZXNzaW9uX3N0YXRlIjoiNWEzNzhhOGEtNWRjZi00N2M4LWI0MDgtNGZjMjU5YzYyMjNmIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwidW1hX2F1dGhvcml6YXRpb24iLCJwYXJ0bmVyLVJVTkVUIiwib3BlcmF0b3IiXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6ImVtYWlsIHByb2ZpbGUifQ.lp_1ZEO9OQJo9kjfd-75srBCpq2Xp47SgNQUgS92aoXCMSlitMjWHTjvb3hKv3xTZZ9BlgiGEFXSpPHU4BcMLfSh4JTKBHonJzx-QvTw3mQc7qLlIblI4YIVUUAZbsPfknLpKaj5SNG0_attLBX_rV1xDIkHK_UmaFw4VYA-AlERSsK7WvA4xM3GPPhvbaYIzJJq4JJVw6YBwjL9x0pagzq3JCffSexiek0n49wcbip0mfxUFjmsn9iIhpwd0b71p3bw9Knv5T55-u-DV7SfOKrMtQ2PeqHqkz1p29pm9Kij6n2-NtSJpQcCasYNhZOUX-TqPUhOTwcnKjIyTU0VoA","token_type":"bearer","not-before-policy":1536856426,"session_state":"5a378a8a-5dcf-47c8-b408-4fc259c6223f","scope":"email profile"}
+18:12:31.016 [http-nio-8080-exec-2] INFO  console_logger  - TIME:     0c 167ms
+18:12:31.016 [http-nio-8080-exec-2] INFO  console_logger  - #################################
+18:12:31.016 [http-nio-8080-exec-2] INFO  console_logger  - METHOD:   POST
+18:12:31.016 [http-nio-8080-exec-2] INFO  console_logger  - URL:      http://stage-0.apibank.club/physics-v2/api/v2/clients/331/cards
+18:12:31.016 [http-nio-8080-exec-2] INFO  console_logger  - HEADERS:  
+18:12:31.016 [http-nio-8080-exec-2] INFO  console_logger  - REQUEST:  {"card_id":"1001004978523","card_number_ending":"5485"}
+18:12:31.675 [http-nio-8080-exec-2] INFO  console_logger  - RESPONSE: {"errors":[{"code":"CE007","message":"Не удалось привязать карту к счету.","details":"Карточный продукт не соответствует проекту, указанному при резервации счета"}]}
+18:12:31.676 [http-nio-8080-exec-2] INFO  console_logger  - TIME:     0c 659ms
+18:12:31.676 [http-nio-8080-exec-2] INFO  console_logger  - #################################
+19:28:39.438 [http-nio-8080-exec-5] INFO  console_logger  - Принял парамметры для заполнения анкеты {startUrl=http://localhost:8080/test, redirectUrl=http://yandex.ru, phoneNumber=+79997152413, runetId=123456789}
+19:28:52.379 [http-nio-8080-exec-9] ERROR console_logger  - Ошибка при сканировании паспорта
+java.lang.Exception: Ошибка сохранении количества распознаваний в БД
+	at club.RifController.checkRecognitionsCount(RifController.java:364)
+	at club.RifController.checkPassport(RifController.java:278)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.util.NoSuchElementException: No value present
+	at java.util.Optional.get(Optional.java:135)
+	at club.RifController.checkRecognitionsCount(RifController.java:345)
+	... 87 common frames omitted
+19:29:02.853 [http-nio-8080-exec-7] ERROR console_logger  - Ошибка при сканировании паспорта
+java.lang.Exception: Ошибка сохранении количества распознаваний в БД
+	at club.RifController.checkRecognitionsCount(RifController.java:364)
+	at club.RifController.checkPassport(RifController.java:278)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.util.NoSuchElementException: No value present
+	at java.util.Optional.get(Optional.java:135)
+	at club.RifController.checkRecognitionsCount(RifController.java:345)
+	... 87 common frames omitted
