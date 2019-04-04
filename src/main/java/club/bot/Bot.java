@@ -1,14 +1,9 @@
 package club.bot;
 
-import club.model.AccountRefillLog;
-import club.model.RifLog;
-import club.repository.AccountRefillRepository;
-import club.repository.RifLogsRepository;
+
 import org.apache.commons.io.input.ReversedLinesFileReader;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.env.Environment;
 import org.telegram.telegrambots.bots.DefaultBotOptions;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
@@ -17,21 +12,19 @@ import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.objects.Message;
 import org.telegram.telegrambots.meta.api.objects.Update;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
-
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-public class Bot extends TelegramLongPollingBot {
-    private ExecutorService pool = Executors.newCachedThreadPool();
+public class Bot  {
+//public class Bot extends TelegramLongPollingBot {
+ /*   private ExecutorService pool = Executors.newCachedThreadPool();
     private static Logger logger = LoggerFactory.getLogger("console_logger");
 
     private String token;
@@ -41,11 +34,7 @@ public class Bot extends TelegramLongPollingBot {
 
     private Environment env;
 
-    @Autowired
-    private RifLogsRepository rifRepository;
 
-    @Autowired
-    private AccountRefillRepository accountRefillRepository;
 
     public Bot(DefaultBotOptions options) {
         super(options);
@@ -81,14 +70,15 @@ public class Bot extends TelegramLongPollingBot {
             }else if(command.equals("/stat")) {
                 pool.submit(() -> {
                     try {
-                        Long sum = accountRefillRepository.getSumOfAllTransactions();
+                        //Long sum = accountRefillRepository.getSumOfAllTransactions();
+                        Long sum = 145L;
                         sum = sum == null ? 0 : sum;
 
                         SendMessage outMessage = new SendMessage();
                         outMessage.setChatId(inMessage.getChatId());
                         outMessage.enableHtml(true);
-                        outMessage.setText("<b>"+getBotUsername()+"</b>: \n\n"+"Счетов всего:         "+rifRepository.count()+"\n"
-                                +"Транзакций всего:     "+accountRefillRepository.count()+"\n"
+                        outMessage.setText("<b>"+getBotUsername()+"</b>: \n\n"+"Счетов всего:         "+1545+"\n"
+                                +"Транзакций всего:     "+564654564+"\n"
                                 +"Сумма всех переводов: "+sum/100);
                         execute(outMessage);
                     }catch (Exception ex) {
@@ -194,4 +184,4 @@ public class Bot extends TelegramLongPollingBot {
     public String getBotToken() {
         return token;
     }
-}
+*/}

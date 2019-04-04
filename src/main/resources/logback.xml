@@ -50,7 +50,7 @@
         </encoder>
     </appender>
 
-    <logger name="club" level="info" additivity="false" >
+    <logger name="club" level="debug" additivity="false" >
         <appender-ref ref="FILE" />
     </logger>
 
@@ -61,7 +61,7 @@
 
     <root level="debug">
         <!--<appender-ref ref="FILE" />-->
-        <!--<appender-ref ref="console" />-->
+        <appender-ref ref="console" />
     </root>
 
 </configuration>
