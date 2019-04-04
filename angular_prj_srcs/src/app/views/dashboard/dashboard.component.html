@@ -1,0 +1,169 @@
+<div class="animated fadeIn">
+
+<!--  <canvas id="myChart" width="700" height="400"></canvas>-->
+
+  <!--<canvas
+    tc-chartjs-pie
+    chart-data="{{mydata}}"
+    chart-options="myOptions"
+    chart-plugins="myPlugins"
+    chart-click="onChartClick(event)"
+  ></canvas>-->
+
+
+  <div class="row">
+
+    <div class="col-sm-6 col-md-2">
+      <!--<div [ngClass]="(status.isAcOn==true)?'card text-white bg-success':'card text-white bg-success'">-->
+        <div [ngClass]="arduinoStatus.isAcOn==true?'card text-white bg-success':'card text-white bg-danger'">
+
+        <div class="card-body">
+          <div class="h1 text-muted text-right mb-4">
+            <i class="icon-energy"></i>
+          </div>
+          <div class="h4 mb-0">AC - {{arduinoStatus.isAcOn==true?"ON":"OFF"}}</div>
+          <!--<small class="text-muted text-uppercase font-weight-bold">AC - ON</small>-->
+        </div>
+      </div>
+    </div><!--/.col-->
+
+
+    <div class="col-sm-6 col-md-2">
+      <div [ngClass]="arduinoStatus.isLanOn==true?'card text-white bg-success':'card text-white bg-danger'">
+        <div class="card-body">
+          <div class="h1 text-muted text-right mb-4">
+            <i class="icon-feed"></i>
+          </div>
+          <div class="h4 mb-0">LAN - {{arduinoStatus.isLanOn==true?"ON":"OFF"}}</div>
+
+          <!--<small class="text-muted text-uppercase font-weight-bold">Visitors</small>-->
+        </div>
+      </div>
+    </div><!--/.col-->
+
+
+    <!--ВЛАЖНОСТЬ-->
+    <div class="col-sm-6 col-md-2">
+      <div class="card text-white bg-info">
+        <div class="card-body">
+          <div class="h1 text-muted text-right mb-4">
+            <i class="icon-drop"></i>
+          </div>
+          <div class="h4 mb-0">Humidity:  {{arduinoStatus.lastHumidity}}</div>
+          <!--<small class="text-muted text-uppercase font-weight-bold">Humidity</small>-->
+        </div>
+      </div>
+    </div><!--/.col-->
+
+    <!--ТЕКУЩАЯ СТАТУСНАЯ ТЕМПЕРАТУРА-->
+    <div class="col-sm-6 col-md-2">
+      <div class="card text-white bg-info">
+        <div class="card-body">
+          <div class="h1 text-muted text-right mb-4">
+            <i class="icon-fire"></i>
+          </div>
+          <div class="h4 mb-0">Temperature:  {{arduinoStatus.lastTemperature}}</div>
+          <!--<small class="text-muted text-uppercase font-weight-bold">Humidity</small>-->
+        </div>
+      </div>
+    </div><!--/.col-->
+
+  <!--GSM-->
+    <div class="col-sm-6 col-md-2">
+      <div class="card text-white bg-success">
+        <div class="card-body">
+          <div class="h1 text-muted text-right mb-4">
+            <i class="icon-phone"></i>
+          </div>
+          <div class="h4 mb-0">GSM - ON</div>
+          <!--<small class="text-muted text-uppercase font-weight-bold">Visitors</small>-->
+        </div>
+      </div>
+    </div><!--/.col-->
+
+    <!--Последнее время/дата пинга-->
+    <div class="col-sm-6 col-md-2">
+      <div [ngClass]="arduinoStatus.lastContactTime=='---'?'card text-white bg-danger':'card text-white bg-success'">
+        <div class="card-body">
+          <div class="h1 text-muted text-right mb-4">
+            <i class="icon-speedometer"></i>
+          </div>
+          <div class="h4 mb-0">{{arduinoStatus.lastContactDate}} | {{arduinoStatus.lastContactTime}}</div>
+          <!--<small class="text-muted text-uppercase font-weight-bold">Visitors</small>-->
+        </div>
+      </div>
+    </div><!--/.col-->
+
+
+  </div><!--/.row-->
+
+
+  <div class="card">
+    <div class="card-body">
+      <div class="row">
+        <div class="col-sm-5">
+          <h4 class="card-title mb-0">{{diagramTitle}}</h4>
+
+          <div class="small text-muted">...</div>
+        </div><!--/.col-->
+        <div class="col-sm-7 d-none d-md-block">
+
+          <div class="btn-group btn-group-toggle float-right mr-3" data-toggle="buttons">
+            <label class="btn btn-outline-secondary" [(ngModel)]="radioModel" btnRadio="Day" id="option1" (click)="dayMode()">Day</label>
+            <label class="btn btn-outline-secondary" [(ngModel)]="radioModel" btnRadio="Week" id="option2" (click)="weekMode()">Week</label>
+            <label class="btn btn-outline-secondary" [(ngModel)]="radioModel" btnRadio="Month" id="option3" (click)="monthMode()">Month</label>
+          </div>
+        </div><!--/.col-->
+      </div><!--/.row-->
+      <div class="chart-wrapper" style="height:300px;margin-top:40px;">
+        <canvas baseChart class="chart"
+        [datasets]="mainChartData"
+        [labels]="label"
+        [options]="mainChartOptions"
+        [colors]="mainChartColours"
+        [legend]="mainChartLegend"
+        [chartType]="mainChartType"></canvas>
+      </div>
+    </div>
+    <!--<div class="card-footer">
+      <div class="row text-center">
+        <div class="col-sm-12 col-md mb-sm-2 mb-0">
+          <div class="text-muted">Visits</div>
+          <strong>29.703 Users (40%)</strong>
+          <div class="progress progress-xs mt-2">
+            <div class="progress-bar bg-success" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md mb-sm-2 mb-0">
+          <div class="text-muted">Unique</div>
+          <strong>24.093 Users (20%)</strong>
+          <div class="progress progress-xs mt-2">
+            <div class="progress-bar bg-info" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md mb-sm-2 mb-0">
+          <div class="text-muted">Pageviews</div>
+          <strong>78.706 Views (60%)</strong>
+          <div class="progress progress-xs mt-2">
+            <div class="progress-bar bg-warning" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md mb-sm-2 mb-0">
+          <div class="text-muted">New Users</div>
+          <strong>22.123 Users (80%)</strong>
+          <div class="progress progress-xs mt-2">
+            <div class="progress-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md mb-sm-2 mb-0">
+          <div class="text-muted">Bounce Rate</div>
+          <strong>40.15%</strong>
+          <div class="progress progress-xs mt-2">
+            <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+      </div>
+    </div>-->
+  </div>
+  <!--/.card-->
+</div>
