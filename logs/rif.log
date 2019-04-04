@@ -1,0 +1,224 @@
+{
+  "timestamp" : "2019-04-04 - 14:30:40.118Z",
+  "level" : "INFO",
+  "thread" : "restartedMain",
+  "logger" : "club.Application",
+  "message" : "Starting Application on DESKTOP-DECTVLC with PID 284512 (C:\\CODING\\GIT\\TemperatureREST\\target\\classes started by Anton Romanov in C:\\CODING\\GIT\\TemperatureREST)",
+  "context" : "default"
+}
+{
+  "timestamp" : "2019-04-04 - 14:30:40.207Z",
+  "level" : "INFO",
+  "thread" : "restartedMain",
+  "logger" : "club.Application",
+  "message" : "No active profile set, falling back to default profiles: default",
+  "context" : "default"
+}
+{
+  "timestamp" : "2019-04-04 - 14:30:51.927Z",
+  "level" : "INFO",
+  "thread" : "restartedMain",
+  "logger" : "club.Application",
+  "message" : "Started Application in 12.61 seconds (JVM running for 15.92)",
+  "context" : "default"
+}
+{
+  "timestamp" : "2019-04-04 - 14:31:50.888Z",
+  "level" : "INFO",
+  "thread" : "restartedMain",
+  "logger" : "club.Application",
+  "message" : "Starting Application on DESKTOP-DECTVLC with PID 278428 (C:\\CODING\\GIT\\TemperatureREST\\target\\classes started by Anton Romanov in C:\\CODING\\GIT\\TemperatureREST)",
+  "context" : "default"
+}
+{
+  "timestamp" : "2019-04-04 - 14:31:50.947Z",
+  "level" : "DEBUG",
+  "thread" : "restartedMain",
+  "logger" : "club.Application",
+  "message" : "Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE",
+  "context" : "default"
+}
+{
+  "timestamp" : "2019-04-04 - 14:31:50.948Z",
+  "level" : "INFO",
+  "thread" : "restartedMain",
+  "logger" : "club.Application",
+  "message" : "No active profile set, falling back to default profiles: default",
+  "context" : "default"
+}
+{
+  "timestamp" : "2019-04-04 - 14:32:03.798Z",
+  "level" : "INFO",
+  "thread" : "restartedMain",
+  "logger" : "club.Application",
+  "message" : "Started Application in 13.802 seconds (JVM running for 16.761)",
+  "context" : "default"
+}
+{
+  "timestamp" : "2019-04-04 - 14:35:29.538Z",
+  "level" : "INFO",
+  "thread" : "restartedMain",
+  "logger" : "club.Application",
+  "message" : "Starting Application on DESKTOP-DECTVLC with PID 248576 (C:\\CODING\\GIT\\TemperatureREST\\target\\classes started by Anton Romanov in C:\\CODING\\GIT\\TemperatureREST)",
+  "context" : "default"
+}
+{
+  "timestamp" : "2019-04-04 - 14:35:29.572Z",
+  "level" : "DEBUG",
+  "thread" : "restartedMain",
+  "logger" : "club.Application",
+  "message" : "Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE",
+  "context" : "default"
+}
+{
+  "timestamp" : "2019-04-04 - 14:35:29.575Z",
+  "level" : "INFO",
+  "thread" : "restartedMain",
+  "logger" : "club.Application",
+  "message" : "No active profile set, falling back to default profiles: default",
+  "context" : "default"
+}
+{
+  "timestamp" : "2019-04-04 - 14:35:42.425Z",
+  "level" : "INFO",
+  "thread" : "restartedMain",
+  "logger" : "club.Application",
+  "message" : "Started Application in 13.536 seconds (JVM running for 16.439)",
+  "context" : "default"
+}
+{
+  "timestamp" : "2019-04-04 - 14:41:46.906Z",
+  "level" : "INFO",
+  "thread" : "restartedMain",
+  "logger" : "club.Application",
+  "message" : "Starting Application on DESKTOP-DECTVLC with PID 286696 (C:\\CODING\\GIT\\TemperatureREST\\target\\classes started by Anton Romanov in C:\\CODING\\GIT\\TemperatureREST)",
+  "context" : "default"
+}
+{
+  "timestamp" : "2019-04-04 - 14:41:46.961Z",
+  "level" : "DEBUG",
+  "thread" : "restartedMain",
+  "logger" : "club.Application",
+  "message" : "Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE",
+  "context" : "default"
+}
+{
+  "timestamp" : "2019-04-04 - 14:41:46.962Z",
+  "level" : "INFO",
+  "thread" : "restartedMain",
+  "logger" : "club.Application",
+  "message" : "No active profile set, falling back to default profiles: default",
+  "context" : "default"
+}
+{
+  "timestamp" : "2019-04-04 - 14:50:22.469Z",
+  "level" : "INFO",
+  "thread" : "restartedMain",
+  "logger" : "club.Application",
+  "message" : "Starting Application on DESKTOP-DECTVLC with PID 288712 (C:\\CODING\\GIT\\TemperatureREST\\target\\classes started by Anton Romanov in C:\\CODING\\GIT\\TemperatureREST)",
+  "context" : "default"
+}
+{
+  "timestamp" : "2019-04-04 - 14:50:22.508Z",
+  "level" : "DEBUG",
+  "thread" : "restartedMain",
+  "logger" : "club.Application",
+  "message" : "Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE",
+  "context" : "default"
+}
+{
+  "timestamp" : "2019-04-04 - 14:50:22.510Z",
+  "level" : "INFO",
+  "thread" : "restartedMain",
+  "logger" : "club.Application",
+  "message" : "No active profile set, falling back to default profiles: default",
+  "context" : "default"
+}
+{
+  "timestamp" : "2019-04-04 - 14:50:29.670Z",
+  "level" : "INFO",
+  "thread" : "restartedMain",
+  "logger" : "club.bot.Bot2",
+  "message" : "username: www_anton_romanov_bot, token: 649537355:AAEhS25RBBSxDPLBeBhZfN7zG4YBp7xU7y0",
+  "context" : "default"
+}
+{
+  "timestamp" : "2019-04-04 - 14:50:54.837Z",
+  "level" : "INFO",
+  "thread" : "restartedMain",
+  "logger" : "club.Application",
+  "message" : "Started Application in 33.101 seconds (JVM running for 36.173)",
+  "context" : "default"
+}
+{
+  "timestamp" : "2019-04-04 - 14:51:15.811Z",
+  "level" : "INFO",
+  "thread" : "www_anton_romanov_bot Telegram Executor",
+  "logger" : "club.bot.Bot2",
+  "message" : "Sent message \"rtg\" to 240718198",
+  "context" : "default"
+}
+{
+  "timestamp" : "2019-04-04 - 14:51:36.095Z",
+  "level" : "INFO",
+  "thread" : "www_anton_romanov_bot Telegram Executor",
+  "logger" : "club.bot.Bot2",
+  "message" : "Sent message \"vfdvs\" to 240718198",
+  "context" : "default"
+}
+{
+  "timestamp" : "2019-04-04 - 14:52:41.074Z",
+  "level" : "INFO",
+  "thread" : "restartedMain",
+  "logger" : "club.Application",
+  "message" : "Starting Application on DESKTOP-DECTVLC with PID 289528 (C:\\CODING\\GIT\\TemperatureREST\\target\\classes started by Anton Romanov in C:\\CODING\\GIT\\TemperatureREST)",
+  "context" : "default"
+}
+{
+  "timestamp" : "2019-04-04 - 14:52:41.103Z",
+  "level" : "DEBUG",
+  "thread" : "restartedMain",
+  "logger" : "club.Application",
+  "message" : "Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE",
+  "context" : "default"
+}
+{
+  "timestamp" : "2019-04-04 - 14:52:41.105Z",
+  "level" : "INFO",
+  "thread" : "restartedMain",
+  "logger" : "club.Application",
+  "message" : "No active profile set, falling back to default profiles: default",
+  "context" : "default"
+}
+{
+  "timestamp" : "2019-04-04 - 14:52:48.066Z",
+  "level" : "INFO",
+  "thread" : "restartedMain",
+  "logger" : "club.bot.Bot2",
+  "message" : "username: www_anton_romanov_bot, token: 649537355:AAEhS25RBBSxDPLBeBhZfN7zG4YBp7xU7y0",
+  "context" : "default"
+}
+{
+  "timestamp" : "2019-04-04 - 14:53:13.968Z",
+  "level" : "INFO",
+  "thread" : "restartedMain",
+  "logger" : "club.Application",
+  "message" : "Started Application in 33.501 seconds (JVM running for 36.622)",
+  "context" : "default"
+}
+{
+  "timestamp" : "2019-04-04 - 14:53:34.901Z",
+  "level" : "INFO",
+  "thread" : "www_anton_romanov_bot Telegram Executor",
+  "logger" : "club.bot.Bot2",
+  "message" : "Sent message \"ВСВАМ\" to 240718198",
+  "context" : "default"
+}
+{
+  "timestamp" : "2019-04-04 - 14:53:34.988Z",
+  "level" : "INFO",
+  "thread" : "www_anton_romanov_bot Telegram Executor",
+  "logger" : "club.bot.Bot2",
+  "message" : "Sent message \"МАОРАВМ\" to 240718198",
+  "context" : "default"
+}
