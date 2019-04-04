@@ -173,43 +173,9 @@ public class MainRestController {
 	@GetMapping("/alllogs")
 	public ResponseEntity<String> getAllLogs(HttpServletRequest request) {
 
-
 		List<Logs> allLogsList = mainService.getAllLogs();
-		String remoteAddr = "";
-
 		LOGGER.info("============ ALL LOGS LIST ============== ");
-
-		// todo: вынести в отдельный метод
-		// Пытаемся взять ip
-		if (request != null) {
-			remoteAddr = request.getHeader("X-FORWARDED-FOR");
-			if (remoteAddr == null || "".equals(remoteAddr)) {
-				remoteAddr = request.getRemoteAddr();
-				LOGGER.info("GETTING REQUEST FROM:  " + remoteAddr);
-			}
-		}
-
-		// todo: вынести в отдельный метод
-		// Формируем JSON
-		JsonObject responseStatusInJson = JSONTemplate.create()
-				.add("SIZE OF ALL LOGS", allLogsList.size()).getJson();
-
-		LOGGER.info("RESULT:  " + responseStatusInJson.toString());
-
-		// todo: вынести в отдельный метод класса Utils
-		Gson gson = new GsonBuilder()
-				.serializeNulls()
-				.setDateFormat("dd/MM/yyyy")
-				.registerTypeAdapter(java.sql.Time.class, new TimeSerializer())
-				.create();
-
-		// todo: может быть тоже вынести в отдельный метод
-		String result = gson.toJson(allLogsList);
-		HttpHeaders headers = new HttpHeaders();
-		headers.setContentType(MediaType.APPLICATION_JSON);
-		headers.setCacheControl("no-cache");
-		ResponseEntity<String> responseEntity = new ResponseEntity<String>(result, headers, HttpStatus.OK);
-		return responseEntity;
+		return createGoodResponse(allLogsList);
 	}
 
 	/**
@@ -291,15 +257,10 @@ public class MainRestController {
 			}
 		}
 
-
 		// Пытаемся взять ip
-		if (request != null) {
-			remoteAddr = request.getHeader("X-FORWARDED-FOR");
-			if (remoteAddr == null || "".equals(remoteAddr)) {
-				remoteAddr = request.getRemoteAddr();
-				LOGGER.info("GETTING REQUEST FROM:  " + remoteAddr);
-			}
-		}
+		remoteAddr = getIp(request);
+		LOGGER.info("GETTING REQUEST FROM:  " + remoteAddr);
+
 
 		List<Logs> allStatuses = mainService.getAllLogs();
 		ResponseEntity<String> responseEntity = null;
@@ -324,6 +285,10 @@ public class MainRestController {
 		}
 
 		return responseEntity;
+	}
+
+	private List<Temperature> addTemperatureMeasure(Double temp, HttpServletRequest request){
+		return mainService.addMeasure(temp, createResponseJsonWithReturn(allTemperatures.size(), at2am, at8am, at14, at19, request).toString());
 	}
 
 	/**
@@ -353,7 +318,8 @@ public class MainRestController {
 
 				// Проверяем, что такой температуры нет еще за сегодня
 				if (!isAlreadyWriten(mainService.getTodayMeasures(), 1, 3)) {
-					allTemperatures = mainService.addMeasure(temp, createResponseJsonWithReturn(allTemperatures.size(), at2am, at8am, at14, at19, request).toString());
+					//allTemperatures = mainService.addMeasure(temp, createResponseJsonWithReturn(allTemperatures.size(), at2am, at8am, at14, at19, request).toString());
+					allTemperatures = addTemperatureMeasure(temp, request);
 					LOGGER.info("POST NIGHT TEMPERATURE --------- SUCCESS:  " + time.toLocalTime());
 				} else {
 					LOGGER.error("POST NIGHT TEMPERATURE --------- FAIL - DUPLICATE MEASURE:  " + time.toLocalTime());
@@ -364,7 +330,8 @@ public class MainRestController {
 
 				// Проверяем, что такой температуры нет еще за сегодня
 				if (!isAlreadyWriten(mainService.getTodayMeasures(), 7, 9)) {
-					allTemperatures = mainService.addMeasure(temp, createResponseJsonWithReturn(allTemperatures.size(), at2am, at8am, at14, at19, request).toString());
+					//allTemperatures = mainService.addMeasure(temp, createResponseJsonWithReturn(allTemperatures.size(), at2am, at8am, at14, at19, request).toString());
+					allTemperatures = addTemperatureMeasure(temp, request);
 					LOGGER.info("POST MORNING TEMPERATURE --------- SUCCESS:  " + time.toLocalTime());
 				} else {
 					LOGGER.error("POST MORNING TEMPERATURE --------- FAIL - DUPLICATE MEASURE:  " + time.toLocalTime());
@@ -375,7 +342,8 @@ public class MainRestController {
 
 				// Проверяем, что такой температуры нет еще за сегодня
 				if (!isAlreadyWriten(mainService.getTodayMeasures(), 13, 15)) {
-					allTemperatures = mainService.addMeasure(temp, createResponseJsonWithReturn(allTemperatures.size(), at2am, at8am, at14, at19, request).toString());
+					//allTemperatures = mainService.addMeasure(temp, createResponseJsonWithReturn(allTemperatures.size(), at2am, at8am, at14, at19, request).toString());
+					allTemperatures = addTemperatureMeasure(temp, request);
 					LOGGER.info("POST DAY TEMPERATURE --------- SUCCESS:  " + time.toLocalTime());
 				} else {
 					LOGGER.error("POST DAY TEMPERATURE --------- FAIL - DUPLICATE MEASURE:  " + time.toLocalTime());
@@ -387,7 +355,8 @@ public class MainRestController {
 
 				// Проверяем, что такой температуры нет еще за сегодня
 				if (!isAlreadyWriten(mainService.getTodayMeasures(), 18, 20)) {
-					allTemperatures = mainService.addMeasure(temp, createResponseJsonWithReturn(allTemperatures.size(), at2am, at8am, at14, at19, request).toString());
+					//allTemperatures = mainService.addMeasure(temp, createResponseJsonWithReturn(allTemperatures.size(), at2am, at8am, at14, at19, request).toString());
+					allTemperatures = addTemperatureMeasure(temp, request);
 					LOGGER.info("POST EVENING TEMPERATURE --------- SUCCESS:  " + time.toLocalTime());
 				} else {
 					LOGGER.error("POST EVENING TEMPERATURE --------- FAIL - DUPLICATE MEASURE:  " + time.toLocalTime());

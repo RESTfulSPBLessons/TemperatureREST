@@ -167,6 +167,26 @@ public class Utils {
 	/**
 	 * Формируем ответный JSON
 	 */
+	public static void createResponseJsonForLogs(int size, Boolean at2am, Boolean at8am, Boolean at14, Boolean at19, HttpServletRequest request) {
+
+		// Формируем JSON
+		JsonObject responseStatusInJson = JSONTemplate.create()
+				.add("AllTemperatures", size)
+				.add("NightPost", at2am)
+				.add("MorningPost", at8am)
+				.add("DayPost", at14)
+				.add("EveningPost", at19)
+				.add("ip", getIp(request)).getJson();
+
+		LOGGER.info("RESULT:  " + responseStatusInJson.toString());
+		//return remoteAddr;
+	}
+
+
+
+	/**
+	 * Формируем ответный JSON
+	 */
 	public static JsonObject createResponseJsonWithReturn(int size, Boolean at2am, Boolean at8am, Boolean at14, Boolean at19, HttpServletRequest request) {
 
 		// Формируем JSON
