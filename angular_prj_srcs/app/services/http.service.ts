@@ -6,6 +6,8 @@ import {map} from 'rxjs/operators';
 import {Response} from '@angular/http';
 import {Premium} from '../premium';
 import {User} from '../views/dashboard/user';
+import {Temp} from '../temp';
+import {Status} from '../status';
 
 
 @Injectable()
@@ -28,20 +30,35 @@ export class HttpService {
     return this.http.get(url);
   }
 
+  // todo: переименовать
   public getData4(url: string) {
     console.log('GET DATA......');
     console.log(url);
     return this.http.get<User[]>(url);
   }
 
+  // todo: переименовать
   public getData5(url: string) {
-    console.log('GET DATA......');
+    console.log('GET MONTH DATA......');
+    console.log(url);
+    return this.http.get<Temp[]>(url);
+  }
+
+  // todo: переименовать
+  public getData7(url: string) {
+    console.log('GET STATUS DATA......');
+    console.log(url);
+    return this.http.get<Status[]>(url);
+  }
+
+  /*public getData6(url: string) {
+    console.log('GET STATUS DATA......');
     console.log(url);
     return this.http.get(url).pipe(map(data => {
       let usersList = data['userList'];
       return usersList.map(user => user.age);
     }));
-  }
+  }*/
 
 
 

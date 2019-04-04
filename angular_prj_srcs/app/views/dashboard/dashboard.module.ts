@@ -6,6 +6,7 @@ import { ButtonsModule } from 'ngx-bootstrap/buttons';
  import {HttpClientModule} from '@angular/common/http';
 import { DashboardComponent } from './dashboard.component';
 import { DashboardRoutingModule } from './dashboard-routing.module';
+import {CommonModule} from '@angular/common';
 
 
 @NgModule({
@@ -14,6 +15,7 @@ import { DashboardRoutingModule } from './dashboard-routing.module';
     DashboardRoutingModule,
     ChartsModule,
      HttpClientModule,
+    CommonModule,
     BsDropdownModule,
     ButtonsModule.forRoot()
   ],

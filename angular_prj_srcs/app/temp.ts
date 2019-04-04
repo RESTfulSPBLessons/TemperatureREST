@@ -1,3 +1,5 @@
 export class Temp {
-  name: string;
+  measureDate: string;
+  dayTemp: number;
+  nightTemp: number;
 }

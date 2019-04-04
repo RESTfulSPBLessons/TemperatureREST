@@ -2522,6 +2522,12 @@ var HttpService = /** @class */ (function () {
         console.log(url);
         return this.http.get(url);
     };
+    // todo: переименовать
+    HttpService.prototype.getData7 = function (url) {
+        console.log('GET STATUS DATA......');
+        console.log(url);
+        return this.http.get(url);
+    };
     HttpService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])(),
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"]])
@@ -2583,7 +2589,7 @@ var DashboardRoutingModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"animated fadeIn\">\n\n<!--  <canvas id=\"myChart\" width=\"700\" height=\"400\"></canvas>-->\n\n  <!--<canvas\n    tc-chartjs-pie\n    chart-data=\"{{mydata}}\"\n    chart-options=\"myOptions\"\n    chart-plugins=\"myPlugins\"\n    chart-click=\"onChartClick(event)\"\n  ></canvas>-->\n\n\n  <div class=\"row\">\n\n    <div class=\"col-sm-6 col-md-2\">\n      <div class=\"card text-white bg-info\">\n        <div class=\"card-body\">\n          <div class=\"h1 text-muted text-right mb-4\">\n            <i class=\"icon-people\"></i>\n          </div>\n          <div class=\"h4 mb-0\">87.500</div>\n          <small class=\"text-muted text-uppercase font-weight-bold\">Visitors</small>\n        </div>\n      </div>\n    </div><!--/.col-->\n\n\n    <div class=\"col-sm-6 col-md-2\">\n      <div class=\"card text-white bg-info\">\n        <div class=\"card-body\">\n          <div class=\"h1 text-muted text-right mb-4\">\n            <i class=\"icon-people\"></i>\n          </div>\n          <div class=\"h4 mb-0\">87.500</div>\n          <small class=\"text-muted text-uppercase font-weight-bold\">Visitors</small>\n        </div>\n      </div>\n    </div><!--/.col-->\n\n\n    <div class=\"col-sm-6 col-md-2\">\n      <div class=\"card text-white bg-info\">\n        <div class=\"card-body\">\n          <div class=\"h1 text-muted text-right mb-4\">\n            <i class=\"icon-people\"></i>\n          </div>\n          <div class=\"h4 mb-0\">87.500</div>\n          <small class=\"text-muted text-uppercase font-weight-bold\">Visitors</small>\n        </div>\n      </div>\n    </div><!--/.col-->\n\n\n    <div class=\"col-sm-6 col-md-2\">\n      <div class=\"card text-white bg-info\">\n        <div class=\"card-body\">\n          <div class=\"h1 text-muted text-right mb-4\">\n            <i class=\"icon-people\"></i>\n          </div>\n          <div class=\"h4 mb-0\">87.500</div>\n          <small class=\"text-muted text-uppercase font-weight-bold\">Visitors</small>\n        </div>\n      </div>\n    </div><!--/.col-->\n\n\n  </div><!--/.row-->\n\n\n  <div class=\"card\">\n    <div class=\"card-body\">\n      <div class=\"row\">\n        <div class=\"col-sm-5\">\n          <h4 class=\"card-title mb-0\">{{diagramTitle}}</h4>\n\n          <div class=\"small text-muted\">November 2017</div>\n        </div><!--/.col-->\n        <div class=\"col-sm-7 d-none d-md-block\">\n\n          <div class=\"btn-group btn-group-toggle float-right mr-3\" data-toggle=\"buttons\">\n            <label class=\"btn btn-outline-secondary\" [(ngModel)]=\"radioModel\" btnRadio=\"Day\" id=\"option1\" (click)=\"dayMode()\">Day</label>\n            <label class=\"btn btn-outline-secondary\" [(ngModel)]=\"radioModel\" btnRadio=\"Week\" id=\"option2\" (click)=\"weekMode()\">Week</label>\n            <label class=\"btn btn-outline-secondary\" [(ngModel)]=\"radioModel\" btnRadio=\"Month\" id=\"option3\" (click)=\"monthMode()\">Month</label>\n          </div>\n        </div><!--/.col-->\n      </div><!--/.row-->\n      <div class=\"chart-wrapper\" style=\"height:300px;margin-top:40px;\">\n        <canvas baseChart class=\"chart\"\n        [datasets]=\"mainChartData\"\n        [labels]=\"label\"\n        [options]=\"mainChartOptions\"\n        [colors]=\"mainChartColours\"\n        [legend]=\"mainChartLegend\"\n        [chartType]=\"mainChartType\"></canvas>\n      </div>\n    </div>\n    <!--<div class=\"card-footer\">\n      <div class=\"row text-center\">\n        <div class=\"col-sm-12 col-md mb-sm-2 mb-0\">\n          <div class=\"text-muted\">Visits</div>\n          <strong>29.703 Users (40%)</strong>\n          <div class=\"progress progress-xs mt-2\">\n            <div class=\"progress-bar bg-success\" role=\"progressbar\" style=\"width: 40%\" aria-valuenow=\"40\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\n          </div>\n        </div>\n        <div class=\"col-sm-12 col-md mb-sm-2 mb-0\">\n          <div class=\"text-muted\">Unique</div>\n          <strong>24.093 Users (20%)</strong>\n          <div class=\"progress progress-xs mt-2\">\n            <div class=\"progress-bar bg-info\" role=\"progressbar\" style=\"width: 20%\" aria-valuenow=\"20\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\n          </div>\n        </div>\n        <div class=\"col-sm-12 col-md mb-sm-2 mb-0\">\n          <div class=\"text-muted\">Pageviews</div>\n          <strong>78.706 Views (60%)</strong>\n          <div class=\"progress progress-xs mt-2\">\n            <div class=\"progress-bar bg-warning\" role=\"progressbar\" style=\"width: 60%\" aria-valuenow=\"60\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\n          </div>\n        </div>\n        <div class=\"col-sm-12 col-md mb-sm-2 mb-0\">\n          <div class=\"text-muted\">New Users</div>\n          <strong>22.123 Users (80%)</strong>\n          <div class=\"progress progress-xs mt-2\">\n            <div class=\"progress-bar bg-danger\" role=\"progressbar\" style=\"width: 80%\" aria-valuenow=\"80\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\n          </div>\n        </div>\n        <div class=\"col-sm-12 col-md mb-sm-2 mb-0\">\n          <div class=\"text-muted\">Bounce Rate</div>\n          <strong>40.15%</strong>\n          <div class=\"progress progress-xs mt-2\">\n            <div class=\"progress-bar\" role=\"progressbar\" style=\"width: 40%\" aria-valuenow=\"40\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\n          </div>\n        </div>\n      </div>\n    </div>-->\n  </div>\n  <!--/.card-->\n</div>\n"
+module.exports = "<div class=\"animated fadeIn\">\n\n<!--  <canvas id=\"myChart\" width=\"700\" height=\"400\"></canvas>-->\n\n  <!--<canvas\n    tc-chartjs-pie\n    chart-data=\"{{mydata}}\"\n    chart-options=\"myOptions\"\n    chart-plugins=\"myPlugins\"\n    chart-click=\"onChartClick(event)\"\n  ></canvas>-->\n\n\n  <div class=\"row\">\n\n    <div class=\"col-sm-6 col-md-2\">\n      <!--<div [ngClass]=\"(status.isAcOn==true)?'card text-white bg-success':'card text-white bg-success'\">-->\n        <div [ngClass]=\"status.isAcOn==true?'card text-white bg-success':'card text-white bg-danger'\">\n\n        <div class=\"card-body\">\n          <div class=\"h1 text-muted text-right mb-4\">\n            <i class=\"icon-energy\"></i>\n          </div>\n          <div class=\"h4 mb-0\">AC - ON</div>\n          <!--<small class=\"text-muted text-uppercase font-weight-bold\">AC - ON</small>-->\n        </div>\n      </div>\n    </div><!--/.col-->\n\n\n    <div class=\"col-sm-6 col-md-2\">\n      <div [ngClass]=\"status.isLanOn==true?'card text-white bg-success':'card text-white bg-danger'\">\n        <div class=\"card-body\">\n          <div class=\"h1 text-muted text-right mb-4\">\n            <i class=\"icon-feed\"></i>\n          </div>\n          <div class=\"h4 mb-0\">LAN - ON</div>\n          <!--<small class=\"text-muted text-uppercase font-weight-bold\">Visitors</small>-->\n        </div>\n      </div>\n    </div><!--/.col-->\n\n\n    <!--ВЛАЖНОСТЬ-->\n    <div class=\"col-sm-6 col-md-2\">\n      <div class=\"card text-white bg-info\">\n        <div class=\"card-body\">\n          <div class=\"h1 text-muted text-right mb-4\">\n            <i class=\"icon-drop\"></i>\n          </div>\n          <div class=\"h4 mb-0\">Humidity:  {{status.lastHumidity}}</div>\n          <!--<small class=\"text-muted text-uppercase font-weight-bold\">Humidity</small>-->\n        </div>\n      </div>\n    </div><!--/.col-->\n\n    <!--ТЕКУЩАЯ СТАТУСНАЯ ТЕМПЕРАТУРА-->\n    <div class=\"col-sm-6 col-md-2\">\n      <div class=\"card text-white bg-info\">\n        <div class=\"card-body\">\n          <div class=\"h1 text-muted text-right mb-4\">\n            <i class=\"icon-fire\"></i>\n          </div>\n          <div class=\"h4 mb-0\">Temperature:  {{status.lastTemperature}}</div>\n          <!--<small class=\"text-muted text-uppercase font-weight-bold\">Humidity</small>-->\n        </div>\n      </div>\n    </div><!--/.col-->\n\n  <!--GSM-->\n    <div class=\"col-sm-6 col-md-2\">\n      <div class=\"card text-white bg-success\">\n        <div class=\"card-body\">\n          <div class=\"h1 text-muted text-right mb-4\">\n            <i class=\"icon-phone\"></i>\n          </div>\n          <div class=\"h4 mb-0\">GSM - ON</div>\n          <!--<small class=\"text-muted text-uppercase font-weight-bold\">Visitors</small>-->\n        </div>\n      </div>\n    </div><!--/.col-->\n\n    <!--Последнее время/дата пинга-->\n    <div class=\"col-sm-6 col-md-2\">\n      <div class=\"card text-white bg-info\">\n        <div class=\"card-body\">\n          <div class=\"h1 text-muted text-right mb-4\">\n            <i class=\"icon-speedometer\"></i>\n          </div>\n          <div class=\"h4 mb-0\">{{status.lastContactDate}} | {{status.lastContactTime}}</div>\n          <!--<small class=\"text-muted text-uppercase font-weight-bold\">Visitors</small>-->\n        </div>\n      </div>\n    </div><!--/.col-->\n\n\n  </div><!--/.row-->\n\n\n  <div class=\"card\">\n    <div class=\"card-body\">\n      <div class=\"row\">\n        <div class=\"col-sm-5\">\n          <h4 class=\"card-title mb-0\">{{diagramTitle}}</h4>\n\n          <div class=\"small text-muted\">November 2017</div>\n        </div><!--/.col-->\n        <div class=\"col-sm-7 d-none d-md-block\">\n\n          <div class=\"btn-group btn-group-toggle float-right mr-3\" data-toggle=\"buttons\">\n            <label class=\"btn btn-outline-secondary\" [(ngModel)]=\"radioModel\" btnRadio=\"Day\" id=\"option1\" (click)=\"dayMode()\">Day</label>\n            <label class=\"btn btn-outline-secondary\" [(ngModel)]=\"radioModel\" btnRadio=\"Week\" id=\"option2\" (click)=\"weekMode()\">Week</label>\n            <label class=\"btn btn-outline-secondary\" [(ngModel)]=\"radioModel\" btnRadio=\"Month\" id=\"option3\" (click)=\"monthMode()\">Month</label>\n          </div>\n        </div><!--/.col-->\n      </div><!--/.row-->\n      <div class=\"chart-wrapper\" style=\"height:300px;margin-top:40px;\">\n        <canvas baseChart class=\"chart\"\n        [datasets]=\"mainChartData\"\n        [labels]=\"label\"\n        [options]=\"mainChartOptions\"\n        [colors]=\"mainChartColours\"\n        [legend]=\"mainChartLegend\"\n        [chartType]=\"mainChartType\"></canvas>\n      </div>\n    </div>\n    <!--<div class=\"card-footer\">\n      <div class=\"row text-center\">\n        <div class=\"col-sm-12 col-md mb-sm-2 mb-0\">\n          <div class=\"text-muted\">Visits</div>\n          <strong>29.703 Users (40%)</strong>\n          <div class=\"progress progress-xs mt-2\">\n            <div class=\"progress-bar bg-success\" role=\"progressbar\" style=\"width: 40%\" aria-valuenow=\"40\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\n          </div>\n        </div>\n        <div class=\"col-sm-12 col-md mb-sm-2 mb-0\">\n          <div class=\"text-muted\">Unique</div>\n          <strong>24.093 Users (20%)</strong>\n          <div class=\"progress progress-xs mt-2\">\n            <div class=\"progress-bar bg-info\" role=\"progressbar\" style=\"width: 20%\" aria-valuenow=\"20\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\n          </div>\n        </div>\n        <div class=\"col-sm-12 col-md mb-sm-2 mb-0\">\n          <div class=\"text-muted\">Pageviews</div>\n          <strong>78.706 Views (60%)</strong>\n          <div class=\"progress progress-xs mt-2\">\n            <div class=\"progress-bar bg-warning\" role=\"progressbar\" style=\"width: 60%\" aria-valuenow=\"60\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\n          </div>\n        </div>\n        <div class=\"col-sm-12 col-md mb-sm-2 mb-0\">\n          <div class=\"text-muted\">New Users</div>\n          <strong>22.123 Users (80%)</strong>\n          <div class=\"progress progress-xs mt-2\">\n            <div class=\"progress-bar bg-danger\" role=\"progressbar\" style=\"width: 80%\" aria-valuenow=\"80\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\n          </div>\n        </div>\n        <div class=\"col-sm-12 col-md mb-sm-2 mb-0\">\n          <div class=\"text-muted\">Bounce Rate</div>\n          <strong>40.15%</strong>\n          <div class=\"progress progress-xs mt-2\">\n            <div class=\"progress-bar\" role=\"progressbar\" style=\"width: 40%\" aria-valuenow=\"40\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\n          </div>\n        </div>\n      </div>\n    </div>-->\n  </div>\n  <!--/.card-->\n</div>\n"
 
 /***/ }),
 
@@ -2620,6 +2626,7 @@ var DashboardComponent = /** @class */ (function () {
         this.localWeek = 'assets/data/week.json';
         this.localMonth = 'assets/data/month.json';
         this.localToday = 'assets/data/today.json';
+        this.localStatus = 'assets/data/status.json';
         // --------------------------------------------------------------- REMOTE ---------------------------------------------------
         this.httpGETAll = 'http://localhost:8080/RCCT-2.0-SNAPSHOT/rest/users/all'; // все записи
         this.httpGetToday = 'http://localhost:8080/RCCT-2.0-SNAPSHOT/rest/users/today'; // сегодняшние измерения
@@ -3048,6 +3055,7 @@ var DashboardComponent = /** @class */ (function () {
     };
     DashboardComponent.prototype.ngOnInit = function () {
         this.dayMode();
+        this.getStatus();
         this.label = ['Night', 'Morning', 'Day', 'Evening'];
     };
     DashboardComponent.prototype.monthMode = function () {
@@ -3118,6 +3126,38 @@ var DashboardComponent = /** @class */ (function () {
             ];
         });
     };
+    DashboardComponent.prototype.getStatus = function () {
+        var _this = this;
+        console.log(' =============== GET STATUS =================== ');
+        // Чистим все
+        /* this.count.splice(0, this.count.length);
+         this.count2.splice(0, this.count2.length);
+         this.label.splice(0, this.label.length);
+         this.year.splice(0, this.year.length);*/
+        this.httpService.getData7(this.localStatus).subscribe(function (data) {
+            _this.status = data;
+            console.log(data);
+            /*this.temps.forEach(y => {
+              this.year.push(y.measureDate);
+              this.label.push((y.measureDate.split('/'))[0] + '/' + (y.measureDate.split('/'))[1]);
+              this.count.push(y.dayTemp);
+              this.count2.push(y.nightTemp);
+            });*/
+            /*  console.log(this.count);
+              console.log(this.year);*/
+            // this.mainChartData = [];
+            /* this.mainChartData = [
+               {
+                 data: this.count,
+                 label: 'Day'
+               },
+               {
+                 data: this.count2,
+                 label: 'Night'
+               }
+             ];*/
+        });
+    };
     DashboardComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             template: __webpack_require__(/*! ./dashboard.component.html */ "./src/app/views/dashboard/dashboard.component.html"),
@@ -3152,6 +3192,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
 /* harmony import */ var _dashboard_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./dashboard.component */ "./src/app/views/dashboard/dashboard.component.ts");
 /* harmony import */ var _dashboard_routing_module__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./dashboard-routing.module */ "./src/app/views/dashboard/dashboard-routing.module.ts");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
+
 
 
 
@@ -3171,6 +3213,7 @@ var DashboardModule = /** @class */ (function () {
                 _dashboard_routing_module__WEBPACK_IMPORTED_MODULE_8__["DashboardRoutingModule"],
                 ng2_charts_ng2_charts__WEBPACK_IMPORTED_MODULE_3__["ChartsModule"],
                 _angular_common_http__WEBPACK_IMPORTED_MODULE_6__["HttpClientModule"],
+                _angular_common__WEBPACK_IMPORTED_MODULE_9__["CommonModule"],
                 ngx_bootstrap_dropdown__WEBPACK_IMPORTED_MODULE_4__["BsDropdownModule"],
                 ngx_bootstrap_buttons__WEBPACK_IMPORTED_MODULE_5__["ButtonsModule"].forRoot()
             ],

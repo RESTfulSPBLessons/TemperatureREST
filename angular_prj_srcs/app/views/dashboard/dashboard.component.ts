@@ -6,6 +6,8 @@ import {HttpService} from '../../services/http.service';
 // import {Premium} from '../../premium';
 // import {Book} from '../base/Book';
 import {User} from './user';
+import {Temp} from '../../temp';
+import {Status} from '../../status';
 
 // import {HttpClient} from '@angular/common/http';
 
@@ -16,14 +18,15 @@ import {User} from './user';
 })
 export class DashboardComponent implements OnInit {
 
-
-  radioModel: string = 'Month';
+  radioModel: string = 'Day';
+  diagramTitle: string = 'Day statistic'
 
   // ---------------------------------------------------------------- LOCAL --------------------------------------------------
   localJson = 'assets/data/test.json';
-  localJson2 = 'assets/data/db.json';
-  localJson3 = 'assets/data/user.json';
-  localJson4 = 'assets/data/today.json';
+  localWeek = 'assets/data/week.json';
+  localMonth = 'assets/data/month.json';
+  localToday = 'assets/data/today.json';
+  localStatus = 'assets/data/status.json';
   // --------------------------------------------------------------- REMOTE ---------------------------------------------------
   httpGETAll = 'http://localhost:8080/RCCT-2.0-SNAPSHOT/rest/users/all'; // все записи
   httpGetToday = 'http://localhost:8080/RCCT-2.0-SNAPSHOT/rest/users/today'; // сегодняшние измерения
@@ -33,233 +36,243 @@ export class DashboardComponent implements OnInit {
   httpGetMonthly4Night = 'http://localhost:8080/RCCT-2.0-SNAPSHOT/rest/users/monthnight'; // месячные, ночная температуры
   httpGetStatus = 'http://localhost:8080/RCCT-2.0-SNAPSHOT/rest/users/status'; // Статус
 
-  users: User[];
-//  user: User;
-  mainChartData5 = [];
+  users: User[]; // todo: переименовать
+  temps: Temp[]; // todo: переименовать
+  status: Status[]; // Статус
+  mainChartData5 = []; // todo: переименовать
 
-  year = [];
-  count = [];
+  year = []; // время измерения todo: переименовать
+  year2 = []; // время измерения todo: переименовать
+  // label = []; // подпись метки
+  count = []; // температура todo: переименовать
+  count2 = []; // температура todo: переименовать
+  label = []; // метки todo: переименовать
+  person = {
+    data: [],
+    label: 'Temp = '
+  };
 
   mydata = [
     [65, 59, 80, 81, 56, 55, 40],
     [28, 48, 40, 19, 86, 27, 90]
   ];
 
-/*
+  /*
 
-  // lineChart1
-  public lineChart1Data: Array<any> = [
-    {
-      data: [65, 59, 84, 84, 51, 55, 40],
-      label: 'Series A'
-    }
-  ];
-  public lineChart1Labels: Array<any> = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
-  public lineChart1Options: any = {
-    tooltips: {
-      enabled: false,
-      custom: CustomTooltips
-    },
-    maintainAspectRatio: false,
-    scales: {
-      xAxes: [{
-        gridLines: {
-          color: 'transparent',
-          zeroLineColor: 'transparent'
-        },
-        ticks: {
-          fontSize: 2,
-          fontColor: 'transparent',
-        }
+    // lineChart1
+    public lineChart1Data: Array<any> = [
+      {
+        data: [65, 59, 84, 84, 51, 55, 40],
+        label: 'Series A'
+      }
+    ];
+    public lineChart1Labels: Array<any> = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
+    public lineChart1Options: any = {
+      tooltips: {
+        enabled: false,
+        custom: CustomTooltips
+      },
+      maintainAspectRatio: false,
+      scales: {
+        xAxes: [{
+          gridLines: {
+            color: 'transparent',
+            zeroLineColor: 'transparent'
+          },
+          ticks: {
+            fontSize: 2,
+            fontColor: 'transparent',
+          }
 
-      }],
-      yAxes: [{
-        display: false,
-        ticks: {
+        }],
+        yAxes: [{
           display: false,
-          min: 40 - 5,
-          max: 84 + 5,
-        }
-      }],
-    },
-    elements: {
-      line: {
-        borderWidth: 1
+          ticks: {
+            display: false,
+            min: 40 - 5,
+            max: 84 + 5,
+          }
+        }],
       },
-      point: {
-        radius: 4,
-        hitRadius: 10,
-        hoverRadius: 4,
-      },
-    },
-    legend: {
-      display: false
-    }
-  };
-  public lineChart1Colours: Array<any> = [
-    {
-      backgroundColor: getStyle('--primary'),
-      borderColor: 'rgba(255,255,255,.55)'
-    }
-  ];
-  public lineChart1Legend = false;
-  public lineChart1Type = 'line';
-
-//  public premiumsO: Premium[] = [];
-
-  // lineChart2
-  public lineChart2Data: Array<any> = [
-    {
-      data: [1, 18, 9, 17, 34, 22, 11],
-      label: 'Series A'
-    }
-  ];
-  public lineChart2Labels: Array<any> = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
-  public lineChart2Options: any = {
-    tooltips: {
-      enabled: false,
-      custom: CustomTooltips
-    },
-    maintainAspectRatio: false,
-    scales: {
-      xAxes: [{
-        gridLines: {
-          color: 'transparent',
-          zeroLineColor: 'transparent'
+      elements: {
+        line: {
+          borderWidth: 1
         },
-        ticks: {
-          fontSize: 2,
-          fontColor: 'transparent',
-        }
+        point: {
+          radius: 4,
+          hitRadius: 10,
+          hoverRadius: 4,
+        },
+      },
+      legend: {
+        display: false
+      }
+    };
+    public lineChart1Colours: Array<any> = [
+      {
+        backgroundColor: getStyle('--primary'),
+        borderColor: 'rgba(255,255,255,.55)'
+      }
+    ];
+    public lineChart1Legend = false;
+    public lineChart1Type = 'line';
 
-      }],
-      yAxes: [{
-        display: false,
-        ticks: {
+  //  public premiumsO: Premium[] = [];
+
+    // lineChart2
+    public lineChart2Data: Array<any> = [
+      {
+        data: [1, 18, 9, 17, 34, 22, 11],
+        label: 'Series A'
+      }
+    ];
+    public lineChart2Labels: Array<any> = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
+    public lineChart2Options: any = {
+      tooltips: {
+        enabled: false,
+        custom: CustomTooltips
+      },
+      maintainAspectRatio: false,
+      scales: {
+        xAxes: [{
+          gridLines: {
+            color: 'transparent',
+            zeroLineColor: 'transparent'
+          },
+          ticks: {
+            fontSize: 2,
+            fontColor: 'transparent',
+          }
+
+        }],
+        yAxes: [{
           display: false,
-          min: 1 - 5,
-          max: 34 + 5,
-        }
-      }],
-    },
-    elements: {
-      line: {
-        tension: 0.00001,
-        borderWidth: 1
+          ticks: {
+            display: false,
+            min: 1 - 5,
+            max: 34 + 5,
+          }
+        }],
       },
-      point: {
-        radius: 4,
-        hitRadius: 10,
-        hoverRadius: 4,
+      elements: {
+        line: {
+          tension: 0.00001,
+          borderWidth: 1
+        },
+        point: {
+          radius: 4,
+          hitRadius: 10,
+          hoverRadius: 4,
+        },
       },
-    },
-    legend: {
-      display: false
-    }
-  };
-  public lineChart2Colours: Array<any> = [
-    { // grey
-      backgroundColor: getStyle('--info'),
-      borderColor: 'rgba(255,255,255,.55)'
-    }
-  ];
-  public lineChart2Legend = false;
-  public lineChart2Type = 'line';
-
-
-  // lineChart3
-  public lineChart3Data: Array<any> = [
-    {
-      data: [78, 81, 80, 45, 34, 12, 40],
-      label: 'Series A'
-    }
-  ];
-  public lineChart3Labels: Array<any> = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
-  public lineChart3Options: any = {
-    tooltips: {
-      enabled: false,
-      custom: CustomTooltips
-    },
-    maintainAspectRatio: false,
-    scales: {
-      xAxes: [{
+      legend: {
         display: false
-      }],
-      yAxes: [{
-        display: false
-      }]
-    },
-    elements: {
-      line: {
-        borderWidth: 2
-      },
-      point: {
-        radius: 0,
-        hitRadius: 10,
-        hoverRadius: 4,
-      },
-    },
-    legend: {
-      display: false
-    }
-  };
-  public lineChart3Colours: Array<any> = [
-    {
-      backgroundColor: 'rgba(255,255,255,.2)',
-      borderColor: 'rgba(255,255,255,.55)',
-    }
-  ];
-  public lineChart3Legend = false;
-  public lineChart3Type = 'line';
+      }
+    };
+    public lineChart2Colours: Array<any> = [
+      { // grey
+        backgroundColor: getStyle('--info'),
+        borderColor: 'rgba(255,255,255,.55)'
+      }
+    ];
+    public lineChart2Legend = false;
+    public lineChart2Type = 'line';
 
 
-  // barChart1
-  public barChart1Data: Array<any> = [
-    {
-      data: [78, 81, 80, 45, 34, 12, 40, 78, 81, 80, 45, 34, 12, 40, 12, 40],
-      label: 'Series A'
-    }
-  ];
-  public barChart1Labels: Array<any> = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16'];
-  public barChart1Options: any = {
-    tooltips: {
-      enabled: false,
-      custom: CustomTooltips
-    },
-    maintainAspectRatio: false,
-    scales: {
-      xAxes: [{
-        display: false,
-        barPercentage: 0.6,
-      }],
-      yAxes: [{
+    // lineChart3
+    public lineChart3Data: Array<any> = [
+      {
+        data: [78, 81, 80, 45, 34, 12, 40],
+        label: 'Series A'
+      }
+    ];
+    public lineChart3Labels: Array<any> = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
+    public lineChart3Options: any = {
+      tooltips: {
+        enabled: false,
+        custom: CustomTooltips
+      },
+      maintainAspectRatio: false,
+      scales: {
+        xAxes: [{
+          display: false
+        }],
+        yAxes: [{
+          display: false
+        }]
+      },
+      elements: {
+        line: {
+          borderWidth: 2
+        },
+        point: {
+          radius: 0,
+          hitRadius: 10,
+          hoverRadius: 4,
+        },
+      },
+      legend: {
         display: false
-      }]
-    },
-    legend: {
-      display: false
-    }
-  };
-  public barChart1Colours: Array<any> = [
-    {
-      backgroundColor: 'rgba(255,255,255,.3)',
-      borderWidth: 0
-    }
-  ];
-  public barChart1Legend = false;
-  public barChart1Type = 'bar';
-*/
+      }
+    };
+    public lineChart3Colours: Array<any> = [
+      {
+        backgroundColor: 'rgba(255,255,255,.2)',
+        borderColor: 'rgba(255,255,255,.55)',
+      }
+    ];
+    public lineChart3Legend = false;
+    public lineChart3Type = 'line';
+
+
+    // barChart1
+    public barChart1Data: Array<any> = [
+      {
+        data: [78, 81, 80, 45, 34, 12, 40, 78, 81, 80, 45, 34, 12, 40, 12, 40],
+        label: 'Series A'
+      }
+    ];
+    public barChart1Labels: Array<any> = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16'];
+    public barChart1Options: any = {
+      tooltips: {
+        enabled: false,
+        custom: CustomTooltips
+      },
+      maintainAspectRatio: false,
+      scales: {
+        xAxes: [{
+          display: false,
+          barPercentage: 0.6,
+        }],
+        yAxes: [{
+          display: false
+        }]
+      },
+      legend: {
+        display: false
+      }
+    };
+    public barChart1Colours: Array<any> = [
+      {
+        backgroundColor: 'rgba(255,255,255,.3)',
+        borderWidth: 0
+      }
+    ];
+    public barChart1Legend = false;
+    public barChart1Type = 'bar';
+  */
 
   // mainChart
 
-  public mainChartElements = 27;
+  public mainChartElements = 5;
   public mainChartData1: Array<number> = [];
   public mainChartData2: Array<number> = [];
   public mainChartData3: Array<number> = [];
 
-  public mainChartData: Array<any> = [
-    {data: this.count, label: 'Python Language'}
-  ];
+// {data: this.count, label: 'Температура'}
+
+
+  public mainChartData: Array<any> = [this.person, this.person];
 
   /*public mainChartData: Array<any> = [
     {
@@ -276,7 +289,7 @@ export class DashboardComponent implements OnInit {
     }
   ];*/
   /* tslint:disable:max-line-length */
-  public mainChartLabels: Array<any> = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday', 'Monday', 'Thursday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+  public mainChartLabels: Array<any> = ['Night', 'Morning', 'Day', 'Evening'];
   /* tslint:enable:max-line-length */
   public mainChartOptions: any = {
     tooltips: {
@@ -300,7 +313,7 @@ export class DashboardComponent implements OnInit {
         },
         ticks: {
           callback: function (value: any) {
-            return value.charAt(0);
+            return value;
           }
         }
       }],
@@ -425,110 +438,170 @@ export class DashboardComponent implements OnInit {
   // constructor(private http: HttpClient){}
 
   clickEvent() {
-   // console.log(this.user);
-  //  console.log(this.users);
-
-    /* const arr = this.users.map(function (user: any) {
-
-       var localObj = [];
-      //  var i = 0;
-      //  localObj[i] = 1;
-      //  i = i+1;
-        localObj.push(user.age);
-       return localObj;
-
-     }); */
-
-    /*const output = this.users.map(user => user.name);
-    console.log(output);
-
-    this.mainChartData1 = output;
-    console.log('After Parse:');
-    console.log(this.mainChartData1);*/
-
-
-    //  console.log(arr);
   }
 
 
   dayMode() {
 
-    this.httpService.getData4(this.localJson4).subscribe(data => {
+    // Чистим все
+    // this.label.splice(0, this.label.length);
+    this.count.splice(0, this.count.length);
+    this.count2.splice(0, this.count2.length);
+    this.year.splice(0, this.year.length);
+
+    console.log(' =============== DAY MODE=================== ');
+
+    this.diagramTitle = 'Today statistic';
+    this.httpService.getData4(this.localToday).subscribe(data => {
       this.users = data;
-      console.log(data);
+      //  console.log(data);
       this.users.forEach(y => {
         this.year.push(y.timeCreated);
+        //  this.label.push(y.timeCreated);
         this.count.push(y.temperature);
       });
 
-     console.log(this.count);
-     console.log(this.year);
+      console.log(this.count);
+      console.log(this.year);
 
-
-      // this.mainChartData1 = data['userList'].map(user => user.age);
-      // this.mainChartData5 = data;
-      // const output = this.users.map(user => user.age);
-      // console.log(data);
+      this.mainChartData = [];
+      this.mainChartData = [
+        {
+          data: this.count,
+          label: 'Day'
+        },
+        {
+          data: this.count,
+          label: 'Day'
+        }
+      ];
     });
-
   }
 
 
-
-  ngOnInit(){
-
-
-// this.http.get(this.localJson3).subscribe((data: User) => this.user = data);
-
-
+  ngOnInit() {
     this.dayMode();
+    this.getStatus();
+    this.label = ['Night', 'Morning', 'Day', 'Evening'];
+  }
 
-/*
-    this.httpService.getData4(this.localJson4).subscribe(data => {
-      this.users = data['userList'];
-         console.log(data);
-      this.users.forEach(y => {
-        this.year.push(y.name);
-        this.count.push(y.age);
+  public monthMode() {
+    console.log(' =============== MONTH MODE=================== ');
+
+    // Чистим все
+    // this.label.splice(0, this.label.length);
+    this.count.splice(0, this.count.length);
+    this.count2.splice(0, this.count2.length);
+    this.label.splice(0, this.label.length);
+    this.year.splice(0, this.year.length);
+
+    this.diagramTitle = 'Month statistic';
+    this.httpService.getData5(this.localMonth).subscribe(data => {
+      this.temps = data;
+      console.log(data);
+
+      this.temps.forEach(y => {
+        this.year.push(y.measureDate);
+        this.label.push((y.measureDate.split('/'))[0] + '/' + (y.measureDate.split('/'))[1]);
+       // console.log((y.measureDate.split('/'))[0] + '/' + (y.measureDate.split('/'))[1]);
+        this.count.push(y.dayTemp);
+        this.count2.push(y.nightTemp);
       });
 
       console.log(this.count);
-      // this.mainChartData1 = data['userList'].map(user => user.age);
-    //  this.mainChartData5 = data;
-      //  const output = this.users.map(user => user.age);
-      //   console.log(data);
-    });*/
+      console.log(this.year);
 
-
-    /*const output = this.users.map(user => user.age);
-    console.log(output);
-
-     this.mainChartData1 = output;*/
-    //  console.log('After Parse:');
-    //  console.log(this.mainChartData1);
-
-
-    /*this.mainChartData1.push(10);
-    this.mainChartData1.push(235);
-
-    console.log(this.mainChartData1);
-*/
-    // generate random values for mainChart
-    /*for (let i = 0; i <= this.mainChartElements; i++) {
-      this.mainChartData1.push(this.random(50, 200));
-      this.mainChartData2.push(this.random(80, 100));
-      this.mainChartData3.push(65);
-    }*/
+      this.mainChartData = [];
+      this.mainChartData = [
+        {
+          data: this.count,
+          label: 'Day'
+        },
+        {
+          data: this.count2,
+          label: 'Night'
+        }
+      ];
+    });
   }
 
+  public weekMode() {
+    console.log(' =============== WEEK MODE=================== ');
 
+    // Чистим все
+    this.count.splice(0, this.count.length);
+    this.count2.splice(0, this.count2.length);
+    this.label.splice(0, this.label.length);
+    this.year.splice(0, this.year.length);
+
+    this.diagramTitle = 'Week statistic';
+
+    this.httpService.getData5(this.localWeek).subscribe(data => {
+      this.temps = data;
+      console.log(data);
+
+      this.temps.forEach(y => {
+        this.year.push(y.measureDate);
+        this.label.push((y.measureDate.split('/'))[0] + '/' + (y.measureDate.split('/'))[1]);
+        this.count.push(y.dayTemp);
+        this.count2.push(y.nightTemp);
+      });
+
+      console.log(this.count);
+      console.log(this.year);
+
+      this.mainChartData = [];
+      this.mainChartData = [
+        {
+          data: this.count,
+          label: 'Day'
+        },
+        {
+          data: this.count2,
+          label: 'Night'
+        }
+      ];
+    });
+  }
+
+  public getStatus() {
+    console.log(' =============== GET STATUS =================== ');
+
+    // Чистим все
+   /* this.count.splice(0, this.count.length);
+    this.count2.splice(0, this.count2.length);
+    this.label.splice(0, this.label.length);
+    this.year.splice(0, this.year.length);*/
+
+    this.httpService.getData7(this.localStatus).subscribe(data => {
+      this.status = data;
+      console.log(data);
+
+      /*this.temps.forEach(y => {
+        this.year.push(y.measureDate);
+        this.label.push((y.measureDate.split('/'))[0] + '/' + (y.measureDate.split('/'))[1]);
+        this.count.push(y.dayTemp);
+        this.count2.push(y.nightTemp);
+      });*/
+
+    /*  console.log(this.count);
+      console.log(this.year);*/
+
+      // this.mainChartData = [];
+     /* this.mainChartData = [
+        {
+          data: this.count,
+          label: 'Day'
+        },
+        {
+          data: this.count2,
+          label: 'Night'
+        }
+      ];*/
+    });
+  }
 
 
   constructor(private httpService: HttpService) {
-
-    // console.log(this.fileData);
-
   }
-
-
 }

@@ -1,12 +1,9 @@
 package com.antonromanov.temperaturerest.controller;
 
 import com.antonromanov.temperaturerest.utils.JSONTemplate;
-import com.antonromanov.temperaturerest.utils.TimeSerializer;
 import com.google.gson.*;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import com.antonromanov.temperaturerest.model.*;
@@ -32,8 +29,6 @@ import org.apache.log4j.Logger;
 @RequestMapping("/rest/users")
 public class MainRestController {
 
-
-
 	private static final Logger LOGGER = Logger.getLogger(MainRestController.class);
 
 	List<Temperature> allTemperatures = new ArrayList<>();
@@ -53,11 +48,7 @@ public class MainRestController {
 	// todo: переименовать и перенести (Ангуляр) (this.year и this.count)
 	// todo: переименовать методы типа addlog3. Ну что это за пипец.....
 	// todo: сделать отправку логов/состояний на почту
-	// todo:Почистить гит, слить все ветки в мастер и удалить
 	// todo: Убрать ненужные депенденси
-	// todo: Надо бы еще в логи прям ситуацию словами постить и может быть даже метод такой сделать, чтобы жто получать.
-	// todo: разобраться почему после добавления нового лога, MainParametrs сначала-  AC {true},LAN {true}, IS LOGGED {false}]], а потом - MainParametrs: AC {false},LAN {false}, IS LOGGED {false}]]
-
 
 
 
