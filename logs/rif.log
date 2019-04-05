@@ -510,3 +510,35 @@
   "message" : "username: www_anton_romanov_bot, token: 649537355:AAEhS25RBBSxDPLBeBhZfN7zG4YBp7xU7y0",
   "context" : "default"
 }
+{
+  "timestamp" : "2019-04-05 - 16:46:02.294Z",
+  "level" : "INFO",
+  "thread" : "restartedMain",
+  "logger" : "club.Application",
+  "message" : "Starting Application on DESKTOP-DECTVLC with PID 391728 (C:\\CODING\\GIT\\TemperatureREST\\target\\classes started by Anton Romanov in C:\\CODING\\GIT\\TemperatureREST)",
+  "context" : "default"
+}
+{
+  "timestamp" : "2019-04-05 - 16:46:02.323Z",
+  "level" : "DEBUG",
+  "thread" : "restartedMain",
+  "logger" : "club.Application",
+  "message" : "Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE",
+  "context" : "default"
+}
+{
+  "timestamp" : "2019-04-05 - 16:46:02.325Z",
+  "level" : "INFO",
+  "thread" : "restartedMain",
+  "logger" : "club.Application",
+  "message" : "No active profile set, falling back to default profiles: default",
+  "context" : "default"
+}
+{
+  "timestamp" : "2019-04-05 - 16:46:08.825Z",
+  "level" : "INFO",
+  "thread" : "restartedMain",
+  "logger" : "club.Application",
+  "message" : "Started Application in 7.067 seconds (JVM running for 9.549)",
+  "context" : "default"
+}

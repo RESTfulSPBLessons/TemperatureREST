@@ -13,9 +13,10 @@ import javax.annotation.PostConstruct;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-@Component
-public class Bot2 extends TelegramLongPollingBot {
-
+//@Component
+public class Bot2  {
+//public class Bot2 extends TelegramLongPollingBot {
+/*
 	private static final Logger logger = LoggerFactory.getLogger(Bot2.class);
 	private ExecutorService pool = Executors.newCachedThreadPool();
 
@@ -36,7 +37,7 @@ public class Bot2 extends TelegramLongPollingBot {
 	}
 
 
-	/*private void fireFielLog(Long chartId) {
+	*//*private void fireFielLog(Long chartId) {
 		pool.submit(() -> {
 
 				SendDocument outMessage = new SendDocument();
@@ -53,11 +54,11 @@ public class Bot2 extends TelegramLongPollingBot {
 				}
 			}
 		}
-	*/
+	*//*
 
-	/*public void fireMessage(String msg) {
+	*//*public void fireMessage(String msg) {
 		fireMessage(chanelId, msg);
-	}*/
+	}*//*
 
 	public void fireMessage(Long chanelId, String msg) {
 		pool.submit(() -> {
@@ -109,6 +110,6 @@ public class Bot2 extends TelegramLongPollingBot {
 	@PostConstruct
 	public void start() {
 		logger.info("username: {}, token: {}", username, token);
-	}
+	}*/
 
 }
