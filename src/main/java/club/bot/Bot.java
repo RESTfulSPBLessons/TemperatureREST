@@ -22,9 +22,9 @@ import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-public class Bot  {
-//public class Bot extends TelegramLongPollingBot {
- /*   private ExecutorService pool = Executors.newCachedThreadPool();
+//public class Bot  {
+public class Bot extends TelegramLongPollingBot {
+    private ExecutorService pool = Executors.newCachedThreadPool();
     private static Logger logger = LoggerFactory.getLogger("console_logger");
 
     private String token;
@@ -54,7 +54,20 @@ public class Bot  {
 
         if(inMessage != null && inMessage.getText().startsWith("/")) {
             String command = inMessage.getText().toLowerCase();
-            if(command.startsWith("/log")) {
+
+
+            if(inMessage != null && inMessage.getText().startsWith("/")) {
+               // String command = inMessage.getText().toLowerCase();
+                if (command.startsWith("/status")) {
+
+                    fireMessage(inMessage.getChatId(), "Здесь будет JSON");
+
+                }
+            }
+
+
+
+           /* if(command.startsWith("/log")) {
                 if(command.equals("/log+")) {
                     fireFielLog(inMessage.getChatId());
                 }else {
@@ -85,7 +98,7 @@ public class Bot  {
                         logger.error(ex.getMessage(), ex);
                     }
                 });
-            }
+            }*/
         }
     }
 
@@ -184,4 +197,4 @@ public class Bot  {
     public String getBotToken() {
         return token;
     }
-*/}
+}

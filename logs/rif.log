@@ -542,3 +542,35 @@
   "message" : "Started Application in 7.067 seconds (JVM running for 9.549)",
   "context" : "default"
 }
+{
+  "timestamp" : "2019-04-05 - 16:51:17.928Z",
+  "level" : "INFO",
+  "thread" : "restartedMain",
+  "logger" : "club.Application",
+  "message" : "Starting Application on DESKTOP-DECTVLC with PID 298340 (C:\\CODING\\GIT\\TemperatureREST\\target\\classes started by Anton Romanov in C:\\CODING\\GIT\\TemperatureREST)",
+  "context" : "default"
+}
+{
+  "timestamp" : "2019-04-05 - 16:51:17.973Z",
+  "level" : "DEBUG",
+  "thread" : "restartedMain",
+  "logger" : "club.Application",
+  "message" : "Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE",
+  "context" : "default"
+}
+{
+  "timestamp" : "2019-04-05 - 16:51:17.974Z",
+  "level" : "INFO",
+  "thread" : "restartedMain",
+  "logger" : "club.Application",
+  "message" : "No active profile set, falling back to default profiles: default",
+  "context" : "default"
+}
+{
+  "timestamp" : "2019-04-05 - 16:51:24.957Z",
+  "level" : "INFO",
+  "thread" : "restartedMain",
+  "logger" : "club.Application",
+  "message" : "Started Application in 7.588 seconds (JVM running for 10.067)",
+  "context" : "default"
+}
