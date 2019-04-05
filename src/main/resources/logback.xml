@@ -54,7 +54,7 @@
         <appender-ref ref="FILE" />
     </logger>
 
-    <logger name="console_logger" level="info" additivity="false" >
+    <logger name="console_logger" level="debug" additivity="false" >
         <appender-ref ref="console" />
         <appender-ref ref="FILE_FOR_BOT" />
     </logger>

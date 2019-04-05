@@ -5,6 +5,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import java.util.HashMap;
 import java.util.Map;
@@ -38,10 +39,18 @@ public class RifController {
 	}
 
 	@RequestMapping(value = "/test", method = {RequestMethod.GET, RequestMethod.POST})
-	private String test() {
+	private String test(Model model) {
 		logger.info("TEST");
 		System.out.println("МЫ ТУТ");
+
 	//	errorPushToBot("Похоже отвалился сайт ИФНС: ");
+
+		modelData.clear();
+		model.addAttribute("testme", "Привет!");
+		//modelData.put("startUrl", modelData.get("redirectUrl"));
+		//model.addAllAttributes(modelData);
+
+
 		return "welcome";
 	}
 

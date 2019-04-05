@@ -1,0 +1,13 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Spring Boot Thymeleaf Hello World Example</title>
+</head>
+<body>
+<h2>Это имитация запроса с сайта партнёра</h2>
+
+<form action="virtual_card" method="get">
+    <input readonly name="redirectUrl" type="text" th:value="${testme}"/>
+</form>
+</body>
+</html>
