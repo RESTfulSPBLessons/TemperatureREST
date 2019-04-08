@@ -1,6 +1,8 @@
 package com.antonromanov.temprest.service;
 
 import com.antonromanov.temprest.model.DailyReport;
+import com.antonromanov.temprest.model.Logs;
+import com.antonromanov.temprest.model.Status;
 import com.antonromanov.temprest.model.Temperature;
 import org.springframework.stereotype.Service;
 import java.text.ParseException;
@@ -11,14 +13,14 @@ public interface MainService {
 
 	List<Temperature> getAll(); // список всех измерений (пока с одного датчика)
 
-//	List<Logs> getAllLogs(); // все логи
+	List<Logs> getAllLogs(); // все логи
 //
 	List<Temperature> addMeasure(Double temp, String status); // добавить измерение
-//
+
 //	List<Logs> addLog(Status log) throws ParseException; // добавить измерение \ todo: убрать этот метод потом
-//
-//	void addLog2(Status log); // добавить измерение. Версия №2
-//
+
+	void addLog2(Status log); // добавить измерение. Версия №2 //todo это надо переименовать
+
 	List<Temperature> getTodayMeasures() throws ParseException; //статистика по сегодня
 //
 	List<DailyReport> getWeeklyDayReport() throws ParseException; // недельная статистика
@@ -33,7 +35,7 @@ public interface MainService {
 //
 //	Boolean getLastContactLogged();  // Пинг залогирован или нет?
 //
-//	Status getGlobalStatus(); // глобальное состояние
+	Status getGlobalStatus(); // глобальное состояние
 //
 //	Logs getLastLog(); // получить последний пинг (лог)
 //

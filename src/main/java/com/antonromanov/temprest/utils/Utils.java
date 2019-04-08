@@ -8,6 +8,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.Collection;
 import com.antonromanov.temprest.model.DailyReport;
+import com.antonromanov.temprest.model.Status;
 import com.antonromanov.temprest.model.Temperature;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -221,12 +222,13 @@ public class Utils {
 	/**
 	 * Создаем хороший (200 OK) response для статуса
 	 **/
-	/*public static ResponseEntity<String> createGoodResponse4Status(Status status) {
+	public static ResponseEntity<String> createGoodResponse4Status(Status status) {
 
 		String result = createGsonBuilder().toJson(status);
 		ResponseEntity<String> responseEntity = new ResponseEntity<String>(result, prepareHeaders(), HttpStatus.OK);
+		LOGGER.info("RESPONSE: " + responseEntity.toString());
 		return responseEntity;
-	}*/
+	}
 
 	private static HttpHeaders prepareHeaders(){
 		HttpHeaders headers = new HttpHeaders();

@@ -1,14 +1,20 @@
 package com.antonromanov.temprest.service;
 
+import com.antonromanov.temprest.livecontrolthread.MainParameters;
 import com.antonromanov.temprest.model.DailyReport;
+import com.antonromanov.temprest.model.Logs;
+import com.antonromanov.temprest.model.Status;
 import com.antonromanov.temprest.model.Temperature;
+import com.antonromanov.temprest.repositoty.LogsRepository;
 import com.antonromanov.temprest.repositoty.TemperatureRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.text.ParseException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.sql.Time;
 import java.util.*;
+import static org.apache.commons.lang3.StringUtils.isBlank;
 import static com.antonromanov.temprest.utils.Utils.checkDayNight;
 
 
@@ -28,12 +34,12 @@ public class MainServiceImpl implements MainService {
      * Репозиторий логов живучести
      */
     @Autowired
-//    private LogsRepository logsRepository;
+    private LogsRepository logsRepository;
 
     /**
      * Основные параметры живучести.
      */
-//    MainParameters mainParametrs = new MainParameters();
+    MainParameters mainParametrs = new MainParameters();
 
     /**
      * Получить все логи температур.
@@ -49,10 +55,10 @@ public class MainServiceImpl implements MainService {
      *
      * @return
      */
-//    @Override
-//    public List<Logs> getAllLogs() {
-//        return logsRepository.findAll();
-//    }
+    @Override
+    public List<Logs> getAllLogs() {
+        return logsRepository.findAll();
+    }
 
 	/**
 	 * Добавить температуру.
@@ -123,73 +129,73 @@ public class MainServiceImpl implements MainService {
         return checkDayNight(temperaturesForMonth);
     }
 
-//    /**
-//     * Выдать состояние мониторинга.
-//     *
-//     *
-//     * @return
-//     */
-//    @Override
-//    public Status getGlobalStatus() {
-//
-//        Date date = new Date();
-//        Date date4PostStatus = new Date();
-//        Time time = new Time(date.getTime());
-//        Time time4PostStatus;
-//        Time PingTime4PostStatus;
-//        Status status;
-//
-//        // Проверки на ноль времени
-//
-//        if (mainParametrs.getStatus() == null) {
-//
-//                time4PostStatus = new Time(date.getTime());
-//                PingTime4PostStatus = time4PostStatus;
-//                date4PostStatus = date;
-//
-//        } else {
-//
-//
-//            if (mainParametrs.getStatus().getServerTime() == null) {
-//                time4PostStatus = new Time(date.getTime());
-//            } else {
-//                time4PostStatus = mainParametrs.getStatus().getServerTime();
-//            }
-//
-//            if (mainParametrs.getLastPingTime() == null) {
-//                PingTime4PostStatus = time4PostStatus;
-//            } else {
-//                PingTime4PostStatus = mainParametrs.getLastPingTime();
-//            }
-//
-//            if (mainParametrs.getStatus().getLastContactDate() == null) {
-//                date4PostStatus = date;
-//            } else {
-//                date4PostStatus = mainParametrs.getStatus().getLastContactDate();
-//            }
-//        }
-//
-//
-//        if ((!mainParametrs.isAcStatus() || !mainParametrs.isLanStatus())) {
-//            status = new Status(mainParametrs.isAcStatus(), mainParametrs.isLanStatus(), 0,
-//                    0, time4PostStatus, PingTime4PostStatus, 0, 0, 0, 0,
-//                    date4PostStatus);
-//
-//        } else {
-//            status = new Status(mainParametrs.isAcStatus(), mainParametrs.isLanStatus(),
-//                    mainParametrs.getStatus().getLastTemperature(),
-//                    mainParametrs.getStatus().getLastHumidity(),
-//                    mainParametrs.getStatus().getServerTime(),
-//                    mainParametrs.getLastPingTime(),
-//                    mainParametrs.getStatus().getCurrent(),
-//                    mainParametrs.getStatus().getAmperage(),
-//                    mainParametrs.getStatus().getPower(),
-//                    mainParametrs.getStatus().getConsuming(),
-//                    mainParametrs.getStatus().getLastContactDate());
-//        }
-//        return status;
-//    }
-//
+    /**
+     * Выдать состояние мониторинга.
+     *
+     *
+     * @return
+     */
+    @Override
+    public Status getGlobalStatus() {
+
+        Date date = new Date();
+        Date date4PostStatus = new Date();
+        Time time = new Time(date.getTime());
+        Time time4PostStatus;
+        Time PingTime4PostStatus;
+        Status status;
+
+        // Проверки на ноль времени
+
+        if (mainParametrs.getStatus() == null) {
+
+                time4PostStatus = new Time(date.getTime());
+                PingTime4PostStatus = time4PostStatus;
+                date4PostStatus = date;
+
+        } else {
+
+
+            if (mainParametrs.getStatus().getServerTime() == null) {
+                time4PostStatus = new Time(date.getTime());
+            } else {
+                time4PostStatus = mainParametrs.getStatus().getServerTime();
+            }
+
+            if (mainParametrs.getLastPingTime() == null) {
+                PingTime4PostStatus = time4PostStatus;
+            } else {
+                PingTime4PostStatus = mainParametrs.getLastPingTime();
+            }
+
+            if (mainParametrs.getStatus().getLastContactDate() == null) {
+                date4PostStatus = date;
+            } else {
+                date4PostStatus = mainParametrs.getStatus().getLastContactDate();
+            }
+        }
+
+
+        if ((!mainParametrs.isAcStatus() || !mainParametrs.isLanStatus())) {
+            status = new Status(mainParametrs.isAcStatus(), mainParametrs.isLanStatus(), 0,
+                    0, time4PostStatus, PingTime4PostStatus, 0, 0, 0, 0,
+                    date4PostStatus);
+
+        } else {
+            status = new Status(mainParametrs.isAcStatus(), mainParametrs.isLanStatus(),
+                    mainParametrs.getStatus().getLastTemperature(),
+                    mainParametrs.getStatus().getLastHumidity(),
+                    mainParametrs.getStatus().getServerTime(),
+                    mainParametrs.getLastPingTime(),
+                    mainParametrs.getStatus().getCurrent(),
+                    mainParametrs.getStatus().getAmperage(),
+                    mainParametrs.getStatus().getPower(),
+                    mainParametrs.getStatus().getConsuming(),
+                    mainParametrs.getStatus().getLastContactDate());
+        }
+        return status;
+    }
+
 //    /**
 //     * Выдать глобальные параметры текущего мониторинга.
 //     *
@@ -318,21 +324,21 @@ public class MainServiceImpl implements MainService {
 //        return logsRepository.findAll();
 //    }
 //
-//	@Override
-//	public void addLog2(Status log) {
-//		//Логгируем (добавляем) время сервера
-//		Date date = new Date();
-//		Time time = new Time(date.getTime());
-//		log.setServerTime(time);
-//		mainParametrs.setJustStartedSituation(false);
-//		mainParametrs.setLastPingTime(time);
-//		mainParametrs.setStatus(log);
-//		mainParametrs.setAcStatus(true);
-//		mainParametrs.setLanStatus(true);
-//		if (log.getWho()==null) log.setWho("REST");
-//		if (isBlank(log.getWho())) log.setWho("REST");
-//
-//		// TODO:  нам вот здесь хорошо бы проверить на ноль что-нибудь (надо подумать что: скорее всего даты)
-//		logsRepository.save(new Logs(log));
-//	}
+	@Override
+	public void addLog2(Status log) {
+		//Логгируем (добавляем) время сервера
+		Date date = new Date();
+		Time time = new Time(date.getTime());
+		log.setServerTime(time);
+		mainParametrs.setJustStartedSituation(false);
+		mainParametrs.setLastPingTime(time);
+		mainParametrs.setStatus(log);
+		mainParametrs.setAcStatus(true);
+		mainParametrs.setLanStatus(true);
+		if (log.getWho()==null) log.setWho("REST");
+		if (isBlank(log.getWho())) log.setWho("REST");
+
+		// TODO:  нам вот здесь хорошо бы проверить на ноль что-нибудь (надо подумать что: скорее всего даты)
+		logsRepository.save(new Logs(log));
+	}
 }

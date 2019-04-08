@@ -1,6 +1,8 @@
 package com.antonromanov.temprest.controller;
 
 import com.antonromanov.temprest.model.DailyReport;
+import com.antonromanov.temprest.model.Logs;
+import com.antonromanov.temprest.model.Status;
 import com.antonromanov.temprest.model.Temperature;
 import com.antonromanov.temprest.service.MainService;
 import com.antonromanov.temprest.utils.JSONTemplate;
@@ -151,10 +153,10 @@ public class MainRestController {
 	@GetMapping("/status")
 	public ResponseEntity<String> getStatus() throws ParseException {
 
-	//	LOGGER.info("========= GET STATUS ============== ");
+		LOGGER.info("========= GET STATUS ============== ");
 
-		//return createGoodResponse4Status(mainService.getGlobalStatus());
-		return null;
+	return createGoodResponse4Status(mainService.getGlobalStatus());
+
 	}
 
 	/**
@@ -165,10 +167,9 @@ public class MainRestController {
 	@GetMapping("/alllogs")
 	public ResponseEntity<String> getAllLogs(HttpServletRequest request) {
 
-	//	List<Logs> allLogsList = mainService.getAllLogs();
-	//	LOGGER.info("============ ALL LOGS LIST ============== ");
-		//return createGoodResponse(allLogsList);
-		return null;
+		List<Logs> allLogsList = mainService.getAllLogs();
+		LOGGER.info("============ ALL LOGS LIST ============== ");
+		return createGoodResponse(allLogsList);
 	}
 
 	/**
@@ -206,79 +207,76 @@ public class MainRestController {
 		Date currentDate = new Date();
 		Time time = new Time(currentDate.getTime());
 		String remoteAddr = "";
-//		Status newStatus = null;
-//
-//		LOGGER.info("################# ADD LOG METHOD #####################");
-//		LOGGER.info("LOG: " + requestParam);
+		Status newStatus = null;
+
+		LOGGER.info("################# ADD LOG METHOD #####################");
+		LOGGER.info("LOG: " + requestParam);
 
 		// Парсим пришедший JSON  с температурой
-//		try {
+		try {
 
-//			String who = ((JSONTemplate.fromString(requestParam).get("who") == null) || (JSONTemplate.fromString(requestParam).get("who").isJsonNull())) ? "Test" : JSONTemplate.fromString(requestParam).get("who").getAsString();
-//			Boolean acOn = ((JSONTemplate.fromString(requestParam).get("acOn") == null) || (JSONTemplate.fromString(requestParam).get("acOn").isJsonNull())) ? false : JSONTemplate.fromString(requestParam).get("acOn").getAsBoolean();
-//			Boolean lanOn = ((JSONTemplate.fromString(requestParam).get("lanOn") == null) || (JSONTemplate.fromString(requestParam).get("lanOn").isJsonNull())) ? false : JSONTemplate.fromString(requestParam).get("lanOn").getAsBoolean();
-//			int lastTemperature = ((JSONTemplate.fromString(requestParam).get("lastTemperature") == null) || (JSONTemplate.fromString(requestParam).get("lastTemperature").isJsonNull())) ? 0 : JSONTemplate.fromString(requestParam).get("lastTemperature").getAsInt();
-//			int lastHumidity = ((JSONTemplate.fromString(requestParam).get("lastHumidity") == null) || (JSONTemplate.fromString(requestParam).get("lastHumidity").isJsonNull())) ? 0 : JSONTemplate.fromString(requestParam).get("lastHumidity").getAsInt();
-//			int current = ((JSONTemplate.fromString(requestParam).get("current") == null) || (JSONTemplate.fromString(requestParam).get("current").isJsonNull())) ? 0 : JSONTemplate.fromString(requestParam).get("current").getAsInt();
-//			int amperage = ((JSONTemplate.fromString(requestParam).get("amperage") == null) || (JSONTemplate.fromString(requestParam).get("amperage").isJsonNull())) ? 0 : JSONTemplate.fromString(requestParam).get("amperage").getAsInt();
-//			int power = ((JSONTemplate.fromString(requestParam).get("power") == null) || (JSONTemplate.fromString(requestParam).get("power").isJsonNull())) ? 0 : JSONTemplate.fromString(requestParam).get("power").getAsInt();
-//			int consuming = ((JSONTemplate.fromString(requestParam).get("consuming") == null) || (JSONTemplate.fromString(requestParam).get("consuming").isJsonNull())) ? 0 : JSONTemplate.fromString(requestParam).get("consuming").getAsInt();
+			String who = ((JSONTemplate.fromString(requestParam).get("who") == null) || (JSONTemplate.fromString(requestParam).get("who").isJsonNull())) ? "Test" : JSONTemplate.fromString(requestParam).get("who").getAsString();
+			Boolean acOn = ((JSONTemplate.fromString(requestParam).get("acOn") == null) || (JSONTemplate.fromString(requestParam).get("acOn").isJsonNull())) ? false : JSONTemplate.fromString(requestParam).get("acOn").getAsBoolean();
+			Boolean lanOn = ((JSONTemplate.fromString(requestParam).get("lanOn") == null) || (JSONTemplate.fromString(requestParam).get("lanOn").isJsonNull())) ? false : JSONTemplate.fromString(requestParam).get("lanOn").getAsBoolean();
+			int lastTemperature = ((JSONTemplate.fromString(requestParam).get("lastTemperature") == null) || (JSONTemplate.fromString(requestParam).get("lastTemperature").isJsonNull())) ? 0 : JSONTemplate.fromString(requestParam).get("lastTemperature").getAsInt();
+			int lastHumidity = ((JSONTemplate.fromString(requestParam).get("lastHumidity") == null) || (JSONTemplate.fromString(requestParam).get("lastHumidity").isJsonNull())) ? 0 : JSONTemplate.fromString(requestParam).get("lastHumidity").getAsInt();
+			int current = ((JSONTemplate.fromString(requestParam).get("current") == null) || (JSONTemplate.fromString(requestParam).get("current").isJsonNull())) ? 0 : JSONTemplate.fromString(requestParam).get("current").getAsInt();
+			int amperage = ((JSONTemplate.fromString(requestParam).get("amperage") == null) || (JSONTemplate.fromString(requestParam).get("amperage").isJsonNull())) ? 0 : JSONTemplate.fromString(requestParam).get("amperage").getAsInt();
+			int power = ((JSONTemplate.fromString(requestParam).get("power") == null) || (JSONTemplate.fromString(requestParam).get("power").isJsonNull())) ? 0 : JSONTemplate.fromString(requestParam).get("power").getAsInt();
+			int consuming = ((JSONTemplate.fromString(requestParam).get("consuming") == null) || (JSONTemplate.fromString(requestParam).get("consuming").isJsonNull())) ? 0 : JSONTemplate.fromString(requestParam).get("consuming").getAsInt();
 
 
-//			newStatus = new Status(
-//					who,
-//					acOn,
-//					lanOn,
-//					lastTemperature,
-//					lastHumidity,
-//					time, // serverTime
-//					time, // lastContactTime
-//					current,
-//					amperage,
-//					power,
-//					consuming,
-//					currentDate, false); // lastContactDate
-//
-//			LOGGER.info("PARSING RESULT: " + newStatus.toString());
+			newStatus = new Status(
+					who,
+					acOn,
+					lanOn,
+					lastTemperature,
+					lastHumidity,
+					time, // serverTime
+					time, // lastContactTime
+					current,
+					amperage,
+					power,
+					consuming,
+					currentDate, false); // lastContactDate
 
-//		} catch (JsonParseException ex) {
+			LOGGER.info("PARSING RESULT: " + newStatus.toString());
+
+		} catch (JsonParseException ex) {
 
 			try {
 				resp.sendError(HttpServletResponse.SC_BAD_REQUEST, "Ошибка парсинга JSON");
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
-	//	}
+		}
 
 		// Пытаемся взять ip
-//		remoteAddr = getIp(request);
-//		LOGGER.info("GETTING REQUEST FROM:  " + remoteAddr);
+		remoteAddr = getIp(request);
 
-
-//		List<Logs> allStatuses = mainService.getAllLogs();
-//		ResponseEntity<String> responseEntity = null;
+		List<Logs> allStatuses = mainService.getAllLogs();
+		ResponseEntity<String> responseEntity = null;
 //		// Формируем JSON
-//		JsonObject responseStatusInJson = null;
+		JsonObject responseStatusInJson = null;
 
 		//todo: вот тут надо наормально обрабатывать эксепшены работы с бд. трай-кетчем
 		// todo: так же надо как-то обрабатывать ситуацию, если статус мы не заполнили
-//		if (newStatus != null) {
-//			mainService.addLog2(newStatus);
-//			// Формируем JSON
-//			responseStatusInJson = JSONTemplate.create()
-//					.add("AllStatuses", allStatuses.size())
-//					.add("ip", remoteAddr).getJson();
-//			responseEntity = new ResponseEntity<>(responseStatusInJson.toString(), HttpStatus.OK);
-//
-//		} else {
-//			responseStatusInJson = JSONTemplate.create()
-//					.add("ERROR", "newStatus - null")
-//					.add("ip", remoteAddr).getJson();
-//			responseEntity = new ResponseEntity<>(responseStatusInJson.toString(), HttpStatus.BAD_GATEWAY);
-//		}
+		if (newStatus != null) {
+			mainService.addLog2(newStatus);
+			// Формируем JSON
+			responseStatusInJson = JSONTemplate.create()
+					.add("AllStatuses", allStatuses.size())
+					.add("ip", remoteAddr).getJson();
+			responseEntity = new ResponseEntity<>(responseStatusInJson.toString(), HttpStatus.OK);
 
-		//return responseEntity;
-		return null;
+		} else {
+			responseStatusInJson = JSONTemplate.create()
+					.add("ERROR", "newStatus - null")
+					.add("ip", remoteAddr).getJson();
+			responseEntity = new ResponseEntity<>(responseStatusInJson.toString(), HttpStatus.BAD_GATEWAY);
+		}
+
+		return responseEntity;
 	}
 
 	private List<Temperature> addTemperatureMeasure(Double temp, HttpServletRequest request){
