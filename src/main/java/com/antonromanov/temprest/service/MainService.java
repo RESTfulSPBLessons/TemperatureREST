@@ -1,11 +1,12 @@
 package com.antonromanov.temprest.service;
 
+import com.antonromanov.temprest.model.DailyReport;
 import com.antonromanov.temprest.model.Temperature;
 import org.springframework.stereotype.Service;
 import java.text.ParseException;
 import java.util.List;
 
-@Service
+
 public interface MainService {
 
 	List<Temperature> getAll(); // список всех измерений (пока с одного датчика)
@@ -20,9 +21,9 @@ public interface MainService {
 //
 	List<Temperature> getTodayMeasures() throws ParseException; //статистика по сегодня
 //
-//	List<DailyReport> getWeeklyDayReport() throws ParseException; // недельная статистика
+	List<DailyReport> getWeeklyDayReport() throws ParseException; // недельная статистика
 //
-//	List<DailyReport> getMonthDayReport() throws ParseException; // статистика за месяц
+	List<DailyReport> getMonthDayReport() throws ParseException; // статистика за месяц
 //
 //	Time getLastContactTime(); // время последнего контакта
 //

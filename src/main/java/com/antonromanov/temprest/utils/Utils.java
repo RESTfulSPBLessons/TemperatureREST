@@ -4,15 +4,15 @@ import javax.servlet.http.HttpServletRequest;
 import java.sql.Time;
 import java.time.LocalTime;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Date;
 import java.util.List;
-
+import java.util.Collection;
+import com.antonromanov.temprest.model.DailyReport;
 import com.antonromanov.temprest.model.Temperature;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonObject;
-import org.apache.log4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -24,8 +24,7 @@ import org.springframework.http.ResponseEntity;
  */
 public class Utils {
 
-
-	private static final Logger LOGGER = Logger.getLogger(Utils.class);
+	private static org.slf4j.Logger LOGGER = LoggerFactory.getLogger("console_logger");
 
 	/**
 	 * Определяет лижит ли указанное время между двумя заданными.
@@ -45,7 +44,7 @@ public class Utils {
 	 * @param temperatureList
 	 * @return
 	 */
-	/*public static List<DailyReport> checkDayNight(ArrayList<Temperature> temperatureList) {
+	public static List<DailyReport> checkDayNight(ArrayList<Temperature> temperatureList) {
 
 		Double dayTemp = 999.0;
 		Double nightTemp = 999.0;
@@ -68,10 +67,8 @@ public class Utils {
 				}
 			}
 		}
-
-
 		return weeklyReport;
-	}*/
+	}
 
 	/**
 	 * Конвертим SQL-TIME в LOCALTIME
@@ -95,8 +92,6 @@ public class Utils {
 			LocalTime offsetTime = toLocalTime(lastPingTime).plusMinutes(15);
 			result = isBetween(toLocalTime(time), toLocalTime(lastPingTime), offsetTime);
 		}
-
-		//     System.out.println("РЕЗУЛЬТАТ ПРОВЕРКИ ТАЙМАУТА = " + result);
 		return result;
 
 	}
@@ -200,7 +195,7 @@ public class Utils {
 	/**
 	 * Создаем gson builder
 	 */
-	/*public static Gson createGsonBuilder() {
+	public static Gson createGsonBuilder() {
 
 
 		Gson gson = new GsonBuilder()
@@ -210,21 +205,22 @@ public class Utils {
 				.create();
 
 		return gson;
-	}*/
+	}
 
 	/**
 	 * Создаем хороший (200 OK) response
 	 */
-	/*public static ResponseEntity<String> createGoodResponse(Collection collection) {
+	public static ResponseEntity<String> createGoodResponse(Collection collection) {
 
 		String result = createGsonBuilder().toJson(collection);
 		ResponseEntity<String> responseEntity = new ResponseEntity<String>(result, prepareHeaders(), HttpStatus.OK);
+		LOGGER.info("RESPONSE: " + responseEntity.toString());
 		return responseEntity;
-	}*/
+	}
 
 	/**
 	 * Создаем хороший (200 OK) response для статуса
-	 */
+	 **/
 	/*public static ResponseEntity<String> createGoodResponse4Status(Status status) {
 
 		String result = createGsonBuilder().toJson(status);

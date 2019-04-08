@@ -1,5 +1,6 @@
 package com.antonromanov.temprest.service;
 
+import com.antonromanov.temprest.model.DailyReport;
 import com.antonromanov.temprest.model.Temperature;
 import com.antonromanov.temprest.repositoty.TemperatureRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,6 +9,7 @@ import java.text.ParseException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.*;
+import static com.antonromanov.temprest.utils.Utils.checkDayNight;
 
 
 /**
@@ -86,41 +88,41 @@ public class MainServiceImpl implements MainService {
      * @return
      * @throws ParseException
      */
-//    @Override
-//    public List<DailyReport> getWeeklyDayReport() throws ParseException {
-//
-//        DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
-//        Date currentDate = new Date();
-//        Calendar c = Calendar.getInstance();
-//        c.setTime(currentDate);
-//        c.add(Calendar.DATE, -7);
-//        Date currentDateWeekAgo = c.getTime();
-//        ArrayList<Temperature> temperaturesForWeek = new ArrayList<>();
-//        temperaturesForWeek.addAll(usersRepository.getWeekMeasures(new SimpleDateFormat("yyyy-MM-dd").parse(dateFormat.format(currentDateWeekAgo))));
-//        return checkDayNight(temperaturesForWeek);
-//    }
-//
-//    /**
-//     * Выдать статистику за этот месяц.
-//     *
-//     *
-//     * @return
-//     * @throws ParseException
-//     */
-//    @Override
-//    public List<DailyReport> getMonthDayReport() throws ParseException {
-//        DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
-//        Date currentDate = new Date();
-//        Calendar c = Calendar.getInstance();
-//        c.setTime(currentDate);
-//        c.add(Calendar.DATE, -30);
-//        Date currentDateWeekAgo = c.getTime();
-//        ArrayList<Temperature> temperaturesForMonth = new ArrayList<>();
-//        temperaturesForMonth.addAll(usersRepository.getWeekMeasures(new SimpleDateFormat("yyyy-MM-dd").parse(dateFormat.format(currentDateWeekAgo))));
-//
-//        return checkDayNight(temperaturesForMonth);
-//    }
-//
+    @Override
+    public List<DailyReport> getWeeklyDayReport() throws ParseException {
+
+        DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+        Date currentDate = new Date();
+        Calendar c = Calendar.getInstance();
+        c.setTime(currentDate);
+        c.add(Calendar.DATE, -7);
+        Date currentDateWeekAgo = c.getTime();
+        ArrayList<Temperature> temperaturesForWeek = new ArrayList<>();
+        temperaturesForWeek.addAll(usersRepository.getWeekMeasures(new SimpleDateFormat("yyyy-MM-dd").parse(dateFormat.format(currentDateWeekAgo))));
+        return checkDayNight(temperaturesForWeek);
+    }
+
+    /**
+     * Выдать статистику за этот месяц.
+     *
+     *
+     * @return
+     * @throws ParseException
+     */
+    @Override
+    public List<DailyReport> getMonthDayReport() throws ParseException {
+        DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+        Date currentDate = new Date();
+        Calendar c = Calendar.getInstance();
+        c.setTime(currentDate);
+        c.add(Calendar.DATE, -30);
+        Date currentDateWeekAgo = c.getTime();
+        ArrayList<Temperature> temperaturesForMonth = new ArrayList<>();
+        temperaturesForMonth.addAll(usersRepository.getWeekMeasures(new SimpleDateFormat("yyyy-MM-dd").parse(dateFormat.format(currentDateWeekAgo))));
+
+        return checkDayNight(temperaturesForMonth);
+    }
+
 //    /**
 //     * Выдать состояние мониторинга.
 //     *

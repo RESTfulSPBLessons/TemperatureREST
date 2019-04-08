@@ -1,5 +1,6 @@
 package com.antonromanov.temprest.controller;
 
+import com.antonromanov.temprest.model.DailyReport;
 import com.antonromanov.temprest.model.Temperature;
 import com.antonromanov.temprest.service.MainService;
 import com.antonromanov.temprest.utils.JSONTemplate;
@@ -28,7 +29,6 @@ import static com.antonromanov.temprest.utils.Utils.*;
 public class MainRestController {
 
 	private final Map<String, String> modelData = new HashMap<>();
-	//private static final Logger LOGGER = Logger.getLogger(MainRestController.class);
 	private static org.slf4j.Logger LOGGER = LoggerFactory.getLogger("console_logger");
 
 	List<Temperature> allTemperatures = new ArrayList<>();
@@ -84,11 +84,11 @@ public class MainRestController {
 	@GetMapping("/all")
 	public ResponseEntity<String> getAll(HttpServletRequest request) {
 
-	//	List<Temperature> allTemperaturesList = mainService.getAll();
-	//	LOGGER.info("========= ALL MEASURES LIST ============== ");
-	//	createResponseJson(allTemperaturesList.size(), at2am, at8am, at14, at19, request);
+		List<Temperature> allTemperaturesList = mainService.getAll();
+		LOGGER.info("========= ALL MEASURES LIST ============== ");
+		createResponseJson(allTemperaturesList.size(), at2am, at8am, at14, at19, request);
 
-		return null;
+		return createGoodResponse(allTemperaturesList);
 	}
 
 
@@ -101,11 +101,11 @@ public class MainRestController {
 	@GetMapping("/today")
 	public ResponseEntity<String> getTodayMeasures(HttpServletRequest request) throws ParseException {
 
-	//	List<Temperature> todayList = mainService.getTodayMeasures();
-	//	LOGGER.info("========= TODAY MEASURES LIST ============== ");
-	//	createResponseJson(todayList.size(), at2am, at8am, at14, at19, request);
+		List<Temperature> todayList = mainService.getTodayMeasures();
+		LOGGER.info("========= TODAY MEASURES LIST ============== ");
+		createResponseJson(todayList.size(), at2am, at8am, at14, at19, request);
 
-		return null;
+		return createGoodResponse(todayList);
 	}
 
 
@@ -118,10 +118,10 @@ public class MainRestController {
 	@GetMapping("/week")
 	public ResponseEntity<String> getWeeklyReport(HttpServletRequest request) throws ParseException {
 
-	//	List<DailyReport> weekList = mainService.getWeeklyDayReport();
-	//	createResponseJson(weekList.size(), at2am, at8am, at14, at19, request);
+		List<DailyReport> weekList = mainService.getWeeklyDayReport();
+		createResponseJson(weekList.size(), at2am, at8am, at14, at19, request);
 
-		return null;
+		return createGoodResponse(weekList);
 	}
 
 
@@ -134,12 +134,11 @@ public class MainRestController {
 	@GetMapping("/month")
 	public ResponseEntity<String> getMonthReport(HttpServletRequest request) throws ParseException {
 
-	//	List<DailyReport> monthList = mainService.getMonthDayReport();
-	//	LOGGER.info("========= MONTH MEASURES LIST ============== ");
-	//	createResponseJson(monthList.size(), at2am, at8am, at14, at19, request);
+		List<DailyReport> monthList = mainService.getMonthDayReport();
+		LOGGER.info("========= MONTH MEASURES LIST ============== ");
+		createResponseJson(monthList.size(), at2am, at8am, at14, at19, request);
 
-		//return createGoodResponse(monthList);
-		return null;
+		return createGoodResponse(monthList);
 	}
 
 
@@ -330,7 +329,7 @@ public class MainRestController {
 					LOGGER.error("POST MORNING TEMPERATURE --------- FAIL - DUPLICATE MEASURE:  " + time.toLocalTime());
 				}
 			}
-			if ((isBetween(time.toLocalTime(), LocalTime.of(11, 0), LocalTime.of(15, 0))) && !at14) { // если 14 часов дня
+			if ((isBetween(time.toLocalTime(), LocalTime.of(13, 0), LocalTime.of(15, 0))) && !at14) { // если 14 часов дня
 				at14 = true;
 
 				// Проверяем, что такой температуры нет еще за сегодня
