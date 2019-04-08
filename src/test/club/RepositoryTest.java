@@ -1,8 +1,8 @@
-package club;
+package com;
 
 
-import club.model.RifLog;
-import club.repository.RifLogsRepository;
+import com.model.RifLog;
+import com.repository.RifLogsRepository;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

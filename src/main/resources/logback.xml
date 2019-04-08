@@ -50,7 +50,7 @@
         </encoder>
     </appender>
 
-    <logger name="club" level="debug" additivity="false" >
+    <logger name="com" level="debug" additivity="false" >
         <appender-ref ref="FILE" />
     </logger>
 

@@ -1,13 +1,23 @@
-package club;
+package com.antonromanov.temprest.controller;
 
+import com.antonromanov.temprest.model.Temperature;
+import com.antonromanov.temprest.service.MainService;
+import com.antonromanov.temprest.utils.JSONTemplate;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.Time;
 import java.text.ParseException;
-import java.util.Date;
+import java.time.LocalTime;
+import java.util.*;
+import com.google.gson.*;
+import static com.antonromanov.temprest.utils.Utils.*;
 
 
 /**
@@ -17,9 +27,11 @@ import java.util.Date;
 @RequestMapping("/rest/users")
 public class MainRestController {
 
+	private final Map<String, String> modelData = new HashMap<>();
 	//private static final Logger LOGGER = Logger.getLogger(MainRestController.class);
+	private static org.slf4j.Logger LOGGER = LoggerFactory.getLogger("console_logger");
 
-	//List<Temperature> allTemperatures = new ArrayList<>();
+	List<Temperature> allTemperatures = new ArrayList<>();
 
 
 	// todo: надо поменять название проекта
@@ -51,8 +63,8 @@ public class MainRestController {
 	/**
 	 * Инжектим сервис.
 	 */
-	//@Autowired
-	//MainService mainService;
+	@Autowired
+	MainService mainService;
 
 	/**
 	 * Глобальные флаги, чтобы отсекать пинги не в нужное время и чтобы в нужное время был только один пинг,
@@ -270,9 +282,9 @@ public class MainRestController {
 		return null;
 	}
 
-//	private List<Temperature> addTemperatureMeasure(Double temp, HttpServletRequest request){
-//		return mainService.addMeasure(temp, createResponseJsonWithReturn(allTemperatures.size(), at2am, at8am, at14, at19, request).toString());
-//	}
+	private List<Temperature> addTemperatureMeasure(Double temp, HttpServletRequest request){
+		return mainService.addMeasure(temp, createResponseJsonWithReturn(allTemperatures.size(), at2am, at8am, at14, at19, request).toString());
+	}
 
 	/**
 	 * Добавить состояние мониторинга (для Ардуины).
@@ -289,19 +301,18 @@ public class MainRestController {
 		Time time = new Time(currentDate.getTime());
 		String remoteAddr = "";
 
-//		LOGGER.info("We are in POST HTTP: " + requestParam);
-//		allTemperatures = mainService.getAll();
+		LOGGER.info("We are in POST HTTP: " + requestParam);
+		allTemperatures = mainService.getAll();
 
-//		try {
+		try {
 
-//			Double temp = JSONTemplate.fromString(requestParam).get("temp").getAsDouble();
+			Double temp = JSONTemplate.fromString(requestParam).get("temp").getAsDouble();
 
-		/*	if ((isBetween(time.toLocalTime(), LocalTime.of(1, 0), LocalTime.of(3, 0))) && !at2am) { // если 2 часа ночи
+			if ((isBetween(time.toLocalTime(), LocalTime.of(1, 0), LocalTime.of(3, 0))) && !at2am) { // если 2 часа ночи
 				at2am = true;
 
 				// Проверяем, что такой температуры нет еще за сегодня
 				if (!isAlreadyWriten(mainService.getTodayMeasures(), 1, 3)) {
-					//allTemperatures = mainService.addMeasure(temp, createResponseJsonWithReturn(allTemperatures.size(), at2am, at8am, at14, at19, request).toString());
 					allTemperatures = addTemperatureMeasure(temp, request);
 					LOGGER.info("POST NIGHT TEMPERATURE --------- SUCCESS:  " + time.toLocalTime());
 				} else {
@@ -313,19 +324,17 @@ public class MainRestController {
 
 				// Проверяем, что такой температуры нет еще за сегодня
 				if (!isAlreadyWriten(mainService.getTodayMeasures(), 7, 9)) {
-					//allTemperatures = mainService.addMeasure(temp, createResponseJsonWithReturn(allTemperatures.size(), at2am, at8am, at14, at19, request).toString());
 					allTemperatures = addTemperatureMeasure(temp, request);
 					LOGGER.info("POST MORNING TEMPERATURE --------- SUCCESS:  " + time.toLocalTime());
 				} else {
 					LOGGER.error("POST MORNING TEMPERATURE --------- FAIL - DUPLICATE MEASURE:  " + time.toLocalTime());
 				}
 			}
-			if ((isBetween(time.toLocalTime(), LocalTime.of(13, 0), LocalTime.of(15, 0))) && !at14) { // если 14 часов дня
+			if ((isBetween(time.toLocalTime(), LocalTime.of(11, 0), LocalTime.of(15, 0))) && !at14) { // если 14 часов дня
 				at14 = true;
 
 				// Проверяем, что такой температуры нет еще за сегодня
 				if (!isAlreadyWriten(mainService.getTodayMeasures(), 13, 15)) {
-					//allTemperatures = mainService.addMeasure(temp, createResponseJsonWithReturn(allTemperatures.size(), at2am, at8am, at14, at19, request).toString());
 					allTemperatures = addTemperatureMeasure(temp, request);
 					LOGGER.info("POST DAY TEMPERATURE --------- SUCCESS:  " + time.toLocalTime());
 				} else {
@@ -338,13 +347,12 @@ public class MainRestController {
 
 				// Проверяем, что такой температуры нет еще за сегодня
 				if (!isAlreadyWriten(mainService.getTodayMeasures(), 18, 20)) {
-					//allTemperatures = mainService.addMeasure(temp, createResponseJsonWithReturn(allTemperatures.size(), at2am, at8am, at14, at19, request).toString());
 					allTemperatures = addTemperatureMeasure(temp, request);
 					LOGGER.info("POST EVENING TEMPERATURE --------- SUCCESS:  " + time.toLocalTime());
 				} else {
 					LOGGER.error("POST EVENING TEMPERATURE --------- FAIL - DUPLICATE MEASURE:  " + time.toLocalTime());
 				}
-			}*/
+			}
 
 			if (at2am && at8am && at14 && at19) {
 
@@ -353,19 +361,27 @@ public class MainRestController {
 				at14 = false;
 				at19 = false;
 			}
-//		} catch (JsonParseException ex) {
+		} catch (JsonParseException ex) {
 
 			try {
 				resp.sendError(HttpServletResponse.SC_BAD_REQUEST, "Ошибка парсинга JSON");
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
-//		}
+		}
 
 
-//		ResponseEntity<String> responseEntity = new ResponseEntity<>(createResponseJsonWithReturn(allTemperatures.size(),
-//				at2am, at8am, at14, at19, request).toString(), HttpStatus.OK);
-		return null;
+		ResponseEntity<String> responseEntity = new ResponseEntity<>(createResponseJsonWithReturn(allTemperatures.size(),
+				at2am, at8am, at14, at19, request).toString(), HttpStatus.OK);
+		LOGGER.info("RESPONSE: " + responseEntity.toString());
+		return responseEntity;
+	}
+
+	@RequestMapping(value = "/test", method = {RequestMethod.GET, RequestMethod.POST})
+	private String test(Model model) {
+		modelData.clear();
+		model.addAttribute("testme", "Привет!");
+		return "welcome";
 	}
 
 }

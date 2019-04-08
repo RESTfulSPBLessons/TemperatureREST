@@ -1,6 +1,6 @@
-package club;
+package com;
 
-import club.bot.Bot;
+import com.antonromanov.temprest.bot.Bot;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

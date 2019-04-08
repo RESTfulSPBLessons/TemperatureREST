@@ -1,4 +1,4 @@
-package club.bot;
+package com.antonromanov.temprest.bot;
 
 
 import org.apache.commons.io.input.ReversedLinesFileReader;

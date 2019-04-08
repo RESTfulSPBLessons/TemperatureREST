@@ -1,0 +1,7 @@
+12:57:45.343 [http-nio-8080-exec-2] INFO  console_logger  - We are in POST HTTP: {
+    "temp": 111
+}
+14:44:29.505 [http-nio-8080-exec-7] INFO  console_logger  - We are in POST HTTP: {
+    "temp": 111
+}
+14:44:29.571 [http-nio-8080-exec-7] INFO  console_logger  - RESPONSE: <200 OK OK,{"AllTemperatures":43,"NightPost":false,"MorningPost":false,"DayPost":false,"EveningPost":false,"ip":"0:0:0:0:0:0:0:1"},[]>
