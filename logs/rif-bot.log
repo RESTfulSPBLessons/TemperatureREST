@@ -384,3 +384,66 @@ Caused by: java.net.SocketException: Connection reset
 13:13:15.801 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
 13:14:25.312 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
 13:14:25.320 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+13:31:12.963 [restartedMain] WARN  console_logger  - THREAD MANAGER HAS STARTED. T I M E ====== 12:41:50
+13:31:12.970 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+13:31:12.975 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+13:32:12.987 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+13:32:12.994 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+13:33:13.010 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+13:33:13.025 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+13:33:51.052 [restartedMain] WARN  console_logger  - THREAD MANAGER HAS STARTED. T I M E ====== 12:41:50
+13:33:51.058 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+13:33:51.063 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+13:34:51.074 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+13:34:51.078 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+13:35:51.086 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+13:35:51.092 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+13:36:51.101 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+13:36:51.104 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+13:37:50.500 [restartedMain] WARN  console_logger  - THREAD MANAGER HAS STARTED. T I M E ====== 12:41:50
+13:37:50.507 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+13:37:50.512 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+13:38:50.522 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+13:38:50.528 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+13:40:02.895 [restartedMain] WARN  console_logger  - THREAD MANAGER HAS STARTED. T I M E ====== 12:41:50
+13:40:02.902 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+13:40:02.907 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+13:41:02.919 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+13:41:02.923 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+13:41:59.916 [restartedMain] WARN  console_logger  - THREAD MANAGER HAS STARTED. T I M E ====== 12:41:50
+13:41:59.924 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+13:41:59.928 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+13:42:39.132 [restartedMain] WARN  console_logger  - THREAD MANAGER HAS STARTED. T I M E ====== 12:41:50
+13:42:39.139 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+13:42:39.144 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+13:43:39.165 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+13:43:39.184 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+13:44:46.418 [restartedMain] WARN  console_logger  - THREAD MANAGER HAS STARTED. T I M E ====== 12:41:50
+13:44:46.428 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+13:44:46.439 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+13:45:46.453 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+13:45:46.456 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+13:46:23.829 [restartedMain] WARN  console_logger  - THREAD MANAGER HAS STARTED. T I M E ====== 12:41:50
+13:46:23.835 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+13:46:23.840 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+13:47:27.146 [restartedMain] WARN  console_logger  - THREAD MANAGER HAS STARTED. T I M E ====== 12:41:50
+13:47:27.153 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+13:47:27.157 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+13:48:27.169 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+13:48:27.174 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+13:49:09.972 [restartedMain] WARN  console_logger  - THREAD MANAGER HAS STARTED. T I M E ====== 12:41:50
+13:49:09.979 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+13:49:09.985 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+13:50:24.054 [restartedMain] WARN  console_logger  - THREAD MANAGER HAS STARTED. T I M E ====== 12:41:50
+13:50:24.063 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+13:50:24.068 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+13:51:24.083 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+13:51:24.092 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+13:52:08.869 [restartedMain] WARN  console_logger  - THREAD MANAGER HAS STARTED. T I M E ====== 12:41:50
+13:52:08.877 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+13:52:08.881 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+13:53:08.897 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+13:53:08.912 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+13:53:57.276 [restartedMain] WARN  console_logger  - THREAD MANAGER HAS STARTED. T I M E ====== 12:41:50
+13:53:57.284 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+13:53:57.290 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
