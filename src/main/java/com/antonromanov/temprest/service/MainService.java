@@ -12,6 +12,8 @@ import java.util.List;
 
 public interface MainService {
 
+	void errorPushToBot(String message);
+
 	List<Temperature> getAll(); // список всех измерений (пока с одного датчика)
 
 	List<Logs> getAllLogs(); // все логи
@@ -39,6 +41,8 @@ public interface MainService {
 	Status getGlobalStatus(); // глобальное состояние
 
 	Logs getLastLog(); // получить последний пинг (лог)
+
+	Temperature getLastTemp(); // получить последнюю запись о температуре
 
 	MainParameters getMainParametrs(); // еще одно глобальное состояние инкапсулирующее предыдущее + еще параметры
 

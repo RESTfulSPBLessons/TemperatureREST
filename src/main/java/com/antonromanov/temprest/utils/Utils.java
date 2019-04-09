@@ -212,23 +212,40 @@ public class Utils {
 	 * Создаем хороший (200 OK) response
 	 */
 	public static ResponseEntity<String> createGoodResponse(Collection collection) {
-
 		String result = createGsonBuilder().toJson(collection);
-		ResponseEntity<String> responseEntity = new ResponseEntity<String>(result, prepareHeaders(), HttpStatus.OK);
-		LOGGER.info("RESPONSE: " + responseEntity.toString());
-		return responseEntity;
+		return getResponseString(result);
 	}
 
 	/**
 	 * Создаем хороший (200 OK) response для статуса
 	 **/
 	public static ResponseEntity<String> createGoodResponse4Status(Status status) {
-
 		String result = createGsonBuilder().toJson(status);
+		return getResponseString(result);
+	}
+
+	/**
+	 * Подготовим ResponseEntity
+	 *
+	 * @param result
+	 * @return
+	 */
+	private static ResponseEntity<String> getResponseString(String result){
 		ResponseEntity<String> responseEntity = new ResponseEntity<String>(result, prepareHeaders(), HttpStatus.OK);
 		LOGGER.info("RESPONSE: " + responseEntity.toString());
 		return responseEntity;
+
 	}
+
+
+
+	/**
+	 * Создаем статуса для Телеграмм Бота
+	 **/
+	public static String createBotStatus(Status status) {
+		return createGsonBuilder().toJson(status);
+	}
+
 
 	private static HttpHeaders prepareHeaders(){
 		HttpHeaders headers = new HttpHeaders();

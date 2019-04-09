@@ -1,9 +1,9 @@
 package com.antonromanov.temprest.bot;
 
-
-import org.apache.commons.io.input.ReversedLinesFileReader;
+import com.antonromanov.temprest.service.MainService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
 import org.telegram.telegrambots.bots.DefaultBotOptions;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
@@ -16,23 +16,27 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.nio.file.Files;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import static com.antonromanov.temprest.utils.Utils.createBotStatus;
 
-//public class Bot  {
+
 public class Bot extends TelegramLongPollingBot {
+
     private ExecutorService pool = Executors.newCachedThreadPool();
     private static Logger logger = LoggerFactory.getLogger("console_logger");
-
     private String token;
     private String user;
     private Long chanelId;
     private String logFileName;
-
     private Environment env;
+
+    /**
+     * Инжектим сервис.
+     */
+    @Autowired
+    MainService mainService;
+
 
 
 
@@ -57,89 +61,24 @@ public class Bot extends TelegramLongPollingBot {
 
 
             if(inMessage != null && inMessage.getText().startsWith("/")) {
-               // String command = inMessage.getText().toLowerCase();
+
                 if (command.startsWith("/status")) {
-
-                    fireMessage(inMessage.getChatId(), "Здесь будет JSON");
+                    fireMessage(inMessage.getChatId(), createBotStatus(mainService.getGlobalStatus()));
 
                 }
-            }
+                if (command.startsWith("/ts")) { //temp status
+                    fireMessage(inMessage.getChatId(), mainService.getLastTemp().getStatus());
 
+                }
 
-
-           /* if(command.startsWith("/log")) {
-                if(command.equals("/log+")) {
-                    fireFielLog(inMessage.getChatId());
-                }else {
-                    try {
-                        int lines = Integer.valueOf(command.substring(4));
-                        if (lines > 0)
-                            fireFielLogLines(inMessage.getChatId(), lines);
-                        else fireMessage(inMessage.getChatId(),"некорректное колличество строк");
-                    } catch (NumberFormatException ex) {
-                        fireMessage(inMessage.getChatId(), "Неверный формат команды");
+            // Выдача лог-файла
+                if(command.startsWith("/log")) {
+                    if (command.equals("/log+")) {
+                        fireFielLog(inMessage.getChatId());
                     }
                 }
-            }else if(command.equals("/stat")) {
-                pool.submit(() -> {
-                    try {
-                        //Long sum = accountRefillRepository.getSumOfAllTransactions();
-                        Long sum = 145L;
-                        sum = sum == null ? 0 : sum;
-
-                        SendMessage outMessage = new SendMessage();
-                        outMessage.setChatId(inMessage.getChatId());
-                        outMessage.enableHtml(true);
-                        outMessage.setText("<b>"+getBotUsername()+"</b>: \n\n"+"Счетов всего:         "+1545+"\n"
-                                +"Транзакций всего:     "+564654564+"\n"
-                                +"Сумма всех переводов: "+sum/100);
-                        execute(outMessage);
-                    }catch (Exception ex) {
-                        logger.error(ex.getMessage(), ex);
-                    }
-                });
-            }*/
-        }
-    }
-
-    private String getLog(int lines) {
-        try (ReversedLinesFileReader reader = new ReversedLinesFileReader(new File(logFileName))) {
-            StringBuffer sb = new StringBuffer();
-            while(lines > 0) {
-                String line = reader.readLine();
-                if(line == null)
-                    break;
-                sb.append(line).append("\n");
-                lines--;
             }
-            return sb.toString();
-        }catch (Exception ex) {
-            logger.error("Ошибка при чтении лога", ex);
-            return "Ошибка при чтении лога";
         }
-    }
-
-    private void fireFielLogLines(Long chartId, int lines) {
-        pool.submit(() -> {
-            File file = new File(logFileName.substring(0,logFileName.lastIndexOf("."))+"-"+lines+".log");
-            try (FileOutputStream out = new FileOutputStream(file)) {
-                List<String> list = Arrays.asList(getLog(lines).split("\n"));
-                Collections.reverse(list);
-                out.write(String.join("\n",list).getBytes());
-            }catch (Exception ex) {
-                logger.error("Не получилось записать log файл из "+lines+" строк", ex);
-            }finally {
-                try {
-                    SendDocument outMessage = new SendDocument();
-                    outMessage.setChatId(chartId);
-                    outMessage.setDocument(file);
-                    execute(outMessage);
-                    Files.deleteIfExists(file.toPath());
-                } catch (Exception ex) {
-                    logger.error(ex.getMessage(), ex);
-                }
-            }
-        });
     }
 
     private Message getMessage(Update update) {
@@ -150,6 +89,11 @@ public class Bot extends TelegramLongPollingBot {
         return null;
     }
 
+    /**
+     * Отправить файл лога как сообщение
+     *
+     * @param chartId
+     */
     private void fireFielLog(Long chartId) {
         pool.submit(() -> {
             File file = new File(logFileName.substring(0,logFileName.lastIndexOf("."))+"-t.log");
@@ -172,9 +116,6 @@ public class Bot extends TelegramLongPollingBot {
         });
     }
 
-    public void fireMessage(String msg) {
-        fireMessage(chanelId, msg);
-    }
 
     public void fireMessage(Long chanelId, String msg) {
         pool.submit(() -> {
@@ -196,5 +137,9 @@ public class Bot extends TelegramLongPollingBot {
 
     public String getBotToken() {
         return token;
+    }
+
+    public void fireMessage(String msg) {
+        fireMessage(chanelId, msg);
     }
 }

@@ -1,5 +1,6 @@
 package com.antonromanov.temprest.service;
 
+import com.antonromanov.temprest.bot.Bot;
 import com.antonromanov.temprest.livecontrolthread.MainParameters;
 import com.antonromanov.temprest.model.DailyReport;
 import com.antonromanov.temprest.model.Logs;
@@ -26,6 +27,14 @@ import static com.antonromanov.temprest.utils.Utils.checkDayNight;
 @Service
 public class MainServiceImpl implements MainService {
 
+
+    /**
+     * Telegram Bot
+     */
+    @Autowired
+    private Bot bot;
+
+
     /**
      * Репозиторий температуры
      */
@@ -43,6 +52,15 @@ public class MainServiceImpl implements MainService {
      */
     MainParameters mainParametrs = new MainParameters();
 
+
+    @Override
+    public void errorPushToBot(String message) {
+        if (bot != null)
+            bot.fireMessage(message);
+    }
+
+
+
     /**
      * Получить все логи температур.
      * @return
@@ -59,6 +77,7 @@ public class MainServiceImpl implements MainService {
      */
     @Override
     public List<Logs> getAllLogs() {
+
         return logsRepository.findAll();
     }
 
@@ -229,6 +248,16 @@ public class MainServiceImpl implements MainService {
     @Override
     public Logs getLastLog() {
         return (logsRepository.getLastPingedEntry3(new PageRequest(0, 1, Sort.Direction.DESC, "servertime"))).get(0);
+    }
+
+    /**
+     * Получить последнюю записанную в БД температуру.
+     *
+     * @return
+     */
+    @Override
+    public Temperature getLastTemp() {
+        return (usersRepository.getLastPingedEntry(new PageRequest(0, 1, Sort.Direction.DESC, "timeCreated" ))).get(0);
     }
 
 

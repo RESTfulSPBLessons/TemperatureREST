@@ -1,85 +1,226 @@
-12:57:45.343 [http-nio-8080-exec-2] INFO  console_logger  - We are in POST HTTP: {
-    "temp": 111
-}
-14:44:29.505 [http-nio-8080-exec-7] INFO  console_logger  - We are in POST HTTP: {
-    "temp": 111
-}
-14:44:29.571 [http-nio-8080-exec-7] INFO  console_logger  - RESPONSE: <200 OK OK,{"AllTemperatures":43,"NightPost":false,"MorningPost":false,"DayPost":false,"EveningPost":false,"ip":"0:0:0:0:0:0:0:1"},[]>
-15:34:44.406 [http-nio-8080-exec-7] INFO  console_logger  - ========= ALL MEASURES LIST ============== 
-15:37:04.876 [http-nio-8080-exec-1] INFO  console_logger  - ========= ALL MEASURES LIST ============== 
-15:39:18.847 [http-nio-8080-exec-6] INFO  console_logger  - ========= ALL MEASURES LIST ============== 
-15:39:18.851 [http-nio-8080-exec-6] INFO  console_logger  - GETTING REQUEST FROM:  0:0:0:0:0:0:0:1
-15:39:18.854 [http-nio-8080-exec-6] INFO  console_logger  - RESULT:  {"AllTemperatures":43,"NightPost":false,"MorningPost":false,"DayPost":false,"EveningPost":false,"ip":"0:0:0:0:0:0:0:1"}
-15:39:18.872 [http-nio-8080-exec-6] INFO  console_logger  - RESPONSE: <200 OK OK,[{"id":100,"name":"from Arduino Home","temperature":2.0,"dateCreated":"15/03/2019","timeCreated":"15:43:17","status":null},{"id":101,"name":"from Arduino Home","temperature":8.0,"dateCreated":"15/03/2019","timeCreated":"15:45:42","status":null},{"id":102,"name":"from Arduino Home","temperature":15.0,"dateCreated":"15/03/2019","timeCreated":"15:46:06","status":null},{"id":103,"name":"from Arduino Home","temperature":15.0,"dateCreated":"15/03/2019","timeCreated":"15:46:30","status":null},{"id":104,"name":"from Arduino Home","temperature":25.0,"dateCreated":"15/03/2019","timeCreated":"15:47:31","status":null},{"id":250,"name":"from Arduino Home","temperature":2.0,"dateCreated":"18/03/2019","timeCreated":"14:33:13","status":null},{"id":300,"name":"from Arduino Home","temperature":2.0,"dateCreated":"18/03/2019","timeCreated":"14:36:54","status":null},{"id":3,"name":"Test","temperature":15.0,"dateCreated":"18/03/2019","timeCreated":"13:00:00","status":null},{"id":651,"name":"from Arduino Home","temperature":26.4,"dateCreated":"15/03/2019","timeCreated":"18:00:46","status":null},{"id":655,"name":"from Arduino Home","temperature":25.9,"dateCreated":"16/03/2019","timeCreated":"13:00:29","status":null},{"id":657,"name":"from Arduino Home","temperature":25.8,"dateCreated":"17/03/2019","timeCreated":"01:00:14","status":null},{"id":659,"name":"from Arduino Home","temperature":25.8,"dateCreated":"17/03/2019","timeCreated":"07:00:43","status":null},{"id":661,"name":"from Arduino Home","temperature":25.7,"dateCreated":"17/03/2019","timeCreated":"18:02:39","status":null},{"id":663,"name":"from Arduino Home","temperature":25.8,"dateCreated":"18/03/2019","timeCreated":"01:01:04","status":null},{"id":665,"name":"from Arduino Home","temperature":26.4,"dateCreated":"18/03/2019","timeCreated":"13:00:40","status":null},{"id":652,"name":"from Arduino Home","temperature":26.0,"dateCreated":"16/03/2019","timeCreated":"01:00:53","status":null},{"id":654,"name":"from Arduino Home","temperature":25.9,"dateCreated":"16/03/2019","timeCreated":"07:03:23","status":null},{"id":656,"name":"from Arduino Home","temperature":25.9,"dateCreated":"16/03/2019","timeCreated":"18:01:09","status":null},{"id":658,"name":"from Arduino Home","temperature":25.8,"dateCreated":"17/03/2019","timeCreated":"01:01:15","status":null},{"id":660,"name":"from Arduino Home","temperature":23.8,"dateCreated":"17/03/2019","timeCreated":"13:00:01","status":null},{"id":662,"name":"from Arduino Home","temperature":25.7,"dateCreated":"17/03/2019","timeCreated":"18:03:40","status":null},{"id":664,"name":"from Arduino Home","temperature":25.9,"dateCreated":"18/03/2019","timeCreated":"07:00:24","status":null},{"id":666,"name":"from Arduino Home","temperature":26.3,"dateCreated":"18/03/2019","timeCreated":"13:01:41","status":null},{"id":650,"name":"from Arduino Home","temperature":26.3,"dateCreated":"15/03/2019","timeCreated":"14:33:49","status":null},{"id":7,"name":"/today featuring gson","temperature":-45.0,"dateCreated":"19/03/2019","timeCreated":"07:00:00","status":null},{"id":8,"name":"/today test","temperature":-20.0,"dateCreated":"19/03/2019","timeCreated":"14:00:00","status":null},{"id":9,"name":"/today test 2","temperature":-15.0,"dateCreated":"20/03/2019","timeCreated":"07:00:00","status":null},{"id":10,"name":"/yoday test 2","temperature":-49.0,"dateCreated":"20/03/2019","timeCreated":"14:00:00","status":null},{"id":500,"name":"from Arduino Home","temperature":-35.0,"dateCreated":"21/03/2019","timeCreated":"20:22:44","status":"{\"AllTemperatures\":0,\"ip\":\"0:0:0:0:0:0:0:1\",\"NightPost\":false,\"MorningPost\":false,\"DayPost\":false,\"EveningPost\":false}"},{"id":550,"name":"from Arduino Home","temperature":-30.0,"dateCreated":"21/03/2019","timeCreated":"20:28:24","status":"{\"AllTemperatures\":29,\"ip\":\"0:0:0:0:0:0:0:1\",\"NightPost\":false,\"MorningPost\":false,\"DayPost\":false,\"EveningPost\":false}"},{"id":551,"name":"from Arduino Home","temperature":-10.0,"dateCreated":"21/03/2019","timeCreated":"20:28:34","status":"{\"AllTemperatures\":30,\"ip\":\"0:0:0:0:0:0:0:1\",\"NightPost\":false,\"MorningPost\":false,\"DayPost\":false,\"EveningPost\":false}"},{"id":552,"name":"from Arduino Home","temperature":-2.0,"dateCreated":"21/03/2019","timeCreated":"20:28:45","status":"{\"AllTemperatures\":31,\"ip\":\"0:0:0:0:0:0:0:1\",\"NightPost\":false,\"MorningPost\":false,\"DayPost\":false,\"EveningPost\":false}"},{"id":13,"name":"Test Test","temperature":-50.0,"dateCreated":"22/03/2019","timeCreated":"15:00:00","status":null},{"id":700,"name":"from Arduino Home","temperature":-75.0,"dateCreated":"03/04/2019","timeCreated":"18:23:56","status":"{\"AllTemperatures\":33,\"NightPost\":false,\"MorningPost\":false,\"DayPost\":false,\"EveningPost\":true,\"ip\":\"0:0:0:0:0:0:0:1\"}"},{"id":-34,"name":"from Arduino Home","temperature":-350.0,"dateCreated":"08/04/2019","timeCreated":"12:44:41","status":"{\"AllTemperatures\":34,\"NightPost\":false,\"MorningPost\":false,\"DayPost\":true,\"EveningPost\":false,\"ip\":\"0:0:0:0:0:0:0:1\"}"},{"id":-33,"name":"from Arduino Home","temperature":145.0,"dateCreated":"08/04/2019","timeCreated":"12:49:52","status":"{\"AllTemperatures\":35,\"NightPost\":false,\"MorningPost\":false,\"DayPost\":false,\"EveningPost\":false,\"ip\":\"0:0:0:0:0:0:0:1\"}"},{"id":-32,"name":"from Arduino Home","temperature":145.0,"dateCreated":"08/04/2019","timeCreated":"12:50:03","status":"{\"AllTemperatures\":36,\"NightPost\":false,\"MorningPost\":false,\"DayPost\":false,\"EveningPost\":false,\"ip\":\"0:0:0:0:0:0:0:1\"}"},{"id":-31,"name":"from Arduino Home","temperature":145.0,"dateCreated":"08/04/2019","timeCreated":"12:50:40","status":"{\"AllTemperatures\":37,\"NightPost\":false,\"MorningPost\":false,\"DayPost\":false,\"EveningPost\":false,\"ip\":\"0:0:0:0:0:0:0:1\"}"},{"id":17,"name":"from Arduino Home","temperature":111.0,"dateCreated":"08/04/2019","timeCreated":"12:54:18","status":"{\"AllTemperatures\":38,\"NightPost\":false,\"MorningPost\":false,\"DayPost\":false,\"EveningPost\":false,\"ip\":\"0:0:0:0:0:0:0:1\"}"},{"id":18,"name":"from Arduino Home","temperature":111.0,"dateCreated":"08/04/2019","timeCreated":"12:54:35","status":"{\"AllTemperatures\":39,\"NightPost\":false,\"MorningPost\":false,\"DayPost\":false,\"EveningPost\":false,\"ip\":\"0:0:0:0:0:0:0:1\"}"},{"id":19,"name":"from Arduino Home","temperature":111.0,"dateCreated":"08/04/2019","timeCreated":"12:54:50","status":"{\"AllTemperatures\":40,\"NightPost\":false,\"MorningPost\":false,\"DayPost\":false,\"EveningPost\":false,\"ip\":\"0:0:0:0:0:0:0:1\"}"},{"id":20,"name":"from Arduino Home","temperature":111.0,"dateCreated":"08/04/2019","timeCreated":"12:57:45","status":"{\"AllTemperatures\":41,\"NightPost\":false,\"MorningPost\":false,\"DayPost\":false,\"EveningPost\":false,\"ip\":\"0:0:0:0:0:0:0:1\"}"},{"id":21,"name":"from Arduino Home","temperature":111.0,"dateCreated":"08/04/2019","timeCreated":"14:44:29","status":"{\"AllTemperatures\":42,\"NightPost\":false,\"MorningPost\":false,\"DayPost\":false,\"EveningPost\":false,\"ip\":\"0:0:0:0:0:0:0:1\"}"}],[Content-Type:"application/json", Cache-Control:"no-cache"]>
-15:39:57.472 [http-nio-8080-exec-8] INFO  console_logger  - ========= TODAY MEASURES LIST ============== 
-15:39:57.472 [http-nio-8080-exec-8] INFO  console_logger  - GETTING REQUEST FROM:  0:0:0:0:0:0:0:1
-15:39:57.473 [http-nio-8080-exec-8] INFO  console_logger  - RESULT:  {"AllTemperatures":9,"NightPost":false,"MorningPost":false,"DayPost":false,"EveningPost":false,"ip":"0:0:0:0:0:0:0:1"}
-15:39:57.476 [http-nio-8080-exec-8] INFO  console_logger  - RESPONSE: <200 OK OK,[{"id":-34,"name":"from Arduino Home","temperature":-350.0,"dateCreated":"08/04/2019","timeCreated":"12:44:41","status":"{\"AllTemperatures\":34,\"NightPost\":false,\"MorningPost\":false,\"DayPost\":true,\"EveningPost\":false,\"ip\":\"0:0:0:0:0:0:0:1\"}"},{"id":-33,"name":"from Arduino Home","temperature":145.0,"dateCreated":"08/04/2019","timeCreated":"12:49:52","status":"{\"AllTemperatures\":35,\"NightPost\":false,\"MorningPost\":false,\"DayPost\":false,\"EveningPost\":false,\"ip\":\"0:0:0:0:0:0:0:1\"}"},{"id":-32,"name":"from Arduino Home","temperature":145.0,"dateCreated":"08/04/2019","timeCreated":"12:50:03","status":"{\"AllTemperatures\":36,\"NightPost\":false,\"MorningPost\":false,\"DayPost\":false,\"EveningPost\":false,\"ip\":\"0:0:0:0:0:0:0:1\"}"},{"id":-31,"name":"from Arduino Home","temperature":145.0,"dateCreated":"08/04/2019","timeCreated":"12:50:40","status":"{\"AllTemperatures\":37,\"NightPost\":false,\"MorningPost\":false,\"DayPost\":false,\"EveningPost\":false,\"ip\":\"0:0:0:0:0:0:0:1\"}"},{"id":17,"name":"from Arduino Home","temperature":111.0,"dateCreated":"08/04/2019","timeCreated":"12:54:18","status":"{\"AllTemperatures\":38,\"NightPost\":false,\"MorningPost\":false,\"DayPost\":false,\"EveningPost\":false,\"ip\":\"0:0:0:0:0:0:0:1\"}"},{"id":18,"name":"from Arduino Home","temperature":111.0,"dateCreated":"08/04/2019","timeCreated":"12:54:35","status":"{\"AllTemperatures\":39,\"NightPost\":false,\"MorningPost\":false,\"DayPost\":false,\"EveningPost\":false,\"ip\":\"0:0:0:0:0:0:0:1\"}"},{"id":19,"name":"from Arduino Home","temperature":111.0,"dateCreated":"08/04/2019","timeCreated":"12:54:50","status":"{\"AllTemperatures\":40,\"NightPost\":false,\"MorningPost\":false,\"DayPost\":false,\"EveningPost\":false,\"ip\":\"0:0:0:0:0:0:0:1\"}"},{"id":20,"name":"from Arduino Home","temperature":111.0,"dateCreated":"08/04/2019","timeCreated":"12:57:45","status":"{\"AllTemperatures\":41,\"NightPost\":false,\"MorningPost\":false,\"DayPost\":false,\"EveningPost\":false,\"ip\":\"0:0:0:0:0:0:0:1\"}"},{"id":21,"name":"from Arduino Home","temperature":111.0,"dateCreated":"08/04/2019","timeCreated":"14:44:29","status":"{\"AllTemperatures\":42,\"NightPost\":false,\"MorningPost\":false,\"DayPost\":false,\"EveningPost\":false,\"ip\":\"0:0:0:0:0:0:0:1\"}"}],[Content-Type:"application/json", Cache-Control:"no-cache"]>
-15:40:52.061 [http-nio-8080-exec-9] INFO  console_logger  - GETTING REQUEST FROM:  0:0:0:0:0:0:0:1
-15:40:52.062 [http-nio-8080-exec-9] INFO  console_logger  - RESULT:  {"AllTemperatures":0,"NightPost":false,"MorningPost":false,"DayPost":false,"EveningPost":false,"ip":"0:0:0:0:0:0:0:1"}
-15:40:52.063 [http-nio-8080-exec-9] INFO  console_logger  - RESPONSE: <200 OK OK,[],[Content-Type:"application/json", Cache-Control:"no-cache"]>
-15:44:03.577 [http-nio-8080-exec-2] INFO  console_logger  - GETTING REQUEST FROM:  0:0:0:0:0:0:0:1
-15:44:03.581 [http-nio-8080-exec-2] INFO  console_logger  - RESULT:  {"AllTemperatures":0,"NightPost":false,"MorningPost":false,"DayPost":false,"EveningPost":false,"ip":"0:0:0:0:0:0:0:1"}
-15:44:03.591 [http-nio-8080-exec-2] INFO  console_logger  - RESPONSE: <200 OK OK,[],[Content-Type:"application/json", Cache-Control:"no-cache"]>
-15:46:13.647 [http-nio-8080-exec-3] INFO  console_logger  - GETTING REQUEST FROM:  127.0.0.1
-15:46:13.650 [http-nio-8080-exec-3] INFO  console_logger  - RESULT:  {"AllTemperatures":0,"NightPost":false,"MorningPost":false,"DayPost":false,"EveningPost":false,"ip":"127.0.0.1"}
-15:46:13.659 [http-nio-8080-exec-3] INFO  console_logger  - RESPONSE: <200 OK OK,[],[Content-Type:"application/json", Cache-Control:"no-cache"]>
-15:48:29.542 [http-nio-8080-exec-2] INFO  console_logger  - GETTING REQUEST FROM:  0:0:0:0:0:0:0:1
-15:48:29.546 [http-nio-8080-exec-2] INFO  console_logger  - RESULT:  {"AllTemperatures":0,"NightPost":false,"MorningPost":false,"DayPost":false,"EveningPost":false,"ip":"0:0:0:0:0:0:0:1"}
-15:48:29.558 [http-nio-8080-exec-2] INFO  console_logger  - RESPONSE: <200 OK OK,[],[Content-Type:"application/json", Cache-Control:"no-cache"]>
-15:49:12.063 [http-nio-8080-exec-6] INFO  console_logger  - ========= MONTH MEASURES LIST ============== 
-15:49:12.067 [http-nio-8080-exec-6] INFO  console_logger  - GETTING REQUEST FROM:  0:0:0:0:0:0:0:1
-15:49:12.071 [http-nio-8080-exec-6] INFO  console_logger  - RESULT:  {"AllTemperatures":4,"NightPost":false,"MorningPost":false,"DayPost":false,"EveningPost":false,"ip":"0:0:0:0:0:0:0:1"}
-15:49:12.078 [http-nio-8080-exec-6] INFO  console_logger  - RESPONSE: <200 OK OK,[{"measureDate":"16/03/2019","dayTemp":25.9,"nightTemp":26.0},{"measureDate":"17/03/2019","dayTemp":23.8,"nightTemp":25.8},{"measureDate":"18/03/2019","dayTemp":2.0,"nightTemp":25.8},{"measureDate":"18/03/2019","dayTemp":15.0,"nightTemp":25.8}],[Content-Type:"application/json", Cache-Control:"no-cache"]>
-16:07:53.561 [http-nio-8080-exec-3] INFO  console_logger  - ========= GET STATUS ============== 
-16:21:04.262 [http-nio-8080-exec-2] INFO  console_logger  - ============ ALL LOGS LIST ============== 
-16:21:04.282 [http-nio-8080-exec-2] INFO  console_logger  - RESPONSE: <200 OK OK,[{"id":1,"who":"Test","ac":true,"lan":true,"logged":null,"lasttemperature":-3,"lasthumidity":67,"servertime":"14:00:00","lastсontacttime":"14:00:00","lastсontactdate":"05/02/2019","current":220,"amperage":16,"power":40,"consuming":101},{"id":2,"who":"Test","ac":true,"lan":true,"logged":null,"lasttemperature":-5,"lasthumidity":60,"servertime":"20:00:00","lastсontacttime":"20:00:00","lastсontactdate":"05/02/2019","current":220,"amperage":16,"power":40,"consuming":102},{"id":450,"who":"Arduino","ac":true,"lan":true,"logged":null,"lasttemperature":-9,"lasthumidity":89,"servertime":"14:15:39","lastсontacttime":"08:00:00","lastсontactdate":"01/02/2019","current":220,"amperage":10,"power":60,"consuming":105},{"id":400,"who":"Arduino","ac":true,"lan":true,"logged":null,"lasttemperature":-9,"lasthumidity":89,"servertime":"12:25:50","lastсontacttime":"02:00:00","lastсontactdate":"01/01/2019","current":220,"amperage":10,"power":60,"consuming":105},{"id":500,"who":"Arduino","ac":true,"lan":true,"logged":null,"lasttemperature":-9,"lasthumidity":89,"servertime":"14:50:25","lastсontacttime":"23:00:00","lastсontactdate":"12/09/2018","current":220,"amperage":10,"power":60,"consuming":105},{"id":600,"who":"Arduino","ac":true,"lan":true,"logged":null,"lasttemperature":-9,"lasthumidity":89,"servertime":"15:00:52","lastсontacttime":"15:00:00","lastсontactdate":"06/02/2019","current":220,"amperage":10,"power":60,"consuming":105},{"id":550,"who":"Arduino","ac":true,"lan":true,"logged":null,"lasttemperature":-9,"lasthumidity":89,"servertime":"14:53:33","lastсontacttime":"16:08:00","lastсontactdate":"06/02/2019","current":220,"amperage":10,"power":60,"consuming":105},{"id":23,"who":"Test","ac":true,"lan":true,"logged":null,"lasttemperature":-50,"lasthumidity":80,"servertime":"06:00:00","lastсontacttime":"06:00:00","lastсontactdate":"07/02/2019","current":220,"amperage":null,"power":null,"consuming":null},{"id":1200,"who":"Arduino","ac":true,"lan":true,"logged":null,"lasttemperature":-9,"lasthumidity":89,"servertime":"11:08:38","lastсontacttime":"02:00:00","lastсontactdate":"03/02/2019","current":220,"amperage":10,"power":60,"consuming":105},{"id":1250,"who":"Arduino","ac":true,"lan":true,"logged":null,"lasttemperature":-9,"lasthumidity":89,"servertime":"11:15:52","lastсontacttime":"02:00:00","lastсontactdate":"07/02/2019","current":220,"amperage":10,"power":60,"consuming":105},{"id":1450,"who":"Arduino","ac":true,"lan":true,"logged":null,"lasttemperature":-9,"lasthumidity":89,"servertime":"12:50:11","lastсontacttime":"12:50:00","lastсontactdate":"07/02/2019","current":220,"amperage":10,"power":60,"consuming":105},{"id":1601,"who":"ARDUINO","ac":true,"lan":true,"logged":null,"lasttemperature":-9,"lasthumidity":89,"servertime":"15:43:51","lastсontacttime":"14:50:00","lastсontactdate":"07/02/2019","current":220,"amperage":10,"power":60,"consuming":105},{"id":1602,"who":"ARDUINO","ac":true,"lan":true,"logged":null,"lasttemperature":-9,"lasthumidity":89,"servertime":"15:44:32","lastсontacttime":"15:44:00","lastсontactdate":"07/02/2019","current":220,"amperage":10,"power":60,"consuming":105},{"id":1603,"who":"REST: NO PING","ac":false,"lan":false,"logged":null,"lasttemperature":0,"lasthumidity":0,"servertime":"15:59:39","lastсontacttime":"15:59:39","lastсontactdate":"07/02/2019","current":0,"amperage":0,"power":0,"consuming":0},{"id":1604,"who":"ARDUINO","ac":true,"lan":true,"logged":null,"lasttemperature":-9,"lasthumidity":89,"servertime":"16:02:18","lastсontacttime":"16:01:00","lastсontactdate":"07/02/2019","current":220,"amperage":10,"power":60,"consuming":105},{"id":1750,"who":"ARDUINO","ac":true,"lan":true,"logged":null,"lasttemperature":-9,"lasthumidity":89,"servertime":"18:07:49","lastсontacttime":"18:07:00","lastсontactdate":"07/02/2019","current":220,"amperage":10,"power":60,"consuming":105},{"id":1800,"who":"ARDUINO","ac":true,"lan":true,"logged":null,"lasttemperature":-9,"lasthumidity":89,"servertime":"18:17:18","lastсontacttime":"18:17:00","lastсontactdate":"07/02/2019","current":220,"amperage":10,"power":60,"consuming":105},{"id":50,"who":"Test ApiBank","ac":false,"lan":false,"logged":null,"lasttemperature":0,"lasthumidity":0,"servertime":"20:44:43","lastсontacttime":"20:44:43","lastсontactdate":"21/03/2019","current":220,"amperage":16,"power":40,"consuming":101},{"id":100,"who":"Test ApiBank","ac":false,"lan":false,"logged":null,"lasttemperature":0,"lasthumidity":0,"servertime":"20:54:08","lastсontacttime":"20:54:08","lastсontactdate":"21/03/2019","current":220,"amperage":16,"power":40,"consuming":101},{"id":101,"who":"Test ApiBank","ac":false,"lan":false,"logged":null,"lasttemperature":0,"lasthumidity":0,"servertime":"20:57:06","lastсontacttime":"20:57:06","lastсontactdate":"21/03/2019","current":220,"amperage":16,"power":40,"consuming":101},{"id":102,"who":"Test ApiBank","ac":false,"lan":false,"logged":null,"lasttemperature":-15,"lasthumidity":67,"servertime":"20:58:13","lastсontacttime":"20:58:13","lastсontactdate":"21/03/2019","current":25,"amperage":16,"power":40,"consuming":101},{"id":103,"who":"Test ApiBank","ac":false,"lan":false,"logged":null,"lasttemperature":-15,"lasthumidity":67,"servertime":"21:02:59","lastсontacttime":"21:02:59","lastсontactdate":"21/03/2019","current":25,"amperage":16,"power":40,"consuming":101},{"id":150,"who":"REST","ac":true,"lan":true,"logged":null,"lasttemperature":-15,"lasthumidity":-10,"servertime":"21:25:11","lastсontacttime":"21:25:11","lastсontactdate":"21/03/2019","current":15,"amperage":150,"power":18,"consuming":1024},{"id":200,"who":"Test","ac":true,"lan":true,"logged":null,"lasttemperature":-75,"lasthumidity":-10,"servertime":"19:46:36","lastсontacttime":"19:46:36","lastсontactdate":"22/03/2019","current":15,"amperage":150,"power":18,"consuming":1024},{"id":201,"who":"REST: NO PING","ac":false,"lan":false,"logged":null,"lasttemperature":0,"lasthumidity":0,"servertime":"20:02:18","lastсontacttime":"20:02:18","lastсontactdate":"22/03/2019","current":0,"amperage":0,"power":0,"consuming":0}],[Content-Type:"application/json", Cache-Control:"no-cache"]>
-16:37:16.008 [http-nio-8080-exec-3] INFO  console_logger  - ################# ADD LOG METHOD #####################
-16:37:16.009 [http-nio-8080-exec-3] INFO  console_logger  - LOG: {
-    "who": null,
-    "lastTemperature": -75,
-    "lastHumidity": -10,
-    "serverTime": null,
-    "lastContactTime": null,
-    "current": 15,
-    "amperage": 150,
-    "power": 18,
-    "consuming": 1024,
-    "lastContactDate": null,
-    "acOn": true,
-    "lanOn": true
-}
-16:37:16.019 [http-nio-8080-exec-3] INFO  console_logger  - PARSING RESULT: Status{isAcOn=true, isLanOn=true, lastTemperature=-75, lastHumidity=-10, serverTime=16:37:16, lastContactTime=16:37:16, current=15, amperage=150, power=18, consuming=1024, lastContactDate=Mon Apr 08 16:37:16 MSK 2019}
-16:37:16.020 [http-nio-8080-exec-3] INFO  console_logger  - GETTING REQUEST FROM:  0:0:0:0:0:0:0:1
-16:37:16.021 [http-nio-8080-exec-3] INFO  console_logger  - GETTING REQUEST FROM:  0:0:0:0:0:0:0:1
-17:13:15.263 [restartedMain] WARN  console_logger  - THREAD MANAGER HAS STARTED. T I M E ======16:37:16
-17:13:15.271 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-17:13:15.277 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {true},LAN {true}, IS LOGGED {false}
-17:13:15.282 [pool-1-thread-1] WARN  console_logger  - ============ У НАС ПРОБЛЕМЫ ============
-17:13:15.283 [pool-1-thread-1] WARN  console_logger  - ------------- Первое условие (ситуация) -------------
-17:13:15.283 [pool-1-thread-1] WARN  console_logger  - 		+ Таймаут просрочен (false)
-17:13:15.283 [pool-1-thread-1] WARN  console_logger  - 		+ Не логгировали это раньше
-17:13:15.283 [pool-1-thread-1] WARN  console_logger  - 		+ АС или LAN по последним логам включен.
-17:13:15.284 [pool-1-thread-1] INFO  console_logger  - ENTRY IN DB CREATED:Status{isAcOn=false, isLanOn=false, lastTemperature=0, lastHumidity=0, serverTime=17:13:15, lastContactTime=17:13:15, current=0, amperage=0, power=0, consuming=0, lastContactDate=Mon Apr 08 17:13:15 MSK 2019}
-17:14:17.348 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
-17:14:17.353 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-17:15:01.225 [http-nio-8080-exec-2] INFO  console_logger  - ========= GET STATUS ============== 
-17:15:01.240 [http-nio-8080-exec-2] INFO  console_logger  - RESPONSE: <200 OK OK,{"who":null,"isAcOn":true,"isLanOn":true,"lastTemperature":0,"lastHumidity":0,"serverTime":"17:13:15","lastContactTime":"17:13:15","current":0,"amperage":0,"power":0,"consuming":0,"logged":null,"lastContactDate":"08/04/2019"},[Content-Type:"application/json", Cache-Control:"no-cache"]>
-17:15:17.361 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
-17:15:17.368 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-17:15:20.277 [http-nio-8080-exec-3] INFO  console_logger  - ========= GET STATUS ============== 
-17:15:20.280 [http-nio-8080-exec-3] INFO  console_logger  - RESPONSE: <200 OK OK,{"who":null,"isAcOn":true,"isLanOn":true,"lastTemperature":0,"lastHumidity":0,"serverTime":"17:13:15","lastContactTime":"17:13:15","current":0,"amperage":0,"power":0,"consuming":0,"logged":null,"lastContactDate":"08/04/2019"},[Content-Type:"application/json", Cache-Control:"no-cache"]>
-17:16:17.376 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
-17:16:17.380 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-17:17:17.386 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
-17:17:17.395 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-17:23:50.548 [restartedMain] WARN  console_logger  - THREAD MANAGER HAS STARTED. T I M E ======17:13:15
-17:23:50.555 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
-17:23:50.562 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-17:24:04.025 [http-nio-8080-exec-1] INFO  console_logger  - ========= GET STATUS ============== 
-17:24:04.048 [http-nio-8080-exec-1] INFO  console_logger  - RESPONSE: <200 OK OK,{"who":null,"isAcOn":false,"isLanOn":false,"lastTemperature":0,"lastHumidity":0,"serverTime":"17:13:15","lastContactTime":"17:13:15","current":0,"amperage":0,"power":0,"consuming":0,"logged":null,"lastContactDate":"08/04/2019"},[Content-Type:"application/json", Cache-Control:"no-cache"]>
-17:24:34.148 [http-nio-8080-exec-4] INFO  console_logger  - ################# ADD LOG METHOD #####################
-17:24:34.148 [http-nio-8080-exec-4] INFO  console_logger  - LOG: {
+11:13:30.940 [restartedMain] WARN  console_logger  - THREAD MANAGER HAS STARTED. T I M E ======17:24:34
+11:13:30.952 [pool-2-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+11:13:30.959 [pool-2-thread-1] INFO  console_logger  - MainParametrs: AC {true},LAN {true}, IS LOGGED {false}
+11:13:30.964 [pool-2-thread-1] WARN  console_logger  - ============ У НАС ПРОБЛЕМЫ ============
+11:13:30.964 [pool-2-thread-1] WARN  console_logger  - ------------- Первое условие (ситуация) -------------
+11:13:30.965 [pool-2-thread-1] WARN  console_logger  - 		+ Таймаут просрочен (false)
+11:13:30.965 [pool-2-thread-1] WARN  console_logger  - 		+ Не логгировали это раньше
+11:13:30.966 [pool-2-thread-1] WARN  console_logger  - 		+ АС или LAN по последним логам включен.
+11:13:30.966 [pool-2-thread-1] INFO  console_logger  - ENTRY IN DB CREATED:Status{isAcOn=false, isLanOn=false, lastTemperature=0, lastHumidity=0, serverTime=11:13:30, lastContactTime=11:13:30, current=0, amperage=0, power=0, consuming=0, lastContactDate=Tue Apr 09 11:13:30 MSK 2019}
+11:14:33.460 [pool-2-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
+11:14:33.465 [pool-2-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+11:15:33.476 [pool-2-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
+11:15:33.481 [pool-2-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+11:16:33.489 [pool-2-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
+11:16:33.500 [pool-2-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+11:17:33.509 [pool-2-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
+11:17:33.514 [pool-2-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+11:18:33.530 [pool-2-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
+11:18:33.538 [pool-2-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+11:19:33.549 [pool-2-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
+11:19:33.554 [pool-2-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+11:20:33.560 [pool-2-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
+11:20:33.565 [pool-2-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+11:21:33.570 [pool-2-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
+11:21:33.575 [pool-2-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+11:22:34.886 [restartedMain] WARN  console_logger  - THREAD MANAGER HAS STARTED. T I M E ======11:13:31
+11:22:34.893 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
+11:22:34.899 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+11:23:34.910 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
+11:23:34.918 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+11:24:34.924 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
+11:24:34.927 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+11:25:34.934 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
+11:25:34.942 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+11:26:34.950 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
+11:26:34.954 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+11:27:17.766 [pool-3-thread-1] ERROR console_logger  - Не получилось отправить сообщение в канал Риф ошибочки 
+org.telegram.telegrambots.meta.exceptions.TelegramApiException: Unable to execute sendmessage method
+	at org.telegram.telegrambots.bots.DefaultAbsSender.sendApiMethod(DefaultAbsSender.java:719)
+	at org.telegram.telegrambots.meta.bots.AbsSender.execute(AbsSender.java:47)
+	at com.antonromanov.temprest.bot.Bot.lambda$fireMessage$2(Bot.java:195)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.security.ssl.InputRecord.readFully(InputRecord.java:465)
+	at sun.security.ssl.InputRecord.read(InputRecord.java:503)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:975)
+	at sun.security.ssl.SSLSocketImpl.readDataRecord(SSLSocketImpl.java:933)
+	at sun.security.ssl.AppInputStream.read(AppInputStream.java:105)
+	at org.apache.http.impl.conn.LoggingInputStream.read(LoggingInputStream.java:84)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:280)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:157)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.telegram.telegrambots.bots.DefaultAbsSender.sendHttpPostRequest(DefaultAbsSender.java:765)
+	at org.telegram.telegrambots.bots.DefaultAbsSender.sendMethodRequest(DefaultAbsSender.java:761)
+	at org.telegram.telegrambots.bots.DefaultAbsSender.sendApiMethod(DefaultAbsSender.java:716)
+	... 7 common frames omitted
+11:27:34.962 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
+11:27:34.974 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+11:27:46.186 [restartedMain] WARN  console_logger  - THREAD MANAGER HAS STARTED. T I M E ======11:13:31
+11:27:46.193 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
+11:27:46.200 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+11:28:46.210 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+11:28:46.225 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+11:29:46.242 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+11:29:46.257 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+11:30:46.281 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+11:30:46.296 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+11:31:46.307 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+11:31:46.312 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+11:32:46.324 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+11:32:46.333 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+11:33:46.341 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+11:33:46.346 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+11:34:46.354 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+11:34:46.358 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+11:35:46.364 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+11:35:46.369 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+11:36:46.378 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+11:36:46.393 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+11:37:46.406 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+11:37:46.418 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+11:38:46.430 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+11:38:46.433 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+11:39:46.442 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+11:39:46.446 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+11:40:46.454 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+11:40:46.458 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+11:41:46.466 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+11:41:46.472 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+11:42:28.180 [restartedMain] WARN  console_logger  - THREAD MANAGER HAS STARTED. T I M E ======11:13:31
+11:42:28.186 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+11:42:28.193 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+11:43:28.206 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+11:43:28.211 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+11:44:00.925 [restartedMain] WARN  console_logger  - THREAD MANAGER HAS STARTED. T I M E ======11:13:31
+11:44:00.935 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+11:44:00.942 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+11:45:00.957 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+11:45:00.962 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+11:45:57.881 [restartedMain] WARN  console_logger  - THREAD MANAGER HAS STARTED. T I M E ======11:13:31
+11:45:57.891 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+11:45:57.898 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+11:46:17.799 [www_anton_romanov_bot Telegram Executor] ERROR console_logger  - temp status
+11:46:56.967 [restartedMain] WARN  console_logger  - THREAD MANAGER HAS STARTED. T I M E ======11:13:31
+11:46:56.975 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+11:46:56.981 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+11:47:27.008 [www_anton_romanov_bot Telegram Executor] ERROR console_logger  - temp status
+11:48:06.357 [restartedMain] WARN  console_logger  - THREAD MANAGER HAS STARTED. T I M E ======11:13:31
+11:48:06.370 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+11:48:06.377 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+11:48:26.336 [www_anton_romanov_bot Telegram Executor] ERROR console_logger  - temp status
+11:49:06.395 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+11:49:06.399 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+11:49:21.871 [www_anton_romanov_bot Telegram Executor] ERROR console_logger  - temp status
+11:49:36.292 [www_anton_romanov_bot Telegram Executor] ERROR console_logger  - temp status
+11:49:53.330 [restartedMain] WARN  console_logger  - THREAD MANAGER HAS STARTED. T I M E ======11:13:31
+11:49:53.341 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+11:49:53.347 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+11:50:22.598 [www_anton_romanov_bot Telegram Executor] ERROR console_logger  - temp status
+11:50:54.750 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+11:50:54.757 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+11:51:54.770 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+11:51:54.776 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+11:52:54.787 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+11:52:54.790 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+11:53:28.577 [restartedMain] WARN  console_logger  - THREAD MANAGER HAS STARTED. T I M E ======11:13:31
+11:53:28.587 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+11:53:28.592 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+11:53:40.081 [www_anton_romanov_bot Telegram Executor] ERROR console_logger  - temp status
+11:54:28.613 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+11:54:28.617 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+11:54:37.419 [www_anton_romanov_bot Telegram Executor] ERROR console_logger  - temp status
+11:55:30.278 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+11:55:30.285 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+11:55:44.056 [restartedMain] WARN  console_logger  - THREAD MANAGER HAS STARTED. T I M E ======11:13:31
+11:55:44.064 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+11:55:44.070 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+11:55:56.289 [www_anton_romanov_bot Telegram Executor] ERROR console_logger  - temp status
+11:56:44.082 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+11:56:44.087 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+11:57:44.096 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+11:57:44.100 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+11:58:44.114 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+11:58:44.126 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+11:59:44.140 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+11:59:44.145 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+12:00:44.153 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+12:00:44.157 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+12:01:44.166 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+12:01:44.173 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+12:02:44.188 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+12:02:44.193 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+12:03:44.200 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+12:03:44.204 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+12:04:44.213 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+12:04:44.218 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+12:05:17.414 [restartedMain] WARN  console_logger  - THREAD MANAGER HAS STARTED. T I M E ======11:13:31
+12:05:17.422 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+12:05:17.428 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+12:06:17.440 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+12:06:17.445 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+12:07:17.459 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+12:07:17.466 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+12:08:17.473 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+12:08:17.478 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+12:09:17.493 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+12:09:17.506 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+12:10:17.524 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+12:10:17.530 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+12:11:17.543 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+12:11:17.551 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+12:12:17.565 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+12:12:17.576 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+12:13:17.594 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+12:13:17.601 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+12:14:17.615 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+12:14:17.629 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+12:15:17.648 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+12:15:17.662 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+12:16:17.677 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+12:16:17.691 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+12:17:17.705 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+12:17:17.708 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+12:18:17.716 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+12:18:17.719 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+12:19:17.726 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+12:19:17.729 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+12:20:17.737 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+12:20:17.746 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+12:21:17.764 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+12:21:17.779 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+12:22:17.799 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+12:22:17.816 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+12:23:17.827 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+12:23:17.831 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+12:24:17.840 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+12:24:17.846 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+12:24:49.519 [restartedMain] WARN  console_logger  - THREAD MANAGER HAS STARTED. T I M E ======11:13:31
+12:24:49.526 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+12:24:49.532 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+12:25:49.543 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+12:25:49.547 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+12:26:11.606 [http-nio-8080-exec-2] INFO  console_logger  - ################# ADD LOG METHOD #####################
+12:26:11.606 [http-nio-8080-exec-2] INFO  console_logger  - LOG: {
     "who": null,
     "lastTemperature": -5,
     "lastHumidity": 48,
@@ -93,19 +234,153 @@
     "acOn": true,
     "lanOn": true
 }
-17:24:34.155 [http-nio-8080-exec-4] INFO  console_logger  - PARSING RESULT: Status{isAcOn=true, isLanOn=true, lastTemperature=-5, lastHumidity=48, serverTime=17:24:34, lastContactTime=17:24:34, current=15, amperage=150, power=18, consuming=1024, lastContactDate=Mon Apr 08 17:24:34 MSK 2019}
-17:24:34.157 [http-nio-8080-exec-4] INFO  console_logger  - GETTING REQUEST FROM:  0:0:0:0:0:0:0:1
-17:24:50.568 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
-17:24:50.573 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {true},LAN {true}, IS LOGGED {false}
-17:24:50.575 [pool-1-thread-1] WARN  console_logger  - PROBLEM WAS SOLVED OR HAS NOT BEEN OCCURED
-17:24:50.576 [pool-1-thread-1] WARN  console_logger  - ------------- Второе условие (ситуация) -------------
-17:24:50.576 [pool-1-thread-1] WARN  console_logger  - 		+ АС или LAN по последним логам включен.
-17:24:50.576 [pool-1-thread-1] WARN  console_logger  - RESULT: НИЧЕГО НЕ ДЕЛАЕМ
-17:25:00.290 [http-nio-8080-exec-3] INFO  console_logger  - ========= GET STATUS ============== 
-17:25:00.298 [http-nio-8080-exec-3] INFO  console_logger  - RESPONSE: <200 OK OK,{"who":null,"isAcOn":true,"isLanOn":true,"lastTemperature":-5,"lastHumidity":48,"serverTime":"17:24:34","lastContactTime":"17:24:34","current":0,"amperage":0,"power":0,"consuming":0,"logged":null,"lastContactDate":"08/04/2019"},[Content-Type:"application/json", Cache-Control:"no-cache"]>
-17:25:50.582 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
-17:25:50.600 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {true},LAN {true}, IS LOGGED {false}
-17:25:50.607 [pool-1-thread-1] WARN  console_logger  - PROBLEM WAS SOLVED OR HAS NOT BEEN OCCURED
-17:25:50.608 [pool-1-thread-1] WARN  console_logger  - ------------- Второе условие (ситуация) -------------
-17:25:50.608 [pool-1-thread-1] WARN  console_logger  - 		+ АС или LAN по последним логам включен.
-17:25:50.608 [pool-1-thread-1] WARN  console_logger  - RESULT: НИЧЕГО НЕ ДЕЛАЕМ
+12:26:11.615 [http-nio-8080-exec-2] INFO  console_logger  - PARSING RESULT: Status{isAcOn=true, isLanOn=true, lastTemperature=-5, lastHumidity=48, serverTime=12:26:11, lastContactTime=12:26:11, current=15, amperage=150, power=18, consuming=1024, lastContactDate=Tue Apr 09 12:26:11 MSK 2019}
+12:26:11.616 [http-nio-8080-exec-2] INFO  console_logger  - GETTING REQUEST FROM:  0:0:0:0:0:0:0:1
+12:26:49.554 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
+12:26:49.558 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {true},LAN {true}, IS LOGGED {false}
+12:26:49.560 [pool-3-thread-1] WARN  console_logger  - PROBLEM WAS SOLVED OR HAS NOT BEEN OCCURED
+12:26:49.561 [pool-3-thread-1] WARN  console_logger  - ------------- Второе условие (ситуация) -------------
+12:26:49.561 [pool-3-thread-1] WARN  console_logger  - 		+ АС или LAN по последним логам включен.
+12:26:49.561 [pool-3-thread-1] WARN  console_logger  - RESULT: НИЧЕГО НЕ ДЕЛАЕМ
+12:27:49.565 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
+12:27:49.574 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {true},LAN {true}, IS LOGGED {false}
+12:27:49.577 [pool-3-thread-1] WARN  console_logger  - PROBLEM WAS SOLVED OR HAS NOT BEEN OCCURED
+12:27:49.577 [pool-3-thread-1] WARN  console_logger  - ------------- Второе условие (ситуация) -------------
+12:27:49.578 [pool-3-thread-1] WARN  console_logger  - 		+ АС или LAN по последним логам включен.
+12:27:49.579 [pool-3-thread-1] WARN  console_logger  - RESULT: НИЧЕГО НЕ ДЕЛАЕМ
+12:28:49.584 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
+12:28:49.597 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {true},LAN {true}, IS LOGGED {false}
+12:28:49.602 [pool-3-thread-1] WARN  console_logger  - PROBLEM WAS SOLVED OR HAS NOT BEEN OCCURED
+12:28:49.604 [pool-3-thread-1] WARN  console_logger  - ------------- Второе условие (ситуация) -------------
+12:28:49.604 [pool-3-thread-1] WARN  console_logger  - 		+ АС или LAN по последним логам включен.
+12:28:49.604 [pool-3-thread-1] WARN  console_logger  - RESULT: НИЧЕГО НЕ ДЕЛАЕМ
+12:29:49.608 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
+12:29:49.626 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {true},LAN {true}, IS LOGGED {false}
+12:29:49.632 [pool-3-thread-1] WARN  console_logger  - PROBLEM WAS SOLVED OR HAS NOT BEEN OCCURED
+12:29:49.632 [pool-3-thread-1] WARN  console_logger  - ------------- Второе условие (ситуация) -------------
+12:29:49.632 [pool-3-thread-1] WARN  console_logger  - 		+ АС или LAN по последним логам включен.
+12:29:49.634 [pool-3-thread-1] WARN  console_logger  - RESULT: НИЧЕГО НЕ ДЕЛАЕМ
+12:30:49.637 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
+12:30:49.642 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {true},LAN {true}, IS LOGGED {false}
+12:30:49.644 [pool-3-thread-1] WARN  console_logger  - PROBLEM WAS SOLVED OR HAS NOT BEEN OCCURED
+12:30:49.645 [pool-3-thread-1] WARN  console_logger  - ------------- Второе условие (ситуация) -------------
+12:30:49.645 [pool-3-thread-1] WARN  console_logger  - 		+ АС или LAN по последним логам включен.
+12:30:49.645 [pool-3-thread-1] WARN  console_logger  - RESULT: НИЧЕГО НЕ ДЕЛАЕМ
+12:31:49.646 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
+12:31:49.651 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {true},LAN {true}, IS LOGGED {false}
+12:31:49.652 [pool-3-thread-1] WARN  console_logger  - PROBLEM WAS SOLVED OR HAS NOT BEEN OCCURED
+12:31:49.652 [pool-3-thread-1] WARN  console_logger  - ------------- Второе условие (ситуация) -------------
+12:31:49.652 [pool-3-thread-1] WARN  console_logger  - 		+ АС или LAN по последним логам включен.
+12:31:49.653 [pool-3-thread-1] WARN  console_logger  - RESULT: НИЧЕГО НЕ ДЕЛАЕМ
+12:32:49.659 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
+12:32:49.664 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {true},LAN {true}, IS LOGGED {false}
+12:32:49.665 [pool-3-thread-1] WARN  console_logger  - PROBLEM WAS SOLVED OR HAS NOT BEEN OCCURED
+12:32:49.666 [pool-3-thread-1] WARN  console_logger  - ------------- Второе условие (ситуация) -------------
+12:32:49.666 [pool-3-thread-1] WARN  console_logger  - 		+ АС или LAN по последним логам включен.
+12:32:49.666 [pool-3-thread-1] WARN  console_logger  - RESULT: НИЧЕГО НЕ ДЕЛАЕМ
+12:33:49.667 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
+12:33:49.673 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {true},LAN {true}, IS LOGGED {false}
+12:33:49.675 [pool-3-thread-1] WARN  console_logger  - PROBLEM WAS SOLVED OR HAS NOT BEEN OCCURED
+12:33:49.675 [pool-3-thread-1] WARN  console_logger  - ------------- Второе условие (ситуация) -------------
+12:33:49.675 [pool-3-thread-1] WARN  console_logger  - 		+ АС или LAN по последним логам включен.
+12:33:49.676 [pool-3-thread-1] WARN  console_logger  - RESULT: НИЧЕГО НЕ ДЕЛАЕМ
+12:34:49.679 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
+12:34:49.682 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {true},LAN {true}, IS LOGGED {false}
+12:34:49.684 [pool-3-thread-1] WARN  console_logger  - PROBLEM WAS SOLVED OR HAS NOT BEEN OCCURED
+12:34:49.685 [pool-3-thread-1] WARN  console_logger  - ------------- Второе условие (ситуация) -------------
+12:34:49.685 [pool-3-thread-1] WARN  console_logger  - 		+ АС или LAN по последним логам включен.
+12:34:49.685 [pool-3-thread-1] WARN  console_logger  - RESULT: НИЧЕГО НЕ ДЕЛАЕМ
+12:35:49.688 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
+12:35:49.691 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {true},LAN {true}, IS LOGGED {false}
+12:35:49.693 [pool-3-thread-1] WARN  console_logger  - PROBLEM WAS SOLVED OR HAS NOT BEEN OCCURED
+12:35:49.693 [pool-3-thread-1] WARN  console_logger  - ------------- Второе условие (ситуация) -------------
+12:35:49.693 [pool-3-thread-1] WARN  console_logger  - 		+ АС или LAN по последним логам включен.
+12:35:49.694 [pool-3-thread-1] WARN  console_logger  - RESULT: НИЧЕГО НЕ ДЕЛАЕМ
+12:36:49.695 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
+12:36:49.701 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {true},LAN {true}, IS LOGGED {false}
+12:36:49.702 [pool-3-thread-1] WARN  console_logger  - PROBLEM WAS SOLVED OR HAS NOT BEEN OCCURED
+12:36:49.703 [pool-3-thread-1] WARN  console_logger  - ------------- Второе условие (ситуация) -------------
+12:36:49.703 [pool-3-thread-1] WARN  console_logger  - 		+ АС или LAN по последним логам включен.
+12:36:49.703 [pool-3-thread-1] WARN  console_logger  - RESULT: НИЧЕГО НЕ ДЕЛАЕМ
+12:37:49.704 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
+12:37:49.709 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {true},LAN {true}, IS LOGGED {false}
+12:37:49.710 [pool-3-thread-1] WARN  console_logger  - PROBLEM WAS SOLVED OR HAS NOT BEEN OCCURED
+12:37:49.710 [pool-3-thread-1] WARN  console_logger  - ------------- Второе условие (ситуация) -------------
+12:37:49.710 [pool-3-thread-1] WARN  console_logger  - 		+ АС или LAN по последним логам включен.
+12:37:49.711 [pool-3-thread-1] WARN  console_logger  - RESULT: НИЧЕГО НЕ ДЕЛАЕМ
+12:38:49.713 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
+12:38:49.718 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {true},LAN {true}, IS LOGGED {false}
+12:38:49.719 [pool-3-thread-1] WARN  console_logger  - PROBLEM WAS SOLVED OR HAS NOT BEEN OCCURED
+12:38:49.720 [pool-3-thread-1] WARN  console_logger  - ------------- Второе условие (ситуация) -------------
+12:38:49.720 [pool-3-thread-1] WARN  console_logger  - 		+ АС или LAN по последним логам включен.
+12:38:49.720 [pool-3-thread-1] WARN  console_logger  - RESULT: НИЧЕГО НЕ ДЕЛАЕМ
+12:39:49.721 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
+12:39:49.724 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {true},LAN {true}, IS LOGGED {false}
+12:39:49.726 [pool-3-thread-1] WARN  console_logger  - PROBLEM WAS SOLVED OR HAS NOT BEEN OCCURED
+12:39:49.726 [pool-3-thread-1] WARN  console_logger  - ------------- Второе условие (ситуация) -------------
+12:39:49.726 [pool-3-thread-1] WARN  console_logger  - 		+ АС или LAN по последним логам включен.
+12:39:49.727 [pool-3-thread-1] WARN  console_logger  - RESULT: НИЧЕГО НЕ ДЕЛАЕМ
+12:40:49.733 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
+12:40:49.748 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {true},LAN {true}, IS LOGGED {false}
+12:40:49.752 [pool-3-thread-1] WARN  console_logger  - PROBLEM WAS SOLVED OR HAS NOT BEEN OCCURED
+12:40:49.754 [pool-3-thread-1] WARN  console_logger  - ------------- Второе условие (ситуация) -------------
+12:40:49.754 [pool-3-thread-1] WARN  console_logger  - 		+ АС или LAN по последним логам включен.
+12:40:49.755 [pool-3-thread-1] WARN  console_logger  - RESULT: НИЧЕГО НЕ ДЕЛАЕМ
+12:41:49.757 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+12:41:49.761 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {true},LAN {true}, IS LOGGED {false}
+12:41:49.765 [pool-3-thread-1] WARN  console_logger  - ============ У НАС ПРОБЛЕМЫ ============
+12:41:49.765 [pool-3-thread-1] WARN  console_logger  - ------------- Первое условие (ситуация) -------------
+12:41:49.765 [pool-3-thread-1] WARN  console_logger  - 		+ Таймаут просрочен (false)
+12:41:49.766 [pool-3-thread-1] WARN  console_logger  - 		+ Не логгировали это раньше
+12:41:49.766 [pool-3-thread-1] WARN  console_logger  - 		+ АС или LAN по последним логам включен.
+12:41:49.766 [pool-3-thread-1] INFO  console_logger  - ENTRY IN DB CREATED:Status{isAcOn=false, isLanOn=false, lastTemperature=0, lastHumidity=0, serverTime=12:41:49, lastContactTime=12:41:49, current=0, amperage=0, power=0, consuming=0, lastContactDate=Tue Apr 09 12:41:49 MSK 2019}
+12:42:49.775 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
+12:42:49.778 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+12:44:01.702 [restartedMain] WARN  console_logger  - THREAD MANAGER HAS STARTED. T I M E ====== 12:41:50
+12:44:01.710 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
+12:44:01.717 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+12:44:37.344 [restartedMain] WARN  console_logger  - THREAD MANAGER HAS STARTED. T I M E ====== 12:41:50
+12:46:24.422 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
+12:46:24.431 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+12:46:53.686 [restartedMain] WARN  console_logger  - THREAD MANAGER HAS STARTED. T I M E ====== 12:41:50
+12:46:58.851 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
+12:46:58.859 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+12:47:58.868 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
+12:47:58.873 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+12:48:58.880 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
+12:48:58.888 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+12:49:58.896 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
+12:49:58.902 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+12:50:58.908 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
+12:50:58.915 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+12:51:21.209 [restartedMain] WARN  console_logger  - THREAD MANAGER HAS STARTED. T I M E ====== 12:41:50
+12:51:21.216 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
+12:51:21.222 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+12:52:14.794 [http-nio-8080-exec-2] INFO  console_logger  - ========= ALL MEASURES LIST ============== 
+12:52:14.798 [http-nio-8080-exec-2] INFO  console_logger  - GETTING REQUEST FROM:  0:0:0:0:0:0:0:1
+12:52:14.800 [http-nio-8080-exec-2] INFO  console_logger  - RESULT:  {"AllTemperatures":43,"NightPost":false,"MorningPost":false,"DayPost":false,"EveningPost":false,"ip":"0:0:0:0:0:0:0:1"}
+12:52:14.824 [http-nio-8080-exec-2] INFO  console_logger  - RESPONSE: <200 OK OK,[{"id":100,"name":"from Arduino Home","temperature":2.0,"dateCreated":"15/03/2019","timeCreated":"15:43:17","status":null},{"id":101,"name":"from Arduino Home","temperature":8.0,"dateCreated":"15/03/2019","timeCreated":"15:45:42","status":null},{"id":102,"name":"from Arduino Home","temperature":15.0,"dateCreated":"15/03/2019","timeCreated":"15:46:06","status":null},{"id":103,"name":"from Arduino Home","temperature":15.0,"dateCreated":"15/03/2019","timeCreated":"15:46:30","status":null},{"id":104,"name":"from Arduino Home","temperature":25.0,"dateCreated":"15/03/2019","timeCreated":"15:47:31","status":null},{"id":250,"name":"from Arduino Home","temperature":2.0,"dateCreated":"18/03/2019","timeCreated":"14:33:13","status":null},{"id":300,"name":"from Arduino Home","temperature":2.0,"dateCreated":"18/03/2019","timeCreated":"14:36:54","status":null},{"id":3,"name":"Test","temperature":15.0,"dateCreated":"18/03/2019","timeCreated":"13:00:00","status":null},{"id":651,"name":"from Arduino Home","temperature":26.4,"dateCreated":"15/03/2019","timeCreated":"18:00:46","status":null},{"id":655,"name":"from Arduino Home","temperature":25.9,"dateCreated":"16/03/2019","timeCreated":"13:00:29","status":null},{"id":657,"name":"from Arduino Home","temperature":25.8,"dateCreated":"17/03/2019","timeCreated":"01:00:14","status":null},{"id":659,"name":"from Arduino Home","temperature":25.8,"dateCreated":"17/03/2019","timeCreated":"07:00:43","status":null},{"id":661,"name":"from Arduino Home","temperature":25.7,"dateCreated":"17/03/2019","timeCreated":"18:02:39","status":null},{"id":663,"name":"from Arduino Home","temperature":25.8,"dateCreated":"18/03/2019","timeCreated":"01:01:04","status":null},{"id":665,"name":"from Arduino Home","temperature":26.4,"dateCreated":"18/03/2019","timeCreated":"13:00:40","status":null},{"id":652,"name":"from Arduino Home","temperature":26.0,"dateCreated":"16/03/2019","timeCreated":"01:00:53","status":null},{"id":654,"name":"from Arduino Home","temperature":25.9,"dateCreated":"16/03/2019","timeCreated":"07:03:23","status":null},{"id":656,"name":"from Arduino Home","temperature":25.9,"dateCreated":"16/03/2019","timeCreated":"18:01:09","status":null},{"id":658,"name":"from Arduino Home","temperature":25.8,"dateCreated":"17/03/2019","timeCreated":"01:01:15","status":null},{"id":660,"name":"from Arduino Home","temperature":23.8,"dateCreated":"17/03/2019","timeCreated":"13:00:01","status":null},{"id":662,"name":"from Arduino Home","temperature":25.7,"dateCreated":"17/03/2019","timeCreated":"18:03:40","status":null},{"id":664,"name":"from Arduino Home","temperature":25.9,"dateCreated":"18/03/2019","timeCreated":"07:00:24","status":null},{"id":666,"name":"from Arduino Home","temperature":26.3,"dateCreated":"18/03/2019","timeCreated":"13:01:41","status":null},{"id":650,"name":"from Arduino Home","temperature":26.3,"dateCreated":"15/03/2019","timeCreated":"14:33:49","status":null},{"id":7,"name":"/today featuring gson","temperature":-45.0,"dateCreated":"19/03/2019","timeCreated":"07:00:00","status":null},{"id":8,"name":"/today test","temperature":-20.0,"dateCreated":"19/03/2019","timeCreated":"14:00:00","status":null},{"id":9,"name":"/today test 2","temperature":-15.0,"dateCreated":"20/03/2019","timeCreated":"07:00:00","status":null},{"id":10,"name":"/yoday test 2","temperature":-49.0,"dateCreated":"20/03/2019","timeCreated":"14:00:00","status":null},{"id":500,"name":"from Arduino Home","temperature":-35.0,"dateCreated":"21/03/2019","timeCreated":"20:22:44","status":"{\"AllTemperatures\":0,\"ip\":\"0:0:0:0:0:0:0:1\",\"NightPost\":false,\"MorningPost\":false,\"DayPost\":false,\"EveningPost\":false}"},{"id":550,"name":"from Arduino Home","temperature":-30.0,"dateCreated":"21/03/2019","timeCreated":"20:28:24","status":"{\"AllTemperatures\":29,\"ip\":\"0:0:0:0:0:0:0:1\",\"NightPost\":false,\"MorningPost\":false,\"DayPost\":false,\"EveningPost\":false}"},{"id":551,"name":"from Arduino Home","temperature":-10.0,"dateCreated":"21/03/2019","timeCreated":"20:28:34","status":"{\"AllTemperatures\":30,\"ip\":\"0:0:0:0:0:0:0:1\",\"NightPost\":false,\"MorningPost\":false,\"DayPost\":false,\"EveningPost\":false}"},{"id":552,"name":"from Arduino Home","temperature":-2.0,"dateCreated":"21/03/2019","timeCreated":"20:28:45","status":"{\"AllTemperatures\":31,\"ip\":\"0:0:0:0:0:0:0:1\",\"NightPost\":false,\"MorningPost\":false,\"DayPost\":false,\"EveningPost\":false}"},{"id":13,"name":"Test Test","temperature":-50.0,"dateCreated":"22/03/2019","timeCreated":"15:00:00","status":null},{"id":700,"name":"from Arduino Home","temperature":-75.0,"dateCreated":"03/04/2019","timeCreated":"18:23:56","status":"{\"AllTemperatures\":33,\"NightPost\":false,\"MorningPost\":false,\"DayPost\":false,\"EveningPost\":true,\"ip\":\"0:0:0:0:0:0:0:1\"}"},{"id":-34,"name":"from Arduino Home","temperature":-350.0,"dateCreated":"08/04/2019","timeCreated":"12:44:41","status":"{\"AllTemperatures\":34,\"NightPost\":false,\"MorningPost\":false,\"DayPost\":true,\"EveningPost\":false,\"ip\":\"0:0:0:0:0:0:0:1\"}"},{"id":-33,"name":"from Arduino Home","temperature":145.0,"dateCreated":"08/04/2019","timeCreated":"12:49:52","status":"{\"AllTemperatures\":35,\"NightPost\":false,\"MorningPost\":false,\"DayPost\":false,\"EveningPost\":false,\"ip\":\"0:0:0:0:0:0:0:1\"}"},{"id":-32,"name":"from Arduino Home","temperature":145.0,"dateCreated":"08/04/2019","timeCreated":"12:50:03","status":"{\"AllTemperatures\":36,\"NightPost\":false,\"MorningPost\":false,\"DayPost\":false,\"EveningPost\":false,\"ip\":\"0:0:0:0:0:0:0:1\"}"},{"id":-31,"name":"from Arduino Home","temperature":145.0,"dateCreated":"08/04/2019","timeCreated":"12:50:40","status":"{\"AllTemperatures\":37,\"NightPost\":false,\"MorningPost\":false,\"DayPost\":false,\"EveningPost\":false,\"ip\":\"0:0:0:0:0:0:0:1\"}"},{"id":17,"name":"from Arduino Home","temperature":111.0,"dateCreated":"08/04/2019","timeCreated":"12:54:18","status":"{\"AllTemperatures\":38,\"NightPost\":false,\"MorningPost\":false,\"DayPost\":false,\"EveningPost\":false,\"ip\":\"0:0:0:0:0:0:0:1\"}"},{"id":18,"name":"from Arduino Home","temperature":111.0,"dateCreated":"08/04/2019","timeCreated":"12:54:35","status":"{\"AllTemperatures\":39,\"NightPost\":false,\"MorningPost\":false,\"DayPost\":false,\"EveningPost\":false,\"ip\":\"0:0:0:0:0:0:0:1\"}"},{"id":19,"name":"from Arduino Home","temperature":111.0,"dateCreated":"08/04/2019","timeCreated":"12:54:50","status":"{\"AllTemperatures\":40,\"NightPost\":false,\"MorningPost\":false,\"DayPost\":false,\"EveningPost\":false,\"ip\":\"0:0:0:0:0:0:0:1\"}"},{"id":20,"name":"from Arduino Home","temperature":111.0,"dateCreated":"08/04/2019","timeCreated":"12:57:45","status":"{\"AllTemperatures\":41,\"NightPost\":false,\"MorningPost\":false,\"DayPost\":false,\"EveningPost\":false,\"ip\":\"0:0:0:0:0:0:0:1\"}"},{"id":21,"name":"from Arduino Home","temperature":111.0,"dateCreated":"08/04/2019","timeCreated":"14:44:29","status":"{\"AllTemperatures\":42,\"NightPost\":false,\"MorningPost\":false,\"DayPost\":false,\"EveningPost\":false,\"ip\":\"0:0:0:0:0:0:0:1\"}"}],[Content-Type:"application/json", Cache-Control:"no-cache"]>
+12:52:21.231 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
+12:52:21.248 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+12:53:12.416 [http-nio-8080-exec-3] INFO  console_logger  - ============ ALL LOGS LIST ============== 
+12:53:12.424 [http-nio-8080-exec-3] INFO  console_logger  - RESPONSE: <200 OK OK,[{"id":1,"who":"Test","ac":true,"lan":true,"logged":null,"lasttemperature":-3,"lasthumidity":67,"servertime":"14:00:00","lastсontacttime":"14:00:00","lastсontactdate":"05/02/2019","current":220,"amperage":16,"power":40,"consuming":101},{"id":2,"who":"Test","ac":true,"lan":true,"logged":null,"lasttemperature":-5,"lasthumidity":60,"servertime":"20:00:00","lastсontacttime":"20:00:00","lastсontactdate":"05/02/2019","current":220,"amperage":16,"power":40,"consuming":102},{"id":450,"who":"Arduino","ac":true,"lan":true,"logged":null,"lasttemperature":-9,"lasthumidity":89,"servertime":"14:15:39","lastсontacttime":"08:00:00","lastсontactdate":"01/02/2019","current":220,"amperage":10,"power":60,"consuming":105},{"id":400,"who":"Arduino","ac":true,"lan":true,"logged":null,"lasttemperature":-9,"lasthumidity":89,"servertime":"12:25:50","lastсontacttime":"02:00:00","lastсontactdate":"01/01/2019","current":220,"amperage":10,"power":60,"consuming":105},{"id":500,"who":"Arduino","ac":true,"lan":true,"logged":null,"lasttemperature":-9,"lasthumidity":89,"servertime":"14:50:25","lastсontacttime":"23:00:00","lastсontactdate":"12/09/2018","current":220,"amperage":10,"power":60,"consuming":105},{"id":600,"who":"Arduino","ac":true,"lan":true,"logged":null,"lasttemperature":-9,"lasthumidity":89,"servertime":"15:00:52","lastсontacttime":"15:00:00","lastсontactdate":"06/02/2019","current":220,"amperage":10,"power":60,"consuming":105},{"id":550,"who":"Arduino","ac":true,"lan":true,"logged":null,"lasttemperature":-9,"lasthumidity":89,"servertime":"14:53:33","lastсontacttime":"16:08:00","lastсontactdate":"06/02/2019","current":220,"amperage":10,"power":60,"consuming":105},{"id":23,"who":"Test","ac":true,"lan":true,"logged":null,"lasttemperature":-50,"lasthumidity":80,"servertime":"06:00:00","lastсontacttime":"06:00:00","lastсontactdate":"07/02/2019","current":220,"amperage":null,"power":null,"consuming":null},{"id":1200,"who":"Arduino","ac":true,"lan":true,"logged":null,"lasttemperature":-9,"lasthumidity":89,"servertime":"11:08:38","lastсontacttime":"02:00:00","lastсontactdate":"03/02/2019","current":220,"amperage":10,"power":60,"consuming":105},{"id":1250,"who":"Arduino","ac":true,"lan":true,"logged":null,"lasttemperature":-9,"lasthumidity":89,"servertime":"11:15:52","lastсontacttime":"02:00:00","lastсontactdate":"07/02/2019","current":220,"amperage":10,"power":60,"consuming":105},{"id":1450,"who":"Arduino","ac":true,"lan":true,"logged":null,"lasttemperature":-9,"lasthumidity":89,"servertime":"12:50:11","lastсontacttime":"12:50:00","lastсontactdate":"07/02/2019","current":220,"amperage":10,"power":60,"consuming":105},{"id":1601,"who":"ARDUINO","ac":true,"lan":true,"logged":null,"lasttemperature":-9,"lasthumidity":89,"servertime":"15:43:51","lastсontacttime":"14:50:00","lastсontactdate":"07/02/2019","current":220,"amperage":10,"power":60,"consuming":105},{"id":1602,"who":"ARDUINO","ac":true,"lan":true,"logged":null,"lasttemperature":-9,"lasthumidity":89,"servertime":"15:44:32","lastсontacttime":"15:44:00","lastсontactdate":"07/02/2019","current":220,"amperage":10,"power":60,"consuming":105},{"id":1603,"who":"REST: NO PING","ac":false,"lan":false,"logged":null,"lasttemperature":0,"lasthumidity":0,"servertime":"15:59:39","lastсontacttime":"15:59:39","lastсontactdate":"07/02/2019","current":0,"amperage":0,"power":0,"consuming":0},{"id":1604,"who":"ARDUINO","ac":true,"lan":true,"logged":null,"lasttemperature":-9,"lasthumidity":89,"servertime":"16:02:18","lastсontacttime":"16:01:00","lastсontactdate":"07/02/2019","current":220,"amperage":10,"power":60,"consuming":105},{"id":1750,"who":"ARDUINO","ac":true,"lan":true,"logged":null,"lasttemperature":-9,"lasthumidity":89,"servertime":"18:07:49","lastсontacttime":"18:07:00","lastсontactdate":"07/02/2019","current":220,"amperage":10,"power":60,"consuming":105},{"id":1800,"who":"ARDUINO","ac":true,"lan":true,"logged":null,"lasttemperature":-9,"lasthumidity":89,"servertime":"18:17:18","lastсontacttime":"18:17:00","lastсontactdate":"07/02/2019","current":220,"amperage":10,"power":60,"consuming":105},{"id":50,"who":"Test ApiBank","ac":false,"lan":false,"logged":null,"lasttemperature":0,"lasthumidity":0,"servertime":"20:44:43","lastсontacttime":"20:44:43","lastсontactdate":"21/03/2019","current":220,"amperage":16,"power":40,"consuming":101},{"id":100,"who":"Test ApiBank","ac":false,"lan":false,"logged":null,"lasttemperature":0,"lasthumidity":0,"servertime":"20:54:08","lastсontacttime":"20:54:08","lastсontactdate":"21/03/2019","current":220,"amperage":16,"power":40,"consuming":101},{"id":101,"who":"Test ApiBank","ac":false,"lan":false,"logged":null,"lasttemperature":0,"lasthumidity":0,"servertime":"20:57:06","lastсontacttime":"20:57:06","lastсontactdate":"21/03/2019","current":220,"amperage":16,"power":40,"consuming":101},{"id":102,"who":"Test ApiBank","ac":false,"lan":false,"logged":null,"lasttemperature":-15,"lasthumidity":67,"servertime":"20:58:13","lastсontacttime":"20:58:13","lastсontactdate":"21/03/2019","current":25,"amperage":16,"power":40,"consuming":101},{"id":103,"who":"Test ApiBank","ac":false,"lan":false,"logged":null,"lasttemperature":-15,"lasthumidity":67,"servertime":"21:02:59","lastсontacttime":"21:02:59","lastсontactdate":"21/03/2019","current":25,"amperage":16,"power":40,"consuming":101},{"id":150,"who":"REST","ac":true,"lan":true,"logged":null,"lasttemperature":-15,"lasthumidity":-10,"servertime":"21:25:11","lastсontacttime":"21:25:11","lastсontactdate":"21/03/2019","current":15,"amperage":150,"power":18,"consuming":1024},{"id":200,"who":"Test","ac":true,"lan":true,"logged":null,"lasttemperature":-75,"lasthumidity":-10,"servertime":"19:46:36","lastсontacttime":"19:46:36","lastсontactdate":"22/03/2019","current":15,"amperage":150,"power":18,"consuming":1024},{"id":201,"who":"REST: NO PING","ac":false,"lan":false,"logged":null,"lasttemperature":0,"lasthumidity":0,"servertime":"20:02:18","lastсontacttime":"20:02:18","lastсontactdate":"22/03/2019","current":0,"amperage":0,"power":0,"consuming":0},{"id":5,"who":"Test","ac":true,"lan":true,"logged":false,"lasttemperature":-75,"lasthumidity":-10,"servertime":"16:37:16","lastсontacttime":"16:37:16","lastсontactdate":"08/04/2019","current":15,"amperage":150,"power":18,"consuming":1024},{"id":6,"who":"REST: NO PING","ac":false,"lan":false,"logged":true,"lasttemperature":0,"lasthumidity":0,"servertime":"17:13:15","lastсontacttime":"17:13:15","lastсontactdate":"08/04/2019","current":0,"amperage":0,"power":0,"consuming":0},{"id":7,"who":"Test","ac":true,"lan":true,"logged":false,"lasttemperature":-5,"lasthumidity":48,"servertime":"17:24:34","lastсontacttime":"17:24:34","lastсontactdate":"08/04/2019","current":15,"amperage":150,"power":18,"consuming":1024},{"id":8,"who":"REST: NO PING","ac":false,"lan":false,"logged":true,"lasttemperature":0,"lasthumidity":0,"servertime":"11:13:31","lastсontacttime":"11:13:31","lastсontactdate":"09/04/2019","current":0,"amperage":0,"power":0,"consuming":0},{"id":9,"who":"Test","ac":true,"lan":true,"logged":false,"lasttemperature":-5,"lasthumidity":48,"servertime":"12:26:12","lastсontacttime":"12:26:12","lastсontactdate":"09/04/2019","current":15,"amperage":150,"power":18,"consuming":1024},{"id":10,"who":"REST: NO PING","ac":false,"lan":false,"logged":true,"lasttemperature":0,"lasthumidity":0,"servertime":"12:41:50","lastсontacttime":"12:41:50","lastсontactdate":"09/04/2019","current":0,"amperage":0,"power":0,"consuming":0}],[Content-Type:"application/json", Cache-Control:"no-cache"]>
+12:53:21.261 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
+12:53:21.270 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+12:54:21.277 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
+12:54:21.283 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+12:55:20.302 [restartedMain] WARN  console_logger  - THREAD MANAGER HAS STARTED. T I M E ====== 12:41:50
+12:55:27.330 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
+12:55:27.338 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+12:56:27.349 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
+12:56:27.362 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+12:59:41.093 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+12:59:41.102 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+13:10:21.419 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+13:10:21.428 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+13:10:35.628 [restartedMain] WARN  console_logger  - THREAD MANAGER HAS STARTED. T I M E ====== 12:41:50
+13:11:28.943 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+13:11:28.955 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+13:13:15.797 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+13:13:15.801 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+13:14:25.312 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+13:14:25.320 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}

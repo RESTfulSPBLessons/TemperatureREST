@@ -43,7 +43,7 @@ public class ThreadManager {
             mainService.getMainParametrs().setLanStatus(false); // соответственно, "выключаем сеть"
             mainService.getMainParametrs().setAcStatus(false); // соответственно, "выключаем 220"
 
-            LOGGER.warn("THREAD MANAGER HAS STARTED. T I M E ======" + mainService.getLastContactTime());
+            LOGGER.warn("THREAD MANAGER HAS STARTED. T I M E ====== " + mainService.getLastContactTime());
 
             // Надо проверить, успели ли мы что-то уже отлогировать, поэтому если успели, то...
             if (mainService.getLastContactTime()!=null) {

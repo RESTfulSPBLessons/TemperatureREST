@@ -10,7 +10,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -30,7 +29,6 @@ import static com.antonromanov.temprest.utils.Utils.*;
 @RequestMapping("/rest/users")
 public class MainRestController {
 
-	private final Map<String, String> modelData = new HashMap<>();
 	private static org.slf4j.Logger LOGGER = LoggerFactory.getLogger("console_logger");
 
 	List<Temperature> allTemperatures = new ArrayList<>();
@@ -51,6 +49,7 @@ public class MainRestController {
 	// todo: переименовать методы типа addlog3. Ну что это за пипец.....
 	// todo: сделать отправку логов/состояний на почту
 	// todo: Убрать ненужные депенденси
+	// todo: переименовать лог-файл
 
 
 
@@ -151,7 +150,7 @@ public class MainRestController {
 	 * @throws ParseException
 	 */
 	@GetMapping("/status")
-	public ResponseEntity<String> getStatus() throws ParseException {
+	public ResponseEntity<String> getStatus() throws ParseException { //todo: причем тут parseException ????
 
 		LOGGER.info("========= GET STATUS ============== ");
 
@@ -373,12 +372,4 @@ public class MainRestController {
 		LOGGER.info("RESPONSE: " + responseEntity.toString());
 		return responseEntity;
 	}
-
-	@RequestMapping(value = "/test", method = {RequestMethod.GET, RequestMethod.POST})
-	private String test(Model model) {
-		modelData.clear();
-		model.addAttribute("testme", "Привет!");
-		return "welcome";
-	}
-
 }
