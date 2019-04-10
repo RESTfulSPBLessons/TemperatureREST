@@ -215,7 +215,13 @@ public class MainServiceImpl implements MainService {
     public Time getLastContactTime() {
 
         // Распечатаем всю выдачу
-        return (logsRepository.getLastPingedEntry3(new PageRequest(0, 1, Sort.Direction.DESC, "servertime"))).get(0).getLastсontacttime();
+        try {
+            return (logsRepository.getLastPingedEntry3(new PageRequest(0, 1, Sort.Direction.DESC, "servertime"))).get(0).getLastсontacttime();
+        } catch (Exception e){
+            Date date = new Date();
+            Time time = new Time(date.getTime());
+            return time;
+        }
     }
 
 
@@ -227,8 +233,12 @@ public class MainServiceImpl implements MainService {
     @Override
     public Boolean getLastContact220() {
 
-        
-        return (logsRepository.getLastPingedEntry3(new PageRequest(0, 1, Sort.Direction.DESC, "servertime"))).get(0).getAc();
+        try {
+            return (logsRepository.getLastPingedEntry3(new PageRequest(0, 1, Sort.Direction.DESC, "servertime"))).get(0).getAc();
+        } catch (Exception e){
+            return false;
+        }
+
     }
 
 
@@ -240,8 +250,11 @@ public class MainServiceImpl implements MainService {
     @Override
     public Boolean getLastContactLan() {
 
-        
-        return (logsRepository.getLastPingedEntry3(new PageRequest(0, 1, Sort.Direction.DESC, "servertime"))).get(0).getLan();
+        try {
+            return (logsRepository.getLastPingedEntry3(new PageRequest(0, 1, Sort.Direction.DESC, "servertime"))).get(0).getLan();
+        } catch (Exception e){
+            return false;
+        }
     }
 
 
@@ -252,13 +265,16 @@ public class MainServiceImpl implements MainService {
      */
     @Override
     public Boolean getLastContactLogged() {
-        if (logsRepository.getLastPingedEntry3(new PageRequest(0, 1, Sort.Direction.DESC, "servertime")).get(0).isLogged()==null){
+
+        try {
+            if (logsRepository.getLastPingedEntry3(new PageRequest(0, 1, Sort.Direction.DESC, "servertime")).get(0).isLogged()==null){
+                return false;
+            } else {
+                return (logsRepository.getLastPingedEntry3(new PageRequest(0, 1, Sort.Direction.DESC, "servertime"))).get(0).isLogged();
+            }
+        } catch (Exception e){
             return false;
-        } else {
-            return (logsRepository.getLastPingedEntry3(new PageRequest(0, 1, Sort.Direction.DESC, "servertime"))).get(0).isLogged();
         }
-
-
     }
 
 

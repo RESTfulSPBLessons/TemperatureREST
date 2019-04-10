@@ -26,6 +26,7 @@ import org.apache.log4j.Logger;
  * Основной REST-контроллер приложения.
  */
 @RestController
+@CrossOrigin(origins = "http://localhost:8080", allowedHeaders="*")
 @RequestMapping("/rest/users")
 public class MainRestController {
 

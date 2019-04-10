@@ -8,10 +8,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
-import org.springframework.web.servlet.config.annotation.EnableWebMvc;
-import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
-import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
+import org.springframework.web.servlet.config.annotation.*;
 import org.springframework.web.servlet.view.JstlView;
 import org.springframework.web.servlet.view.UrlBasedViewResolver;
 
@@ -80,6 +77,13 @@ public class AppConfig extends WebMvcConfigurerAdapter {
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
         registry.addViewController("/").setViewName("forward:/index.html");
+    }
+
+    public void addCorsMappings(CorsRegistry registry) {
+        registry.addMapping("/rest/users/today").allowedOrigins("http://84.47.161.121:8080")
+                .allowedMethods("GET", "POST", "OPTIONS", "PUT")
+                .allowedHeaders("*")
+                .allowCredentials(true).maxAge(3600);
     }
 
 

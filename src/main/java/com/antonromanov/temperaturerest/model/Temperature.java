@@ -33,18 +33,12 @@ public class Temperature {
     private Date dateCreated;
 
     @Column(name="timecreated")
-   // @Temporal(TemporalType.TIME)
-  /// @Type(type="time")
     private Time timeCreated;
 
 
     @Column(name = "status")
     private String status;
 
-
-   /* @Column(name = "test")
-    @Temporal(TemporalType.DATE)
-    private Date test;*/
 
     public Temperature() {
     }
@@ -105,14 +99,6 @@ public class Temperature {
         this.timeCreated = timeCreated;
     }
 
-
-   /* public Date getTest() {
-        return test;
-    }
-
-    public void setTest(Date test) {
-        this.test = test;
-    }*/
 
     @Override
     public String toString() {
