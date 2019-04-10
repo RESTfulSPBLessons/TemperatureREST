@@ -9614,7 +9614,7 @@ var DashboardComponent = /** @class */ (function () {
         this.localStatus = 'assets/data/status.json';
         // --------------------------------------------------------------- REMOTE ---------------------------------------------------
         this.httpGETAll = 'http://localhost:8080/RCCT-2.0-SNAPSHOT/rest/users/all'; // все записи
-        this.httpGetToday = 'http://localhost:8080/RCCT-2.0-SNAPSHOT/rest/users/today'; // сегодняшние измерения
+        this.httpGetToday = '/RCCT-2.0-SNAPSHOT/rest/users/today'; // сегодняшние измерения
         this.httpGetWeek = 'http://localhost:8080/RCCT-2.0-SNAPSHOT/rest/users/week'; // дневные за неделю
         this.httpGetMonthly4Day = 'http://localhost:8080/RCCT-2.0-SNAPSHOT/rest/users/month'; // месячные, дневная температуры
         this.httpGetStatus = 'http://localhost:8080/RCCT-2.0-SNAPSHOT/rest/users/status'; // Статус

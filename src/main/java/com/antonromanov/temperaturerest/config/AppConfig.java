@@ -79,12 +79,12 @@ public class AppConfig extends WebMvcConfigurerAdapter {
         registry.addViewController("/").setViewName("forward:/index.html");
     }
 
-    public void addCorsMappings(CorsRegistry registry) {
+   /* public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/rest/users/today").allowedOrigins("http://84.47.161.121:8080")
                 .allowedMethods("GET", "POST", "OPTIONS", "PUT")
                 .allowedHeaders("*")
                 .allowCredentials(true).maxAge(3600);
-    }
+    }*/
 
 
 
