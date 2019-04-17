@@ -119,6 +119,7 @@ public class MainRestController {
 	@GetMapping("/week")
 	public ResponseEntity<String> getWeeklyReport(HttpServletRequest request) throws ParseException {
 
+		LOGGER.info("========= WEEK MEASURES LIST ============== ");
 		List<DailyReport> weekList = mainService.getWeeklyDayReport();
 		createResponseJson(weekList.size(), at2am, at8am, at14, at19, request);
 
