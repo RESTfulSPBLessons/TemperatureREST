@@ -13,10 +13,10 @@ public class WebController {
 	@RequestMapping(value = "/test", method = {RequestMethod.GET, RequestMethod.POST})
 	private String test() {
 		//model.addAttribute("testme", "Привет!");
-		return "welcome.html";
+		return "welcome";
 	}
 
-	@RequestMapping("/")
+	@RequestMapping(value = "/", method = {RequestMethod.GET, RequestMethod.POST})
 	public String welcome() {
 		return "index";
 	}
