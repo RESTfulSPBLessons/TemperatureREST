@@ -1,655 +1,110 @@
-11:13:30.940 [restartedMain] WARN  console_logger  - THREAD MANAGER HAS STARTED. T I M E ======17:24:34
-11:13:30.952 [pool-2-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-11:13:30.959 [pool-2-thread-1] INFO  console_logger  - MainParametrs: AC {true},LAN {true}, IS LOGGED {false}
-11:13:30.964 [pool-2-thread-1] WARN  console_logger  - ============ У НАС ПРОБЛЕМЫ ============
-11:13:30.964 [pool-2-thread-1] WARN  console_logger  - ------------- Первое условие (ситуация) -------------
-11:13:30.965 [pool-2-thread-1] WARN  console_logger  - 		+ Таймаут просрочен (false)
-11:13:30.965 [pool-2-thread-1] WARN  console_logger  - 		+ Не логгировали это раньше
-11:13:30.966 [pool-2-thread-1] WARN  console_logger  - 		+ АС или LAN по последним логам включен.
-11:13:30.966 [pool-2-thread-1] INFO  console_logger  - ENTRY IN DB CREATED:Status{isAcOn=false, isLanOn=false, lastTemperature=0, lastHumidity=0, serverTime=11:13:30, lastContactTime=11:13:30, current=0, amperage=0, power=0, consuming=0, lastContactDate=Tue Apr 09 11:13:30 MSK 2019}
-11:14:33.460 [pool-2-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
-11:14:33.465 [pool-2-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-11:15:33.476 [pool-2-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
-11:15:33.481 [pool-2-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-11:16:33.489 [pool-2-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
-11:16:33.500 [pool-2-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-11:17:33.509 [pool-2-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
-11:17:33.514 [pool-2-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-11:18:33.530 [pool-2-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
-11:18:33.538 [pool-2-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-11:19:33.549 [pool-2-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
-11:19:33.554 [pool-2-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-11:20:33.560 [pool-2-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
-11:20:33.565 [pool-2-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-11:21:33.570 [pool-2-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
-11:21:33.575 [pool-2-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-11:22:34.886 [restartedMain] WARN  console_logger  - THREAD MANAGER HAS STARTED. T I M E ======11:13:31
-11:22:34.893 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
-11:22:34.899 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-11:23:34.910 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
-11:23:34.918 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-11:24:34.924 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
-11:24:34.927 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-11:25:34.934 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
-11:25:34.942 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-11:26:34.950 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
-11:26:34.954 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-11:27:17.766 [pool-3-thread-1] ERROR console_logger  - Не получилось отправить сообщение в канал Риф ошибочки 
-org.telegram.telegrambots.meta.exceptions.TelegramApiException: Unable to execute sendmessage method
-	at org.telegram.telegrambots.bots.DefaultAbsSender.sendApiMethod(DefaultAbsSender.java:719)
-	at org.telegram.telegrambots.meta.bots.AbsSender.execute(AbsSender.java:47)
-	at com.antonromanov.temprest.bot.Bot.lambda$fireMessage$2(Bot.java:195)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: java.net.SocketException: Connection reset
-	at java.net.SocketInputStream.read(SocketInputStream.java:210)
-	at java.net.SocketInputStream.read(SocketInputStream.java:141)
-	at sun.security.ssl.InputRecord.readFully(InputRecord.java:465)
-	at sun.security.ssl.InputRecord.read(InputRecord.java:503)
-	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:975)
-	at sun.security.ssl.SSLSocketImpl.readDataRecord(SSLSocketImpl.java:933)
-	at sun.security.ssl.AppInputStream.read(AppInputStream.java:105)
-	at org.apache.http.impl.conn.LoggingInputStream.read(LoggingInputStream.java:84)
-	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)
-	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)
-	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:280)
-	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138)
-	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
-	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
-	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
-	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:157)
-	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
-	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
-	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
-	at org.telegram.telegrambots.bots.DefaultAbsSender.sendHttpPostRequest(DefaultAbsSender.java:765)
-	at org.telegram.telegrambots.bots.DefaultAbsSender.sendMethodRequest(DefaultAbsSender.java:761)
-	at org.telegram.telegrambots.bots.DefaultAbsSender.sendApiMethod(DefaultAbsSender.java:716)
-	... 7 common frames omitted
-11:27:34.962 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
-11:27:34.974 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-11:27:46.186 [restartedMain] WARN  console_logger  - THREAD MANAGER HAS STARTED. T I M E ======11:13:31
-11:27:46.193 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
-11:27:46.200 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-11:28:46.210 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-11:28:46.225 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-11:29:46.242 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-11:29:46.257 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-11:30:46.281 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-11:30:46.296 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-11:31:46.307 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-11:31:46.312 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-11:32:46.324 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-11:32:46.333 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-11:33:46.341 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-11:33:46.346 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-11:34:46.354 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-11:34:46.358 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-11:35:46.364 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-11:35:46.369 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-11:36:46.378 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-11:36:46.393 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-11:37:46.406 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-11:37:46.418 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-11:38:46.430 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-11:38:46.433 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-11:39:46.442 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-11:39:46.446 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-11:40:46.454 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-11:40:46.458 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-11:41:46.466 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-11:41:46.472 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-11:42:28.180 [restartedMain] WARN  console_logger  - THREAD MANAGER HAS STARTED. T I M E ======11:13:31
-11:42:28.186 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-11:42:28.193 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-11:43:28.206 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-11:43:28.211 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-11:44:00.925 [restartedMain] WARN  console_logger  - THREAD MANAGER HAS STARTED. T I M E ======11:13:31
-11:44:00.935 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-11:44:00.942 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-11:45:00.957 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-11:45:00.962 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-11:45:57.881 [restartedMain] WARN  console_logger  - THREAD MANAGER HAS STARTED. T I M E ======11:13:31
-11:45:57.891 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-11:45:57.898 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-11:46:17.799 [www_anton_romanov_bot Telegram Executor] ERROR console_logger  - temp status
-11:46:56.967 [restartedMain] WARN  console_logger  - THREAD MANAGER HAS STARTED. T I M E ======11:13:31
-11:46:56.975 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-11:46:56.981 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-11:47:27.008 [www_anton_romanov_bot Telegram Executor] ERROR console_logger  - temp status
-11:48:06.357 [restartedMain] WARN  console_logger  - THREAD MANAGER HAS STARTED. T I M E ======11:13:31
-11:48:06.370 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-11:48:06.377 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-11:48:26.336 [www_anton_romanov_bot Telegram Executor] ERROR console_logger  - temp status
-11:49:06.395 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-11:49:06.399 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-11:49:21.871 [www_anton_romanov_bot Telegram Executor] ERROR console_logger  - temp status
-11:49:36.292 [www_anton_romanov_bot Telegram Executor] ERROR console_logger  - temp status
-11:49:53.330 [restartedMain] WARN  console_logger  - THREAD MANAGER HAS STARTED. T I M E ======11:13:31
-11:49:53.341 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-11:49:53.347 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-11:50:22.598 [www_anton_romanov_bot Telegram Executor] ERROR console_logger  - temp status
-11:50:54.750 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-11:50:54.757 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-11:51:54.770 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-11:51:54.776 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-11:52:54.787 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-11:52:54.790 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-11:53:28.577 [restartedMain] WARN  console_logger  - THREAD MANAGER HAS STARTED. T I M E ======11:13:31
-11:53:28.587 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-11:53:28.592 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-11:53:40.081 [www_anton_romanov_bot Telegram Executor] ERROR console_logger  - temp status
-11:54:28.613 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-11:54:28.617 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-11:54:37.419 [www_anton_romanov_bot Telegram Executor] ERROR console_logger  - temp status
-11:55:30.278 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-11:55:30.285 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-11:55:44.056 [restartedMain] WARN  console_logger  - THREAD MANAGER HAS STARTED. T I M E ======11:13:31
-11:55:44.064 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-11:55:44.070 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-11:55:56.289 [www_anton_romanov_bot Telegram Executor] ERROR console_logger  - temp status
-11:56:44.082 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-11:56:44.087 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-11:57:44.096 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-11:57:44.100 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-11:58:44.114 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-11:58:44.126 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-11:59:44.140 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-11:59:44.145 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-12:00:44.153 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-12:00:44.157 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-12:01:44.166 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-12:01:44.173 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-12:02:44.188 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-12:02:44.193 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-12:03:44.200 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-12:03:44.204 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-12:04:44.213 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-12:04:44.218 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-12:05:17.414 [restartedMain] WARN  console_logger  - THREAD MANAGER HAS STARTED. T I M E ======11:13:31
-12:05:17.422 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-12:05:17.428 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-12:06:17.440 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-12:06:17.445 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-12:07:17.459 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-12:07:17.466 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-12:08:17.473 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-12:08:17.478 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-12:09:17.493 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-12:09:17.506 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-12:10:17.524 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-12:10:17.530 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-12:11:17.543 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-12:11:17.551 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-12:12:17.565 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-12:12:17.576 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-12:13:17.594 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-12:13:17.601 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-12:14:17.615 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-12:14:17.629 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-12:15:17.648 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-12:15:17.662 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-12:16:17.677 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-12:16:17.691 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-12:17:17.705 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-12:17:17.708 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-12:18:17.716 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-12:18:17.719 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-12:19:17.726 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-12:19:17.729 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-12:20:17.737 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-12:20:17.746 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-12:21:17.764 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-12:21:17.779 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-12:22:17.799 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-12:22:17.816 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-12:23:17.827 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-12:23:17.831 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-12:24:17.840 [pool-1-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-12:24:17.846 [pool-1-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-12:24:49.519 [restartedMain] WARN  console_logger  - THREAD MANAGER HAS STARTED. T I M E ======11:13:31
-12:24:49.526 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-12:24:49.532 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-12:25:49.543 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-12:25:49.547 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-12:26:11.606 [http-nio-8080-exec-2] INFO  console_logger  - ################# ADD LOG METHOD #####################
-12:26:11.606 [http-nio-8080-exec-2] INFO  console_logger  - LOG: {
-    "who": null,
-    "lastTemperature": -5,
-    "lastHumidity": 48,
-    "serverTime": null,
-    "lastContactTime": null,
-    "current": 15,
-    "amperage": 150,
-    "power": 18,
-    "consuming": 1024,
-    "lastContactDate": null,
-    "acOn": true,
-    "lanOn": true
-}
-12:26:11.615 [http-nio-8080-exec-2] INFO  console_logger  - PARSING RESULT: Status{isAcOn=true, isLanOn=true, lastTemperature=-5, lastHumidity=48, serverTime=12:26:11, lastContactTime=12:26:11, current=15, amperage=150, power=18, consuming=1024, lastContactDate=Tue Apr 09 12:26:11 MSK 2019}
-12:26:11.616 [http-nio-8080-exec-2] INFO  console_logger  - GETTING REQUEST FROM:  0:0:0:0:0:0:0:1
-12:26:49.554 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
-12:26:49.558 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {true},LAN {true}, IS LOGGED {false}
-12:26:49.560 [pool-3-thread-1] WARN  console_logger  - PROBLEM WAS SOLVED OR HAS NOT BEEN OCCURED
-12:26:49.561 [pool-3-thread-1] WARN  console_logger  - ------------- Второе условие (ситуация) -------------
-12:26:49.561 [pool-3-thread-1] WARN  console_logger  - 		+ АС или LAN по последним логам включен.
-12:26:49.561 [pool-3-thread-1] WARN  console_logger  - RESULT: НИЧЕГО НЕ ДЕЛАЕМ
-12:27:49.565 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
-12:27:49.574 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {true},LAN {true}, IS LOGGED {false}
-12:27:49.577 [pool-3-thread-1] WARN  console_logger  - PROBLEM WAS SOLVED OR HAS NOT BEEN OCCURED
-12:27:49.577 [pool-3-thread-1] WARN  console_logger  - ------------- Второе условие (ситуация) -------------
-12:27:49.578 [pool-3-thread-1] WARN  console_logger  - 		+ АС или LAN по последним логам включен.
-12:27:49.579 [pool-3-thread-1] WARN  console_logger  - RESULT: НИЧЕГО НЕ ДЕЛАЕМ
-12:28:49.584 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
-12:28:49.597 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {true},LAN {true}, IS LOGGED {false}
-12:28:49.602 [pool-3-thread-1] WARN  console_logger  - PROBLEM WAS SOLVED OR HAS NOT BEEN OCCURED
-12:28:49.604 [pool-3-thread-1] WARN  console_logger  - ------------- Второе условие (ситуация) -------------
-12:28:49.604 [pool-3-thread-1] WARN  console_logger  - 		+ АС или LAN по последним логам включен.
-12:28:49.604 [pool-3-thread-1] WARN  console_logger  - RESULT: НИЧЕГО НЕ ДЕЛАЕМ
-12:29:49.608 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
-12:29:49.626 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {true},LAN {true}, IS LOGGED {false}
-12:29:49.632 [pool-3-thread-1] WARN  console_logger  - PROBLEM WAS SOLVED OR HAS NOT BEEN OCCURED
-12:29:49.632 [pool-3-thread-1] WARN  console_logger  - ------------- Второе условие (ситуация) -------------
-12:29:49.632 [pool-3-thread-1] WARN  console_logger  - 		+ АС или LAN по последним логам включен.
-12:29:49.634 [pool-3-thread-1] WARN  console_logger  - RESULT: НИЧЕГО НЕ ДЕЛАЕМ
-12:30:49.637 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
-12:30:49.642 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {true},LAN {true}, IS LOGGED {false}
-12:30:49.644 [pool-3-thread-1] WARN  console_logger  - PROBLEM WAS SOLVED OR HAS NOT BEEN OCCURED
-12:30:49.645 [pool-3-thread-1] WARN  console_logger  - ------------- Второе условие (ситуация) -------------
-12:30:49.645 [pool-3-thread-1] WARN  console_logger  - 		+ АС или LAN по последним логам включен.
-12:30:49.645 [pool-3-thread-1] WARN  console_logger  - RESULT: НИЧЕГО НЕ ДЕЛАЕМ
-12:31:49.646 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
-12:31:49.651 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {true},LAN {true}, IS LOGGED {false}
-12:31:49.652 [pool-3-thread-1] WARN  console_logger  - PROBLEM WAS SOLVED OR HAS NOT BEEN OCCURED
-12:31:49.652 [pool-3-thread-1] WARN  console_logger  - ------------- Второе условие (ситуация) -------------
-12:31:49.652 [pool-3-thread-1] WARN  console_logger  - 		+ АС или LAN по последним логам включен.
-12:31:49.653 [pool-3-thread-1] WARN  console_logger  - RESULT: НИЧЕГО НЕ ДЕЛАЕМ
-12:32:49.659 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
-12:32:49.664 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {true},LAN {true}, IS LOGGED {false}
-12:32:49.665 [pool-3-thread-1] WARN  console_logger  - PROBLEM WAS SOLVED OR HAS NOT BEEN OCCURED
-12:32:49.666 [pool-3-thread-1] WARN  console_logger  - ------------- Второе условие (ситуация) -------------
-12:32:49.666 [pool-3-thread-1] WARN  console_logger  - 		+ АС или LAN по последним логам включен.
-12:32:49.666 [pool-3-thread-1] WARN  console_logger  - RESULT: НИЧЕГО НЕ ДЕЛАЕМ
-12:33:49.667 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
-12:33:49.673 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {true},LAN {true}, IS LOGGED {false}
-12:33:49.675 [pool-3-thread-1] WARN  console_logger  - PROBLEM WAS SOLVED OR HAS NOT BEEN OCCURED
-12:33:49.675 [pool-3-thread-1] WARN  console_logger  - ------------- Второе условие (ситуация) -------------
-12:33:49.675 [pool-3-thread-1] WARN  console_logger  - 		+ АС или LAN по последним логам включен.
-12:33:49.676 [pool-3-thread-1] WARN  console_logger  - RESULT: НИЧЕГО НЕ ДЕЛАЕМ
-12:34:49.679 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
-12:34:49.682 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {true},LAN {true}, IS LOGGED {false}
-12:34:49.684 [pool-3-thread-1] WARN  console_logger  - PROBLEM WAS SOLVED OR HAS NOT BEEN OCCURED
-12:34:49.685 [pool-3-thread-1] WARN  console_logger  - ------------- Второе условие (ситуация) -------------
-12:34:49.685 [pool-3-thread-1] WARN  console_logger  - 		+ АС или LAN по последним логам включен.
-12:34:49.685 [pool-3-thread-1] WARN  console_logger  - RESULT: НИЧЕГО НЕ ДЕЛАЕМ
-12:35:49.688 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
-12:35:49.691 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {true},LAN {true}, IS LOGGED {false}
-12:35:49.693 [pool-3-thread-1] WARN  console_logger  - PROBLEM WAS SOLVED OR HAS NOT BEEN OCCURED
-12:35:49.693 [pool-3-thread-1] WARN  console_logger  - ------------- Второе условие (ситуация) -------------
-12:35:49.693 [pool-3-thread-1] WARN  console_logger  - 		+ АС или LAN по последним логам включен.
-12:35:49.694 [pool-3-thread-1] WARN  console_logger  - RESULT: НИЧЕГО НЕ ДЕЛАЕМ
-12:36:49.695 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
-12:36:49.701 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {true},LAN {true}, IS LOGGED {false}
-12:36:49.702 [pool-3-thread-1] WARN  console_logger  - PROBLEM WAS SOLVED OR HAS NOT BEEN OCCURED
-12:36:49.703 [pool-3-thread-1] WARN  console_logger  - ------------- Второе условие (ситуация) -------------
-12:36:49.703 [pool-3-thread-1] WARN  console_logger  - 		+ АС или LAN по последним логам включен.
-12:36:49.703 [pool-3-thread-1] WARN  console_logger  - RESULT: НИЧЕГО НЕ ДЕЛАЕМ
-12:37:49.704 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
-12:37:49.709 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {true},LAN {true}, IS LOGGED {false}
-12:37:49.710 [pool-3-thread-1] WARN  console_logger  - PROBLEM WAS SOLVED OR HAS NOT BEEN OCCURED
-12:37:49.710 [pool-3-thread-1] WARN  console_logger  - ------------- Второе условие (ситуация) -------------
-12:37:49.710 [pool-3-thread-1] WARN  console_logger  - 		+ АС или LAN по последним логам включен.
-12:37:49.711 [pool-3-thread-1] WARN  console_logger  - RESULT: НИЧЕГО НЕ ДЕЛАЕМ
-12:38:49.713 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
-12:38:49.718 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {true},LAN {true}, IS LOGGED {false}
-12:38:49.719 [pool-3-thread-1] WARN  console_logger  - PROBLEM WAS SOLVED OR HAS NOT BEEN OCCURED
-12:38:49.720 [pool-3-thread-1] WARN  console_logger  - ------------- Второе условие (ситуация) -------------
-12:38:49.720 [pool-3-thread-1] WARN  console_logger  - 		+ АС или LAN по последним логам включен.
-12:38:49.720 [pool-3-thread-1] WARN  console_logger  - RESULT: НИЧЕГО НЕ ДЕЛАЕМ
-12:39:49.721 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
-12:39:49.724 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {true},LAN {true}, IS LOGGED {false}
-12:39:49.726 [pool-3-thread-1] WARN  console_logger  - PROBLEM WAS SOLVED OR HAS NOT BEEN OCCURED
-12:39:49.726 [pool-3-thread-1] WARN  console_logger  - ------------- Второе условие (ситуация) -------------
-12:39:49.726 [pool-3-thread-1] WARN  console_logger  - 		+ АС или LAN по последним логам включен.
-12:39:49.727 [pool-3-thread-1] WARN  console_logger  - RESULT: НИЧЕГО НЕ ДЕЛАЕМ
-12:40:49.733 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
-12:40:49.748 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {true},LAN {true}, IS LOGGED {false}
-12:40:49.752 [pool-3-thread-1] WARN  console_logger  - PROBLEM WAS SOLVED OR HAS NOT BEEN OCCURED
-12:40:49.754 [pool-3-thread-1] WARN  console_logger  - ------------- Второе условие (ситуация) -------------
-12:40:49.754 [pool-3-thread-1] WARN  console_logger  - 		+ АС или LAN по последним логам включен.
-12:40:49.755 [pool-3-thread-1] WARN  console_logger  - RESULT: НИЧЕГО НЕ ДЕЛАЕМ
-12:41:49.757 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-12:41:49.761 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {true},LAN {true}, IS LOGGED {false}
-12:41:49.765 [pool-3-thread-1] WARN  console_logger  - ============ У НАС ПРОБЛЕМЫ ============
-12:41:49.765 [pool-3-thread-1] WARN  console_logger  - ------------- Первое условие (ситуация) -------------
-12:41:49.765 [pool-3-thread-1] WARN  console_logger  - 		+ Таймаут просрочен (false)
-12:41:49.766 [pool-3-thread-1] WARN  console_logger  - 		+ Не логгировали это раньше
-12:41:49.766 [pool-3-thread-1] WARN  console_logger  - 		+ АС или LAN по последним логам включен.
-12:41:49.766 [pool-3-thread-1] INFO  console_logger  - ENTRY IN DB CREATED:Status{isAcOn=false, isLanOn=false, lastTemperature=0, lastHumidity=0, serverTime=12:41:49, lastContactTime=12:41:49, current=0, amperage=0, power=0, consuming=0, lastContactDate=Tue Apr 09 12:41:49 MSK 2019}
-12:42:49.775 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
-12:42:49.778 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-12:44:01.702 [restartedMain] WARN  console_logger  - THREAD MANAGER HAS STARTED. T I M E ====== 12:41:50
-12:44:01.710 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
-12:44:01.717 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-12:44:37.344 [restartedMain] WARN  console_logger  - THREAD MANAGER HAS STARTED. T I M E ====== 12:41:50
-12:46:24.422 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
-12:46:24.431 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-12:46:53.686 [restartedMain] WARN  console_logger  - THREAD MANAGER HAS STARTED. T I M E ====== 12:41:50
-12:46:58.851 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
-12:46:58.859 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-12:47:58.868 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
-12:47:58.873 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-12:48:58.880 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
-12:48:58.888 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-12:49:58.896 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
-12:49:58.902 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-12:50:58.908 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
-12:50:58.915 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-12:51:21.209 [restartedMain] WARN  console_logger  - THREAD MANAGER HAS STARTED. T I M E ====== 12:41:50
-12:51:21.216 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
-12:51:21.222 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-12:52:14.794 [http-nio-8080-exec-2] INFO  console_logger  - ========= ALL MEASURES LIST ============== 
-12:52:14.798 [http-nio-8080-exec-2] INFO  console_logger  - GETTING REQUEST FROM:  0:0:0:0:0:0:0:1
-12:52:14.800 [http-nio-8080-exec-2] INFO  console_logger  - RESULT:  {"AllTemperatures":43,"NightPost":false,"MorningPost":false,"DayPost":false,"EveningPost":false,"ip":"0:0:0:0:0:0:0:1"}
-12:52:14.824 [http-nio-8080-exec-2] INFO  console_logger  - RESPONSE: <200 OK OK,[{"id":100,"name":"from Arduino Home","temperature":2.0,"dateCreated":"15/03/2019","timeCreated":"15:43:17","status":null},{"id":101,"name":"from Arduino Home","temperature":8.0,"dateCreated":"15/03/2019","timeCreated":"15:45:42","status":null},{"id":102,"name":"from Arduino Home","temperature":15.0,"dateCreated":"15/03/2019","timeCreated":"15:46:06","status":null},{"id":103,"name":"from Arduino Home","temperature":15.0,"dateCreated":"15/03/2019","timeCreated":"15:46:30","status":null},{"id":104,"name":"from Arduino Home","temperature":25.0,"dateCreated":"15/03/2019","timeCreated":"15:47:31","status":null},{"id":250,"name":"from Arduino Home","temperature":2.0,"dateCreated":"18/03/2019","timeCreated":"14:33:13","status":null},{"id":300,"name":"from Arduino Home","temperature":2.0,"dateCreated":"18/03/2019","timeCreated":"14:36:54","status":null},{"id":3,"name":"Test","temperature":15.0,"dateCreated":"18/03/2019","timeCreated":"13:00:00","status":null},{"id":651,"name":"from Arduino Home","temperature":26.4,"dateCreated":"15/03/2019","timeCreated":"18:00:46","status":null},{"id":655,"name":"from Arduino Home","temperature":25.9,"dateCreated":"16/03/2019","timeCreated":"13:00:29","status":null},{"id":657,"name":"from Arduino Home","temperature":25.8,"dateCreated":"17/03/2019","timeCreated":"01:00:14","status":null},{"id":659,"name":"from Arduino Home","temperature":25.8,"dateCreated":"17/03/2019","timeCreated":"07:00:43","status":null},{"id":661,"name":"from Arduino Home","temperature":25.7,"dateCreated":"17/03/2019","timeCreated":"18:02:39","status":null},{"id":663,"name":"from Arduino Home","temperature":25.8,"dateCreated":"18/03/2019","timeCreated":"01:01:04","status":null},{"id":665,"name":"from Arduino Home","temperature":26.4,"dateCreated":"18/03/2019","timeCreated":"13:00:40","status":null},{"id":652,"name":"from Arduino Home","temperature":26.0,"dateCreated":"16/03/2019","timeCreated":"01:00:53","status":null},{"id":654,"name":"from Arduino Home","temperature":25.9,"dateCreated":"16/03/2019","timeCreated":"07:03:23","status":null},{"id":656,"name":"from Arduino Home","temperature":25.9,"dateCreated":"16/03/2019","timeCreated":"18:01:09","status":null},{"id":658,"name":"from Arduino Home","temperature":25.8,"dateCreated":"17/03/2019","timeCreated":"01:01:15","status":null},{"id":660,"name":"from Arduino Home","temperature":23.8,"dateCreated":"17/03/2019","timeCreated":"13:00:01","status":null},{"id":662,"name":"from Arduino Home","temperature":25.7,"dateCreated":"17/03/2019","timeCreated":"18:03:40","status":null},{"id":664,"name":"from Arduino Home","temperature":25.9,"dateCreated":"18/03/2019","timeCreated":"07:00:24","status":null},{"id":666,"name":"from Arduino Home","temperature":26.3,"dateCreated":"18/03/2019","timeCreated":"13:01:41","status":null},{"id":650,"name":"from Arduino Home","temperature":26.3,"dateCreated":"15/03/2019","timeCreated":"14:33:49","status":null},{"id":7,"name":"/today featuring gson","temperature":-45.0,"dateCreated":"19/03/2019","timeCreated":"07:00:00","status":null},{"id":8,"name":"/today test","temperature":-20.0,"dateCreated":"19/03/2019","timeCreated":"14:00:00","status":null},{"id":9,"name":"/today test 2","temperature":-15.0,"dateCreated":"20/03/2019","timeCreated":"07:00:00","status":null},{"id":10,"name":"/yoday test 2","temperature":-49.0,"dateCreated":"20/03/2019","timeCreated":"14:00:00","status":null},{"id":500,"name":"from Arduino Home","temperature":-35.0,"dateCreated":"21/03/2019","timeCreated":"20:22:44","status":"{\"AllTemperatures\":0,\"ip\":\"0:0:0:0:0:0:0:1\",\"NightPost\":false,\"MorningPost\":false,\"DayPost\":false,\"EveningPost\":false}"},{"id":550,"name":"from Arduino Home","temperature":-30.0,"dateCreated":"21/03/2019","timeCreated":"20:28:24","status":"{\"AllTemperatures\":29,\"ip\":\"0:0:0:0:0:0:0:1\",\"NightPost\":false,\"MorningPost\":false,\"DayPost\":false,\"EveningPost\":false}"},{"id":551,"name":"from Arduino Home","temperature":-10.0,"dateCreated":"21/03/2019","timeCreated":"20:28:34","status":"{\"AllTemperatures\":30,\"ip\":\"0:0:0:0:0:0:0:1\",\"NightPost\":false,\"MorningPost\":false,\"DayPost\":false,\"EveningPost\":false}"},{"id":552,"name":"from Arduino Home","temperature":-2.0,"dateCreated":"21/03/2019","timeCreated":"20:28:45","status":"{\"AllTemperatures\":31,\"ip\":\"0:0:0:0:0:0:0:1\",\"NightPost\":false,\"MorningPost\":false,\"DayPost\":false,\"EveningPost\":false}"},{"id":13,"name":"Test Test","temperature":-50.0,"dateCreated":"22/03/2019","timeCreated":"15:00:00","status":null},{"id":700,"name":"from Arduino Home","temperature":-75.0,"dateCreated":"03/04/2019","timeCreated":"18:23:56","status":"{\"AllTemperatures\":33,\"NightPost\":false,\"MorningPost\":false,\"DayPost\":false,\"EveningPost\":true,\"ip\":\"0:0:0:0:0:0:0:1\"}"},{"id":-34,"name":"from Arduino Home","temperature":-350.0,"dateCreated":"08/04/2019","timeCreated":"12:44:41","status":"{\"AllTemperatures\":34,\"NightPost\":false,\"MorningPost\":false,\"DayPost\":true,\"EveningPost\":false,\"ip\":\"0:0:0:0:0:0:0:1\"}"},{"id":-33,"name":"from Arduino Home","temperature":145.0,"dateCreated":"08/04/2019","timeCreated":"12:49:52","status":"{\"AllTemperatures\":35,\"NightPost\":false,\"MorningPost\":false,\"DayPost\":false,\"EveningPost\":false,\"ip\":\"0:0:0:0:0:0:0:1\"}"},{"id":-32,"name":"from Arduino Home","temperature":145.0,"dateCreated":"08/04/2019","timeCreated":"12:50:03","status":"{\"AllTemperatures\":36,\"NightPost\":false,\"MorningPost\":false,\"DayPost\":false,\"EveningPost\":false,\"ip\":\"0:0:0:0:0:0:0:1\"}"},{"id":-31,"name":"from Arduino Home","temperature":145.0,"dateCreated":"08/04/2019","timeCreated":"12:50:40","status":"{\"AllTemperatures\":37,\"NightPost\":false,\"MorningPost\":false,\"DayPost\":false,\"EveningPost\":false,\"ip\":\"0:0:0:0:0:0:0:1\"}"},{"id":17,"name":"from Arduino Home","temperature":111.0,"dateCreated":"08/04/2019","timeCreated":"12:54:18","status":"{\"AllTemperatures\":38,\"NightPost\":false,\"MorningPost\":false,\"DayPost\":false,\"EveningPost\":false,\"ip\":\"0:0:0:0:0:0:0:1\"}"},{"id":18,"name":"from Arduino Home","temperature":111.0,"dateCreated":"08/04/2019","timeCreated":"12:54:35","status":"{\"AllTemperatures\":39,\"NightPost\":false,\"MorningPost\":false,\"DayPost\":false,\"EveningPost\":false,\"ip\":\"0:0:0:0:0:0:0:1\"}"},{"id":19,"name":"from Arduino Home","temperature":111.0,"dateCreated":"08/04/2019","timeCreated":"12:54:50","status":"{\"AllTemperatures\":40,\"NightPost\":false,\"MorningPost\":false,\"DayPost\":false,\"EveningPost\":false,\"ip\":\"0:0:0:0:0:0:0:1\"}"},{"id":20,"name":"from Arduino Home","temperature":111.0,"dateCreated":"08/04/2019","timeCreated":"12:57:45","status":"{\"AllTemperatures\":41,\"NightPost\":false,\"MorningPost\":false,\"DayPost\":false,\"EveningPost\":false,\"ip\":\"0:0:0:0:0:0:0:1\"}"},{"id":21,"name":"from Arduino Home","temperature":111.0,"dateCreated":"08/04/2019","timeCreated":"14:44:29","status":"{\"AllTemperatures\":42,\"NightPost\":false,\"MorningPost\":false,\"DayPost\":false,\"EveningPost\":false,\"ip\":\"0:0:0:0:0:0:0:1\"}"}],[Content-Type:"application/json", Cache-Control:"no-cache"]>
-12:52:21.231 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
-12:52:21.248 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-12:53:12.416 [http-nio-8080-exec-3] INFO  console_logger  - ============ ALL LOGS LIST ============== 
-12:53:12.424 [http-nio-8080-exec-3] INFO  console_logger  - RESPONSE: <200 OK OK,[{"id":1,"who":"Test","ac":true,"lan":true,"logged":null,"lasttemperature":-3,"lasthumidity":67,"servertime":"14:00:00","lastсontacttime":"14:00:00","lastсontactdate":"05/02/2019","current":220,"amperage":16,"power":40,"consuming":101},{"id":2,"who":"Test","ac":true,"lan":true,"logged":null,"lasttemperature":-5,"lasthumidity":60,"servertime":"20:00:00","lastсontacttime":"20:00:00","lastсontactdate":"05/02/2019","current":220,"amperage":16,"power":40,"consuming":102},{"id":450,"who":"Arduino","ac":true,"lan":true,"logged":null,"lasttemperature":-9,"lasthumidity":89,"servertime":"14:15:39","lastсontacttime":"08:00:00","lastсontactdate":"01/02/2019","current":220,"amperage":10,"power":60,"consuming":105},{"id":400,"who":"Arduino","ac":true,"lan":true,"logged":null,"lasttemperature":-9,"lasthumidity":89,"servertime":"12:25:50","lastсontacttime":"02:00:00","lastсontactdate":"01/01/2019","current":220,"amperage":10,"power":60,"consuming":105},{"id":500,"who":"Arduino","ac":true,"lan":true,"logged":null,"lasttemperature":-9,"lasthumidity":89,"servertime":"14:50:25","lastсontacttime":"23:00:00","lastсontactdate":"12/09/2018","current":220,"amperage":10,"power":60,"consuming":105},{"id":600,"who":"Arduino","ac":true,"lan":true,"logged":null,"lasttemperature":-9,"lasthumidity":89,"servertime":"15:00:52","lastсontacttime":"15:00:00","lastсontactdate":"06/02/2019","current":220,"amperage":10,"power":60,"consuming":105},{"id":550,"who":"Arduino","ac":true,"lan":true,"logged":null,"lasttemperature":-9,"lasthumidity":89,"servertime":"14:53:33","lastсontacttime":"16:08:00","lastсontactdate":"06/02/2019","current":220,"amperage":10,"power":60,"consuming":105},{"id":23,"who":"Test","ac":true,"lan":true,"logged":null,"lasttemperature":-50,"lasthumidity":80,"servertime":"06:00:00","lastсontacttime":"06:00:00","lastсontactdate":"07/02/2019","current":220,"amperage":null,"power":null,"consuming":null},{"id":1200,"who":"Arduino","ac":true,"lan":true,"logged":null,"lasttemperature":-9,"lasthumidity":89,"servertime":"11:08:38","lastсontacttime":"02:00:00","lastсontactdate":"03/02/2019","current":220,"amperage":10,"power":60,"consuming":105},{"id":1250,"who":"Arduino","ac":true,"lan":true,"logged":null,"lasttemperature":-9,"lasthumidity":89,"servertime":"11:15:52","lastсontacttime":"02:00:00","lastсontactdate":"07/02/2019","current":220,"amperage":10,"power":60,"consuming":105},{"id":1450,"who":"Arduino","ac":true,"lan":true,"logged":null,"lasttemperature":-9,"lasthumidity":89,"servertime":"12:50:11","lastсontacttime":"12:50:00","lastсontactdate":"07/02/2019","current":220,"amperage":10,"power":60,"consuming":105},{"id":1601,"who":"ARDUINO","ac":true,"lan":true,"logged":null,"lasttemperature":-9,"lasthumidity":89,"servertime":"15:43:51","lastсontacttime":"14:50:00","lastсontactdate":"07/02/2019","current":220,"amperage":10,"power":60,"consuming":105},{"id":1602,"who":"ARDUINO","ac":true,"lan":true,"logged":null,"lasttemperature":-9,"lasthumidity":89,"servertime":"15:44:32","lastсontacttime":"15:44:00","lastсontactdate":"07/02/2019","current":220,"amperage":10,"power":60,"consuming":105},{"id":1603,"who":"REST: NO PING","ac":false,"lan":false,"logged":null,"lasttemperature":0,"lasthumidity":0,"servertime":"15:59:39","lastсontacttime":"15:59:39","lastсontactdate":"07/02/2019","current":0,"amperage":0,"power":0,"consuming":0},{"id":1604,"who":"ARDUINO","ac":true,"lan":true,"logged":null,"lasttemperature":-9,"lasthumidity":89,"servertime":"16:02:18","lastсontacttime":"16:01:00","lastсontactdate":"07/02/2019","current":220,"amperage":10,"power":60,"consuming":105},{"id":1750,"who":"ARDUINO","ac":true,"lan":true,"logged":null,"lasttemperature":-9,"lasthumidity":89,"servertime":"18:07:49","lastсontacttime":"18:07:00","lastсontactdate":"07/02/2019","current":220,"amperage":10,"power":60,"consuming":105},{"id":1800,"who":"ARDUINO","ac":true,"lan":true,"logged":null,"lasttemperature":-9,"lasthumidity":89,"servertime":"18:17:18","lastсontacttime":"18:17:00","lastсontactdate":"07/02/2019","current":220,"amperage":10,"power":60,"consuming":105},{"id":50,"who":"Test ApiBank","ac":false,"lan":false,"logged":null,"lasttemperature":0,"lasthumidity":0,"servertime":"20:44:43","lastсontacttime":"20:44:43","lastсontactdate":"21/03/2019","current":220,"amperage":16,"power":40,"consuming":101},{"id":100,"who":"Test ApiBank","ac":false,"lan":false,"logged":null,"lasttemperature":0,"lasthumidity":0,"servertime":"20:54:08","lastсontacttime":"20:54:08","lastсontactdate":"21/03/2019","current":220,"amperage":16,"power":40,"consuming":101},{"id":101,"who":"Test ApiBank","ac":false,"lan":false,"logged":null,"lasttemperature":0,"lasthumidity":0,"servertime":"20:57:06","lastсontacttime":"20:57:06","lastсontactdate":"21/03/2019","current":220,"amperage":16,"power":40,"consuming":101},{"id":102,"who":"Test ApiBank","ac":false,"lan":false,"logged":null,"lasttemperature":-15,"lasthumidity":67,"servertime":"20:58:13","lastсontacttime":"20:58:13","lastсontactdate":"21/03/2019","current":25,"amperage":16,"power":40,"consuming":101},{"id":103,"who":"Test ApiBank","ac":false,"lan":false,"logged":null,"lasttemperature":-15,"lasthumidity":67,"servertime":"21:02:59","lastсontacttime":"21:02:59","lastсontactdate":"21/03/2019","current":25,"amperage":16,"power":40,"consuming":101},{"id":150,"who":"REST","ac":true,"lan":true,"logged":null,"lasttemperature":-15,"lasthumidity":-10,"servertime":"21:25:11","lastсontacttime":"21:25:11","lastсontactdate":"21/03/2019","current":15,"amperage":150,"power":18,"consuming":1024},{"id":200,"who":"Test","ac":true,"lan":true,"logged":null,"lasttemperature":-75,"lasthumidity":-10,"servertime":"19:46:36","lastсontacttime":"19:46:36","lastсontactdate":"22/03/2019","current":15,"amperage":150,"power":18,"consuming":1024},{"id":201,"who":"REST: NO PING","ac":false,"lan":false,"logged":null,"lasttemperature":0,"lasthumidity":0,"servertime":"20:02:18","lastсontacttime":"20:02:18","lastсontactdate":"22/03/2019","current":0,"amperage":0,"power":0,"consuming":0},{"id":5,"who":"Test","ac":true,"lan":true,"logged":false,"lasttemperature":-75,"lasthumidity":-10,"servertime":"16:37:16","lastсontacttime":"16:37:16","lastсontactdate":"08/04/2019","current":15,"amperage":150,"power":18,"consuming":1024},{"id":6,"who":"REST: NO PING","ac":false,"lan":false,"logged":true,"lasttemperature":0,"lasthumidity":0,"servertime":"17:13:15","lastсontacttime":"17:13:15","lastсontactdate":"08/04/2019","current":0,"amperage":0,"power":0,"consuming":0},{"id":7,"who":"Test","ac":true,"lan":true,"logged":false,"lasttemperature":-5,"lasthumidity":48,"servertime":"17:24:34","lastсontacttime":"17:24:34","lastсontactdate":"08/04/2019","current":15,"amperage":150,"power":18,"consuming":1024},{"id":8,"who":"REST: NO PING","ac":false,"lan":false,"logged":true,"lasttemperature":0,"lasthumidity":0,"servertime":"11:13:31","lastсontacttime":"11:13:31","lastсontactdate":"09/04/2019","current":0,"amperage":0,"power":0,"consuming":0},{"id":9,"who":"Test","ac":true,"lan":true,"logged":false,"lasttemperature":-5,"lasthumidity":48,"servertime":"12:26:12","lastсontacttime":"12:26:12","lastсontactdate":"09/04/2019","current":15,"amperage":150,"power":18,"consuming":1024},{"id":10,"who":"REST: NO PING","ac":false,"lan":false,"logged":true,"lasttemperature":0,"lasthumidity":0,"servertime":"12:41:50","lastсontacttime":"12:41:50","lastсontactdate":"09/04/2019","current":0,"amperage":0,"power":0,"consuming":0}],[Content-Type:"application/json", Cache-Control:"no-cache"]>
-12:53:21.261 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
-12:53:21.270 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-12:54:21.277 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
-12:54:21.283 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-12:55:20.302 [restartedMain] WARN  console_logger  - THREAD MANAGER HAS STARTED. T I M E ====== 12:41:50
-12:55:27.330 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
-12:55:27.338 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-12:56:27.349 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
-12:56:27.362 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-12:59:41.093 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-12:59:41.102 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-13:10:21.419 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-13:10:21.428 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-13:10:35.628 [restartedMain] WARN  console_logger  - THREAD MANAGER HAS STARTED. T I M E ====== 12:41:50
-13:11:28.943 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-13:11:28.955 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-13:13:15.797 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-13:13:15.801 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-13:14:25.312 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-13:14:25.320 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-13:31:12.963 [restartedMain] WARN  console_logger  - THREAD MANAGER HAS STARTED. T I M E ====== 12:41:50
-13:31:12.970 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-13:31:12.975 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-13:32:12.987 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-13:32:12.994 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-13:33:13.010 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-13:33:13.025 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-13:33:51.052 [restartedMain] WARN  console_logger  - THREAD MANAGER HAS STARTED. T I M E ====== 12:41:50
-13:33:51.058 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-13:33:51.063 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-13:34:51.074 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-13:34:51.078 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-13:35:51.086 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-13:35:51.092 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-13:36:51.101 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-13:36:51.104 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-13:37:50.500 [restartedMain] WARN  console_logger  - THREAD MANAGER HAS STARTED. T I M E ====== 12:41:50
-13:37:50.507 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-13:37:50.512 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-13:38:50.522 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-13:38:50.528 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-13:40:02.895 [restartedMain] WARN  console_logger  - THREAD MANAGER HAS STARTED. T I M E ====== 12:41:50
-13:40:02.902 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-13:40:02.907 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-13:41:02.919 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-13:41:02.923 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-13:41:59.916 [restartedMain] WARN  console_logger  - THREAD MANAGER HAS STARTED. T I M E ====== 12:41:50
-13:41:59.924 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-13:41:59.928 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-13:42:39.132 [restartedMain] WARN  console_logger  - THREAD MANAGER HAS STARTED. T I M E ====== 12:41:50
-13:42:39.139 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-13:42:39.144 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-13:43:39.165 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-13:43:39.184 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-13:44:46.418 [restartedMain] WARN  console_logger  - THREAD MANAGER HAS STARTED. T I M E ====== 12:41:50
-13:44:46.428 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-13:44:46.439 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-13:45:46.453 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-13:45:46.456 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-13:46:23.829 [restartedMain] WARN  console_logger  - THREAD MANAGER HAS STARTED. T I M E ====== 12:41:50
-13:46:23.835 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-13:46:23.840 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-13:47:27.146 [restartedMain] WARN  console_logger  - THREAD MANAGER HAS STARTED. T I M E ====== 12:41:50
-13:47:27.153 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-13:47:27.157 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-13:48:27.169 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-13:48:27.174 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-13:49:09.972 [restartedMain] WARN  console_logger  - THREAD MANAGER HAS STARTED. T I M E ====== 12:41:50
-13:49:09.979 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-13:49:09.985 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-13:50:24.054 [restartedMain] WARN  console_logger  - THREAD MANAGER HAS STARTED. T I M E ====== 12:41:50
-13:50:24.063 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-13:50:24.068 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-13:51:24.083 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-13:51:24.092 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-13:52:08.869 [restartedMain] WARN  console_logger  - THREAD MANAGER HAS STARTED. T I M E ====== 12:41:50
-13:52:08.877 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-13:52:08.881 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-13:53:08.897 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-13:53:08.912 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-13:53:57.276 [restartedMain] WARN  console_logger  - THREAD MANAGER HAS STARTED. T I M E ====== 12:41:50
-13:53:57.284 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-13:53:57.290 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-16:19:12.886 [restartedMain] WARN  console_logger  - THREAD MANAGER HAS STARTED. T I M E ====== 12:41:50
-16:19:12.893 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-16:19:12.899 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-16:20:12.918 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-16:20:12.928 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-16:21:12.938 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-16:21:12.943 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-16:22:12.955 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-16:22:12.960 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-16:22:30.235 [restartedMain] WARN  console_logger  - THREAD MANAGER HAS STARTED. T I M E ====== 12:41:50
-16:22:30.244 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-16:22:30.249 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-16:23:30.262 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-16:23:30.269 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-16:26:22.209 [restartedMain] WARN  console_logger  - THREAD MANAGER HAS STARTED. T I M E ====== 12:41:50
-16:26:22.215 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-16:26:22.220 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-16:27:27.307 [restartedMain] WARN  console_logger  - THREAD MANAGER HAS STARTED. T I M E ====== 12:41:50
-16:27:27.315 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-16:27:27.321 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-16:28:27.339 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-16:28:27.352 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-16:29:27.364 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-16:29:27.369 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-16:30:27.383 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-16:30:27.392 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-16:31:27.407 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-16:31:27.414 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-16:32:23.990 [restartedMain] WARN  console_logger  - THREAD MANAGER HAS STARTED. T I M E ====== 12:41:50
-16:32:23.999 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-16:32:24.005 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-16:33:24.019 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-16:33:24.021 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-16:34:24.052 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-16:34:24.060 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-16:35:24.071 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-16:35:24.075 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-16:36:00.460 [restartedMain] WARN  console_logger  - THREAD MANAGER HAS STARTED. T I M E ====== 12:41:50
-16:36:00.467 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-16:36:00.471 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-16:37:00.483 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-16:37:00.489 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-16:38:00.503 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-16:38:00.510 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-16:39:00.521 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-16:39:00.523 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-16:39:53.329 [restartedMain] WARN  console_logger  - THREAD MANAGER HAS STARTED. T I M E ====== 12:41:50
-16:39:53.337 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-16:39:53.340 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-16:40:53.360 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-16:40:53.369 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-16:41:53.388 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-16:41:53.404 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-16:42:53.419 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-16:42:53.432 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-16:43:53.446 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-16:43:53.449 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-16:44:29.901 [restartedMain] WARN  console_logger  - THREAD MANAGER HAS STARTED. T I M E ====== 12:41:50
-16:44:29.909 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-16:44:29.914 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-16:45:29.925 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-16:45:29.932 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-16:46:10.930 [restartedMain] WARN  console_logger  - THREAD MANAGER HAS STARTED. T I M E ====== 12:41:50
-16:46:10.937 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-16:46:10.942 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-16:47:10.958 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-16:47:10.968 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-16:48:10.977 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-16:48:10.983 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-16:49:10.998 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-16:49:11.011 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-16:50:11.025 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-16:50:11.031 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-16:51:11.043 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-16:51:11.047 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-16:52:11.056 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-16:52:11.061 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-16:53:11.069 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-16:53:11.072 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-16:54:11.081 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-16:54:11.085 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-16:55:11.094 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-16:55:11.102 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-16:56:11.128 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-16:56:11.137 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-16:57:11.152 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-16:57:11.155 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-16:58:11.163 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-16:58:11.174 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-16:59:11.193 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-16:59:11.204 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-17:00:11.223 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-17:00:11.237 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-17:01:11.249 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-17:01:11.252 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-17:02:14.769 [restartedMain] WARN  console_logger  - THREAD MANAGER HAS STARTED. T I M E ====== 12:41:50
-17:02:14.777 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-17:02:14.783 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-17:03:14.803 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-17:03:14.809 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-17:04:14.818 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-17:04:14.824 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-17:05:14.832 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-17:05:14.836 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-17:06:14.845 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-17:06:14.851 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-17:07:14.863 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-17:07:14.876 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-17:08:14.894 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-17:08:14.902 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-17:09:14.918 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-17:09:14.925 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-17:10:14.933 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-17:10:14.938 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-17:11:14.945 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-17:11:14.948 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-17:12:14.958 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-17:12:14.964 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-17:13:14.971 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-17:13:14.977 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-17:14:14.991 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-17:14:14.997 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-17:15:15.006 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-17:15:15.009 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-17:16:15.016 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-17:16:15.020 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-17:17:15.030 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-17:17:15.041 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-17:18:15.059 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-17:18:15.064 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-17:19:15.076 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-17:19:15.086 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-17:20:15.093 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-17:20:15.098 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-17:21:15.106 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-17:21:15.109 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-17:22:15.116 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-17:22:15.131 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-17:23:15.148 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-17:23:15.152 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-17:24:15.161 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-17:24:15.164 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-17:25:15.175 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-17:25:15.185 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-17:26:15.202 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-17:26:15.206 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-17:27:15.212 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-17:27:15.214 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-17:28:15.220 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-17:28:15.226 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-17:29:15.236 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-17:29:15.240 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-17:30:15.249 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-17:30:15.253 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-17:31:15.262 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-17:31:15.264 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-17:32:15.288 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-17:32:15.295 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-17:33:15.306 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-17:33:15.315 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-17:34:15.329 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-17:34:15.332 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-17:35:15.340 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-17:35:15.348 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-17:36:15.363 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-17:36:15.372 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-17:37:15.380 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-17:37:15.382 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-17:38:15.388 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-17:38:15.395 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-17:39:15.407 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-17:39:15.417 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-17:40:15.433 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-17:40:15.438 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-17:41:15.450 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-17:41:15.458 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-17:46:19.919 [restartedMain] WARN  console_logger  - THREAD MANAGER HAS STARTED. T I M E ====== 12:41:50
-17:46:19.927 [pool-3-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
-17:46:19.933 [pool-3-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
-17:46:23.753 [http-nio-8080-exec-1] INFO  console_logger  - ========= GET STATUS ============== 
-17:46:23.781 [http-nio-8080-exec-1] INFO  console_logger  - RESPONSE: <200 OK OK,{"who":null,"isAcOn":false,"isLanOn":false,"lastTemperature":0,"lastHumidity":0,"serverTime":"12:41:50","lastContactTime":"12:41:50","current":0,"amperage":0,"power":0,"consuming":0,"logged":null,"lastContactDate":"09/04/2019"},[Content-Type:"application/json", Cache-Control:"no-cache"]>
-17:46:23.803 [http-nio-8080-exec-2] INFO  console_logger  - ========= TODAY MEASURES LIST ============== 
-17:46:23.806 [http-nio-8080-exec-2] INFO  console_logger  - GETTING REQUEST FROM:  0:0:0:0:0:0:0:1
-17:46:23.809 [http-nio-8080-exec-2] INFO  console_logger  - RESULT:  {"AllTemperatures":0,"NightPost":false,"MorningPost":false,"DayPost":false,"EveningPost":false,"ip":"0:0:0:0:0:0:0:1"}
-17:46:23.813 [http-nio-8080-exec-2] INFO  console_logger  - RESPONSE: <200 OK OK,[],[Content-Type:"application/json", Cache-Control:"no-cache"]>
-17:46:35.198 [http-nio-8080-exec-3] INFO  console_logger  - GETTING REQUEST FROM:  0:0:0:0:0:0:0:1
-17:46:35.198 [http-nio-8080-exec-3] INFO  console_logger  - RESULT:  {"AllTemperatures":0,"NightPost":false,"MorningPost":false,"DayPost":false,"EveningPost":false,"ip":"0:0:0:0:0:0:0:1"}
-17:46:35.199 [http-nio-8080-exec-3] INFO  console_logger  - RESPONSE: <200 OK OK,[],[Content-Type:"application/json", Cache-Control:"no-cache"]>
-17:46:36.274 [http-nio-8080-exec-5] INFO  console_logger  - ========= MONTH MEASURES LIST ============== 
-17:46:36.274 [http-nio-8080-exec-5] INFO  console_logger  - GETTING REQUEST FROM:  0:0:0:0:0:0:0:1
-17:46:36.275 [http-nio-8080-exec-5] INFO  console_logger  - RESULT:  {"AllTemperatures":1,"NightPost":false,"MorningPost":false,"DayPost":false,"EveningPost":false,"ip":"0:0:0:0:0:0:0:1"}
-17:46:36.275 [http-nio-8080-exec-5] INFO  console_logger  - RESPONSE: <200 OK OK,[{"measureDate":"10/04/2019","dayTemp":111.0,"nightTemp":-15.0}],[Content-Type:"application/json", Cache-Control:"no-cache"]>
-17:46:38.913 [http-nio-8080-exec-4] INFO  console_logger  - GETTING REQUEST FROM:  0:0:0:0:0:0:0:1
-17:46:38.914 [http-nio-8080-exec-4] INFO  console_logger  - RESULT:  {"AllTemperatures":0,"NightPost":false,"MorningPost":false,"DayPost":false,"EveningPost":false,"ip":"0:0:0:0:0:0:0:1"}
-17:46:38.916 [http-nio-8080-exec-4] INFO  console_logger  - RESPONSE: <200 OK OK,[],[Content-Type:"application/json", Cache-Control:"no-cache"]>
-17:46:45.305 [http-nio-8080-exec-9] INFO  console_logger  - ========= MONTH MEASURES LIST ============== 
-17:46:45.305 [http-nio-8080-exec-9] INFO  console_logger  - GETTING REQUEST FROM:  0:0:0:0:0:0:0:1
-17:46:45.305 [http-nio-8080-exec-9] INFO  console_logger  - RESULT:  {"AllTemperatures":1,"NightPost":false,"MorningPost":false,"DayPost":false,"EveningPost":false,"ip":"0:0:0:0:0:0:0:1"}
-17:46:45.307 [http-nio-8080-exec-9] INFO  console_logger  - RESPONSE: <200 OK OK,[{"measureDate":"10/04/2019","dayTemp":111.0,"nightTemp":-15.0}],[Content-Type:"application/json", Cache-Control:"no-cache"]>
-17:46:47.691 [http-nio-8080-exec-6] INFO  console_logger  - GETTING REQUEST FROM:  0:0:0:0:0:0:0:1
-17:46:47.692 [http-nio-8080-exec-6] INFO  console_logger  - RESULT:  {"AllTemperatures":0,"NightPost":false,"MorningPost":false,"DayPost":false,"EveningPost":false,"ip":"0:0:0:0:0:0:0:1"}
-17:46:47.692 [http-nio-8080-exec-6] INFO  console_logger  - RESPONSE: <200 OK OK,[],[Content-Type:"application/json", Cache-Control:"no-cache"]>
-17:46:53.444 [http-nio-8080-exec-10] INFO  console_logger  - ========= TODAY MEASURES LIST ============== 
-17:46:53.445 [http-nio-8080-exec-10] INFO  console_logger  - GETTING REQUEST FROM:  0:0:0:0:0:0:0:1
-17:46:53.447 [http-nio-8080-exec-10] INFO  console_logger  - RESULT:  {"AllTemperatures":0,"NightPost":false,"MorningPost":false,"DayPost":false,"EveningPost":false,"ip":"0:0:0:0:0:0:0:1"}
-17:46:53.447 [http-nio-8080-exec-10] INFO  console_logger  - RESPONSE: <200 OK OK,[],[Content-Type:"application/json", Cache-Control:"no-cache"]>
+11:42:10.268 [restartedMain] WARN  console_logger  - THREAD MANAGER HAS STARTED. T I M E ====== 14:08:46
+11:42:10.280 [pool-4-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+11:42:10.288 [pool-4-thread-1] INFO  console_logger  - MainParametrs: AC {true},LAN {true}, IS LOGGED {false}
+11:42:10.295 [pool-4-thread-1] WARN  console_logger  - ============ У НАС ПРОБЛЕМЫ ============
+11:42:10.295 [pool-4-thread-1] WARN  console_logger  - ------------- Первое условие (ситуация) -------------
+11:42:10.295 [pool-4-thread-1] WARN  console_logger  - 		+ Таймаут просрочен (false)
+11:42:10.295 [pool-4-thread-1] WARN  console_logger  - 		+ Не логгировали это раньше
+11:42:10.295 [pool-4-thread-1] WARN  console_logger  - 		+ АС или LAN по последним логам включен.
+11:42:10.297 [pool-4-thread-1] INFO  console_logger  - ENTRY IN DB CREATED:Status{isAcOn=false, isLanOn=false, lastTemperature=0, lastHumidity=0, serverTime=11:42:10, lastContactTime=11:42:10, current=0, amperage=0, power=0, consuming=0, lastContactDate=Tue Jun 18 11:42:10 MSK 2019}
+11:43:11.376 [pool-4-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
+11:43:11.396 [pool-4-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+11:43:15.173 [http-nio-8080-exec-2] INFO  console_logger  - ========= TEST FLUX ============== 
+11:44:11.419 [pool-4-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
+11:44:11.424 [pool-4-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+11:45:11.432 [pool-4-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
+11:45:11.437 [pool-4-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+11:46:11.445 [pool-4-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
+11:46:11.453 [pool-4-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+11:47:11.462 [pool-4-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
+11:47:11.470 [pool-4-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+11:48:11.478 [pool-4-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
+11:48:11.483 [pool-4-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+11:49:11.492 [pool-4-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
+11:49:11.499 [pool-4-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+11:50:11.506 [pool-4-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
+11:50:11.511 [pool-4-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+11:51:11.517 [pool-4-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
+11:51:11.522 [pool-4-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+11:52:11.529 [pool-4-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
+11:52:11.541 [pool-4-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+11:53:11.554 [pool-4-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
+11:53:11.564 [pool-4-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+11:54:11.573 [pool-4-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
+11:54:11.578 [pool-4-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+11:55:11.589 [pool-4-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
+11:55:11.597 [pool-4-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+11:56:11.607 [pool-4-thread-1] WARN  console_logger  - TIMEOUT TEST:  true
+11:56:11.612 [pool-4-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+11:57:11.617 [pool-4-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+11:57:11.621 [pool-4-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+11:58:11.635 [pool-4-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+11:58:11.643 [pool-4-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+11:59:11.655 [pool-4-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+11:59:11.659 [pool-4-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+12:00:11.673 [pool-4-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+12:00:11.679 [pool-4-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+12:01:11.692 [pool-4-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+12:01:11.696 [pool-4-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+12:02:11.709 [pool-4-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+12:02:11.722 [pool-4-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+12:03:11.749 [pool-4-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+12:03:11.762 [pool-4-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+12:04:11.787 [pool-4-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+12:04:11.792 [pool-4-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+12:05:11.807 [pool-4-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+12:05:11.823 [pool-4-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+12:06:11.855 [pool-4-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+12:06:11.859 [pool-4-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+12:07:11.871 [pool-4-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+12:07:11.884 [pool-4-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+12:08:11.915 [pool-4-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+12:08:11.925 [pool-4-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+12:09:11.946 [pool-4-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+12:09:11.951 [pool-4-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+12:10:11.961 [pool-4-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+12:10:11.981 [pool-4-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+12:11:12.002 [pool-4-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+12:11:12.007 [pool-4-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+12:12:12.032 [pool-4-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+12:12:12.059 [pool-4-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+12:13:12.072 [pool-4-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+12:13:12.076 [pool-4-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+12:14:12.083 [pool-4-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+12:14:12.087 [pool-4-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+12:15:12.095 [pool-4-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+12:15:12.100 [pool-4-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+12:16:12.115 [pool-4-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+12:16:12.127 [pool-4-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+12:17:12.149 [pool-4-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+12:17:12.152 [pool-4-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+12:18:12.163 [pool-4-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+12:18:12.175 [pool-4-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+12:19:12.200 [pool-4-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+12:19:12.211 [pool-4-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+12:20:12.235 [pool-4-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+12:20:12.239 [pool-4-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+12:21:12.249 [pool-4-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+12:21:12.261 [pool-4-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+12:22:12.287 [pool-4-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+12:22:12.298 [pool-4-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+12:23:12.320 [pool-4-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+12:23:12.336 [pool-4-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+12:24:12.371 [pool-4-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+12:24:12.384 [pool-4-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+12:25:12.409 [pool-4-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+12:25:12.413 [pool-4-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+12:26:12.421 [pool-4-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+12:26:12.424 [pool-4-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+12:27:12.435 [pool-4-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+12:27:12.448 [pool-4-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+12:28:12.472 [pool-4-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+12:28:12.485 [pool-4-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+12:29:12.512 [pool-4-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+12:29:12.523 [pool-4-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+12:30:12.550 [pool-4-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+12:30:12.561 [pool-4-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+12:31:12.583 [pool-4-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+12:31:12.586 [pool-4-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}
+12:32:12.592 [pool-4-thread-1] WARN  console_logger  - TIMEOUT TEST:  false
+12:32:12.596 [pool-4-thread-1] INFO  console_logger  - MainParametrs: AC {false},LAN {false}, IS LOGGED {true}

@@ -1,5 +1,6 @@
 package com.antonromanov.temprest.controller;
 
+import com.antonromanov.temprest.Flux.LearnFlux;
 import com.antonromanov.temprest.model.DailyReport;
 import com.antonromanov.temprest.model.Logs;
 import com.antonromanov.temprest.model.Status;
@@ -90,6 +91,19 @@ public class MainRestController {
 		createResponseJson(allTemperaturesList.size(), at2am, at8am, at14, at19, request);
 
 		return createGoodResponse(allTemperaturesList);
+	}
+
+
+	@GetMapping("/testflux")
+	public String testFlux(HttpServletRequest request) {
+
+
+		LOGGER.info("========= TEST FLUX ============== ");
+		LearnFlux l = new LearnFlux();
+		l.Do();
+		//createResponseJson(0, at2am, at8am, at14, at19, request);
+
+		return "OK";
 	}
 
 
@@ -215,7 +229,7 @@ public class MainRestController {
 		// Парсим пришедший JSON  с температурой
 		try {
 
-			String who = ((JSONTemplate.fromString(requestParam).get("who") == null) || (JSONTemplate.fromString(requestParam).get("who").isJsonNull())) ? "Test" : JSONTemplate.fromString(requestParam).get("who").getAsString();
+			String who = ((JSONTemplate.fromString(requestParam).get("who") == null) || (JSONTemplate.fromString(requestParam).get("who").isJsonNull())) ? "LearnFlux" : JSONTemplate.fromString(requestParam).get("who").getAsString();
 			Boolean acOn = ((JSONTemplate.fromString(requestParam).get("acOn") == null) || (JSONTemplate.fromString(requestParam).get("acOn").isJsonNull())) ? false : JSONTemplate.fromString(requestParam).get("acOn").getAsBoolean();
 			Boolean lanOn = ((JSONTemplate.fromString(requestParam).get("lanOn") == null) || (JSONTemplate.fromString(requestParam).get("lanOn").isJsonNull())) ? false : JSONTemplate.fromString(requestParam).get("lanOn").getAsBoolean();
 			int lastTemperature = ((JSONTemplate.fromString(requestParam).get("lastTemperature") == null) || (JSONTemplate.fromString(requestParam).get("lastTemperature").isJsonNull())) ? 0 : JSONTemplate.fromString(requestParam).get("lastTemperature").getAsInt();
@@ -258,6 +272,8 @@ public class MainRestController {
 		ResponseEntity<String> responseEntity = null;
 //		// Формируем JSON
 		JsonObject responseStatusInJson = null;
+		//responseStatusInJson.
+		//responseStatusInJson.
 
 		//todo: вот тут надо наормально обрабатывать эксепшены работы с бд. трай-кетчем
 		// todo: так же надо как-то обрабатывать ситуацию, если статус мы не заполнили
