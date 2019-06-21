@@ -103,11 +103,18 @@ public class MainRestController {
 	@GetMapping("/daotest")
 	public String testDao() {
 
-
 		Logs user = new Logs(145);
 		userDao.create(user);
 
 		return "OK";
+	}
+
+	@GetMapping("/testinsert")
+	public String testInsert() {
+
+		userDao.testInsert();
+
+		return "TESTED";
 	}
 
 
