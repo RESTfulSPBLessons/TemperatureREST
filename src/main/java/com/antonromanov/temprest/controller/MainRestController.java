@@ -117,6 +117,14 @@ public class MainRestController {
 		return "TESTED";
 	}
 
+	@GetMapping("/testrefs")
+	public String testRefCursor() {
+
+		userDao.testRefCursors();
+
+		return "REF CURSORS TESTED";
+	}
+
 
 
 

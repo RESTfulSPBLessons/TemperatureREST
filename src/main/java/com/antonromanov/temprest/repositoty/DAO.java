@@ -7,15 +7,12 @@ import javax.persistence.EntityManager;
 import javax.persistence.ParameterMode;
 import javax.persistence.PersistenceContext;
 import javax.persistence.StoredProcedureQuery;
+import java.util.List;
 
 @Repository
 @Transactional
 public class DAO {
 
-	// Private fields
-
-	// An EntityManager will be automatically injected from entityManagerFactory
-	// setup on DatabaseConfig class.
 	@PersistenceContext
 	private EntityManager entityManager;
 
@@ -31,6 +28,17 @@ public class DAO {
 				.registerStoredProcedureParameter("temp", Long.class, ParameterMode.IN).setParameter("temp", 174L);
 
 		query.execute();
+	}
+
+	public void testRefCursors() {
+
+		StoredProcedureQuery query = entityManager.createStoredProcedureQuery("postgres.arduino.todaylogs")
+				.registerStoredProcedureParameter(1, void.class, ParameterMode.REF_CURSOR);
+
+		query.execute();
+
+		List<Object[]> logs = query.getResultList();
+		logs.forEach(System.out::println);
 	}
 
 
