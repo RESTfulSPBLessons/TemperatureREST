@@ -1,6 +1,6 @@
 package com.antonromanov.temprest.service;
 
-import com.antonromanov.temprest.bot.Bot;
+
 import com.antonromanov.temprest.livecontrolthread.MainParameters;
 import com.antonromanov.temprest.model.DailyReport;
 import com.antonromanov.temprest.model.Logs;
@@ -28,12 +28,6 @@ import static com.antonromanov.temprest.utils.Utils.checkDayNight;
 public class MainServiceImpl implements MainService {
 
 
-    /**
-     * Telegram Bot
-     */
-    @Autowired
-    private Bot bot;
-
 
     /**
      * Репозиторий температуры
@@ -51,14 +45,6 @@ public class MainServiceImpl implements MainService {
      * Основные параметры живучести.
      */
     MainParameters mainParametrs = new MainParameters();
-
-
-    @Override
-    public void errorPushToBot(String message) {
-        if (bot != null)
-            bot.fireMessage(message);
-    }
-
 
 
     /**

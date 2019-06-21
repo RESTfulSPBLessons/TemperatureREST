@@ -1,13 +1,10 @@
 package com.antonromanov.temprest.livecontrolthread;
 
-import com.antonromanov.temprest.bot.Bot;
 import com.antonromanov.temprest.model.Logs;
 import com.antonromanov.temprest.model.Status;
 import com.antonromanov.temprest.service.MainService;
-import org.apache.log4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.BeanCreationException;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.sql.Time;
 import java.text.ParseException;
@@ -89,7 +86,6 @@ public class IsAliveController implements Runnable {
 						LOGGER.warn("		+ Не логгировали это раньше");
 						LOGGER.warn("		+ АС или LAN по последним логам включен.");
 
-						mainService.errorPushToBot("PROBLEM! SITUATION 2: TIMEOUT - DELAYED | NOT LOGGED | AC & LAN WERE ON");
 
 						/**
 						 * Пишет в БД запись, что связи нет, чтобы ее фронтенд прочитать мог.

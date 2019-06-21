@@ -26,4 +26,6 @@ public interface LogsRepository extends JpaRepository<Logs, Integer>{
     List<Logs> getLastPingedEntry3(Pageable pageable);
 
 
+
+
 }

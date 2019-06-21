@@ -68,6 +68,25 @@ public class Logs {
     public Logs() {
     }
 
+    public Logs(Integer lasttemperature) {
+
+        this.who = "dao-test";
+        this.ac = true;
+        this.lan = true;
+        this.logged = true;
+        this.lasthumidity = 45;
+        this.lasttemperature = lasttemperature;
+        this.servertime = null;
+        this.lastсontacttime = null;
+        this.lastсontactdate = null;
+        this.current = null;
+        this.amperage = null;
+        this.power = null;
+        this.consuming = null;
+        this.logged = null;
+    }
+
+
     public Logs(Status log) {
 
         this.who = log.getWho();

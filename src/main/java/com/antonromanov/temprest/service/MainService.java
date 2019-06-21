@@ -12,12 +12,11 @@ import java.util.List;
 
 public interface MainService {
 
-	void errorPushToBot(String message);
 
 	List<Temperature> getAll(); // список всех измерений (пока с одного датчика)
 
 	List<Logs> getAllLogs(); // все логи
-//
+
 	List<Temperature> addMeasure(Double temp, String status); // добавить измерение
 
 	List<Logs> addLog(Status log) throws ParseException; // добавить измерение \ todo: убрать этот метод потом
@@ -25,9 +24,9 @@ public interface MainService {
 	void addLog2(Status log); // добавить измерение. Версия №2 //todo это надо переименовать
 
 	List<Temperature> getTodayMeasures() throws ParseException; //статистика по сегодня
-//
+
 	List<DailyReport> getWeeklyDayReport() throws ParseException; // недельная статистика
-//
+
 	List<DailyReport> getMonthDayReport() throws ParseException; // статистика за месяц
 
 	Time getLastContactTime(); // время последнего контакта

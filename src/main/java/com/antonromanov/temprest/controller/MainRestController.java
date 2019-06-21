@@ -1,10 +1,11 @@
 package com.antonromanov.temprest.controller;
 
-import com.antonromanov.temprest.Flux.LearnFlux;
+
 import com.antonromanov.temprest.model.DailyReport;
 import com.antonromanov.temprest.model.Logs;
 import com.antonromanov.temprest.model.Status;
 import com.antonromanov.temprest.model.Temperature;
+import com.antonromanov.temprest.repositoty.DAO;
 import com.antonromanov.temprest.service.MainService;
 import com.antonromanov.temprest.utils.JSONTemplate;
 import org.slf4j.LoggerFactory;
@@ -68,6 +69,11 @@ public class MainRestController {
 	@Autowired
 	MainService mainService;
 
+
+	@Autowired
+	DAO userDao;
+
+
 	/**
 	 * Глобальные флаги, чтобы отсекать пинги не в нужное время и чтобы в нужное время был только один пинг,
 	 * ибо кидаться мы с ардуины будем каждые 15 минут.
@@ -94,17 +100,18 @@ public class MainRestController {
 	}
 
 
-	@GetMapping("/testflux")
-	public String testFlux(HttpServletRequest request) {
+	@GetMapping("/daotest")
+	public String testDao() {
 
 
-		LOGGER.info("========= TEST FLUX ============== ");
-		LearnFlux l = new LearnFlux();
-		l.Do();
-		//createResponseJson(0, at2am, at8am, at14, at19, request);
+		Logs user = new Logs(145);
+		userDao.create(user);
 
 		return "OK";
 	}
+
+
+
 
 
 	/**
