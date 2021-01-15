@@ -1,10 +1,10 @@
 package com.antonromanov.temprest.service;
 
-import com.antonromanov.temprest.livecontrolthread.MainParameters;
-import com.antonromanov.temprest.model.DailyReport;
-import com.antonromanov.temprest.model.Logs;
+//import com.antonromanov.temprest.livecontrolthread.MainParameters;
+//import com.antonromanov.temprest.model.DailyReport;
+//import com.antonromanov.temprest.model.Logs;
 import com.antonromanov.temprest.model.Status;
-import com.antonromanov.temprest.model.Temperature;
+//import com.antonromanov.temprest.model.Temperature;
 import java.text.ParseException;
 import java.sql.Time;
 import java.util.List;
@@ -12,7 +12,7 @@ import java.util.List;
 
 public interface MainService {
 
-	void errorPushToBot(String message);
+	/*void errorPushToBot(String message);
 
 	List<Temperature> getAll(); // список всех измерений (пока с одного датчика)
 
@@ -36,17 +36,17 @@ public interface MainService {
 
 	Boolean getLastContactLan();  // LAN статус последнего контакта
 
-	Boolean getLastContactLogged();  // Пинг залогирован или нет?
+	Boolean getLastContactLogged();  // Пинг залогирован или нет?*/
 
 	Status getGlobalStatus(); // глобальное состояние
 
-	Logs getLastLog(); // получить последний пинг (лог)
+	/*Logs getLastLog(); // получить последний пинг (лог)
 
 	Temperature getLastTemp(); // получить последнюю запись о температуре
 
 	MainParameters getMainParametrs(); // еще одно глобальное состояние инкапсулирующее предыдущее + еще параметры
 
-	void updateLastLog(Logs log); // обновить последний пинг (лог) новыми данными
+	void updateLastLog(Logs log); // обновить последний пинг (лог) новыми данными*/
 
 
 

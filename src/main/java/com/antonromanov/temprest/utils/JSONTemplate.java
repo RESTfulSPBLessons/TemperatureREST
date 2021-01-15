@@ -1,9 +1,11 @@
 package com.antonromanov.temprest.utils;
 
+import com.google.gson.Gson;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonPrimitive;
+
 import java.util.Arrays;
-import java.util.List;
-import com.antonromanov.temprest.model.Temperature;
-import com.google.gson.*;
 
 public final class JSONTemplate {
 	private static Gson gson = new Gson();
@@ -59,9 +61,9 @@ public final class JSONTemplate {
 		return getJson().toString();
 	}
 
-	public String parseListOfObjects(List<Temperature> list) {
+	/*public String parseListOfObjects(List<Temperature> list) {
 
 		return gson.toJson(list);
 
-	}
+	}*/
 }
